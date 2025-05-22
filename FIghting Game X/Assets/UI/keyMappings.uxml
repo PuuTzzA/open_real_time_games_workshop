@@ -1,0 +1,48 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="screen" style="flex-grow: 0; width: 100%; height: 100%; align-content: auto; justify-content: center;">
+        <ui:VisualElement name="root" style="flex-grow: 0; width: 90%; height: 90%; justify-content: flex-start; align-self: center; align-content: flex-start;">
+            <ui:Label text="Key Binds" name="Title" style="-unity-text-align: middle-center; font-size: 40px; justify-content: center; align-content: auto; -unity-font-style: bold; height: 10%; width: 100%;" />
+            <ui:VisualElement name="binds" style="flex-grow: 0; height: 80%; width: 100%;">
+                <ui:VisualElement name="jump" style="flex-grow: 0; height: 14.28571%; width: 100%; align-items: stretch; justify-content: flex-start; flex-direction: row;">
+                    <ui:Label text="Jump:" style="width: 20%; height: 100%;" />
+                    <ui:Button text="Button" name="jumpbutton" style="width: 60%; align-self: auto;" />
+                    <ui:Button text="Reset&#10;" name="jumpreset" />
+                </ui:VisualElement>
+                <ui:VisualElement name="jump" style="flex-grow: 0; height: 14.28571%; width: 100%; align-items: stretch; justify-content: flex-start; flex-direction: row;">
+                    <ui:Label text="Jab" style="width: 20%; height: 100%;" />
+                    <ui:Button text="Button" name="jabbutton" style="width: 60%; align-self: auto;" />
+                    <ui:Button text="Reset&#10;" name="jabreset" />
+                </ui:VisualElement>
+                <ui:VisualElement name="jump" style="flex-grow: 0; height: 14.28571%; width: 100%; align-items: stretch; justify-content: flex-start; flex-direction: row;">
+                    <ui:Label text="heavy" style="width: 20%; height: 100%;" />
+                    <ui:Button text="Button" name="heavybutton" style="width: 60%; align-self: auto;" />
+                    <ui:Button text="Reset&#10;" name="heavyreset" />
+                </ui:VisualElement>
+                <ui:VisualElement name="jump" style="flex-grow: 0; height: 14.28571%; width: 100%; align-items: stretch; justify-content: flex-start; flex-direction: row;">
+                    <ui:Label text="interact" style="width: 20%; height: 100%;" />
+                    <ui:Button text="Button" name="interactbutton" style="width: 60%; align-self: auto;" />
+                    <ui:Button text="Reset&#10;" name="interactreset" />
+                </ui:VisualElement>
+                <ui:VisualElement name="jump" style="flex-grow: 0; height: 14.28571%; width: 100%; align-items: stretch; justify-content: flex-start; flex-direction: row;">
+                    <ui:Label text="dash" style="width: 20%; height: 100%;" />
+                    <ui:Button text="Button" name="dashbutton" style="width: 60%; align-self: auto;" />
+                    <ui:Button text="Reset&#10;" name="dashreset" />
+                </ui:VisualElement>
+                <ui:VisualElement name="jump" style="flex-grow: 0; height: 14.28571%; width: 100%; align-items: stretch; justify-content: flex-start; flex-direction: row;">
+                    <ui:Label text="block" style="width: 20%; height: 100%;" />
+                    <ui:Button text="Button" name="blockbutton" style="width: 60%; align-self: auto;" />
+                    <ui:Button text="Reset&#10;" name="blockreset" />
+                </ui:VisualElement>
+                <ui:VisualElement name="jump" style="flex-grow: 0; height: 14.28571%; width: 100%; align-items: stretch; justify-content: flex-start; flex-direction: row;">
+                    <ui:Label text="ultimate" name="Label" style="width: 20%; height: 100%;" />
+                    <ui:Button text="Button" name="ultbutton" style="width: 60%; align-self: auto;" />
+                    <ui:Button text="Reset&#10;" name="ultreset" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="general" style="flex-grow: 0; height: 118px; flex-direction: row;">
+                <ui:Button text="Back" name="back" style="width: 40%; height: 80%;" />
+                <ui:Button text="Reset&#10;" name="resetall" style="width: 40%; height: 80%;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
