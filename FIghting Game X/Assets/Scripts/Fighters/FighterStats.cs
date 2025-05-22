@@ -9,7 +9,7 @@ public struct FighterStats
 
     public static readonly FighterStats DEFAULT = new FighterStats()
     {
-        ground_speed = 5.0f,
+        ground_speed = 7.0f,
         horizontal_speed = 7.0f,
         vertical_speed = 15.0f,
         air_control = 1.0f,
