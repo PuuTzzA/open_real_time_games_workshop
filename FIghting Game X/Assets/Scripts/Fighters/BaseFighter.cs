@@ -1,28 +1,48 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class BaseFighter : MonoBehaviour
 {
-    public FighterActions fighter_actions;
     public Rigidbody2D rigidbody;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        fighter_actions.init();
+    private Vector2 moveAmount;
+    private InputActionAsset InputActions;
 
-        rigidbody = GetComponent<Rigidbody2D>();
+    private void OnEnable()
+    {
+        InputActions.FindActionMap("Player").Enable();
+    }
+
+    private void Awake()
+    {
+        rigidbody = this.GetComponent<Rigidbody2D>();
+    }
+
+    private void OnDisable()
+    {
+        InputActions.FindActionMap("Player").Disable();
     }
 
     // Update is called once per frame
     void Update()
     {
-        var dir = fighter_actions.direction.ReadValue<Vector2>();
-
-        rigidbody.linearVelocityX = dir.x * 4.0f;
-
-        if(fighter_actions.jump.WasPressedThisFrame())
-        {
-            rigidbody.linearVelocityY = 10.0f;
-        }
+        rigidbody.linearVelocityX = moveAmount.x * 4.0f;
     }
+
+    public void OnMove(InputAction.CallbackContext ctx)
+    {
+        moveAmount = ctx.ReadValue<Vector2>();
+    }
+    
+    public void OnJump(InputAction.CallbackContext ctx)
+    {
+        rigidbody.linearVelocityY = 5.0f;
+    }
+    
+    
+    public void OnHeavy(InputAction.CallbackContext ctx)
+    {
+        // Implement special move logic here
+    }
+
 }
