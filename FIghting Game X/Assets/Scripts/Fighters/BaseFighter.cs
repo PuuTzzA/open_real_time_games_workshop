@@ -1,12 +1,14 @@
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class BaseFighter : MonoBehaviour
 {
-    public FighterActions fighter_actions;
     public new Rigidbody2D rigidbody;
     public new Collider2D collider;
+
+    public Vector2 direction;
 
     public readonly FighterStats stats = FighterStats.DEFAULT;
 
@@ -29,30 +31,27 @@ public class BaseFighter : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        fighter_actions.init();
-
         available_air_jumps = stats.air_jumps;
+        direction = Vector2.zero;
+    }
 
-        // rigidbody = GetComponent<Rigidbody2D>();
+    private Vector2 moveAmount;
+    private InputActionAsset InputActions;
+
+    private void OnEnable()
+    {
+        InputActions.FindActionMap("Player").Enable();
+    }
+
+    private void OnDisable()
+    {
+        InputActions.FindActionMap("Player").Disable();
     }
 
     // Update is called once per frame
     void Update()
     {
-        var dir = fighter_actions.direction.ReadValue<Vector2>();
-
-        rigidbody.linearVelocityX = dir.x * 4.0f;
-
-        if(fighter_actions.jump.WasPressedThisFrame())
-        {
-            if (grounded)
-                jump();
-            else if(available_air_jumps > 0)
-            {
-                jump();
-                available_air_jumps--;
-            }
-        }
+        rigidbody.linearVelocityX = direction.x * 4.0f;
     }
 
     public void FixedUpdate()
@@ -86,5 +85,23 @@ public class BaseFighter : MonoBehaviour
     public void jump()
     {
         rigidbody.linearVelocityY = stats.jump_strength;
+    }
+
+    public void direction_action(InputAction.CallbackContext context)
+    {
+        direction = context.ReadValue<Vector2>();
+    }
+
+    public void jump_action(InputAction.CallbackContext context)
+    {
+        if (!context.performed) return;
+        
+        if (grounded)
+            jump();
+        else if (available_air_jumps > 0)
+        {
+            jump();
+            available_air_jumps--;
+        }
     }
 }
