@@ -183,7 +183,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1751921886521305825}
         m_TargetAssemblyTypeName: BaseFighter, Assembly-CSharp
-        m_MethodName: OnMove
+        m_MethodName: direction_action
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -199,7 +199,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1751921886521305825}
         m_TargetAssemblyTypeName: BaseFighter, Assembly-CSharp
-        m_MethodName: OnJump
+        m_MethodName: jump_action
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -304,4 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eee648785c18414386a3fc89c65ec42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidbody: {fileID: 0}
+  rigidbody: {fileID: 2365104996562313112}
+  collider: {fileID: 1308529376015514807}
+  direction: {x: 0, y: 0}
+  available_air_jumps: 0
