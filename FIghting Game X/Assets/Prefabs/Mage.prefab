@@ -15,12 +15,12 @@ GameObject:
   - component: {fileID: 8953457976830967148}
   - component: {fileID: 1751921886521305825}
   m_Layer: 0
-  m_Name: Fighter
+  m_Name: Mage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2190708967257528992
 Transform:
   m_ObjectHideFlags: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.92875624, b: 0.1566037, a: 1}
+  m_Color: {r: 0, g: 0.04662323, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -143,7 +143,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 256591b24d9560c479b60a2d8d2fade1, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -183,7 +183,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1751921886521305825}
         m_TargetAssemblyTypeName: BaseFighter, Assembly-CSharp
-        m_MethodName: direction_action
+        m_MethodName: OnMove
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -199,7 +199,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1751921886521305825}
         m_TargetAssemblyTypeName: BaseFighter, Assembly-CSharp
-        m_MethodName: jump_action
+        m_MethodName: OnJump
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -212,26 +212,14 @@ MonoBehaviour:
     m_ActionId: 99bfcf27-05cf-4160-a9d5-7f72c3fdc29f
     m_ActionName: 'Player/jump[/Keyboard/space]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1751921886521305825}
-        m_TargetAssemblyTypeName: BaseFighter, Assembly-CSharp
-        m_MethodName: jab_action
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 65985aa2-c96e-4a35-bc49-1f54a27aefba
     m_ActionName: 'Player/jab[/Keyboard/j]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1751921886521305825}
         m_TargetAssemblyTypeName: BaseFighter, Assembly-CSharp
-        m_MethodName: heavy_action
+        m_MethodName: dklsajkldsakldsa
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -244,67 +232,19 @@ MonoBehaviour:
     m_ActionId: 11efec32-1058-40c3-9d57-7990937c2435
     m_ActionName: 'Player/heavy[/Keyboard/i]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1751921886521305825}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 3d0e94a9-18ab-49d7-ab12-635e1d019de3
     m_ActionName: 'Player/interact[/Keyboard/l]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1751921886521305825}
-        m_TargetAssemblyTypeName: BaseFighter, Assembly-CSharp
-        m_MethodName: dash_action
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: ff40675f-919d-4fa8-bf50-386da887ada2
     m_ActionName: 'Player/dash[/Keyboard/shift]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1751921886521305825}
-        m_TargetAssemblyTypeName: BaseFighter, Assembly-CSharp
-        m_MethodName: block_action
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: c9911a5f-9d1f-4eaf-8111-42d1bab8e58b
     m_ActionName: 'Player/block[/Keyboard/k]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1751921886521305825}
-        m_TargetAssemblyTypeName: BaseFighter, Assembly-CSharp
-        m_MethodName: ult_action
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 6450c088-3b65-44cc-a8c0-91de460221b0
     m_ActionName: 'Player/ult[/Keyboard/u]'
   - m_PersistentCalls:
@@ -364,8 +304,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eee648785c18414386a3fc89c65ec42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidbody: {fileID: 2365104996562313112}
-  collider: {fileID: 1308529376015514807}
-  direction: {x: 0, y: 0}
-  discrete_x: 0
-  available_air_jumps: 0
+  rigidbody: {fileID: 0}
