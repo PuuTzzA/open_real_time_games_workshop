@@ -11,8 +11,7 @@ public class BaseFighter : MonoBehaviour
 
     public TextMeshPro debug_text;
 
-    public Vector2 direction;
-    public int discrete_x;
+    public FighterInput fighter_input;
 
     public readonly FighterStats stats = FighterStats.DEFAULT;
 
@@ -37,7 +36,14 @@ public class BaseFighter : MonoBehaviour
     void Start()
     {
         available_air_jumps = stats.air_jumps;
-        direction = Vector2.zero;
+
+        fighter_input.set_callback(FighterButton.Jump, jump_action);
+        fighter_input.set_callback(FighterButton.Jab, jab_action);
+        fighter_input.set_callback(FighterButton.Heavy, heavy_action);
+        fighter_input.set_callback(FighterButton.Interact, interact_action);
+        fighter_input.set_callback(FighterButton.Dash, dash_action);
+        fighter_input.set_callback(FighterButton.Block, block_action);
+        fighter_input.set_callback(FighterButton.Ult, ult_action);
     }
 
     /*
@@ -60,7 +66,7 @@ public class BaseFighter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rigidbody.linearVelocityX = discrete_x * stats.ground_speed;
+        rigidbody.linearVelocityX = fighter_input.direction.x * stats.ground_speed;
 
         debug_text.SetText(state.action.ToString());
         
@@ -68,6 +74,7 @@ public class BaseFighter : MonoBehaviour
 
     public void FixedUpdate()
     {
+        fighter_input.dispatch_events();
         /*
         if (grounded)
         {
@@ -120,16 +127,8 @@ public class BaseFighter : MonoBehaviour
         rigidbody.linearVelocityX = stats.ground_speed;
     }
 
-    public void direction_action(InputAction.CallbackContext context)
+    public void jump_action()
     {
-        direction = context.ReadValue<Vector2>();
-        discrete_x = direction.x < -0.7f ? -1 : direction.x > 0.7f ? 1 : 0;
-    }
-
-    public void jump_action(InputAction.CallbackContext context)
-    {
-        if (!context.performed) return;
-        
         if (grounded)
             jump();
         else if (available_air_jumps > 0)
@@ -140,35 +139,33 @@ public class BaseFighter : MonoBehaviour
     }
 
 
-    public void jab_action(InputAction.CallbackContext context)
+    public void jab_action()
     {
-        if (!context.performed) return;
+        
     }
 
-    public void heavy_action(InputAction.CallbackContext context)
+    public void heavy_action(bool pressed)
     {
-        if (!context.performed) return;
+        
     }
 
-    public void interact_action(InputAction.CallbackContext context)
+    public void interact_action(bool pressed)
     {
-        if (!context.performed) return;
+
     }
 
-    public void dash_action(InputAction.CallbackContext context)
+    public void dash_action()
     {
-        if (!context.performed) return;
-
         dash();
     }
 
-    public void block_action(InputAction.CallbackContext context)
+    public void block_action(bool pressed)
     {
-        if (!context.performed) return;
+        
     }
 
-    public void ult_action(InputAction.CallbackContext context)
+    public void ult_action(bool pressed)
     {
-        if (!context.performed) return;
+        
     }
 }
