@@ -2,11 +2,14 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class BaseFighter : MonoBehaviour
 {
     public new Rigidbody2D rigidbody;
     public new Collider2D collider;
+
+    public TextMeshPro debug_text;
 
     public Vector2 direction;
     public int discrete_x;
@@ -37,6 +40,8 @@ public class BaseFighter : MonoBehaviour
         direction = Vector2.zero;
     }
 
+    /*
+
     private Vector2 moveAmount;
     private InputActionAsset InputActions;
 
@@ -50,10 +55,14 @@ public class BaseFighter : MonoBehaviour
         InputActions.FindActionMap("Player").Disable();
     }
 
+    */
+
     // Update is called once per frame
     void Update()
     {
         rigidbody.linearVelocityX = discrete_x * stats.ground_speed;
+
+        debug_text.SetText(state.action.ToString());
         
     }
 
@@ -114,7 +123,7 @@ public class BaseFighter : MonoBehaviour
     public void direction_action(InputAction.CallbackContext context)
     {
         direction = context.ReadValue<Vector2>();
-        discrete_x = direction.x < -0.8f ? -1 : direction.x > 0.8f ? 1 : 0;
+        discrete_x = direction.x < -0.7f ? -1 : direction.x > 0.7f ? 1 : 0;
     }
 
     public void jump_action(InputAction.CallbackContext context)
