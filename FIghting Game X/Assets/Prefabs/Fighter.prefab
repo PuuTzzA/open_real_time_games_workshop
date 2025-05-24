@@ -216,8 +216,8 @@ MonoBehaviour:
     m_ActionName: 'Player/jump[/Keyboard/space]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1751921886521305825}
-        m_TargetAssemblyTypeName: BaseFighter, Assembly-CSharp
+      - m_Target: {fileID: 3269010414292953582}
+        m_TargetAssemblyTypeName: FighterInput, Assembly-CSharp
         m_MethodName: jab_action
         m_Mode: 0
         m_Arguments:
@@ -232,8 +232,8 @@ MonoBehaviour:
     m_ActionName: 'Player/jab[/Keyboard/j]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1751921886521305825}
-        m_TargetAssemblyTypeName: BaseFighter, Assembly-CSharp
+      - m_Target: {fileID: 3269010414292953582}
+        m_TargetAssemblyTypeName: FighterInput, Assembly-CSharp
         m_MethodName: heavy_action
         m_Mode: 0
         m_Arguments:
@@ -248,13 +248,13 @@ MonoBehaviour:
     m_ActionName: 'Player/heavy[/Keyboard/i]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1751921886521305825}
-        m_TargetAssemblyTypeName: BaseFighter, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 3269010414292953582}
+        m_TargetAssemblyTypeName: FighterInput, Assembly-CSharp
+        m_MethodName: interact_action
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -264,8 +264,8 @@ MonoBehaviour:
     m_ActionName: 'Player/interact[/Keyboard/l]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1751921886521305825}
-        m_TargetAssemblyTypeName: BaseFighter, Assembly-CSharp
+      - m_Target: {fileID: 3269010414292953582}
+        m_TargetAssemblyTypeName: FighterInput, Assembly-CSharp
         m_MethodName: dash_action
         m_Mode: 0
         m_Arguments:
@@ -280,8 +280,8 @@ MonoBehaviour:
     m_ActionName: 'Player/dash[/Keyboard/shift]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1751921886521305825}
-        m_TargetAssemblyTypeName: BaseFighter, Assembly-CSharp
+      - m_Target: {fileID: 3269010414292953582}
+        m_TargetAssemblyTypeName: FighterInput, Assembly-CSharp
         m_MethodName: block_action
         m_Mode: 0
         m_Arguments:
@@ -296,8 +296,8 @@ MonoBehaviour:
     m_ActionName: 'Player/block[/Keyboard/k]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1751921886521305825}
-        m_TargetAssemblyTypeName: BaseFighter, Assembly-CSharp
+      - m_Target: {fileID: 3269010414292953582}
+        m_TargetAssemblyTypeName: FighterInput, Assembly-CSharp
         m_MethodName: ult_action
         m_Mode: 0
         m_Arguments:
@@ -372,6 +372,7 @@ MonoBehaviour:
   debug_text: {fileID: 4063641928333382102}
   fighter_input: {fileID: 3269010414292953582}
   available_air_jumps: 0
+  remaining_dash_frames: 0
 --- !u!114 &3269010414292953582
 MonoBehaviour:
   m_ObjectHideFlags: 0

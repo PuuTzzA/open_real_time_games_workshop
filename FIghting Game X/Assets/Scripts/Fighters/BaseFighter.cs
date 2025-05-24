@@ -16,6 +16,7 @@ public class BaseFighter : MonoBehaviour
     public readonly FighterStats stats = FighterStats.DEFAULT;
 
     public int available_air_jumps;
+    public int remaining_dash_frames;
 
     public FighterState state;
 
@@ -36,6 +37,8 @@ public class BaseFighter : MonoBehaviour
     void Start()
     {
         available_air_jumps = stats.air_jumps;
+
+        remaining_dash_frames = 0;
 
         fighter_input.set_callback(FighterButton.Jump, jump_action);
         fighter_input.set_callback(FighterButton.Jab, jab_action);
@@ -63,18 +66,34 @@ public class BaseFighter : MonoBehaviour
 
     */
 
-    // Update is called once per frame
-    void Update()
-    {
-        rigidbody.linearVelocityX = fighter_input.direction.x * stats.ground_speed;
-
-        debug_text.SetText(state.action.ToString());
-        
-    }
-
     public void FixedUpdate()
     {
         fighter_input.dispatch_events();
+
+        
+        /*
+        if (remaining_dash_frames > 10)
+        {
+            rigidbody.gravityScale = 1.0f;
+            rigidbody.linearVelocityX = 0.0f;
+            // rigidbody.linearVelocityY = 0.0f;
+            remaining_dash_frames--;
+        }
+        else /**/
+        if (remaining_dash_frames > 0)
+        {
+            rigidbody.gravityScale = 0.0f;
+            rigidbody.linearVelocityX = (int)state.facing * stats.ground_speed * 3.0f;
+            rigidbody.linearVelocityY = 0.0f;
+            remaining_dash_frames--;
+        }
+        else
+        {
+            rigidbody.gravityScale = 1.0f;
+            if (fighter_input.direction.x != 0)
+                state.facing = (Facing)fighter_input.direction.x;
+            rigidbody.linearVelocityX = fighter_input.direction.x * stats.ground_speed;
+        }
         /*
         if (grounded)
         {
@@ -101,6 +120,8 @@ public class BaseFighter : MonoBehaviour
         {
             handle_contact(contact);
         }
+
+        debug_text.SetText(state.action.ToString());
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
@@ -124,7 +145,7 @@ public class BaseFighter : MonoBehaviour
 
     public void dash()
     {
-        rigidbody.linearVelocityX = stats.ground_speed;
+        remaining_dash_frames = 7;
     }
 
     public void jump_action()

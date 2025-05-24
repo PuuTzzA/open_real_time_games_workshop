@@ -101,7 +101,7 @@ public class FighterInput : MonoBehaviour
 
         if (!context.performed)
         {
-            event_queue.Enqueue(new Event { button = FighterButton.Jump, pressed = context.started });
+            event_queue.Enqueue(new Event { button = FighterButton.Jab, pressed = context.started });
         }
     }
 
@@ -111,7 +111,7 @@ public class FighterInput : MonoBehaviour
 
         if (!context.performed)
         {
-            event_queue.Enqueue(new Event { button = FighterButton.Jump, pressed = context.started });
+            event_queue.Enqueue(new Event { button = FighterButton.Heavy, pressed = context.started });
         }
     }
 
@@ -121,7 +121,7 @@ public class FighterInput : MonoBehaviour
 
         if (!context.performed)
         {
-            event_queue.Enqueue(new Event { button = FighterButton.Jump, pressed = context.started });
+            event_queue.Enqueue(new Event { button = FighterButton.Interact, pressed = context.started });
         }
     }
 
@@ -131,7 +131,7 @@ public class FighterInput : MonoBehaviour
 
         if (!context.performed)
         {
-            event_queue.Enqueue(new Event { button = FighterButton.Jump, pressed = context.started });
+            event_queue.Enqueue(new Event { button = FighterButton.Dash, pressed = context.started });
         }
     }
 
@@ -141,7 +141,7 @@ public class FighterInput : MonoBehaviour
 
         if (!context.performed)
         {
-            event_queue.Enqueue(new Event { button = FighterButton.Jump, pressed = context.started });
+            event_queue.Enqueue(new Event { button = FighterButton.Block, pressed = context.started });
         }
     }
 
@@ -151,7 +151,7 @@ public class FighterInput : MonoBehaviour
 
         if (!context.performed)
         {
-            event_queue.Enqueue(new Event { button = FighterButton.Jump, pressed = context.started });
+            event_queue.Enqueue(new Event { button = FighterButton.Ult, pressed = context.started });
         }
     }
 }
