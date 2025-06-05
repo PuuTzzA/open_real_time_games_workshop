@@ -2,21 +2,26 @@ public struct FighterState
 {
     public bool grounded;
     public Facing facing;
-    public FighterAction action;
+    public CurrentAction action;
+
+    public static FighterState create()
+    {
+        return new FighterState { grounded = false, facing = Facing.Right, action = CurrentAction.NoAction };
+    }
 }
 
 public enum Facing
 {
-    LEFT = -1,
-    RIGHT = 1,
+    Left = -1,
+    Right = 1,
 }
 
-public enum FighterAction
+public enum CurrentAction
 {
-    NO_ACTION,
-    JAB,
-    HEAVY,
-    BLOCK,
-    DASH,
-    ULT
+    NoAction,
+    Jab,
+    Heavy,
+    Block,
+    Dash,
+    Ult
 }

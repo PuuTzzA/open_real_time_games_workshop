@@ -12,6 +12,7 @@ public class BaseFighter : MonoBehaviour
     public TextMeshPro debug_text;
 
     public FighterInput fighter_input;
+    public ActionBuffer action_buffer;
 
     public readonly FighterStats stats = FighterStats.DEFAULT;
 
@@ -40,13 +41,17 @@ public class BaseFighter : MonoBehaviour
 
         remaining_dash_frames = 0;
 
-        fighter_input.set_callback(FighterButton.Jump, jump_action);
-        fighter_input.set_callback(FighterButton.Jab, jab_action);
-        fighter_input.set_callback(FighterButton.Heavy, heavy_action);
-        fighter_input.set_callback(FighterButton.Interact, interact_action);
-        fighter_input.set_callback(FighterButton.Dash, dash_action);
-        fighter_input.set_callback(FighterButton.Block, block_action);
-        fighter_input.set_callback(FighterButton.Ult, ult_action);
+        action_buffer = new ActionBuffer();
+
+        action_buffer.register(FighterButton.Jump, jump_action);
+        action_buffer.register(FighterButton.Jab, jab_action);
+        action_buffer.register(FighterButton.Heavy, heavy_action);
+        action_buffer.register(FighterButton.Interact, interact_action);
+        action_buffer.register(FighterButton.Dash, dash_action);
+        action_buffer.register(FighterButton.Block, block_action);
+        action_buffer.register(FighterButton.Ult, ult_action);
+
+        state = FighterState.create();
     }
 
     /*
@@ -68,7 +73,9 @@ public class BaseFighter : MonoBehaviour
 
     public void FixedUpdate()
     {
-        fighter_input.dispatch_events();
+        fighter_input.dispatch_events(action_buffer);
+
+        action_buffer.process();
 
         
         /*
@@ -110,8 +117,6 @@ public class BaseFighter : MonoBehaviour
         }
         */
 
-        grounded = false;
-
         List<ContactPoint2D> contacts = new List<ContactPoint2D>();
 
         collider.GetContacts(contacts);
@@ -122,6 +127,8 @@ public class BaseFighter : MonoBehaviour
         }
 
         debug_text.SetText(state.action.ToString());
+
+        grounded = false;
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
@@ -130,7 +137,7 @@ public class BaseFighter : MonoBehaviour
             handle_contact(contact);
     }
 
-    public void handle_contact(ContactPoint2D contact   )
+    public void handle_contact(ContactPoint2D contact)
     {
         if (contact.normal.y > 0.7f)
         {
@@ -148,45 +155,55 @@ public class BaseFighter : MonoBehaviour
         remaining_dash_frames = 7;
     }
 
-    public void jump_action()
+    public bool jump_action()
     {
         if (grounded)
+        {
             jump();
+            return true;
+        }
         else if (available_air_jumps > 0)
         {
             jump();
             available_air_jumps--;
+            return true;
         }
+        return false;
     }
 
 
-    public void jab_action()
+    public bool jab_action()
     {
-        
+        state.action = CurrentAction.Jab;
+        return true;
     }
 
-    public void heavy_action(bool pressed)
+    public bool heavy_action(ActionInput input)
     {
-        
+        state.action = CurrentAction.Heavy;
+        return true;
     }
 
-    public void interact_action(bool pressed)
+    public bool interact_action(ActionInput input)
     {
-
+        return true;
     }
 
-    public void dash_action()
+    public bool dash_action()
     {
         dash();
+        return true;
     }
 
-    public void block_action(bool pressed)
+    public bool block_action(ActionInput input)
     {
-        
+        state.action = input.pressed ? CurrentAction.Block : CurrentAction.NoAction;
+        return true;
     }
 
-    public void ult_action(bool pressed)
+    public bool ult_action(ActionInput input)
     {
-        
+        state.action = CurrentAction.Ult;
+        return true;
     }
 }

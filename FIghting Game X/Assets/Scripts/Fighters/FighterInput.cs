@@ -4,11 +4,6 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public enum FighterButton
-{
-    Jump, Jab, Heavy, Interact, Dash, Block, Ult
-}
-
 public class FighterInput : MonoBehaviour
 {
 
@@ -30,8 +25,6 @@ public class FighterInput : MonoBehaviour
 
     private Queue<Event> event_queue;
 
-    private Action<bool>[] callbacks;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     FighterInput()
     {
@@ -40,27 +33,16 @@ public class FighterInput : MonoBehaviour
         jump = jab = heavy = interact = dash = block = ult = false;
 
         event_queue = new Queue<Event>();
-        callbacks = new Action<bool>[Enum.GetValues(typeof(FighterButton)).Length];
     }
 
     // Update is called once per frame
-    public void dispatch_events()
+    public void dispatch_events(ActionBuffer action_buffer)
     {
         foreach (var e in event_queue)
         {
-            callbacks[(int)e.button](e.pressed);
+            action_buffer.push(new FighterAction(e.button, new ActionInput { pressed = e.pressed, direction = direction }));
         }
         event_queue.Clear();
-    }
-
-    public void set_callback(FighterButton button, Action<bool> callback)
-    {
-        callbacks[(int)button] = callback;
-    }
-
-    public void set_callback(FighterButton button, System.Action callback)
-    {
-        callbacks[(int)button] = pressed => { if (pressed) callback(); };
     }
 
     public void direction_action(InputAction.CallbackContext context)
@@ -86,10 +68,9 @@ public class FighterInput : MonoBehaviour
 
     public void jump_action(InputAction.CallbackContext context)
     {
-        jump = context.ReadValueAsButton();
-
         if ( !context.performed)
         {
+            jump = context.ReadValueAsButton();
             event_queue.Enqueue(new Event { button = FighterButton.Jump, pressed = context.started});
         }
     }
@@ -97,60 +78,54 @@ public class FighterInput : MonoBehaviour
 
     public void jab_action(InputAction.CallbackContext context)
     {
-        jab = context.ReadValueAsButton();
-
         if (!context.performed)
         {
+            jab = context.ReadValueAsButton();
             event_queue.Enqueue(new Event { button = FighterButton.Jab, pressed = context.started });
         }
     }
 
     public void heavy_action(InputAction.CallbackContext context)
     {
-        heavy = context.ReadValueAsButton();
-
         if (!context.performed)
         {
+            heavy = context.ReadValueAsButton();
             event_queue.Enqueue(new Event { button = FighterButton.Heavy, pressed = context.started });
         }
     }
 
     public void interact_action(InputAction.CallbackContext context)
     {
-        interact = context.ReadValueAsButton();
-
         if (!context.performed)
         {
+            interact = context.ReadValueAsButton();
             event_queue.Enqueue(new Event { button = FighterButton.Interact, pressed = context.started });
         }
     }
 
     public void dash_action(InputAction.CallbackContext context)
     {
-        dash = context.ReadValueAsButton();
-
         if (!context.performed)
         {
+            dash = context.ReadValueAsButton();
             event_queue.Enqueue(new Event { button = FighterButton.Dash, pressed = context.started });
         }
     }
 
     public void block_action(InputAction.CallbackContext context)
     {
-        block = context.ReadValueAsButton();
-
         if (!context.performed)
         {
+            block = context.ReadValueAsButton();
             event_queue.Enqueue(new Event { button = FighterButton.Block, pressed = context.started });
         }
     }
 
     public void ult_action(InputAction.CallbackContext context)
     {
-        ult = context.ReadValueAsButton();
-
         if (!context.performed)
         {
+            ult = context.ReadValueAsButton();
             event_queue.Enqueue(new Event { button = FighterButton.Ult, pressed = context.started });
         }
     }

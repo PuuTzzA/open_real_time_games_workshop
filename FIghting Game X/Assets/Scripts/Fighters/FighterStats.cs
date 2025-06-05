@@ -7,7 +7,7 @@ public struct FighterStats
     public float jump_strength;
     public int air_jumps;
 
-    public static readonly FighterStats DEFAULT = new FighterStats()
+    public static readonly FighterStats DEFAULT = new FighterStats
     {
         ground_speed = 7.0f,
         horizontal_speed = 7.0f,
