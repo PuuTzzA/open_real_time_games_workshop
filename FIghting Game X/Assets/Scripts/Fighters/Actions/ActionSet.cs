@@ -1,4 +1,4 @@
-public class BaseActions
+public class ActionSet
 {
     public FighterAction idle;
     public FighterAction run;

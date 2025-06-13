@@ -3,6 +3,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEditor.VersionControl;
 
 public class BaseFighter : MonoBehaviour
 {
@@ -23,7 +24,12 @@ public class BaseFighter : MonoBehaviour
     public FighterState state;
 
     private bool _grounded;
-    public Facing facing;
+    private Facing _facing;
+
+    public ActionSet action_set;
+    public FighterAction current_action;
+
+    public Sprite[] idle_sprites;
 
     public bool grounded
     {
@@ -37,6 +43,20 @@ public class BaseFighter : MonoBehaviour
         }
         get { return _grounded; }
     }
+
+    public Facing facing
+    {
+        set
+        {
+            _facing = value;
+
+            var scale = transform.localScale;
+            scale.x = (int)value;
+            transform.localScale = scale;
+        }
+        get { return _facing; }
+    }
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -56,6 +76,22 @@ public class BaseFighter : MonoBehaviour
         event_buffer.register(FighterButton.Ult, ult_action);
 
         state = FighterState.create();
+
+        var idle = new FighterAction(this);
+        idle.factor = 0.04;
+        idle.loop = true;
+
+        StateFlags flags = StateFlags.CanJump | StateFlags.CanTurn | StateFlags.CanMove | StateFlags.Interruptable;
+
+        idle.frames = new ActionFrame[] {
+            new ActionFrame { flags = flags, sprite = idle_sprites[0] },
+            new ActionFrame { flags = flags, sprite = idle_sprites[1] },
+        };
+
+        action_set = new ActionSet();
+
+        action_set.idle = idle;
+        current_action = action_set.idle;
     }
 
     /*
@@ -120,6 +156,11 @@ public class BaseFighter : MonoBehaviour
             rigidbody.linearVelocityX = Math.Clamp(rigidbody.linearVelocityX, -stats.horizontal_speed, stats.horizontal_speed);
         }
         */
+
+        current_action.next();
+        var frame = current_action.current_frame();
+
+        sprite_renderer.sprite = frame.sprite;
 
         List<ContactPoint2D> contacts = new List<ContactPoint2D>();
 

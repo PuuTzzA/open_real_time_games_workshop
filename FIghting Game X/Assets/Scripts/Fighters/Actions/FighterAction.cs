@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class FighterAction
 {
-    private double elapsed = 0.0;
-    private double factor = 1.0;
-    private bool loop = true;
+    public double elapsed = 0.0;
+    public double factor = 1.0;
+    public bool loop = true;
 
-    private ActionFrame[] frames;
+    public ActionFrame[] frames;
     private BaseFighter fighter;
 
     public FighterAction(BaseFighter fighter)
@@ -30,7 +30,7 @@ public class FighterAction
 
     public void next()
     {
-        elapsed += factor;
+        elapsed += 1.0f;
     }
 }
 
