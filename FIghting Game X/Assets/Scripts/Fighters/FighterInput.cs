@@ -36,11 +36,11 @@ public class FighterInput : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void dispatch_events(ActionBuffer action_buffer)
+    public void dispatch_events(EventBuffer action_buffer)
     {
         foreach (var e in event_queue)
         {
-            action_buffer.push(new FighterAction(e.button, new ActionInput { pressed = e.pressed, direction = direction }));
+            action_buffer.push(new FighterEvent(e.button, new EventInput { pressed = e.pressed, direction = direction }));
         }
         event_queue.Clear();
     }

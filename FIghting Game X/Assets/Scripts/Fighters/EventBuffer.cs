@@ -2,21 +2,21 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public struct ActionInput
+public struct EventInput
 {
     public bool pressed;
     public Vector2Int direction;
 }
 
-public class FighterAction
+public class FighterEvent
 {
-    public const int DEFAULT_TTL = 10;
+    public const int DEFAULT_TTL = 8;
 
     public FighterButton button;
-    public ActionInput input;
+    public EventInput input;
     public int ttl;
 
-    public FighterAction(FighterButton button, ActionInput input, int ttl = DEFAULT_TTL)
+    public FighterEvent(FighterButton button, EventInput input, int ttl = DEFAULT_TTL)
     {
         this.button = button;
         this.input = input;
@@ -25,20 +25,20 @@ public class FighterAction
 }
 
 
-public class ActionBuffer
+public class EventBuffer
 {
-    private List<FighterAction> buffered_actions;
+    private List<FighterEvent> buffered_actions;
 
-    private Func<ActionInput, bool>[] callbacks;
+    private Func<EventInput, bool>[] callbacks;
 
-    public ActionBuffer()
+    public EventBuffer()
     {
-        buffered_actions = new List<FighterAction>();
+        buffered_actions = new List<FighterEvent>();
 
-        callbacks = new Func<ActionInput, bool>[Enum.GetValues(typeof(FighterButton)).Length];
+        callbacks = new Func<EventInput, bool>[Enum.GetValues(typeof(FighterButton)).Length];
     }
 
-    public void register(FighterButton button, Func<ActionInput, bool> callback)
+    public void register(FighterButton button, Func<EventInput, bool> callback)
     {
         callbacks[(int)button] = callback;
     }
@@ -49,7 +49,7 @@ public class ActionBuffer
     }
 
 
-    public void push(FighterAction action)
+    public void push(FighterEvent action)
     {
         buffered_actions.Add(action);
     }
@@ -57,7 +57,7 @@ public class ActionBuffer
 
     public void process()
     {
-        List<FighterAction> new_buffer = new List<FighterAction> ();
+        List<FighterEvent> new_buffer = new List<FighterEvent> ();
 
         foreach (var action in buffered_actions)
         {
