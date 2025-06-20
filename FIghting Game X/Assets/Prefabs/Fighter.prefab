@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3396020354287734119
+--- !u!1 &1041149767670461808
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,44 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2190708967257528992}
-  - component: {fileID: 4654300779431486118}
-  - component: {fileID: 1308529376015514807}
-  - component: {fileID: 2365104996562313112}
-  - component: {fileID: 8953457976830967148}
-  - component: {fileID: 1751921886521305825}
-  - component: {fileID: 3269010414292953582}
-  - component: {fileID: 2344010549708889634}
+  - component: {fileID: 653873672574815227}
+  - component: {fileID: 7011030590116812469}
   m_Layer: 0
-  m_Name: Fighter
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2190708967257528992
+--- !u!4 &653873672574815227
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3396020354287734119}
+  m_GameObject: {fileID: 1041149767670461808}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.97698, y: -0.468, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3169908411984394255}
-  m_Father: {fileID: 0}
+  m_LocalPosition: {x: 0, y: 0.295, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 2190708967257528992}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4654300779431486118
+--- !u!212 &7011030590116812469
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3396020354287734119}
+  m_GameObject: {fileID: 1041149767670461808}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -83,17 +76,56 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.92875624, b: 0.1566037, a: 1}
+  m_Sprite: {fileID: 1398893948369281781, guid: 71f95f6eb207cc1479db5e6fb700d7f9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.43, y: 0.45}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &3396020354287734119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2190708967257528992}
+  - component: {fileID: 1308529376015514807}
+  - component: {fileID: 2365104996562313112}
+  - component: {fileID: 8953457976830967148}
+  - component: {fileID: 1751921886521305825}
+  - component: {fileID: 3269010414292953582}
+  - component: {fileID: 2344010549708889634}
+  m_Layer: 0
+  m_Name: Fighter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2190708967257528992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3396020354287734119}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.97698, y: -0.468, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3169908411984394255}
+  - {fileID: 653873672574815227}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1308529376015514807
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -129,7 +161,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.35
 --- !u!50 &2365104996562313112
 Rigidbody2D:
   serializedVersion: 5
@@ -369,10 +401,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 2365104996562313112}
   collider: {fileID: 1308529376015514807}
+  sprite_renderer: {fileID: 7011030590116812469}
   debug_text: {fileID: 4063641928333382102}
   fighter_input: {fileID: 3269010414292953582}
   available_air_jumps: 0
   remaining_dash_frames: 0
+  idle_sprites:
+  - {fileID: 1398893948369281781, guid: 71f95f6eb207cc1479db5e6fb700d7f9, type: 3}
+  - {fileID: -5020514758781672274, guid: 2b497b84c1460104498d5e681138109c, type: 3}
 --- !u!114 &3269010414292953582
 MonoBehaviour:
   m_ObjectHideFlags: 0

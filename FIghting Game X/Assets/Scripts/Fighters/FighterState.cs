@@ -1,12 +1,10 @@
 public struct FighterState
 {
-    public bool grounded;
-    public Facing facing;
     public CurrentAction action;
 
     public static FighterState create()
     {
-        return new FighterState { grounded = false, facing = Facing.Right, action = CurrentAction.NoAction };
+        return new FighterState { action = CurrentAction.NoAction };
     }
 }
 

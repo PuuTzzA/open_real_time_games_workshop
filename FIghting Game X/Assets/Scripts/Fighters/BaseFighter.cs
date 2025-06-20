@@ -3,16 +3,18 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEditor.VersionControl;
 
 public class BaseFighter : MonoBehaviour
 {
     public new Rigidbody2D rigidbody;
     public new Collider2D collider;
+    public SpriteRenderer sprite_renderer;
 
     public TextMeshPro debug_text;
 
     public FighterInput fighter_input;
-    public ActionBuffer action_buffer;
+    public EventBuffer event_buffer;
 
     public readonly FighterStats stats = FighterStats.DEFAULT;
 
@@ -20,6 +22,14 @@ public class BaseFighter : MonoBehaviour
     public int remaining_dash_frames;
 
     public FighterState state;
+
+    private bool _grounded;
+    private Facing _facing;
+
+    public ActionSet action_set;
+    public FighterAction current_action;
+
+    public Sprite[] idle_sprites;
 
     public bool grounded
     {
@@ -29,10 +39,24 @@ public class BaseFighter : MonoBehaviour
             {
                 available_air_jumps = stats.air_jumps;
             }
-            state.grounded = value;
+            _grounded = value;
         }
-        get { return state.grounded; }
+        get { return _grounded; }
     }
+
+    public Facing facing
+    {
+        set
+        {
+            _facing = value;
+
+            var scale = transform.localScale;
+            scale.x = (int)value;
+            transform.localScale = scale;
+        }
+        get { return _facing; }
+    }
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -41,17 +65,33 @@ public class BaseFighter : MonoBehaviour
 
         remaining_dash_frames = 0;
 
-        action_buffer = new ActionBuffer();
+        event_buffer = new EventBuffer();
 
-        action_buffer.register(FighterButton.Jump, jump_action);
-        action_buffer.register(FighterButton.Jab, jab_action);
-        action_buffer.register(FighterButton.Heavy, heavy_action);
-        action_buffer.register(FighterButton.Interact, interact_action);
-        action_buffer.register(FighterButton.Dash, dash_action);
-        action_buffer.register(FighterButton.Block, block_action);
-        action_buffer.register(FighterButton.Ult, ult_action);
+        event_buffer.register(FighterButton.Jump, jump_action);
+        event_buffer.register(FighterButton.Jab, jab_action);
+        event_buffer.register(FighterButton.Heavy, heavy_action);
+        event_buffer.register(FighterButton.Interact, interact_action);
+        event_buffer.register(FighterButton.Dash, dash_action);
+        event_buffer.register(FighterButton.Block, block_action);
+        event_buffer.register(FighterButton.Ult, ult_action);
 
         state = FighterState.create();
+
+        var idle = new FighterAction(this);
+        idle.factor = 0.04;
+        idle.loop = true;
+
+        StateFlags flags = StateFlags.CanJump | StateFlags.CanTurn | StateFlags.CanMove | StateFlags.Interruptable;
+
+        idle.frames = new ActionFrame[] {
+            new ActionFrame { flags = flags, sprite = idle_sprites[0] },
+            new ActionFrame { flags = flags, sprite = idle_sprites[1] },
+        };
+
+        action_set = new ActionSet();
+
+        action_set.idle = idle;
+        current_action = action_set.idle;
     }
 
     /*
@@ -73,9 +113,9 @@ public class BaseFighter : MonoBehaviour
 
     public void FixedUpdate()
     {
-        fighter_input.dispatch_events(action_buffer);
+        fighter_input.dispatch_events(event_buffer);
 
-        action_buffer.process();
+        event_buffer.process();
 
         
         /*
@@ -90,7 +130,7 @@ public class BaseFighter : MonoBehaviour
         if (remaining_dash_frames > 0)
         {
             rigidbody.gravityScale = 0.0f;
-            rigidbody.linearVelocityX = (int)state.facing * stats.ground_speed * 3.0f;
+            rigidbody.linearVelocityX = (int)facing * stats.ground_speed * 3.0f;
             rigidbody.linearVelocityY = 0.0f;
             remaining_dash_frames--;
         }
@@ -98,7 +138,7 @@ public class BaseFighter : MonoBehaviour
         {
             rigidbody.gravityScale = 1.0f;
             if (fighter_input.direction.x != 0)
-                state.facing = (Facing)fighter_input.direction.x;
+                facing = (Facing)fighter_input.direction.x;
             rigidbody.linearVelocityX = fighter_input.direction.x * stats.ground_speed;
         }
         /*
@@ -116,6 +156,11 @@ public class BaseFighter : MonoBehaviour
             rigidbody.linearVelocityX = Math.Clamp(rigidbody.linearVelocityX, -stats.horizontal_speed, stats.horizontal_speed);
         }
         */
+
+        current_action.next();
+        var frame = current_action.current_frame();
+
+        sprite_renderer.sprite = frame.sprite;
 
         List<ContactPoint2D> contacts = new List<ContactPoint2D>();
 
@@ -178,13 +223,13 @@ public class BaseFighter : MonoBehaviour
         return true;
     }
 
-    public bool heavy_action(ActionInput input)
+    public bool heavy_action(EventInput input)
     {
         state.action = CurrentAction.Heavy;
         return true;
     }
 
-    public bool interact_action(ActionInput input)
+    public bool interact_action(EventInput input)
     {
         return true;
     }
@@ -195,13 +240,13 @@ public class BaseFighter : MonoBehaviour
         return true;
     }
 
-    public bool block_action(ActionInput input)
+    public bool block_action(EventInput input)
     {
         state.action = input.pressed ? CurrentAction.Block : CurrentAction.NoAction;
         return true;
     }
 
-    public bool ult_action(ActionInput input)
+    public bool ult_action(EventInput input)
     {
         state.action = CurrentAction.Ult;
         return true;
