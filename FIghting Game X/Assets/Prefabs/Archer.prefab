@@ -305,3 +305,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 0}
+  collider: {fileID: 0}
+  sprite_renderer: {fileID: 0}
+  debug_text: {fileID: 0}
+  fighter_input: {fileID: 0}
+  available_air_jumps: 0
+  remaining_dash_frames: 0
+  idle_sprites: []
