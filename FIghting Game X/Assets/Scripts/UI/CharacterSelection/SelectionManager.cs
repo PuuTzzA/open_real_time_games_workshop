@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
+using System.Linq;
 
 public class SelectionManager : MonoBehaviour
 {
+    // All instances of SelectionManager
+    private static List<SelectionManager> _instances = new List<SelectionManager>();
+    
     [Header("Character Selection")]
     public GameObject[] characters;
-    public int selectedCharacter = 0;
+    public int selectedCharacter = -1;
     [SerializeField] private List<SpriteRenderer> _spriteRenderers;
     
     [Header("UI References")]
@@ -20,19 +24,33 @@ public class SelectionManager : MonoBehaviour
     public Button startGameButton;
     public Button backButton;
     public TMP_Text player_id;
+    public GameObject characterSelectionUI;
+    public GameObject readyIcon;
     
     // Input Actions
     private InputActionAsset InputActions;
     
+    // General attributes
     private PlayerInput _playerInput;
     private bool _isNavigatingCharacters = true;
+    private bool _isReady;
+    
+    // Block onSubmit to prevent accidentaly getting ready by pressing x to join
+    [SerializeField] private float submitBlockDuration = 0.3f;
+    private float _submitBlockUntil;
 
     private void Awake()
     {
         _playerInput = GetComponent<PlayerInput>();
-        InputActions = _playerInput.actions; // 🔥 FIX HERE
-        Debug.Log(_playerInput.user.id);
+        InputActions = _playerInput.actions;
+        
+        _instances.Add(this);
+        
         player_id.text = "Player" + _playerInput.user.id;
+        readyIcon.SetActive(false);
+        _isReady = false;
+
+        _submitBlockUntil = Time.time + submitBlockDuration;
     }
 
     void Start()
@@ -56,6 +74,8 @@ public class SelectionManager : MonoBehaviour
     
     public void OnNavigate(InputAction.CallbackContext context)
     {
+        if (_isReady) return;
+        Debug.Log("NAVIGATE");
         Vector2 navigate = context.ReadValue<Vector2>();
         
         // Handle horizontal navigation for character selection
@@ -87,27 +107,35 @@ public class SelectionManager : MonoBehaviour
     
     public void OnSubmit(InputAction.CallbackContext context)
     {
-        if (_isNavigatingCharacters)
-        {
-            StartGame();
-        }
-        else
-        {
-            // Let the UI system handle button presses
-            GameObject selected = EventSystem.current.currentSelectedGameObject;
-            if (selected != null)
-            {
-                Button button = selected.GetComponent<Button>();
-                if (button != null)
-                    button.onClick.Invoke();
-            }
-        }
+        if (Time.time < _submitBlockUntil || _isReady) return;
+        
+        Debug.Log("SUBMIT");
+        ToggleReady();
     }
     
     public void OnCancel(InputAction.CallbackContext context)
     {
+        Debug.Log("CANCEL");
+        if (_isReady)
+        {
+            ToggleReady();
+        }
         // Go back or exit
         GoBack();
+    }
+
+    private void ToggleReady()
+    {
+        _isReady = !_isReady;
+        readyIcon.SetActive(_isReady);
+        characterSelectionUI.SetActive(!_isReady);
+        startGameButton.interactable = !_isReady;
+
+        if (_isReady)
+        {
+            if (_instances.All(x => x._isReady))
+                SceneManager.LoadScene("CharacterController");
+        }
     }
     
     void ShowCharacter(int index)

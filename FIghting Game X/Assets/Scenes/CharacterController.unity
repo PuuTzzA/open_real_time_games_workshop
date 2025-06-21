@@ -771,7 +771,7 @@ MonoBehaviour:
   m_NotificationBehavior: 3
   m_MaxPlayerCount: 4
   m_AllowJoining: 1
-  m_JoinBehavior: 0
+  m_JoinBehavior: 2
   m_PlayerJoinedEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -832,6 +832,7 @@ MonoBehaviour:
   - {fileID: 113821349}
   - {fileID: 728400116}
   - {fileID: 0}
+  characterPrefabs: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

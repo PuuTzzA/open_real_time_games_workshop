@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class SplitPanel : MonoBehaviour
 {
     // List of instances running
-    static List<SplitPanel> instances = new List<SplitPanel>();
+    public static List<SplitPanel> instances = new List<SplitPanel>();
 
     [Tooltip("Drag the top-level UI RectTransform here")]
     [SerializeField] RectTransform panelRoot;
