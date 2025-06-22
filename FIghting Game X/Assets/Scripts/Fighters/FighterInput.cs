@@ -35,7 +35,6 @@ public class FighterInput : MonoBehaviour
         event_queue = new Queue<Event>();
     }
 
-    // Update is called once per frame
     public void dispatch_events(EventBuffer action_buffer)
     {
         foreach (var e in event_queue)

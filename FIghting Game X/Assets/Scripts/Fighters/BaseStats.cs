@@ -1,4 +1,4 @@
-public struct FighterStats
+public struct BaseStats
 {
     public float ground_speed;
     public float horizontal_speed;
@@ -7,7 +7,7 @@ public struct FighterStats
     public float jump_strength;
     public int air_jumps;
 
-    public static readonly FighterStats DEFAULT = new FighterStats
+    public static readonly BaseStats DEFAULT = new BaseStats
     {
         ground_speed = 7.0f,
         horizontal_speed = 7.0f,

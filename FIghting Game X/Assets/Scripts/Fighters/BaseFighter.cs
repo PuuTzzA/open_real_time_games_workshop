@@ -16,10 +16,11 @@ public class BaseFighter : MonoBehaviour
     public FighterInput fighter_input;
     public EventBuffer event_buffer;
 
-    public readonly FighterStats stats = FighterStats.DEFAULT;
+    public readonly BaseStats base_stats = BaseStats.DEFAULT;
 
     public int available_air_jumps;
     public int remaining_dash_frames;
+    public int remaining_flying_frames;
 
     public FighterState state;
 
@@ -37,7 +38,7 @@ public class BaseFighter : MonoBehaviour
         {
             if (value)
             {
-                available_air_jumps = stats.air_jumps;
+                available_air_jumps = base_stats.air_jumps;
             }
             _grounded = value;
         }
@@ -61,7 +62,7 @@ public class BaseFighter : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        available_air_jumps = stats.air_jumps;
+        available_air_jumps = base_stats.air_jumps;
 
         remaining_dash_frames = 0;
 
@@ -127,10 +128,15 @@ public class BaseFighter : MonoBehaviour
             remaining_dash_frames--;
         }
         else /**/
-        if (remaining_dash_frames > 0)
+
+        if(remaining_flying_frames > 0)
+        {
+            remaining_flying_frames--;
+        }
+        else if (remaining_dash_frames > 0)
         {
             rigidbody.gravityScale = 0.0f;
-            rigidbody.linearVelocityX = (int)facing * stats.ground_speed * 3.0f;
+            rigidbody.linearVelocityX = (int)facing * base_stats.ground_speed * 3.0f;
             rigidbody.linearVelocityY = 0.0f;
             remaining_dash_frames--;
         }
@@ -139,7 +145,7 @@ public class BaseFighter : MonoBehaviour
             rigidbody.gravityScale = 1.0f;
             if (fighter_input.direction.x != 0)
                 facing = (Facing)fighter_input.direction.x;
-            rigidbody.linearVelocityX = fighter_input.direction.x * stats.ground_speed;
+            rigidbody.linearVelocityX = fighter_input.direction.x * base_stats.ground_speed;
         }
         /*
         if (grounded)
@@ -192,12 +198,18 @@ public class BaseFighter : MonoBehaviour
 
     public void jump()
     {
-        rigidbody.linearVelocityY = stats.jump_strength;
+        rigidbody.linearVelocityY = base_stats.jump_strength;
     }
 
     public void dash()
     {
         remaining_dash_frames = 7;
+    }
+
+    public void knockback(Vector2 direction)
+    {
+        remaining_flying_frames = 60;
+        rigidbody.linearVelocity = direction;
     }
 
     public bool jump_action()
@@ -249,6 +261,8 @@ public class BaseFighter : MonoBehaviour
     public bool ult_action(EventInput input)
     {
         state.action = CurrentAction.Ult;
+        knockback(new Vector2(-(float)(int)facing, 2.0f) * 5.0f);
+        Debug.Log("knocking back");
         return true;
     }
 }

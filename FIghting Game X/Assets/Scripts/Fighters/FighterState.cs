@@ -21,5 +21,6 @@ public enum CurrentAction
     Heavy,
     Block,
     Dash,
-    Ult
+    Ult,
+    Flying,
 }
