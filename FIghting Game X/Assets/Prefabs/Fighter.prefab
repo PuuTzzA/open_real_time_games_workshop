@@ -315,10 +315,12 @@ MonoBehaviour:
   rigidbody: {fileID: 2365104996562313112}
   collider: {fileID: 1308529376015514807}
   sprite_renderer: {fileID: 7011030590116812469}
+  animator: {fileID: 6267119135332761388}
   debug_text: {fileID: 4063641928333382102}
   fighter_input: {fileID: 3269010414292953582}
   available_air_jumps: 0
   remaining_dash_frames: 0
+  remaining_flying_frames: 0
   idle_sprites:
   - {fileID: 1398893948369281781, guid: 71f95f6eb207cc1479db5e6fb700d7f9, type: 3}
   - {fileID: -5020514758781672274, guid: 2b497b84c1460104498d5e681138109c, type: 3}
@@ -561,7 +563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1205151367068812676, guid: 7db8847ed6479f5cdbcc91b2038ebdfe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.295
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1205151367068812676, guid: 7db8847ed6479f5cdbcc91b2038ebdfe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -599,16 +601,58 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sprite
       objectReference: {fileID: 0}
+    - target: {fileID: 8711834424833251530, guid: 7db8847ed6479f5cdbcc91b2038ebdfe, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711834424833251530, guid: 7db8847ed6479f5cdbcc91b2038ebdfe, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711834424833251530, guid: 7db8847ed6479f5cdbcc91b2038ebdfe, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1718229218854288143, guid: 7db8847ed6479f5cdbcc91b2038ebdfe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6267119135332761388}
   m_SourcePrefab: {fileID: 100100000, guid: 7db8847ed6479f5cdbcc91b2038ebdfe, type: 3}
 --- !u!4 &653873672574815227 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1205151367068812676, guid: 7db8847ed6479f5cdbcc91b2038ebdfe, type: 3}
   m_PrefabInstance: {fileID: 1849440596364349055}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1041149767670461808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1718229218854288143, guid: 7db8847ed6479f5cdbcc91b2038ebdfe, type: 3}
+  m_PrefabInstance: {fileID: 1849440596364349055}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6267119135332761388
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041149767670461808}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1499e06b74d8bbd4991bd8df98ffd585, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &7011030590116812469 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 8711834424833251530, guid: 7db8847ed6479f5cdbcc91b2038ebdfe, type: 3}

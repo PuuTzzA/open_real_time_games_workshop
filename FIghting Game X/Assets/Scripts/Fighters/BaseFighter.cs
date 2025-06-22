@@ -5,11 +5,41 @@ using UnityEngine.InputSystem;
 using TMPro;
 using UnityEditor.VersionControl;
 
+public enum FighterAction
+{
+    Idle,
+    Running,
+    Jump,
+    JabUp,
+    JabSide,
+    JabDown,
+    Falling,
+    Ult,
+    Emote,
+    BlockUp,
+    BlockSide,
+    HeavyUp,
+    HeavySide,
+    HeavyDown,
+    Dash,
+    Block,
+    KnockedBackLight,
+    KnockedBackHeavy,
+    Stunned
+}
+
+public enum Facing
+{
+    Left = -1,
+    Right = 1
+}
+
 public class BaseFighter : MonoBehaviour
 {
     public new Rigidbody2D rigidbody;
     public new Collider2D collider;
     public SpriteRenderer sprite_renderer;
+    public Animator animator;
 
     public TextMeshPro debug_text;
 
@@ -22,15 +52,24 @@ public class BaseFighter : MonoBehaviour
     public int remaining_dash_frames;
     public int remaining_flying_frames;
 
-    public FighterState state;
+    public FighterAction _current_action;
+    public FighterAction current_action
+    {
+        set {
+            if(_current_action != value)
+            {
+                _current_action = value;
+
+                animator.ResetTrigger("trigger");
+                animator.SetInteger("action", (int)value);
+                animator.SetTrigger("trigger");
+            }
+        }
+        get { return _current_action; }
+    }
 
     private bool _grounded;
     private Facing _facing;
-
-    public ActionSet action_set;
-    public FighterAction current_action;
-
-    public Sprite[] idle_sprites;
 
     public bool grounded
     {
@@ -76,23 +115,7 @@ public class BaseFighter : MonoBehaviour
         event_buffer.register(FighterButton.Block, block_action);
         event_buffer.register(FighterButton.Ult, ult_action);
 
-        state = FighterState.create();
-
-        var idle = new FighterAction(this);
-        idle.factor = 0.04;
-        idle.loop = true;
-
-        StateFlags flags = StateFlags.CanJump | StateFlags.CanTurn | StateFlags.CanMove | StateFlags.Interruptable;
-
-        idle.frames = new ActionFrame[] {
-            new ActionFrame { flags = flags, sprite = idle_sprites[0] },
-            new ActionFrame { flags = flags, sprite = idle_sprites[1] },
-        };
-
-        action_set = new ActionSet();
-
-        action_set.idle = idle;
-        current_action = action_set.idle;
+        current_action = FighterAction.Idle;
     }
 
     /*
@@ -163,10 +186,10 @@ public class BaseFighter : MonoBehaviour
         }
         */
 
-        current_action.next();
-        var frame = current_action.current_frame();
+        //current_action.next();
+        //var frame = current_action.current_frame();
 
-        sprite_renderer.sprite = frame.sprite;
+        //sprite_renderer.sprite = frame.sprite;
 
         List<ContactPoint2D> contacts = new List<ContactPoint2D>();
 
@@ -177,7 +200,7 @@ public class BaseFighter : MonoBehaviour
             handle_contact(contact);
         }
 
-        debug_text.SetText(state.action.ToString());
+        debug_text.SetText(current_action.ToString());
 
         grounded = false;
     }
@@ -229,15 +252,19 @@ public class BaseFighter : MonoBehaviour
     }
 
 
-    public bool jab_action()
+    public bool jab_action(EventInput input)
     {
-        state.action = CurrentAction.Jab;
+        if (!input.pressed) return true;
+
+        current_action = (FighterAction)((int)(FighterAction.JabSide) - input.direction.y);
         return true;
     }
 
     public bool heavy_action(EventInput input)
     {
-        state.action = CurrentAction.Heavy;
+        if (!input.pressed) return true;
+
+        current_action = (FighterAction)((int)(FighterAction.HeavySide) - input.direction.y);
         return true;
     }
 
@@ -254,13 +281,18 @@ public class BaseFighter : MonoBehaviour
 
     public bool block_action(EventInput input)
     {
-        state.action = input.pressed ? CurrentAction.Block : CurrentAction.NoAction;
+        if (!input.pressed) return true;
+
+        current_action = input.direction.y == 1 ? FighterAction.BlockUp : FighterAction.BlockSide;
         return true;
     }
 
     public bool ult_action(EventInput input)
     {
-        state.action = CurrentAction.Ult;
+        if (!input.pressed) return true;
+
+        current_action = FighterAction.Ult;
+
         knockback(new Vector2(-(float)(int)facing, 2.0f) * 5.0f);
         Debug.Log("knocking back");
         return true;
