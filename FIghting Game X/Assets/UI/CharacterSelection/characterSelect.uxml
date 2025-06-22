@@ -1,0 +1,17 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/CharacterSelection/characterselect.uss?fileID=7433441132597879392&amp;guid=ffda736b9fe1acc4c818ec13cf2c181c&amp;type=3#characterselect" />
+    <ui:VisualElement name="root" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="left" style="flex-grow: 1; width: 25%;" />
+        <ui:VisualElement name="characters" style="flex-grow: 1; width: 50%;">
+            <ui:VisualElement name="row1" style="flex-grow: 0; flex-direction: row; flex-shrink: 0; height: 50%; width: 100%;">
+                <ui:Button text="Button" name="char0" class="button-normal" />
+                <ui:Button text="Button" name="char1" class="button-normal" />
+            </ui:VisualElement>
+            <ui:VisualElement name="row2" style="flex-grow: 0; flex-direction: row; flex-shrink: 0; height: 50%; width: 100%;">
+                <ui:Button text="Button" name="char2" class="button-normal" />
+                <ui:Button text="Button" name="char3" class="button-normal" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="right" style="flex-grow: 1; width: 25%;" />
+    </ui:VisualElement>
+</ui:UXML>

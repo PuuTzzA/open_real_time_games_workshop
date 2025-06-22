@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2190708967257528992
 Transform:
   m_ObjectHideFlags: 0
@@ -305,3 +305,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 0}
+  collider: {fileID: 0}
+  sprite_renderer: {fileID: 0}
+  debug_text: {fileID: 0}
+  fighter_input: {fileID: 0}
+  available_air_jumps: 0
+  remaining_dash_frames: 0
+  idle_sprites: []
