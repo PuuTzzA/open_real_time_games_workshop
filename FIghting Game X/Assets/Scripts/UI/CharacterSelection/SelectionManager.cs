@@ -16,7 +16,7 @@ public class SelectionManager : MonoBehaviour
     [Header("Character Selection")]
     public GameObject[] characters;
     public int selectedCharacter = -1;
-    [SerializeField] private List<SpriteRenderer> _spriteRenderers;
+    [SerializeField] private List<SpriteRenderer> spriteRenderers;
     
     [Header("UI References")]
     public Image characterDisplayImage;
@@ -65,11 +65,27 @@ public class SelectionManager : MonoBehaviour
     private void OnEnable()
     {
         InputActions.FindActionMap("UI").Enable();
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
     
     private void OnDisable()
     {
         InputActions.FindActionMap("UI").Disable();
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+    
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "CharacterController")
+        {
+            // Hide selection UI
+            characterSelectionUI.SetActive(false);
+            readyIcon.SetActive(false);
+
+            // Disable the UI camera (if any)
+            var uiCam = GetComponentInChildren<Camera>();
+            if (uiCam != null) uiCam.enabled = false;
+        }
     }
     
     public void OnNavigate(InputAction.CallbackContext context)
@@ -126,6 +142,15 @@ public class SelectionManager : MonoBehaviour
 
     private void ToggleReady()
     {
+        if (!_isReady)
+        {
+            GameManager.PlayerChoices[_playerInput.playerIndex] = selectedCharacter;
+        }
+        else
+        {
+            GameManager.PlayerChoices[_playerInput.playerIndex] = -1;
+        }
+        
         _isReady = !_isReady;
         readyIcon.SetActive(_isReady);
         characterSelectionUI.SetActive(!_isReady);
@@ -147,7 +172,7 @@ public class SelectionManager : MonoBehaviour
         
         if (characterDisplayImage != null)
         {
-            SpriteRenderer spriteRenderer = _spriteRenderers[index].GetComponent<SpriteRenderer>();
+            SpriteRenderer spriteRenderer = spriteRenderers[index].GetComponent<SpriteRenderer>();
             characterDisplayImage.sprite = spriteRenderer.sprite;
             characterDisplayImage.color = spriteRenderer.color;
             characterNameText.text = characters[index].name;
@@ -164,13 +189,6 @@ public class SelectionManager : MonoBehaviour
     {
         selectedCharacter = (selectedCharacter - 1 + characters.Length) % characters.Length;
         ShowCharacter(selectedCharacter);
-    }
-    
-    public void StartGame()
-    {
-        PlayerPrefs.SetInt("SelectedCharacter", selectedCharacter);
-        PlayerPrefs.Save();
-        //SceneManager.LoadScene("CharacterController");
     }
     
     public void GoBack()
