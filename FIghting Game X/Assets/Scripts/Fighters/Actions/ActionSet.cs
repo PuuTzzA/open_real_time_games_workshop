@@ -1,0 +1,10 @@
+public class ActionSet
+{
+    public FighterAction idle;
+    public FighterAction run;
+    public FighterAction jump;
+    public FighterAction fall;
+    public FighterAction[] jab;
+    public FighterAction[] block;
+    public FighterAction dash;
+}
