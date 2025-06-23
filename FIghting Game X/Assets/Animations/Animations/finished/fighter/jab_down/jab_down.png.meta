@@ -1,0 +1,1419 @@
+fileFormatVersion: 2
+guid: a1bd4ee9bda91af4cb1f5b7e840caeab
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jab_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 51, y: 29}
+        - {x: 51, y: 63}
+        - {x: 44, y: 79}
+        - {x: 6, y: 79}
+        - {x: -7, y: 64}
+        - {x: -7, y: 58}
+        - {x: -6, y: 55}
+        - {x: -4, y: 53}
+        - {x: -7, y: 53}
+        - {x: -7, y: 27}
+        - {x: 10, y: 21}
+        - {x: 44, y: 21}
+      - - {x: 40, y: -102}
+        - {x: 40, y: -80}
+        - {x: 39, y: -64}
+        - {x: 30, y: -51}
+        - {x: 12.435898, y: -39.58333}
+        - {x: 39, y: -18}
+        - {x: 56, y: 14}
+        - {x: 56, y: 27}
+        - {x: 50, y: 27}
+        - {x: 48, y: 25}
+        - {x: 43, y: 14}
+        - {x: 38, y: 16}
+        - {x: 34, y: 15}
+        - {x: 18, y: 19}
+        - {x: 15, y: 18}
+        - {x: 13, y: 20}
+        - {x: 9, y: 21}
+        - {x: 2, y: 17}
+        - {x: -2, y: -12}
+        - {x: -2, y: -43}
+        - {x: 0, y: -44}
+        - {x: 6.4032288, y: -44}
+        - {x: 31, y: -105}
+        - {x: 38, y: -105}
+      - - {x: -27, y: -104}
+        - {x: 0, y: -82}
+        - {x: 0, y: -45}
+        - {x: -8, y: -45}
+        - {x: -37, y: -99}
+        - {x: -37, y: -105}
+        - {x: -30, y: -105}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab279fbfaa88ee45a55f17ab2510d98
+      internalID: 995647493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -2, y: -77}
+        - {x: 8.345657, y: -60.946396}
+        - {x: 18, y: -106}
+        - {x: 40, y: -106}
+        - {x: 40, y: -60}
+        - {x: 20.22754, y: -42.508987}
+        - {x: 56, y: 13}
+        - {x: 56, y: 29}
+        - {x: 55, y: 30}
+        - {x: 49, y: 30}
+        - {x: 43, y: 21}
+        - {x: 36, y: 7}
+        - {x: 54, y: 54}
+        - {x: 43, y: 80}
+        - {x: 0, y: 80}
+        - {x: -7, y: 62}
+        - {x: -3, y: 61}
+        - {x: -11, y: 61}
+        - {x: -37, y: 33}
+        - {x: -37, y: -106}
+        - {x: -29, y: -106}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fdf8f775fc5d44ba31b4f40777ac35
+      internalID: 845373587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 6, y: -39}
+        - {x: 32, y: -106}
+        - {x: 40, y: -106}
+        - {x: 40, y: -92}
+        - {x: 35, y: -65}
+        - {x: 11, y: -33}
+        - {x: 51, y: 22}
+        - {x: 51, y: 31}
+        - {x: 50, y: 33}
+        - {x: 42, y: 30}
+        - {x: 51, y: 43}
+        - {x: 51, y: 51}
+        - {x: 40, y: 87}
+        - {x: 2, y: 87}
+        - {x: -8, y: 77}
+        - {x: -10, y: 68}
+        - {x: -7, y: 67}
+        - {x: -4, y: 68}
+        - {x: -9, y: 64}
+        - {x: -34, y: 64}
+        - {x: -40, y: 57}
+        - {x: -40, y: 47}
+        - {x: -10, y: 14}
+        - {x: -7, y: 14}
+        - {x: -3, y: 17}
+        - {x: -4, y: 22}
+        - {x: -1, y: 14}
+        - {x: -3, y: -32}
+        - {x: -14, y: -32}
+        - {x: -37, y: -72}
+        - {x: -37, y: -106}
+        - {x: -21, y: -106}
+        - {x: -1, y: -57}
+        - {x: -1, y: -33}
+        - {x: 6, y: -33}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139c5001b64cec046bdc38847519d671
+      internalID: 434047583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 5, y: -18}
+        - {x: 5, y: 40}
+        - {x: 7, y: 40}
+        - {x: 7, y: 24}
+        - {x: 14, y: 2}
+        - {x: 19, y: 2}
+        - {x: 48, y: 20}
+        - {x: 48, y: 41}
+        - {x: 37.25, y: 41}
+        - {x: 39, y: 48}
+        - {x: 39, y: 93}
+        - {x: 26, y: 102}
+        - {x: -22, y: 102}
+        - {x: -22, y: 40}
+        - {x: -2.3333282, y: 40}
+        - {x: -3, y: 38}
+        - {x: -3, y: -24}
+        - {x: 3, y: -24}
+      - - {x: 5, y: 52}
+        - {x: 4, y: 53}
+        - {x: -1, y: 56}
+        - {x: -3, y: 64}
+        - {x: -5, y: 70}
+        - {x: -8, y: 78}
+        - {x: -10, y: 83}
+        - {x: -7, y: 87}
+        - {x: -1, y: 92}
+        - {x: 2, y: 92}
+        - {x: 3, y: 93}
+        - {x: 14, y: 93}
+        - {x: 15, y: 92}
+        - {x: 21, y: 91}
+        - {x: 29, y: 79}
+        - {x: 30, y: 78}
+        - {x: 30, y: 67}
+        - {x: 29, y: 66}
+        - {x: 28, y: 62}
+        - {x: 20, y: 53}
+        - {x: 18, y: 53}
+        - {x: 17, y: 52}
+      - - {x: -21, y: -90}
+        - {x: -12, y: -69}
+        - {x: -2, y: -34}
+        - {x: -2, y: -31}
+        - {x: -4, y: -30}
+        - {x: -9, y: -30}
+        - {x: -36, y: -93}
+        - {x: -36, y: -103}
+        - {x: -33, y: -106}
+        - {x: -30, y: -106}
+      - - {x: 40, y: -84}
+        - {x: 38, y: -71}
+        - {x: 10, y: -31}
+        - {x: 9, y: -31}
+        - {x: 6, y: -32}
+        - {x: 6, y: -40}
+        - {x: 29, y: -105}
+        - {x: 40, y: -105}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a9e4b7cb0824745b42e7225db54e1c
+      internalID: -1287890632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 35, y: 70}
+        - {x: 35, y: 109}
+        - {x: 19, y: 119}
+        - {x: -14, y: 119}
+        - {x: -17, y: 118}
+        - {x: -23, y: 101}
+        - {x: -23, y: 67}
+        - {x: -20, y: 58}
+        - {x: 13, y: 58}
+      - - {x: 4, y: 69}
+        - {x: -1, y: 73}
+        - {x: -6, y: 98}
+        - {x: -8, y: 107}
+        - {x: -5, y: 108}
+        - {x: 0, y: 109}
+        - {x: 7, y: 110}
+        - {x: 8, y: 109}
+        - {x: 13, y: 108}
+        - {x: 15, y: 108}
+        - {x: 20, y: 104}
+        - {x: 25, y: 97}
+        - {x: 26, y: 87}
+        - {x: 25, y: 86}
+        - {x: 23, y: 77}
+        - {x: 16, y: 70}
+        - {x: 14, y: 70}
+        - {x: 9, y: 69}
+        - {x: 5, y: 68}
+      - - {x: 6, y: -18}
+        - {x: 6, y: 50}
+        - {x: -2, y: 50}
+        - {x: -2, y: -17}
+        - {x: -1, y: -19}
+        - {x: 5, y: -19}
+      - - {x: 50, y: 31}
+        - {x: 50, y: 41}
+        - {x: 9, y: 41}
+        - {x: 9, y: 31}
+        - {x: 12, y: 8}
+        - {x: 17, y: 5}
+        - {x: 23, y: 5}
+      - - {x: -24, y: -101}
+        - {x: -3, y: -42}
+        - {x: -3, y: -31}
+        - {x: -8, y: -31}
+        - {x: -33, y: -72}
+        - {x: -36, y: -90}
+        - {x: -36, y: -105}
+        - {x: -30, y: -105}
+      - - {x: 40, y: -104}
+        - {x: 40, y: -101}
+        - {x: 37, y: -87}
+        - {x: 10, y: -31}
+        - {x: 8, y: -31}
+        - {x: 6, y: -32}
+        - {x: 6, y: -37}
+        - {x: 12, y: -58}
+        - {x: 32, y: -105}
+        - {x: 38, y: -105}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ffd1d32cc431541b3be4d86b41c172
+      internalID: -914011612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_5
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 48, y: -18}
+        - {x: 38, y: -7}
+        - {x: 29, y: -4}
+        - {x: 9, y: 7}
+        - {x: 6, y: 6}
+        - {x: 9, y: 15}
+        - {x: 18, y: 7}
+        - {x: 45, y: 10}
+        - {x: 56, y: 21}
+        - {x: 56, y: 51}
+        - {x: 47, y: 71}
+        - {x: 25, y: 71}
+        - {x: 12, y: 64}
+        - {x: 15, y: 60}
+        - {x: 9, y: 60}
+        - {x: -11, y: 115}
+        - {x: -19, y: 115}
+        - {x: -19, y: 63}
+        - {x: -13, y: -26}
+        - {x: -7, y: -45}
+        - {x: 14, y: -45}
+      - - {x: -1, y: 12}
+        - {x: 0, y: 11}
+        - {x: 1, y: 12}
+        - {x: -0.33332825, y: 10}
+      - - {x: 4, y: -90}
+        - {x: 4, y: -69}
+        - {x: 1, y: -49}
+        - {x: -3, y: -49}
+        - {x: -7, y: -50}
+        - {x: -37, y: -94}
+        - {x: -37, y: -105}
+        - {x: -24, y: -105}
+      - - {x: 45, y: -87}
+        - {x: 45, y: -57}
+        - {x: 13, y: -49}
+        - {x: 7, y: -49}
+        - {x: 6, y: -51}
+        - {x: 7, y: -54}
+        - {x: 32, y: -105}
+        - {x: 41, y: -105}
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb77f8d5a8945748a7498d7a53266d2
+      internalID: -1503640098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_6
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 40.33333, y: -105}
+        - {x: 42, y: -105}
+        - {x: 42.92592, y: -101.111115}
+        - {x: 69, y: -62}
+        - {x: 69, y: 2}
+        - {x: 47, y: 2}
+        - {x: 44, y: 0}
+        - {x: 41.647064, y: 2.0588226}
+        - {x: 41, y: 4}
+        - {x: 39.428574, y: 4}
+        - {x: 36, y: 7}
+        - {x: 24, y: 1}
+        - {x: 15, y: -7}
+        - {x: 10, y: -24}
+        - {x: 12, y: -36}
+        - {x: 10, y: -26}
+        - {x: -6, y: 76}
+        - {x: -11, y: 79}
+        - {x: -17, y: 79}
+        - {x: -25, y: 69}
+        - {x: -36, y: 9}
+        - {x: -36, y: -123}
+        - {x: -3, y: -143}
+        - {x: 15, y: -143}
+      - - {x: -10, y: -43}
+        - {x: -8, y: -41}
+        - {x: -8, y: -46}
+        - {x: -11, y: -49}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408de11086be40e4287923f96f9382c1
+      internalID: 1590826656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_7
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 45, y: -108}
+        - {x: 69, y: -59}
+        - {x: 69, y: -5}
+        - {x: 51, y: -4}
+        - {x: 42.93103, y: -5.793106}
+        - {x: 42, y: -3}
+        - {x: 40.28572, y: -3}
+        - {x: 38, y: 1}
+        - {x: 11, y: -12}
+        - {x: 10, y: -31}
+        - {x: 12, y: -43}
+        - {x: 9, y: -30}
+        - {x: -3, y: 53}
+        - {x: -7, y: 59}
+        - {x: -10, y: 59}
+        - {x: -12, y: 58}
+        - {x: -32, y: 36}
+        - {x: -36, y: 13}
+        - {x: -36, y: -126}
+        - {x: -7, y: -151}
+        - {x: 8, y: -151}
+      - - {x: -13, y: -52}
+        - {x: -13, y: -46}
+        - {x: -12, y: -45}
+        - {x: -8, y: -40}
+        - {x: -8, y: -51}
+        - {x: -11, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ec6cc48fa541da4181480348e0b4984
+      internalID: 254083854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_8
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 69, y: -56}
+        - {x: 69, y: -19}
+        - {x: 59, y: -7}
+        - {x: 47, y: -8}
+        - {x: 46, y: -11}
+        - {x: 47, y: -14}
+        - {x: 41, y: -6}
+        - {x: 21, y: 14}
+        - {x: -25, y: 14}
+        - {x: -36, y: -19}
+        - {x: -36, y: -137}
+        - {x: -12, y: -154}
+        - {x: 26, y: -154}
+      - - {x: -11, y: -56}
+        - {x: -14, y: -53}
+        - {x: -14, y: -46}
+        - {x: -11, y: -44}
+        - {x: -7, y: -41}
+        - {x: -7, y: -52}
+        - {x: -11, y: -57}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f1ad0422f4ed747a87b9dff8719cc7
+      internalID: -798590959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_9
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 9, y: -155}
+        - {x: 10, y: -96}
+        - {x: 6, y: -93}
+        - {x: 9, y: -66}
+        - {x: 16, y: -65}
+        - {x: 10, y: -66}
+        - {x: 9, y: -69}
+        - {x: 9, y: -74}
+        - {x: 33, y: -106}
+        - {x: 39, y: -106}
+        - {x: 52, y: -103}
+        - {x: 68, y: -58}
+        - {x: 68, y: -15}
+        - {x: 46, y: -8}
+        - {x: 44, y: -8}
+        - {x: 42, y: -10}
+        - {x: 44, y: -16}
+        - {x: 42, y: -11}
+        - {x: 41, y: -8}
+        - {x: -33, y: -8}
+        - {x: -36, y: -19}
+        - {x: -36, y: -134}
+        - {x: -1, y: -155}
+        - {x: 2, y: -156}
+        - {x: 8, y: -156}
+      - - {x: -14, y: -54}
+        - {x: -14, y: -46}
+        - {x: -11, y: -43}
+        - {x: -7, y: -41}
+        - {x: -7, y: -53}
+        - {x: -10, y: -57}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514c60cfd0e786b4e8df717ec74a7bc1
+      internalID: -1989817978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_10
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 10, y: -155}
+        - {x: 11, y: -105}
+        - {x: 7, y: -67}
+        - {x: 17, y: -65}
+        - {x: 20, y: -64}
+        - {x: 24, y: -63}
+        - {x: 11, y: -67}
+        - {x: 9, y: -69}
+        - {x: 9, y: -74}
+        - {x: 33, y: -106}
+        - {x: 58, y: -105}
+        - {x: 68, y: -70}
+        - {x: 68, y: -8}
+        - {x: 23, y: -8}
+        - {x: 17, y: -16}
+        - {x: 9, y: -36}
+        - {x: 9, y: -33}
+        - {x: -15, y: -8}
+        - {x: -16, y: -8}
+        - {x: -36, y: -60}
+        - {x: -36, y: -126}
+        - {x: -5, y: -156}
+        - {x: 9, y: -156}
+      - - {x: 32, y: -57}
+        - {x: 31, y: -56}
+        - {x: 26, y: -54}
+        - {x: 21, y: -49}
+        - {x: 19, y: -44}
+        - {x: 18, y: -43}
+        - {x: 18, y: -32}
+        - {x: 19, y: -31}
+        - {x: 21, y: -23}
+        - {x: 28, y: -17}
+        - {x: 31, y: -15}
+        - {x: 36, y: -15}
+        - {x: 40, y: -14}
+        - {x: 41, y: -15}
+        - {x: 45, y: -16}
+        - {x: 50, y: -18}
+        - {x: 56, y: -24}
+        - {x: 58, y: -27}
+        - {x: 58, y: -31}
+        - {x: 59, y: -32}
+        - {x: 59, y: -42}
+        - {x: 58, y: -43}
+        - {x: 54, y: -50}
+        - {x: 50, y: -55}
+        - {x: 46, y: -56}
+        - {x: 45, y: -57}
+      - - {x: -11, y: -57}
+        - {x: -14, y: -54}
+        - {x: -14, y: -46}
+        - {x: -11, y: -43}
+        - {x: -6, y: -41}
+        - {x: -6, y: -52}
+        - {x: -8, y: -54}
+        - {x: -8, y: -55}
+        - {x: -11, y: -58}
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf6f2819ed9f0e47a3e1dcd37a0a459
+      internalID: 823856269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_11
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 15, y: -104}
+        - {x: 6, y: -65}
+        - {x: 23, y: -63}
+        - {x: 12, y: -66}
+        - {x: 10, y: -68}
+        - {x: 11, y: -72}
+        - {x: 33, y: -107}
+        - {x: 41, y: -105}
+        - {x: 68, y: -74}
+        - {x: 68, y: -8}
+        - {x: 67, y: -6}
+        - {x: 43, y: -6}
+        - {x: 41, y: -12}
+        - {x: 41, y: -9}
+        - {x: 40, y: -6}
+        - {x: 29, y: -6}
+        - {x: 13, y: -17}
+        - {x: 10, y: -39}
+        - {x: 12, y: -46}
+        - {x: 15, y: -53}
+        - {x: 7, y: -39}
+        - {x: -2, y: -42}
+        - {x: 8, y: -37}
+        - {x: 8, y: -32}
+        - {x: 3, y: -27}
+        - {x: -29, y: -33}
+        - {x: -36, y: -57}
+        - {x: -36, y: -128}
+        - {x: -4, y: -153}
+        - {x: 9, y: -153}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457784c4074da78479b40f5d50826b68
+      internalID: -629244654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_12
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 34.063828, y: -105}
+        - {x: 41, y: -105}
+        - {x: 44.90419, y: -87.43114}
+        - {x: 68, y: -50}
+        - {x: 68, y: -7}
+        - {x: 51, y: -1}
+        - {x: 41, y: -1}
+        - {x: 39, y: -3}
+        - {x: 38, y: -1}
+        - {x: 21, y: -1}
+        - {x: 8, y: -21}
+        - {x: 11, y: -42}
+        - {x: 10, y: -36}
+        - {x: 8, y: -31}
+        - {x: 7, y: -31.642853}
+        - {x: 7, y: -29}
+        - {x: 6, y: -26}
+        - {x: -17, y: -11}
+        - {x: -37, y: -61}
+        - {x: -37, y: -111}
+        - {x: -5, y: -144}
+        - {x: 10, y: -144}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a859f0850ac1cf429004ab87549f250
+      internalID: 1800201741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_13
+      rect:
+        serializedVersion: 2
+        x: 6656
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 28.252945, y: -98.3575}
+        - {x: 32, y: -105}
+        - {x: 40, y: -105}
+        - {x: 42, y: -104}
+        - {x: 47, y: -85}
+        - {x: 47, y: -75.44444}
+        - {x: 67, y: -51}
+        - {x: 67, y: -4}
+        - {x: 51, y: 9}
+        - {x: 47, y: 9}
+        - {x: 41, y: 8}
+        - {x: 39, y: 5}
+        - {x: 42, y: 2}
+        - {x: 39, y: 4}
+        - {x: 38, y: 9}
+        - {x: 29, y: 9}
+        - {x: 8, y: -2}
+        - {x: 9, y: -22}
+        - {x: 11, y: -34}
+        - {x: 10, y: -32}
+        - {x: 8, y: -30}
+        - {x: 5, y: -31}
+        - {x: 9, y: -26}
+        - {x: 8, y: -17}
+        - {x: -25, y: -27}
+        - {x: -37, y: -77}
+        - {x: -37, y: -109}
+        - {x: -5, y: -128}
+        - {x: 4, y: -128}
+      - - {x: -10, y: -48}
+        - {x: -12, y: -45}
+        - {x: -12, y: -39}
+        - {x: -10, y: -36}
+        - {x: -7, y: -33}
+        - {x: -4, y: -31}
+        - {x: -3, y: -31}
+        - {x: -3, y: -33}
+        - {x: -4, y: -34}
+        - {x: -4, y: -37}
+        - {x: -5, y: -38}
+        - {x: -5, y: -42}
+        - {x: -6, y: -43}
+        - {x: -6, y: -46}
+        - {x: -7, y: -47}
+        - {x: -7, y: -51}
+      - - {x: -2, y: -88}
+        - {x: -2, y: -86}
+        - {x: -1.6666718, y: -88.33333}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d051ee0aff6a64e90fc3d57ef8b276
+      internalID: -300563074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_14
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -23, y: -23}
+        - {x: -38, y: -74}
+        - {x: -38, y: -110}
+        - {x: 13, y: -110}
+        - {x: 24.139542, y: -98.86046}
+        - {x: 30, y: -105}
+        - {x: 45, y: -105}
+        - {x: 46, y: -83}
+        - {x: 46, y: -77}
+        - {x: 66, y: -57}
+        - {x: 66, y: 6}
+        - {x: 51, y: 20}
+        - {x: 32, y: 20}
+        - {x: 31, y: 17}
+        - {x: 31.25, y: 16.25}
+        - {x: 29, y: 20}
+        - {x: 23, y: 20}
+        - {x: 5, y: 1}
+        - {x: 9, y: -15}
+        - {x: 9, y: -16}
+        - {x: 7, y: -12}
+      - - {x: 32.178345, y: 13.974518}
+        - {x: 39, y: 13}
+        - {x: 40, y: -31}
+      - - {x: -10, y: -40}
+        - {x: -10, y: -34}
+        - {x: -8, y: -31}
+        - {x: -5, y: -27.25}
+        - {x: -5, y: -29}
+        - {x: -6, y: -30}
+        - {x: -7, y: -37}
+        - {x: -9, y: -41}
+      - - {x: 21, y: -35}
+        - {x: 10, y: -32}
+        - {x: 11, y: -26}
+        - {x: 9, y: -24}
+        - {x: 6, y: -25}
+        - {x: 9, y: -19}
+        - {x: 17, y: -33}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308985e12ecc14a42babbf5820b4553f
+      internalID: -2002482795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_15
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 6.104553, y: -96.07239}
+        - {x: 19, y: -105}
+        - {x: 45, y: -105}
+        - {x: 45, y: -63}
+        - {x: 40, y: -55}
+        - {x: 9, y: -52.09375}
+        - {x: 9, y: -52}
+        - {x: 55, y: -24}
+        - {x: 64, y: -9}
+        - {x: 64, y: 23}
+        - {x: 58, y: 32}
+        - {x: 3, y: 32}
+        - {x: 3, y: 1}
+        - {x: 4, y: -4}
+        - {x: 4.800003, y: -5}
+        - {x: -19, y: -5}
+        - {x: -37, y: -38}
+        - {x: -37, y: -105}
+        - {x: -18, y: -105}
+      - - {x: 12, y: -19}
+        - {x: 10, y: -18}
+        - {x: 9, y: -18.25}
+        - {x: 9, y: -10.25}
+        - {x: 20, y: -24}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a776a042006238447a7ad20ddfc2112a
+      internalID: -49265356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_16
+      rect:
+        serializedVersion: 2
+        x: 8192
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 9, y: -6}
+        - {x: 10, y: -2}
+        - {x: 18, y: -11}
+        - {x: 26, y: -14}
+        - {x: 35, y: -15}
+        - {x: 35, y: -14}
+        - {x: 37, y: -14}
+        - {x: 33, y: -18}
+        - {x: 16, y: -31}
+        - {x: 15, y: -8}
+        - {x: 13, y: -6}
+        - {x: 11, y: -6}
+        - {x: 9, y: -8}
+      - - {x: 16, y: -47}
+        - {x: 62, y: -8}
+        - {x: 62, y: 27}
+        - {x: 45, y: 44}
+        - {x: 27, y: 44}
+        - {x: 16, y: 41}
+        - {x: 20, y: 35}
+        - {x: 18, y: 35}
+        - {x: 14, y: 44}
+        - {x: 10, y: 44}
+        - {x: -21, y: -12}
+        - {x: -37, y: -63}
+        - {x: -37, y: -106}
+        - {x: 43, y: -106}
+        - {x: 46, y: -61}
+        - {x: 9, y: -46}
+        - {x: 9, y: -42}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c77462a123b08e544bb7898cbecf9fbe
+      internalID: -1739869887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_17
+      rect:
+        serializedVersion: 2
+        x: 8704
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -23, y: -103}
+        - {x: 2, y: -93}
+        - {x: 8, y: -64}
+        - {x: 5, y: -50}
+        - {x: 5, y: -47}
+        - {x: 6, y: -50}
+        - {x: 31, y: -104}
+        - {x: 33, y: -106}
+        - {x: 41, y: -106}
+        - {x: 59, y: -73}
+        - {x: 59, y: 56}
+        - {x: 18, y: 56}
+        - {x: 12, y: 49}
+        - {x: 11, y: 44}
+        - {x: -6, y: 56}
+        - {x: -16, y: 56}
+        - {x: -37, y: -96}
+        - {x: -37, y: -106}
+        - {x: -33, y: -106}
+      - - {x: 8, y: 8}
+        - {x: 8, y: 9}
+        - {x: 9, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa95761b8ed2d747bdba6d08801ce19
+      internalID: -1584404029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_18
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -3, y: -97}
+        - {x: 15.827591, y: -70.013794}
+        - {x: 31, y: -104}
+        - {x: 34, y: -105}
+        - {x: 39, y: -105}
+        - {x: 41, y: -104}
+        - {x: 41, y: -59}
+        - {x: 39, y: -58}
+        - {x: 28.013336, y: -51.938385}
+        - {x: 56, y: 5}
+        - {x: 56, y: 13}
+        - {x: 46, y: 10}
+        - {x: 36, y: -3}
+        - {x: 16, y: 7}
+        - {x: 13, y: 6}
+        - {x: 13, y: 3}
+        - {x: 16, y: -11}
+        - {x: 8, y: -17}
+        - {x: 12, y: 7}
+        - {x: 12, y: 10}
+        - {x: 21, y: 6}
+        - {x: 38, y: 5}
+        - {x: 56, y: 20}
+        - {x: 56, y: 58}
+        - {x: 34, y: 65}
+        - {x: 12, y: 65}
+        - {x: 6, y: 56}
+        - {x: 7, y: 53}
+        - {x: 10, y: 52}
+        - {x: 13, y: 54}
+        - {x: 19, y: 15}
+        - {x: 8, y: 52}
+        - {x: -6, y: 65}
+        - {x: -37, y: -53}
+        - {x: -37, y: -106}
+        - {x: -31, y: -106}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e6a4cef0c1cb24f9ce13e39acadd48
+      internalID: -2015576785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_19
+      rect:
+        serializedVersion: 2
+        x: 9728
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0.43496704, y: -79.8974}
+        - {x: 29, y: -105}
+        - {x: 54, y: -105}
+        - {x: 54, y: 20}
+        - {x: 51.199997, y: 20}
+        - {x: 54, y: 24}
+        - {x: 54, y: 53}
+        - {x: 48, y: 72}
+        - {x: 11, y: 72}
+        - {x: 1, y: 62}
+        - {x: 1, y: 58}
+        - {x: 4, y: 56}
+        - {x: 1, y: 57}
+        - {x: -3, y: 56}
+        - {x: -5, y: 53}
+        - {x: -5, y: 28}
+        - {x: -2.1428528, y: 20}
+        - {x: -3, y: 20}
+        - {x: -4, y: 16}
+        - {x: -4, y: -45}
+        - {x: -6, y: -45}
+        - {x: -37, y: -92}
+        - {x: -37, y: -106}
+        - {x: -16, y: -106}
+      - - {x: 15.142853, y: 14}
+        - {x: 15.714279, y: 14}
+        - {x: 15, y: 13}
+        - {x: 14, y: 10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575974e4e0186b04285dac1f265a2a0e
+      internalID: 489329759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_20
+      rect:
+        serializedVersion: 2
+        x: 10240
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 40, y: -97}
+        - {x: 40, y: -81}
+        - {x: 39, y: -62}
+        - {x: 25, y: -49}
+        - {x: 11.75621, y: -40.48613}
+        - {x: 39, y: -15}
+        - {x: 55, y: 18}
+        - {x: 55, y: 23}
+        - {x: 53, y: 24}
+        - {x: 52, y: 24}
+        - {x: 52, y: 62}
+        - {x: 46, y: 77}
+        - {x: 8, y: 77}
+        - {x: -5, y: 60}
+        - {x: 3, y: 58}
+        - {x: -6, y: 60}
+        - {x: -6, y: 21}
+        - {x: -1.515152, y: 19.878784}
+        - {x: -2, y: 16}
+        - {x: -2, y: -44}
+        - {x: 6, y: -44}
+        - {x: 6, y: -45}
+        - {x: 31, y: -104}
+        - {x: 33, y: -105}
+        - {x: 39, y: -105}
+      - - {x: 40, y: 10}
+        - {x: 38, y: 12}
+        - {x: 17, y: 19}
+        - {x: 45.57895, y: 19}
+        - {x: 40, y: 7.222229}
+      - - {x: -5, y: -97}
+        - {x: 0, y: -80}
+        - {x: 0, y: -46}
+        - {x: -5, y: -46}
+        - {x: -15, y: -64}
+        - {x: -37, y: -98}
+        - {x: -37, y: -105}
+        - {x: -26, y: -105}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e764267d25b8ff645997f9ef0fa394f4
+      internalID: -126742515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jab_down_21
+      rect:
+        serializedVersion: 2
+        x: 10752
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 51, y: 29}
+        - {x: 51, y: 63}
+        - {x: 44, y: 79}
+        - {x: 6, y: 79}
+        - {x: -7, y: 64}
+        - {x: -7, y: 58}
+        - {x: -6, y: 55}
+        - {x: -4, y: 53}
+        - {x: -7, y: 53}
+        - {x: -7, y: 27}
+        - {x: 10, y: 21}
+        - {x: 44, y: 21}
+      - - {x: 40, y: -102}
+        - {x: 40, y: -80}
+        - {x: 39, y: -64}
+        - {x: 30, y: -51}
+        - {x: 12.435898, y: -39.58333}
+        - {x: 39, y: -18}
+        - {x: 56, y: 14}
+        - {x: 56, y: 27}
+        - {x: 50, y: 27}
+        - {x: 48, y: 25}
+        - {x: 43, y: 14}
+        - {x: 38, y: 16}
+        - {x: 34, y: 15}
+        - {x: 18, y: 19}
+        - {x: 15, y: 18}
+        - {x: 13, y: 20}
+        - {x: 9, y: 21}
+        - {x: 2, y: 17}
+        - {x: -2, y: -12}
+        - {x: -2, y: -43}
+        - {x: 0, y: -44}
+        - {x: 6.4032288, y: -44}
+        - {x: 31, y: -105}
+        - {x: 38, y: -105}
+      - - {x: -27, y: -104}
+        - {x: 0, y: -82}
+        - {x: 0, y: -45}
+        - {x: -8, y: -45}
+        - {x: -37, y: -99}
+        - {x: -37, y: -105}
+        - {x: -30, y: -105}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20ffafe2be150847849acb96d2846da
+      internalID: -687445571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3ddb7129be7d55a47a6411b5a91e1708
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      jab_down_0: 995647493
+      jab_down_1: 845373587
+      jab_down_10: 823856269
+      jab_down_11: -629244654
+      jab_down_12: 1800201741
+      jab_down_13: -300563074
+      jab_down_14: -2002482795
+      jab_down_15: -49265356
+      jab_down_16: -1739869887
+      jab_down_17: -1584404029
+      jab_down_18: -2015576785
+      jab_down_19: 489329759
+      jab_down_2: 434047583
+      jab_down_20: -126742515
+      jab_down_21: -687445571
+      jab_down_3: -1287890632
+      jab_down_4: -914011612
+      jab_down_5: -1503640098
+      jab_down_6: 1590826656
+      jab_down_7: 254083854
+      jab_down_8: -798590959
+      jab_down_9: -1989817978
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

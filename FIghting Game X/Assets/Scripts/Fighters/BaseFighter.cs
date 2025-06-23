@@ -4,12 +4,43 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
 using UnityEditor.VersionControl;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
+
+public enum FighterAction
+{
+    Idle,
+    Running,
+    Jump,
+    JabUp,
+    JabSide,
+    JabDown,
+    Falling,
+    Ult,
+    Emote,
+    BlockUp,
+    BlockSide,
+    HeavyUp,
+    HeavySide,
+    HeavyDown,
+    Dash,
+    KnockedBackLight,
+    KnockedBackHeavy,
+    Stunned
+}
+
+public enum Facing
+{
+    Left = -1,
+    Right = 1
+}
 
 public class BaseFighter : MonoBehaviour
 {
     public new Rigidbody2D rigidbody;
     public new Collider2D collider;
     public SpriteRenderer sprite_renderer;
+    public Transform sprite_transform;
+    public Animator animator;
 
     public TextMeshPro debug_text;
 
@@ -22,15 +53,27 @@ public class BaseFighter : MonoBehaviour
     public int remaining_dash_frames;
     public int remaining_flying_frames;
 
-    public FighterState state;
+    private FighterAction _current_action;
+
+    public void start_action(FighterAction action)
+    {
+        if (_current_action != action)
+        {
+            _current_action = action;
+
+            animator.ResetTrigger("trigger");
+            animator.SetInteger("action", (int)action);
+            animator.SetTrigger("trigger");
+        }
+    }
+    public FighterAction get_action() { return _current_action; }
 
     private bool _grounded;
     private Facing _facing;
 
-    public ActionSet action_set;
-    public FighterAction current_action;
+    public bool passive = true;
 
-    public Sprite[] idle_sprites;
+    public AnimationData animation_data;
 
     public bool grounded
     {
@@ -49,11 +92,12 @@ public class BaseFighter : MonoBehaviour
     {
         set
         {
+            if ((animation_data.flags & FighterFlags.CanTurn) == 0) return;
             _facing = value;
 
-            var scale = transform.localScale;
+            var scale = sprite_transform.localScale;
             scale.x = (int)value;
-            transform.localScale = scale;
+            sprite_transform.localScale = scale;
         }
         get { return _facing; }
     }
@@ -63,7 +107,7 @@ public class BaseFighter : MonoBehaviour
     void Start()
     {
         available_air_jumps = base_stats.air_jumps;
-
+        facing = Facing.Right;
         remaining_dash_frames = 0;
 
         event_buffer = new EventBuffer();
@@ -76,23 +120,7 @@ public class BaseFighter : MonoBehaviour
         event_buffer.register(FighterButton.Block, block_action);
         event_buffer.register(FighterButton.Ult, ult_action);
 
-        state = FighterState.create();
-
-        var idle = new FighterAction(this);
-        idle.factor = 0.04;
-        idle.loop = true;
-
-        StateFlags flags = StateFlags.CanJump | StateFlags.CanTurn | StateFlags.CanMove | StateFlags.Interruptable;
-
-        idle.frames = new ActionFrame[] {
-            new ActionFrame { flags = flags, sprite = idle_sprites[0] },
-            new ActionFrame { flags = flags, sprite = idle_sprites[1] },
-        };
-
-        action_set = new ActionSet();
-
-        action_set.idle = idle;
-        current_action = action_set.idle;
+        start_action(FighterAction.Idle);
     }
 
     /*
@@ -114,11 +142,21 @@ public class BaseFighter : MonoBehaviour
 
     public void FixedUpdate()
     {
+        List<ContactPoint2D> contacts = new List<ContactPoint2D>();
+
+        collider.GetContacts(contacts);
+
+        foreach (var contact in contacts)
+        {
+            handle_contact(contact);
+        }
+
+        check_animation_end();
+
         fighter_input.dispatch_events(event_buffer);
 
         event_buffer.process();
 
-        
         /*
         if (remaining_dash_frames > 10)
         {
@@ -129,7 +167,7 @@ public class BaseFighter : MonoBehaviour
         }
         else /**/
 
-        if(remaining_flying_frames > 0)
+        if (remaining_flying_frames > 0)
         {
             remaining_flying_frames--;
         }
@@ -143,41 +181,10 @@ public class BaseFighter : MonoBehaviour
         else
         {
             rigidbody.gravityScale = 1.0f;
-            if (fighter_input.direction.x != 0)
-                facing = (Facing)fighter_input.direction.x;
-            rigidbody.linearVelocityX = fighter_input.direction.x * base_stats.ground_speed;
-        }
-        /*
-        if (grounded)
-        {
-            rigidbody.linearVelocityX = discrete_x * stats.ground_speed;
-        }
-        else
-        {
-            float dist = discrete_x * stats.horizontal_speed - rigidbody.linearVelocityX;
-
-            float delta = (dist * 4.0f + 2.0f * Math.Sign(dist)) * Time.fixedDeltaTime;
-            rigidbody.linearVelocityX += delta;
-
-            rigidbody.linearVelocityX = Math.Clamp(rigidbody.linearVelocityX, -stats.horizontal_speed, stats.horizontal_speed);
-        }
-        */
-
-        current_action.next();
-        var frame = current_action.current_frame();
-
-        sprite_renderer.sprite = frame.sprite;
-
-        List<ContactPoint2D> contacts = new List<ContactPoint2D>();
-
-        collider.GetContacts(contacts);
-
-        foreach (var contact in contacts)
-        {
-            handle_contact(contact);
+            process_movement();
         }
 
-        debug_text.SetText(state.action.ToString());
+        debug_text.SetText(get_action().ToString());
 
         grounded = false;
     }
@@ -194,6 +201,41 @@ public class BaseFighter : MonoBehaviour
         {
             grounded = true;
         }
+    }
+
+    public void process_movement()
+    {
+        if (fighter_input.direction.x != 0)
+            facing = (Facing)fighter_input.direction.x;
+
+        if (grounded)
+        {
+            rigidbody.linearVelocityX = ((animation_data.flags & FighterFlags.CanMove) == 0) ? 0.0f : fighter_input.direction.x * base_stats.ground_speed;
+        }
+        else
+        {
+            float dist = ((animation_data.flags & FighterFlags.CanMove) == 0 ? 0.0f : fighter_input.direction.x) * base_stats.horizontal_speed - rigidbody.linearVelocityX;
+
+            float delta = (dist * 5.0f + 2.0f * Math.Sign(dist)) * Time.fixedDeltaTime;
+            rigidbody.linearVelocityX += delta;
+            rigidbody.linearVelocityX = Math.Clamp(rigidbody.linearVelocityX, -base_stats.horizontal_speed, base_stats.horizontal_speed);
+        }
+    }
+
+    public void check_animation_end()
+    {
+        if (animation_data.finished)
+        {
+            animation_data.finished = false;
+            on_animation_end();
+        }
+    }
+
+    public void on_animation_end()
+    {
+        passive = true;
+
+        start_action(FighterAction.Idle);
     }
 
     public void jump()
@@ -214,6 +256,7 @@ public class BaseFighter : MonoBehaviour
 
     public bool jump_action()
     {
+        if ((animation_data.flags & FighterFlags.CanJump) == 0) return false;
         if (grounded)
         {
             jump();
@@ -229,15 +272,21 @@ public class BaseFighter : MonoBehaviour
     }
 
 
-    public bool jab_action()
+    public bool jab_action(EventInput input)
     {
-        state.action = CurrentAction.Jab;
+        if (!input.pressed) return true;
+
+        if (get_action() == FighterAction.JabSide) return false;
+
+        start_action((FighterAction)((int)(FighterAction.JabSide) - input.direction.y));
         return true;
     }
 
     public bool heavy_action(EventInput input)
     {
-        state.action = CurrentAction.Heavy;
+        if (!input.pressed) return true;
+
+        start_action((FighterAction)((int)(FighterAction.HeavySide) - input.direction.y));
         return true;
     }
 
@@ -254,13 +303,23 @@ public class BaseFighter : MonoBehaviour
 
     public bool block_action(EventInput input)
     {
-        state.action = input.pressed ? CurrentAction.Block : CurrentAction.NoAction;
+        if (!input.pressed)
+        {
+            if (get_action() == FighterAction.BlockSide || get_action() == FighterAction.BlockUp)
+                on_animation_end();
+            return true;
+        }
+
+        start_action(input.direction.y == 1 ? FighterAction.BlockUp : FighterAction.BlockSide);
         return true;
     }
 
     public bool ult_action(EventInput input)
     {
-        state.action = CurrentAction.Ult;
+        if (!input.pressed) return true;
+
+        start_action(FighterAction.KnockedBackLight);
+
         knockback(new Vector2(-(float)(int)facing, 2.0f) * 5.0f);
         Debug.Log("knocking back");
         return true;
