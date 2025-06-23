@@ -71,6 +71,8 @@ public class BaseFighter : MonoBehaviour
     private bool _grounded;
     private Facing _facing;
 
+    public AnimationData animation_data;
+
     public bool grounded
     {
         set
@@ -88,6 +90,7 @@ public class BaseFighter : MonoBehaviour
     {
         set
         {
+            if ((animation_data.flags & FighterFlags.CanTurn) == 0) return;
             _facing = value;
 
             var scale = transform.localScale;
