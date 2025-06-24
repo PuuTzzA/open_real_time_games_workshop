@@ -1,0 +1,19 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="health_bar" src="project://database/Assets/UI/health_bar.uxml?fileID=9197481963319205126&amp;guid=61c4071b3d0331c48871022523826000&amp;type=3#health_bar" />
+    <ui:VisualElement name="root" style="flex-grow: 0; width: 100%; height: 100%; align-content: auto; justify-content: flex-end; flex-shrink: 0;">
+        <ui:VisualElement name="bottombar" style="flex-grow: 0; width: 100%; height: 20%; flex-shrink: 1; flex-direction: row; align-self: auto; justify-content: space-evenly; padding-top: 0; padding-right: 0; padding-bottom: 2%; padding-left: 0; margin-bottom: 0; margin-top: 0; margin-right: 0; margin-left: 0;">
+            <SquareElement enabled="true" name="SquareElement0" style="height: 100%;">
+                <ui:Instance template="health_bar" style="width: 100%; height: 100%;" />
+            </SquareElement>
+            <SquareElement name="SquareElement1" style="height: 100%;">
+                <ui:Instance template="health_bar" style="width: 100%; height: 100%;" />
+            </SquareElement>
+            <SquareElement name="SquareElement2" style="height: 100%;">
+                <ui:Instance template="health_bar" style="width: 100%; height: 100%;" />
+            </SquareElement>
+            <SquareElement name="SquareElement3" style="height: 100%;">
+                <ui:Instance template="health_bar" style="width: 100%; height: 100%;" />
+            </SquareElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
