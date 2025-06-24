@@ -130,7 +130,6 @@ public class BaseFighter : MonoBehaviour
         event_buffer.register(EventType.Heavy, heavy_action);
         event_buffer.register(EventType.Interact, interact_action);
         event_buffer.register(EventType.Dash, dash_action);
-        event_buffer.register(EventType.Direction, dash_action);
         event_buffer.register(EventType.Block, block_action);
         event_buffer.register(EventType.Ult, ult_action);
 
@@ -313,12 +312,8 @@ public class BaseFighter : MonoBehaviour
 
     public bool dash_action(EventData input)
     {
-        if(input.type == EventType.Direction)
-        {
-
-        }
         if(!input.pressed) return true;
-        //set_facing(input.direction.x);
+        set_facing(input.direction.x);
         dash((int)facing * base_stats.dash_factor * base_stats.ground_speed);
         return true;
     }

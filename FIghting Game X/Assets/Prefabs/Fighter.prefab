@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 3710881790213607873}
   m_Layer: 0
   m_Name: Hitbox
-  m_TagString: Untagged
+  m_TagString: Hitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 3784939749288748778}
   - component: {fileID: 8266158835667872492}
   - component: {fileID: 4792304623778786022}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fighter
   m_TagString: Fighter
   m_Icon: {fileID: 0}
