@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 4792304623778786022}
   m_Layer: 0
   m_Name: Fighter
-  m_TagString: Untagged
+  m_TagString: Fighter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -529,9 +529,11 @@ MonoBehaviour:
   fighter_input: {fileID: 8266158835667872492}
   available_air_jumps: 0
   remaining_dash_frames: 0
+  dash_speed: 0
   remaining_flying_frames: 0
   passive: 1
   animation_data: {fileID: 1333684296444455915}
+  facing: 0
 --- !u!114 &8266158835667872492
 MonoBehaviour:
   m_ObjectHideFlags: 0

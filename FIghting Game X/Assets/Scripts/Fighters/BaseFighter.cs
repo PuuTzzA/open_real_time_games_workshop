@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 using TMPro;
 using UnityEditor.VersionControl;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
+using static UnityEngine.Rendering.DebugUI;
 
 public enum FighterAction
 {
@@ -51,6 +52,7 @@ public class BaseFighter : MonoBehaviour
 
     public int available_air_jumps;
     public int remaining_dash_frames;
+    public float dash_speed;
     public int remaining_flying_frames;
 
     private FighterAction _current_action;
@@ -69,7 +71,6 @@ public class BaseFighter : MonoBehaviour
     public FighterAction get_action() { return _current_action; }
 
     private bool _grounded;
-    private Facing _facing;
 
     public bool passive = true;
 
@@ -88,18 +89,30 @@ public class BaseFighter : MonoBehaviour
         get { return _grounded; }
     }
 
-    public Facing facing
-    {
-        set
-        {
-            if ((animation_data.flags & FighterFlags.CanTurn) == 0) return;
-            _facing = value;
+    public Facing facing;
 
+    void set_facing(int dir)
+    {
+        if ((animation_data.flags & FighterFlags.CanTurn) == 0) return;
+
+        if (dir == 1 || dir == -1)
+        {
+            facing = (Facing)dir;
             var scale = sprite_transform.localScale;
-            scale.x = (int)value;
+            scale.x = dir;
             sprite_transform.localScale = scale;
+
         }
-        get { return _facing; }
+    }
+
+    void set_facing(Facing dir)
+    {
+        if ((animation_data.flags & FighterFlags.CanTurn) == 0) return;
+
+        facing = dir;
+        var scale = sprite_transform.localScale;
+        scale.x = (int)dir;
+        sprite_transform.localScale = scale;
     }
 
 
@@ -107,18 +120,19 @@ public class BaseFighter : MonoBehaviour
     void Start()
     {
         available_air_jumps = base_stats.air_jumps;
-        facing = Facing.Right;
+        set_facing(Facing.Right);
         remaining_dash_frames = 0;
 
-        event_buffer = new EventBuffer();
+        event_buffer = fighter_input.event_buffer;
 
-        event_buffer.register(FighterButton.Jump, jump_action);
-        event_buffer.register(FighterButton.Jab, jab_action);
-        event_buffer.register(FighterButton.Heavy, heavy_action);
-        event_buffer.register(FighterButton.Interact, interact_action);
-        event_buffer.register(FighterButton.Dash, dash_action);
-        event_buffer.register(FighterButton.Block, block_action);
-        event_buffer.register(FighterButton.Ult, ult_action);
+        event_buffer.register(EventType.Jump, jump_action);
+        event_buffer.register(EventType.Jab, jab_action);
+        event_buffer.register(EventType.Heavy, heavy_action);
+        event_buffer.register(EventType.Interact, interact_action);
+        event_buffer.register(EventType.Dash, dash_action);
+        event_buffer.register(EventType.Direction, dash_action);
+        event_buffer.register(EventType.Block, block_action);
+        event_buffer.register(EventType.Ult, ult_action);
 
         start_action(FighterAction.Idle);
     }
@@ -153,7 +167,7 @@ public class BaseFighter : MonoBehaviour
 
         check_animation_end();
 
-        fighter_input.dispatch_events(event_buffer);
+        fighter_input.dispatch_events();
 
         event_buffer.process();
 
@@ -174,7 +188,7 @@ public class BaseFighter : MonoBehaviour
         else if (remaining_dash_frames > 0)
         {
             rigidbody.gravityScale = 0.0f;
-            rigidbody.linearVelocityX = (int)facing * base_stats.ground_speed * 3.0f;
+            rigidbody.linearVelocityX = dash_speed;
             rigidbody.linearVelocityY = 0.0f;
             remaining_dash_frames--;
         }
@@ -205,8 +219,7 @@ public class BaseFighter : MonoBehaviour
 
     public void process_movement()
     {
-        if (fighter_input.direction.x != 0)
-            facing = (Facing)fighter_input.direction.x;
+        set_facing(fighter_input.direction.x);
 
         if (grounded)
         {
@@ -243,14 +256,15 @@ public class BaseFighter : MonoBehaviour
         rigidbody.linearVelocityY = base_stats.jump_strength;
     }
 
-    public void dash()
+    public void dash(float speed)
     {
+        dash_speed = speed;
         remaining_dash_frames = 7;
     }
 
     public void knockback(Vector2 direction)
     {
-        remaining_flying_frames = 60;
+        remaining_flying_frames = 4;
         rigidbody.linearVelocity = direction;
     }
 
@@ -272,36 +286,44 @@ public class BaseFighter : MonoBehaviour
     }
 
 
-    public bool jab_action(EventInput input)
+    public bool jab_action(EventData input)
     {
         if (!input.pressed) return true;
 
+        set_facing(input.direction.x);
         if (get_action() == FighterAction.JabSide) return false;
 
         start_action((FighterAction)((int)(FighterAction.JabSide) - input.direction.y));
         return true;
     }
 
-    public bool heavy_action(EventInput input)
+    public bool heavy_action(EventData input)
     {
         if (!input.pressed) return true;
 
+        set_facing(input.direction.x);
         start_action((FighterAction)((int)(FighterAction.HeavySide) - input.direction.y));
         return true;
     }
 
-    public bool interact_action(EventInput input)
+    public bool interact_action(EventData input)
     {
         return true;
     }
 
-    public bool dash_action()
+    public bool dash_action(EventData input)
     {
-        dash();
+        if(input.type == EventType.Direction)
+        {
+
+        }
+        if(!input.pressed) return true;
+        //set_facing(input.direction.x);
+        dash((int)facing * base_stats.dash_factor * base_stats.ground_speed);
         return true;
     }
 
-    public bool block_action(EventInput input)
+    public bool block_action(EventData input)
     {
         if (!input.pressed)
         {
@@ -310,17 +332,18 @@ public class BaseFighter : MonoBehaviour
             return true;
         }
 
+        set_facing(input.direction.x);
         start_action(input.direction.y == 1 ? FighterAction.BlockUp : FighterAction.BlockSide);
         return true;
     }
 
-    public bool ult_action(EventInput input)
+    public bool ult_action(EventData input)
     {
         if (!input.pressed) return true;
 
         start_action(FighterAction.KnockedBackLight);
 
-        knockback(new Vector2(-(float)(int)facing, 2.0f) * 5.0f);
+        knockback(new Vector2(-(float)(int)facing, 0.0f) * 5.0f);
         Debug.Log("knocking back");
         return true;
     }

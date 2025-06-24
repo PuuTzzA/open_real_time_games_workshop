@@ -2,8 +2,9 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public struct EventInput
+public struct EventData
 {
+    public EventType type;
     public bool pressed;
     public Vector2Int direction;
 }
@@ -12,14 +13,12 @@ public class FighterEvent
 {
     public const int DEFAULT_TTL = 8;
 
-    public FighterButton button;
-    public EventInput input;
+    public EventData data;
     public int ttl;
 
-    public FighterEvent(FighterButton button, EventInput input, int ttl = DEFAULT_TTL)
+    public FighterEvent(EventData data, int ttl = DEFAULT_TTL)
     {
-        this.button = button;
-        this.input = input;
+        this.data = data;
         this.ttl = ttl;
     }
 }
@@ -29,23 +28,27 @@ public class EventBuffer
 {
     private List<FighterEvent> buffered_actions;
 
-    private Func<EventInput, bool>[] callbacks;
+    private List<Func<EventData, bool>>[] callbacks;
 
     public EventBuffer()
     {
         buffered_actions = new List<FighterEvent>();
 
-        callbacks = new Func<EventInput, bool>[Enum.GetValues(typeof(FighterButton)).Length];
+        callbacks = new List<Func<EventData, bool>>[Enum.GetValues(typeof(EventType)).Length];
+        for(int i = 0; i < callbacks.Length; i++)
+        {
+            callbacks[i] = new List<Func<EventData, bool>>();
+        }
     }
 
-    public void register(FighterButton button, Func<EventInput, bool> callback)
+    public void register(EventType button, Func<EventData, bool> callback)
     {
-        callbacks[(int)button] = callback;
+        callbacks[(int)button].Add(callback);
     }
 
-    public void register(FighterButton button, Func<bool> callback)
+    public void register(EventType button, Func<bool> callback)
     {
-        callbacks[(int)button] = input =>  input.pressed ? callback() : true;
+        callbacks[(int)button].Add(input =>  input.pressed ? callback() : true);
     }
 
 
@@ -61,7 +64,8 @@ public class EventBuffer
 
         foreach (var action in buffered_actions)
         {
-            if(action.ttl-- > 0 && !callbacks[(int)action.button](action.input))
+            foreach(var callback in callbacks[(int)action.data.type])
+            if(action.ttl-- > 0 && !callback(action.data))
                 new_buffer.Add(action);
         }
 
