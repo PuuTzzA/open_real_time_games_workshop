@@ -16,7 +16,6 @@ public class SelectionManager : MonoBehaviour
     [Header("Character Selection")]
     public GameObject[] characters;
     public int selectedCharacter = -1;
-    [SerializeField] private List<SpriteRenderer> spriteRenderers;
     
     [Header("UI References")]
     public Image characterDisplayImage;
@@ -172,7 +171,7 @@ public class SelectionManager : MonoBehaviour
         
         if (characterDisplayImage != null)
         {
-            SpriteRenderer spriteRenderer = spriteRenderers[index].GetComponent<SpriteRenderer>();
+            SpriteRenderer spriteRenderer = characters[index].GetComponentInChildren<SpriteRenderer>();
             characterDisplayImage.sprite = spriteRenderer.sprite;
             characterDisplayImage.color = spriteRenderer.color;
             characterNameText.text = characters[index].name;
