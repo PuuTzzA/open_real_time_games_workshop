@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 3710881790213607873}
   m_Layer: 0
   m_Name: Hitbox
-  m_TagString: Untagged
+  m_TagString: Hitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -259,9 +259,10 @@ GameObject:
   - component: {fileID: 3784939749288748778}
   - component: {fileID: 8266158835667872492}
   - component: {fileID: 4792304623778786022}
-  m_Layer: 0
+  - component: {fileID: 1556262320957081972}
+  m_Layer: 6
   m_Name: Fighter
-  m_TagString: Untagged
+  m_TagString: Fighter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -276,7 +277,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.76991, y: 1.712, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7005465704683545578}
@@ -523,14 +524,10 @@ MonoBehaviour:
   rigidbody: {fileID: 6480166069264356360}
   collider: {fileID: 4792304623778786022}
   sprite_renderer: {fileID: 7618947707530398012}
-  animator: {fileID: 4497933916085059567}
+  sprite_transform: {fileID: 7005465704683545578}
   debug_text: {fileID: 7214940668690671881}
   fighter_input: {fileID: 8266158835667872492}
-  available_air_jumps: 0
-  remaining_dash_frames: 0
-  remaining_flying_frames: 0
-  _current_action: 0
-  animation_data: {fileID: 0}
+  state: {fileID: 1556262320957081972}
 --- !u!114 &8266158835667872492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,9 +574,29 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.12486553}
-  m_Size: {x: 0.3646407, y: 1.7668571}
+  m_Offset: {x: 0, y: -0.07852185}
+  m_Size: {x: 0.45, y: 1.8790307}
   m_Direction: 0
+--- !u!114 &1556262320957081972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433043207104148075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433299da7bac5e94684e72ecc7b78f37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 4497933916085059567}
+  sprite_transform: {fileID: 7005465704683545578}
+  available_air_jumps: 0
+  remaining_dash_frames: 0
+  dash_speed: 0
+  remaining_flying_frames: 0
+  animation_data: {fileID: 1333684296444455915}
+  passive: 1
 --- !u!1 &7739751719961853797
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,6 +610,7 @@ GameObject:
   - component: {fileID: 7618947707530398012}
   - component: {fileID: 6148420401035353989}
   - component: {fileID: 6625725068723689011}
+  - component: {fileID: 1333684296444455915}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -780,3 +798,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8658bef394bfb40419ca280ce5f2ef41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1333684296444455915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7739751719961853797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79f6d0ac487a644098d9715d996a160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flags: -1
+  finished: 0
