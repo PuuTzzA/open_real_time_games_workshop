@@ -259,6 +259,7 @@ GameObject:
   - component: {fileID: 3784939749288748778}
   - component: {fileID: 8266158835667872492}
   - component: {fileID: 4792304623778786022}
+  - component: {fileID: 1556262320957081972}
   m_Layer: 6
   m_Name: Fighter
   m_TagString: Fighter
@@ -524,16 +525,9 @@ MonoBehaviour:
   collider: {fileID: 4792304623778786022}
   sprite_renderer: {fileID: 7618947707530398012}
   sprite_transform: {fileID: 7005465704683545578}
-  animator: {fileID: 4497933916085059567}
   debug_text: {fileID: 7214940668690671881}
   fighter_input: {fileID: 8266158835667872492}
-  available_air_jumps: 0
-  remaining_dash_frames: 0
-  dash_speed: 0
-  remaining_flying_frames: 0
-  passive: 1
-  animation_data: {fileID: 1333684296444455915}
-  facing: 0
+  state: {fileID: 1556262320957081972}
 --- !u!114 &8266158835667872492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -583,6 +577,26 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.07852185}
   m_Size: {x: 0.45, y: 1.8790307}
   m_Direction: 0
+--- !u!114 &1556262320957081972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433043207104148075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433299da7bac5e94684e72ecc7b78f37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 4497933916085059567}
+  sprite_transform: {fileID: 7005465704683545578}
+  available_air_jumps: 0
+  remaining_dash_frames: 0
+  dash_speed: 0
+  remaining_flying_frames: 0
+  animation_data: {fileID: 1333684296444455915}
+  passive: 1
 --- !u!1 &7739751719961853797
 GameObject:
   m_ObjectHideFlags: 0
