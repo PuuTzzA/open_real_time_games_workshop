@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 574ed61458106be44a93803e52fa5562
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4127111974934521281
+    second: QTE_FINISH_HIM_0
+  - first:
+      213: -1250722797311957348
+    second: QTE_FINISH_HIM_1
+  - first:
+      213: -1395994638910757012
+    second: QTE_FINISH_HIM_2
+  - first:
+      213: -9087348358659521201
+    second: QTE_FINISH_HIM_3
+  - first:
+      213: -6614991372225966060
+    second: QTE_FINISH_HIM_4
+  - first:
+      213: -2883818230870202523
+    second: QTE_FINISH_HIM_5
+  - first:
+      213: -3157377972201488105
+    second: QTE_FINISH_HIM_6
+  - first:
+      213: 3567476075323398859
+    second: QTE_FINISH_HIM_7
+  - first:
+      213: 6250382479893626002
+    second: QTE_FINISH_HIM_8
+  - first:
+      213: -2525982594614626215
+    second: QTE_FINISH_HIM_9
+  - first:
+      213: -2731851502580965456
+    second: QTE_FINISH_HIM_10
+  - first:
+      213: 1913160485176724234
+    second: QTE_FINISH_HIM_11
+  - first:
+      213: -5514656923303911077
+    second: QTE_FINISH_HIM_12
+  - first:
+      213: 1081209023113539996
+    second: QTE_FINISH_HIM_13
+  - first:
+      213: -713584423193510503
+    second: QTE_FINISH_HIM_14
+  - first:
+      213: 6627307142411670386
+    second: QTE_FINISH_HIM_15
+  - first:
+      213: 3730580754425405422
+    second: QTE_FINISH_HIM_16
+  - first:
+      213: 4826952189832673063
+    second: QTE_FINISH_HIM_17
+  - first:
+      213: 9090837309169899354
+    second: QTE_FINISH_HIM_18
+  - first:
+      213: -6458411286889892949
+    second: QTE_FINISH_HIM_19
+  - first:
+      213: -4025490023724943993
+    second: QTE_FINISH_HIM_20
+  - first:
+      213: -4532190214263287652
+    second: QTE_FINISH_HIM_21
+  - first:
+      213: 3051791774455862867
+    second: QTE_FINISH_HIM_22
+  - first:
+      213: 7806844822135223650
+    second: QTE_FINISH_HIM_23
+  - first:
+      213: -892279869088813019
+    second: QTE_FINISH_HIM_24
+  - first:
+      213: 615432210920739827
+    second: QTE_FINISH_HIM_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_0
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 439
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c5ab3e8972764930800000000000000
+      internalID: 4127111974934521281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 276
+        width: 79
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c96ecb11e3a84aee0800000000000000
+      internalID: -1250722797311957348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_2
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 417
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c67ef5fa54e60ace0800000000000000
+      internalID: -1395994638910757012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_3
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 268
+        width: 88
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f45cedb80d043e180800000000000000
+      internalID: -9087348358659521201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_4
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 423
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 410923a0564d234a0800000000000000
+      internalID: -6614991372225966060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 264
+        width: 129
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 567af20299e9af7d0800000000000000
+      internalID: -2883818230870202523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_6
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 281
+        width: 42
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7118949767dbe24d0800000000000000
+      internalID: -3157377972201488105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_7
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 278
+        width: 79
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca1b56d698328130800000000000000
+      internalID: 3567476075323398859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_8
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 356
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c7260efb1ddb650800000000000000
+      internalID: 6250382479893626002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 69
+        width: 117
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958fc23a638e1fcd0800000000000000
+      internalID: -2525982594614626215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_10
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 114
+        width: 45
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf5b894883861ad0800000000000000
+      internalID: -2731851502580965456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_11
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 267
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0bc54d2359ec8a10800000000000000
+      internalID: 1913160485176724234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_12
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 103
+        width: 126
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5162540fb00873b0800000000000000
+      internalID: -5514656923303911077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_13
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 272
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9131a6c0e9310f00800000000000000
+      internalID: 1081209023113539996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_14
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 152
+        width: 55
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99d7c427fb6d816f0800000000000000
+      internalID: -713584423193510503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_15
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 236
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2735bd8abbce8fb50800000000000000
+      internalID: 6627307142411670386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_16
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 204
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef5f614e6fa5c330800000000000000
+      internalID: 3730580754425405422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_17
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 197
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72735ce3177ccf240800000000000000
+      internalID: 4826952189832673063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_18
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 170
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5790fb0e54292e70800000000000000
+      internalID: 9090837309169899354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_19
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 133
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3fd87172d1f56a0800000000000000
+      internalID: -6458411286889892949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_20
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 122
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 785fef0c6269228c0800000000000000
+      internalID: -4025490023724943993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_21
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 116
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90d550430d6a11c0800000000000000
+      internalID: -4532190214263287652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_22
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 110
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35696e423742a5a20800000000000000
+      internalID: 3051791774455862867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_23
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 88
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265b7f7d00c775c60800000000000000
+      internalID: 7806844822135223650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_24
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 101
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520bab2cf2cfd93f0800000000000000
+      internalID: -892279869088813019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_FINISH_HIM_25
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 59
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f3934bc5547a8800800000000000000
+      internalID: 615432210920739827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      QTE_FINISH_HIM_0: 4127111974934521281
+      QTE_FINISH_HIM_1: -1250722797311957348
+      QTE_FINISH_HIM_10: -2731851502580965456
+      QTE_FINISH_HIM_11: 1913160485176724234
+      QTE_FINISH_HIM_12: -5514656923303911077
+      QTE_FINISH_HIM_13: 1081209023113539996
+      QTE_FINISH_HIM_14: -713584423193510503
+      QTE_FINISH_HIM_15: 6627307142411670386
+      QTE_FINISH_HIM_16: 3730580754425405422
+      QTE_FINISH_HIM_17: 4826952189832673063
+      QTE_FINISH_HIM_18: 9090837309169899354
+      QTE_FINISH_HIM_19: -6458411286889892949
+      QTE_FINISH_HIM_2: -1395994638910757012
+      QTE_FINISH_HIM_20: -4025490023724943993
+      QTE_FINISH_HIM_21: -4532190214263287652
+      QTE_FINISH_HIM_22: 3051791774455862867
+      QTE_FINISH_HIM_23: 7806844822135223650
+      QTE_FINISH_HIM_24: -892279869088813019
+      QTE_FINISH_HIM_25: 615432210920739827
+      QTE_FINISH_HIM_3: -9087348358659521201
+      QTE_FINISH_HIM_4: -6614991372225966060
+      QTE_FINISH_HIM_5: -2883818230870202523
+      QTE_FINISH_HIM_6: -3157377972201488105
+      QTE_FINISH_HIM_7: 3567476075323398859
+      QTE_FINISH_HIM_8: 6250382479893626002
+      QTE_FINISH_HIM_9: -2525982594614626215
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

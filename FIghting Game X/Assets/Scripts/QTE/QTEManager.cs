@@ -1,13 +1,19 @@
-using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using System;
+using System.Collections.Generic;
 
 public class QTEManager : MonoBehaviour
 {
     
     public static QTEManager Instance { get; private set; }
     
+    [Header("Intro UI & SFX")]
+    [SerializeField] private GameObject finishHimPanel;
+    [SerializeField] private AudioSource finishHimVoice;
+
     [Header("Minigame Prefabs")]
     [SerializeField] private GameObject mirrorSequenceUIPrefab;
     [SerializeField] private GameObject buttonSmashUIPrefab;
@@ -40,21 +46,55 @@ public class QTEManager : MonoBehaviour
         p1Input = fallen.GetComponent<PlayerInput>();
         p2Input = killer.GetComponent<PlayerInput>();
         // Pick a random int between 0 and 2
-        int qteType = 1;
-
-        switch (qteType)
-        {
-            case 0:
-                MirrorSequenceMinigame(fallen, killer);
-                break;
-            case 1:
-                ButtonSmashMinigame(fallen, killer);
-                break;
-            default:
-                TapTimingMinigame(fallen, killer);
-                break;
-        }
+        StartCoroutine(StartQTESequence(fallen, killer));
+    }
+    
+    private IEnumerator StartQTESequence(GameObject fallen, GameObject killer)
+    {
+        // 1) Show “Finish Him” intro
+        finishHimPanel.SetActive(true);
         
+        if (finishHimVoice != null) finishHimVoice.Play();
+
+        // (optional) trigger an Animator on finishHimPanel here
+        // var anim = finishHimPanel.GetComponent<Animator>();
+        // anim.SetTrigger("PopIn");
+
+        // wait one real-time second (unscaled)
+        yield return new WaitForSecondsRealtime(1f);
+
+        // 2) Hide intro
+        finishHimPanel.SetActive(false);
+
+        // 3) Now start the actual minigame
+        int type = 1;
+        SpawnMinigame(type, fallen, killer);
+    }
+
+    private void SpawnMinigame(int type, GameObject fallen, GameObject killer)
+    {
+        // instantiate the correct UI and init it
+        IQTE qte;
+        if (type == 0)
+        {
+            var prefab = Instantiate(mirrorSequenceUIPrefab);
+            // qte = prefab.GetComponent<MirrorSequenceQTE>();
+            qte = prefab.GetComponent<ButtonSmashQTE>(); // For simplicity, using ButtonSmashQTE here
+        }
+        else if (type == 1)
+        {
+            var prefab = Instantiate(buttonSmashUIPrefab);
+             qte = prefab.GetComponent<ButtonSmashQTE>();
+        }
+        else
+        {
+            var prefab = Instantiate(tapTimingUIPrefab);
+            // qte = prefab.GetComponent<TapTimingQTE>();
+            qte = prefab.GetComponent<ButtonSmashQTE>(); // For simplicity, using ButtonSmashQTE here
+        }
+        qte.Init(p1Input, p2Input, (r1, r2) => {
+            EvaluateDualQTE(fallen, killer, r1, r2);
+        });
     }
 
     private void EvaluateDualQTE(GameObject fallen, GameObject killer, QTEResult fallenResult, QTEResult killerResult)
