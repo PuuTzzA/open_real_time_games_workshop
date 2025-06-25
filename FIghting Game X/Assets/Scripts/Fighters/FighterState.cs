@@ -174,4 +174,26 @@ public class FighterState : MonoBehaviour
 
         return ret;
     }
+
+    public void dash(float speed)
+    {
+        dash_speed = speed;
+        remaining_dash_frames = 12;
+    }
+
+    public bool is_dashing()
+    {
+        return remaining_dash_frames > 0;
+    }
+
+    public float get_dash_speed()
+    {
+        var result = 0.0f;
+        if(remaining_dash_frames < 6)
+        {
+            result = dash_speed * get_facing_float();
+        }
+        remaining_dash_frames--;
+        return result;
+    }
 }
