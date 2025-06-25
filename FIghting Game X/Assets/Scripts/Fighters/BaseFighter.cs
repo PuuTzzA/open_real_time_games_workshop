@@ -19,6 +19,7 @@ public class BaseFighter : MonoBehaviour
     public EventBuffer event_buffer;
 
     public FighterState state;
+    public FighterHealth health;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -79,7 +80,7 @@ public class BaseFighter : MonoBehaviour
             process_movement();
         }
 
-        debug_text.SetText(state.get_action().ToString());
+        debug_text.SetText(state.get_action() + "\n" + health.GetCurrentHealth() + "/" + health.maxHealth);
 
         state.set_grounded(false);
     }
@@ -177,6 +178,15 @@ public class BaseFighter : MonoBehaviour
 
         return false;
     }
+
+
+    public void take_damage(int damage, GameObject attacker)
+    {
+        health.TakeDamage(damage, attacker);
+    }
+
+
+
 
     public bool jump_action()
     {

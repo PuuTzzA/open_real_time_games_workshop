@@ -553,6 +553,7 @@ MonoBehaviour:
   debug_text: {fileID: 7214940668690671881}
   fighter_input: {fileID: 8266158835667872492}
   state: {fileID: 1556262320957081972}
+  health: {fileID: 2867311719178718406}
 --- !u!114 &8266158835667872492
 MonoBehaviour:
   m_ObjectHideFlags: 0
