@@ -1020,7 +1020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blink_duration: 0.2
   removed_health_duration: 0.2
-  blink_color: {r: 1, g: 1, b: 1, a: 1}
+  blink_color: {r: 1, g: 1, b: 1, a: 0}
 --- !u!114 &2068863977
 MonoBehaviour:
   m_ObjectHideFlags: 0
