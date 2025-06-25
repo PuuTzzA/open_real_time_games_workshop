@@ -16,7 +16,9 @@ public enum FighterFlags
     BlockSide = 0x10,
     BlockUp = 0x20,
 
-    Idle = CanJump | CanTurn | CanMove | UseGravity,
+    Interruptable = 0x40,
+
+    Idle = CanJump | CanTurn | CanMove | UseGravity | Interruptable,
 }
 
 [Flags]

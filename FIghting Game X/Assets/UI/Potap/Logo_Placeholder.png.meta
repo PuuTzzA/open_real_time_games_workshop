@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: e6d6c91ccff515f4ea4a1b0ba1b27fe5
+guid: 16379120f1c95e7428466bb95de116cb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3100641500853070806
-    second: Logo_Placeholder_noBackground2_0
-  - first:
-      213: -6314298618067534567
-    second: Logo_Placeholder_noBackground2_1
+      213: -8197416807573479042
+    second: Logo_Placeholder_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Logo_Placeholder_noBackground2_0
+      name: Logo_Placeholder_0
       rect:
         serializedVersion: 2
-        x: 98
-        y: 115
-        width: 842
-        height: 407
+        x: 0
+        y: 0
+        width: 1056
+        height: 689
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a2491dd9bfe48f4d0800000000000000
-      internalID: -3100641500853070806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Logo_Placeholder_noBackground2_1
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 476
-        width: 66
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 91d38588cda1f58a0800000000000000
-      internalID: -6314298618067534567
+      spriteID: e7124c468dcec3e80800000000000000
+      internalID: -8197416807573479042
       vertices: []
       indices: 
       edges: []
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Logo_Placeholder_noBackground2_0: -3100641500853070806
-      Logo_Placeholder_noBackground2_1: -6314298618067534567
+      Logo_Placeholder_0: -8197416807573479042
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
