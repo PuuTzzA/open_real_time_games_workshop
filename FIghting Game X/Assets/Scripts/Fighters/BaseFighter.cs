@@ -75,20 +75,23 @@ public class BaseFighter : MonoBehaviour
         }
         else /**/
 
+        if(state.flags_any_set(FighterFlags.UseGravity))
+        {
+            rigidbody.gravityScale = 1.0f;
+            rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
+        } else
+        {
+            rigidbody.gravityScale = 0.0f;
+            rigidbody.linearVelocityY = 0.0f;
+            rigidbody.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+        }
+
         if (state.remaining_flying_frames > 0)
         {
             state.remaining_flying_frames--;
         }
-        else if (state.remaining_dash_frames > 0)
-        {
-            rigidbody.gravityScale = 0.0f;
-            rigidbody.linearVelocityX = state.dash_speed;
-            rigidbody.linearVelocityY = 0.0f;
-            state.remaining_dash_frames--;
-        }
         else
         {
-            rigidbody.gravityScale = 1.0f;
             process_movement();
         }
 
@@ -97,23 +100,15 @@ public class BaseFighter : MonoBehaviour
         state.set_grounded(false);
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        foreach (var contact in collision.contacts)
-            handle_contact(contact);
-    }
-
-    public void handle_contact(ContactPoint2D contact)
-    {
-        if (contact.normal.y > 0.7f)
-        {
-            state.set_grounded(true);
-        }
-    }
-
     public void process_movement()
     {
         state.set_facing(fighter_input.direction.x);
+
+        if(state.is_dashing())
+        {
+            rigidbody.linearVelocityX = state.get_dash_speed();
+            return;
+        }
 
         if (state.is_grounded())
         {
@@ -161,8 +156,8 @@ public class BaseFighter : MonoBehaviour
 
     public void dash(float speed)
     {
-        state.dash_speed = speed;
-        state.remaining_dash_frames = 7;
+        state.dash(speed);
+        state.start_action(FighterAction.Dash);
     }
 
     public void knockback(Vector2 direction)
@@ -248,7 +243,8 @@ public class BaseFighter : MonoBehaviour
         if (!input.pressed) return true;
         state.set_facing(input.direction.x);
         player_sounds.PlayDash();
-        dash((int)state.get_facing() * state.base_stats.dash_factor * state.get_ground_speed());
+        state.dash(state.base_stats.dash_factor * state.get_ground_speed());
+        state.start_action(FighterAction.Dash);
         return true;
     }
 
@@ -273,5 +269,20 @@ public class BaseFighter : MonoBehaviour
         knockback(new Vector2(-(float)(int)state.get_facing(), 0.0f) * 5.0f);
         Debug.Log("knocking back");
         return true;
+    }
+
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        foreach (var contact in collision.contacts)
+            handle_contact(contact);
+    }
+
+    public void handle_contact(ContactPoint2D contact)
+    {
+        if (contact.normal.y > 0.7f)
+        {
+            state.set_grounded(true);
+        }
     }
 }
