@@ -162,6 +162,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""test-minigame"",
+                    ""type"": ""Button"",
+                    ""id"": ""51fefa3a-2bd2-4987-83e4-2274fa66216d"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -393,6 +402,28 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""ult"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0c9978fb-2a4e-4500-8be0-feebd1ec1543"",
+                    ""path"": ""<Gamepad>/leftStickPress"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""test-minigame"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c63055c1-60a8-4098-9f79-23b5979d44ce"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""test-minigame"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -781,7 +812,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""82627dcc-3b13-4ba9-841d-e4b746d6553e"",
-                    ""path"": ""<XInputController>/buttonEast"",
+                    ""path"": ""*/{Cancel}"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse;Gamepad;Touch;Joystick;XR"",
@@ -933,6 +964,45 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""QTE"",
+            ""id"": ""73b3043b-a9f7-4006-b8f6-f0a44bd21542"",
+            ""actions"": [
+                {
+                    ""name"": ""Smash"",
+                    ""type"": ""Button"",
+                    ""id"": ""f9459d25-f3cd-4af8-99d7-0b8d91ea1fb2"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""e4a46b60-d1ae-4c9e-aef0-91083477d6c4"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Smash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b113663d-8c3d-43d8-9012-26a64cb8e90e"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Smash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -975,6 +1045,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Player_dash = m_Player.FindAction("dash", throwIfNotFound: true);
         m_Player_block = m_Player.FindAction("block", throwIfNotFound: true);
         m_Player_ult = m_Player.FindAction("ult", throwIfNotFound: true);
+        m_Player_testminigame = m_Player.FindAction("test-minigame", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -988,12 +1059,16 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_UI_TrackedDevicePosition = m_UI.FindAction("TrackedDevicePosition", throwIfNotFound: true);
         m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
         m_UI_Confirm = m_UI.FindAction("Confirm", throwIfNotFound: true);
+        // QTE
+        m_QTE = asset.FindActionMap("QTE", throwIfNotFound: true);
+        m_QTE_Smash = m_QTE.FindAction("Smash", throwIfNotFound: true);
     }
 
     ~@InputSystem_Actions()
     {
         UnityEngine.Debug.Assert(!m_Player.enabled, "This will cause a leak and performance issues, InputSystem_Actions.Player.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_UI.enabled, "This will cause a leak and performance issues, InputSystem_Actions.UI.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_QTE.enabled, "This will cause a leak and performance issues, InputSystem_Actions.QTE.Disable() has not been called.");
     }
 
     /// <summary>
@@ -1077,6 +1152,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_dash;
     private readonly InputAction m_Player_block;
     private readonly InputAction m_Player_ult;
+    private readonly InputAction m_Player_testminigame;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -1120,6 +1196,10 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/ult".
         /// </summary>
         public InputAction @ult => m_Wrapper.m_Player_ult;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/testminigame".
+        /// </summary>
+        public InputAction @testminigame => m_Wrapper.m_Player_testminigame;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1170,6 +1250,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @ult.started += instance.OnUlt;
             @ult.performed += instance.OnUlt;
             @ult.canceled += instance.OnUlt;
+            @testminigame.started += instance.OnTestminigame;
+            @testminigame.performed += instance.OnTestminigame;
+            @testminigame.canceled += instance.OnTestminigame;
         }
 
         /// <summary>
@@ -1205,6 +1288,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @ult.started -= instance.OnUlt;
             @ult.performed -= instance.OnUlt;
             @ult.canceled -= instance.OnUlt;
+            @testminigame.started -= instance.OnTestminigame;
+            @testminigame.performed -= instance.OnTestminigame;
+            @testminigame.canceled -= instance.OnTestminigame;
         }
 
         /// <summary>
@@ -1444,6 +1530,102 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="UIActions" /> instance referencing this action map.
     /// </summary>
     public UIActions @UI => new UIActions(this);
+
+    // QTE
+    private readonly InputActionMap m_QTE;
+    private List<IQTEActions> m_QTEActionsCallbackInterfaces = new List<IQTEActions>();
+    private readonly InputAction m_QTE_Smash;
+    /// <summary>
+    /// Provides access to input actions defined in input action map "QTE".
+    /// </summary>
+    public struct QTEActions
+    {
+        private @InputSystem_Actions m_Wrapper;
+
+        /// <summary>
+        /// Construct a new instance of the input action map wrapper class.
+        /// </summary>
+        public QTEActions(@InputSystem_Actions wrapper) { m_Wrapper = wrapper; }
+        /// <summary>
+        /// Provides access to the underlying input action "QTE/Smash".
+        /// </summary>
+        public InputAction @Smash => m_Wrapper.m_QTE_Smash;
+        /// <summary>
+        /// Provides access to the underlying input action map instance.
+        /// </summary>
+        public InputActionMap Get() { return m_Wrapper.m_QTE; }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
+        public void Enable() { Get().Enable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
+        public void Disable() { Get().Disable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
+        public bool enabled => Get().enabled;
+        /// <summary>
+        /// Implicitly converts an <see ref="QTEActions" /> to an <see ref="InputActionMap" /> instance.
+        /// </summary>
+        public static implicit operator InputActionMap(QTEActions set) { return set.Get(); }
+        /// <summary>
+        /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <param name="instance">Callback instance.</param>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
+        /// </remarks>
+        /// <seealso cref="QTEActions" />
+        public void AddCallbacks(IQTEActions instance)
+        {
+            if (instance == null || m_Wrapper.m_QTEActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_QTEActionsCallbackInterfaces.Add(instance);
+            @Smash.started += instance.OnSmash;
+            @Smash.performed += instance.OnSmash;
+            @Smash.canceled += instance.OnSmash;
+        }
+
+        /// <summary>
+        /// Removes <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <remarks>
+        /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
+        /// </remarks>
+        /// <seealso cref="QTEActions" />
+        private void UnregisterCallbacks(IQTEActions instance)
+        {
+            @Smash.started -= instance.OnSmash;
+            @Smash.performed -= instance.OnSmash;
+            @Smash.canceled -= instance.OnSmash;
+        }
+
+        /// <summary>
+        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="QTEActions.UnregisterCallbacks(IQTEActions)" />.
+        /// </summary>
+        /// <seealso cref="QTEActions.UnregisterCallbacks(IQTEActions)" />
+        public void RemoveCallbacks(IQTEActions instance)
+        {
+            if (m_Wrapper.m_QTEActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        /// <summary>
+        /// Replaces all existing callback instances and previously registered input action callbacks associated with them with callbacks provided via <param cref="instance" />.
+        /// </summary>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
+        /// </remarks>
+        /// <seealso cref="QTEActions.AddCallbacks(IQTEActions)" />
+        /// <seealso cref="QTEActions.RemoveCallbacks(IQTEActions)" />
+        /// <seealso cref="QTEActions.UnregisterCallbacks(IQTEActions)" />
+        public void SetCallbacks(IQTEActions instance)
+        {
+            foreach (var item in m_Wrapper.m_QTEActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_QTEActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    /// <summary>
+    /// Provides a new <see cref="QTEActions" /> instance referencing this action map.
+    /// </summary>
+    public QTEActions @QTE => new QTEActions(this);
     private int m_KeyboardMouseSchemeIndex = -1;
     /// <summary>
     /// Provides access to the input control scheme.
@@ -1533,6 +1715,13 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnUlt(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "test-minigame" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnTestminigame(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.
@@ -1618,5 +1807,20 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnConfirm(InputAction.CallbackContext context);
+    }
+    /// <summary>
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "QTE" which allows adding and removing callbacks.
+    /// </summary>
+    /// <seealso cref="QTEActions.AddCallbacks(IQTEActions)" />
+    /// <seealso cref="QTEActions.RemoveCallbacks(IQTEActions)" />
+    public interface IQTEActions
+    {
+        /// <summary>
+        /// Method invoked when associated input action "Smash" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSmash(InputAction.CallbackContext context);
     }
 }

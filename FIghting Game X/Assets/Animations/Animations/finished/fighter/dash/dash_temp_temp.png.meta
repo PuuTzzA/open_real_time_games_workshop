@@ -1,0 +1,1579 @@
+fileFormatVersion: 2
+guid: 09589c1dd4dc7dc459ffb52c44d46659
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1944915513518157331
+    second: dash_temp_temp_0
+  - first:
+      213: -6275812282129577950
+    second: dash_temp_temp_1
+  - first:
+      213: -4989305912571928004
+    second: dash_temp_temp_2
+  - first:
+      213: 8226125580728379607
+    second: dash_temp_temp_3
+  - first:
+      213: -2513548500117613325
+    second: dash_temp_temp_4
+  - first:
+      213: -8608415013042866238
+    second: dash_temp_temp_5
+  - first:
+      213: 8618167239219013239
+    second: dash_temp_temp_6
+  - first:
+      213: 6202641354723328055
+    second: dash_temp_temp_7
+  - first:
+      213: -1304948581253446479
+    second: dash_temp_temp_8
+  - first:
+      213: 7770730221261352956
+    second: dash_temp_temp_9
+  - first:
+      213: 5587261196460282007
+    second: dash_temp_temp_10
+  - first:
+      213: 7452865984445547987
+    second: dash_temp_temp_11
+  - first:
+      213: -2415115189369566380
+    second: dash_temp_temp_12
+  - first:
+      213: 8459113505425282495
+    second: dash_temp_temp_13
+  - first:
+      213: -695729045410883116
+    second: dash_temp_temp_14
+  - first:
+      213: -1736860337913987890
+    second: dash_temp_temp_15
+  - first:
+      213: 725708713116197734
+    second: dash_temp_temp_16
+  - first:
+      213: 5215126885766563425
+    second: dash_temp_temp_17
+  - first:
+      213: 2062041815361594250
+    second: dash_temp_temp_18
+  - first:
+      213: -9111676053723389286
+    second: dash_temp_temp_19
+  - first:
+      213: 7763786684940552845
+    second: dash_temp_temp_20
+  - first:
+      213: 179231857936591982
+    second: dash_temp_temp_21
+  - first:
+      213: -4844519364577368520
+    second: dash_temp_temp_22
+  - first:
+      213: -4056959197234007733
+    second: dash_temp_temp_23
+  - first:
+      213: 3435571144950229485
+    second: dash_temp_temp_24
+  - first:
+      213: 8661383763165569412
+    second: dash_temp_temp_25
+  - first:
+      213: 3971562089965120041
+    second: dash_temp_temp_26
+  - first:
+      213: 2473273938077252374
+    second: dash_temp_temp_27
+  - first:
+      213: -97833660672248384
+    second: dash_temp_temp_28
+  - first:
+      213: -1237873737815833815
+    second: dash_temp_temp_29
+  - first:
+      213: -7680359495036176907
+    second: dash_temp_temp_30
+  - first:
+      213: 6133044221000803362
+    second: dash_temp_temp_31
+  - first:
+      213: -7142576013866194560
+    second: dash_temp_temp_32
+  - first:
+      213: 6847974542448232962
+    second: dash_temp_temp_33
+  - first:
+      213: -5433615992844263313
+    second: dash_temp_temp_34
+  - first:
+      213: -1104249031981866272
+    second: dash_temp_temp_35
+  - first:
+      213: -3705892606560031686
+    second: dash_temp_temp_36
+  - first:
+      213: -528184487765566203
+    second: dash_temp_temp_37
+  - first:
+      213: 6372597874302995307
+    second: dash_temp_temp_38
+  - first:
+      213: -4361377546447088768
+    second: dash_temp_temp_39
+  - first:
+      213: -7949057613416631794
+    second: dash_temp_temp_40
+  - first:
+      213: 286917300895785166
+    second: dash_temp_temp_41
+  - first:
+      213: -8334507360494864289
+    second: dash_temp_temp_42
+  - first:
+      213: -240077869184723091
+    second: dash_temp_temp_43
+  - first:
+      213: 8081412045184200088
+    second: dash_temp_temp_44
+  - first:
+      213: 8660277720564631029
+    second: dash_temp_temp_45
+  - first:
+      213: 1093961758111151250
+    second: dash_temp_temp_46
+  - first:
+      213: -3077478537905538586
+    second: dash_temp_temp_47
+  - first:
+      213: -4159420071197604524
+    second: dash_temp_temp_48
+  - first:
+      213: -2449597506336510614
+    second: dash_temp_temp_49
+  - first:
+      213: 8924621506953625850
+    second: dash_temp_temp_50
+  - first:
+      213: -1854441887912651652
+    second: dash_temp_temp_51
+  - first:
+      213: 1692990229928205031
+    second: dash_temp_temp_52
+  - first:
+      213: 3883380504751896276
+    second: dash_temp_temp_53
+  - first:
+      213: -2536455998953344499
+    second: dash_temp_temp_54
+  - first:
+      213: 3830364895920257091
+    second: dash_temp_temp_55
+  - first:
+      213: 2389049853846359297
+    second: dash_temp_temp_56
+  - first:
+      213: -7829897631546125052
+    second: dash_temp_temp_57
+  - first:
+      213: -2497185576996145480
+    second: dash_temp_temp_58
+  - first:
+      213: -8727426189122032979
+    second: dash_temp_temp_59
+  - first:
+      213: -6980061242442884124
+    second: dash_temp_temp_60
+  - first:
+      213: -8852072128619406220
+    second: dash_temp_temp_61
+  - first:
+      213: 2555554781915352052
+    second: dash_temp_temp_62
+  - first:
+      213: -2976744379399769525
+    second: dash_temp_temp_63
+  - first:
+      213: -5177375830162476583
+    second: dash_temp_temp_64
+  - first:
+      213: 796019315360469510
+    second: dash_temp_temp_65
+  - first:
+      213: 459863687741234409
+    second: dash_temp_temp_66
+  - first:
+      213: -3635466958590524656
+    second: dash_temp_temp_67
+  - first:
+      213: 3059430025481765069
+    second: dash_temp_temp_68
+  - first:
+      213: 7506444376925807704
+    second: dash_temp_temp_69
+  - first:
+      213: 5153815267738111886
+    second: dash_temp_temp_70
+  - first:
+      213: 2727677235245230282
+    second: dash_temp_temp_71
+  - first:
+      213: -9046187214043368992
+    second: dash_temp_temp_72
+  - first:
+      213: -2129531604910275136
+    second: dash_temp_temp_73
+  - first:
+      213: -394603211791807479
+    second: dash_temp_temp_74
+  - first:
+      213: -1514382766512107159
+    second: dash_temp_temp_75
+  - first:
+      213: -3703697885317625434
+    second: dash_temp_temp_76
+  - first:
+      213: 736645352181142256
+    second: dash_temp_temp_77
+  - first:
+      213: 7939066465831709596
+    second: dash_temp_temp_78
+  - first:
+      213: 460403576406402024
+    second: dash_temp_temp_79
+  - first:
+      213: -676727197550990652
+    second: dash_temp_temp_80
+  - first:
+      213: 4703096797397870629
+    second: dash_temp_temp_81
+  - first:
+      213: -5692265931915599616
+    second: dash_temp_temp_82
+  - first:
+      213: 5240290152463195161
+    second: dash_temp_temp_83
+  - first:
+      213: 7860755846851189980
+    second: dash_temp_temp_84
+  - first:
+      213: -5916420525230227161
+    second: dash_temp_temp_85
+  - first:
+      213: -6193883986063392374
+    second: dash_temp_temp_86
+  - first:
+      213: -5296561960601702248
+    second: dash_temp_temp_87
+  - first:
+      213: -7465698432618478729
+    second: dash_temp_temp_88
+  - first:
+      213: -4911942992320738758
+    second: dash_temp_temp_89
+  - first:
+      213: -7405441101756281732
+    second: dash_temp_temp_90
+  - first:
+      213: 5768373006737991499
+    second: dash_temp_temp_91
+  - first:
+      213: 8938406649563360792
+    second: dash_temp_temp_92
+  - first:
+      213: -744371037321633295
+    second: dash_temp_temp_93
+  - first:
+      213: -1203991709920867283
+    second: dash_temp_temp_94
+  - first:
+      213: -7636174691630662408
+    second: dash_temp_temp_95
+  - first:
+      213: -2223530257654616600
+    second: dash_temp_temp_96
+  - first:
+      213: 4811643224451573268
+    second: dash_temp_temp_97
+  - first:
+      213: 8639445408927652727
+    second: dash_temp_temp_98
+  - first:
+      213: 2712068550678590605
+    second: dash_temp_temp_99
+  - first:
+      213: 6176999014512379000
+    second: dash_temp_temp_100
+  - first:
+      213: 8964231082013433557
+    second: dash_temp_temp_101
+  - first:
+      213: 6192538423695023347
+    second: dash_temp_temp_102
+  - first:
+      213: -2936262027397366271
+    second: dash_temp_temp_103
+  - first:
+      213: -3975430248344118985
+    second: dash_temp_temp_104
+  - first:
+      213: 2171116429209986703
+    second: dash_temp_temp_105
+  - first:
+      213: 1149238109270011925
+    second: dash_temp_temp_106
+  - first:
+      213: -7025836311618757530
+    second: dash_temp_temp_107
+  - first:
+      213: 5790028819144953922
+    second: dash_temp_temp_108
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dash_temp_temp_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 17, y: -34.142853}
+        - {x: 21, y: -45}
+        - {x: 28, y: -45}
+        - {x: 28, y: -35}
+        - {x: 17, y: 1}
+        - {x: 17, y: 17}
+        - {x: 8.5625, y: 32}
+        - {x: 21, y: 32}
+        - {x: 33, y: 47}
+        - {x: 33, y: 79}
+        - {x: 17, y: 90}
+        - {x: -12, y: 90}
+        - {x: -23, y: 80}
+        - {x: -23, y: 70}
+        - {x: -19, y: 68}
+        - {x: -25, y: 67}
+        - {x: -25, y: 49}
+        - {x: -19, y: 32}
+        - {x: -4.152542, y: 32}
+        - {x: -4.305084, y: 31}
+        - {x: -7, y: 31}
+        - {x: -8, y: 30}
+        - {x: -20, y: 3}
+        - {x: -20, y: -49}
+        - {x: -14.885239, y: -49}
+        - {x: -18, y: -87}
+        - {x: -18, y: -105}
+        - {x: 17, y: -105}
+      tessellationDetail: 0
+      bones: []
+      spriteID: de19a9225a54205e0800000000000000
+      internalID: -1944915513518157331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 1, y: 27.333328}
+        - {x: 1, y: 31}
+        - {x: 31, y: 31}
+        - {x: 36, y: 39}
+        - {x: 36, y: 81}
+        - {x: 17, y: 89}
+        - {x: -4, y: 89}
+        - {x: -5, y: 88}
+        - {x: -18, y: 77}
+        - {x: -20, y: 68}
+        - {x: -18, y: 66}
+        - {x: -15, y: 65}
+        - {x: -22, y: 65}
+        - {x: -22, y: 39}
+        - {x: -8, y: 31}
+        - {x: -4, y: 31}
+        - {x: -13, y: 13}
+        - {x: -20, y: -4}
+        - {x: -22, y: -27}
+        - {x: -22, y: -45}
+        - {x: -21, y: -49}
+        - {x: -14.539124, y: -49}
+        - {x: -22, y: -88}
+        - {x: -22, y: -105}
+        - {x: -14, y: -105}
+        - {x: 5, y: -45.149994}
+        - {x: 5, y: -62}
+        - {x: 7, y: -90}
+        - {x: 13, y: -104}
+        - {x: 21, y: -104}
+        - {x: 22, y: -103}
+        - {x: 22, y: -55}
+        - {x: 9, y: -27}
+        - {x: 6, y: -27}
+        - {x: 6, y: 4}
+        - {x: 31, y: -41}
+        - {x: 44, y: -41}
+        - {x: 44, y: -33}
+        - {x: 10, y: 28}
+        - {x: 8, y: 28}
+        - {x: 6, y: 27}
+        - {x: 3, y: 28}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22802a6eaf5d7e8a0800000000000000
+      internalID: -6275812282129577950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -7, y: -66}
+        - {x: -1, y: -38}
+        - {x: -1, y: -34}
+        - {x: 7, y: -34}
+        - {x: 7, y: -54}
+        - {x: 8, y: -61}
+        - {x: 22, y: -99}
+        - {x: 30, y: -99}
+        - {x: 31, y: -98}
+        - {x: 34, y: -66}
+        - {x: 34, y: -53}
+        - {x: 17.92308, y: -34}
+        - {x: 46, y: -34}
+        - {x: 77, y: -16}
+        - {x: 77, y: -8}
+        - {x: 71, y: 12}
+        - {x: 39, y: 86}
+        - {x: -1, y: 86}
+        - {x: -14, y: 69}
+        - {x: -14, y: 68}
+        - {x: -12, y: 65}
+        - {x: -9, y: 63}
+        - {x: -14, y: 61}
+        - {x: -14, y: 21}
+        - {x: -11.704147, y: 8.372787}
+        - {x: -27, y: -25}
+        - {x: -27, y: -49}
+        - {x: -21, y: -49}
+        - {x: -17, y: -44}
+        - {x: -7.07106, y: -17.10913}
+        - {x: -4.9714355, y: -28.65715}
+        - {x: -6, y: -29}
+        - {x: -7, y: -33}
+        - {x: -33, y: -94}
+        - {x: -33, y: -101}
+        - {x: -26, y: -101}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32e46df4bc62cab0800000000000000
+      internalID: -4989305912571928004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 27.937958, y: -46.985397}
+        - {x: 27, y: -77}
+        - {x: 30, y: -86}
+        - {x: 38, y: -86}
+        - {x: 46, y: -60}
+        - {x: 46, y: -42}
+        - {x: 37.61891, y: -37.487106}
+        - {x: 85, y: 9}
+        - {x: 85, y: 35}
+        - {x: 79, y: 37}
+        - {x: 39, y: 17}
+        - {x: 26, y: 23}
+        - {x: 35, y: 24}
+        - {x: 51, y: 36}
+        - {x: 58, y: 55}
+        - {x: 47, y: 82}
+        - {x: 3, y: 82}
+        - {x: -4, y: 65}
+        - {x: -2, y: 62}
+        - {x: 0, y: 60}
+        - {x: 3, y: 61}
+        - {x: -4, y: 56}
+        - {x: -8, y: 44}
+        - {x: -46, y: -71}
+        - {x: -46, y: -95}
+        - {x: -21, y: -95}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8a11db1a1192270800000000000000
+      internalID: 8226125580728379607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -2, y: -56}
+        - {x: 2, y: -41}
+        - {x: 2, y: -38.944443}
+        - {x: 4, y: -39}
+        - {x: 7, y: -38}
+        - {x: 11, y: -35.046158}
+        - {x: 11, y: -61}
+        - {x: 14, y: -69}
+        - {x: 41, y: -69}
+        - {x: 42, y: -68}
+        - {x: 52, y: -33}
+        - {x: 52, y: -28}
+        - {x: 50, y: -27}
+        - {x: 21.895828, y: -27}
+        - {x: 72, y: 10}
+        - {x: 72, y: 29}
+        - {x: 65, y: 57}
+        - {x: 54, y: 78}
+        - {x: 17, y: 78}
+        - {x: 10, y: 69}
+        - {x: 7, y: 57}
+        - {x: 10, y: 54}
+        - {x: 0, y: 54}
+        - {x: 10, y: 24}
+        - {x: -10, y: 0}
+        - {x: -38, y: -33}
+        - {x: -38, y: -39}
+        - {x: -36, y: -39}
+        - {x: -32, y: -38}
+        - {x: -12.68103, y: -38.536636}
+        - {x: -58, y: -79}
+        - {x: -58, y: -86}
+        - {x: -49, y: -86}
+      - - {x: 38, y: 20}
+        - {x: 37.642853, y: 20.357147}
+        - {x: 46, y: 21}
+        - {x: 51, y: 23}
+        - {x: 59, y: 31.888885}
+        - {x: 59, y: 31}
+        - {x: 60, y: 28}
+        - {x: 63, y: 20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f416ccd4f41e1dd0800000000000000
+      internalID: -2513548500117613325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_5
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 22.921997, y: -47.731827}
+        - {x: 27, y: -57}
+        - {x: 35, y: -57}
+        - {x: 49.918686, y: -30.892303}
+        - {x: 77, y: -14}
+        - {x: 77, y: 75}
+        - {x: 18, y: 75}
+        - {x: 6, y: 71}
+        - {x: 16, y: 29}
+        - {x: 24, y: 23}
+        - {x: 33, y: 19}
+        - {x: 41, y: 18}
+        - {x: 36, y: 18}
+        - {x: 30, y: 16}
+        - {x: 21, y: 12}
+        - {x: -40, y: -25}
+        - {x: -40, y: -31}
+        - {x: -35, y: -33}
+        - {x: -65, y: -69}
+        - {x: -65, y: -77}
+        - {x: -24, y: -77}
+      - - {x: 64.84616, y: 24.769226}
+        - {x: 61, y: 24}
+        - {x: 63, y: 26}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7b07ca724c88880800000000000000
+      internalID: -8608415013042866238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_6
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -24, y: -61}
+        - {x: -8.131149, y: -45.13115}
+        - {x: 4, y: -53}
+        - {x: 51, y: -53}
+        - {x: 51, y: 11}
+        - {x: 55, y: 11}
+        - {x: 79, y: 19}
+        - {x: 79, y: 45}
+        - {x: 67, y: 74}
+        - {x: 28, y: 74}
+        - {x: 17, y: 59}
+        - {x: 17, y: 49}
+        - {x: 18, y: 49}
+        - {x: 24, y: 51}
+        - {x: 21, y: 45.857147}
+        - {x: 21, y: 46}
+        - {x: 19, y: 48}
+        - {x: 16, y: 47}
+        - {x: 16, y: 42}
+        - {x: 17.736847, y: 40.263153}
+        - {x: 17, y: 39}
+        - {x: 17, y: 36}
+        - {x: 19, y: 31}
+        - {x: 28, y: 20}
+        - {x: 35.555557, y: 16}
+        - {x: 13, y: 16}
+        - {x: -38, y: -21}
+        - {x: -38, y: -26}
+        - {x: -36, y: -28}
+        - {x: -33, y: -29}
+        - {x: -17.086655, y: -39.322174}
+        - {x: -67, y: -66}
+        - {x: -67, y: -73}
+        - {x: -57, y: -73}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776ee8c6171e99770800000000000000
+      internalID: 8618167239219013239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_7
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -24, y: -61}
+        - {x: -8.131149, y: -45.13115}
+        - {x: 4, y: -53}
+        - {x: 51, y: -53}
+        - {x: 51, y: 11}
+        - {x: 55, y: 11}
+        - {x: 79, y: 19}
+        - {x: 79, y: 45}
+        - {x: 67, y: 74}
+        - {x: 28, y: 74}
+        - {x: 17, y: 59}
+        - {x: 17, y: 49}
+        - {x: 18, y: 49}
+        - {x: 24, y: 51}
+        - {x: 21, y: 45.857147}
+        - {x: 21, y: 46}
+        - {x: 19, y: 48}
+        - {x: 16, y: 47}
+        - {x: 16, y: 42}
+        - {x: 17.736847, y: 40.263153}
+        - {x: 17, y: 39}
+        - {x: 17, y: 36}
+        - {x: 19, y: 31}
+        - {x: 28, y: 20}
+        - {x: 35.555557, y: 16}
+        - {x: 13, y: 16}
+        - {x: -38, y: -21}
+        - {x: -38, y: -26}
+        - {x: -36, y: -28}
+        - {x: -33, y: -29}
+        - {x: -17.086655, y: -39.322174}
+        - {x: -67, y: -66}
+        - {x: -67, y: -73}
+        - {x: -57, y: -73}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7308e69f275341650800000000000000
+      internalID: 6202641354723328055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_8
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -24, y: -61}
+        - {x: -8.131149, y: -45.13115}
+        - {x: 4, y: -53}
+        - {x: 51, y: -53}
+        - {x: 51, y: 11}
+        - {x: 55, y: 11}
+        - {x: 79, y: 19}
+        - {x: 79, y: 45}
+        - {x: 67, y: 74}
+        - {x: 28, y: 74}
+        - {x: 17, y: 59}
+        - {x: 17, y: 49}
+        - {x: 18, y: 49}
+        - {x: 24, y: 51}
+        - {x: 21, y: 45.857147}
+        - {x: 21, y: 46}
+        - {x: 19, y: 48}
+        - {x: 16, y: 47}
+        - {x: 16, y: 42}
+        - {x: 17.736847, y: 40.263153}
+        - {x: 17, y: 39}
+        - {x: 17, y: 36}
+        - {x: 19, y: 31}
+        - {x: 28, y: 20}
+        - {x: 35.555557, y: 16}
+        - {x: 13, y: 16}
+        - {x: -38, y: -21}
+        - {x: -38, y: -26}
+        - {x: -36, y: -28}
+        - {x: -33, y: -29}
+        - {x: -17.086655, y: -39.322174}
+        - {x: -67, y: -66}
+        - {x: -67, y: -73}
+        - {x: -57, y: -73}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b40d34ed24e3ede0800000000000000
+      internalID: -1304948581253446479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_9
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -24, y: -61}
+        - {x: -8.131149, y: -45.13115}
+        - {x: 4, y: -53}
+        - {x: 51, y: -53}
+        - {x: 51, y: 11}
+        - {x: 55, y: 11}
+        - {x: 79, y: 19}
+        - {x: 79, y: 45}
+        - {x: 67, y: 74}
+        - {x: 28, y: 74}
+        - {x: 17, y: 59}
+        - {x: 17, y: 49}
+        - {x: 18, y: 49}
+        - {x: 24, y: 51}
+        - {x: 21, y: 45.857147}
+        - {x: 21, y: 46}
+        - {x: 19, y: 48}
+        - {x: 16, y: 47}
+        - {x: 16, y: 42}
+        - {x: 17.736847, y: 40.263153}
+        - {x: 17, y: 39}
+        - {x: 17, y: 36}
+        - {x: 19, y: 31}
+        - {x: 28, y: 20}
+        - {x: 35.555557, y: 16}
+        - {x: 13, y: 16}
+        - {x: -38, y: -21}
+        - {x: -38, y: -26}
+        - {x: -36, y: -28}
+        - {x: -33, y: -29}
+        - {x: -17.086655, y: -39.322174}
+        - {x: -67, y: -66}
+        - {x: -67, y: -73}
+        - {x: -57, y: -73}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cffeca317fd27db60800000000000000
+      internalID: 7770730221261352956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_10
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -24, y: -61}
+        - {x: -8.131149, y: -45.13115}
+        - {x: 4, y: -53}
+        - {x: 51, y: -53}
+        - {x: 51, y: 11}
+        - {x: 55, y: 11}
+        - {x: 79, y: 19}
+        - {x: 79, y: 45}
+        - {x: 67, y: 74}
+        - {x: 28, y: 74}
+        - {x: 17, y: 59}
+        - {x: 17, y: 49}
+        - {x: 18, y: 49}
+        - {x: 24, y: 51}
+        - {x: 21, y: 45.857147}
+        - {x: 21, y: 46}
+        - {x: 19, y: 48}
+        - {x: 16, y: 47}
+        - {x: 16, y: 42}
+        - {x: 17.736847, y: 40.263153}
+        - {x: 17, y: 39}
+        - {x: 17, y: 36}
+        - {x: 19, y: 31}
+        - {x: 28, y: 20}
+        - {x: 35.555557, y: 16}
+        - {x: 13, y: 16}
+        - {x: -38, y: -21}
+        - {x: -38, y: -26}
+        - {x: -36, y: -28}
+        - {x: -33, y: -29}
+        - {x: -17.086655, y: -39.322174}
+        - {x: -67, y: -66}
+        - {x: -67, y: -73}
+        - {x: -57, y: -73}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790d652a470f98d40800000000000000
+      internalID: 5587261196460282007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_11
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -24, y: -61}
+        - {x: -8.131149, y: -45.13115}
+        - {x: 4, y: -53}
+        - {x: 51, y: -53}
+        - {x: 51, y: 11}
+        - {x: 55, y: 11}
+        - {x: 79, y: 19}
+        - {x: 79, y: 45}
+        - {x: 67, y: 74}
+        - {x: 28, y: 74}
+        - {x: 17, y: 59}
+        - {x: 17, y: 49}
+        - {x: 18, y: 49}
+        - {x: 24, y: 51}
+        - {x: 21, y: 45.857147}
+        - {x: 21, y: 46}
+        - {x: 19, y: 48}
+        - {x: 16, y: 47}
+        - {x: 16, y: 42}
+        - {x: 17.736847, y: 40.263153}
+        - {x: 17, y: 39}
+        - {x: 17, y: 36}
+        - {x: 19, y: 31}
+        - {x: 28, y: 20}
+        - {x: 35.555557, y: 16}
+        - {x: 13, y: 16}
+        - {x: -38, y: -21}
+        - {x: -38, y: -26}
+        - {x: -36, y: -28}
+        - {x: -33, y: -29}
+        - {x: -17.086655, y: -39.322174}
+        - {x: -67, y: -66}
+        - {x: -67, y: -73}
+        - {x: -57, y: -73}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d508793026ed6760800000000000000
+      internalID: 7452865984445547987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_12
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -24, y: -61}
+        - {x: -8.131149, y: -45.13115}
+        - {x: 4, y: -53}
+        - {x: 51, y: -53}
+        - {x: 51, y: 11}
+        - {x: 55, y: 11}
+        - {x: 79, y: 19}
+        - {x: 79, y: 45}
+        - {x: 67, y: 74}
+        - {x: 28, y: 74}
+        - {x: 17, y: 59}
+        - {x: 17, y: 49}
+        - {x: 18, y: 49}
+        - {x: 24, y: 51}
+        - {x: 21, y: 45.857147}
+        - {x: 21, y: 46}
+        - {x: 19, y: 48}
+        - {x: 16, y: 47}
+        - {x: 16, y: 42}
+        - {x: 17.736847, y: 40.263153}
+        - {x: 17, y: 39}
+        - {x: 17, y: 36}
+        - {x: 19, y: 31}
+        - {x: 28, y: 20}
+        - {x: 35.555557, y: 16}
+        - {x: 13, y: 16}
+        - {x: -38, y: -21}
+        - {x: -38, y: -26}
+        - {x: -36, y: -28}
+        - {x: -33, y: -29}
+        - {x: -17.086655, y: -39.322174}
+        - {x: -67, y: -66}
+        - {x: -67, y: -73}
+        - {x: -57, y: -73}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b0af5f789cb7ed0800000000000000
+      internalID: -2415115189369566380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_13
+      rect:
+        serializedVersion: 2
+        x: 6656
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 22.921997, y: -47.731827}
+        - {x: 27, y: -57}
+        - {x: 35, y: -57}
+        - {x: 49.918686, y: -30.892303}
+        - {x: 77, y: -14}
+        - {x: 77, y: 75}
+        - {x: 18, y: 75}
+        - {x: 6, y: 71}
+        - {x: 16, y: 29}
+        - {x: 24, y: 23}
+        - {x: 33, y: 19}
+        - {x: 41, y: 18}
+        - {x: 36, y: 18}
+        - {x: 30, y: 16}
+        - {x: 21, y: 12}
+        - {x: -40, y: -25}
+        - {x: -40, y: -31}
+        - {x: -35, y: -33}
+        - {x: -65, y: -69}
+        - {x: -65, y: -77}
+        - {x: -24, y: -77}
+      - - {x: 64.84616, y: 24.769226}
+        - {x: 61, y: 24}
+        - {x: 63, y: 26}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb555953aeec46570800000000000000
+      internalID: 8459113505425282495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_14
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -2, y: -56}
+        - {x: 2, y: -41}
+        - {x: 2, y: -38.944443}
+        - {x: 4, y: -39}
+        - {x: 7, y: -38}
+        - {x: 11, y: -35.046158}
+        - {x: 11, y: -61}
+        - {x: 14, y: -69}
+        - {x: 41, y: -69}
+        - {x: 42, y: -68}
+        - {x: 52, y: -33}
+        - {x: 52, y: -28}
+        - {x: 50, y: -27}
+        - {x: 21.895828, y: -27}
+        - {x: 72, y: 10}
+        - {x: 72, y: 29}
+        - {x: 65, y: 57}
+        - {x: 54, y: 78}
+        - {x: 17, y: 78}
+        - {x: 10, y: 69}
+        - {x: 7, y: 57}
+        - {x: 10, y: 54}
+        - {x: 0, y: 54}
+        - {x: 10, y: 24}
+        - {x: -10, y: 0}
+        - {x: -38, y: -33}
+        - {x: -38, y: -39}
+        - {x: -36, y: -39}
+        - {x: -32, y: -38}
+        - {x: -12.68103, y: -38.536636}
+        - {x: -58, y: -79}
+        - {x: -58, y: -86}
+        - {x: -49, y: -86}
+      - - {x: 38, y: 20}
+        - {x: 37.642853, y: 20.357147}
+        - {x: 46, y: 21}
+        - {x: 51, y: 23}
+        - {x: 59, y: 31.888885}
+        - {x: 59, y: 31}
+        - {x: 60, y: 28}
+        - {x: 63, y: 20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9dc5c8e164856f0800000000000000
+      internalID: -695729045410883116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_15
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 27.937958, y: -46.985397}
+        - {x: 27, y: -77}
+        - {x: 30, y: -86}
+        - {x: 38, y: -86}
+        - {x: 46, y: -60}
+        - {x: 46, y: -42}
+        - {x: 37.61891, y: -37.487106}
+        - {x: 85, y: 9}
+        - {x: 85, y: 35}
+        - {x: 79, y: 37}
+        - {x: 39, y: 17}
+        - {x: 26, y: 23}
+        - {x: 35, y: 24}
+        - {x: 51, y: 36}
+        - {x: 58, y: 55}
+        - {x: 47, y: 82}
+        - {x: 3, y: 82}
+        - {x: -4, y: 65}
+        - {x: -2, y: 62}
+        - {x: 0, y: 60}
+        - {x: 3, y: 61}
+        - {x: -4, y: 56}
+        - {x: -8, y: 44}
+        - {x: -46, y: -71}
+        - {x: -46, y: -95}
+        - {x: -21, y: -95}
+      tessellationDetail: 0
+      bones: []
+      spriteID: eccfb2699be65e7e0800000000000000
+      internalID: -1736860337913987890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_16
+      rect:
+        serializedVersion: 2
+        x: 8192
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -7, y: -66}
+        - {x: -1, y: -38}
+        - {x: -1, y: -34}
+        - {x: 7, y: -34}
+        - {x: 7, y: -54}
+        - {x: 8, y: -61}
+        - {x: 22, y: -99}
+        - {x: 30, y: -99}
+        - {x: 31, y: -98}
+        - {x: 34, y: -66}
+        - {x: 34, y: -53}
+        - {x: 17.92308, y: -34}
+        - {x: 46, y: -34}
+        - {x: 77, y: -16}
+        - {x: 77, y: -8}
+        - {x: 71, y: 12}
+        - {x: 39, y: 86}
+        - {x: -1, y: 86}
+        - {x: -14, y: 69}
+        - {x: -14, y: 68}
+        - {x: -12, y: 65}
+        - {x: -9, y: 63}
+        - {x: -14, y: 61}
+        - {x: -14, y: 21}
+        - {x: -11.704147, y: 8.372787}
+        - {x: -27, y: -25}
+        - {x: -27, y: -49}
+        - {x: -21, y: -49}
+        - {x: -17, y: -44}
+        - {x: -7.07106, y: -17.10913}
+        - {x: -4.9714355, y: -28.65715}
+        - {x: -6, y: -29}
+        - {x: -7, y: -33}
+        - {x: -33, y: -94}
+        - {x: -33, y: -101}
+        - {x: -26, y: -101}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66362b7ca3c321a00800000000000000
+      internalID: 725708713116197734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_17
+      rect:
+        serializedVersion: 2
+        x: 8704
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 1, y: 27.333328}
+        - {x: 1, y: 31}
+        - {x: 31, y: 31}
+        - {x: 36, y: 39}
+        - {x: 36, y: 81}
+        - {x: 17, y: 89}
+        - {x: -4, y: 89}
+        - {x: -5, y: 88}
+        - {x: -18, y: 77}
+        - {x: -20, y: 68}
+        - {x: -18, y: 66}
+        - {x: -15, y: 65}
+        - {x: -22, y: 65}
+        - {x: -22, y: 39}
+        - {x: -8, y: 31}
+        - {x: -4, y: 31}
+        - {x: -13, y: 13}
+        - {x: -20, y: -4}
+        - {x: -22, y: -27}
+        - {x: -22, y: -45}
+        - {x: -21, y: -49}
+        - {x: -14.539124, y: -49}
+        - {x: -22, y: -88}
+        - {x: -22, y: -105}
+        - {x: -14, y: -105}
+        - {x: 5, y: -45.149994}
+        - {x: 5, y: -62}
+        - {x: 7, y: -90}
+        - {x: 13, y: -104}
+        - {x: 21, y: -104}
+        - {x: 22, y: -103}
+        - {x: 22, y: -55}
+        - {x: 9, y: -27}
+        - {x: 6, y: -27}
+        - {x: 6, y: 4}
+        - {x: 31, y: -41}
+        - {x: 44, y: -41}
+        - {x: 44, y: -33}
+        - {x: 10, y: 28}
+        - {x: 8, y: 28}
+        - {x: 6, y: 27}
+        - {x: 3, y: 28}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16684bc854adf5840800000000000000
+      internalID: 5215126885766563425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_18
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 17, y: -34.142853}
+        - {x: 21, y: -45}
+        - {x: 28, y: -45}
+        - {x: 28, y: -35}
+        - {x: 17, y: 1}
+        - {x: 17, y: 17}
+        - {x: 8.5625, y: 32}
+        - {x: 21, y: 32}
+        - {x: 33, y: 47}
+        - {x: 33, y: 79}
+        - {x: 17, y: 90}
+        - {x: -12, y: 90}
+        - {x: -23, y: 80}
+        - {x: -23, y: 70}
+        - {x: -19, y: 68}
+        - {x: -25, y: 67}
+        - {x: -25, y: 49}
+        - {x: -19, y: 32}
+        - {x: -4.152542, y: 32}
+        - {x: -4.305084, y: 31}
+        - {x: -7, y: 31}
+        - {x: -8, y: 30}
+        - {x: -20, y: 3}
+        - {x: -20, y: -49}
+        - {x: -14.885239, y: -49}
+        - {x: -18, y: -87}
+        - {x: -18, y: -105}
+        - {x: 17, y: -105}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8321ac1b18dd9c10800000000000000
+      internalID: 2062041815361594250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_19
+      rect:
+        serializedVersion: 2
+        x: 9728
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 17, y: -34.142853}
+        - {x: 21, y: -45}
+        - {x: 28, y: -45}
+        - {x: 28, y: -35}
+        - {x: 17, y: 1}
+        - {x: 17, y: 17}
+        - {x: 8.5625, y: 32}
+        - {x: 21, y: 32}
+        - {x: 33, y: 47}
+        - {x: 33, y: 79}
+        - {x: 17, y: 90}
+        - {x: -12, y: 90}
+        - {x: -23, y: 80}
+        - {x: -23, y: 70}
+        - {x: -19, y: 68}
+        - {x: -25, y: 67}
+        - {x: -25, y: 49}
+        - {x: -19, y: 32}
+        - {x: -4.152542, y: 32}
+        - {x: -4.305084, y: 31}
+        - {x: -7, y: 31}
+        - {x: -8, y: 30}
+        - {x: -20, y: 3}
+        - {x: -20, y: -49}
+        - {x: -14.885239, y: -49}
+        - {x: -18, y: -87}
+        - {x: -18, y: -105}
+        - {x: 17, y: -105}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a926265a7e2dc8180800000000000000
+      internalID: -9111676053723389286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e7c145d6042eb304087bfc0c48bf0d00
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      dash_temp_temp_0: -1944915513518157331
+      dash_temp_temp_1: -6275812282129577950
+      dash_temp_temp_10: 5587261196460282007
+      dash_temp_temp_11: 7452865984445547987
+      dash_temp_temp_12: -2415115189369566380
+      dash_temp_temp_13: 8459113505425282495
+      dash_temp_temp_14: -695729045410883116
+      dash_temp_temp_15: -1736860337913987890
+      dash_temp_temp_16: 725708713116197734
+      dash_temp_temp_17: 5215126885766563425
+      dash_temp_temp_18: 2062041815361594250
+      dash_temp_temp_19: -9111676053723389286
+      dash_temp_temp_2: -4989305912571928004
+      dash_temp_temp_3: 8226125580728379607
+      dash_temp_temp_4: -2513548500117613325
+      dash_temp_temp_5: -8608415013042866238
+      dash_temp_temp_6: 8618167239219013239
+      dash_temp_temp_7: 6202641354723328055
+      dash_temp_temp_8: -1304948581253446479
+      dash_temp_temp_9: 7770730221261352956
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

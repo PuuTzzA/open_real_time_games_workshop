@@ -1,0 +1,2077 @@
+fileFormatVersion: 2
+guid: 572db13f8711039468f467990bceb07d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7367391774724157430
+    second: knocked_back_heavy_0
+  - first:
+      213: -7628260379167742009
+    second: knocked_back_heavy_1
+  - first:
+      213: 5548624053314614245
+    second: knocked_back_heavy_2
+  - first:
+      213: 8719924277211500328
+    second: knocked_back_heavy_3
+  - first:
+      213: -859988454692773944
+    second: knocked_back_heavy_4
+  - first:
+      213: -6314378045994415524
+    second: knocked_back_heavy_5
+  - first:
+      213: -4820813397001828940
+    second: knocked_back_heavy_6
+  - first:
+      213: -3671524752409826783
+    second: knocked_back_heavy_7
+  - first:
+      213: -870383982749012178
+    second: knocked_back_heavy_8
+  - first:
+      213: 5331857332973867684
+    second: knocked_back_heavy_9
+  - first:
+      213: 5211824106116404027
+    second: knocked_back_heavy_10
+  - first:
+      213: -539866247830397094
+    second: knocked_back_heavy_11
+  - first:
+      213: 3962276601264420745
+    second: knocked_back_heavy_12
+  - first:
+      213: -8521171710843773160
+    second: knocked_back_heavy_13
+  - first:
+      213: 3609049670124918988
+    second: knocked_back_heavy_14
+  - first:
+      213: -2121876070275023463
+    second: knocked_back_heavy_15
+  - first:
+      213: 8013628058044194460
+    second: knocked_back_heavy_16
+  - first:
+      213: -5554418887819655505
+    second: knocked_back_heavy_17
+  - first:
+      213: -446039884782829580
+    second: knocked_back_heavy_18
+  - first:
+      213: 4091623506432296230
+    second: knocked_back_heavy_19
+  - first:
+      213: 8691775245277152997
+    second: knocked_back_heavy_20
+  - first:
+      213: -5454084952517987527
+    second: knocked_back_heavy_21
+  - first:
+      213: 5463896279543870603
+    second: knocked_back_heavy_22
+  - first:
+      213: 856276767254272811
+    second: knocked_back_heavy_23
+  - first:
+      213: 3030015830800432388
+    second: knocked_back_heavy_24
+  - first:
+      213: 1455773599952389925
+    second: knocked_back_heavy_25
+  - first:
+      213: 895819817545914281
+    second: knocked_back_heavy_26
+  - first:
+      213: 7759694154011326536
+    second: knocked_back_heavy_27
+  - first:
+      213: -8568168605456569397
+    second: knocked_back_heavy_28
+  - first:
+      213: -556957213782974772
+    second: knocked_back_heavy_29
+  - first:
+      213: -7253573661226688779
+    second: knocked_back_heavy_30
+  - first:
+      213: -331815758977435586
+    second: knocked_back_heavy_31
+  - first:
+      213: -5099873109325197437
+    second: knocked_back_heavy_32
+  - first:
+      213: 6692623683009473146
+    second: knocked_back_heavy_33
+  - first:
+      213: -3505599664124128285
+    second: knocked_back_heavy_34
+  - first:
+      213: -1496177070548539197
+    second: knocked_back_heavy_35
+  - first:
+      213: -5274976415082542202
+    second: knocked_back_heavy_36
+  - first:
+      213: 9024810173027057652
+    second: knocked_back_heavy_37
+  - first:
+      213: 3213325401581422658
+    second: knocked_back_heavy_38
+  - first:
+      213: 2009768345375372543
+    second: knocked_back_heavy_39
+  - first:
+      213: -8217144951959227109
+    second: knocked_back_heavy_40
+  - first:
+      213: 3956403985213717156
+    second: knocked_back_heavy_41
+  - first:
+      213: 4853056550907160696
+    second: knocked_back_heavy_42
+  - first:
+      213: -8752573902793417754
+    second: knocked_back_heavy_43
+  - first:
+      213: -4834268901919839470
+    second: knocked_back_heavy_44
+  - first:
+      213: 229125897644463998
+    second: knocked_back_heavy_45
+  - first:
+      213: -1547282515873163651
+    second: knocked_back_heavy_46
+  - first:
+      213: -3898070441750859952
+    second: knocked_back_heavy_47
+  - first:
+      213: 6560059064658659020
+    second: knocked_back_heavy_48
+  - first:
+      213: 1631792972604787263
+    second: knocked_back_heavy_49
+  - first:
+      213: 7083149801835610186
+    second: knocked_back_heavy_50
+  - first:
+      213: -3472067722035205405
+    second: knocked_back_heavy_51
+  - first:
+      213: -8789277039050139176
+    second: knocked_back_heavy_52
+  - first:
+      213: -8736791550246607952
+    second: knocked_back_heavy_53
+  - first:
+      213: -4164054923882129014
+    second: knocked_back_heavy_54
+  - first:
+      213: 797539030456052042
+    second: knocked_back_heavy_55
+  - first:
+      213: -7070389251502136461
+    second: knocked_back_heavy_56
+  - first:
+      213: 6600370748119360545
+    second: knocked_back_heavy_57
+  - first:
+      213: 6897169410469678571
+    second: knocked_back_heavy_58
+  - first:
+      213: -5710774092673630628
+    second: knocked_back_heavy_59
+  - first:
+      213: 6946362299642575246
+    second: knocked_back_heavy_60
+  - first:
+      213: -7987306409278792946
+    second: knocked_back_heavy_61
+  - first:
+      213: 1583898532445025496
+    second: knocked_back_heavy_62
+  - first:
+      213: 6867216207858357954
+    second: knocked_back_heavy_63
+  - first:
+      213: 6891797942215691535
+    second: knocked_back_heavy_64
+  - first:
+      213: 8760541769194268860
+    second: knocked_back_heavy_65
+  - first:
+      213: 5675802744127839144
+    second: knocked_back_heavy_66
+  - first:
+      213: 8627997614164743055
+    second: knocked_back_heavy_67
+  - first:
+      213: 5708340104851095957
+    second: knocked_back_heavy_68
+  - first:
+      213: -635643347140187849
+    second: knocked_back_heavy_69
+  - first:
+      213: -2507454213606179627
+    second: knocked_back_heavy_70
+  - first:
+      213: 6529967337300173780
+    second: knocked_back_heavy_71
+  - first:
+      213: -8984075497692710247
+    second: knocked_back_heavy_72
+  - first:
+      213: 7200816529500025053
+    second: knocked_back_heavy_73
+  - first:
+      213: 135696261273228581
+    second: knocked_back_heavy_74
+  - first:
+      213: 1934556907609711146
+    second: knocked_back_heavy_75
+  - first:
+      213: 3228415210253964420
+    second: knocked_back_heavy_76
+  - first:
+      213: 1199767310531873548
+    second: knocked_back_heavy_77
+  - first:
+      213: -1285908798225912488
+    second: knocked_back_heavy_78
+  - first:
+      213: -5478870527123865670
+    second: knocked_back_heavy_79
+  - first:
+      213: -5296987586667320474
+    second: knocked_back_heavy_80
+  - first:
+      213: 1642701766057543987
+    second: knocked_back_heavy_81
+  - first:
+      213: 1268849598255928293
+    second: knocked_back_heavy_82
+  - first:
+      213: 2245856719177323248
+    second: knocked_back_heavy_83
+  - first:
+      213: 4313319534305187825
+    second: knocked_back_heavy_84
+  - first:
+      213: -4702072260392889392
+    second: knocked_back_heavy_85
+  - first:
+      213: -2192544636988770768
+    second: knocked_back_heavy_86
+  - first:
+      213: 2866107061258899684
+    second: knocked_back_heavy_87
+  - first:
+      213: 4826125803061876309
+    second: knocked_back_heavy_88
+  - first:
+      213: -6866143724483328516
+    second: knocked_back_heavy_89
+  - first:
+      213: 5283239437458168062
+    second: knocked_back_heavy_90
+  - first:
+      213: 4261530804017931875
+    second: knocked_back_heavy_91
+  - first:
+      213: 871499274810710355
+    second: knocked_back_heavy_92
+  - first:
+      213: -7000665299948854582
+    second: knocked_back_heavy_93
+  - first:
+      213: 3447592598591544700
+    second: knocked_back_heavy_94
+  - first:
+      213: 4867547420473999933
+    second: knocked_back_heavy_95
+  - first:
+      213: -1258471646232758516
+    second: knocked_back_heavy_96
+  - first:
+      213: -7377821448229001111
+    second: knocked_back_heavy_97
+  - first:
+      213: -2051702885761878421
+    second: knocked_back_heavy_98
+  - first:
+      213: 1260007844755073794
+    second: knocked_back_heavy_99
+  - first:
+      213: 3604256429155767629
+    second: knocked_back_heavy_100
+  - first:
+      213: -2570894644523327418
+    second: knocked_back_heavy_101
+  - first:
+      213: 2316080679091247047
+    second: knocked_back_heavy_102
+  - first:
+      213: 1211958033474064302
+    second: knocked_back_heavy_103
+  - first:
+      213: 3366049573522112782
+    second: knocked_back_heavy_104
+  - first:
+      213: -1511830801742875028
+    second: knocked_back_heavy_105
+  - first:
+      213: -8205524519361864040
+    second: knocked_back_heavy_106
+  - first:
+      213: -1205412885362123257
+    second: knocked_back_heavy_107
+  - first:
+      213: -1458047277947594235
+    second: knocked_back_heavy_108
+  - first:
+      213: 2328637067501933363
+    second: knocked_back_heavy_109
+  - first:
+      213: -2987848171750445363
+    second: knocked_back_heavy_110
+  - first:
+      213: -919379408194831071
+    second: knocked_back_heavy_111
+  - first:
+      213: -4505048891721467396
+    second: knocked_back_heavy_112
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: knocked_back_heavy_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 17, y: -34.142853}
+        - {x: 21, y: -45}
+        - {x: 28, y: -45}
+        - {x: 28, y: -35}
+        - {x: 17, y: 1}
+        - {x: 17, y: 17}
+        - {x: 8.5625, y: 32}
+        - {x: 21, y: 32}
+        - {x: 33, y: 47}
+        - {x: 33, y: 79}
+        - {x: 17, y: 90}
+        - {x: -12, y: 90}
+        - {x: -23, y: 80}
+        - {x: -23, y: 70}
+        - {x: -19, y: 68}
+        - {x: -25, y: 67}
+        - {x: -25, y: 49}
+        - {x: -19, y: 32}
+        - {x: -4.152542, y: 32}
+        - {x: -4.305084, y: 31}
+        - {x: -7, y: 31}
+        - {x: -8, y: 30}
+        - {x: -20, y: 3}
+        - {x: -20, y: -49}
+        - {x: -14.885239, y: -49}
+        - {x: -18, y: -87}
+        - {x: -18, y: -105}
+        - {x: 17, y: -105}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a009e6a0734c1c990800000000000000
+      internalID: -7367391774724157430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 41, y: -103}
+        - {x: 41, y: -35.54167}
+        - {x: 46, y: -42}
+        - {x: 49, y: -43}
+        - {x: 52, y: -43}
+        - {x: 53, y: -41}
+        - {x: 53, y: -36}
+        - {x: 48, y: -29}
+        - {x: 41, y: -19.307693}
+        - {x: 41, y: 87}
+        - {x: 2, y: 87}
+        - {x: -12, y: 75}
+        - {x: -11, y: 72}
+        - {x: -14, y: 71}
+        - {x: -17, y: 69}
+        - {x: -17, y: 8}
+        - {x: -13, y: -28}
+        - {x: 6, y: -105}
+        - {x: 6, y: -106}
+        - {x: 40, y: -106}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c72585f999f22690800000000000000
+      internalID: -7628260379167742009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 58, y: -76}
+        - {x: 48, y: -60}
+        - {x: -0.06486511, y: -31.345947}
+        - {x: 6, y: -33}
+        - {x: 64, y: -66}
+        - {x: 76, y: -66}
+        - {x: 76, y: -58}
+        - {x: 28.941177, y: -33}
+        - {x: 69, y: -33}
+        - {x: 69, y: -19}
+        - {x: 64.80914, y: -14.133194}
+        - {x: 73, y: -17}
+        - {x: 87, y: -17}
+        - {x: 87, y: -9}
+        - {x: 75, y: -5}
+        - {x: 50.82057, y: 2.1116028}
+        - {x: 40.58333, y: 14}
+        - {x: 42, y: 14}
+        - {x: 52, y: 16}
+        - {x: 52, y: 71}
+        - {x: 39, y: 73}
+        - {x: 14, y: 73}
+        - {x: 14, y: 67}
+        - {x: 17, y: 66}
+        - {x: 10, y: 26}
+        - {x: 14, y: 69}
+        - {x: 11, y: 71}
+        - {x: -5, y: 62}
+        - {x: -6, y: 59}
+        - {x: -6, y: 30}
+        - {x: 4.5625, y: 17}
+        - {x: -5, y: 17}
+        - {x: -14, y: 11}
+        - {x: -16, y: 3}
+        - {x: -16, y: -20}
+        - {x: -6.100006, y: -29}
+        - {x: -8, y: -29}
+        - {x: -8, y: -34}
+        - {x: -1, y: -49}
+        - {x: 46, y: -82}
+        - {x: 58, y: -82}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3710abd2ca00d40800000000000000
+      internalID: 5548624053314614245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 69, y: -53}
+        - {x: 61, y: -48}
+        - {x: 0.7647095, y: -32}
+        - {x: 8, y: -32}
+        - {x: 9.632843, y: -29.387451}
+        - {x: 67, y: -43}
+        - {x: 84, y: -43}
+        - {x: 84, y: -36}
+        - {x: 83, y: -34}
+        - {x: 29, y: -23}
+        - {x: 13, y: -23}
+        - {x: 13, y: -9.903229}
+        - {x: 61, y: -13}
+        - {x: 77, y: -13}
+        - {x: 77, y: -5}
+        - {x: 62, y: -3}
+        - {x: 36, y: -2}
+        - {x: 13, y: -2}
+        - {x: 13, y: 5}
+        - {x: 26.5, y: 5}
+        - {x: 25, y: 2}
+        - {x: 26, y: -1}
+        - {x: 92, y: -1}
+        - {x: 93, y: 0}
+        - {x: 93, y: 8}
+        - {x: 60, y: 8}
+        - {x: 49.224487, y: 7.346939}
+        - {x: 54, y: 10}
+        - {x: 54, y: 64}
+        - {x: 1, y: 64}
+        - {x: -3, y: 49}
+        - {x: -3, y: 13}
+        - {x: 8.375, y: 6}
+        - {x: -13, y: 6}
+        - {x: -19, y: -4}
+        - {x: -19, y: -22}
+        - {x: -8, y: -32}
+        - {x: -8, y: -38}
+        - {x: 27, y: -60}
+        - {x: 69, y: -60}
+      - - {x: 21, y: 14}
+        - {x: 20, y: 15}
+        - {x: 14, y: 16}
+        - {x: 12, y: 18}
+        - {x: 11, y: 18}
+        - {x: 7, y: 23}
+        - {x: 5, y: 26}
+        - {x: 5, y: 29}
+        - {x: 4, y: 30}
+        - {x: 4, y: 40}
+        - {x: 5, y: 41}
+        - {x: 5, y: 45}
+        - {x: 7, y: 48}
+        - {x: 13, y: 54}
+        - {x: 18, y: 57}
+        - {x: 27, y: 57}
+        - {x: 28, y: 58}
+        - {x: 30, y: 56}
+        - {x: 33, y: 55}
+        - {x: 37, y: 54}
+        - {x: 41, y: 50}
+        - {x: 41, y: 49}
+        - {x: 43, y: 47}
+        - {x: 44, y: 41}
+        - {x: 45, y: 40}
+        - {x: 45, y: 29}
+        - {x: 44, y: 28}
+        - {x: 44, y: 26}
+        - {x: 42, y: 23}
+        - {x: 39, y: 19}
+        - {x: 38, y: 19}
+        - {x: 32, y: 15}
+        - {x: 28, y: 15}
+        - {x: 27, y: 14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f0f731ee4630970800000000000000
+      internalID: 8719924277211500328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 69, y: -53}
+        - {x: 61, y: -48}
+        - {x: 0.7647095, y: -32}
+        - {x: 8, y: -32}
+        - {x: 9.632843, y: -29.387451}
+        - {x: 67, y: -43}
+        - {x: 84, y: -43}
+        - {x: 84, y: -36}
+        - {x: 83, y: -34}
+        - {x: 29, y: -23}
+        - {x: 13, y: -23}
+        - {x: 13, y: -9.903229}
+        - {x: 61, y: -13}
+        - {x: 77, y: -13}
+        - {x: 77, y: -5}
+        - {x: 62, y: -3}
+        - {x: 36, y: -2}
+        - {x: 13, y: -2}
+        - {x: 13, y: 5}
+        - {x: 26.5, y: 5}
+        - {x: 25, y: 2}
+        - {x: 26, y: -1}
+        - {x: 92, y: -1}
+        - {x: 93, y: 0}
+        - {x: 93, y: 8}
+        - {x: 60, y: 8}
+        - {x: 49.224487, y: 7.346939}
+        - {x: 54, y: 10}
+        - {x: 54, y: 64}
+        - {x: 1, y: 64}
+        - {x: -3, y: 49}
+        - {x: -3, y: 13}
+        - {x: 8.375, y: 6}
+        - {x: -13, y: 6}
+        - {x: -19, y: -4}
+        - {x: -19, y: -22}
+        - {x: -8, y: -32}
+        - {x: -8, y: -38}
+        - {x: 27, y: -60}
+        - {x: 69, y: -60}
+      - - {x: 21, y: 14}
+        - {x: 20, y: 15}
+        - {x: 14, y: 16}
+        - {x: 12, y: 18}
+        - {x: 11, y: 18}
+        - {x: 7, y: 23}
+        - {x: 5, y: 26}
+        - {x: 5, y: 29}
+        - {x: 4, y: 30}
+        - {x: 4, y: 40}
+        - {x: 5, y: 41}
+        - {x: 5, y: 45}
+        - {x: 7, y: 48}
+        - {x: 13, y: 54}
+        - {x: 18, y: 57}
+        - {x: 27, y: 57}
+        - {x: 28, y: 58}
+        - {x: 30, y: 56}
+        - {x: 33, y: 55}
+        - {x: 37, y: 54}
+        - {x: 41, y: 50}
+        - {x: 41, y: 49}
+        - {x: 43, y: 47}
+        - {x: 44, y: 41}
+        - {x: 45, y: 40}
+        - {x: 45, y: 29}
+        - {x: 44, y: 28}
+        - {x: 44, y: 26}
+        - {x: 42, y: 23}
+        - {x: 39, y: 19}
+        - {x: 38, y: 19}
+        - {x: 32, y: 15}
+        - {x: 28, y: 15}
+        - {x: 27, y: 14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf991f8e05b014f0800000000000000
+      internalID: -859988454692773944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_5
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 69, y: -53}
+        - {x: 61, y: -48}
+        - {x: 0.7647095, y: -32}
+        - {x: 8, y: -32}
+        - {x: 9.632843, y: -29.387451}
+        - {x: 67, y: -43}
+        - {x: 84, y: -43}
+        - {x: 84, y: -36}
+        - {x: 83, y: -34}
+        - {x: 29, y: -23}
+        - {x: 13, y: -23}
+        - {x: 13, y: -9.903229}
+        - {x: 61, y: -13}
+        - {x: 77, y: -13}
+        - {x: 77, y: -5}
+        - {x: 62, y: -3}
+        - {x: 36, y: -2}
+        - {x: 13, y: -2}
+        - {x: 13, y: 5}
+        - {x: 26.5, y: 5}
+        - {x: 25, y: 2}
+        - {x: 26, y: -1}
+        - {x: 92, y: -1}
+        - {x: 93, y: 0}
+        - {x: 93, y: 8}
+        - {x: 60, y: 8}
+        - {x: 49.224487, y: 7.346939}
+        - {x: 54, y: 10}
+        - {x: 54, y: 64}
+        - {x: 1, y: 64}
+        - {x: -3, y: 49}
+        - {x: -3, y: 13}
+        - {x: 8.375, y: 6}
+        - {x: -13, y: 6}
+        - {x: -19, y: -4}
+        - {x: -19, y: -22}
+        - {x: -8, y: -32}
+        - {x: -8, y: -38}
+        - {x: 27, y: -60}
+        - {x: 69, y: -60}
+      - - {x: 21, y: 14}
+        - {x: 20, y: 15}
+        - {x: 14, y: 16}
+        - {x: 12, y: 18}
+        - {x: 11, y: 18}
+        - {x: 7, y: 23}
+        - {x: 5, y: 26}
+        - {x: 5, y: 29}
+        - {x: 4, y: 30}
+        - {x: 4, y: 40}
+        - {x: 5, y: 41}
+        - {x: 5, y: 45}
+        - {x: 7, y: 48}
+        - {x: 13, y: 54}
+        - {x: 18, y: 57}
+        - {x: 27, y: 57}
+        - {x: 28, y: 58}
+        - {x: 30, y: 56}
+        - {x: 33, y: 55}
+        - {x: 37, y: 54}
+        - {x: 41, y: 50}
+        - {x: 41, y: 49}
+        - {x: 43, y: 47}
+        - {x: 44, y: 41}
+        - {x: 45, y: 40}
+        - {x: 45, y: 29}
+        - {x: 44, y: 28}
+        - {x: 44, y: 26}
+        - {x: 42, y: 23}
+        - {x: 39, y: 19}
+        - {x: 38, y: 19}
+        - {x: 32, y: 15}
+        - {x: 28, y: 15}
+        - {x: 27, y: 14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a4af64f92de58a0800000000000000
+      internalID: -6314378045994415524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_6
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 69, y: -53}
+        - {x: 61, y: -48}
+        - {x: 0.7647095, y: -32}
+        - {x: 8, y: -32}
+        - {x: 9.632843, y: -29.387451}
+        - {x: 67, y: -43}
+        - {x: 84, y: -43}
+        - {x: 84, y: -36}
+        - {x: 83, y: -34}
+        - {x: 29, y: -23}
+        - {x: 13, y: -23}
+        - {x: 13, y: -9.903229}
+        - {x: 61, y: -13}
+        - {x: 77, y: -13}
+        - {x: 77, y: -5}
+        - {x: 62, y: -3}
+        - {x: 36, y: -2}
+        - {x: 13, y: -2}
+        - {x: 13, y: 5}
+        - {x: 26.5, y: 5}
+        - {x: 25, y: 2}
+        - {x: 26, y: -1}
+        - {x: 92, y: -1}
+        - {x: 93, y: 0}
+        - {x: 93, y: 8}
+        - {x: 60, y: 8}
+        - {x: 49.224487, y: 7.346939}
+        - {x: 54, y: 10}
+        - {x: 54, y: 64}
+        - {x: 1, y: 64}
+        - {x: -3, y: 49}
+        - {x: -3, y: 13}
+        - {x: 8.375, y: 6}
+        - {x: -13, y: 6}
+        - {x: -19, y: -4}
+        - {x: -19, y: -22}
+        - {x: -8, y: -32}
+        - {x: -8, y: -38}
+        - {x: 27, y: -60}
+        - {x: 69, y: -60}
+      - - {x: 21, y: 14}
+        - {x: 20, y: 15}
+        - {x: 14, y: 16}
+        - {x: 12, y: 18}
+        - {x: 11, y: 18}
+        - {x: 7, y: 23}
+        - {x: 5, y: 26}
+        - {x: 5, y: 29}
+        - {x: 4, y: 30}
+        - {x: 4, y: 40}
+        - {x: 5, y: 41}
+        - {x: 5, y: 45}
+        - {x: 7, y: 48}
+        - {x: 13, y: 54}
+        - {x: 18, y: 57}
+        - {x: 27, y: 57}
+        - {x: 28, y: 58}
+        - {x: 30, y: 56}
+        - {x: 33, y: 55}
+        - {x: 37, y: 54}
+        - {x: 41, y: 50}
+        - {x: 41, y: 49}
+        - {x: 43, y: 47}
+        - {x: 44, y: 41}
+        - {x: 45, y: 40}
+        - {x: 45, y: 29}
+        - {x: 44, y: 28}
+        - {x: 44, y: 26}
+        - {x: 42, y: 23}
+        - {x: 39, y: 19}
+        - {x: 38, y: 19}
+        - {x: 32, y: 15}
+        - {x: 28, y: 15}
+        - {x: 27, y: 14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b50347d1c7091db0800000000000000
+      internalID: -4820813397001828940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_7
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 69, y: -53}
+        - {x: 61, y: -48}
+        - {x: 0.7647095, y: -32}
+        - {x: 8, y: -32}
+        - {x: 9.632843, y: -29.387451}
+        - {x: 67, y: -43}
+        - {x: 84, y: -43}
+        - {x: 84, y: -36}
+        - {x: 83, y: -34}
+        - {x: 29, y: -23}
+        - {x: 13, y: -23}
+        - {x: 13, y: -9.903229}
+        - {x: 61, y: -13}
+        - {x: 77, y: -13}
+        - {x: 77, y: -5}
+        - {x: 62, y: -3}
+        - {x: 36, y: -2}
+        - {x: 13, y: -2}
+        - {x: 13, y: 5}
+        - {x: 26.5, y: 5}
+        - {x: 25, y: 2}
+        - {x: 26, y: -1}
+        - {x: 92, y: -1}
+        - {x: 93, y: 0}
+        - {x: 93, y: 8}
+        - {x: 60, y: 8}
+        - {x: 49.224487, y: 7.346939}
+        - {x: 54, y: 10}
+        - {x: 54, y: 64}
+        - {x: 1, y: 64}
+        - {x: -3, y: 49}
+        - {x: -3, y: 13}
+        - {x: 8.375, y: 6}
+        - {x: -13, y: 6}
+        - {x: -19, y: -4}
+        - {x: -19, y: -22}
+        - {x: -8, y: -32}
+        - {x: -8, y: -38}
+        - {x: 27, y: -60}
+        - {x: 69, y: -60}
+      - - {x: 21, y: 14}
+        - {x: 20, y: 15}
+        - {x: 14, y: 16}
+        - {x: 12, y: 18}
+        - {x: 11, y: 18}
+        - {x: 7, y: 23}
+        - {x: 5, y: 26}
+        - {x: 5, y: 29}
+        - {x: 4, y: 30}
+        - {x: 4, y: 40}
+        - {x: 5, y: 41}
+        - {x: 5, y: 45}
+        - {x: 7, y: 48}
+        - {x: 13, y: 54}
+        - {x: 18, y: 57}
+        - {x: 27, y: 57}
+        - {x: 28, y: 58}
+        - {x: 30, y: 56}
+        - {x: 33, y: 55}
+        - {x: 37, y: 54}
+        - {x: 41, y: 50}
+        - {x: 41, y: 49}
+        - {x: 43, y: 47}
+        - {x: 44, y: 41}
+        - {x: 45, y: 40}
+        - {x: 45, y: 29}
+        - {x: 44, y: 28}
+        - {x: 44, y: 26}
+        - {x: 42, y: 23}
+        - {x: 39, y: 19}
+        - {x: 38, y: 19}
+        - {x: 32, y: 15}
+        - {x: 28, y: 15}
+        - {x: 27, y: 14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12aee84b0bf1c0dc0800000000000000
+      internalID: -3671524752409826783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_8
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 69, y: -53}
+        - {x: 61, y: -48}
+        - {x: 0.7647095, y: -32}
+        - {x: 8, y: -32}
+        - {x: 9.632843, y: -29.387451}
+        - {x: 67, y: -43}
+        - {x: 84, y: -43}
+        - {x: 84, y: -36}
+        - {x: 83, y: -34}
+        - {x: 29, y: -23}
+        - {x: 13, y: -23}
+        - {x: 13, y: -9.903229}
+        - {x: 61, y: -13}
+        - {x: 77, y: -13}
+        - {x: 77, y: -5}
+        - {x: 62, y: -3}
+        - {x: 36, y: -2}
+        - {x: 13, y: -2}
+        - {x: 13, y: 5}
+        - {x: 26.5, y: 5}
+        - {x: 25, y: 2}
+        - {x: 26, y: -1}
+        - {x: 92, y: -1}
+        - {x: 93, y: 0}
+        - {x: 93, y: 8}
+        - {x: 60, y: 8}
+        - {x: 49.224487, y: 7.346939}
+        - {x: 54, y: 10}
+        - {x: 54, y: 64}
+        - {x: 1, y: 64}
+        - {x: -3, y: 49}
+        - {x: -3, y: 13}
+        - {x: 8.375, y: 6}
+        - {x: -13, y: 6}
+        - {x: -19, y: -4}
+        - {x: -19, y: -22}
+        - {x: -8, y: -32}
+        - {x: -8, y: -38}
+        - {x: 27, y: -60}
+        - {x: 69, y: -60}
+      - - {x: 21, y: 14}
+        - {x: 20, y: 15}
+        - {x: 14, y: 16}
+        - {x: 12, y: 18}
+        - {x: 11, y: 18}
+        - {x: 7, y: 23}
+        - {x: 5, y: 26}
+        - {x: 5, y: 29}
+        - {x: 4, y: 30}
+        - {x: 4, y: 40}
+        - {x: 5, y: 41}
+        - {x: 5, y: 45}
+        - {x: 7, y: 48}
+        - {x: 13, y: 54}
+        - {x: 18, y: 57}
+        - {x: 27, y: 57}
+        - {x: 28, y: 58}
+        - {x: 30, y: 56}
+        - {x: 33, y: 55}
+        - {x: 37, y: 54}
+        - {x: 41, y: 50}
+        - {x: 41, y: 49}
+        - {x: 43, y: 47}
+        - {x: 44, y: 41}
+        - {x: 45, y: 40}
+        - {x: 45, y: 29}
+        - {x: 44, y: 28}
+        - {x: 44, y: 26}
+        - {x: 42, y: 23}
+        - {x: 39, y: 19}
+        - {x: 38, y: 19}
+        - {x: 32, y: 15}
+        - {x: 28, y: 15}
+        - {x: 27, y: 14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f2e021166cbe3f0800000000000000
+      internalID: -870383982749012178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_9
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 69, y: -53}
+        - {x: 61, y: -48}
+        - {x: 0.7647095, y: -32}
+        - {x: 8, y: -32}
+        - {x: 9.632843, y: -29.387451}
+        - {x: 67, y: -43}
+        - {x: 84, y: -43}
+        - {x: 84, y: -36}
+        - {x: 83, y: -34}
+        - {x: 29, y: -23}
+        - {x: 13, y: -23}
+        - {x: 13, y: -9.903229}
+        - {x: 61, y: -13}
+        - {x: 77, y: -13}
+        - {x: 77, y: -5}
+        - {x: 62, y: -3}
+        - {x: 36, y: -2}
+        - {x: 13, y: -2}
+        - {x: 13, y: 5}
+        - {x: 26.5, y: 5}
+        - {x: 25, y: 2}
+        - {x: 26, y: -1}
+        - {x: 92, y: -1}
+        - {x: 93, y: 0}
+        - {x: 93, y: 8}
+        - {x: 60, y: 8}
+        - {x: 49.224487, y: 7.346939}
+        - {x: 54, y: 10}
+        - {x: 54, y: 64}
+        - {x: 1, y: 64}
+        - {x: -3, y: 49}
+        - {x: -3, y: 13}
+        - {x: 8.375, y: 6}
+        - {x: -13, y: 6}
+        - {x: -19, y: -4}
+        - {x: -19, y: -22}
+        - {x: -8, y: -32}
+        - {x: -8, y: -38}
+        - {x: 27, y: -60}
+        - {x: 69, y: -60}
+      - - {x: 21, y: 14}
+        - {x: 20, y: 15}
+        - {x: 14, y: 16}
+        - {x: 12, y: 18}
+        - {x: 11, y: 18}
+        - {x: 7, y: 23}
+        - {x: 5, y: 26}
+        - {x: 5, y: 29}
+        - {x: 4, y: 30}
+        - {x: 4, y: 40}
+        - {x: 5, y: 41}
+        - {x: 5, y: 45}
+        - {x: 7, y: 48}
+        - {x: 13, y: 54}
+        - {x: 18, y: 57}
+        - {x: 27, y: 57}
+        - {x: 28, y: 58}
+        - {x: 30, y: 56}
+        - {x: 33, y: 55}
+        - {x: 37, y: 54}
+        - {x: 41, y: 50}
+        - {x: 41, y: 49}
+        - {x: 43, y: 47}
+        - {x: 44, y: 41}
+        - {x: 45, y: 40}
+        - {x: 45, y: 29}
+        - {x: 44, y: 28}
+        - {x: 44, y: 26}
+        - {x: 42, y: 23}
+        - {x: 39, y: 19}
+        - {x: 38, y: 19}
+        - {x: 32, y: 15}
+        - {x: 28, y: 15}
+        - {x: 27, y: 14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a218f4beff8ef940800000000000000
+      internalID: 5331857332973867684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_10
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 69, y: -53}
+        - {x: 61, y: -48}
+        - {x: 0.7647095, y: -32}
+        - {x: 8, y: -32}
+        - {x: 9.632843, y: -29.387451}
+        - {x: 67, y: -43}
+        - {x: 84, y: -43}
+        - {x: 84, y: -36}
+        - {x: 83, y: -34}
+        - {x: 29, y: -23}
+        - {x: 13, y: -23}
+        - {x: 13, y: -9.903229}
+        - {x: 61, y: -13}
+        - {x: 77, y: -13}
+        - {x: 77, y: -5}
+        - {x: 62, y: -3}
+        - {x: 36, y: -2}
+        - {x: 13, y: -2}
+        - {x: 13, y: 5}
+        - {x: 26.5, y: 5}
+        - {x: 25, y: 2}
+        - {x: 26, y: -1}
+        - {x: 92, y: -1}
+        - {x: 93, y: 0}
+        - {x: 93, y: 8}
+        - {x: 60, y: 8}
+        - {x: 49.224487, y: 7.346939}
+        - {x: 54, y: 10}
+        - {x: 54, y: 64}
+        - {x: 1, y: 64}
+        - {x: -3, y: 49}
+        - {x: -3, y: 13}
+        - {x: 8.375, y: 6}
+        - {x: -13, y: 6}
+        - {x: -19, y: -4}
+        - {x: -19, y: -22}
+        - {x: -8, y: -32}
+        - {x: -8, y: -38}
+        - {x: 27, y: -60}
+        - {x: 69, y: -60}
+      - - {x: 21, y: 14}
+        - {x: 20, y: 15}
+        - {x: 14, y: 16}
+        - {x: 12, y: 18}
+        - {x: 11, y: 18}
+        - {x: 7, y: 23}
+        - {x: 5, y: 26}
+        - {x: 5, y: 29}
+        - {x: 4, y: 30}
+        - {x: 4, y: 40}
+        - {x: 5, y: 41}
+        - {x: 5, y: 45}
+        - {x: 7, y: 48}
+        - {x: 13, y: 54}
+        - {x: 18, y: 57}
+        - {x: 27, y: 57}
+        - {x: 28, y: 58}
+        - {x: 30, y: 56}
+        - {x: 33, y: 55}
+        - {x: 37, y: 54}
+        - {x: 41, y: 50}
+        - {x: 41, y: 49}
+        - {x: 43, y: 47}
+        - {x: 44, y: 41}
+        - {x: 45, y: 40}
+        - {x: 45, y: 29}
+        - {x: 44, y: 28}
+        - {x: 44, y: 26}
+        - {x: 42, y: 23}
+        - {x: 39, y: 19}
+        - {x: 38, y: 19}
+        - {x: 32, y: 15}
+        - {x: 28, y: 15}
+        - {x: 27, y: 14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33d2ec396e145840800000000000000
+      internalID: 5211824106116404027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_11
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 69, y: -53}
+        - {x: 61, y: -48}
+        - {x: 0.7647095, y: -32}
+        - {x: 8, y: -32}
+        - {x: 9.632843, y: -29.387451}
+        - {x: 67, y: -43}
+        - {x: 84, y: -43}
+        - {x: 84, y: -36}
+        - {x: 83, y: -34}
+        - {x: 29, y: -23}
+        - {x: 13, y: -23}
+        - {x: 13, y: -9.903229}
+        - {x: 61, y: -13}
+        - {x: 77, y: -13}
+        - {x: 77, y: -5}
+        - {x: 62, y: -3}
+        - {x: 36, y: -2}
+        - {x: 13, y: -2}
+        - {x: 13, y: 5}
+        - {x: 26.5, y: 5}
+        - {x: 25, y: 2}
+        - {x: 26, y: -1}
+        - {x: 92, y: -1}
+        - {x: 93, y: 0}
+        - {x: 93, y: 8}
+        - {x: 60, y: 8}
+        - {x: 49.224487, y: 7.346939}
+        - {x: 54, y: 10}
+        - {x: 54, y: 64}
+        - {x: 1, y: 64}
+        - {x: -3, y: 49}
+        - {x: -3, y: 13}
+        - {x: 8.375, y: 6}
+        - {x: -13, y: 6}
+        - {x: -19, y: -4}
+        - {x: -19, y: -22}
+        - {x: -8, y: -32}
+        - {x: -8, y: -38}
+        - {x: 27, y: -60}
+        - {x: 69, y: -60}
+      - - {x: 21, y: 14}
+        - {x: 20, y: 15}
+        - {x: 14, y: 16}
+        - {x: 12, y: 18}
+        - {x: 11, y: 18}
+        - {x: 7, y: 23}
+        - {x: 5, y: 26}
+        - {x: 5, y: 29}
+        - {x: 4, y: 30}
+        - {x: 4, y: 40}
+        - {x: 5, y: 41}
+        - {x: 5, y: 45}
+        - {x: 7, y: 48}
+        - {x: 13, y: 54}
+        - {x: 18, y: 57}
+        - {x: 27, y: 57}
+        - {x: 28, y: 58}
+        - {x: 30, y: 56}
+        - {x: 33, y: 55}
+        - {x: 37, y: 54}
+        - {x: 41, y: 50}
+        - {x: 41, y: 49}
+        - {x: 43, y: 47}
+        - {x: 44, y: 41}
+        - {x: 45, y: 40}
+        - {x: 45, y: 29}
+        - {x: 44, y: 28}
+        - {x: 44, y: 26}
+        - {x: 42, y: 23}
+        - {x: 39, y: 19}
+        - {x: 38, y: 19}
+        - {x: 32, y: 15}
+        - {x: 28, y: 15}
+        - {x: 27, y: 14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f98d702820288f0800000000000000
+      internalID: -539866247830397094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_12
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 69, y: -53}
+        - {x: 61, y: -48}
+        - {x: 0.7647095, y: -32}
+        - {x: 8, y: -32}
+        - {x: 9.632843, y: -29.387451}
+        - {x: 67, y: -43}
+        - {x: 84, y: -43}
+        - {x: 84, y: -36}
+        - {x: 83, y: -34}
+        - {x: 29, y: -23}
+        - {x: 13, y: -23}
+        - {x: 13, y: -9.903229}
+        - {x: 61, y: -13}
+        - {x: 77, y: -13}
+        - {x: 77, y: -5}
+        - {x: 62, y: -3}
+        - {x: 36, y: -2}
+        - {x: 13, y: -2}
+        - {x: 13, y: 5}
+        - {x: 26.5, y: 5}
+        - {x: 25, y: 2}
+        - {x: 26, y: -1}
+        - {x: 92, y: -1}
+        - {x: 93, y: 0}
+        - {x: 93, y: 8}
+        - {x: 60, y: 8}
+        - {x: 49.224487, y: 7.346939}
+        - {x: 54, y: 10}
+        - {x: 54, y: 64}
+        - {x: 1, y: 64}
+        - {x: -3, y: 49}
+        - {x: -3, y: 13}
+        - {x: 8.375, y: 6}
+        - {x: -13, y: 6}
+        - {x: -19, y: -4}
+        - {x: -19, y: -22}
+        - {x: -8, y: -32}
+        - {x: -8, y: -38}
+        - {x: 27, y: -60}
+        - {x: 69, y: -60}
+      - - {x: 21, y: 14}
+        - {x: 20, y: 15}
+        - {x: 14, y: 16}
+        - {x: 12, y: 18}
+        - {x: 11, y: 18}
+        - {x: 7, y: 23}
+        - {x: 5, y: 26}
+        - {x: 5, y: 29}
+        - {x: 4, y: 30}
+        - {x: 4, y: 40}
+        - {x: 5, y: 41}
+        - {x: 5, y: 45}
+        - {x: 7, y: 48}
+        - {x: 13, y: 54}
+        - {x: 18, y: 57}
+        - {x: 27, y: 57}
+        - {x: 28, y: 58}
+        - {x: 30, y: 56}
+        - {x: 33, y: 55}
+        - {x: 37, y: 54}
+        - {x: 41, y: 50}
+        - {x: 41, y: 49}
+        - {x: 43, y: 47}
+        - {x: 44, y: 41}
+        - {x: 45, y: 40}
+        - {x: 45, y: 29}
+        - {x: 44, y: 28}
+        - {x: 44, y: 26}
+        - {x: 42, y: 23}
+        - {x: 39, y: 19}
+        - {x: 38, y: 19}
+        - {x: 32, y: 15}
+        - {x: 28, y: 15}
+        - {x: 27, y: 14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98735386395dcf630800000000000000
+      internalID: 3962276601264420745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_13
+      rect:
+        serializedVersion: 2
+        x: 6656
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 69, y: -53}
+        - {x: 61, y: -48}
+        - {x: 0.7647095, y: -32}
+        - {x: 8, y: -32}
+        - {x: 9.632843, y: -29.387451}
+        - {x: 67, y: -43}
+        - {x: 84, y: -43}
+        - {x: 84, y: -36}
+        - {x: 83, y: -34}
+        - {x: 29, y: -23}
+        - {x: 13, y: -23}
+        - {x: 13, y: -9.903229}
+        - {x: 61, y: -13}
+        - {x: 77, y: -13}
+        - {x: 77, y: -5}
+        - {x: 62, y: -3}
+        - {x: 36, y: -2}
+        - {x: 13, y: -2}
+        - {x: 13, y: 5}
+        - {x: 26.5, y: 5}
+        - {x: 25, y: 2}
+        - {x: 26, y: -1}
+        - {x: 92, y: -1}
+        - {x: 93, y: 0}
+        - {x: 93, y: 8}
+        - {x: 60, y: 8}
+        - {x: 49.224487, y: 7.346939}
+        - {x: 54, y: 10}
+        - {x: 54, y: 64}
+        - {x: 1, y: 64}
+        - {x: -3, y: 49}
+        - {x: -3, y: 13}
+        - {x: 8.375, y: 6}
+        - {x: -13, y: 6}
+        - {x: -19, y: -4}
+        - {x: -19, y: -22}
+        - {x: -8, y: -32}
+        - {x: -8, y: -38}
+        - {x: 27, y: -60}
+        - {x: 69, y: -60}
+      - - {x: 21, y: 14}
+        - {x: 20, y: 15}
+        - {x: 14, y: 16}
+        - {x: 12, y: 18}
+        - {x: 11, y: 18}
+        - {x: 7, y: 23}
+        - {x: 5, y: 26}
+        - {x: 5, y: 29}
+        - {x: 4, y: 30}
+        - {x: 4, y: 40}
+        - {x: 5, y: 41}
+        - {x: 5, y: 45}
+        - {x: 7, y: 48}
+        - {x: 13, y: 54}
+        - {x: 18, y: 57}
+        - {x: 27, y: 57}
+        - {x: 28, y: 58}
+        - {x: 30, y: 56}
+        - {x: 33, y: 55}
+        - {x: 37, y: 54}
+        - {x: 41, y: 50}
+        - {x: 41, y: 49}
+        - {x: 43, y: 47}
+        - {x: 44, y: 41}
+        - {x: 45, y: 40}
+        - {x: 45, y: 29}
+        - {x: 44, y: 28}
+        - {x: 44, y: 26}
+        - {x: 42, y: 23}
+        - {x: 39, y: 19}
+        - {x: 38, y: 19}
+        - {x: 32, y: 15}
+        - {x: 28, y: 15}
+        - {x: 27, y: 14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f9c01e977beb980800000000000000
+      internalID: -8521171710843773160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_14
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 69, y: -53}
+        - {x: 61, y: -48}
+        - {x: 0.7647095, y: -32}
+        - {x: 8, y: -32}
+        - {x: 9.632843, y: -29.387451}
+        - {x: 67, y: -43}
+        - {x: 84, y: -43}
+        - {x: 84, y: -36}
+        - {x: 83, y: -34}
+        - {x: 29, y: -23}
+        - {x: 13, y: -23}
+        - {x: 13, y: -9.903229}
+        - {x: 61, y: -13}
+        - {x: 77, y: -13}
+        - {x: 77, y: -5}
+        - {x: 62, y: -3}
+        - {x: 36, y: -2}
+        - {x: 13, y: -2}
+        - {x: 13, y: 5}
+        - {x: 26.5, y: 5}
+        - {x: 25, y: 2}
+        - {x: 26, y: -1}
+        - {x: 92, y: -1}
+        - {x: 93, y: 0}
+        - {x: 93, y: 8}
+        - {x: 60, y: 8}
+        - {x: 49.224487, y: 7.346939}
+        - {x: 54, y: 10}
+        - {x: 54, y: 64}
+        - {x: 1, y: 64}
+        - {x: -3, y: 49}
+        - {x: -3, y: 13}
+        - {x: 8.375, y: 6}
+        - {x: -13, y: 6}
+        - {x: -19, y: -4}
+        - {x: -19, y: -22}
+        - {x: -8, y: -32}
+        - {x: -8, y: -38}
+        - {x: 27, y: -60}
+        - {x: 69, y: -60}
+      - - {x: 21, y: 14}
+        - {x: 20, y: 15}
+        - {x: 14, y: 16}
+        - {x: 12, y: 18}
+        - {x: 11, y: 18}
+        - {x: 7, y: 23}
+        - {x: 5, y: 26}
+        - {x: 5, y: 29}
+        - {x: 4, y: 30}
+        - {x: 4, y: 40}
+        - {x: 5, y: 41}
+        - {x: 5, y: 45}
+        - {x: 7, y: 48}
+        - {x: 13, y: 54}
+        - {x: 18, y: 57}
+        - {x: 27, y: 57}
+        - {x: 28, y: 58}
+        - {x: 30, y: 56}
+        - {x: 33, y: 55}
+        - {x: 37, y: 54}
+        - {x: 41, y: 50}
+        - {x: 41, y: 49}
+        - {x: 43, y: 47}
+        - {x: 44, y: 41}
+        - {x: 45, y: 40}
+        - {x: 45, y: 29}
+        - {x: 44, y: 28}
+        - {x: 44, y: 26}
+        - {x: 42, y: 23}
+        - {x: 39, y: 19}
+        - {x: 38, y: 19}
+        - {x: 32, y: 15}
+        - {x: 28, y: 15}
+        - {x: 27, y: 14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8598cad8be51230800000000000000
+      internalID: 3609049670124918988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_15
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 65, y: -60}
+        - {x: 56.467575, y: -49.49855}
+        - {x: 67, y: -52}
+        - {x: 82, y: -52}
+        - {x: 82, y: -42}
+        - {x: 63.807693, y: -20}
+        - {x: 76, y: -20}
+        - {x: 76, y: -13}
+        - {x: 71, y: -10}
+        - {x: 53.109604, y: -7.0627747}
+        - {x: 52.230774, y: -6}
+        - {x: 91, y: -6}
+        - {x: 91, y: 3}
+        - {x: 62, y: 6}
+        - {x: 42.307693, y: 6}
+        - {x: 39.82692, y: 9}
+        - {x: 44, y: 9}
+        - {x: 54, y: 12}
+        - {x: 54, y: 64}
+        - {x: 53, y: 67}
+        - {x: 24, y: 67}
+        - {x: 23, y: 65}
+        - {x: 25, y: 60}
+        - {x: 20, y: 66}
+        - {x: 18, y: 67}
+        - {x: 12, y: 67}
+        - {x: -3, y: 55}
+        - {x: -3, y: 25}
+        - {x: 4.5, y: 10}
+        - {x: -18, y: 10}
+        - {x: -18, y: -19}
+        - {x: -13, y: -33}
+        - {x: -8, y: -34.1875}
+        - {x: -8, y: -39}
+        - {x: 58, y: -69}
+        - {x: 65, y: -69}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99dfaddc4f49d82e0800000000000000
+      internalID: -2121876070275023463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_16
+      rect:
+        serializedVersion: 2
+        x: 8192
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 51, y: -84}
+        - {x: 49, y: -79}
+        - {x: 8.420563, y: -39.981308}
+        - {x: 62, y: -74}
+        - {x: 68, y: -74}
+        - {x: 70, y: -73}
+        - {x: 70, y: -67}
+        - {x: 39, y: -40}
+        - {x: 62, y: -44}
+        - {x: 64, y: -40}
+        - {x: 67, y: -28}
+        - {x: 48.621628, y: -10.702698}
+        - {x: 77, y: -23}
+        - {x: 82, y: -23}
+        - {x: 83, y: -21}
+        - {x: 83, y: -15}
+        - {x: 31.152176, y: 5.7391357}
+        - {x: 19.1875, y: 17}
+        - {x: 36, y: 17}
+        - {x: 41, y: 18}
+        - {x: 51, y: 36}
+        - {x: 51, y: 59}
+        - {x: 39, y: 76}
+        - {x: 0, y: 76}
+        - {x: -7, y: 62}
+        - {x: -7, y: 40}
+        - {x: -5, y: 28}
+        - {x: 3, y: 20}
+        - {x: 0, y: 20}
+        - {x: -4, y: 17}
+        - {x: -15, y: 3}
+        - {x: -15, y: -17}
+        - {x: -5.1176453, y: -29}
+        - {x: -6, y: -29}
+        - {x: -7, y: -31}
+        - {x: -7, y: -33}
+        - {x: 31, y: -76}
+        - {x: 45, y: -89}
+        - {x: 51, y: -89}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ed3d1c240263f60800000000000000
+      internalID: 8013628058044194460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_17
+      rect:
+        serializedVersion: 2
+        x: 8704
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 25, y: -102}
+        - {x: 26, y: -103}
+        - {x: 49, y: -103}
+        - {x: 49, y: -34.10869}
+        - {x: 54, y: -39}
+        - {x: 60, y: -39}
+        - {x: 61, y: -37}
+        - {x: 61, y: -31}
+        - {x: 49, y: -18.76471}
+        - {x: 49, y: 85}
+        - {x: -3, y: 85}
+        - {x: -6, y: 76}
+        - {x: -5.1111145, y: 73.33333}
+        - {x: -9, y: 75}
+        - {x: -15, y: 64}
+        - {x: -15, y: 45}
+        - {x: -13, y: 40}
+        - {x: -15, y: -1}
+        - {x: -8, y: -31}
+        - {x: 16, y: -103}
+        - {x: 24, y: -103}
+      - - {x: 1, y: -18}
+        - {x: 1, y: -16}
+        - {x: -1, y: -8}
+        - {x: -2, y: -7}
+        - {x: -2, y: -5}
+        - {x: 0, y: -9}
+        - {x: 1, y: -16}
+        - {x: 6, y: -25}
+        - {x: 5.285721, y: -25.71428}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa60ac9337dbae2b0800000000000000
+      internalID: -5554418887819655505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_18
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 6, y: -80}
+        - {x: 20, y: -106}
+        - {x: 26, y: -103}
+        - {x: 26, y: -85}
+        - {x: 23, y: -58}
+        - {x: 13.191177, y: -8.955887}
+        - {x: 29, y: -45}
+        - {x: 37, y: -45}
+        - {x: 38, y: -43}
+        - {x: 38, y: -34}
+        - {x: 10, y: 27}
+        - {x: 6, y: 27}
+        - {x: 5.199997, y: 31}
+        - {x: 23, y: 31}
+        - {x: 33, y: 43}
+        - {x: 36, y: 49}
+        - {x: 36, y: 79}
+        - {x: 17, y: 89}
+        - {x: -7, y: 89}
+        - {x: -10, y: 87}
+        - {x: -20, y: 71}
+        - {x: -15, y: 70}
+        - {x: -22, y: 69}
+        - {x: -22, y: 47}
+        - {x: -14, y: 33}
+        - {x: -5.600006, y: 31.600006}
+        - {x: -14, y: 26}
+        - {x: -14, y: -106}
+        - {x: 0, y: -106}
+      - - {x: -5, y: -16}
+        - {x: -4, y: -17}
+        - {x: -4, y: -21}
+        - {x: -5, y: -20}
+      - - {x: -3, y: -24}
+        - {x: -4, y: -24}
+        - {x: -4, y: -23}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fffcd786195fc9f0800000000000000
+      internalID: -446039884782829580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_19
+      rect:
+        serializedVersion: 2
+        x: 9728
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 17, y: -34.142853}
+        - {x: 21, y: -45}
+        - {x: 28, y: -45}
+        - {x: 28, y: -35}
+        - {x: 17, y: 1}
+        - {x: 17, y: 17}
+        - {x: 8.5625, y: 32}
+        - {x: 21, y: 32}
+        - {x: 33, y: 47}
+        - {x: 33, y: 79}
+        - {x: 17, y: 90}
+        - {x: -12, y: 90}
+        - {x: -23, y: 80}
+        - {x: -23, y: 70}
+        - {x: -19, y: 68}
+        - {x: -25, y: 67}
+        - {x: -25, y: 49}
+        - {x: -19, y: 32}
+        - {x: -4.152542, y: 32}
+        - {x: -4.305084, y: 31}
+        - {x: -7, y: 31}
+        - {x: -8, y: 30}
+        - {x: -20, y: 3}
+        - {x: -20, y: -49}
+        - {x: -14.885239, y: -49}
+        - {x: -18, y: -87}
+        - {x: -18, y: -105}
+        - {x: 17, y: -105}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625098796ed58c830800000000000000
+      internalID: 4091623506432296230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e0d7b3e796f61a848b3a9e0c801f1c8a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      knocked_back_heavy_0: -7367391774724157430
+      knocked_back_heavy_1: -7628260379167742009
+      knocked_back_heavy_10: 5211824106116404027
+      knocked_back_heavy_11: -539866247830397094
+      knocked_back_heavy_12: 3962276601264420745
+      knocked_back_heavy_13: -8521171710843773160
+      knocked_back_heavy_14: 3609049670124918988
+      knocked_back_heavy_15: -2121876070275023463
+      knocked_back_heavy_16: 8013628058044194460
+      knocked_back_heavy_17: -5554418887819655505
+      knocked_back_heavy_18: -446039884782829580
+      knocked_back_heavy_19: 4091623506432296230
+      knocked_back_heavy_2: 5548624053314614245
+      knocked_back_heavy_3: 8719924277211500328
+      knocked_back_heavy_4: -859988454692773944
+      knocked_back_heavy_5: -6314378045994415524
+      knocked_back_heavy_6: -4820813397001828940
+      knocked_back_heavy_7: -3671524752409826783
+      knocked_back_heavy_8: -870383982749012178
+      knocked_back_heavy_9: 5331857332973867684
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,3491 @@
+fileFormatVersion: 2
+guid: 516ba565ffa118146a7eb6a610357bd8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8521160599128635698
+    second: heavy_side_temp_temp_0
+  - first:
+      213: -5324977124524023841
+    second: heavy_side_temp_temp_1
+  - first:
+      213: 6089154528230601024
+    second: heavy_side_temp_temp_2
+  - first:
+      213: 4862480458743287713
+    second: heavy_side_temp_temp_3
+  - first:
+      213: -6612458404867320891
+    second: heavy_side_temp_temp_4
+  - first:
+      213: 7581682573505578901
+    second: heavy_side_temp_temp_5
+  - first:
+      213: -1151613277785811836
+    second: heavy_side_temp_temp_6
+  - first:
+      213: 2286711263440424587
+    second: heavy_side_temp_temp_7
+  - first:
+      213: -6962328972879291611
+    second: heavy_side_temp_temp_8
+  - first:
+      213: -6028890635389868966
+    second: heavy_side_temp_temp_9
+  - first:
+      213: 2765515363696312796
+    second: heavy_side_temp_temp_10
+  - first:
+      213: 7037643325242963888
+    second: heavy_side_temp_temp_11
+  - first:
+      213: -4101221860576687026
+    second: heavy_side_temp_temp_12
+  - first:
+      213: 8744626253543011373
+    second: heavy_side_temp_temp_13
+  - first:
+      213: 5142736494873802985
+    second: heavy_side_temp_temp_14
+  - first:
+      213: 1222592043408314268
+    second: heavy_side_temp_temp_15
+  - first:
+      213: 8905699637623985875
+    second: heavy_side_temp_temp_16
+  - first:
+      213: 3042424767525140166
+    second: heavy_side_temp_temp_17
+  - first:
+      213: -3669638305380467408
+    second: heavy_side_temp_temp_18
+  - first:
+      213: -1780262525511453019
+    second: heavy_side_temp_temp_19
+  - first:
+      213: 355410303990377614
+    second: heavy_side_temp_temp_20
+  - first:
+      213: -1330050354634058936
+    second: heavy_side_temp_temp_21
+  - first:
+      213: -1255097748640980723
+    second: heavy_side_temp_temp_22
+  - first:
+      213: -9092284271020857534
+    second: heavy_side_temp_temp_23
+  - first:
+      213: -7600013092855881515
+    second: heavy_side_temp_temp_24
+  - first:
+      213: -4386321823106330483
+    second: heavy_side_temp_temp_25
+  - first:
+      213: -4862553375337826482
+    second: heavy_side_temp_temp_26
+  - first:
+      213: -4676474110738017810
+    second: heavy_side_temp_temp_27
+  - first:
+      213: -7825264171411001517
+    second: heavy_side_temp_temp_28
+  - first:
+      213: 2469227613080700207
+    second: heavy_side_temp_temp_29
+  - first:
+      213: -8046896834205073683
+    second: heavy_side_temp_temp_30
+  - first:
+      213: -1291630236512764723
+    second: heavy_side_temp_temp_31
+  - first:
+      213: -603224001328911386
+    second: heavy_side_temp_temp_32
+  - first:
+      213: -1603877391984487320
+    second: heavy_side_temp_temp_33
+  - first:
+      213: -2850878314158996601
+    second: heavy_side_temp_temp_34
+  - first:
+      213: -6413991455430438676
+    second: heavy_side_temp_temp_35
+  - first:
+      213: 7915815191715811943
+    second: heavy_side_temp_temp_36
+  - first:
+      213: 6397574486599784262
+    second: heavy_side_temp_temp_37
+  - first:
+      213: -1985830992363275180
+    second: heavy_side_temp_temp_38
+  - first:
+      213: -2369775243322512546
+    second: heavy_side_temp_temp_39
+  - first:
+      213: 7951714308137524099
+    second: heavy_side_temp_temp_40
+  - first:
+      213: -6452375217714659998
+    second: heavy_side_temp_temp_41
+  - first:
+      213: 2737046779656862118
+    second: heavy_side_temp_temp_42
+  - first:
+      213: 5516185489766963493
+    second: heavy_side_temp_temp_43
+  - first:
+      213: 807975800074213464
+    second: heavy_side_temp_temp_44
+  - first:
+      213: -8310982576732426130
+    second: heavy_side_temp_temp_45
+  - first:
+      213: -1663997668376201149
+    second: heavy_side_temp_temp_46
+  - first:
+      213: 121445062941130381
+    second: heavy_side_temp_temp_47
+  - first:
+      213: 8995768399241217507
+    second: heavy_side_temp_temp_48
+  - first:
+      213: 4215808754496159654
+    second: heavy_side_temp_temp_49
+  - first:
+      213: 5071644949812410451
+    second: heavy_side_temp_temp_50
+  - first:
+      213: -7330445402999510102
+    second: heavy_side_temp_temp_51
+  - first:
+      213: 8332110111945471286
+    second: heavy_side_temp_temp_52
+  - first:
+      213: 8536591303055295420
+    second: heavy_side_temp_temp_53
+  - first:
+      213: -1066229812852182735
+    second: heavy_side_temp_temp_54
+  - first:
+      213: -4785932089031983864
+    second: heavy_side_temp_temp_55
+  - first:
+      213: -3181633800319088476
+    second: heavy_side_temp_temp_56
+  - first:
+      213: 8420662015156632001
+    second: heavy_side_temp_temp_57
+  - first:
+      213: 7319309256377605228
+    second: heavy_side_temp_temp_58
+  - first:
+      213: 8998523922615683550
+    second: heavy_side_temp_temp_59
+  - first:
+      213: 2377145791553080072
+    second: heavy_side_temp_temp_60
+  - first:
+      213: -2903523294413262220
+    second: heavy_side_temp_temp_61
+  - first:
+      213: 8710131895757554304
+    second: heavy_side_temp_temp_62
+  - first:
+      213: -908807818010895353
+    second: heavy_side_temp_temp_63
+  - first:
+      213: -748540067807685311
+    second: heavy_side_temp_temp_64
+  - first:
+      213: 8239166126194530206
+    second: heavy_side_temp_temp_65
+  - first:
+      213: -7047495630482550171
+    second: heavy_side_temp_temp_66
+  - first:
+      213: 1740166764755538580
+    second: heavy_side_temp_temp_67
+  - first:
+      213: 4758780200897676446
+    second: heavy_side_temp_temp_68
+  - first:
+      213: -1417508887059286459
+    second: heavy_side_temp_temp_69
+  - first:
+      213: -2593083219904893423
+    second: heavy_side_temp_temp_70
+  - first:
+      213: 8501652506072984947
+    second: heavy_side_temp_temp_71
+  - first:
+      213: -2977277450152735506
+    second: heavy_side_temp_temp_72
+  - first:
+      213: 6140394134875375971
+    second: heavy_side_temp_temp_73
+  - first:
+      213: -3038371257065020351
+    second: heavy_side_temp_temp_74
+  - first:
+      213: -5589744887533758220
+    second: heavy_side_temp_temp_75
+  - first:
+      213: -1942128118138983829
+    second: heavy_side_temp_temp_76
+  - first:
+      213: 7087843900366772266
+    second: heavy_side_temp_temp_77
+  - first:
+      213: -3899753781258589772
+    second: heavy_side_temp_temp_78
+  - first:
+      213: -6025323191912114083
+    second: heavy_side_temp_temp_79
+  - first:
+      213: -3449890836958019578
+    second: heavy_side_temp_temp_80
+  - first:
+      213: -5772275105908072103
+    second: heavy_side_temp_temp_81
+  - first:
+      213: 6378203221024785850
+    second: heavy_side_temp_temp_82
+  - first:
+      213: -4522097368004190504
+    second: heavy_side_temp_temp_83
+  - first:
+      213: -5327179157455228518
+    second: heavy_side_temp_temp_84
+  - first:
+      213: 8243426834618582137
+    second: heavy_side_temp_temp_85
+  - first:
+      213: -8750946145221097324
+    second: heavy_side_temp_temp_86
+  - first:
+      213: -298523847704380497
+    second: heavy_side_temp_temp_87
+  - first:
+      213: -7539872312752995666
+    second: heavy_side_temp_temp_88
+  - first:
+      213: -3561989240559107378
+    second: heavy_side_temp_temp_89
+  - first:
+      213: 8862478389174787369
+    second: heavy_side_temp_temp_90
+  - first:
+      213: 5613933686607616695
+    second: heavy_side_temp_temp_91
+  - first:
+      213: -7903631747662730740
+    second: heavy_side_temp_temp_92
+  - first:
+      213: 1208008117690746026
+    second: heavy_side_temp_temp_93
+  - first:
+      213: 7135285904439103370
+    second: heavy_side_temp_temp_94
+  - first:
+      213: 8191976879144473794
+    second: heavy_side_temp_temp_95
+  - first:
+      213: -8097066541600668475
+    second: heavy_side_temp_temp_96
+  - first:
+      213: 8826001622391510945
+    second: heavy_side_temp_temp_97
+  - first:
+      213: -7245828572079392105
+    second: heavy_side_temp_temp_98
+  - first:
+      213: 2627047378819589134
+    second: heavy_side_temp_temp_99
+  - first:
+      213: 2604179185416861273
+    second: heavy_side_temp_temp_100
+  - first:
+      213: -5291742840847276353
+    second: heavy_side_temp_temp_101
+  - first:
+      213: 449675463414801274
+    second: heavy_side_temp_temp_102
+  - first:
+      213: -3157770574230369045
+    second: heavy_side_temp_temp_103
+  - first:
+      213: -4707340722686451136
+    second: heavy_side_temp_temp_104
+  - first:
+      213: 6961332499194336981
+    second: heavy_side_temp_temp_105
+  - first:
+      213: -6611575244678563836
+    second: heavy_side_temp_temp_106
+  - first:
+      213: -8288118508564981095
+    second: heavy_side_temp_temp_107
+  - first:
+      213: -8032752861388922788
+    second: heavy_side_temp_temp_108
+  - first:
+      213: -755998906714111934
+    second: heavy_side_temp_temp_109
+  - first:
+      213: -3029554941780146734
+    second: heavy_side_temp_temp_110
+  - first:
+      213: -2458154462443051468
+    second: heavy_side_temp_temp_111
+  - first:
+      213: 3121515534639732977
+    second: heavy_side_temp_temp_112
+  - first:
+      213: -405011261159452281
+    second: heavy_side_temp_temp_113
+  - first:
+      213: -3714442487773549645
+    second: heavy_side_temp_temp_114
+  - first:
+      213: -3861689636450107826
+    second: heavy_side_temp_temp_115
+  - first:
+      213: -1171028516149297767
+    second: heavy_side_temp_temp_116
+  - first:
+      213: -746152558123356286
+    second: heavy_side_temp_temp_117
+  - first:
+      213: 5361032071552514245
+    second: heavy_side_temp_temp_118
+  - first:
+      213: 110587520727648563
+    second: heavy_side_temp_temp_119
+  - first:
+      213: -3543659628630016732
+    second: heavy_side_temp_temp_120
+  - first:
+      213: 467052768491123825
+    second: heavy_side_temp_temp_121
+  - first:
+      213: -2082415226278735113
+    second: heavy_side_temp_temp_122
+  - first:
+      213: -3458439199492094438
+    second: heavy_side_temp_temp_123
+  - first:
+      213: 1380581293090019987
+    second: heavy_side_temp_temp_124
+  - first:
+      213: 1302235625361679542
+    second: heavy_side_temp_temp_125
+  - first:
+      213: -1625141502252355355
+    second: heavy_side_temp_temp_126
+  - first:
+      213: 8114855803103115704
+    second: heavy_side_temp_temp_127
+  - first:
+      213: 7313186642493274476
+    second: heavy_side_temp_temp_128
+  - first:
+      213: -6396985078501774813
+    second: heavy_side_temp_temp_129
+  - first:
+      213: 7911925716734486786
+    second: heavy_side_temp_temp_130
+  - first:
+      213: 518190002410833208
+    second: heavy_side_temp_temp_131
+  - first:
+      213: -5152136712254533113
+    second: heavy_side_temp_temp_132
+  - first:
+      213: 4428322283876313156
+    second: heavy_side_temp_temp_133
+  - first:
+      213: 2861554339483485016
+    second: heavy_side_temp_temp_134
+  - first:
+      213: -8076336591775682343
+    second: heavy_side_temp_temp_135
+  - first:
+      213: -487377363252165065
+    second: heavy_side_temp_temp_136
+  - first:
+      213: -2012408631160799778
+    second: heavy_side_temp_temp_137
+  - first:
+      213: -6371216683471980429
+    second: heavy_side_temp_temp_138
+  - first:
+      213: -2509805183099555821
+    second: heavy_side_temp_temp_139
+  - first:
+      213: 7234752954305035991
+    second: heavy_side_temp_temp_140
+  - first:
+      213: 1821928903907446330
+    second: heavy_side_temp_temp_141
+  - first:
+      213: 1024233015655848460
+    second: heavy_side_temp_temp_142
+  - first:
+      213: 6680263836996024999
+    second: heavy_side_temp_temp_143
+  - first:
+      213: 2959935297319820671
+    second: heavy_side_temp_temp_144
+  - first:
+      213: -4067282149089037592
+    second: heavy_side_temp_temp_145
+  - first:
+      213: -370448931075130148
+    second: heavy_side_temp_temp_146
+  - first:
+      213: -4438603464965372277
+    second: heavy_side_temp_temp_147
+  - first:
+      213: -7279418592587511341
+    second: heavy_side_temp_temp_148
+  - first:
+      213: -3230328243626979560
+    second: heavy_side_temp_temp_149
+  - first:
+      213: 8917162464219387759
+    second: heavy_side_temp_temp_150
+  - first:
+      213: 8810152038978056360
+    second: heavy_side_temp_temp_151
+  - first:
+      213: 4351793733596725677
+    second: heavy_side_temp_temp_152
+  - first:
+      213: 4075383429521254131
+    second: heavy_side_temp_temp_153
+  - first:
+      213: 3745001120737113673
+    second: heavy_side_temp_temp_154
+  - first:
+      213: -424422058373099170
+    second: heavy_side_temp_temp_155
+  - first:
+      213: -3371512398915795358
+    second: heavy_side_temp_temp_156
+  - first:
+      213: 5381911326100503994
+    second: heavy_side_temp_temp_157
+  - first:
+      213: -1020634579074502383
+    second: heavy_side_temp_temp_158
+  - first:
+      213: 2627044888271380212
+    second: heavy_side_temp_temp_159
+  - first:
+      213: -1568078327189486774
+    second: heavy_side_temp_temp_160
+  - first:
+      213: -7495601493170034680
+    second: heavy_side_temp_temp_161
+  - first:
+      213: 6317704090104472715
+    second: heavy_side_temp_temp_162
+  - first:
+      213: 1395704135014216410
+    second: heavy_side_temp_temp_163
+  - first:
+      213: -3270223189623740226
+    second: heavy_side_temp_temp_164
+  - first:
+      213: 8488574443986330097
+    second: heavy_side_temp_temp_165
+  - first:
+      213: -7617481920879806860
+    second: heavy_side_temp_temp_166
+  - first:
+      213: 9020788569651308181
+    second: heavy_side_temp_temp_167
+  - first:
+      213: -3354239730319314184
+    second: heavy_side_temp_temp_168
+  - first:
+      213: 832946611156865770
+    second: heavy_side_temp_temp_169
+  - first:
+      213: -2375853855658481243
+    second: heavy_side_temp_temp_170
+  - first:
+      213: 440940741907013181
+    second: heavy_side_temp_temp_171
+  - first:
+      213: -4864922937878571352
+    second: heavy_side_temp_temp_172
+  - first:
+      213: -991256584127934753
+    second: heavy_side_temp_temp_173
+  - first:
+      213: -4642568161082851263
+    second: heavy_side_temp_temp_174
+  - first:
+      213: 795553275669278909
+    second: heavy_side_temp_temp_175
+  - first:
+      213: 2086453073520845465
+    second: heavy_side_temp_temp_176
+  - first:
+      213: -2494020188484083390
+    second: heavy_side_temp_temp_177
+  - first:
+      213: 3521869699988983561
+    second: heavy_side_temp_temp_178
+  - first:
+      213: 5505879980943688738
+    second: heavy_side_temp_temp_179
+  - first:
+      213: 8195988477791206732
+    second: heavy_side_temp_temp_180
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 28, y: 28}
+        - {x: 26, y: 40}
+        - {x: 16, y: 40}
+        - {x: 12, y: 36}
+        - {x: 12, y: 30}
+        - {x: 20, y: 18}
+        - {x: 28, y: 18}
+      - - {x: -2, y: 4}
+        - {x: -2, y: -4}
+        - {x: 2, y: -8}
+        - {x: 8, y: -6}
+        - {x: 8, y: -4}
+        - {x: 18, y: -4}
+        - {x: 30, y: 0}
+        - {x: 30, y: 10}
+        - {x: 28, y: 14}
+        - {x: 22, y: 14}
+        - {x: 12, y: 10}
+        - {x: 8, y: 2}
+        - {x: 4, y: 6}
+      - - {x: 22, y: -48}
+        - {x: 22, y: -34}
+        - {x: 18, y: -30}
+        - {x: 12, y: -32}
+        - {x: 12, y: -46}
+        - {x: 16, y: -50}
+      - - {x: -2, y: -44}
+        - {x: -2, y: -40}
+        - {x: -8, y: -38}
+        - {x: -20, y: -48}
+        - {x: -18, y: -54}
+        - {x: -14, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239fd19fa6e314670800000000000000
+      internalID: 8521160599128635698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 12, y: 24}
+        - {x: 12, y: 28}
+        - {x: 4, y: 36}
+        - {x: 0, y: 36}
+        - {x: -2, y: 30}
+        - {x: 6, y: 22}
+      - - {x: -82, y: -12}
+        - {x: -82, y: -8}
+        - {x: -86, y: -4}
+        - {x: -90, y: -4}
+        - {x: -94, y: -8}
+        - {x: -94, y: -12}
+        - {x: -90, y: -16}
+        - {x: -86, y: -16}
+      - - {x: 24, y: -12}
+        - {x: 24, y: -6}
+        - {x: 18, y: -4}
+        - {x: 14, y: -8}
+        - {x: 18, y: -14}
+      - - {x: 2, y: -20}
+        - {x: 2, y: -14}
+        - {x: -4, y: -12}
+        - {x: -8, y: -16}
+        - {x: -4, y: -22}
+      - - {x: 18, y: -36}
+        - {x: 18, y: -32}
+        - {x: 12, y: -26}
+        - {x: 8, y: -26}
+        - {x: 6, y: -32}
+        - {x: 12, y: -38}
+      - - {x: -4, y: -44}
+        - {x: -4, y: -40}
+        - {x: -10, y: -38}
+        - {x: -20, y: -48}
+        - {x: -20, y: -50}
+        - {x: -16, y: -54}
+        - {x: -14, y: -54}
+      - - {x: 22, y: -54}
+        - {x: 22, y: -48}
+        - {x: 18, y: -44}
+        - {x: 12, y: -46}
+        - {x: 12, y: -52}
+        - {x: 16, y: -56}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf1aa7a481e916b0800000000000000
+      internalID: -5324977124524023841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -14, y: 22}
+        - {x: -14, y: 30}
+        - {x: -20, y: 34}
+        - {x: -34, y: 34}
+        - {x: -38, y: 32}
+        - {x: -38, y: 28}
+        - {x: -34, y: 24}
+        - {x: -20, y: 20}
+      - - {x: -28, y: -8}
+        - {x: -28, y: -2}
+        - {x: -34, y: 0}
+        - {x: -38, y: -4}
+        - {x: -34, y: -10}
+      - - {x: -82, y: -10}
+        - {x: -82, y: -8}
+        - {x: -88, y: -2}
+        - {x: -90, y: -2}
+        - {x: -114, y: -4}
+        - {x: -118, y: -8}
+        - {x: -116, y: -14}
+        - {x: -86, y: -14}
+      - - {x: -44, y: -34}
+        - {x: -42, y: -26}
+        - {x: -46, y: -22}
+        - {x: -52, y: -24}
+        - {x: -54, y: -32}
+        - {x: -50, y: -36}
+      - - {x: -56, y: -34}
+        - {x: -56, y: -28}
+        - {x: -62, y: -26}
+        - {x: -66, y: -30}
+        - {x: -62, y: -36}
+      - - {x: 22, y: -52}
+        - {x: 20, y: -46}
+        - {x: 12, y: -36}
+        - {x: 8, y: -36}
+        - {x: 6, y: -42}
+        - {x: 16, y: -56}
+      - - {x: -10, y: -52}
+        - {x: -4, y: -42}
+        - {x: -4, y: -38}
+        - {x: -10, y: -36}
+        - {x: -16, y: -40}
+        - {x: -20, y: -50}
+        - {x: -16, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04175ad18c5018450800000000000000
+      internalID: 6089154528230601024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -44, y: 26}
+        - {x: -44, y: 30}
+        - {x: -50, y: 32}
+        - {x: -56, y: 26}
+        - {x: -56, y: 24}
+        - {x: -52, y: 20}
+        - {x: -50, y: 20}
+      - - {x: -58, y: -2}
+        - {x: -104, y: -2}
+        - {x: -106, y: -8}
+        - {x: -106, y: -16}
+        - {x: -58, y: -16}
+      - - {x: -140, y: -8}
+        - {x: -142, y: -2}
+        - {x: -148, y: -2}
+        - {x: -152, y: -6}
+        - {x: -150, y: -12}
+        - {x: -144, y: -12}
+      - - {x: -112, y: -10}
+        - {x: -114, y: -4}
+        - {x: -124, y: -4}
+        - {x: -128, y: -8}
+        - {x: -126, y: -14}
+        - {x: -116, y: -14}
+      - - {x: 22, y: -52}
+        - {x: 22, y: -48}
+        - {x: 12, y: -38}
+        - {x: 8, y: -38}
+        - {x: 6, y: -44}
+        - {x: 16, y: -54}
+      - - {x: -10, y: -52}
+        - {x: -8, y: -44}
+        - {x: -12, y: -40}
+        - {x: -18, y: -42}
+        - {x: -20, y: -50}
+        - {x: -16, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af0ca6f6300b7340800000000000000
+      internalID: 4862480458743287713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -24, y: 22}
+        - {x: -34, y: 32}
+        - {x: -38, y: 34}
+        - {x: -46, y: 34}
+        - {x: -54, y: 28}
+        - {x: -54, y: 18}
+        - {x: -42, y: 16}
+        - {x: -24, y: 16}
+      - - {x: -64, y: -18}
+        - {x: -46, y: -8}
+        - {x: -46, y: 4}
+        - {x: -138, y: 4}
+        - {x: -144, y: 0}
+        - {x: -144, y: -6}
+        - {x: -138, y: -12}
+        - {x: -134, y: -12}
+        - {x: -140, y: -16}
+        - {x: -140, y: -26}
+        - {x: -126, y: -28}
+        - {x: -106, y: -28}
+      - - {x: 20, y: -48}
+        - {x: 18, y: -40}
+        - {x: 10, y: -34}
+        - {x: 6, y: -34}
+        - {x: 4, y: -40}
+        - {x: 14, y: -52}
+      - - {x: -8, y: -48}
+        - {x: -4, y: -38}
+        - {x: -8, y: -34}
+        - {x: -14, y: -36}
+        - {x: -18, y: -46}
+        - {x: -14, y: -50}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c356d57d14db34a0800000000000000
+      internalID: -6612458404867320891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_5
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -30, y: -4}
+        - {x: -30, y: 2}
+        - {x: -36, y: 4}
+        - {x: -44, y: -2}
+        - {x: -40, y: -8}
+      - - {x: -50, y: -20}
+        - {x: -48, y: -14}
+        - {x: -48, y: -6}
+        - {x: -52, y: -2}
+        - {x: -70, y: 0}
+        - {x: -124, y: 0}
+        - {x: -124, y: -32}
+        - {x: -120, y: -34}
+        - {x: -102, y: -34}
+      - - {x: 22, y: -50}
+        - {x: 22, y: -46}
+        - {x: 10, y: -26}
+        - {x: 2, y: -26}
+        - {x: 0, y: -32}
+        - {x: 0, y: -34}
+        - {x: 16, y: -52}
+      - - {x: -6, y: -44}
+        - {x: -6, y: -40}
+        - {x: -12, y: -38}
+        - {x: -18, y: -44}
+        - {x: -18, y: -46}
+        - {x: -14, y: -50}
+        - {x: -12, y: -50}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597c191912c873960800000000000000
+      internalID: 7581682573505578901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_6
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 26}
+        - {x: -18, y: 34}
+        - {x: -36, y: 34}
+        - {x: -40, y: 26}
+        - {x: -40, y: 22}
+        - {x: -34, y: 16}
+        - {x: -8, y: 16}
+      - - {x: -84, y: -4}
+        - {x: -102, y: -4}
+        - {x: -102, y: -16}
+        - {x: -96, y: -36}
+        - {x: -78, y: -36}
+        - {x: -66, y: -20}
+        - {x: -64, y: -22}
+        - {x: -34, y: -22}
+        - {x: -32, y: -16}
+        - {x: -32, y: -2}
+        - {x: -34, y: 0}
+        - {x: -38, y: 0}
+        - {x: -66, y: -12}
+        - {x: -66, y: -10}
+      - - {x: 24, y: -50}
+        - {x: 16, y: -32}
+        - {x: 10, y: -32}
+        - {x: 8, y: -38}
+        - {x: 18, y: -54}
+      - - {x: -2, y: -40}
+        - {x: -2, y: -36}
+        - {x: -8, y: -34}
+        - {x: -14, y: -40}
+        - {x: -14, y: -42}
+        - {x: -10, y: -46}
+        - {x: -8, y: -46}
+      - - {x: -10, y: -52}
+        - {x: -10, y: -46}
+        - {x: -16, y: -44}
+        - {x: -20, y: -48}
+        - {x: -16, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48414fa43d5a400f0800000000000000
+      internalID: -1151613277785811836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 4, y: 16}
+        - {x: 4, y: 22}
+        - {x: 0, y: 26}
+        - {x: -6, y: 24}
+        - {x: -6, y: 18}
+        - {x: -2, y: 14}
+      - - {x: -6, y: 4}
+        - {x: -8, y: 10}
+        - {x: -14, y: 10}
+        - {x: -18, y: 6}
+        - {x: -18, y: 2}
+        - {x: -14, y: -2}
+        - {x: -12, y: -2}
+      - - {x: -54, y: -38}
+        - {x: -22, y: -22}
+        - {x: -22, y: -8}
+        - {x: -80, y: -8}
+        - {x: -80, y: -24}
+        - {x: -68, y: -42}
+        - {x: -64, y: -42}
+      - - {x: 24, y: -48}
+        - {x: 22, y: -40}
+        - {x: 18, y: -36}
+        - {x: 12, y: -38}
+        - {x: 12, y: -44}
+        - {x: 18, y: -52}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b9e1aefa6d06f90800000000000000
+      internalID: -6962328972879291611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_9
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 14}
+        - {x: 16, y: 30}
+        - {x: 6, y: 34}
+        - {x: -2, y: 34}
+        - {x: -2, y: 24}
+        - {x: 4, y: 12}
+        - {x: 10, y: 10}
+      - - {x: -4, y: -10}
+        - {x: 2, y: 4}
+        - {x: 2, y: 10}
+        - {x: -8, y: 10}
+        - {x: -16, y: 0}
+        - {x: -16, y: -10}
+        - {x: -12, y: -12}
+      - - {x: -24, y: -42}
+        - {x: -12, y: -28}
+        - {x: -12, y: -12}
+        - {x: -54, y: -12}
+        - {x: -54, y: -30}
+        - {x: -50, y: -44}
+        - {x: -38, y: -44}
+      - - {x: 24, y: -52}
+        - {x: 24, y: -44}
+        - {x: 20, y: -40}
+        - {x: 14, y: -42}
+        - {x: 14, y: -50}
+        - {x: 18, y: -54}
+      - - {x: -4, y: -46}
+        - {x: -4, y: -42}
+        - {x: -10, y: -40}
+        - {x: -16, y: -46}
+        - {x: -16, y: -48}
+        - {x: -12, y: -52}
+        - {x: -10, y: -52}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5468e7d8e3155ca0800000000000000
+      internalID: -6028890635389868966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 24, y: 26}
+        - {x: 22, y: 32}
+        - {x: 14, y: 34}
+        - {x: 10, y: 30}
+        - {x: 12, y: 24}
+        - {x: 18, y: 22}
+      - - {x: 6, y: 24}
+        - {x: 6, y: 30}
+        - {x: 0, y: 32}
+        - {x: -4, y: 28}
+        - {x: 0, y: 22}
+      - - {x: 2, y: -26}
+        - {x: 2, y: -12}
+        - {x: -2, y: -10}
+        - {x: -10, y: -10}
+        - {x: -24, y: -16}
+        - {x: -24, y: -32}
+        - {x: -18, y: -40}
+        - {x: -10, y: -40}
+      - - {x: 24, y: -50}
+        - {x: 24, y: -38}
+        - {x: 20, y: -34}
+        - {x: 14, y: -36}
+        - {x: 14, y: -48}
+        - {x: 18, y: -52}
+      - - {x: -4, y: -50}
+        - {x: -4, y: -44}
+        - {x: -10, y: -42}
+        - {x: -18, y: -48}
+        - {x: -14, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1010a2295116620800000000000000
+      internalID: 2765515363696312796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_11
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 28, y: 26}
+        - {x: 28, y: 32}
+        - {x: 22, y: 34}
+        - {x: 18, y: 30}
+        - {x: 22, y: 24}
+      - - {x: 36, y: 20}
+        - {x: 36, y: 26}
+        - {x: 30, y: 28}
+        - {x: 26, y: 24}
+        - {x: 30, y: 18}
+      - - {x: 22, y: -54}
+        - {x: 24, y: -44}
+        - {x: 22, y: -42}
+        - {x: 28, y: -42}
+        - {x: 32, y: -40}
+        - {x: 32, y: -30}
+        - {x: 18, y: -6}
+        - {x: 8, y: -6}
+        - {x: 4, y: -12}
+        - {x: 4, y: -22}
+        - {x: 10, y: -36}
+        - {x: 18.799988, y: -40.399994}
+        - {x: 14, y: -42}
+        - {x: 12, y: -52}
+        - {x: 16, y: -56}
+      - - {x: 2, y: -48}
+        - {x: 2, y: -42}
+        - {x: -4, y: -40}
+        - {x: -20, y: -50}
+        - {x: -16, y: -56}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b77109315bbaa160800000000000000
+      internalID: 7037643325242963888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_12
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 44, y: 20}
+        - {x: 44, y: 24}
+        - {x: 36, y: 32}
+        - {x: 32, y: 32}
+        - {x: 30, y: 26}
+        - {x: 38, y: 18}
+      - - {x: 70, y: -38}
+        - {x: 70, y: -20}
+        - {x: 62, y: -6}
+        - {x: 52, y: -6}
+        - {x: 46, y: -8}
+        - {x: 46, y: -24}
+        - {x: 56, y: -40}
+        - {x: 68, y: -40}
+      - - {x: 42, y: -30}
+        - {x: 42, y: -26}
+        - {x: 30, y: -8}
+        - {x: 20, y: -12}
+        - {x: 20, y: -20}
+        - {x: 34, y: -32}
+        - {x: 38, y: -32}
+      - - {x: 30, y: -44}
+        - {x: 30, y: -38}
+        - {x: 24, y: -36}
+        - {x: 16, y: -42}
+        - {x: 12, y: -52}
+        - {x: 16, y: -56}
+        - {x: 20, y: -56}
+      - - {x: 0, y: -50}
+        - {x: 0, y: -44}
+        - {x: -6, y: -42}
+        - {x: -18, y: -50}
+        - {x: -14, y: -56}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c824f62788517c0800000000000000
+      internalID: -4101221860576687026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_13
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 42, y: 26}
+        - {x: 40, y: 32}
+        - {x: 30, y: 32}
+        - {x: 26, y: 28}
+        - {x: 28, y: 22}
+        - {x: 38, y: 22}
+      - - {x: 52, y: 10}
+        - {x: 52, y: 20}
+        - {x: 48, y: 24}
+        - {x: 42, y: 22}
+        - {x: 42, y: 12}
+        - {x: 46, y: 8}
+      - - {x: 108, y: -24}
+        - {x: 108, y: -10}
+        - {x: 100, y: -2}
+        - {x: 86, y: -8}
+        - {x: 76, y: -14}
+        - {x: 76, y: -18}
+        - {x: 86, y: -34}
+        - {x: 98, y: -34}
+      - - {x: 72, y: -26}
+        - {x: 72, y: -18}
+        - {x: 44, y: -6}
+        - {x: 38, y: -6}
+        - {x: 36, y: -12}
+        - {x: 46, y: -26}
+        - {x: 62, y: -30}
+        - {x: 70, y: -30}
+      - - {x: 0, y: -50}
+        - {x: 4, y: -44}
+        - {x: 4, y: -40}
+        - {x: -2, y: -38}
+        - {x: -14, y: -44}
+        - {x: -18, y: -50}
+        - {x: -14, y: -56}
+      - - {x: 32, y: -44}
+        - {x: 32, y: -40}
+        - {x: 26, y: -38}
+        - {x: 14, y: -48}
+        - {x: 16, y: -54}
+        - {x: 20, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d247cff1f372b5970800000000000000
+      internalID: 8744626253543011373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_14
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 50, y: 24}
+        - {x: 48, y: 30}
+        - {x: 38, y: 32}
+        - {x: 28, y: 26}
+        - {x: 32, y: 20}
+        - {x: 44, y: 20}
+      - - {x: 140, y: -26}
+        - {x: 140, y: 2}
+        - {x: 138, y: 4}
+        - {x: 120, y: 4}
+        - {x: 108, y: -8}
+        - {x: 108, y: -18}
+        - {x: 114, y: -30}
+        - {x: 128, y: -30}
+      - - {x: 86, y: -14}
+        - {x: 86, y: -8}
+        - {x: 84, y: -4}
+        - {x: 60, y: -4}
+        - {x: 60, y: -20}
+        - {x: 84, y: -20}
+      - - {x: 40, y: -42}
+        - {x: 40, y: -36}
+        - {x: 34, y: -34}
+        - {x: 30, y: -38}
+        - {x: 34, y: -44}
+      - - {x: 2, y: -46}
+        - {x: 2, y: -38}
+        - {x: -6, y: -38}
+        - {x: -20, y: -48}
+        - {x: -20, y: -56}
+        - {x: -4, y: -56}
+      - - {x: 32, y: -46}
+        - {x: 32, y: -42}
+        - {x: 26, y: -40}
+        - {x: 16, y: -48}
+        - {x: 18, y: -54}
+        - {x: 22, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8f36e389bae5740800000000000000
+      internalID: 5142736494873802985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 52, y: 24}
+        - {x: 50, y: 30}
+        - {x: 44, y: 30}
+        - {x: 40, y: 26}
+        - {x: 42, y: 20}
+        - {x: 48, y: 20}
+      - - {x: 172, y: 6}
+        - {x: 168, y: 10}
+        - {x: 152, y: 4}
+        - {x: 138, y: -6}
+        - {x: 138, y: -10}
+        - {x: 152, y: -26}
+        - {x: 172, y: -26}
+      - - {x: 122, y: -14}
+        - {x: 122, y: -4}
+        - {x: 116, y: -2}
+        - {x: 82, y: -2}
+        - {x: 78, y: -12}
+        - {x: 80, y: -16}
+        - {x: 120, y: -16}
+      - - {x: 36, y: -50}
+        - {x: 40, y: -42}
+        - {x: 40, y: -36}
+        - {x: 30, y: -36}
+        - {x: 16, y: -46}
+        - {x: 16, y: -50}
+        - {x: 20, y: -54}
+      - - {x: -6, y: -48}
+        - {x: -6, y: -44}
+        - {x: -12, y: -42}
+        - {x: -18, y: -48}
+        - {x: -18, y: -50}
+        - {x: -14, y: -54}
+        - {x: -12, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f42946cf487f010800000000000000
+      internalID: 1222592043408314268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 52, y: 18}
+        - {x: 52, y: 22}
+        - {x: 46, y: 28}
+        - {x: 42, y: 28}
+        - {x: 40, y: 22}
+        - {x: 46, y: 16}
+      - - {x: 116, y: -24}
+        - {x: 116, y: 0}
+        - {x: 112, y: 0}
+        - {x: 106, y: -2}
+        - {x: 106, y: -8}
+        - {x: 102, y: -14}
+        - {x: 104, y: -10}
+        - {x: 104, y: -8}
+        - {x: 98, y: 0}
+        - {x: 90, y: -2}
+        - {x: 84, y: -12}
+        - {x: 84, y: -26}
+        - {x: 86, y: -30}
+        - {x: 94, y: -34}
+        - {x: 114, y: -34}
+      - - {x: 58, y: -10}
+        - {x: 56, y: -4}
+        - {x: 48, y: -2}
+        - {x: 42, y: -2}
+        - {x: 38, y: -8}
+        - {x: 38, y: -14}
+        - {x: 42, y: -16}
+        - {x: 52, y: -16}
+      - - {x: 78, y: -20}
+        - {x: 76, y: -14}
+        - {x: 58, y: -12}
+        - {x: 54, y: -14}
+        - {x: 54, y: -20}
+        - {x: 56, y: -26}
+        - {x: 66, y: -28}
+        - {x: 78, y: -28}
+      - - {x: 30, y: -46}
+        - {x: 30, y: -42}
+        - {x: 24, y: -40}
+        - {x: 16, y: -48}
+        - {x: 16, y: -50}
+        - {x: 20, y: -54}
+        - {x: 22, y: -54}
+      - - {x: -2, y: -50}
+        - {x: -2, y: -44}
+        - {x: -8, y: -42}
+        - {x: -16, y: -48}
+        - {x: -12, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d617e0d2a6679b70800000000000000
+      internalID: 8905699637623985875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_17
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 42, y: 18}
+        - {x: 42, y: 24}
+        - {x: 36, y: 26}
+        - {x: 32, y: 22}
+        - {x: 36, y: 16}
+      - - {x: 16, y: -14}
+        - {x: 16, y: -2}
+        - {x: 10, y: -2}
+        - {x: 4, y: -6}
+        - {x: 4, y: -12}
+        - {x: 8, y: -16}
+        - {x: 10, y: -16}
+      - - {x: 46, y: -36}
+        - {x: 52, y: -22}
+        - {x: 52, y: -6}
+        - {x: 20, y: -6}
+        - {x: 18, y: -8}
+        - {x: 16, y: -16}
+        - {x: 14, y: -50}
+        - {x: 16, y: -54}
+        - {x: 22, y: -54}
+      - - {x: 4, y: -48}
+        - {x: 4, y: -42}
+        - {x: -2, y: -40}
+        - {x: -18, y: -50}
+        - {x: -14, y: -56}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6bf24e43dd83a20800000000000000
+      internalID: 3042424767525140166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_18
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 24, y: 26}
+        - {x: 22, y: 32}
+        - {x: 14, y: 34}
+        - {x: 10, y: 30}
+        - {x: 12, y: 24}
+        - {x: 18, y: 22}
+      - - {x: 6, y: 24}
+        - {x: 6, y: 30}
+        - {x: 0, y: 32}
+        - {x: -4, y: 28}
+        - {x: 0, y: 22}
+      - - {x: 2, y: -32}
+        - {x: 6, y: -10}
+        - {x: 6, y: -6}
+        - {x: 2, y: -4}
+        - {x: -12, y: -4}
+        - {x: -14, y: -14}
+        - {x: -14, y: -30}
+        - {x: -6, y: -38}
+        - {x: -4, y: -38}
+      - - {x: 24, y: -50}
+        - {x: 24, y: -38}
+        - {x: 20, y: -34}
+        - {x: 14, y: -36}
+        - {x: 14, y: -48}
+        - {x: 18, y: -52}
+      - - {x: -4, y: -50}
+        - {x: -4, y: -44}
+        - {x: -10, y: -42}
+        - {x: -18, y: -48}
+        - {x: -14, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d71a16763d21dc0800000000000000
+      internalID: -3669638305380467408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_19
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 26}
+        - {x: 2, y: 32}
+        - {x: -4, y: 34}
+        - {x: -8, y: 30}
+        - {x: -4, y: 24}
+      - - {x: -38, y: -30}
+        - {x: -26, y: -26}
+        - {x: -2, y: 0}
+        - {x: -2, y: 6}
+        - {x: -4, y: 10}
+        - {x: -20, y: 10}
+        - {x: -50, y: -2}
+        - {x: -50, y: -34}
+        - {x: -40, y: -34}
+      - - {x: 24, y: -52}
+        - {x: 24, y: -46}
+        - {x: 20, y: -36}
+        - {x: 14, y: -36}
+        - {x: 12, y: -42}
+        - {x: 14, y: -50}
+        - {x: 18, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a633ff4aac3b47e0800000000000000
+      internalID: -1780262525511453019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_20
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 28}
+        - {x: -18, y: 34}
+        - {x: -28, y: 34}
+        - {x: -32, y: 30}
+        - {x: -30, y: 24}
+        - {x: -20, y: 24}
+      - - {x: -8, y: 18}
+        - {x: -8, y: 24}
+        - {x: -14, y: 26}
+        - {x: -18, y: 22}
+        - {x: -14, y: 16}
+      - - {x: -16, y: 2}
+        - {x: -16, y: 8}
+        - {x: -22, y: 10}
+        - {x: -26, y: 6}
+        - {x: -22, y: 0}
+      - - {x: -80, y: 2}
+        - {x: -90, y: 2}
+        - {x: -94, y: -10}
+        - {x: -94, y: -22}
+        - {x: -88, y: -32}
+        - {x: -78, y: -32}
+        - {x: -66, y: -18}
+        - {x: -66, y: -20}
+        - {x: -30, y: -20}
+        - {x: -28, y: -4}
+        - {x: -30, y: 2}
+        - {x: -42, y: 2}
+        - {x: -66, y: -8}
+        - {x: -66, y: -6}
+      - - {x: 14, y: -34}
+        - {x: 14, y: -28}
+        - {x: 8, y: -26}
+        - {x: 4, y: -30}
+        - {x: 8, y: -36}
+      - - {x: -10, y: -52}
+        - {x: -4, y: -42}
+        - {x: -4, y: -38}
+        - {x: -10, y: -36}
+        - {x: -16, y: -40}
+        - {x: -20, y: -50}
+        - {x: -16, y: -54}
+      - - {x: 24, y: -50}
+        - {x: 18, y: -36}
+        - {x: 12, y: -36}
+        - {x: 10, y: -42}
+        - {x: 18, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c2cd6d9cbaee400800000000000000
+      internalID: 355410303990377614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_21
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -100, y: -20}
+        - {x: -100, y: -4}
+        - {x: -110, y: 6}
+        - {x: -128, y: 6}
+        - {x: -132, y: 2}
+        - {x: -132, y: -14}
+        - {x: -128, y: -24}
+        - {x: -120, y: -28}
+        - {x: -112, y: -28}
+      - - {x: -38, y: -6}
+        - {x: -38, y: 0}
+        - {x: -40, y: 2}
+        - {x: -58, y: 2}
+        - {x: -84, y: -4}
+        - {x: -84, y: -16}
+        - {x: -50, y: -16}
+      - - {x: -10, y: -52}
+        - {x: -4, y: -38}
+        - {x: -8, y: -34}
+        - {x: -14, y: -36}
+        - {x: -20, y: -50}
+        - {x: -16, y: -54}
+      - - {x: 22, y: -50}
+        - {x: 20, y: -42}
+        - {x: 14, y: -38}
+        - {x: 10, y: -38}
+        - {x: 8, y: -44}
+        - {x: 16, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84397a6df36ba8de0800000000000000
+      internalID: -1330050354634058936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -44, y: 26}
+        - {x: -44, y: 30}
+        - {x: -50, y: 32}
+        - {x: -56, y: 26}
+        - {x: -56, y: 24}
+        - {x: -52, y: 20}
+        - {x: -50, y: 20}
+      - - {x: -132, y: -14}
+        - {x: -132, y: -4}
+        - {x: -138, y: 8}
+        - {x: -152, y: 10}
+        - {x: -168, y: 10}
+        - {x: -168, y: -16}
+        - {x: -164, y: -26}
+        - {x: -146, y: -26}
+      - - {x: -60, y: -14}
+        - {x: -58, y: -8}
+        - {x: -58, y: -2}
+        - {x: -114, y: -2}
+        - {x: -116, y: -8}
+        - {x: -114, y: -14}
+        - {x: -102, y: -16}
+        - {x: -72, y: -16}
+      - - {x: 22, y: -52}
+        - {x: 22, y: -48}
+        - {x: 12, y: -38}
+        - {x: 8, y: -38}
+        - {x: 6, y: -44}
+        - {x: 16, y: -54}
+      - - {x: -10, y: -52}
+        - {x: -8, y: -44}
+        - {x: -12, y: -40}
+        - {x: -18, y: -42}
+        - {x: -20, y: -50}
+        - {x: -16, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01acd55f3ff49ee0800000000000000
+      internalID: -1255097748640980723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_23
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 28}
+        - {x: -18, y: 34}
+        - {x: -28, y: 34}
+        - {x: -32, y: 30}
+        - {x: -30, y: 24}
+        - {x: -20, y: 24}
+      - - {x: -80, y: -14}
+        - {x: -80, y: -4}
+        - {x: -88, y: 4}
+        - {x: -104, y: 10}
+        - {x: -108, y: 8}
+        - {x: -108, y: -22}
+        - {x: -106, y: -26}
+        - {x: -86, y: -26}
+      - - {x: -32, y: -10}
+        - {x: -32, y: -4}
+        - {x: -36, y: -2}
+        - {x: -50, y: -2}
+        - {x: -66, y: -4}
+        - {x: -66, y: -12}
+        - {x: -60, y: -22}
+        - {x: -50, y: -22}
+      - - {x: 24, y: -50}
+        - {x: 18, y: -30}
+        - {x: 10, y: -26}
+        - {x: 4, y: -26}
+        - {x: 4, y: -32}
+        - {x: 18, y: -54}
+      - - {x: -4, y: -44}
+        - {x: -4, y: -40}
+        - {x: -10, y: -38}
+        - {x: -18, y: -46}
+        - {x: -18, y: -48}
+        - {x: -14, y: -52}
+        - {x: -12, y: -52}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2472ee4e0a7b1d180800000000000000
+      internalID: -9092284271020857534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_24
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 24, y: 26}
+        - {x: 22, y: 32}
+        - {x: 14, y: 34}
+        - {x: 10, y: 30}
+        - {x: 12, y: 24}
+        - {x: 18, y: 22}
+      - - {x: 6, y: 24}
+        - {x: 6, y: 30}
+        - {x: 0, y: 32}
+        - {x: -4, y: 28}
+        - {x: 0, y: 22}
+      - - {x: -22, y: -16}
+        - {x: -22, y: 6}
+        - {x: -28, y: 8}
+        - {x: -34, y: 8}
+        - {x: -38, y: 4}
+        - {x: -38, y: -24}
+        - {x: -34, y: -26}
+        - {x: -28, y: -26}
+      - - {x: 2, y: -24}
+        - {x: 2, y: -10}
+        - {x: -6, y: -10}
+        - {x: -8, y: -4}
+        - {x: -18, y: -4}
+        - {x: -22, y: -8}
+        - {x: -20, y: -14}
+        - {x: -11.3333435, y: -14}
+        - {x: -14, y: -16}
+        - {x: -14, y: -24}
+        - {x: -10, y: -28}
+        - {x: 0, y: -28}
+      - - {x: 24, y: -50}
+        - {x: 24, y: -38}
+        - {x: 20, y: -34}
+        - {x: 14, y: -36}
+        - {x: 14, y: -48}
+        - {x: 18, y: -52}
+      - - {x: -4, y: -50}
+        - {x: -4, y: -44}
+        - {x: -10, y: -42}
+        - {x: -18, y: -48}
+        - {x: -14, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0e100db54578690800000000000000
+      internalID: -7600013092855881515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_25
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 10, y: -56}
+        - {x: 36, y: -56}
+        - {x: 44, y: -30}
+        - {x: 44, y: 12}
+        - {x: 48, y: 16}
+        - {x: 46, y: 24}
+        - {x: 38, y: 32}
+        - {x: 34, y: 32}
+        - {x: 32, y: 28}
+        - {x: 32, y: 24}
+        - {x: 40, y: 12}
+        - {x: 10, y: 12}
+      - - {x: -8, y: -54}
+        - {x: 0, y: -48}
+        - {x: 0, y: -44}
+        - {x: -6, y: -42}
+        - {x: -20, y: -50}
+        - {x: -16, y: -56}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d801437aa87a023c0800000000000000
+      internalID: -4386321823106330483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_26
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 56, y: 12}
+        - {x: 54, y: 24}
+        - {x: 48, y: 30}
+        - {x: 44, y: 30}
+        - {x: 40, y: 26}
+        - {x: 40, y: 20}
+        - {x: 48, y: 8}
+        - {x: 52, y: 8}
+      - - {x: 114, y: -24}
+        - {x: 114, y: 10}
+        - {x: 104, y: 10}
+        - {x: 100, y: 8}
+        - {x: 84, y: -4}
+        - {x: 84, y: -18}
+        - {x: 86, y: -26}
+        - {x: 110, y: -26}
+      - - {x: 64, y: -14}
+        - {x: 68, y: -10}
+        - {x: 66, y: -4}
+        - {x: 46, y: -4}
+        - {x: 42, y: -6}
+        - {x: 42, y: -12}
+        - {x: 44, y: -16}
+        - {x: 56, y: -16}
+      - - {x: 80, y: -18}
+        - {x: 78, y: -14}
+        - {x: 68, y: -14}
+        - {x: 66, y: -16}
+        - {x: 66, y: -26}
+        - {x: 80, y: -26}
+      - - {x: 38, y: -42}
+        - {x: 38, y: -36}
+        - {x: 32, y: -34}
+        - {x: 28, y: -38}
+        - {x: 32, y: -44}
+      - - {x: 30, y: -46}
+        - {x: 30, y: -42}
+        - {x: 24, y: -40}
+        - {x: 14, y: -48}
+        - {x: 16, y: -54}
+        - {x: 22, y: -54}
+      - - {x: -8, y: -54}
+        - {x: -4, y: -48}
+        - {x: -4, y: -44}
+        - {x: -10, y: -42}
+        - {x: -20, y: -50}
+        - {x: -16, y: -56}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47bc91d77db48cb0800000000000000
+      internalID: -4862553375337826482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_27
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 52, y: 24}
+        - {x: 50, y: 30}
+        - {x: 44, y: 30}
+        - {x: 40, y: 26}
+        - {x: 42, y: 20}
+        - {x: 48, y: 20}
+      - - {x: 172, y: 6}
+        - {x: 168, y: 10}
+        - {x: 152, y: 4}
+        - {x: 138, y: -6}
+        - {x: 138, y: -10}
+        - {x: 152, y: -26}
+        - {x: 172, y: -26}
+      - - {x: 122, y: -14}
+        - {x: 122, y: -4}
+        - {x: 116, y: -2}
+        - {x: 82, y: -2}
+        - {x: 78, y: -12}
+        - {x: 80, y: -16}
+        - {x: 120, y: -16}
+      - - {x: 36, y: -50}
+        - {x: 40, y: -42}
+        - {x: 40, y: -36}
+        - {x: 30, y: -36}
+        - {x: 16, y: -46}
+        - {x: 16, y: -50}
+        - {x: 20, y: -54}
+      - - {x: -6, y: -48}
+        - {x: -6, y: -44}
+        - {x: -12, y: -42}
+        - {x: -18, y: -48}
+        - {x: -18, y: -50}
+        - {x: -14, y: -54}
+        - {x: -12, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee15624c293d91fb0800000000000000
+      internalID: -4676474110738017810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_28
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 56, y: 12}
+        - {x: 54, y: 24}
+        - {x: 48, y: 30}
+        - {x: 44, y: 30}
+        - {x: 40, y: 26}
+        - {x: 40, y: 20}
+        - {x: 48, y: 8}
+        - {x: 52, y: 8}
+      - - {x: 114, y: -24}
+        - {x: 114, y: 10}
+        - {x: 104, y: 10}
+        - {x: 100, y: 8}
+        - {x: 84, y: -4}
+        - {x: 84, y: -18}
+        - {x: 86, y: -26}
+        - {x: 110, y: -26}
+      - - {x: 64, y: -14}
+        - {x: 68, y: -10}
+        - {x: 66, y: -4}
+        - {x: 46, y: -4}
+        - {x: 42, y: -6}
+        - {x: 42, y: -12}
+        - {x: 44, y: -16}
+        - {x: 56, y: -16}
+      - - {x: 80, y: -18}
+        - {x: 78, y: -14}
+        - {x: 68, y: -14}
+        - {x: 66, y: -16}
+        - {x: 66, y: -26}
+        - {x: 80, y: -26}
+      - - {x: 38, y: -42}
+        - {x: 38, y: -36}
+        - {x: 32, y: -34}
+        - {x: 28, y: -38}
+        - {x: 32, y: -44}
+      - - {x: 30, y: -46}
+        - {x: 30, y: -42}
+        - {x: 24, y: -40}
+        - {x: 14, y: -48}
+        - {x: 16, y: -54}
+        - {x: 22, y: -54}
+      - - {x: -8, y: -54}
+        - {x: -4, y: -48}
+        - {x: -4, y: -44}
+        - {x: -10, y: -42}
+        - {x: -20, y: -50}
+        - {x: -16, y: -56}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35fa47532b3176390800000000000000
+      internalID: -7825264171411001517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 10, y: -56}
+        - {x: 36, y: -56}
+        - {x: 44, y: -30}
+        - {x: 44, y: 12}
+        - {x: 48, y: 16}
+        - {x: 46, y: 24}
+        - {x: 38, y: 32}
+        - {x: 34, y: 32}
+        - {x: 32, y: 28}
+        - {x: 32, y: 24}
+        - {x: 40, y: 12}
+        - {x: 10, y: 12}
+      - - {x: -8, y: -54}
+        - {x: 0, y: -48}
+        - {x: 0, y: -44}
+        - {x: -6, y: -42}
+        - {x: -20, y: -50}
+        - {x: -16, y: -56}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25c24b7e65744220800000000000000
+      internalID: 2469227613080700207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_30
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 24, y: 26}
+        - {x: 22, y: 32}
+        - {x: 14, y: 34}
+        - {x: 10, y: 30}
+        - {x: 12, y: 24}
+        - {x: 18, y: 22}
+      - - {x: 6, y: 24}
+        - {x: 6, y: 30}
+        - {x: 0, y: 32}
+        - {x: -4, y: 28}
+        - {x: 0, y: 22}
+      - - {x: -22, y: -16}
+        - {x: -22, y: 6}
+        - {x: -28, y: 8}
+        - {x: -34, y: 8}
+        - {x: -38, y: 4}
+        - {x: -38, y: -24}
+        - {x: -34, y: -26}
+        - {x: -28, y: -26}
+      - - {x: 2, y: -24}
+        - {x: 2, y: -10}
+        - {x: -6, y: -10}
+        - {x: -8, y: -4}
+        - {x: -18, y: -4}
+        - {x: -22, y: -8}
+        - {x: -20, y: -14}
+        - {x: -11.3333435, y: -14}
+        - {x: -14, y: -16}
+        - {x: -14, y: -24}
+        - {x: -10, y: -28}
+        - {x: 0, y: -28}
+      - - {x: 24, y: -50}
+        - {x: 24, y: -38}
+        - {x: 20, y: -34}
+        - {x: 14, y: -36}
+        - {x: 14, y: -48}
+        - {x: 18, y: -52}
+      - - {x: -4, y: -50}
+        - {x: -4, y: -44}
+        - {x: -10, y: -42}
+        - {x: -18, y: -48}
+        - {x: -14, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: deebdfca6fda35090800000000000000
+      internalID: -8046896834205073683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_31
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 28}
+        - {x: -18, y: 34}
+        - {x: -28, y: 34}
+        - {x: -32, y: 30}
+        - {x: -30, y: 24}
+        - {x: -20, y: 24}
+      - - {x: -80, y: -14}
+        - {x: -80, y: -4}
+        - {x: -88, y: 4}
+        - {x: -104, y: 10}
+        - {x: -108, y: 8}
+        - {x: -108, y: -22}
+        - {x: -106, y: -26}
+        - {x: -86, y: -26}
+      - - {x: -32, y: -10}
+        - {x: -32, y: -4}
+        - {x: -36, y: -2}
+        - {x: -50, y: -2}
+        - {x: -66, y: -4}
+        - {x: -66, y: -12}
+        - {x: -60, y: -22}
+        - {x: -50, y: -22}
+      - - {x: 24, y: -50}
+        - {x: 18, y: -30}
+        - {x: 10, y: -26}
+        - {x: 4, y: -26}
+        - {x: 4, y: -32}
+        - {x: 18, y: -54}
+      - - {x: -4, y: -44}
+        - {x: -4, y: -40}
+        - {x: -10, y: -38}
+        - {x: -18, y: -46}
+        - {x: -18, y: -48}
+        - {x: -14, y: -52}
+        - {x: -12, y: -52}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dccb08ba425331ee0800000000000000
+      internalID: -1291630236512764723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_32
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -44, y: 26}
+        - {x: -44, y: 30}
+        - {x: -50, y: 32}
+        - {x: -56, y: 26}
+        - {x: -56, y: 24}
+        - {x: -52, y: 20}
+        - {x: -50, y: 20}
+      - - {x: -132, y: -14}
+        - {x: -132, y: -4}
+        - {x: -138, y: 8}
+        - {x: -152, y: 10}
+        - {x: -168, y: 10}
+        - {x: -168, y: -16}
+        - {x: -164, y: -26}
+        - {x: -146, y: -26}
+      - - {x: -60, y: -14}
+        - {x: -58, y: -8}
+        - {x: -58, y: -2}
+        - {x: -114, y: -2}
+        - {x: -116, y: -8}
+        - {x: -114, y: -14}
+        - {x: -102, y: -16}
+        - {x: -72, y: -16}
+      - - {x: 22, y: -52}
+        - {x: 22, y: -48}
+        - {x: 12, y: -38}
+        - {x: 8, y: -38}
+        - {x: 6, y: -44}
+        - {x: 16, y: -54}
+      - - {x: -10, y: -52}
+        - {x: -8, y: -44}
+        - {x: -12, y: -40}
+        - {x: -18, y: -42}
+        - {x: -20, y: -50}
+        - {x: -16, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ebecc087fae0a7f0800000000000000
+      internalID: -603224001328911386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_33
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 20}
+        - {x: -12, y: 28}
+        - {x: -20, y: 34}
+        - {x: -30, y: 34}
+        - {x: -34, y: 30}
+        - {x: -32, y: 24}
+        - {x: -18, y: 18}
+      - - {x: -38, y: -22}
+        - {x: -38, y: -11}
+        - {x: -36, y: -16}
+        - {x: -20, y: -16}
+        - {x: -14, y: -12}
+        - {x: -14, y: -8}
+        - {x: -18, y: 0}
+        - {x: -28, y: 4}
+        - {x: -40, y: 4}
+        - {x: -40, y: 0}
+        - {x: -42, y: 4}
+        - {x: -58, y: 4}
+        - {x: -66, y: -2}
+        - {x: -66, y: -22}
+        - {x: -58, y: -26}
+        - {x: -42, y: -26}
+      - - {x: 24, y: -50}
+        - {x: 24, y: -44}
+        - {x: 12, y: -26}
+        - {x: 6, y: -26}
+        - {x: 4, y: -32}
+        - {x: 12, y: -48}
+        - {x: 18, y: -52}
+      - - {x: -8, y: -46}
+        - {x: -8, y: -42}
+        - {x: -14, y: -40}
+        - {x: -22, y: -48}
+        - {x: -22, y: -50}
+        - {x: -18, y: -54}
+        - {x: -16, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8641c7b7202edb9e0800000000000000
+      internalID: -1603877391984487320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_34
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 24, y: 26}
+        - {x: 22, y: 32}
+        - {x: 14, y: 34}
+        - {x: 10, y: 30}
+        - {x: 12, y: 24}
+        - {x: 18, y: 22}
+      - - {x: 6, y: 24}
+        - {x: 6, y: 30}
+        - {x: 0, y: 32}
+        - {x: -4, y: 28}
+        - {x: 0, y: 22}
+      - - {x: 68, y: -24}
+        - {x: 68, y: -2}
+        - {x: 66, y: 4}
+        - {x: 54, y: 4}
+        - {x: 46, y: -4}
+        - {x: 46, y: -18}
+        - {x: 48, y: -24}
+        - {x: 50, y: -26}
+        - {x: 62, y: -26}
+      - - {x: 42, y: -10}
+        - {x: 40, y: -4}
+        - {x: 26, y: -4}
+        - {x: 22, y: -8}
+        - {x: 24, y: -14}
+        - {x: 38, y: -14}
+      - - {x: 2, y: -24}
+        - {x: 2, y: -10}
+        - {x: -6, y: -10}
+        - {x: -14, y: -16}
+        - {x: -14, y: -24}
+        - {x: -10, y: -28}
+        - {x: 0, y: -28}
+      - - {x: 24, y: -50}
+        - {x: 24, y: -38}
+        - {x: 20, y: -34}
+        - {x: 14, y: -36}
+        - {x: 14, y: -48}
+        - {x: 18, y: -52}
+      - - {x: -4, y: -50}
+        - {x: -4, y: -44}
+        - {x: -10, y: -42}
+        - {x: -18, y: -48}
+        - {x: -14, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78340b22745af68d0800000000000000
+      internalID: -2850878314158996601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_35
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 52, y: 24}
+        - {x: 50, y: 30}
+        - {x: 44, y: 30}
+        - {x: 40, y: 26}
+        - {x: 42, y: 20}
+        - {x: 48, y: 20}
+      - - {x: 172, y: 6}
+        - {x: 168, y: 10}
+        - {x: 152, y: 4}
+        - {x: 138, y: -6}
+        - {x: 138, y: -10}
+        - {x: 152, y: -26}
+        - {x: 172, y: -26}
+      - - {x: 122, y: -14}
+        - {x: 122, y: -4}
+        - {x: 116, y: -2}
+        - {x: 82, y: -2}
+        - {x: 78, y: -12}
+        - {x: 80, y: -16}
+        - {x: 120, y: -16}
+      - - {x: 36, y: -50}
+        - {x: 40, y: -42}
+        - {x: 40, y: -36}
+        - {x: 30, y: -36}
+        - {x: 16, y: -46}
+        - {x: 16, y: -50}
+        - {x: 20, y: -54}
+      - - {x: -6, y: -48}
+        - {x: -6, y: -44}
+        - {x: -12, y: -42}
+        - {x: -18, y: -48}
+        - {x: -18, y: -50}
+        - {x: -14, y: -54}
+        - {x: -12, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce09daa01ccecf6a0800000000000000
+      internalID: -6413991455430438676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 24, y: 26}
+        - {x: 22, y: 32}
+        - {x: 14, y: 34}
+        - {x: 10, y: 30}
+        - {x: 12, y: 24}
+        - {x: 18, y: 22}
+      - - {x: 6, y: 24}
+        - {x: 6, y: 30}
+        - {x: 0, y: 32}
+        - {x: -4, y: 28}
+        - {x: 0, y: 22}
+      - - {x: 68, y: -16}
+        - {x: 68, y: 6}
+        - {x: 66, y: 8}
+        - {x: 52, y: 8}
+        - {x: 48, y: 6}
+        - {x: 46, y: 6}
+        - {x: 46, y: -14}
+        - {x: 50, y: -24}
+        - {x: 58, y: -24}
+      - - {x: 2, y: -24}
+        - {x: 2, y: -10}
+        - {x: -6, y: -10}
+        - {x: -14, y: -16}
+        - {x: -14, y: -24}
+        - {x: -10, y: -28}
+        - {x: 0, y: -28}
+      - - {x: 24, y: -50}
+        - {x: 24, y: -38}
+        - {x: 20, y: -34}
+        - {x: 14, y: -36}
+        - {x: 14, y: -48}
+        - {x: 18, y: -52}
+      - - {x: -4, y: -50}
+        - {x: -4, y: -44}
+        - {x: -10, y: -42}
+        - {x: -18, y: -48}
+        - {x: -14, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7629cd12aff9add60800000000000000
+      internalID: 7915815191715811943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_37
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 20}
+        - {x: -12, y: 28}
+        - {x: -20, y: 34}
+        - {x: -30, y: 34}
+        - {x: -34, y: 30}
+        - {x: -32, y: 24}
+        - {x: -18, y: 18}
+      - - {x: -44, y: -20}
+        - {x: -38, y: -12}
+        - {x: -38, y: -6}
+        - {x: -48, y: 10}
+        - {x: -62, y: 10}
+        - {x: -66, y: 2}
+        - {x: -66, y: -18}
+        - {x: -56, y: -24}
+        - {x: -46, y: -24}
+      - - {x: -28, y: -2}
+        - {x: -30, y: 4}
+        - {x: -36, y: 4}
+        - {x: -40, y: 0}
+        - {x: -38, y: -6}
+        - {x: -32, y: -6}
+      - - {x: 24, y: -50}
+        - {x: 24, y: -44}
+        - {x: 12, y: -26}
+        - {x: 6, y: -26}
+        - {x: 4, y: -32}
+        - {x: 12, y: -48}
+        - {x: 18, y: -52}
+      - - {x: -8, y: -46}
+        - {x: -8, y: -42}
+        - {x: -14, y: -40}
+        - {x: -22, y: -48}
+        - {x: -22, y: -50}
+        - {x: -18, y: -54}
+        - {x: -16, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647d1e98910c8c850800000000000000
+      internalID: 6397574486599784262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_38
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -44, y: 26}
+        - {x: -44, y: 30}
+        - {x: -50, y: 32}
+        - {x: -56, y: 26}
+        - {x: -56, y: 24}
+        - {x: -52, y: 20}
+        - {x: -50, y: 20}
+      - - {x: -118, y: -16}
+        - {x: -116, y: -16}
+        - {x: -116, y: -6}
+        - {x: -140, y: 8}
+        - {x: -168, y: 8}
+        - {x: -168, y: -14}
+        - {x: -164, y: -20}
+        - {x: -142, y: -20}
+      - - {x: -58, y: -8}
+        - {x: -60, y: -2}
+        - {x: -74, y: -2}
+        - {x: -78, y: -6}
+        - {x: -76, y: -12}
+        - {x: -62, y: -12}
+      - - {x: 22, y: -52}
+        - {x: 22, y: -48}
+        - {x: 12, y: -38}
+        - {x: 8, y: -38}
+        - {x: 6, y: -44}
+        - {x: 16, y: -54}
+      - - {x: -10, y: -52}
+        - {x: -8, y: -44}
+        - {x: -12, y: -40}
+        - {x: -18, y: -42}
+        - {x: -20, y: -50}
+        - {x: -16, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45cb93cdb39e074e0800000000000000
+      internalID: -1985830992363275180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_39
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 24, y: 26}
+        - {x: 22, y: 32}
+        - {x: 14, y: 34}
+        - {x: 10, y: 30}
+        - {x: 12, y: 24}
+        - {x: 18, y: 22}
+      - - {x: 6, y: 24}
+        - {x: 6, y: 30}
+        - {x: 0, y: 32}
+        - {x: -4, y: 28}
+        - {x: 0, y: 22}
+      - - {x: 0, y: -26}
+        - {x: 8, y: -14}
+        - {x: 8, y: 4}
+        - {x: 4, y: 6}
+        - {x: -4, y: 4}
+        - {x: -14, y: -22}
+        - {x: -14, y: -26}
+        - {x: -10, y: -28}
+      - - {x: 24, y: -50}
+        - {x: 24, y: -38}
+        - {x: 20, y: -34}
+        - {x: 14, y: -36}
+        - {x: 14, y: -48}
+        - {x: 18, y: -52}
+      - - {x: -4, y: -50}
+        - {x: -4, y: -44}
+        - {x: -10, y: -42}
+        - {x: -18, y: -48}
+        - {x: -14, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b2f38c8fddc1fd0800000000000000
+      internalID: -2369775243322512546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_40
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 52, y: 24}
+        - {x: 50, y: 30}
+        - {x: 44, y: 30}
+        - {x: 40, y: 26}
+        - {x: 42, y: 20}
+        - {x: 48, y: 20}
+      - - {x: 168, y: -13.3333435}
+        - {x: 172, y: -12}
+        - {x: 172, y: -6}
+        - {x: 166, y: -4}
+        - {x: 164, y: 2}
+        - {x: 150, y: 2}
+        - {x: 128, y: -2}
+        - {x: 126, y: -8}
+        - {x: 126, y: -20}
+        - {x: 142, y: -24}
+        - {x: 168, y: -24}
+      - - {x: 94, y: -12}
+        - {x: 90, y: -2}
+        - {x: 84, y: -2}
+        - {x: 80, y: -4}
+        - {x: 78, y: -12}
+        - {x: 82, y: -16}
+        - {x: 90, y: -16}
+      - - {x: 36, y: -50}
+        - {x: 40, y: -42}
+        - {x: 40, y: -36}
+        - {x: 30, y: -36}
+        - {x: 16, y: -46}
+        - {x: 16, y: -50}
+        - {x: 20, y: -54}
+      - - {x: -6, y: -48}
+        - {x: -6, y: -44}
+        - {x: -12, y: -42}
+        - {x: -18, y: -48}
+        - {x: -18, y: -50}
+        - {x: -14, y: -54}
+        - {x: -12, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b9de3880a2a5e60800000000000000
+      internalID: 7951714308137524099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_41
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 52, y: 24}
+        - {x: 50, y: 30}
+        - {x: 44, y: 30}
+        - {x: 40, y: 26}
+        - {x: 42, y: 20}
+        - {x: 48, y: 20}
+      - - {x: 206, y: -18}
+        - {x: 206, y: 4}
+        - {x: 180, y: 4}
+        - {x: 172, y: -4}
+        - {x: 172, y: -12}
+        - {x: 176, y: -18}
+        - {x: 190, y: -24}
+        - {x: 202, y: -24}
+      - - {x: 94, y: -12}
+        - {x: 90, y: -2}
+        - {x: 84, y: -2}
+        - {x: 80, y: -4}
+        - {x: 78, y: -12}
+        - {x: 82, y: -16}
+        - {x: 90, y: -16}
+      - - {x: 36, y: -50}
+        - {x: 40, y: -42}
+        - {x: 40, y: -36}
+        - {x: 30, y: -36}
+        - {x: 16, y: -46}
+        - {x: 16, y: -50}
+        - {x: 20, y: -54}
+      - - {x: -6, y: -48}
+        - {x: -6, y: -44}
+        - {x: -12, y: -42}
+        - {x: -18, y: -48}
+        - {x: -18, y: -50}
+        - {x: -14, y: -54}
+        - {x: -12, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d7596fcee8476a0800000000000000
+      internalID: -6452375217714659998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_42
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 52, y: 24}
+        - {x: 50, y: 30}
+        - {x: 44, y: 30}
+        - {x: 40, y: 26}
+        - {x: 42, y: 20}
+        - {x: 48, y: 20}
+      - - {x: 226, y: -20}
+        - {x: 226, y: -6}
+        - {x: 224, y: 0}
+        - {x: 210, y: 2}
+        - {x: 204, y: 0}
+        - {x: 202, y: -12}
+        - {x: 210, y: -22}
+        - {x: 216, y: -22}
+      - - {x: 94, y: -12}
+        - {x: 90, y: -2}
+        - {x: 84, y: -2}
+        - {x: 80, y: -4}
+        - {x: 78, y: -12}
+        - {x: 82, y: -16}
+        - {x: 90, y: -16}
+      - - {x: 36, y: -50}
+        - {x: 40, y: -42}
+        - {x: 40, y: -36}
+        - {x: 30, y: -36}
+        - {x: 16, y: -46}
+        - {x: 16, y: -50}
+        - {x: 20, y: -54}
+      - - {x: -6, y: -48}
+        - {x: -6, y: -44}
+        - {x: -12, y: -42}
+        - {x: -18, y: -48}
+        - {x: -18, y: -50}
+        - {x: -14, y: -54}
+        - {x: -12, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9f21b6b81fbf520800000000000000
+      internalID: 2737046779656862118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 52, y: 24}
+        - {x: 50, y: 30}
+        - {x: 44, y: 30}
+        - {x: 40, y: 26}
+        - {x: 42, y: 20}
+        - {x: 48, y: 20}
+      - - {x: 248, y: -20}
+        - {x: 248, y: -2}
+        - {x: 238, y: -2}
+        - {x: 236, y: -2.7999878}
+        - {x: 236, y: 0}
+        - {x: 230, y: 2}
+        - {x: 226, y: -2}
+        - {x: 228.5263, y: -5.789459}
+        - {x: 228, y: -6}
+        - {x: 226, y: -12}
+        - {x: 226, y: -14}
+        - {x: 234, y: -22}
+        - {x: 242, y: -22}
+      - - {x: 94, y: -12}
+        - {x: 90, y: -2}
+        - {x: 84, y: -2}
+        - {x: 80, y: -4}
+        - {x: 78, y: -12}
+        - {x: 82, y: -16}
+        - {x: 90, y: -16}
+      - - {x: 36, y: -50}
+        - {x: 40, y: -42}
+        - {x: 40, y: -36}
+        - {x: 30, y: -36}
+        - {x: 16, y: -46}
+        - {x: 16, y: -50}
+        - {x: 20, y: -54}
+      - - {x: -6, y: -48}
+        - {x: -6, y: -44}
+        - {x: -12, y: -42}
+        - {x: -18, y: -48}
+        - {x: -18, y: -50}
+        - {x: -14, y: -54}
+        - {x: -12, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52959b81a7d6d8c40800000000000000
+      internalID: 5516185489766963493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_44
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 52, y: 24}
+        - {x: 50, y: 30}
+        - {x: 44, y: 30}
+        - {x: 40, y: 26}
+        - {x: 42, y: 20}
+        - {x: 48, y: 20}
+      - - {x: 244, y: -6}
+        - {x: 244, y: 0}
+        - {x: 238, y: 2}
+        - {x: 234, y: -2}
+        - {x: 238, y: -8}
+      - - {x: 94, y: -12}
+        - {x: 90, y: -2}
+        - {x: 84, y: -2}
+        - {x: 80, y: -4}
+        - {x: 78, y: -12}
+        - {x: 82, y: -16}
+        - {x: 90, y: -16}
+      - - {x: 236, y: -12}
+        - {x: 236, y: -6}
+        - {x: 230, y: -4}
+        - {x: 226, y: -8}
+        - {x: 230, y: -14}
+      - - {x: 36, y: -50}
+        - {x: 40, y: -42}
+        - {x: 40, y: -36}
+        - {x: 30, y: -36}
+        - {x: 16, y: -46}
+        - {x: 16, y: -50}
+        - {x: 20, y: -54}
+      - - {x: -6, y: -48}
+        - {x: -6, y: -44}
+        - {x: -12, y: -42}
+        - {x: -18, y: -48}
+        - {x: -18, y: -50}
+        - {x: -14, y: -54}
+        - {x: -12, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858198695b1863b00800000000000000
+      internalID: 807975800074213464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_45
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 52, y: 24}
+        - {x: 50, y: 30}
+        - {x: 44, y: 30}
+        - {x: 40, y: 26}
+        - {x: 42, y: 20}
+        - {x: 48, y: 20}
+      - - {x: 242, y: -14}
+        - {x: 244, y: -4}
+        - {x: 240, y: 0}
+        - {x: 232, y: 0}
+        - {x: 226, y: -6}
+        - {x: 226, y: -8}
+        - {x: 234, y: -18}
+        - {x: 238, y: -18}
+      - - {x: 94, y: -12}
+        - {x: 90, y: -2}
+        - {x: 84, y: -2}
+        - {x: 80, y: -4}
+        - {x: 78, y: -12}
+        - {x: 82, y: -16}
+        - {x: 90, y: -16}
+      - - {x: 36, y: -50}
+        - {x: 40, y: -42}
+        - {x: 40, y: -36}
+        - {x: 30, y: -36}
+        - {x: 16, y: -46}
+        - {x: 16, y: -50}
+        - {x: 20, y: -54}
+      - - {x: -6, y: -48}
+        - {x: -6, y: -44}
+        - {x: -12, y: -42}
+        - {x: -18, y: -48}
+        - {x: -18, y: -50}
+        - {x: -14, y: -54}
+        - {x: -12, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e603763416579ac80800000000000000
+      internalID: -8310982576732426130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_46
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 16}
+        - {x: 54, y: 22}
+        - {x: 50, y: 26}
+        - {x: 44, y: 24}
+        - {x: 44, y: 18}
+        - {x: 48, y: 14}
+      - - {x: 242, y: -12}
+        - {x: 242, y: 0}
+        - {x: 230, y: 0}
+        - {x: 230, y: -16}
+        - {x: 240, y: -16}
+      - - {x: 38, y: -42}
+        - {x: 38, y: -36}
+        - {x: 32, y: -34}
+        - {x: 30, y: -34}
+        - {x: 14, y: -48}
+        - {x: 14, y: -52}
+        - {x: 16, y: -56}
+        - {x: 22, y: -56}
+      - - {x: 0, y: -44}
+        - {x: 0, y: -40}
+        - {x: -6, y: -38}
+        - {x: -18, y: -48}
+        - {x: -16, y: -54}
+        - {x: -12, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348bb55dfea48e8e0800000000000000
+      internalID: -1663997668376201149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_47
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 40, y: 26}
+        - {x: 40, y: 32}
+        - {x: 34, y: 34}
+        - {x: 30, y: 30}
+        - {x: 34, y: 24}
+      - - {x: 66, y: -10}
+        - {x: 70, y: -2}
+        - {x: 70, y: 2}
+        - {x: 66, y: 4}
+        - {x: 60, y: 4}
+        - {x: 56, y: -2}
+        - {x: 56, y: -10}
+        - {x: 60, y: -14}
+      - - {x: 242, y: 0}
+        - {x: 234, y: 0}
+        - {x: 230, y: -4}
+        - {x: 230, y: -8}
+        - {x: 232, y: -12}
+        - {x: 242, y: -12}
+      - - {x: 32, y: -44}
+        - {x: 32, y: -38}
+        - {x: 26, y: -36}
+        - {x: 12, y: -48}
+        - {x: 12, y: -54}
+        - {x: 14, y: -58}
+        - {x: 20, y: -58}
+      - - {x: -2, y: -46}
+        - {x: -2, y: -42}
+        - {x: -8, y: -40}
+        - {x: -20, y: -50}
+        - {x: -18, y: -56}
+        - {x: -14, y: -56}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8eb45c24a57fa100800000000000000
+      internalID: 121445062941130381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_48
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 30, y: 32}
+        - {x: 28, y: 38}
+        - {x: 18, y: 38}
+        - {x: 14, y: 34}
+        - {x: 16, y: 28}
+        - {x: 26, y: 28}
+      - - {x: 38, y: 22}
+        - {x: 38, y: 28}
+        - {x: 32, y: 30}
+        - {x: 28, y: 26}
+        - {x: 32, y: 20}
+      - - {x: 40, y: -12}
+        - {x: 48, y: -2}
+        - {x: 46, y: 4}
+        - {x: 40, y: 4}
+        - {x: 28, y: -8}
+        - {x: 28, y: -10}
+        - {x: 32, y: -14}
+      - - {x: 0, y: -44}
+        - {x: 0, y: -40}
+        - {x: -6, y: -38}
+        - {x: -20, y: -50}
+        - {x: -18, y: -56}
+        - {x: -14, y: -56}
+      - - {x: 24, y: -52}
+        - {x: 26, y: -42}
+        - {x: 22, y: -38}
+        - {x: 16, y: -40}
+        - {x: 14, y: -50}
+        - {x: 18, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5057e82b367dc70800000000000000
+      internalID: 8995768399241217507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_temp_temp_49
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 32, y: 24}
+        - {x: 26, y: 38}
+        - {x: 18, y: 40}
+        - {x: 14, y: 34}
+        - {x: 26, y: 20}
+      - - {x: 24, y: -6}
+        - {x: 36, y: 4}
+        - {x: 36, y: 10}
+        - {x: 32, y: 12}
+        - {x: 28, y: 12}
+        - {x: 14, y: 0}
+        - {x: 14, y: -4}
+        - {x: 18, y: -8}
+      - - {x: -4, y: -46}
+        - {x: -4, y: -42}
+        - {x: -10, y: -40}
+        - {x: -18, y: -48}
+        - {x: -18, y: -50}
+        - {x: -14, y: -54}
+        - {x: -12, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6afb9b4d9bf818a30800000000000000
+      internalID: 4215808754496159654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8a24464bc572ef34695a2b87a75f3c21
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      heavy_side_temp_temp_0: 8521160599128635698
+      heavy_side_temp_temp_1: -5324977124524023841
+      heavy_side_temp_temp_10: 2765515363696312796
+      heavy_side_temp_temp_11: 7037643325242963888
+      heavy_side_temp_temp_12: -4101221860576687026
+      heavy_side_temp_temp_13: 8744626253543011373
+      heavy_side_temp_temp_14: 5142736494873802985
+      heavy_side_temp_temp_15: 1222592043408314268
+      heavy_side_temp_temp_16: 8905699637623985875
+      heavy_side_temp_temp_17: 3042424767525140166
+      heavy_side_temp_temp_18: -3669638305380467408
+      heavy_side_temp_temp_19: -1780262525511453019
+      heavy_side_temp_temp_2: 6089154528230601024
+      heavy_side_temp_temp_20: 355410303990377614
+      heavy_side_temp_temp_21: -1330050354634058936
+      heavy_side_temp_temp_22: -1255097748640980723
+      heavy_side_temp_temp_23: -9092284271020857534
+      heavy_side_temp_temp_24: -7600013092855881515
+      heavy_side_temp_temp_25: -4386321823106330483
+      heavy_side_temp_temp_26: -4862553375337826482
+      heavy_side_temp_temp_27: -4676474110738017810
+      heavy_side_temp_temp_28: -7825264171411001517
+      heavy_side_temp_temp_29: 2469227613080700207
+      heavy_side_temp_temp_3: 4862480458743287713
+      heavy_side_temp_temp_30: -8046896834205073683
+      heavy_side_temp_temp_31: -1291630236512764723
+      heavy_side_temp_temp_32: -603224001328911386
+      heavy_side_temp_temp_33: -1603877391984487320
+      heavy_side_temp_temp_34: -2850878314158996601
+      heavy_side_temp_temp_35: -6413991455430438676
+      heavy_side_temp_temp_36: 7915815191715811943
+      heavy_side_temp_temp_37: 6397574486599784262
+      heavy_side_temp_temp_38: -1985830992363275180
+      heavy_side_temp_temp_39: -2369775243322512546
+      heavy_side_temp_temp_4: -6612458404867320891
+      heavy_side_temp_temp_40: 7951714308137524099
+      heavy_side_temp_temp_41: -6452375217714659998
+      heavy_side_temp_temp_42: 2737046779656862118
+      heavy_side_temp_temp_43: 5516185489766963493
+      heavy_side_temp_temp_44: 807975800074213464
+      heavy_side_temp_temp_45: -8310982576732426130
+      heavy_side_temp_temp_46: -1663997668376201149
+      heavy_side_temp_temp_47: 121445062941130381
+      heavy_side_temp_temp_48: 8995768399241217507
+      heavy_side_temp_temp_49: 4215808754496159654
+      heavy_side_temp_temp_5: 7581682573505578901
+      heavy_side_temp_temp_6: -1151613277785811836
+      heavy_side_temp_temp_7: 2286711263440424587
+      heavy_side_temp_temp_8: -6962328972879291611
+      heavy_side_temp_temp_9: -6028890635389868966
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

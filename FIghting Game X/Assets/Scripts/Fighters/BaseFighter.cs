@@ -5,140 +5,46 @@ using UnityEngine.InputSystem;
 using TMPro;
 using UnityEditor.VersionControl;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
-
-public enum FighterAction
-{
-    Idle,
-    Running,
-    Jump,
-    JabUp,
-    JabSide,
-    JabDown,
-    Falling,
-    Ult,
-    Emote,
-    BlockUp,
-    BlockSide,
-    HeavyUp,
-    HeavySide,
-    HeavyDown,
-    Dash,
-    KnockedBackLight,
-    KnockedBackHeavy,
-    Stunned
-}
-
-public enum Facing
-{
-    Left = -1,
-    Right = 1
-}
+using static UnityEngine.Rendering.DebugUI;
+using System.Runtime.CompilerServices;
 
 public class BaseFighter : MonoBehaviour
 {
     public new Rigidbody2D rigidbody;
     public new Collider2D collider;
-    public SpriteRenderer sprite_renderer;
-    public Transform sprite_transform;
-    public Animator animator;
 
     public TextMeshPro debug_text;
 
     public FighterInput fighter_input;
     public EventBuffer event_buffer;
 
-    public readonly BaseStats base_stats = BaseStats.DEFAULT;
+    public FighterState state;
+    public FighterHealth health;
 
-    public int available_air_jumps;
-    public int remaining_dash_frames;
-    public int remaining_flying_frames;
+    private DelayedActions delayed_actions;
+    
+    private PlayerSounds player_sounds;
 
-    private FighterAction _current_action;
-
-    public void start_action(FighterAction action)
+    private void Awake()
     {
-        if (_current_action != action)
-        {
-            _current_action = action;
-
-            animator.ResetTrigger("trigger");
-            animator.SetInteger("action", (int)action);
-            animator.SetTrigger("trigger");
-        }
+        player_sounds = GetComponent<PlayerSounds>();
     }
-    public FighterAction get_action() { return _current_action; }
-
-    private bool _grounded;
-    private Facing _facing;
-
-    public bool passive = true;
-
-    public AnimationData animation_data;
-
-    public bool grounded
-    {
-        set
-        {
-            if (value)
-            {
-                available_air_jumps = base_stats.air_jumps;
-            }
-            _grounded = value;
-        }
-        get { return _grounded; }
-    }
-
-    public Facing facing
-    {
-        set
-        {
-            if ((animation_data.flags & FighterFlags.CanTurn) == 0) return;
-            _facing = value;
-
-            var scale = sprite_transform.localScale;
-            scale.x = (int)value;
-            sprite_transform.localScale = scale;
-        }
-        get { return _facing; }
-    }
-
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        available_air_jumps = base_stats.air_jumps;
-        facing = Facing.Right;
-        remaining_dash_frames = 0;
+        event_buffer = fighter_input.event_buffer;
 
-        event_buffer = new EventBuffer();
+        event_buffer.register(EventType.Jump, jump_action);
+        event_buffer.register(EventType.Jab, jab_action);
+        event_buffer.register(EventType.Heavy, heavy_action);
+        event_buffer.register(EventType.Interact, interact_action);
+        event_buffer.register(EventType.Dash, dash_action);
+        event_buffer.register(EventType.Block, block_action);
+        event_buffer.register(EventType.Ult, ult_action);
 
-        event_buffer.register(FighterButton.Jump, jump_action);
-        event_buffer.register(FighterButton.Jab, jab_action);
-        event_buffer.register(FighterButton.Heavy, heavy_action);
-        event_buffer.register(FighterButton.Interact, interact_action);
-        event_buffer.register(FighterButton.Dash, dash_action);
-        event_buffer.register(FighterButton.Block, block_action);
-        event_buffer.register(FighterButton.Ult, ult_action);
-
-        start_action(FighterAction.Idle);
+        delayed_actions = new DelayedActions();
     }
-
-    /*
-
-    private Vector2 moveAmount;
-    private InputActionAsset InputActions;
-
-    private void OnEnable()
-    {
-        InputActions.FindActionMap("Player").Enable();
-    }
-
-    private void OnDisable()
-    {
-        InputActions.FindActionMap("Player").Disable();
-    }
-
-    */
 
     public void FixedUpdate()
     {
@@ -151,9 +57,11 @@ public class BaseFighter : MonoBehaviour
             handle_contact(contact);
         }
 
-        check_animation_end();
+        check_signals();
 
-        fighter_input.dispatch_events(event_buffer);
+        delayed_actions.tick();
+
+        fighter_input.dispatch_events();
 
         event_buffer.process();
 
@@ -167,16 +75,16 @@ public class BaseFighter : MonoBehaviour
         }
         else /**/
 
-        if (remaining_flying_frames > 0)
+        if (state.remaining_flying_frames > 0)
         {
-            remaining_flying_frames--;
+            state.remaining_flying_frames--;
         }
-        else if (remaining_dash_frames > 0)
+        else if (state.remaining_dash_frames > 0)
         {
             rigidbody.gravityScale = 0.0f;
-            rigidbody.linearVelocityX = (int)facing * base_stats.ground_speed * 3.0f;
+            rigidbody.linearVelocityX = state.dash_speed;
             rigidbody.linearVelocityY = 0.0f;
-            remaining_dash_frames--;
+            state.remaining_dash_frames--;
         }
         else
         {
@@ -184,9 +92,9 @@ public class BaseFighter : MonoBehaviour
             process_movement();
         }
 
-        debug_text.SetText(get_action().ToString());
+        debug_text.SetText(state.get_action() + "\n" + health.GetCurrentHealth() + "/" + health.maxHealth);
 
-        grounded = false;
+        state.set_grounded(false);
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
@@ -199,128 +107,170 @@ public class BaseFighter : MonoBehaviour
     {
         if (contact.normal.y > 0.7f)
         {
-            grounded = true;
+            state.set_grounded(true);
         }
     }
 
     public void process_movement()
     {
-        if (fighter_input.direction.x != 0)
-            facing = (Facing)fighter_input.direction.x;
+        state.set_facing(fighter_input.direction.x);
 
-        if (grounded)
+        if (state.is_grounded())
         {
-            rigidbody.linearVelocityX = ((animation_data.flags & FighterFlags.CanMove) == 0) ? 0.0f : fighter_input.direction.x * base_stats.ground_speed;
+            rigidbody.linearVelocityX = !state.flags_any_set(FighterFlags.CanMove) ? 0.0f : fighter_input.direction.x * state.get_ground_speed();
         }
         else
         {
-            float dist = ((animation_data.flags & FighterFlags.CanMove) == 0 ? 0.0f : fighter_input.direction.x) * base_stats.horizontal_speed - rigidbody.linearVelocityX;
+            float dist = (!state.flags_any_set(FighterFlags.CanMove) ? 0.0f : fighter_input.direction.x) * state.get_air_speed().x - rigidbody.linearVelocityX;
 
             float delta = (dist * 5.0f + 2.0f * Math.Sign(dist)) * Time.fixedDeltaTime;
             rigidbody.linearVelocityX += delta;
-            rigidbody.linearVelocityX = Math.Clamp(rigidbody.linearVelocityX, -base_stats.horizontal_speed, base_stats.horizontal_speed);
+            rigidbody.linearVelocityX = Math.Clamp(rigidbody.linearVelocityX, -state.get_air_speed().x, state.get_air_speed().x);
         }
     }
 
-    public void check_animation_end()
+    public void check_signals()
     {
-        if (animation_data.finished)
+        var signals = state.read_signals();
+
+        if (signals.HasFlag(FighterSignals.Finished))
         {
-            animation_data.finished = false;
             on_animation_end();
+        }
+
+        if (signals.HasFlag(FighterSignals.ShouldJump))
+        {
+            //jump();
         }
     }
 
     public void on_animation_end()
     {
-        passive = true;
-
-        start_action(FighterAction.Idle);
+        state.start_action(FighterAction.Idle);
+        state.animation_data.flags = FighterFlags.Idle;
     }
 
     public void jump()
     {
-        rigidbody.linearVelocityY = base_stats.jump_strength;
+        if (!state.is_grounded())
+        {
+            state.available_air_jumps--;
+        }
+        rigidbody.linearVelocityY = state.get_jump_strength();
     }
 
-    public void dash()
+    public void dash(float speed)
     {
-        remaining_dash_frames = 7;
+        state.dash_speed = speed;
+        state.remaining_dash_frames = 7;
     }
 
     public void knockback(Vector2 direction)
     {
-        remaining_flying_frames = 60;
+        Debug.Log("knockback");
+        player_sounds.PlayJabHit();
+        state.start_action(FighterAction.KnockedBackLight);
+        state.remaining_flying_frames = 5;
         rigidbody.linearVelocity = direction;
     }
 
+    public void handle_hit(AttackHitbox hitbox_data)
+    {
+        Debug.Log(hitbox_data.knockback);
+        Debug.Log(hitbox_data.source_fighter.state.get_facing_vec());
+        knockback(hitbox_data.knockback * hitbox_data.source_fighter.state.get_facing_vec());
+    }
+
+    public bool is_blocking(Vector2Int direction)
+    {
+        if (state.flags_any_set(FighterFlags.BlockSide) && direction.x == -state.get_facing_int())
+            return true;
+
+        if (state.flags_any_set(FighterFlags.BlockUp) && direction.y == -1)
+            return true;
+
+        return false;
+    }
+
+
+    public void take_damage(int damage, GameObject attacker)
+    {
+        health.TakeDamage(damage, attacker);
+    }
+
+    public void take_arena_damage(int damage) {
+        health.TakeArenaDamage(damage);
+    }
+
+
     public bool jump_action()
     {
-        if ((animation_data.flags & FighterFlags.CanJump) == 0) return false;
-        if (grounded)
+        if (state.can_jump())
         {
-            jump();
-            return true;
-        }
-        else if (available_air_jumps > 0)
-        {
-            jump();
-            available_air_jumps--;
+            player_sounds.PlayJump();
+            state.start_action(FighterAction.Jump);
+            delayed_actions.push(new DelayedAction(jump, 8));
             return true;
         }
         return false;
     }
 
 
-    public bool jab_action(EventInput input)
+    public bool jab_action(EventData input)
     {
         if (!input.pressed) return true;
 
-        if (get_action() == FighterAction.JabSide) return false;
+        state.set_facing(input.direction.x);
+        if (state.get_action() == FighterAction.JabSide) return false;
 
-        start_action((FighterAction)((int)(FighterAction.JabSide) - input.direction.y));
+        player_sounds.PlayJab();
+        state.start_action((FighterAction)((int)(FighterAction.JabSide) - input.direction.y));
         return true;
     }
 
-    public bool heavy_action(EventInput input)
+    public bool heavy_action(EventData input)
     {
         if (!input.pressed) return true;
 
-        start_action((FighterAction)((int)(FighterAction.HeavySide) - input.direction.y));
+        state.set_facing(input.direction.x);
+        player_sounds.PlayHeavy();
+        state.start_action((FighterAction)((int)(FighterAction.HeavySide) - input.direction.y));
         return true;
     }
 
-    public bool interact_action(EventInput input)
+    public bool interact_action(EventData input)
     {
         return true;
     }
 
-    public bool dash_action()
+    public bool dash_action(EventData input)
     {
-        dash();
+        if (!input.pressed) return true;
+        state.set_facing(input.direction.x);
+        player_sounds.PlayDash();
+        dash((int)state.get_facing() * state.base_stats.dash_factor * state.get_ground_speed());
         return true;
     }
 
-    public bool block_action(EventInput input)
+    public bool block_action(EventData input)
     {
         if (!input.pressed)
         {
-            if (get_action() == FighterAction.BlockSide || get_action() == FighterAction.BlockUp)
+            if (state.get_action() == FighterAction.BlockSide || state.get_action() == FighterAction.BlockUp)
                 on_animation_end();
             return true;
         }
 
-        start_action(input.direction.y == 1 ? FighterAction.BlockUp : FighterAction.BlockSide);
+        state.set_facing(input.direction.x);
+        state.start_action(input.direction.y == 1 ? FighterAction.BlockUp : FighterAction.BlockSide);
         return true;
     }
 
-    public bool ult_action(EventInput input)
+    public bool ult_action(EventData input)
     {
         if (!input.pressed) return true;
 
-        start_action(FighterAction.KnockedBackLight);
-
-        knockback(new Vector2(-(float)(int)facing, 2.0f) * 5.0f);
+        knockback(new Vector2(-(float)(int)state.get_facing(), 0.0f) * 5.0f);
         Debug.Log("knocking back");
         return true;
     }

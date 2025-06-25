@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 508 285.75"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="ingame_health.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#272727"
+     bordercolor="#000000"
+     borderopacity="0.24705882"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#000000"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="1.4893131"
+     inkscape:cx="1609.1311"
+     inkscape:cy="526.41717"
+     inkscape:window-width="1440"
+     inkscape:window-height="878"
+     inkscape:window-x="-6"
+     inkscape:window-y="1433"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:lockguides="false"
+     showguides="true" />
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect20"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect19"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect18"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect17"
+       is_visible="true"
+       lpeversion="1" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="opacity:1;fill:#00ffff;stroke:#000000;stroke-width:4.16246;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="circle2"
+       cx="180.99818"
+       cy="173.9446"
+       r="15.895995" />
+    <rect
+       style="opacity:1;fill:#ffffff;stroke:#000000;stroke-width:3.16912;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="rect4"
+       width="25.284058"
+       height="7.0533285"
+       x="157.00331"
+       y="177.15587" />
+    <path
+       id="path2"
+       style="opacity:1;fill:none;stroke:#00ff00;stroke-width:9.26042;stroke-dasharray:none;paint-order:stroke fill markers"
+       d="m 165.35373,192.57481 c 4.38009,3.68699 9.91922,5.71279 15.64452,5.72161 13.44911,-1.1e-4 24.35166,-10.90289 24.35149,-24.352 -0.001,-5.58748 -1.92366,-11.00463 -5.44515,-15.34273"
+       sodipodi:nodetypes="cccc" />
+    <circle
+       style="opacity:1;fill:none;stroke:#00ff00;stroke-width:9.26042;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="circle3"
+       cx="110.73485"
+       cy="96.582115"
+       r="24.351696" />
+    <circle
+       style="opacity:1;fill:#00ffff;stroke:none;stroke-width:7.09991;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="circle4"
+       cx="110.73485"
+       cy="96.582115"
+       r="18.235867" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.79507px;line-height:1.2;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';letter-spacing:0.124872px;word-spacing:0px;opacity:1;fill:#000000;stroke:none;stroke-width:0.874101;stroke-dasharray:none;paint-order:stroke fill markers"
+       x="158.1237"
+       y="182.30696"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Black Han Sans';-inkscape-font-specification:'Black Han Sans';fill:#000000;stroke-width:0.874101"
+         x="158.1237"
+         y="182.30696">Player 1</tspan></text>
+    <path
+       id="rect6"
+       style="opacity:1;fill:#000000;stroke:#ffe12a;stroke-width:3.79188;paint-order:stroke fill markers;fill-opacity:0;stroke-opacity:1"
+       d="m 197.2951,151.59659 1.16857,1.05535 -4.08082,3.8241 -0.0891,-0.0725 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="path7"
+       style="opacity:1;fill:#000000;stroke:#ffe12a;stroke-width:3.79188;paint-order:stroke fill markers;fill-opacity:0;stroke-opacity:1"
+       d="m 190.67228,147.81146 1.43057,0.65787 -2.75141,4.86894 -0.1067,-0.0425 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="path8"
+       style="opacity:1;fill:#999999;fill-opacity:0;stroke:#999999;stroke-width:3.79188;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 182.61516,146.26506 1.56515,0.17215 -1.07207,5.48884 -0.11467,-0.007 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="opacity:1;fill:#fff5a0;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 196.94648,149.42401 2.39777,1.94448 -6.96823,5.54953 z"
+       id="path11"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="opacity:1;fill:#ececec;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 181.47411,153.41469 -0.31074,-8.74594 2.7987,0.36628 z"
+       id="path12"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="opacity:1;fill:#fff5a0;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 187.47013,154.27495 2.17374,-8.47719 2.80863,1.21058 z"
+       id="path13"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="opacity:1;fill:#ffbd00;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 188.72719,154.48921 1.36758,0.64357 3.07306,-5.27728 z"
+       id="path14" />
+    <path
+       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 182.55906,153.30355 1.49532,0.22015 1.41389,-5.9409 z"
+       id="path15" />
+    <path
+       style="opacity:1;fill:#ffbd00;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 193.39643,157.4589 1.14337,0.9885 4.38224,-4.25315 z"
+       id="path16" />
+    <rect
+       style="opacity:1;fill:#3966a0;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect20"
+       width="230.74702"
+       height="176.99872"
+       x="265.67072"
+       y="53.748306" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.83709px;line-height:1.2;font-family:'Black Han Sans';-inkscape-font-specification:'Black Han Sans';letter-spacing:0.230133px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.690396;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       x="315.46127"
+       y="82.372299"
+       id="text20"><tspan
+         sodipodi:role="line"
+         id="tspan20"
+         style="fill:#ffffff;stroke-width:0.690396"
+         x="315.46127"
+         y="82.372299">lorem ipsum, moin meister</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;stroke-width:0.690396"
+         x="315.46127"
+         y="92.976807"
+         id="tspan21">hallo </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.83709px;line-height:1.2;font-family:'Black Han Sans';-inkscape-font-specification:'Black Han Sans';letter-spacing:0.230133px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.690396;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       x="314.15073"
+       y="108.91083"
+       id="text23"><tspan
+         sodipodi:role="line"
+         id="tspan22"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std Condensed';fill:#ffffff;stroke-width:0.690396"
+         x="314.15073"
+         y="108.91083">Fighting Game X</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std Condensed';fill:#ffffff;stroke-width:0.690396"
+         x="314.15073"
+         y="120.20463"
+         id="tspan23">hallo </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.83709px;line-height:1.2;font-family:'Black Han Sans';-inkscape-font-specification:'Black Han Sans';letter-spacing:0.230133px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.690396;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       x="312.34872"
+       y="211.97325"
+       id="text25"><tspan
+         sodipodi:role="line"
+         id="tspan24"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:#ffffff;stroke-width:0.690396"
+         x="312.34872"
+         y="211.97325">lorem ipsum, moin meister</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:#ffffff;stroke-width:0.690396"
+         x="312.34872"
+         y="222.61394"
+         id="tspan25">hallo </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.83709px;line-height:1.2;font-family:'Black Han Sans';-inkscape-font-specification:'Black Han Sans';letter-spacing:0.230133px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.690396;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       x="386.72214"
+       y="109.07465"
+       id="text27"><tspan
+         sodipodi:role="line"
+         id="tspan26"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std';fill:#ffffff;stroke-width:0.690396"
+         x="386.72214"
+         y="109.07465">DIN 1451 Std Mittelschrift</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std';fill:#ffffff;stroke-width:0.690396"
+         x="386.72214"
+         y="120.36845"
+         id="tspan27">hallo </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.83709px;line-height:1.2;font-family:'Black Han Sans';-inkscape-font-specification:'Black Han Sans';letter-spacing:0.230133px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.690396;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       x="309.39139"
+       y="164.64613"
+       id="text31"><tspan
+         sodipodi:role="line"
+         id="tspan30"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'JetBrains Mono NL';-inkscape-font-specification:'JetBrains Mono NL Medium';fill:#ffffff;stroke-width:0.690396"
+         x="309.39139"
+         y="164.64613">lorem ipsum, moin meister</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'JetBrains Mono NL';-inkscape-font-specification:'JetBrains Mono NL Medium';fill:#ffffff;stroke-width:0.690396"
+         x="309.39139"
+         y="175.40327"
+         id="tspan31">hallo </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.83709px;line-height:1.2;font-family:'Black Han Sans';-inkscape-font-specification:'Black Han Sans';letter-spacing:0.230133px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.690396;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       x="386.04681"
+       y="196.75848"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#ffffff;stroke-width:0.690396"
+         x="386.04681"
+         y="196.75848">Fighting Game X</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#ffffff;stroke-width:0.690396"
+         x="386.04681"
+         y="207.38658"
+         id="tspan2">hallo </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.83709px;line-height:1.2;font-family:'Black Han Sans';-inkscape-font-specification:'Black Han Sans';letter-spacing:0.230133px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.690396;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       x="390.27524"
+       y="135.5452"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std';fill:#ffffff;stroke-width:0.690396"
+         x="390.27524"
+         y="135.5452">DIN 1451 Std Mittelschrift</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std';fill:#ffffff;stroke-width:0.690396"
+         x="390.27524"
+         y="146.839"
+         id="tspan5">hallo </tspan></text>
+  </g>
+</svg>

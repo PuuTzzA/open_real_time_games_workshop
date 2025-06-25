@@ -19,11 +19,14 @@ public class FighterInput : MonoBehaviour
 
     private struct Event
     {
-        public FighterButton button;
+        public EventType type;
         public bool pressed;
-    } 
+        public Vector2Int direction;
+    }
 
     private Queue<Event> event_queue;
+
+    public EventBuffer event_buffer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     FighterInput()
@@ -33,13 +36,15 @@ public class FighterInput : MonoBehaviour
         jump = jab = heavy = interact = dash = block = ult = false;
 
         event_queue = new Queue<Event>();
+
+        event_buffer = new EventBuffer();
     }
 
-    public void dispatch_events(EventBuffer action_buffer)
+    public void dispatch_events()
     {
         foreach (var e in event_queue)
         {
-            action_buffer.push(new FighterEvent(e.button, new EventInput { pressed = e.pressed, direction = direction }));
+            event_buffer.push(new FighterEvent(new EventData { type = e.type, pressed = e.pressed, direction = e.type == EventType.Direction ? e.direction : direction }));
         }
         event_queue.Clear();
     }
@@ -47,30 +52,39 @@ public class FighterInput : MonoBehaviour
     public void direction_action(InputAction.CallbackContext context)
     {
         Vector2 dir = context.ReadValue<Vector2>();
+        Vector2Int new_dir;
 
-        if(dir.magnitude < 0.2)
+        if (dir.magnitude < 0.2)
         {
-            direction = Vector2Int.zero;
-            return;
+            new_dir = Vector2Int.zero;
+        }
+        else
+        {
+            var dir_normal = dir.normalized;
+
+            dir *= 1.0f / Mathf.Max(Mathf.Abs(dir_normal.x), Mathf.Abs(dir_normal.y));
+
+            new_dir = new Vector2Int(
+                dir.x < -0.7 ? -1 : dir.x > 0.7 ? 1 : 0,
+                dir.y < -0.7 ? -1 : dir.y > 0.7 ? 1 : 0
+            );
+
         }
 
-        var dir_normal = dir.normalized;
 
-        dir *= 1.0f / Mathf.Max(Mathf.Abs(dir_normal.x), Mathf.Abs(dir_normal.y));
-
-        direction = new Vector2Int(
-            dir.x < -0.7 ? -1 : dir.x > 0.7 ? 1 : 0,
-            dir.y < -0.7 ? -1 : dir.y > 0.7 ? 1 : 0
-        );
-
+        if (!new_dir.Equals(direction))
+        {
+            event_queue.Enqueue(new Event { type = EventType.Direction, direction = new_dir });
+        }
+        direction = new_dir;
     }
 
     public void jump_action(InputAction.CallbackContext context)
     {
-        if ( !context.performed)
+        if (!context.performed)
         {
             jump = context.ReadValueAsButton();
-            event_queue.Enqueue(new Event { button = FighterButton.Jump, pressed = context.started});
+            event_queue.Enqueue(new Event { type = EventType.Jump, pressed = context.started });
         }
     }
 
@@ -80,7 +94,7 @@ public class FighterInput : MonoBehaviour
         if (!context.performed)
         {
             jab = context.ReadValueAsButton();
-            event_queue.Enqueue(new Event { button = FighterButton.Jab, pressed = context.started });
+            event_queue.Enqueue(new Event { type = EventType.Jab, pressed = context.started });
         }
     }
 
@@ -89,7 +103,7 @@ public class FighterInput : MonoBehaviour
         if (!context.performed)
         {
             heavy = context.ReadValueAsButton();
-            event_queue.Enqueue(new Event { button = FighterButton.Heavy, pressed = context.started });
+            event_queue.Enqueue(new Event { type = EventType.Heavy, pressed = context.started });
         }
     }
 
@@ -98,7 +112,7 @@ public class FighterInput : MonoBehaviour
         if (!context.performed)
         {
             interact = context.ReadValueAsButton();
-            event_queue.Enqueue(new Event { button = FighterButton.Interact, pressed = context.started });
+            event_queue.Enqueue(new Event { type = EventType.Interact, pressed = context.started });
         }
     }
 
@@ -107,7 +121,7 @@ public class FighterInput : MonoBehaviour
         if (!context.performed)
         {
             dash = context.ReadValueAsButton();
-            event_queue.Enqueue(new Event { button = FighterButton.Dash, pressed = context.started });
+            event_queue.Enqueue(new Event { type = EventType.Dash, pressed = context.started });
         }
     }
 
@@ -116,7 +130,7 @@ public class FighterInput : MonoBehaviour
         if (!context.performed)
         {
             block = context.ReadValueAsButton();
-            event_queue.Enqueue(new Event { button = FighterButton.Block, pressed = context.started });
+            event_queue.Enqueue(new Event { type = EventType.Block, pressed = context.started });
         }
     }
 
@@ -125,7 +139,7 @@ public class FighterInput : MonoBehaviour
         if (!context.performed)
         {
             ult = context.ReadValueAsButton();
-            event_queue.Enqueue(new Event { button = FighterButton.Ult, pressed = context.started });
+            event_queue.Enqueue(new Event { type = EventType.Ult, pressed = context.started });
         }
     }
 }
