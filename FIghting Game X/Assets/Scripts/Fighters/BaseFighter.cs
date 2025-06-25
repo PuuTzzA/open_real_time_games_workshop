@@ -6,42 +6,12 @@ using TMPro;
 using UnityEditor.VersionControl;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using static UnityEngine.Rendering.DebugUI;
-
-public enum FighterAction
-{
-    Idle,
-    Running,
-    Jump,
-    JabUp,
-    JabSide,
-    JabDown,
-    Falling,
-    Ult,
-    Emote,
-    BlockUp,
-    BlockSide,
-    HeavyUp,
-    HeavySide,
-    HeavyDown,
-    Dash,
-    KnockedBackLight,
-    KnockedBackHeavy,
-    Stunned
-}
-
-public enum Facing
-{
-    Left = -1,
-    Right = 1
-}
+using System.Runtime.CompilerServices;
 
 public class BaseFighter : MonoBehaviour
 {
     public new Rigidbody2D rigidbody;
     public new Collider2D collider;
-    public SpriteRenderer sprite_renderer;
-    public Transform sprite_transform;
-    // public Animator animator;
 
     public TextMeshPro debug_text;
 
@@ -76,7 +46,7 @@ public class BaseFighter : MonoBehaviour
             handle_contact(contact);
         }
 
-        check_animation_end();
+        check_signals();
 
         fighter_input.dispatch_events();
 
@@ -146,12 +116,18 @@ public class BaseFighter : MonoBehaviour
         }
     }
 
-    public void check_animation_end()
+    public void check_signals()
     {
-        if (state.animation_data.finished)
+        var signals = state.read_signals();
+
+        if (signals.HasFlag(FighterSignals.Finished))
         {
-            state.animation_data.finished = false;
             on_animation_end();
+        }
+
+        if (signals.HasFlag(FighterSignals.ShouldJump))
+        {
+            jump();
         }
     }
 
@@ -181,7 +157,7 @@ public class BaseFighter : MonoBehaviour
     {
         if(state.can_jump())
         {
-            jump();
+            state.start_action(FighterAction.Jump);
             return true;
         }
         return false;

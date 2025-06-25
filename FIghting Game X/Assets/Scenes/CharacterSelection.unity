@@ -831,9 +831,9 @@ MonoBehaviour:
   - {fileID: 340558732}
   spawnPointsObject: {fileID: 1593089092}
   characterPrefabs:
-  - {fileID: 3396020354287734119, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
-  - {fileID: 3396020354287734119, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
-  - {fileID: 3396020354287734119, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
+  - {fileID: 5433043207104148075, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
+  - {fileID: 5433043207104148075, guid: 8acb41cf5e3b93147b613f55baae739e, type: 3}
+  - {fileID: 5433043207104148075, guid: 379e3478b07fa4046aa258ad9a02e899, type: 3}
 --- !u!1 &1593089092
 GameObject:
   m_ObjectHideFlags: 0

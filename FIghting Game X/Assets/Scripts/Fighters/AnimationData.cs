@@ -12,14 +12,27 @@ public enum FighterFlags
     Mobile = CanJump | CanTurn | CanMove,
 }
 
+[Flags]
+public enum FighterSignals
+{
+    None = 0,
+    Finished = 0x01,
+    ShouldJump = 0x02,
+}
+
 public class AnimationData : MonoBehaviour
 {
 
     public FighterFlags flags;
-    public bool finished = false;
+    public FighterSignals signals;
 
     public void signal_finished()
     {
-        finished = true;
+        signals |= FighterSignals.Finished;
+    }
+
+    public void signal_jump()
+    {
+        signals |= FighterSignals.ShouldJump;
     }
 }

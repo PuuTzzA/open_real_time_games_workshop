@@ -1,11 +1,39 @@
 
 using UnityEngine;
 
+public enum FighterAction
+{
+    Idle,
+    Running,
+    Jump,
+    JabUp,
+    JabSide,
+    JabDown,
+    Falling,
+    Ult,
+    Emote,
+    BlockUp,
+    BlockSide,
+    HeavyUp,
+    HeavySide,
+    HeavyDown,
+    Dash,
+    KnockedBackLight,
+    KnockedBackHeavy,
+    Stunned
+}
+
+public enum Facing
+{
+    Left = -1,
+    Right = 1
+}
+
 public class FighterState : MonoBehaviour
 {
     public Animator animator;
     public Transform sprite_transform;
-    public BaseStats base_stats = BaseStats.DEFAULT;
+    public BaseStats base_stats;
 
     public int available_air_jumps;
     public int remaining_dash_frames;
@@ -67,7 +95,7 @@ public class FighterState : MonoBehaviour
 
     public void set_facing(Facing dir)
     {
-        if ((animation_data.flags & FighterFlags.CanTurn) == 0) return;
+        if (!flags_any_set(FighterFlags.CanTurn)) return;
 
         _facing = dir;
         var scale = sprite_transform.localScale;
@@ -79,6 +107,8 @@ public class FighterState : MonoBehaviour
 
     public void Start()
     {
+        base_stats = BaseStats.DEFAULT;
+
         available_air_jumps = base_stats.air_jumps;
         remaining_dash_frames = 0;
 
@@ -121,4 +151,13 @@ public class FighterState : MonoBehaviour
     }
 
 
+
+    public FighterSignals read_signals()
+    {
+        var ret = animation_data.signals;
+
+        animation_data.signals = FighterSignals.None;
+
+        return ret;
+    }
 }
