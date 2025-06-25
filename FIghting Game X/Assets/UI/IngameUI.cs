@@ -5,6 +5,8 @@ using UnityEngine.UIElements;
 
 public class IngameUI : MonoBehaviour
 {
+    [SerializeField]
+    private Sprite[] stocks;
     private VisualElement root;
     private PartialCircle[] healthbar = new PartialCircle[4];
     Color color;
@@ -60,7 +62,7 @@ public class IngameUI : MonoBehaviour
     {
         this.health = health;
         healthbar[playerid].Arc3Fill = health / 2;
-        healthbar[playerid].Arc3Color = blink_color;
+        //healthbar[playerid].Arc3Color = blink_color;
         StartCoroutine(DelayedArc2Fill(playerid, health));
         StartCoroutine(DelayedColorChange(playerid, color));
     }
@@ -75,6 +77,16 @@ public class IngameUI : MonoBehaviour
     IEnumerator DelayedColorChange(int playerid, Color color)
     {
         yield return new WaitForSeconds(blink_duration);
-        healthbar[playerid].Arc3Color = color;
+        //healthbar[playerid].Arc3Color = color;
+    }
+
+    public void changeStocks(int playerid, int stocks)
+    {
+        healthbar[playerid].parent.hierarchy.ElementAt(0).style.backgroundImage = new StyleBackground(this.stocks[stocks]);
+    }
+    public void removeExtraStock(int playerid)
+    {
+        healthbar[playerid].parent.hierarchy.ElementAt(0).style.backgroundImage = new StyleBackground(this.stocks[4]);
+
     }
 }
