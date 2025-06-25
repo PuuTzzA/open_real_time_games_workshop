@@ -154,12 +154,6 @@ public class BaseFighter : MonoBehaviour
         rigidbody.linearVelocityY = state.get_jump_strength();
     }
 
-    public void dash(float speed)
-    {
-        state.dash(speed);
-        state.start_action(FighterAction.Dash);
-    }
-
     public void knockback(Vector2 direction)
     {
         Debug.Log("knockback");
@@ -215,7 +209,7 @@ public class BaseFighter : MonoBehaviour
     {
         if (!input.pressed) return true;
 
-        state.set_facing(input.direction.x);
+        state.force_facing(input.direction.x);
         if (state.get_action() == FighterAction.JabSide) return false;
 
         player_sounds.PlayJab();
@@ -227,7 +221,7 @@ public class BaseFighter : MonoBehaviour
     {
         if (!input.pressed) return true;
 
-        state.set_facing(input.direction.x);
+        state.force_facing(input.direction.x);
         player_sounds.PlayHeavy();
         state.start_action((FighterAction)((int)(FighterAction.HeavySide) - input.direction.y));
         return true;
@@ -241,10 +235,9 @@ public class BaseFighter : MonoBehaviour
     public bool dash_action(EventData input)
     {
         if (!input.pressed) return true;
-        state.set_facing(input.direction.x);
+        state.force_facing(input.direction.x);
         player_sounds.PlayDash();
         state.dash(state.base_stats.dash_factor * state.get_ground_speed());
-        state.start_action(FighterAction.Dash);
         return true;
     }
 
@@ -257,7 +250,7 @@ public class BaseFighter : MonoBehaviour
             return true;
         }
 
-        state.set_facing(input.direction.x);
+        state.force_facing(input.direction.x);
         state.start_action(input.direction.y == 1 ? FighterAction.BlockUp : FighterAction.BlockSide);
         return true;
     }

@@ -127,7 +127,7 @@ public class FighterState : MonoBehaviour
         remaining_dash_frames = 0;
 
         set_facing(Facing.Right);
-        start_action(FighterAction.BlockUp);
+        start_action(FighterAction.Idle);
     }
 
 
@@ -179,6 +179,7 @@ public class FighterState : MonoBehaviour
     {
         dash_speed = speed;
         remaining_dash_frames = 12;
+        start_action(FighterAction.Dash);
     }
 
     public bool is_dashing()
