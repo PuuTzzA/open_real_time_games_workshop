@@ -37,6 +37,9 @@ public class SelectionManager : MonoBehaviour
     // Block onSubmit to prevent accidentaly getting ready by pressing x to join
     [SerializeField] private float submitBlockDuration = 0.3f;
     private float _submitBlockUntil;
+    
+    // For testing
+    private string fightScene = "TestSceneMartin";
 
     private void Awake()
     {
@@ -75,7 +78,7 @@ public class SelectionManager : MonoBehaviour
     
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "CharacterController")
+        if (scene.name == "TestSceneMartin")
         {
             // Hide selection UI
             characterSelectionUI.SetActive(false);
@@ -158,7 +161,7 @@ public class SelectionManager : MonoBehaviour
         if (_isReady)
         {
             if (_instances.All(x => x._isReady))
-                SceneManager.LoadScene("CharacterController");
+                SceneManager.LoadScene(fightScene);
         }
     }
     

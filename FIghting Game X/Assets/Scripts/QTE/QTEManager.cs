@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class QTEManager : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class QTEManager : MonoBehaviour
     private PlayerInput p1Input;
     private PlayerInput p2Input;
     private List<MonoBehaviour> pausedComponents = new();
+    private PersistentPlayerManager persistentPlayerManager;
 
     private void Awake()
     {
@@ -27,6 +29,8 @@ public class QTEManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        persistentPlayerManager = FindFirstObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>();
     }
 
     public void StartQTE(GameObject fallen, GameObject killer)
@@ -72,13 +76,14 @@ public class QTEManager : MonoBehaviour
         var fallenHealth = fallen.GetComponent<FighterHealth>();
         if (fallenWins)
         {
+            Debug.Log($"{fallen.name} wins the QTE against {killer.name}!");
             fallenHealth.GrantExtraLife();
-            ResumeRound(fallen, killer);
         }
         else
         {
             fallenHealth.GetFinished(killer);
         }
+        ResumeRound(fallen, killer);
     }
     
     private void MirrorSequenceMinigame(GameObject fallen, GameObject killer)
@@ -89,8 +94,6 @@ public class QTEManager : MonoBehaviour
     
     private void ButtonSmashMinigame(GameObject fallen, GameObject killer)
     {
-        // Implement the Button Smash Minigame logic here
-        // This could involve a timed button mashing challenge
         var ui = Instantiate(buttonSmashUIPrefab);
         var qteUI = ui.GetComponent<ButtonSmashQTE>();
         
@@ -109,6 +112,14 @@ public class QTEManager : MonoBehaviour
 
     private void ResumeRound(GameObject fallen, GameObject killer)
     {
+        // Check if there are still more than one fighter alive
+        if (persistentPlayerManager.isGameFinished())
+        {
+            Debug.Log("Game is finished, no more fighters left.");
+            SceneManager.LoadScene("CharacterSelection");
+            return;
+        }
+        
         p1Input.SwitchCurrentActionMap("Player");
         p2Input.SwitchCurrentActionMap("Player");
         

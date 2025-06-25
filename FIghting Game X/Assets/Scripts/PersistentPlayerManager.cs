@@ -20,11 +20,21 @@ public class PersistentPlayerManager : MonoBehaviour
 
     [SerializeField] private GameObject spawnPointsObject;
     public GameObject[] characterPrefabs;
+    
+    // For testing
+    private string fightScene = "TestSceneMartin";
 
     private void Awake()
     {
         _pim = GetComponent<PlayerInputManager>();
-        players = new List<PlayerInput>();   
+        players = new List<PlayerInput>();
+
+        foreach (var player in FindObjectsByType<PlayerInput>(FindObjectsSortMode.None))
+        {
+            player.user.UnpairDevicesAndRemoveUser();
+            player.DeactivateInput();
+            Destroy(player.gameObject);
+        }
         
         DontDestroyOnLoad(gameObject);
         DontDestroyOnLoad(spawnPointsObject);
@@ -61,7 +71,7 @@ public class PersistentPlayerManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "CharacterController")
+        if (scene.name == fightScene)
         {
             _pim.DisableJoining();
             StartCoroutine(SpawnAllPlayers());
@@ -87,6 +97,8 @@ public class PersistentPlayerManager : MonoBehaviour
             foreach (var device in player.devices)
                 InputUser.PerformPairingWithDevice(device, user: default);
 
+            player.DeactivateInput();
+            player.user.UnpairDevicesAndRemoveUser();
             Destroy(player.gameObject);
         }
 
@@ -109,11 +121,22 @@ public class PersistentPlayerManager : MonoBehaviour
                 controlScheme: data.Scheme,
                 pairWithDevices: data.Devices
             );
+            
+            players.Add(character);
 
             character.transform.position = spawnPoints[i].position;
         }
     }
+    
+    public List<PlayerInput> getPlayers()
+    {
+        return players;
+    }
 
-
+    public bool isGameFinished()
+    {
+        int aliveCount = players.Count(p => p.GetComponent<FighterHealth>().GetCurrentLives() > 0);
+        return aliveCount <= 1;
+    }
 
 }

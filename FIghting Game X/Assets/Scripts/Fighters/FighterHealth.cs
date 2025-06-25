@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FighterHealth : MonoBehaviour
 {
@@ -11,12 +12,14 @@ public class FighterHealth : MonoBehaviour
     // Current health and lives
     private int currentLives;
     private int currentHealth;
+    private PersistentPlayerManager persistentPlayerManager;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         currentHealth = maxHealth;
         currentLives = maxLives;
+        persistentPlayerManager = FindFirstObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>();
     }
 
     public void TakeDamage(int dmg, GameObject attacker)
@@ -79,13 +82,29 @@ public class FighterHealth : MonoBehaviour
         // TODO: Handle the death of the fighter, such as disabling controls, playing death animation, etc.
         Debug.Log("Fighter has died. Game Over.");
         this.gameObject.SetActive(false);
+        
+        if (persistentPlayerManager.isGameFinished()) 
+        {
+            Debug.Log("Game is finished, no more fighters left.");
+            SceneManager.LoadScene("CharacterSelection");
+            return;
+        }
     }
 
     public void GetFinished(GameObject killer)
     {
         // Function to handle the finishing move to absolutely anihilate the fighter
         // TODO: Play the finishing animation
+        Debug.Log($"{killer.name} has finished {this.gameObject.name}!");
     }
     
+    public int GetCurrentLives()
+    {
+        return currentLives;
+    }
     
+    public int GetCurrentHealth()
+    {
+        return currentHealth;
+    }
 }

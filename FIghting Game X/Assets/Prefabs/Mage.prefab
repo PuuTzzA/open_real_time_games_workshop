@@ -259,6 +259,9 @@ GameObject:
   - component: {fileID: 3784939749288748778}
   - component: {fileID: 8266158835667872492}
   - component: {fileID: 4792304623778786022}
+  - component: {fileID: 7907159012655869599}
+  - component: {fileID: 7555969372499361108}
+  - component: {fileID: 3701070194125093683}
   m_Layer: 0
   m_Name: Mage
   m_TagString: Untagged
@@ -503,6 +506,26 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 51fefa3a-2bd2-4987-83e4-2274fa66216d
+    m_ActionName: 'Player/test-minigame[/XInputControllerWindows/leftTrigger,/Keyboard/m]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f9459d25-f3cd-4af8-99d7-0b8d91ea1fb2
+    m_ActionName: 'QTE/Smash[/Keyboard/space,/XInputControllerWindows/buttonSouth]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -522,16 +545,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 6480166069264356360}
   collider: {fileID: 4792304623778786022}
-  sprite_renderer: {fileID: 7618947707530398012}
-  sprite_transform: {fileID: 7005465704683545578}
-  animator: {fileID: 4497933916085059567}
   debug_text: {fileID: 7214940668690671881}
   fighter_input: {fileID: 8266158835667872492}
-  available_air_jumps: 0
-  remaining_dash_frames: 0
-  remaining_flying_frames: 0
-  passive: 1
-  animation_data: {fileID: 1333684296444455915}
+  state: {fileID: 7907159012655869599}
 --- !u!114 &8266158835667872492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -581,6 +597,53 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.07852185}
   m_Size: {x: 0.45, y: 1.8790307}
   m_Direction: 0
+--- !u!114 &7907159012655869599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433043207104148075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433299da7bac5e94684e72ecc7b78f37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 4497933916085059567}
+  sprite_transform: {fileID: 7005465704683545578}
+  available_air_jumps: 0
+  remaining_dash_frames: 0
+  dash_speed: 0
+  remaining_flying_frames: 0
+  animation_data: {fileID: 1333684296444455915}
+  passive: 1
+--- !u!114 &7555969372499361108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433043207104148075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d32cc61bbfbb2c419aa18ca06320dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxLives: 3
+  qteUsed: 0
+  maxHealth: 300
+--- !u!114 &3701070194125093683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433043207104148075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82f2d5bf012bdc4c962dd55300e63a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7739751719961853797
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,4 +858,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flags: -1
-  finished: 0
+  signals: 0

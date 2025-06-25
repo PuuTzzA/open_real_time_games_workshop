@@ -162,6 +162,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""test-minigame"",
+                    ""type"": ""Button"",
+                    ""id"": ""51fefa3a-2bd2-4987-83e4-2274fa66216d"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -393,6 +402,28 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""ult"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0c9978fb-2a4e-4500-8be0-feebd1ec1543"",
+                    ""path"": ""<Gamepad>/leftStickPress"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""test-minigame"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c63055c1-60a8-4098-9f79-23b5979d44ce"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""test-minigame"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -994,6 +1025,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Player_dash = m_Player.FindAction("dash", throwIfNotFound: true);
         m_Player_block = m_Player.FindAction("block", throwIfNotFound: true);
         m_Player_ult = m_Player.FindAction("ult", throwIfNotFound: true);
+        m_Player_testminigame = m_Player.FindAction("test-minigame", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1099,6 +1131,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_dash;
     private readonly InputAction m_Player_block;
     private readonly InputAction m_Player_ult;
+    private readonly InputAction m_Player_testminigame;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -1142,6 +1175,10 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/ult".
         /// </summary>
         public InputAction @ult => m_Wrapper.m_Player_ult;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/testminigame".
+        /// </summary>
+        public InputAction @testminigame => m_Wrapper.m_Player_testminigame;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1192,6 +1229,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @ult.started += instance.OnUlt;
             @ult.performed += instance.OnUlt;
             @ult.canceled += instance.OnUlt;
+            @testminigame.started += instance.OnTestminigame;
+            @testminigame.performed += instance.OnTestminigame;
+            @testminigame.canceled += instance.OnTestminigame;
         }
 
         /// <summary>
@@ -1227,6 +1267,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @ult.started -= instance.OnUlt;
             @ult.performed -= instance.OnUlt;
             @ult.canceled -= instance.OnUlt;
+            @testminigame.started -= instance.OnTestminigame;
+            @testminigame.performed -= instance.OnTestminigame;
+            @testminigame.canceled -= instance.OnTestminigame;
         }
 
         /// <summary>
@@ -1640,6 +1683,13 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnUlt(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "test-minigame" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnTestminigame(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.

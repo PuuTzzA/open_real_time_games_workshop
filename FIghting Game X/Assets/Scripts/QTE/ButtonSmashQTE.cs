@@ -7,12 +7,15 @@ using UnityEngine.UI;
 
 public class ButtonSmashQTE : MonoBehaviour
 {
+    [Header("UI Elements")]
     public Slider p1Slider;
     public Slider p2Slider;
-    public Text timerText;
+    public TMPro.TextMeshProUGUI timerText;
+    public TMPro.TextMeshProUGUI p1NameText;
+    public TMPro.TextMeshProUGUI p2NameText;
 
-    private int p1Taps = 0;
-    private int p2Taps = 0;
+    private int p1Taps;
+    private int p2Taps;
 
     private float duration = 3f;
     private Action<QTEResult, QTEResult> onFinished;
@@ -23,6 +26,10 @@ public class ButtonSmashQTE : MonoBehaviour
     public void Init(PlayerInput p1, PlayerInput p2, Action<QTEResult, QTEResult> callback)
     {
         onFinished = callback;
+        p1NameText.text = "Player " + p1.playerIndex;
+        p2NameText.text = "Player " + p2.playerIndex;
+        p1Taps = 0;
+        p2Taps = 0;
 
         // Temporarily switch both to QTE map
         p1.SwitchCurrentActionMap("QTE");
