@@ -75,20 +75,26 @@ public class BaseFighter : MonoBehaviour
         }
         else /**/
 
+        if(state.flags_any_set(FighterFlags.UseGravity))
+        {
+            rigidbody.gravityScale = 1.0f;
+        } else
+        {
+            rigidbody.gravityScale = 0.0f;
+            rigidbody.constraints. = 0.0f;
+        }
+
         if (state.remaining_flying_frames > 0)
         {
             state.remaining_flying_frames--;
         }
         else if (state.remaining_dash_frames > 0)
         {
-            rigidbody.gravityScale = 0.0f;
             rigidbody.linearVelocityX = state.dash_speed;
-            rigidbody.linearVelocityY = 0.0f;
             state.remaining_dash_frames--;
         }
         else
         {
-            rigidbody.gravityScale = 1.0f;
             process_movement();
         }
 
@@ -163,6 +169,7 @@ public class BaseFighter : MonoBehaviour
     {
         state.dash_speed = speed;
         state.remaining_dash_frames = 7;
+        state.start_action(FighterAction.Dash);
     }
 
     public void knockback(Vector2 direction)
