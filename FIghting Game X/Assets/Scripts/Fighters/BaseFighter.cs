@@ -78,10 +78,12 @@ public class BaseFighter : MonoBehaviour
         if(state.flags_any_set(FighterFlags.UseGravity))
         {
             rigidbody.gravityScale = 1.0f;
+            rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
         } else
         {
             rigidbody.gravityScale = 0.0f;
-            rigidbody.constraints. = 0.0f;
+            rigidbody.linearVelocityY = 0.0f;
+            rigidbody.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
         }
 
         if (state.remaining_flying_frames > 0)
