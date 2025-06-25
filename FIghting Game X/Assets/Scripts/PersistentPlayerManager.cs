@@ -20,7 +20,7 @@ public class PersistentPlayerManager : MonoBehaviour
 
     [SerializeField] private GameObject spawnPointsObject;
     public GameObject[] characterPrefabs;
-    
+
     // For testing
     private string fightScene = "TestSceneMartin";
 
@@ -35,7 +35,7 @@ public class PersistentPlayerManager : MonoBehaviour
             player.DeactivateInput();
             Destroy(player.gameObject);
         }
-        
+
         DontDestroyOnLoad(gameObject);
         DontDestroyOnLoad(spawnPointsObject);
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -59,7 +59,7 @@ public class PersistentPlayerManager : MonoBehaviour
     private void OnPlayerJoined(PlayerInput player)
     {
         if (SceneManager.GetActiveScene().name != "CharacterSelection") return;
-        
+
         // Keep the player alive across scenes
         DontDestroyOnLoad(player.gameObject);
         players.Add(player);
@@ -83,7 +83,8 @@ public class PersistentPlayerManager : MonoBehaviour
         yield return null;
 
         // Create list of (index, controlScheme, devices) before destroying old inputs
-        var playerData = players.Select(p => new {
+        var playerData = players.Select(p => new
+        {
             Index = p.playerIndex,
             Choice = GameManager.PlayerChoices[p.playerIndex],
             Scheme = p.currentControlScheme,
@@ -121,13 +122,19 @@ public class PersistentPlayerManager : MonoBehaviour
                 controlScheme: data.Scheme,
                 pairWithDevices: data.Devices
             );
-            
+
             players.Add(character);
 
             character.transform.position = spawnPoints[i].position;
         }
+
+
+        IngameUI ui = FindAnyObjectByType<IngameUI>(FindObjectsInactive.Include);
+        while (ui == null)
+            ui = FindAnyObjectByType<IngameUI>(FindObjectsInactive.Include);
+        ui.gameObject.SetActive(true);
     }
-    
+
     public List<PlayerInput> getPlayers()
     {
         return players;
