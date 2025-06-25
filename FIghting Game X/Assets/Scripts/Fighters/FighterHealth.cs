@@ -1,22 +1,30 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class FighterHealth : MonoBehaviour
 {
-    
+
+    [Header("UI Settings")]
+    public Sprite Icon;
+
     [Header("Health Settings")]
     public int maxLives = 3;
     public bool qteUsed = false;
     public int maxHealth = 300;
-    
+
     // Current health and lives
     private int currentLives;
     private int currentHealth;
+    private PlayerInput playerInput;
     private PersistentPlayerManager persistentPlayerManager;
-    
+    private IngameUI ingameUI;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        playerInput = GetComponent<PlayerInput>();
+        ingameUI = FindAnyObjectByType<IngameUI>(FindObjectsInactive.Include);
         currentHealth = maxHealth;
         currentLives = maxLives;
         // persistentPlayerManager = FindFirstObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>();
@@ -29,23 +37,27 @@ public class FighterHealth : MonoBehaviour
             Debug.LogWarning("Fighter is already dead. Cannot take more damage.");
             return;
         }
-        
+
         currentHealth -= dmg;
-        
+        ingameUI.setNewHealth(playerInput.playerIndex, currentHealth * 1.0f / maxHealth);
+
         if (currentHealth <= 0)
         {
             HandleDeath(attacker);
         }
     }
 
-    public void TakeArenaDamage(int damage) {
+    public void TakeArenaDamage(int damage)
+    {
         if (currentHealth <= 0)
         {
             Debug.LogWarning("Fighter is already dead. Cannot take more damage.");
             return;
         }
-        
+
         currentHealth -= damage;
+        ingameUI.setNewHealth(playerInput.playerIndex, currentHealth * 1.0f / maxHealth);
+
 
         if (currentHealth <= 0)
         {
@@ -56,7 +68,7 @@ public class FighterHealth : MonoBehaviour
     private void HandleDeath(GameObject killer)
     {
         currentLives--;
-        
+
         if (currentLives == 0)
         {
             if (!qteUsed)
@@ -77,24 +89,28 @@ public class FighterHealth : MonoBehaviour
         }
     }
 
-    private void HandleArenaDeath() {
+    private void HandleArenaDeath()
+    {
         currentLives--;
 
-        if (currentLives == 0) {
+        if (currentLives == 0)
+        {
             Debug.Log("Fighter died and has no more lives left. Game Over!");
-                Die();
-        } else {
+            Die();
+        }
+        else
+        {
             Debug.Log("Fighter died. Remaining lives: " + currentLives);
             Respawn();
         }
     }
-    
+
     private void Respawn()
     {
         currentHealth = maxHealth;
         Debug.Log("Fighter respawned with full health.");
-        // TODO 
-        
+        ingameUI.setHealth(playerInput.playerIndex, 1);
+
     }
 
     public void GrantExtraLife()
@@ -109,7 +125,7 @@ public class FighterHealth : MonoBehaviour
         // TODO: Handle the death of the fighter, such as disabling controls, playing death animation, etc.
         Debug.Log("Fighter has died. Game Over.");
         this.gameObject.SetActive(false);
-        
+
         //if (persistentPlayerManager.isGameFinished()) 
         //{
         //    Debug.Log("Game is finished, no more fighters left.");
@@ -124,12 +140,12 @@ public class FighterHealth : MonoBehaviour
         // TODO: Play the finishing animation
         Debug.Log($"{killer.name} has finished {this.gameObject.name}!");
     }
-    
+
     public int GetCurrentLives()
     {
         return currentLives;
     }
-    
+
     public int GetCurrentHealth()
     {
         return currentHealth;
