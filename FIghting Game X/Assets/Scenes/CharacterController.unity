@@ -369,7 +369,9 @@ PrefabInstance:
       value: Fighter (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7406385937703573933, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
+    - {fileID: 4073127458830755936, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1304020191355681035, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
@@ -695,7 +697,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7406385937703573933, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
+    - {fileID: 4073127458830755936, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1304020191355681035, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
