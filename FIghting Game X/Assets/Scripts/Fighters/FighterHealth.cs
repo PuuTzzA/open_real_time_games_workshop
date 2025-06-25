@@ -19,7 +19,7 @@ public class FighterHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
         currentLives = maxLives;
-        persistentPlayerManager = FindFirstObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>();
+        // persistentPlayerManager = FindFirstObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>();
     }
 
     public void TakeDamage(int dmg, GameObject attacker)
@@ -83,12 +83,12 @@ public class FighterHealth : MonoBehaviour
         Debug.Log("Fighter has died. Game Over.");
         this.gameObject.SetActive(false);
         
-        if (persistentPlayerManager.isGameFinished()) 
-        {
-            Debug.Log("Game is finished, no more fighters left.");
-            SceneManager.LoadScene("CharacterSelection");
-            return;
-        }
+        //if (persistentPlayerManager.isGameFinished()) 
+        //{
+        //    Debug.Log("Game is finished, no more fighters left.");
+        //    SceneManager.LoadScene("CharacterSelection");
+        //    return;
+        //}
     }
 
     public void GetFinished(GameObject killer)

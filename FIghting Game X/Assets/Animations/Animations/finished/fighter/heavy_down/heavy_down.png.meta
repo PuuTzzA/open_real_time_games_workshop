@@ -1,0 +1,4655 @@
+fileFormatVersion: 2
+guid: d15bdc2828d31264c8c8916ca48c5743
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8441697076566346591
+    second: heavy_down_0
+  - first:
+      213: 2099900487715508620
+    second: heavy_down_1
+  - first:
+      213: 35933225898112289
+    second: heavy_down_2
+  - first:
+      213: 4339998672710841951
+    second: heavy_down_3
+  - first:
+      213: 5060558690251725685
+    second: heavy_down_4
+  - first:
+      213: 190600140577275131
+    second: heavy_down_5
+  - first:
+      213: -8705088089410630784
+    second: heavy_down_6
+  - first:
+      213: -4113326542066373012
+    second: heavy_down_7
+  - first:
+      213: -8273552178063192902
+    second: heavy_down_8
+  - first:
+      213: -5964106089243082304
+    second: heavy_down_9
+  - first:
+      213: 1235015698316002727
+    second: heavy_down_10
+  - first:
+      213: -8456061969468532912
+    second: heavy_down_11
+  - first:
+      213: -6418339952876243255
+    second: heavy_down_12
+  - first:
+      213: -3714451037841856991
+    second: heavy_down_13
+  - first:
+      213: 618202399869594019
+    second: heavy_down_14
+  - first:
+      213: -3968410040543656936
+    second: heavy_down_15
+  - first:
+      213: 3505566955400673430
+    second: heavy_down_16
+  - first:
+      213: 1922098106162565629
+    second: heavy_down_17
+  - first:
+      213: 5726177016633992458
+    second: heavy_down_18
+  - first:
+      213: 8273636970067631739
+    second: heavy_down_19
+  - first:
+      213: 6600694200031118871
+    second: heavy_down_20
+  - first:
+      213: 7434106664495595406
+    second: heavy_down_21
+  - first:
+      213: 3358549340804133367
+    second: heavy_down_22
+  - first:
+      213: 8928997313395491756
+    second: heavy_down_23
+  - first:
+      213: -8100888799712530662
+    second: heavy_down_24
+  - first:
+      213: 1020961566557705294
+    second: heavy_down_25
+  - first:
+      213: -6808717969049523318
+    second: heavy_down_26
+  - first:
+      213: -3638628622859479414
+    second: heavy_down_27
+  - first:
+      213: 1144705981044731968
+    second: heavy_down_28
+  - first:
+      213: 6388407253555902016
+    second: heavy_down_29
+  - first:
+      213: 5495208096761198071
+    second: heavy_down_30
+  - first:
+      213: 3861793978135613507
+    second: heavy_down_31
+  - first:
+      213: 6217128913338564191
+    second: heavy_down_32
+  - first:
+      213: 5104757258224241474
+    second: heavy_down_33
+  - first:
+      213: -5227863155720053923
+    second: heavy_down_34
+  - first:
+      213: -3276785209651601280
+    second: heavy_down_35
+  - first:
+      213: 6361999392483832001
+    second: heavy_down_36
+  - first:
+      213: 5991704411718082563
+    second: heavy_down_37
+  - first:
+      213: 7521356610368815082
+    second: heavy_down_38
+  - first:
+      213: 531446942080923782
+    second: heavy_down_39
+  - first:
+      213: -7888531133468163938
+    second: heavy_down_40
+  - first:
+      213: -6987549493186896404
+    second: heavy_down_41
+  - first:
+      213: -9210270645990476464
+    second: heavy_down_42
+  - first:
+      213: 5319130086736835861
+    second: heavy_down_43
+  - first:
+      213: 9083823621993159572
+    second: heavy_down_44
+  - first:
+      213: 7348981797639846625
+    second: heavy_down_45
+  - first:
+      213: -3821128990034373372
+    second: heavy_down_46
+  - first:
+      213: -4387399878798551161
+    second: heavy_down_47
+  - first:
+      213: 347467925820523750
+    second: heavy_down_48
+  - first:
+      213: 292271617515977811
+    second: heavy_down_49
+  - first:
+      213: 8700075455258541185
+    second: heavy_down_50
+  - first:
+      213: 4750814681888565089
+    second: heavy_down_51
+  - first:
+      213: -6090285495502805792
+    second: heavy_down_52
+  - first:
+      213: 1911013543490357242
+    second: heavy_down_53
+  - first:
+      213: -4442162752710806943
+    second: heavy_down_54
+  - first:
+      213: -1956804401744529314
+    second: heavy_down_55
+  - first:
+      213: -6039165387697497971
+    second: heavy_down_56
+  - first:
+      213: -4590891062087246181
+    second: heavy_down_57
+  - first:
+      213: -2425846576341574707
+    second: heavy_down_58
+  - first:
+      213: 662425073457766419
+    second: heavy_down_59
+  - first:
+      213: -6028669636974752399
+    second: heavy_down_60
+  - first:
+      213: -4314467514627903217
+    second: heavy_down_61
+  - first:
+      213: 6299937054319027803
+    second: heavy_down_62
+  - first:
+      213: 5345965665276771740
+    second: heavy_down_63
+  - first:
+      213: 8980374319616806337
+    second: heavy_down_64
+  - first:
+      213: 8080704579564479715
+    second: heavy_down_65
+  - first:
+      213: -5883373947622882916
+    second: heavy_down_66
+  - first:
+      213: -5941032302895083433
+    second: heavy_down_67
+  - first:
+      213: 7783251663760537301
+    second: heavy_down_68
+  - first:
+      213: -4337745271201047578
+    second: heavy_down_69
+  - first:
+      213: 5169004535606776494
+    second: heavy_down_70
+  - first:
+      213: 8203034715033348635
+    second: heavy_down_71
+  - first:
+      213: -4971327494796360927
+    second: heavy_down_72
+  - first:
+      213: 5644265888569576343
+    second: heavy_down_73
+  - first:
+      213: -4569176223592787425
+    second: heavy_down_74
+  - first:
+      213: -7656800085715333635
+    second: heavy_down_75
+  - first:
+      213: 3772565632786607010
+    second: heavy_down_76
+  - first:
+      213: 144972040361896325
+    second: heavy_down_77
+  - first:
+      213: 1743572644671068621
+    second: heavy_down_78
+  - first:
+      213: 6309162322992092240
+    second: heavy_down_79
+  - first:
+      213: 4552632544504562283
+    second: heavy_down_80
+  - first:
+      213: 2609551358520873053
+    second: heavy_down_81
+  - first:
+      213: 775035430542358320
+    second: heavy_down_82
+  - first:
+      213: 1960101432110872679
+    second: heavy_down_83
+  - first:
+      213: 780912089046342418
+    second: heavy_down_84
+  - first:
+      213: -8220535599667990758
+    second: heavy_down_85
+  - first:
+      213: -6972094751913535089
+    second: heavy_down_86
+  - first:
+      213: -8853860343715373499
+    second: heavy_down_87
+  - first:
+      213: -4172223530430448270
+    second: heavy_down_88
+  - first:
+      213: -5323670263092988241
+    second: heavy_down_89
+  - first:
+      213: 3845080626598678839
+    second: heavy_down_90
+  - first:
+      213: -896366519000783530
+    second: heavy_down_91
+  - first:
+      213: 3854740734692958370
+    second: heavy_down_92
+  - first:
+      213: 4770386206835891792
+    second: heavy_down_93
+  - first:
+      213: 7285264133005891507
+    second: heavy_down_94
+  - first:
+      213: -823440750041517569
+    second: heavy_down_95
+  - first:
+      213: 4581770450719399868
+    second: heavy_down_96
+  - first:
+      213: -8122372135797155526
+    second: heavy_down_97
+  - first:
+      213: 4029636820376211942
+    second: heavy_down_98
+  - first:
+      213: 1864208615696339011
+    second: heavy_down_99
+  - first:
+      213: 655194423906031908
+    second: heavy_down_100
+  - first:
+      213: -6192487423557610973
+    second: heavy_down_101
+  - first:
+      213: -8908261629366129032
+    second: heavy_down_102
+  - first:
+      213: -8624014042015181915
+    second: heavy_down_103
+  - first:
+      213: -3492837632884329769
+    second: heavy_down_104
+  - first:
+      213: -7399339598437679355
+    second: heavy_down_105
+  - first:
+      213: 8593873313321699434
+    second: heavy_down_106
+  - first:
+      213: 3413716372541617343
+    second: heavy_down_107
+  - first:
+      213: 3728303726160835950
+    second: heavy_down_108
+  - first:
+      213: 2285992621824970908
+    second: heavy_down_109
+  - first:
+      213: 1080412051050065276
+    second: heavy_down_110
+  - first:
+      213: 4166142370069789707
+    second: heavy_down_111
+  - first:
+      213: -4812280306520321510
+    second: heavy_down_112
+  - first:
+      213: -8141455973153824099
+    second: heavy_down_113
+  - first:
+      213: 3962350937389585432
+    second: heavy_down_114
+  - first:
+      213: -1099046211083302400
+    second: heavy_down_115
+  - first:
+      213: 627299925652733337
+    second: heavy_down_116
+  - first:
+      213: 6511439337620644960
+    second: heavy_down_117
+  - first:
+      213: -4864661158205131287
+    second: heavy_down_118
+  - first:
+      213: -7370139931472219360
+    second: heavy_down_119
+  - first:
+      213: -2232550073778362546
+    second: heavy_down_120
+  - first:
+      213: -2839597777523897552
+    second: heavy_down_121
+  - first:
+      213: -5884327592824948160
+    second: heavy_down_122
+  - first:
+      213: -7945371840566540124
+    second: heavy_down_123
+  - first:
+      213: -4576777765720465909
+    second: heavy_down_124
+  - first:
+      213: 6079229016278257791
+    second: heavy_down_125
+  - first:
+      213: 5425159516560139166
+    second: heavy_down_126
+  - first:
+      213: -8139711244309794165
+    second: heavy_down_127
+  - first:
+      213: 3382977387932397372
+    second: heavy_down_128
+  - first:
+      213: 7628758504405230900
+    second: heavy_down_129
+  - first:
+      213: -7340063800513332055
+    second: heavy_down_130
+  - first:
+      213: -2418214238531531055
+    second: heavy_down_131
+  - first:
+      213: -3038752428694737906
+    second: heavy_down_132
+  - first:
+      213: -4765558059673261424
+    second: heavy_down_133
+  - first:
+      213: -8117624144739546610
+    second: heavy_down_134
+  - first:
+      213: -4886207970245777114
+    second: heavy_down_135
+  - first:
+      213: 1713849699435094029
+    second: heavy_down_136
+  - first:
+      213: -2432706885526955195
+    second: heavy_down_137
+  - first:
+      213: -2493832193624431116
+    second: heavy_down_138
+  - first:
+      213: 3089731834059548163
+    second: heavy_down_139
+  - first:
+      213: 6042154674842150352
+    second: heavy_down_140
+  - first:
+      213: -6059168868045209185
+    second: heavy_down_141
+  - first:
+      213: -3436138676281605968
+    second: heavy_down_142
+  - first:
+      213: 9014633512773882
+    second: heavy_down_143
+  - first:
+      213: 7099661088629456072
+    second: heavy_down_144
+  - first:
+      213: -3168551398886288965
+    second: heavy_down_145
+  - first:
+      213: -4789539927825946276
+    second: heavy_down_146
+  - first:
+      213: -1000236949402719101
+    second: heavy_down_147
+  - first:
+      213: -6817249782724435913
+    second: heavy_down_148
+  - first:
+      213: -8055908976513593222
+    second: heavy_down_149
+  - first:
+      213: -7089469537855449704
+    second: heavy_down_150
+  - first:
+      213: 3112821394762703332
+    second: heavy_down_151
+  - first:
+      213: 7550259508898807100
+    second: heavy_down_152
+  - first:
+      213: 5016522328549307590
+    second: heavy_down_153
+  - first:
+      213: -7580552007280740952
+    second: heavy_down_154
+  - first:
+      213: -2491316116188374074
+    second: heavy_down_155
+  - first:
+      213: -7545568551763724002
+    second: heavy_down_156
+  - first:
+      213: 5226821921389700627
+    second: heavy_down_157
+  - first:
+      213: -6404693805917250655
+    second: heavy_down_158
+  - first:
+      213: -8218129102293766938
+    second: heavy_down_159
+  - first:
+      213: -9090588734357313446
+    second: heavy_down_160
+  - first:
+      213: 3521938401715181910
+    second: heavy_down_161
+  - first:
+      213: -2479550574236195197
+    second: heavy_down_162
+  - first:
+      213: 9049007724833421447
+    second: heavy_down_163
+  - first:
+      213: -4435214943693826146
+    second: heavy_down_164
+  - first:
+      213: 822756533981067398
+    second: heavy_down_165
+  - first:
+      213: 5680563691359208214
+    second: heavy_down_166
+  - first:
+      213: -449243603590397478
+    second: heavy_down_167
+  - first:
+      213: 8764742731411906440
+    second: heavy_down_168
+  - first:
+      213: 7074096451796090232
+    second: heavy_down_169
+  - first:
+      213: -1994948371103127643
+    second: heavy_down_170
+  - first:
+      213: 5853161376439625473
+    second: heavy_down_171
+  - first:
+      213: 5620501109064692476
+    second: heavy_down_172
+  - first:
+      213: -4700721063394772873
+    second: heavy_down_173
+  - first:
+      213: 3567623855044527440
+    second: heavy_down_174
+  - first:
+      213: 4595377591419680107
+    second: heavy_down_175
+  - first:
+      213: 723893202870057196
+    second: heavy_down_176
+  - first:
+      213: -6610822022166357189
+    second: heavy_down_177
+  - first:
+      213: 2709933380729586823
+    second: heavy_down_178
+  - first:
+      213: -3734678930942630762
+    second: heavy_down_179
+  - first:
+      213: 383589839410574808
+    second: heavy_down_180
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: heavy_down_0
+      rect:
+        serializedVersion: 2
+        x: 3289
+        y: 3380
+        width: 61
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5bc03ed3cee62570800000000000000
+      internalID: 8441697076566346591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 3338
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c81d3f92e58542d10800000000000000
+      internalID: 2099900487715508620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_2
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 3306
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1257a4d1419af7000800000000000000
+      internalID: 35933225898112289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_3
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 3306
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56b89c6cc5ca3c30800000000000000
+      internalID: 4339998672710841951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_4
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 3313
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b58791157ba3640800000000000000
+      internalID: 5060558690251725685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_5
+      rect:
+        serializedVersion: 2
+        x: 2791
+        y: 3313
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc7f3961d525a200800000000000000
+      internalID: 190600140577275131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_6
+      rect:
+        serializedVersion: 2
+        x: 3796
+        y: 3328
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08b02341180513780800000000000000
+      internalID: -8705088089410630784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_7
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 3275
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ea2f6ad478ae6c0800000000000000
+      internalID: -4113326542066373012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_8
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 3275
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc42e311207e2d80800000000000000
+      internalID: -8273552178063192902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_9
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 3276
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c10ceb6c1d3b3da0800000000000000
+      internalID: -5964106089243082304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_10
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 3276
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a50826fb38a32110800000000000000
+      internalID: 1235015698316002727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_11
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 3263
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 057532fd07806aa80800000000000000
+      internalID: -8456061969468532912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_12
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 3305
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c63d1591d97de6a0800000000000000
+      internalID: -6418339952876243255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_13
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 3275
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126ead9067e937cc0800000000000000
+      internalID: -3714451037841856991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_14
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 3276
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9658baecb449800800000000000000
+      internalID: 618202399869594019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_15
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 3261
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8144d4af7106de8c0800000000000000
+      internalID: -3968410040543656936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_16
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 3302
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6983109929646a030800000000000000
+      internalID: 3505566955400673430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_17
+      rect:
+        serializedVersion: 2
+        x: 1773
+        y: 3275
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df155493b0aacaa10800000000000000
+      internalID: 1922098106162565629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_18
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 3276
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05a97578a7777f40800000000000000
+      internalID: 5726177016633992458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_19
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 3260
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e9b691dfcd1d270800000000000000
+      internalID: 8273636970067631739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_20
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 3301
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71606d727606a9b50800000000000000
+      internalID: 6600694200031118871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_21
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 3275
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8fbf9faf904b2760800000000000000
+      internalID: 7434106664495595406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_22
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 3276
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1b043c4d6fb9e20800000000000000
+      internalID: 3358549340804133367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_23
+      rect:
+        serializedVersion: 2
+        x: 3806
+        y: 3302
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca30b59afbb2aeb70800000000000000
+      internalID: 8928997313395491756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_24
+      rect:
+        serializedVersion: 2
+        x: 3826
+        y: 3280
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1fa1389e8cd39f80800000000000000
+      internalID: -8100888799712530662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_25
+      rect:
+        serializedVersion: 2
+        x: 3811
+        y: 3282
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e449fffa22f2b2e00800000000000000
+      internalID: 1020961566557705294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_26
+      rect:
+        serializedVersion: 2
+        x: 3853
+        y: 3270
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8bebfec4139281a0800000000000000
+      internalID: -6808717969049523318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_27
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 2887
+        width: 79
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8654e8bb8ef08dc0800000000000000
+      internalID: -3638628622859479414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_28
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 2921
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 040bf6c5600d2ef00800000000000000
+      internalID: 1144705981044731968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_29
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 2896
+        width: 87
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0467ab4cc8e28a850800000000000000
+      internalID: 6388407253555902016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_30
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 2902
+        width: 91
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f53d4e26a6e24c40800000000000000
+      internalID: 5495208096761198071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_31
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 2900
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34014869929d79530800000000000000
+      internalID: 3861793978135613507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_32
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 2905
+        width: 92
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5efa529ecda74650800000000000000
+      internalID: 6217128913338564191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_33
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 2904
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b8d012eadb7d640800000000000000
+      internalID: 5104757258224241474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_34
+      rect:
+        serializedVersion: 2
+        x: 2252
+        y: 2907
+        width: 91
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b14f48826e277b0800000000000000
+      internalID: -5227863155720053923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_35
+      rect:
+        serializedVersion: 2
+        x: 2765
+        y: 2907
+        width: 91
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080667586358682d0800000000000000
+      internalID: -3276785209651601280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_36
+      rect:
+        serializedVersion: 2
+        x: 3277
+        y: 2916
+        width: 92
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0ff3a7dbc5a4850800000000000000
+      internalID: 6361999392483832001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_37
+      rect:
+        serializedVersion: 2
+        x: 3304
+        y: 2911
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 300e893ca6fc62350800000000000000
+      internalID: 5991704411718082563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_38
+      rect:
+        serializedVersion: 2
+        x: 3326
+        y: 2907
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aefb11ebcf9316860800000000000000
+      internalID: 7521356610368815082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_39
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 2883
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68873b79d24106700800000000000000
+      internalID: 531446942080923782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_40
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 2893
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e904506babe468290800000000000000
+      internalID: -7888531133468163938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_41
+      rect:
+        serializedVersion: 2
+        x: 3795
+        y: 2816
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced5220f1cc370f90800000000000000
+      internalID: -6987549493186896404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_42
+      rect:
+        serializedVersion: 2
+        x: 3806
+        y: 2790
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055b78445ab8e2080800000000000000
+      internalID: -9210270645990476464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_43
+      rect:
+        serializedVersion: 2
+        x: 3817
+        y: 2772
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515ba06c1a851d940800000000000000
+      internalID: 5319130086736835861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_44
+      rect:
+        serializedVersion: 2
+        x: 3828
+        y: 2758
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b543fb479301e70800000000000000
+      internalID: 9083823621993159572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_45
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 2404
+        width: 92
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea72252204dcf560800000000000000
+      internalID: 7348981797639846625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_46
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 2399
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405dd04cd6f98fac0800000000000000
+      internalID: -3821128990034373372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_47
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 2395
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787de904e03dc13c0800000000000000
+      internalID: -4387399878798551161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_48
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 2397
+        width: 92
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4cf51dc3472d400800000000000000
+      internalID: 347467925820523750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_49
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 2394
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35cf7f3dc7b5e0400800000000000000
+      internalID: 292271617515977811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_50
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 2396
+        width: 91
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18cb7c51880ecb870800000000000000
+      internalID: 8700075455258541185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_51
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 2392
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 167ada348c84ee140800000000000000
+      internalID: 4750814681888565089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_52
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 2393
+        width: 91
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e467db0c95fa7ba0800000000000000
+      internalID: -6090285495502805792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_53
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 2389
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af704bc51b8458a10800000000000000
+      internalID: 1911013543490357242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_54
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 2390
+        width: 89
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 162733213844a52c0800000000000000
+      internalID: -4442162752710806943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_55
+      rect:
+        serializedVersion: 2
+        x: 2772
+        y: 2387
+        width: 87
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e58b813a3c808d4e0800000000000000
+      internalID: -1956804401744529314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_56
+      rect:
+        serializedVersion: 2
+        x: 3287
+        y: 2385
+        width: 86
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88d476a313903ca0800000000000000
+      internalID: -6039165387697497971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_57
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 2386
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e16c117e0e940c0800000000000000
+      internalID: -4590891062087246181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_58
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 2382
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcb10993469a55ed0800000000000000
+      internalID: -2425846576341574707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_59
+      rect:
+        serializedVersion: 2
+        x: 3322
+        y: 2379
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31023c93818613900800000000000000
+      internalID: 662425073457766419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_60
+      rect:
+        serializedVersion: 2
+        x: 3798
+        y: 2305
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17dcfeb08ecd55ca0800000000000000
+      internalID: -6028669636974752399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_61
+      rect:
+        serializedVersion: 2
+        x: 3809
+        y: 2278
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0134ab87aeef14c0800000000000000
+      internalID: -4314467514627903217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_62
+      rect:
+        serializedVersion: 2
+        x: 3819
+        y: 2257
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b56a1065f5fdd6750800000000000000
+      internalID: 6299937054319027803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_63
+      rect:
+        serializedVersion: 2
+        x: 3830
+        y: 2255
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9db14cc27fa03a40800000000000000
+      internalID: 5345965665276771740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_64
+      rect:
+        serializedVersion: 2
+        x: 3858
+        y: 2251
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cdccc61dd2b0ac70800000000000000
+      internalID: 8980374319616806337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_65
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1871
+        width: 85
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e420df600e642070800000000000000
+      internalID: 8080704579564479715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_66
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1865
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c91862be09e0a5ea0800000000000000
+      internalID: -5883373947622882916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_67
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 1858
+        width: 68
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75051d2f8963d8da0800000000000000
+      internalID: -5941032302895083433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_68
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1837
+        width: 74
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d63ae7962aa30c60800000000000000
+      internalID: 7783251663760537301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_69
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 1805
+        width: 83
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb5eef78ab3dc3c0800000000000000
+      internalID: -4337745271201047578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_70
+      rect:
+        serializedVersion: 2
+        x: 2286
+        y: 1779
+        width: 90
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea299331d3efbb740800000000000000
+      internalID: 5169004535606776494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_71
+      rect:
+        serializedVersion: 2
+        x: 2791
+        y: 1741
+        width: 100
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1aa2cd9c9807d170800000000000000
+      internalID: 8203034715033348635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_72
+      rect:
+        serializedVersion: 2
+        x: 3302
+        y: 1735
+        width: 99
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 123c7829bfb420bb0800000000000000
+      internalID: -4971327494796360927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_73
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 1821
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b4b0acbe5745e40800000000000000
+      internalID: 5644265888569576343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_74
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 1830
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f125794ee660790c0800000000000000
+      internalID: -4569176223592787425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_75
+      rect:
+        serializedVersion: 2
+        x: 2270
+        y: 1814
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfdc1c6b3e49db590800000000000000
+      internalID: -7656800085715333635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_76
+      rect:
+        serializedVersion: 2
+        x: 2776
+        y: 1822
+        width: 33
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aba7128478da5430800000000000000
+      internalID: 3772565632786607010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_77
+      rect:
+        serializedVersion: 2
+        x: 3290
+        y: 1824
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58962287d4b030200800000000000000
+      internalID: 144972040361896325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_78
+      rect:
+        serializedVersion: 2
+        x: 2260
+        y: 1801
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc915bd151a623810800000000000000
+      internalID: 1743572644671068621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_79
+      rect:
+        serializedVersion: 2
+        x: 3806
+        y: 1795
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 054d83494b5ae8750800000000000000
+      internalID: 6309162322992092240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_80
+      rect:
+        serializedVersion: 2
+        x: 3816
+        y: 1767
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b62c318ad233e2f30800000000000000
+      internalID: 4552632544504562283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_81
+      rect:
+        serializedVersion: 2
+        x: 3821
+        y: 1739
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5056c3722df63420800000000000000
+      internalID: 2609551358520873053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_82
+      rect:
+        serializedVersion: 2
+        x: 3833
+        y: 1739
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 037b1d52e9a71ca00800000000000000
+      internalID: 775035430542358320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_83
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1313
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768f3b01edda33b10800000000000000
+      internalID: 1960101432110872679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_84
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1219
+        width: 94
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b5a64586b56da00800000000000000
+      internalID: 780912089046342418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_85
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1320
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f26562d6acaed80800000000000000
+      internalID: -8220535599667990758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_86
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1314
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8914db43c42e3f90800000000000000
+      internalID: -6972094751913535089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_87
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 1217
+        width: 90
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e5de95de4c02580800000000000000
+      internalID: -8853860343715373499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_88
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1320
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27dba21fdc84916c0800000000000000
+      internalID: -4172223530430448270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_89
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 1314
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa6380b0a168e16b0800000000000000
+      internalID: -5323670263092988241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_90
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 1320
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 731962135787c5530800000000000000
+      internalID: 3845080626598678839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_91
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 1314
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 655a76e66677f83f0800000000000000
+      internalID: -896366519000783530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_92
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 1320
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a02a90664ace7530800000000000000
+      internalID: 3854740734692958370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_93
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 1314
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e50e30bf0d33240800000000000000
+      internalID: 4770386206835891792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_94
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 1320
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7d5b641257a1560800000000000000
+      internalID: 7285264133005891507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_95
+      rect:
+        serializedVersion: 2
+        x: 2306
+        y: 1291
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff1b138200d8294f0800000000000000
+      internalID: -823440750041517569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_96
+      rect:
+        serializedVersion: 2
+        x: 2786
+        y: 1314
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbfd28d13f7b59f30800000000000000
+      internalID: 4581770450719399868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_97
+      rect:
+        serializedVersion: 2
+        x: 2811
+        y: 1319
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a399740a399874f80800000000000000
+      internalID: -8122372135797155526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_98
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 1315
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e1db5496552ce730800000000000000
+      internalID: 4029636820376211942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_99
+      rect:
+        serializedVersion: 2
+        x: 3323
+        y: 1319
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3409dc5ebdffed910800000000000000
+      internalID: 1864208615696339011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_100
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 1214
+        width: 169
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4295cbf6bd7b71900800000000000000
+      internalID: 655194423906031908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_101
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 1291
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32256ca5f7ddf0aa0800000000000000
+      internalID: -6192487423557610973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_102
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 1215
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ea36ffe3f7f5480800000000000000
+      internalID: -8908261629366129032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_103
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 1291
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a354b7bbe8515880800000000000000
+      internalID: -8624014042015181915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_104
+      rect:
+        serializedVersion: 2
+        x: 2277
+        y: 1214
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d230d1cda2f68fc0800000000000000
+      internalID: -3492837632884329769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_105
+      rect:
+        serializedVersion: 2
+        x: 2789
+        y: 1215
+        width: 72
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ff3aea6d3405990800000000000000
+      internalID: -7399339598437679355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_106
+      rect:
+        serializedVersion: 2
+        x: 2818
+        y: 1291
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a68cf350f32934770800000000000000
+      internalID: 8593873313321699434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_107
+      rect:
+        serializedVersion: 2
+        x: 3301
+        y: 1215
+        width: 72
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb4374544f4ff5f20800000000000000
+      internalID: 3413716372541617343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_108
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 1291
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e65f49c4c789db330800000000000000
+      internalID: 3728303726160835950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_109
+      rect:
+        serializedVersion: 2
+        x: 3816
+        y: 1256
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c909a078d2a79bf10800000000000000
+      internalID: 2285992621824970908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_110
+      rect:
+        serializedVersion: 2
+        x: 3823
+        y: 1224
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7de3e149056efe00800000000000000
+      internalID: 1080412051050065276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_111
+      rect:
+        serializedVersion: 2
+        x: 3836
+        y: 1227
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0cb6b3996c11d930800000000000000
+      internalID: 4166142370069789707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_112
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 803
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a129f3ace88573db0800000000000000
+      internalID: -4812280306520321510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_113
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 807
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d922fad7decb30f80800000000000000
+      internalID: -8141455973153824099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_114
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 779
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814da822f291df630800000000000000
+      internalID: 3962350937389585432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_115
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 803
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a04a44b476fb0f0800000000000000
+      internalID: -1099046211083302400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_116
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 807
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99df82475fd94b800800000000000000
+      internalID: 627299925652733337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_117
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 779
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 064226714974d5a50800000000000000
+      internalID: 6511439337620644960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_118
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 803
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5fa8063704d7cb0800000000000000
+      internalID: -4864661158205131287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_119
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 807
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0233dafe7c008b990800000000000000
+      internalID: -7370139931472219360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_120
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 779
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e472b2559836401e0800000000000000
+      internalID: -2232550073778362546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_121
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 803
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03b03bdbdd8b798d0800000000000000
+      internalID: -2839597777523897552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_122
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 806
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04ab3a71b3ba65ea0800000000000000
+      internalID: -5884327592824948160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_123
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 779
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a8c3aa486e5cb190800000000000000
+      internalID: -7945371840566540124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_124
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 803
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e5352fed40c70c0800000000000000
+      internalID: -4576777765720465909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_125
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 806
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f705387c492cd5450800000000000000
+      internalID: 6079229016278257791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_126
+      rect:
+        serializedVersion: 2
+        x: 2307
+        y: 779
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e93a56a26d90a4b40800000000000000
+      internalID: 5425159516560139166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_127
+      rect:
+        serializedVersion: 2
+        x: 2798
+        y: 803
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8279a4dfbfe90f80800000000000000
+      internalID: -8139711244309794165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_128
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 806
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3fa3e2b200c2fe20800000000000000
+      internalID: 3382977387932397372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_129
+      rect:
+        serializedVersion: 2
+        x: 2819
+        y: 779
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435605cd07bced960800000000000000
+      internalID: 7628758504405230900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_130
+      rect:
+        serializedVersion: 2
+        x: 3310
+        y: 803
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9acf2bddcdad22a90800000000000000
+      internalID: -7340063800513332055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_131
+      rect:
+        serializedVersion: 2
+        x: 3329
+        y: 806
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de498956f6c07ed0800000000000000
+      internalID: -2418214238531531055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_132
+      rect:
+        serializedVersion: 2
+        x: 3331
+        y: 778
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c6b4f14ce24d5d0800000000000000
+      internalID: -3038752428694737906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_133
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 703
+        width: 72
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09aeca891365dddb0800000000000000
+      internalID: -4765558059673261424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_134
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 703
+        width: 64
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a4aa079d7685f80800000000000000
+      internalID: -8117624144739546610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_135
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 703
+        width: 65
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62961d24db3b03cb0800000000000000
+      internalID: -4886207970245777114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_136
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 703
+        width: 62
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d002d35a831d8c710800000000000000
+      internalID: 1713849699435094029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_137
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 703
+        width: 62
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54bd4850af94d3ed0800000000000000
+      internalID: -2432706885526955195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_138
+      rect:
+        serializedVersion: 2
+        x: 2799
+        y: 758
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5259135d0246dd0800000000000000
+      internalID: -2493832193624431116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_139
+      rect:
+        serializedVersion: 2
+        x: 2804
+        y: 703
+        width: 58
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 306e554abbee0ea20800000000000000
+      internalID: 3089731834059548163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_140
+      rect:
+        serializedVersion: 2
+        x: 3311
+        y: 758
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5aeeff9ab0ad350800000000000000
+      internalID: 6042154674842150352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_141
+      rect:
+        serializedVersion: 2
+        x: 3316
+        y: 703
+        width: 49
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f914f02740289eba0800000000000000
+      internalID: -6059168868045209185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_142
+      rect:
+        serializedVersion: 2
+        x: 3345
+        y: 755
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b0014154126050d0800000000000000
+      internalID: -3436138676281605968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_143
+      rect:
+        serializedVersion: 2
+        x: 3823
+        y: 713
+        width: 35
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af82f4ce2c6002000800000000000000
+      internalID: 9014633512773882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_144
+      rect:
+        serializedVersion: 2
+        x: 3825
+        y: 776
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ccfb6df420178260800000000000000
+      internalID: 7099661088629456072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_145
+      rect:
+        serializedVersion: 2
+        x: 3839
+        y: 715
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb1d0d85a4b0704d0800000000000000
+      internalID: -3168551398886288965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_146
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 291
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c59626ccfc2288db0800000000000000
+      internalID: -4789539927825946276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_147
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 294
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c61a34bc17e12f0800000000000000
+      internalID: -1000236949402719101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_148
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 266
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 730e99321734461a0800000000000000
+      internalID: -6817249782724435913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_149
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 291
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70d608c779a33090800000000000000
+      internalID: -8055908976513593222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_150
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 294
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8955c2654052d9d90800000000000000
+      internalID: -7089469537855449704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_151
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 266
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e1211ce096f23b20800000000000000
+      internalID: 3112821394762703332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_152
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 233
+        width: 48
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3dbde53509e7c860800000000000000
+      internalID: 7550259508898807100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_153
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 246
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c43ff8aa744e9540800000000000000
+      internalID: 5016522328549307590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_154
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 243
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a538a4ec187cc690800000000000000
+      internalID: -7580552007280740952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_155
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 246
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cbd26f11311d6dd0800000000000000
+      internalID: -2491316116188374074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_156
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 243
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e19b3cb5161c84790800000000000000
+      internalID: -7545568551763724002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_157
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 250
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31668a838d6698840800000000000000
+      internalID: 5226821921389700627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_158
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 271
+        width: 37
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab5823cae4fd17a0800000000000000
+      internalID: -6404693805917250655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_159
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 235
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ecea7b7f1753fd80800000000000000
+      internalID: -8218129102293766938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_160
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 259
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a58e679c5bdb7d180800000000000000
+      internalID: -9090588734357313446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_161
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 216
+        width: 69
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6595a0bf05070e030800000000000000
+      internalID: 3521938401715181910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_162
+      rect:
+        serializedVersion: 2
+        x: 2284
+        y: 263
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3862904d3edd69dd0800000000000000
+      internalID: -2479550574236195197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_163
+      rect:
+        serializedVersion: 2
+        x: 2782
+        y: 262
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78836700598849d70800000000000000
+      internalID: 9049007724833421447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_164
+      rect:
+        serializedVersion: 2
+        x: 3287
+        y: 259
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9710aae183f272c0800000000000000
+      internalID: -4435214943693826146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_165
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 191
+        width: 42
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 688b29065b40b6b00800000000000000
+      internalID: 822756533981067398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_166
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 233
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6138273949a65de40800000000000000
+      internalID: 5680563691359208214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_167
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 256
+        width: 37
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1c06e9257f3c9f0800000000000000
+      internalID: -449243603590397478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_168
+      rect:
+        serializedVersion: 2
+        x: 2779
+        y: 232
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f5e7d931f92a970800000000000000
+      internalID: 8764742731411906440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_169
+      rect:
+        serializedVersion: 2
+        x: 3294
+        y: 209
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d38242e3d3c2260800000000000000
+      internalID: 7074096451796090232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_170
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 194
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a76723b6058054e0800000000000000
+      internalID: -1994948371103127643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_171
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 194
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10768bfa24b9a3150800000000000000
+      internalID: 5853161376439625473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_172
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 193
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf27d71eaf7000e40800000000000000
+      internalID: 5620501109064692476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_173
+      rect:
+        serializedVersion: 2
+        x: 2309
+        y: 193
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778782c291fa3ceb0800000000000000
+      internalID: -4700721063394772873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_174
+      rect:
+        serializedVersion: 2
+        x: 2765
+        y: 211
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055832c7efeb28130800000000000000
+      internalID: 3567623855044527440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_175
+      rect:
+        serializedVersion: 2
+        x: 2794
+        y: 213
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b653c51729f06cf30800000000000000
+      internalID: 4595377591419680107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_176
+      rect:
+        serializedVersion: 2
+        x: 2824
+        y: 210
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8b36c5809cb0a00800000000000000
+      internalID: 723893202870057196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_177
+      rect:
+        serializedVersion: 2
+        x: 3289
+        y: 208
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3bd17f7564a144a0800000000000000
+      internalID: -6610822022166357189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_178
+      rect:
+        serializedVersion: 2
+        x: 3336
+        y: 210
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7844c5b4d0e9b9520800000000000000
+      internalID: 2709933380729586823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_179
+      rect:
+        serializedVersion: 2
+        x: 2827
+        y: 194
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694670bac41cb2cc0800000000000000
+      internalID: -3734678930942630762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_down_180
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 194
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d534853de8c25500800000000000000
+      internalID: 383589839410574808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

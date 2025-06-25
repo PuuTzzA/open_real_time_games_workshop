@@ -21,6 +21,8 @@ public class BaseFighter : MonoBehaviour
     public FighterState state;
     public FighterHealth health;
 
+    private DelayedActions delayed_actions;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,6 +36,8 @@ public class BaseFighter : MonoBehaviour
         event_buffer.register(EventType.Dash, dash_action);
         event_buffer.register(EventType.Block, block_action);
         event_buffer.register(EventType.Ult, ult_action);
+
+        delayed_actions = new DelayedActions();
     }
 
     public void FixedUpdate()
@@ -48,6 +52,8 @@ public class BaseFighter : MonoBehaviour
         }
 
         check_signals();
+
+        delayed_actions.tick();
 
         fighter_input.dispatch_events();
 
@@ -128,7 +134,7 @@ public class BaseFighter : MonoBehaviour
 
         if (signals.HasFlag(FighterSignals.ShouldJump))
         {
-            jump();
+            //jump();
         }
     }
 
@@ -193,6 +199,7 @@ public class BaseFighter : MonoBehaviour
         if (state.can_jump())
         {
             state.start_action(FighterAction.Jump);
+            delayed_actions.push(new DelayedAction(jump, 8));
             return true;
         }
         return false;

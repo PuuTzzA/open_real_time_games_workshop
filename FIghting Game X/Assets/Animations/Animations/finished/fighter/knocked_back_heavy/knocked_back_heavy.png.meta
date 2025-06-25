@@ -1,0 +1,2955 @@
+fileFormatVersion: 2
+guid: 572db13f8711039468f467990bceb07d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7367391774724157430
+    second: knocked_back_heavy_0
+  - first:
+      213: -7628260379167742009
+    second: knocked_back_heavy_1
+  - first:
+      213: 5548624053314614245
+    second: knocked_back_heavy_2
+  - first:
+      213: 8719924277211500328
+    second: knocked_back_heavy_3
+  - first:
+      213: -859988454692773944
+    second: knocked_back_heavy_4
+  - first:
+      213: -6314378045994415524
+    second: knocked_back_heavy_5
+  - first:
+      213: -4820813397001828940
+    second: knocked_back_heavy_6
+  - first:
+      213: -3671524752409826783
+    second: knocked_back_heavy_7
+  - first:
+      213: -870383982749012178
+    second: knocked_back_heavy_8
+  - first:
+      213: 5331857332973867684
+    second: knocked_back_heavy_9
+  - first:
+      213: 5211824106116404027
+    second: knocked_back_heavy_10
+  - first:
+      213: -539866247830397094
+    second: knocked_back_heavy_11
+  - first:
+      213: 3962276601264420745
+    second: knocked_back_heavy_12
+  - first:
+      213: -8521171710843773160
+    second: knocked_back_heavy_13
+  - first:
+      213: 3609049670124918988
+    second: knocked_back_heavy_14
+  - first:
+      213: -2121876070275023463
+    second: knocked_back_heavy_15
+  - first:
+      213: 8013628058044194460
+    second: knocked_back_heavy_16
+  - first:
+      213: -5554418887819655505
+    second: knocked_back_heavy_17
+  - first:
+      213: -446039884782829580
+    second: knocked_back_heavy_18
+  - first:
+      213: 4091623506432296230
+    second: knocked_back_heavy_19
+  - first:
+      213: 8691775245277152997
+    second: knocked_back_heavy_20
+  - first:
+      213: -5454084952517987527
+    second: knocked_back_heavy_21
+  - first:
+      213: 5463896279543870603
+    second: knocked_back_heavy_22
+  - first:
+      213: 856276767254272811
+    second: knocked_back_heavy_23
+  - first:
+      213: 3030015830800432388
+    second: knocked_back_heavy_24
+  - first:
+      213: 1455773599952389925
+    second: knocked_back_heavy_25
+  - first:
+      213: 895819817545914281
+    second: knocked_back_heavy_26
+  - first:
+      213: 7759694154011326536
+    second: knocked_back_heavy_27
+  - first:
+      213: -8568168605456569397
+    second: knocked_back_heavy_28
+  - first:
+      213: -556957213782974772
+    second: knocked_back_heavy_29
+  - first:
+      213: -7253573661226688779
+    second: knocked_back_heavy_30
+  - first:
+      213: -331815758977435586
+    second: knocked_back_heavy_31
+  - first:
+      213: -5099873109325197437
+    second: knocked_back_heavy_32
+  - first:
+      213: 6692623683009473146
+    second: knocked_back_heavy_33
+  - first:
+      213: -3505599664124128285
+    second: knocked_back_heavy_34
+  - first:
+      213: -1496177070548539197
+    second: knocked_back_heavy_35
+  - first:
+      213: -5274976415082542202
+    second: knocked_back_heavy_36
+  - first:
+      213: 9024810173027057652
+    second: knocked_back_heavy_37
+  - first:
+      213: 3213325401581422658
+    second: knocked_back_heavy_38
+  - first:
+      213: 2009768345375372543
+    second: knocked_back_heavy_39
+  - first:
+      213: -8217144951959227109
+    second: knocked_back_heavy_40
+  - first:
+      213: 3956403985213717156
+    second: knocked_back_heavy_41
+  - first:
+      213: 4853056550907160696
+    second: knocked_back_heavy_42
+  - first:
+      213: -8752573902793417754
+    second: knocked_back_heavy_43
+  - first:
+      213: -4834268901919839470
+    second: knocked_back_heavy_44
+  - first:
+      213: 229125897644463998
+    second: knocked_back_heavy_45
+  - first:
+      213: -1547282515873163651
+    second: knocked_back_heavy_46
+  - first:
+      213: -3898070441750859952
+    second: knocked_back_heavy_47
+  - first:
+      213: 6560059064658659020
+    second: knocked_back_heavy_48
+  - first:
+      213: 1631792972604787263
+    second: knocked_back_heavy_49
+  - first:
+      213: 7083149801835610186
+    second: knocked_back_heavy_50
+  - first:
+      213: -3472067722035205405
+    second: knocked_back_heavy_51
+  - first:
+      213: -8789277039050139176
+    second: knocked_back_heavy_52
+  - first:
+      213: -8736791550246607952
+    second: knocked_back_heavy_53
+  - first:
+      213: -4164054923882129014
+    second: knocked_back_heavy_54
+  - first:
+      213: 797539030456052042
+    second: knocked_back_heavy_55
+  - first:
+      213: -7070389251502136461
+    second: knocked_back_heavy_56
+  - first:
+      213: 6600370748119360545
+    second: knocked_back_heavy_57
+  - first:
+      213: 6897169410469678571
+    second: knocked_back_heavy_58
+  - first:
+      213: -5710774092673630628
+    second: knocked_back_heavy_59
+  - first:
+      213: 6946362299642575246
+    second: knocked_back_heavy_60
+  - first:
+      213: -7987306409278792946
+    second: knocked_back_heavy_61
+  - first:
+      213: 1583898532445025496
+    second: knocked_back_heavy_62
+  - first:
+      213: 6867216207858357954
+    second: knocked_back_heavy_63
+  - first:
+      213: 6891797942215691535
+    second: knocked_back_heavy_64
+  - first:
+      213: 8760541769194268860
+    second: knocked_back_heavy_65
+  - first:
+      213: 5675802744127839144
+    second: knocked_back_heavy_66
+  - first:
+      213: 8627997614164743055
+    second: knocked_back_heavy_67
+  - first:
+      213: 5708340104851095957
+    second: knocked_back_heavy_68
+  - first:
+      213: -635643347140187849
+    second: knocked_back_heavy_69
+  - first:
+      213: -2507454213606179627
+    second: knocked_back_heavy_70
+  - first:
+      213: 6529967337300173780
+    second: knocked_back_heavy_71
+  - first:
+      213: -8984075497692710247
+    second: knocked_back_heavy_72
+  - first:
+      213: 7200816529500025053
+    second: knocked_back_heavy_73
+  - first:
+      213: 135696261273228581
+    second: knocked_back_heavy_74
+  - first:
+      213: 1934556907609711146
+    second: knocked_back_heavy_75
+  - first:
+      213: 3228415210253964420
+    second: knocked_back_heavy_76
+  - first:
+      213: 1199767310531873548
+    second: knocked_back_heavy_77
+  - first:
+      213: -1285908798225912488
+    second: knocked_back_heavy_78
+  - first:
+      213: -5478870527123865670
+    second: knocked_back_heavy_79
+  - first:
+      213: -5296987586667320474
+    second: knocked_back_heavy_80
+  - first:
+      213: 1642701766057543987
+    second: knocked_back_heavy_81
+  - first:
+      213: 1268849598255928293
+    second: knocked_back_heavy_82
+  - first:
+      213: 2245856719177323248
+    second: knocked_back_heavy_83
+  - first:
+      213: 4313319534305187825
+    second: knocked_back_heavy_84
+  - first:
+      213: -4702072260392889392
+    second: knocked_back_heavy_85
+  - first:
+      213: -2192544636988770768
+    second: knocked_back_heavy_86
+  - first:
+      213: 2866107061258899684
+    second: knocked_back_heavy_87
+  - first:
+      213: 4826125803061876309
+    second: knocked_back_heavy_88
+  - first:
+      213: -6866143724483328516
+    second: knocked_back_heavy_89
+  - first:
+      213: 5283239437458168062
+    second: knocked_back_heavy_90
+  - first:
+      213: 4261530804017931875
+    second: knocked_back_heavy_91
+  - first:
+      213: 871499274810710355
+    second: knocked_back_heavy_92
+  - first:
+      213: -7000665299948854582
+    second: knocked_back_heavy_93
+  - first:
+      213: 3447592598591544700
+    second: knocked_back_heavy_94
+  - first:
+      213: 4867547420473999933
+    second: knocked_back_heavy_95
+  - first:
+      213: -1258471646232758516
+    second: knocked_back_heavy_96
+  - first:
+      213: -7377821448229001111
+    second: knocked_back_heavy_97
+  - first:
+      213: -2051702885761878421
+    second: knocked_back_heavy_98
+  - first:
+      213: 1260007844755073794
+    second: knocked_back_heavy_99
+  - first:
+      213: 3604256429155767629
+    second: knocked_back_heavy_100
+  - first:
+      213: -2570894644523327418
+    second: knocked_back_heavy_101
+  - first:
+      213: 2316080679091247047
+    second: knocked_back_heavy_102
+  - first:
+      213: 1211958033474064302
+    second: knocked_back_heavy_103
+  - first:
+      213: 3366049573522112782
+    second: knocked_back_heavy_104
+  - first:
+      213: -1511830801742875028
+    second: knocked_back_heavy_105
+  - first:
+      213: -8205524519361864040
+    second: knocked_back_heavy_106
+  - first:
+      213: -1205412885362123257
+    second: knocked_back_heavy_107
+  - first:
+      213: -1458047277947594235
+    second: knocked_back_heavy_108
+  - first:
+      213: 2328637067501933363
+    second: knocked_back_heavy_109
+  - first:
+      213: -2987848171750445363
+    second: knocked_back_heavy_110
+  - first:
+      213: -919379408194831071
+    second: knocked_back_heavy_111
+  - first:
+      213: -4505048891721467396
+    second: knocked_back_heavy_112
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: knocked_back_heavy_0
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 289
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a009e6a0734c1c990800000000000000
+      internalID: -7367391774724157430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_1
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 285
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c72585f999f22690800000000000000
+      internalID: -7628260379167742009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_2
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 271
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3710abd2ca00d40800000000000000
+      internalID: 5548624053314614245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_3
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 262
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f0f731ee4630970800000000000000
+      internalID: 8719924277211500328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_4
+      rect:
+        serializedVersion: 2
+        x: 2302
+        y: 262
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cf991f8e05b014f0800000000000000
+      internalID: -859988454692773944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_5
+      rect:
+        serializedVersion: 2
+        x: 2814
+        y: 262
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a4af64f92de58a0800000000000000
+      internalID: -6314378045994415524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_6
+      rect:
+        serializedVersion: 2
+        x: 3326
+        y: 262
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b50347d1c7091db0800000000000000
+      internalID: -4820813397001828940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_7
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 262
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12aee84b0bf1c0dc0800000000000000
+      internalID: -3671524752409826783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_8
+      rect:
+        serializedVersion: 2
+        x: 4350
+        y: 262
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2f2e021166cbe3f0800000000000000
+      internalID: -870383982749012178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_9
+      rect:
+        serializedVersion: 2
+        x: 4862
+        y: 262
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a218f4beff8ef940800000000000000
+      internalID: 5331857332973867684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_10
+      rect:
+        serializedVersion: 2
+        x: 5374
+        y: 262
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b33d2ec396e145840800000000000000
+      internalID: 5211824106116404027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_11
+      rect:
+        serializedVersion: 2
+        x: 5886
+        y: 262
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f98d702820288f0800000000000000
+      internalID: -539866247830397094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_12
+      rect:
+        serializedVersion: 2
+        x: 6398
+        y: 262
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98735386395dcf630800000000000000
+      internalID: 3962276601264420745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_13
+      rect:
+        serializedVersion: 2
+        x: 6910
+        y: 262
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f9c01e977beb980800000000000000
+      internalID: -8521171710843773160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_14
+      rect:
+        serializedVersion: 2
+        x: 7422
+        y: 262
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc8598cad8be51230800000000000000
+      internalID: 3609049670124918988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_15
+      rect:
+        serializedVersion: 2
+        x: 7933
+        y: 266
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99dfaddc4f49d82e0800000000000000
+      internalID: -2121876070275023463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_16
+      rect:
+        serializedVersion: 2
+        x: 8441
+        y: 274
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ed3d1c240263f60800000000000000
+      internalID: 8013628058044194460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_17
+      rect:
+        serializedVersion: 2
+        x: 8946
+        y: 283
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa60ac9337dbae2b0800000000000000
+      internalID: -5554418887819655505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_18
+      rect:
+        serializedVersion: 2
+        x: 9451
+        y: 288
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fffcd786195fc9f0800000000000000
+      internalID: -446039884782829580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_19
+      rect:
+        serializedVersion: 2
+        x: 9960
+        y: 289
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625098796ed58c830800000000000000
+      internalID: 4091623506432296230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_20
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 208
+        width: 16
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6474ad8836f9870800000000000000
+      internalID: 8691775245277152997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_21
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 225
+        width: 6
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933bc56f1a23f44b0800000000000000
+      internalID: -5454084952517987527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_22
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 211
+        width: 25
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b847acf97b8a3db40800000000000000
+      internalID: 5463896279543870603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_23
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 158
+        width: 47
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b5c9dde2b12eb00800000000000000
+      internalID: 856276767254272811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_24
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 214
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d7baa2857cc0a20800000000000000
+      internalID: 3030015830800432388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_25
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 223
+        width: 85
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527cd8a4062f33410800000000000000
+      internalID: 1455773599952389925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_26
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 240
+        width: 76
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a75497b0679e6c00800000000000000
+      internalID: 895819817545914281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_27
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 225
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 848358f68b8ffab60800000000000000
+      internalID: 7759694154011326536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_28
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 256
+        width: 79
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb6b18ac00c71980800000000000000
+      internalID: -8568168605456569397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_29
+      rect:
+        serializedVersion: 2
+        x: 2286
+        y: 225
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccedf5d6d5a4548f0800000000000000
+      internalID: -556957213782974772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_30
+      rect:
+        serializedVersion: 2
+        x: 2317
+        y: 256
+        width: 79
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fe147aaf21265b90800000000000000
+      internalID: -7253573661226688779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_31
+      rect:
+        serializedVersion: 2
+        x: 2798
+        y: 225
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e38f5434357256bf0800000000000000
+      internalID: -331815758977435586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_32
+      rect:
+        serializedVersion: 2
+        x: 2829
+        y: 256
+        width: 79
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38fca176d6c9939b0800000000000000
+      internalID: -5099873109325197437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_33
+      rect:
+        serializedVersion: 2
+        x: 3310
+        y: 225
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a6529d7c9f0ec50800000000000000
+      internalID: 6692623683009473146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_34
+      rect:
+        serializedVersion: 2
+        x: 3341
+        y: 256
+        width: 79
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e3172fcdab995fc0800000000000000
+      internalID: -3505599664124128285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_35
+      rect:
+        serializedVersion: 2
+        x: 3822
+        y: 225
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8aed4a1e28c3be0800000000000000
+      internalID: -1496177070548539197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_36
+      rect:
+        serializedVersion: 2
+        x: 3853
+        y: 256
+        width: 79
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68b017406e48bc6b0800000000000000
+      internalID: -5274976415082542202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_37
+      rect:
+        serializedVersion: 2
+        x: 4334
+        y: 225
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fffb9079019e3d70800000000000000
+      internalID: 9024810173027057652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_38
+      rect:
+        serializedVersion: 2
+        x: 4365
+        y: 256
+        width: 79
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24800058d66089c20800000000000000
+      internalID: 3213325401581422658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_39
+      rect:
+        serializedVersion: 2
+        x: 4846
+        y: 225
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff47ce279a124eb10800000000000000
+      internalID: 2009768345375372543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_40
+      rect:
+        serializedVersion: 2
+        x: 4877
+        y: 256
+        width: 79
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b157396d336d6fd80800000000000000
+      internalID: -8217144951959227109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_41
+      rect:
+        serializedVersion: 2
+        x: 5358
+        y: 225
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aa7a9e6678f7e630800000000000000
+      internalID: 3956403985213717156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_42
+      rect:
+        serializedVersion: 2
+        x: 5389
+        y: 256
+        width: 79
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87824bf6835895340800000000000000
+      internalID: 4853056550907160696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_43
+      rect:
+        serializedVersion: 2
+        x: 5870
+        y: 225
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ebd4a5986c988680800000000000000
+      internalID: -8752573902793417754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_44
+      rect:
+        serializedVersion: 2
+        x: 5901
+        y: 256
+        width: 79
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ba958fb0a39ecb0800000000000000
+      internalID: -4834268901919839470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_45
+      rect:
+        serializedVersion: 2
+        x: 6382
+        y: 225
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e77d0f93ac40e2300800000000000000
+      internalID: 229125897644463998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_46
+      rect:
+        serializedVersion: 2
+        x: 6413
+        y: 256
+        width: 79
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d76153aefb2f68ae0800000000000000
+      internalID: -1547282515873163651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_47
+      rect:
+        serializedVersion: 2
+        x: 6894
+        y: 225
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f6df9069547e9c0800000000000000
+      internalID: -3898070441750859952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_48
+      rect:
+        serializedVersion: 2
+        x: 6925
+        y: 256
+        width: 79
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc68f8e66f20a0b50800000000000000
+      internalID: 6560059064658659020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_49
+      rect:
+        serializedVersion: 2
+        x: 7406
+        y: 225
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a461f101b45a610800000000000000
+      internalID: 1631792972604787263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_50
+      rect:
+        serializedVersion: 2
+        x: 7437
+        y: 256
+        width: 79
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a404a4577376c4260800000000000000
+      internalID: 7083149801835610186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_51
+      rect:
+        serializedVersion: 2
+        x: 7919
+        y: 225
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eaedf77dccb0dfc0800000000000000
+      internalID: -3472067722035205405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_52
+      rect:
+        serializedVersion: 2
+        x: 7930
+        y: 236
+        width: 81
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d95beeb917360680800000000000000
+      internalID: -8789277039050139176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_53
+      rect:
+        serializedVersion: 2
+        x: 7948
+        y: 250
+        width: 79
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b3aae2ef5ea0c680800000000000000
+      internalID: -8736791550246607952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_54
+      rect:
+        serializedVersion: 2
+        x: 8434
+        y: 216
+        width: 76
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a891accdb1e4636c0800000000000000
+      internalID: -4164054923882129014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_55
+      rect:
+        serializedVersion: 2
+        x: 8457
+        y: 233
+        width: 73
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49a7dcc58d611b00800000000000000
+      internalID: 797539030456052042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_56
+      rect:
+        serializedVersion: 2
+        x: 8951
+        y: 162
+        width: 57
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373a970bf6ee0ed90800000000000000
+      internalID: -7070389251502136461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_57
+      rect:
+        serializedVersion: 2
+        x: 8966
+        y: 217
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 124a883a93a399b50800000000000000
+      internalID: 6600370748119360545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_58
+      rect:
+        serializedVersion: 2
+        x: 9459
+        y: 150
+        width: 15
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed4cba390ba7bf50800000000000000
+      internalID: 6897169410469678571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_59
+      rect:
+        serializedVersion: 2
+        x: 9468
+        y: 225
+        width: 8
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5e3fad38314fb0b0800000000000000
+      internalID: -5710774092673630628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_60
+      rect:
+        serializedVersion: 2
+        x: 9476
+        y: 211
+        width: 34
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e897c5745bf666060800000000000000
+      internalID: 6946362299642575246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_61
+      rect:
+        serializedVersion: 2
+        x: 9965
+        y: 208
+        width: 16
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b9cbaa323672190800000000000000
+      internalID: -7987306409278792946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_62
+      rect:
+        serializedVersion: 2
+        x: 9982
+        y: 225
+        width: 6
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4f5aac2532bf510800000000000000
+      internalID: 1583898532445025496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_63
+      rect:
+        serializedVersion: 2
+        x: 9987
+        y: 211
+        width: 25
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6d339c1c04d4f50800000000000000
+      internalID: 6867216207858357954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_64
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 244
+        width: 83
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0dc881d6b594af50800000000000000
+      internalID: 6891797942215691535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_65
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 244
+        width: 83
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8ebc0e252b39970800000000000000
+      internalID: 8760541769194268860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_66
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 244
+        width: 83
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab5dea268084ce40800000000000000
+      internalID: 5675802744127839144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_67
+      rect:
+        serializedVersion: 2
+        x: 3322
+        y: 244
+        width: 83
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f831533fd1eccb770800000000000000
+      internalID: 8627997614164743055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_68
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 244
+        width: 83
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59104cec419183f40800000000000000
+      internalID: 5708340104851095957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_69
+      rect:
+        serializedVersion: 2
+        x: 4346
+        y: 244
+        width: 83
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7396ed95ebdbd27f0800000000000000
+      internalID: -635643347140187849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_70
+      rect:
+        serializedVersion: 2
+        x: 4858
+        y: 244
+        width: 83
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dc72738dabb33dd0800000000000000
+      internalID: -2507454213606179627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_71
+      rect:
+        serializedVersion: 2
+        x: 5370
+        y: 244
+        width: 83
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d32eae22ba1f9a50800000000000000
+      internalID: 6529967337300173780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_72
+      rect:
+        serializedVersion: 2
+        x: 5882
+        y: 244
+        width: 83
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a3cbc3fe6225380800000000000000
+      internalID: -8984075497692710247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_73
+      rect:
+        serializedVersion: 2
+        x: 6394
+        y: 244
+        width: 83
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd03c956b707ee360800000000000000
+      internalID: 7200816529500025053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_74
+      rect:
+        serializedVersion: 2
+        x: 6906
+        y: 244
+        width: 83
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5251a8ad70712e100800000000000000
+      internalID: 135696261273228581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_75
+      rect:
+        serializedVersion: 2
+        x: 7418
+        y: 244
+        width: 83
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a22eadbf14de8da10800000000000000
+      internalID: 1934556907609711146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_76
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 151
+        width: 16
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 484d7a26782adcc20800000000000000
+      internalID: 3228415210253964420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_77
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 152
+        width: 12
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0bc065230e66a010800000000000000
+      internalID: 1199767310531873548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_78
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 151
+        width: 21
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85de134d2c8872ee0800000000000000
+      internalID: -1285908798225912488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_79
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 174
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abfbc6ca84427f3b0800000000000000
+      internalID: -5478870527123865670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_80
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 190
+        width: 70
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b6a05cad15d76b0800000000000000
+      internalID: -5296987586667320474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_81
+      rect:
+        serializedVersion: 2
+        x: 1784
+        y: 196
+        width: 77
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33944c58d8c0cc610800000000000000
+      internalID: 1642701766057543987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_82
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 213
+        width: 78
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e31179acfbdb9110800000000000000
+      internalID: 1268849598255928293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_83
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 196
+        width: 77
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f21dfa79c2ea2f10800000000000000
+      internalID: 2245856719177323248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_84
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 213
+        width: 78
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f79305734dfbdb30800000000000000
+      internalID: 4313319534305187825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_85
+      rect:
+        serializedVersion: 2
+        x: 2808
+        y: 196
+        width: 77
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3501b1132eebeb0800000000000000
+      internalID: -4702072260392889392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_86
+      rect:
+        serializedVersion: 2
+        x: 2822
+        y: 213
+        width: 78
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 036b81ee4448291e0800000000000000
+      internalID: -2192544636988770768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_87
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 196
+        width: 77
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0539adf2576c720800000000000000
+      internalID: 2866107061258899684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_88
+      rect:
+        serializedVersion: 2
+        x: 3334
+        y: 213
+        width: 78
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55699d419d7d9f240800000000000000
+      internalID: 4826125803061876309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_89
+      rect:
+        serializedVersion: 2
+        x: 3832
+        y: 196
+        width: 77
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5c46539ae86b0a0800000000000000
+      internalID: -6866143724483328516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_90
+      rect:
+        serializedVersion: 2
+        x: 3846
+        y: 213
+        width: 78
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef8570dc646d15940800000000000000
+      internalID: 5283239437458168062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_91
+      rect:
+        serializedVersion: 2
+        x: 4344
+        y: 196
+        width: 77
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366afdc00bff32b30800000000000000
+      internalID: 4261530804017931875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_92
+      rect:
+        serializedVersion: 2
+        x: 4358
+        y: 213
+        width: 78
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3595a1919ff281c00800000000000000
+      internalID: 871499274810710355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_93
+      rect:
+        serializedVersion: 2
+        x: 4856
+        y: 196
+        width: 77
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac225253004a8de90800000000000000
+      internalID: -7000665299948854582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_94
+      rect:
+        serializedVersion: 2
+        x: 4870
+        y: 213
+        width: 78
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d9059c33f48df20800000000000000
+      internalID: 3447592598591544700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_95
+      rect:
+        serializedVersion: 2
+        x: 5368
+        y: 196
+        width: 77
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d32c8bce6900d8340800000000000000
+      internalID: 4867547420473999933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_96
+      rect:
+        serializedVersion: 2
+        x: 5382
+        y: 213
+        width: 78
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c07356694b2098ee0800000000000000
+      internalID: -1258471646232758516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_97
+      rect:
+        serializedVersion: 2
+        x: 5880
+        y: 196
+        width: 77
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9686d027b76bc9990800000000000000
+      internalID: -7377821448229001111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_98
+      rect:
+        serializedVersion: 2
+        x: 5894
+        y: 213
+        width: 78
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b66f4858813e683e0800000000000000
+      internalID: -2051702885761878421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_99
+      rect:
+        serializedVersion: 2
+        x: 6392
+        y: 196
+        width: 77
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20be4d085727c7110800000000000000
+      internalID: 1260007844755073794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_100
+      rect:
+        serializedVersion: 2
+        x: 6406
+        y: 213
+        width: 78
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d455f3b4024e40230800000000000000
+      internalID: 3604256429155767629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_101
+      rect:
+        serializedVersion: 2
+        x: 6904
+        y: 196
+        width: 77
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 640ab3621f8525cd0800000000000000
+      internalID: -2570894644523327418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_102
+      rect:
+        serializedVersion: 2
+        x: 6918
+        y: 213
+        width: 78
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c711644b1f542020800000000000000
+      internalID: 2316080679091247047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_103
+      rect:
+        serializedVersion: 2
+        x: 7416
+        y: 196
+        width: 77
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaf07e3096db1d010800000000000000
+      internalID: 1211958033474064302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_104
+      rect:
+        serializedVersion: 2
+        x: 7430
+        y: 213
+        width: 78
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e010426c04c96be20800000000000000
+      internalID: 3366049573522112782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_105
+      rect:
+        serializedVersion: 2
+        x: 7929
+        y: 187
+        width: 72
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c663f9555e5e40be0800000000000000
+      internalID: -1511830801742875028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_106
+      rect:
+        serializedVersion: 2
+        x: 7942
+        y: 204
+        width: 76
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89e9da3acee102e80800000000000000
+      internalID: -8205524519361864040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_107
+      rect:
+        serializedVersion: 2
+        x: 8441
+        y: 168
+        width: 57
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70edf480e53854fe0800000000000000
+      internalID: -1205412885362123257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_108
+      rect:
+        serializedVersion: 2
+        x: 8453
+        y: 182
+        width: 65
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a553cc9b9f3cbe0800000000000000
+      internalID: -1458047277947594235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_109
+      rect:
+        serializedVersion: 2
+        x: 8954
+        y: 153
+        width: 30
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3339243431bf05020800000000000000
+      internalID: 2328637067501933363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_110
+      rect:
+        serializedVersion: 2
+        x: 9476
+        y: 153
+        width: 22
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcea3080be70986d0800000000000000
+      internalID: -2987848171750445363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_111
+      rect:
+        serializedVersion: 2
+        x: 9966
+        y: 151
+        width: 16
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12dfcb0ac45bd33f0800000000000000
+      internalID: -919379408194831071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knocked_back_heavy_112
+      rect:
+        serializedVersion: 2
+        x: 9988
+        y: 152
+        width: 12
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf9bc29d6e9da71c0800000000000000
+      internalID: -4505048891721467396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
