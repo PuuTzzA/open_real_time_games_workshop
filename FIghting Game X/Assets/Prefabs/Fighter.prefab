@@ -664,12 +664,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1e5721244b1b854da01adf7de29bd4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashClip: {fileID: 8300000, guid: 4db31bcab182ab64f8d60ebea0ce45a4, type: 3}
+  dashClip: {fileID: 8300000, guid: 999e686180c446a488b353b09b0d69ac, type: 3}
   heavyClip: {fileID: 8300000, guid: 6e5c17e636f846e4f991b3516c2d0930, type: 3}
   heavyHitClip: {fileID: 8300000, guid: cbbdb0aa1ece1584992d2134853bfb99, type: 3}
-  jabClip: {fileID: 8300000, guid: e2bfeea160cf34f4b9284f5b8286c51d, type: 3}
+  jabClip: {fileID: 8300000, guid: aaca02764734149459383db92a82eff4, type: 3}
   jabHitClip: {fileID: 8300000, guid: ee742a6d09ca5e54a865a6fb5182f703, type: 3}
-  jumpClip: {fileID: 8300000, guid: ac94430a1eeaffd44ba31a107e0923e0, type: 3}
+  jumpClip: {fileID: 8300000, guid: 94e8b4e4e94c9b04cac792063d5f251a, type: 3}
   punchHitClip: {fileID: 8300000, guid: afd4b3253c3f99f4d876423383636924, type: 3}
 --- !u!82 &4290826000508740263
 AudioSource:
