@@ -11,10 +11,12 @@ public enum FighterFlags
     CanJump = 0x04,
     Mobile = CanJump | CanTurn | CanMove,
 
+    UseGravity = 0x08,
+
     BlockSide = 0x10,
     BlockUp = 0x20,
 
-    Idle = CanJump | CanTurn | CanMove,
+    Idle = CanJump | CanTurn | CanMove | UseGravity,
 }
 
 [Flags]
