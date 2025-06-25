@@ -138,6 +138,10 @@ public class BaseFighter : MonoBehaviour
 
     public void jump()
     {
+        if(!state.is_grounded())
+        {
+            state.available_air_jumps--;
+        }
         rigidbody.linearVelocityY = state.get_jump_strength();
     }
 
@@ -149,8 +153,17 @@ public class BaseFighter : MonoBehaviour
 
     public void knockback(Vector2 direction)
     {
-        state.remaining_flying_frames = 4;
+        Debug.Log("knockback");
+        state.start_action(FighterAction.KnockedBackLight);
+        state.remaining_flying_frames = 5;
         rigidbody.linearVelocity = direction;
+    }
+
+    public void handle_hit(AttackHitbox hitbox_data)
+    {
+        Debug.Log(hitbox_data.knockback);
+        Debug.Log(hitbox_data.source_fighter.state.get_facing_vec());
+        knockback(hitbox_data.knockback * hitbox_data.source_fighter.state.get_facing_vec());
     }
 
     public bool jump_action()
@@ -214,8 +227,6 @@ public class BaseFighter : MonoBehaviour
     public bool ult_action(EventData input)
     {
         if (!input.pressed) return true;
-
-        state.start_action(FighterAction.KnockedBackLight);
 
         knockback(new Vector2(-(float)(int)state.get_facing(), 0.0f) * 5.0f);
         Debug.Log("knocking back");
