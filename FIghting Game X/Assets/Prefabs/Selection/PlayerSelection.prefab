@@ -1335,6 +1335,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 51fefa3a-2bd2-4987-83e4-2274fa66216d
+    m_ActionName: 'Player/test-minigame[/SwitchProControllerHID/leftStickPress,/Keyboard/m]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f9459d25-f3cd-4af8-99d7-0b8d91ea1fb2
+    m_ActionName: 'QTE/Smash[/Keyboard/space,/SwitchProControllerHID/buttonSouth]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: UI
@@ -1354,13 +1362,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - {fileID: 5433043207104148075, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
-  - {fileID: 5433043207104148075, guid: 8acb41cf5e3b93147b613f55baae739e, type: 3}
-  - {fileID: 5433043207104148075, guid: 379e3478b07fa4046aa258ad9a02e899, type: 3}
+  - {fileID: 5433043207104148075, guid: b501cd97a8574934f95f5f47f19c1109, type: 3}
+  - {fileID: 5433043207104148075, guid: c02442a78fead2e48bf2160d7d42a6a9, type: 3}
   selectedCharacter: 0
-  spriteRenderers:
-  - {fileID: 8711834424833251530, guid: 7db8847ed6479f5cdbcc91b2038ebdfe, type: 3}
-  - {fileID: 4654300779431486118, guid: 83a9a397c43758c4e82e232b5037d0d4, type: 3}
-  - {fileID: 4654300779431486118, guid: bc1431fab96ea714eb57e149b31b4600, type: 3}
   characterDisplayImage: {fileID: 6377793426404930210}
   characterNameText: {fileID: 3758074233020555856}
   startGameButton: {fileID: 7552888378279524786}

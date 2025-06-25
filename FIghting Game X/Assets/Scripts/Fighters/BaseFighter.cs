@@ -22,7 +22,13 @@ public class BaseFighter : MonoBehaviour
     public FighterHealth health;
 
     private DelayedActions delayed_actions;
+    
+    private PlayerSounds player_sounds;
 
+    private void Awake()
+    {
+        player_sounds = GetComponent<PlayerSounds>();
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -162,6 +168,7 @@ public class BaseFighter : MonoBehaviour
     public void knockback(Vector2 direction)
     {
         Debug.Log("knockback");
+        player_sounds.PlayJabHit();
         state.start_action(FighterAction.KnockedBackLight);
         state.remaining_flying_frames = 5;
         rigidbody.linearVelocity = direction;
@@ -198,6 +205,7 @@ public class BaseFighter : MonoBehaviour
     {
         if (state.can_jump())
         {
+            player_sounds.PlayJump();
             state.start_action(FighterAction.Jump);
             delayed_actions.push(new DelayedAction(jump, 8));
             return true;
@@ -213,6 +221,7 @@ public class BaseFighter : MonoBehaviour
         state.set_facing(input.direction.x);
         if (state.get_action() == FighterAction.JabSide) return false;
 
+        player_sounds.PlayJab();
         state.start_action((FighterAction)((int)(FighterAction.JabSide) - input.direction.y));
         return true;
     }
@@ -222,6 +231,7 @@ public class BaseFighter : MonoBehaviour
         if (!input.pressed) return true;
 
         state.set_facing(input.direction.x);
+        player_sounds.PlayHeavy();
         state.start_action((FighterAction)((int)(FighterAction.HeavySide) - input.direction.y));
         return true;
     }
@@ -235,6 +245,7 @@ public class BaseFighter : MonoBehaviour
     {
         if (!input.pressed) return true;
         state.set_facing(input.direction.x);
+        player_sounds.PlayDash();
         dash((int)state.get_facing() * state.base_stats.dash_factor * state.get_ground_speed());
         return true;
     }
