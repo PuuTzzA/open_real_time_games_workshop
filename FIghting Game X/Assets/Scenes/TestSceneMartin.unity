@@ -1018,6 +1018,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bafa6772735030d468cc44e50457799c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stocks:
+  - {fileID: -3920415096154208720, guid: fc34712432ffee34689bd71e48692a72, type: 3}
+  - {fileID: -5705411075995234841, guid: ce202dee0db9fdf4b88f5da45b4b7615, type: 3}
+  - {fileID: -7201617568713975131, guid: 1402c0364943d6e46bd25d4fb96a6784, type: 3}
+  - {fileID: -1326067626569773493, guid: 1579e74417273ec48b26cc75b75352b9, type: 3}
+  - {fileID: -1409420618778637480, guid: 9759413dd207a744aa28dff42665853e, type: 3}
   blink_duration: 0.2
   removed_health_duration: 0.2
   blink_color: {r: 1, g: 1, b: 1, a: 0}
