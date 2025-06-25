@@ -5,6 +5,7 @@ public class RemoveElementOnKey : MonoBehaviour
 {
     private VisualElement root;
     private int removeIndex = 0;
+    public IngameUI ui;
 
     void OnEnable()
     {
@@ -19,20 +20,11 @@ public class RemoveElementOnKey : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A) && root != null)
         {
-            string elementName = $"SquareElement{removeIndex}";
-            var element = root.Q(elementName);
-
-            if (element != null)
-            {
-                element.RemoveFromHierarchy();
-                Debug.Log($"{elementName} removed.");
-            }
-            else
-            {
-                Debug.Log($"{elementName} not found.");
-            }
-
-            removeIndex++;
+            ui.setNewHealth(0, 0.5f);
+        }
+         if (Input.GetKeyDown(KeyCode.Q) && root != null)
+        {
+            ui.setHealth(0, 1f);
         }
     }
 }
