@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: e6d6c91ccff515f4ea4a1b0ba1b27fe5
+guid: fbfbc6cfb4528c54c9b1838f9d7246ef
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3100641500853070806
-    second: Logo_Placeholder_noBackground2_0
+      213: 2921862110185217117
+    second: Logo_Placeholder_noBackground_0
   - first:
-      213: -6314298618067534567
-    second: Logo_Placeholder_noBackground2_1
+      213: 7595048355360233225
+    second: Logo_Placeholder_noBackground_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,11 +116,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Logo_Placeholder_noBackground2_0
+      name: Logo_Placeholder_noBackground_0
       rect:
         serializedVersion: 2
         x: 98
-        y: 115
+        y: 83
         width: 842
         height: 407
       alignment: 0
@@ -131,18 +131,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a2491dd9bfe48f4d0800000000000000
-      internalID: -3100641500853070806
+      spriteID: d5c5348cb1a8c8820800000000000000
+      internalID: 2921862110185217117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Logo_Placeholder_noBackground2_1
+      name: Logo_Placeholder_noBackground_1
       rect:
         serializedVersion: 2
         x: 512
-        y: 476
+        y: 444
         width: 66
         height: 64
       alignment: 0
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 91d38588cda1f58a0800000000000000
-      internalID: -6314298618067534567
+      spriteID: 90759292d38076960800000000000000
+      internalID: 7595048355360233225
       vertices: []
       indices: 
       edges: []
