@@ -38,6 +38,21 @@ public class FighterHealth : MonoBehaviour
         }
     }
 
+    public void TakeArenaDamage(int damage) {
+        if (currentHealth <= 0)
+        {
+            Debug.LogWarning("Fighter is already dead. Cannot take more damage.");
+            return;
+        }
+        
+        currentHealth -= damage;
+
+        if (currentHealth <= 0)
+        {
+            HandleArenaDeath();
+        }
+    }
+
     private void HandleDeath(GameObject killer)
     {
         currentLives--;
@@ -57,6 +72,18 @@ public class FighterHealth : MonoBehaviour
         }
         else
         {
+            Debug.Log("Fighter died. Remaining lives: " + currentLives);
+            Respawn();
+        }
+    }
+
+    private void HandleArenaDeath() {
+        currentLives--;
+
+        if (currentLives == 0) {
+            Debug.Log("Fighter died and has no more lives left. Game Over!");
+                Die();
+        } else {
             Debug.Log("Fighter died. Remaining lives: " + currentLives);
             Respawn();
         }

@@ -198,7 +198,9 @@ public class BaseFighter : MonoBehaviour
         health.TakeDamage(damage, attacker);
     }
 
-
+    public void take_arena_damage(int damage) {
+        health.TakeArenaDamage(damage);
+    }
 
 
     public bool jump_action()
