@@ -81,6 +81,7 @@ public class FighterState : MonoBehaviour
     public int get_facing_int() { return (int)_facing; }
     public float get_facing_float() { return (int)_facing; }
     public Vector2 get_facing_vec() { return new Vector2((int)_facing, 1.0f); }
+    public Vector2Int get_facing_ivec() { return new Vector2Int((int)_facing, 1); }
 
     public void set_facing(Facing dir)
     {
@@ -126,7 +127,7 @@ public class FighterState : MonoBehaviour
         remaining_dash_frames = 0;
 
         set_facing(Facing.Right);
-        start_action(FighterAction.Idle);
+        start_action(FighterAction.BlockUp);
     }
 
 

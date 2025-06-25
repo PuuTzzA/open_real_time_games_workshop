@@ -622,6 +622,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.8587482
       objectReference: {fileID: 0}
+    - target: {fileID: 1333684296444455915, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
+      propertyPath: flags
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2190708967257528992, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.12
@@ -688,7 +692,7 @@ PrefabInstance:
       objectReference: {fileID: 1923823685}
     - target: {fileID: 5732328403235980703, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
       propertyPath: direction.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -134,11 +134,12 @@ public class BaseFighter : MonoBehaviour
     public void on_animation_end()
     {
         state.start_action(FighterAction.Idle);
+        state.animation_data.flags = FighterFlags.Idle;
     }
 
     public void jump()
     {
-        if(!state.is_grounded())
+        if (!state.is_grounded())
         {
             state.available_air_jumps--;
         }
@@ -166,9 +167,20 @@ public class BaseFighter : MonoBehaviour
         knockback(hitbox_data.knockback * hitbox_data.source_fighter.state.get_facing_vec());
     }
 
+    public bool is_blocking(Vector2Int direction)
+    {
+        if (state.flags_any_set(FighterFlags.BlockSide) && direction.x == -state.get_facing_int())
+            return true;
+
+        if (state.flags_any_set(FighterFlags.BlockUp) && direction.y == -1)
+            return true;
+
+        return false;
+    }
+
     public bool jump_action()
     {
-        if(state.can_jump())
+        if (state.can_jump())
         {
             state.start_action(FighterAction.Jump);
             return true;
@@ -204,7 +216,7 @@ public class BaseFighter : MonoBehaviour
 
     public bool dash_action(EventData input)
     {
-        if(!input.pressed) return true;
+        if (!input.pressed) return true;
         state.set_facing(input.direction.x);
         dash((int)state.get_facing() * state.base_stats.dash_factor * state.get_ground_speed());
         return true;
