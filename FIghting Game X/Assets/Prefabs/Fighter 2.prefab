@@ -186,9 +186,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6471333511865713166}
   - component: {fileID: 3710881790213607873}
-  m_Layer: 0
+  - component: {fileID: 5732328403235980703}
+  m_Layer: 8
   m_Name: Hitbox
-  m_TagString: Untagged
+  m_TagString: Hitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -245,6 +246,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.5, y: 1}
   m_Direction: 0
+--- !u!114 &5732328403235980703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2677809762536704221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e8c02d2b72fc241aca8d39bb3b406c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  knockback: {x: 0, y: 0}
+  direction: {x: 0, y: 0}
+  source_fighter: {fileID: 3784939749288748778}
 --- !u!1 &5433043207104148075
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,12 +276,14 @@ GameObject:
   - component: {fileID: 3784939749288748778}
   - component: {fileID: 8266158835667872492}
   - component: {fileID: 4792304623778786022}
-  - component: {fileID: 7907159012655869599}
-  - component: {fileID: 7555969372499361108}
-  - component: {fileID: 3701070194125093683}
-  m_Layer: 0
-  m_Name: Mage
-  m_TagString: Untagged
+  - component: {fileID: 1556262320957081972}
+  - component: {fileID: 4859815249510380014}
+  - component: {fileID: 2867311719178718406}
+  - component: {fileID: 4691852704737607804}
+  - component: {fileID: 4263306457812420113}
+  m_Layer: 6
+  m_Name: Fighter 2
+  m_TagString: Fighter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -507,25 +526,13 @@ MonoBehaviour:
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 51fefa3a-2bd2-4987-83e4-2274fa66216d
-    m_ActionName: 'Player/test-minigame[/XInputControllerWindows/leftTrigger,/Keyboard/m]'
-  - m_PersistentCalls:
       m_Calls: []
     m_ActionId: f9459d25-f3cd-4af8-99d7-0b8d91ea1fb2
-    m_ActionName: 'QTE/Smash[/Keyboard/space,/XInputControllerWindows/buttonSouth]'
+    m_ActionName: 'QTE/Smash[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 51fefa3a-2bd2-4987-83e4-2274fa66216d
+    m_ActionName: 'Player/test-minigame[/XInputControllerWindows/leftTrigger,/Keyboard/m]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -547,7 +554,8 @@ MonoBehaviour:
   collider: {fileID: 4792304623778786022}
   debug_text: {fileID: 7214940668690671881}
   fighter_input: {fileID: 8266158835667872492}
-  state: {fileID: 7907159012655869599}
+  state: {fileID: 1556262320957081972}
+  health: {fileID: 2867311719178718406}
 --- !u!114 &8266158835667872492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -597,7 +605,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.07852185}
   m_Size: {x: 0.45, y: 1.8790307}
   m_Direction: 0
---- !u!114 &7907159012655869599
+--- !u!114 &1556262320957081972
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -617,7 +625,19 @@ MonoBehaviour:
   remaining_flying_frames: 0
   animation_data: {fileID: 1333684296444455915}
   passive: 1
---- !u!114 &7555969372499361108
+--- !u!114 &4859815249510380014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433043207104148075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82f2d5bf012bdc4c962dd55300e63a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2867311719178718406
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -632,7 +652,7 @@ MonoBehaviour:
   maxLives: 3
   qteUsed: 0
   maxHealth: 300
---- !u!114 &3701070194125093683
+--- !u!114 &4691852704737607804
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -641,9 +661,113 @@ MonoBehaviour:
   m_GameObject: {fileID: 5433043207104148075}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82f2d5bf012bdc4c962dd55300e63a8, type: 3}
+  m_Script: {fileID: 11500000, guid: a1e5721244b1b854da01adf7de29bd4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dashClip: {fileID: 8300000, guid: 4db31bcab182ab64f8d60ebea0ce45a4, type: 3}
+  heavyClip: {fileID: 8300000, guid: 6e5c17e636f846e4f991b3516c2d0930, type: 3}
+  heavyHitClip: {fileID: 8300000, guid: cbbdb0aa1ece1584992d2134853bfb99, type: 3}
+  jabClip: {fileID: 8300000, guid: e2bfeea160cf34f4b9284f5b8286c51d, type: 3}
+  jabHitClip: {fileID: 8300000, guid: ee742a6d09ca5e54a865a6fb5182f703, type: 3}
+  jumpClip: {fileID: 8300000, guid: ac94430a1eeaffd44ba31a107e0923e0, type: 3}
+  punchHitClip: {fileID: 8300000, guid: afd4b3253c3f99f4d876423383636924, type: 3}
+--- !u!82 &4263306457812420113
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433043207104148075}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7739751719961853797
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,9 +782,9 @@ GameObject:
   - component: {fileID: 6148420401035353989}
   - component: {fileID: 6625725068723689011}
   - component: {fileID: 1333684296444455915}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sprite
-  m_TagString: Untagged
+  m_TagString: Fighter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -748,7 +872,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7812720279473141349, guid: 0d1fbe972da0fd44284f7951bdda188a, type: 3}
-  m_Color: {r: 0, g: 0.08428943, b: 0.9924528, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -857,5 +981,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c79f6d0ac487a644098d9715d996a160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flags: -1
+  flags: 7
   signals: 0
