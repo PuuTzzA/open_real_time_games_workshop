@@ -76,6 +76,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "test-minigame",
+                    "type": "Button",
+                    "id": "51fefa3a-2bd2-4987-83e4-2274fa66216d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -307,6 +316,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "ult",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0c9978fb-2a4e-4500-8be0-feebd1ec1543",
+                    "path": "<Gamepad>/leftStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "test-minigame",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c63055c1-60a8-4098-9f79-23b5979d44ce",
+                    "path": "<Keyboard>/m",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "test-minigame",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -823,6 +854,45 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "TrackedDeviceOrientation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "QTE",
+            "id": "73b3043b-a9f7-4006-b8f6-f0a44bd21542",
+            "actions": [
+                {
+                    "name": "Smash",
+                    "type": "Button",
+                    "id": "f9459d25-f3cd-4af8-99d7-0b8d91ea1fb2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e4a46b60-d1ae-4c9e-aef0-91083477d6c4",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Smash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b113663d-8c3d-43d8-9012-26a64cb8e90e",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Smash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
