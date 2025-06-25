@@ -45,7 +45,7 @@ public class IngameUI : MonoBehaviour
             healthbar[i].Fill = health;
             healthbar[i].Arc2Fill = health;
             healthbar[i].Arc3Fill = health;
-            healthbar[i].hierarchy.ElementAt(0).style.backgroundImage = new StyleBackground(persistentPlayerManager.getPlayers()[i].GetComponent<FighterHealth>().Icon);
+            healthbar[i].hierarchy.ElementAt(1).style.backgroundImage = new StyleBackground(persistentPlayerManager.getPlayers()[i].GetComponent<FighterHealth>().Icon);
             setHealth(i, 1);
         }
         color = healthbar[0].Arc3Color;
