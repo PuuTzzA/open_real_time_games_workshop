@@ -116,11 +116,16 @@ public class BaseFighter : MonoBehaviour
         }
         else
         {
-            float dist = (!state.flags_any_set(FighterFlags.CanMove) ? 0.0f : fighter_input.direction.x) * state.get_air_speed().x - rigidbody.linearVelocityX;
+            float dist = (!state.flags_any_set(FighterFlags.CanMove) ? 0.0f : fighter_input.direction.x) * state.get_air_speed() - rigidbody.linearVelocityX;
 
             float delta = (dist * 5.0f + 2.0f * Math.Sign(dist)) * Time.fixedDeltaTime;
             rigidbody.linearVelocityX += delta;
-            rigidbody.linearVelocityX = Math.Clamp(rigidbody.linearVelocityX, -state.get_air_speed().x, state.get_air_speed().x);
+            rigidbody.linearVelocityX = Math.Clamp(rigidbody.linearVelocityX, -state.get_air_speed(), state.get_air_speed());
+        }
+
+        if(rigidbody.linearVelocityY < state.get_terminal_speed())
+        {
+            rigidbody.linearVelocityY = state.get_terminal_speed();
         }
     }
 
@@ -198,7 +203,7 @@ public class BaseFighter : MonoBehaviour
         {
             player_sounds.PlayJump();
             state.start_action(FighterAction.Jump);
-            delayed_actions.push(new DelayedAction(jump, 8));
+            delayed_actions.push(new DelayedAction(jump, 6));
             return true;
         }
         return false;
@@ -209,9 +214,9 @@ public class BaseFighter : MonoBehaviour
     {
         if (!input.pressed) return true;
 
-        state.force_facing(input.direction.x);
-        if (state.get_action() == FighterAction.JabSide) return false;
+        if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
 
+        state.force_facing(input.direction.x);
         player_sounds.PlayJab();
         state.start_action((FighterAction)((int)(FighterAction.JabSide) - input.direction.y));
         return true;
@@ -220,6 +225,8 @@ public class BaseFighter : MonoBehaviour
     public bool heavy_action(EventData input)
     {
         if (!input.pressed) return true;
+
+        if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
 
         state.force_facing(input.direction.x);
         player_sounds.PlayHeavy();
@@ -235,6 +242,9 @@ public class BaseFighter : MonoBehaviour
     public bool dash_action(EventData input)
     {
         if (!input.pressed) return true;
+
+        if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
+
         state.force_facing(input.direction.x);
         player_sounds.PlayDash();
         state.dash(state.base_stats.dash_factor * state.get_ground_speed());
@@ -249,6 +259,8 @@ public class BaseFighter : MonoBehaviour
                 on_animation_end();
             return true;
         }
+
+        if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
 
         state.force_facing(input.direction.x);
         state.start_action(input.direction.y == 1 ? FighterAction.BlockUp : FighterAction.BlockSide);

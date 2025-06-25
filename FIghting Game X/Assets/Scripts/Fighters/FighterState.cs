@@ -151,9 +151,14 @@ public class FighterState : MonoBehaviour
         return base_stats.jump_strength;
     }
 
-    public Vector2 get_air_speed()
+    public float get_air_speed()
     {
         return base_stats.air_speed;
+    }
+
+    public float get_terminal_speed()
+    {
+        return base_stats.terminal_speed;
     }
 
 
