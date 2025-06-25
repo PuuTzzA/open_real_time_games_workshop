@@ -1,0 +1,2855 @@
+fileFormatVersion: 2
+guid: 09589c1dd4dc7dc459ffb52c44d46659
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1944915513518157331
+    second: dash_temp_temp_0
+  - first:
+      213: -6275812282129577950
+    second: dash_temp_temp_1
+  - first:
+      213: -4989305912571928004
+    second: dash_temp_temp_2
+  - first:
+      213: 8226125580728379607
+    second: dash_temp_temp_3
+  - first:
+      213: -2513548500117613325
+    second: dash_temp_temp_4
+  - first:
+      213: -8608415013042866238
+    second: dash_temp_temp_5
+  - first:
+      213: 8618167239219013239
+    second: dash_temp_temp_6
+  - first:
+      213: 6202641354723328055
+    second: dash_temp_temp_7
+  - first:
+      213: -1304948581253446479
+    second: dash_temp_temp_8
+  - first:
+      213: 7770730221261352956
+    second: dash_temp_temp_9
+  - first:
+      213: 5587261196460282007
+    second: dash_temp_temp_10
+  - first:
+      213: 7452865984445547987
+    second: dash_temp_temp_11
+  - first:
+      213: -2415115189369566380
+    second: dash_temp_temp_12
+  - first:
+      213: 8459113505425282495
+    second: dash_temp_temp_13
+  - first:
+      213: -695729045410883116
+    second: dash_temp_temp_14
+  - first:
+      213: -1736860337913987890
+    second: dash_temp_temp_15
+  - first:
+      213: 725708713116197734
+    second: dash_temp_temp_16
+  - first:
+      213: 5215126885766563425
+    second: dash_temp_temp_17
+  - first:
+      213: 2062041815361594250
+    second: dash_temp_temp_18
+  - first:
+      213: -9111676053723389286
+    second: dash_temp_temp_19
+  - first:
+      213: 7763786684940552845
+    second: dash_temp_temp_20
+  - first:
+      213: 179231857936591982
+    second: dash_temp_temp_21
+  - first:
+      213: -4844519364577368520
+    second: dash_temp_temp_22
+  - first:
+      213: -4056959197234007733
+    second: dash_temp_temp_23
+  - first:
+      213: 3435571144950229485
+    second: dash_temp_temp_24
+  - first:
+      213: 8661383763165569412
+    second: dash_temp_temp_25
+  - first:
+      213: 3971562089965120041
+    second: dash_temp_temp_26
+  - first:
+      213: 2473273938077252374
+    second: dash_temp_temp_27
+  - first:
+      213: -97833660672248384
+    second: dash_temp_temp_28
+  - first:
+      213: -1237873737815833815
+    second: dash_temp_temp_29
+  - first:
+      213: -7680359495036176907
+    second: dash_temp_temp_30
+  - first:
+      213: 6133044221000803362
+    second: dash_temp_temp_31
+  - first:
+      213: -7142576013866194560
+    second: dash_temp_temp_32
+  - first:
+      213: 6847974542448232962
+    second: dash_temp_temp_33
+  - first:
+      213: -5433615992844263313
+    second: dash_temp_temp_34
+  - first:
+      213: -1104249031981866272
+    second: dash_temp_temp_35
+  - first:
+      213: -3705892606560031686
+    second: dash_temp_temp_36
+  - first:
+      213: -528184487765566203
+    second: dash_temp_temp_37
+  - first:
+      213: 6372597874302995307
+    second: dash_temp_temp_38
+  - first:
+      213: -4361377546447088768
+    second: dash_temp_temp_39
+  - first:
+      213: -7949057613416631794
+    second: dash_temp_temp_40
+  - first:
+      213: 286917300895785166
+    second: dash_temp_temp_41
+  - first:
+      213: -8334507360494864289
+    second: dash_temp_temp_42
+  - first:
+      213: -240077869184723091
+    second: dash_temp_temp_43
+  - first:
+      213: 8081412045184200088
+    second: dash_temp_temp_44
+  - first:
+      213: 8660277720564631029
+    second: dash_temp_temp_45
+  - first:
+      213: 1093961758111151250
+    second: dash_temp_temp_46
+  - first:
+      213: -3077478537905538586
+    second: dash_temp_temp_47
+  - first:
+      213: -4159420071197604524
+    second: dash_temp_temp_48
+  - first:
+      213: -2449597506336510614
+    second: dash_temp_temp_49
+  - first:
+      213: 8924621506953625850
+    second: dash_temp_temp_50
+  - first:
+      213: -1854441887912651652
+    second: dash_temp_temp_51
+  - first:
+      213: 1692990229928205031
+    second: dash_temp_temp_52
+  - first:
+      213: 3883380504751896276
+    second: dash_temp_temp_53
+  - first:
+      213: -2536455998953344499
+    second: dash_temp_temp_54
+  - first:
+      213: 3830364895920257091
+    second: dash_temp_temp_55
+  - first:
+      213: 2389049853846359297
+    second: dash_temp_temp_56
+  - first:
+      213: -7829897631546125052
+    second: dash_temp_temp_57
+  - first:
+      213: -2497185576996145480
+    second: dash_temp_temp_58
+  - first:
+      213: -8727426189122032979
+    second: dash_temp_temp_59
+  - first:
+      213: -6980061242442884124
+    second: dash_temp_temp_60
+  - first:
+      213: -8852072128619406220
+    second: dash_temp_temp_61
+  - first:
+      213: 2555554781915352052
+    second: dash_temp_temp_62
+  - first:
+      213: -2976744379399769525
+    second: dash_temp_temp_63
+  - first:
+      213: -5177375830162476583
+    second: dash_temp_temp_64
+  - first:
+      213: 796019315360469510
+    second: dash_temp_temp_65
+  - first:
+      213: 459863687741234409
+    second: dash_temp_temp_66
+  - first:
+      213: -3635466958590524656
+    second: dash_temp_temp_67
+  - first:
+      213: 3059430025481765069
+    second: dash_temp_temp_68
+  - first:
+      213: 7506444376925807704
+    second: dash_temp_temp_69
+  - first:
+      213: 5153815267738111886
+    second: dash_temp_temp_70
+  - first:
+      213: 2727677235245230282
+    second: dash_temp_temp_71
+  - first:
+      213: -9046187214043368992
+    second: dash_temp_temp_72
+  - first:
+      213: -2129531604910275136
+    second: dash_temp_temp_73
+  - first:
+      213: -394603211791807479
+    second: dash_temp_temp_74
+  - first:
+      213: -1514382766512107159
+    second: dash_temp_temp_75
+  - first:
+      213: -3703697885317625434
+    second: dash_temp_temp_76
+  - first:
+      213: 736645352181142256
+    second: dash_temp_temp_77
+  - first:
+      213: 7939066465831709596
+    second: dash_temp_temp_78
+  - first:
+      213: 460403576406402024
+    second: dash_temp_temp_79
+  - first:
+      213: -676727197550990652
+    second: dash_temp_temp_80
+  - first:
+      213: 4703096797397870629
+    second: dash_temp_temp_81
+  - first:
+      213: -5692265931915599616
+    second: dash_temp_temp_82
+  - first:
+      213: 5240290152463195161
+    second: dash_temp_temp_83
+  - first:
+      213: 7860755846851189980
+    second: dash_temp_temp_84
+  - first:
+      213: -5916420525230227161
+    second: dash_temp_temp_85
+  - first:
+      213: -6193883986063392374
+    second: dash_temp_temp_86
+  - first:
+      213: -5296561960601702248
+    second: dash_temp_temp_87
+  - first:
+      213: -7465698432618478729
+    second: dash_temp_temp_88
+  - first:
+      213: -4911942992320738758
+    second: dash_temp_temp_89
+  - first:
+      213: -7405441101756281732
+    second: dash_temp_temp_90
+  - first:
+      213: 5768373006737991499
+    second: dash_temp_temp_91
+  - first:
+      213: 8938406649563360792
+    second: dash_temp_temp_92
+  - first:
+      213: -744371037321633295
+    second: dash_temp_temp_93
+  - first:
+      213: -1203991709920867283
+    second: dash_temp_temp_94
+  - first:
+      213: -7636174691630662408
+    second: dash_temp_temp_95
+  - first:
+      213: -2223530257654616600
+    second: dash_temp_temp_96
+  - first:
+      213: 4811643224451573268
+    second: dash_temp_temp_97
+  - first:
+      213: 8639445408927652727
+    second: dash_temp_temp_98
+  - first:
+      213: 2712068550678590605
+    second: dash_temp_temp_99
+  - first:
+      213: 6176999014512379000
+    second: dash_temp_temp_100
+  - first:
+      213: 8964231082013433557
+    second: dash_temp_temp_101
+  - first:
+      213: 6192538423695023347
+    second: dash_temp_temp_102
+  - first:
+      213: -2936262027397366271
+    second: dash_temp_temp_103
+  - first:
+      213: -3975430248344118985
+    second: dash_temp_temp_104
+  - first:
+      213: 2171116429209986703
+    second: dash_temp_temp_105
+  - first:
+      213: 1149238109270011925
+    second: dash_temp_temp_106
+  - first:
+      213: -7025836311618757530
+    second: dash_temp_temp_107
+  - first:
+      213: 5790028819144953922
+    second: dash_temp_temp_108
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dash_temp_temp_0
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 289
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de19a9225a54205e0800000000000000
+      internalID: -1944915513518157331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_1
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 288
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22802a6eaf5d7e8a0800000000000000
+      internalID: -6275812282129577950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_2
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 285
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c32e46df4bc62cab0800000000000000
+      internalID: -4989305912571928004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_3
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 281
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8a11db1a1192270800000000000000
+      internalID: 8226125580728379607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_4
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 258
+        width: 62
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f416ccd4f41e1dd0800000000000000
+      internalID: -2513548500117613325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_5
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 269
+        width: 65
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c7b07ca724c88880800000000000000
+      internalID: -8608415013042866238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_6
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 268
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 776ee8c6171e99770800000000000000
+      internalID: 8618167239219013239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_7
+      rect:
+        serializedVersion: 2
+        x: 3345
+        y: 267
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7308e69f275341650800000000000000
+      internalID: 6202641354723328055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_8
+      rect:
+        serializedVersion: 2
+        x: 3857
+        y: 267
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b40d34ed24e3ede0800000000000000
+      internalID: -1304948581253446479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_9
+      rect:
+        serializedVersion: 2
+        x: 4369
+        y: 267
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cffeca317fd27db60800000000000000
+      internalID: 7770730221261352956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_10
+      rect:
+        serializedVersion: 2
+        x: 4881
+        y: 267
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790d652a470f98d40800000000000000
+      internalID: 5587261196460282007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_11
+      rect:
+        serializedVersion: 2
+        x: 5393
+        y: 267
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d508793026ed6760800000000000000
+      internalID: 7452865984445547987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_12
+      rect:
+        serializedVersion: 2
+        x: 5905
+        y: 267
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b0af5f789cb7ed0800000000000000
+      internalID: -2415115189369566380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_13
+      rect:
+        serializedVersion: 2
+        x: 6417
+        y: 267
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb555953aeec46570800000000000000
+      internalID: 8459113505425282495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_14
+      rect:
+        serializedVersion: 2
+        x: 6926
+        y: 268
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d9dc5c8e164856f0800000000000000
+      internalID: -695729045410883116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_15
+      rect:
+        serializedVersion: 2
+        x: 7430
+        y: 269
+        width: 65
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eccfb2699be65e7e0800000000000000
+      internalID: -1736860337913987890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_16
+      rect:
+        serializedVersion: 2
+        x: 7932
+        y: 281
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66362b7ca3c321a00800000000000000
+      internalID: 725708713116197734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_17
+      rect:
+        serializedVersion: 2
+        x: 7959
+        y: 258
+        width: 62
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16684bc854adf5840800000000000000
+      internalID: 5215126885766563425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_18
+      rect:
+        serializedVersion: 2
+        x: 8434
+        y: 285
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8321ac1b18dd9c10800000000000000
+      internalID: 2062041815361594250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_19
+      rect:
+        serializedVersion: 2
+        x: 8939
+        y: 288
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a926265a7e2dc8180800000000000000
+      internalID: -9111676053723389286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_20
+      rect:
+        serializedVersion: 2
+        x: 9448
+        y: 289
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8a0acb0bd28ebb60800000000000000
+      internalID: 7763786684940552845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_21
+      rect:
+        serializedVersion: 2
+        x: 9960
+        y: 289
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c6eb8dc62cc7200800000000000000
+      internalID: 179231857936591982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_22
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 208
+        width: 16
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8366dd62e4fc4ccb0800000000000000
+      internalID: -4844519364577368520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_23
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 225
+        width: 6
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41fc94da19c2b7c0800000000000000
+      internalID: -4056959197234007733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_24
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 211
+        width: 25
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de9275ff0c99daf20800000000000000
+      internalID: 3435571144950229485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_25
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 207
+        width: 21
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 481e1d284aa633870800000000000000
+      internalID: 8661383763165569412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_26
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 224
+        width: 6
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a67c7bda2dd1730800000000000000
+      internalID: 3971562089965120041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_27
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 216
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b735fea85d25220800000000000000
+      internalID: 2473273938077252374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_28
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 207
+        width: 34
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5fd80ddcc64aef0800000000000000
+      internalID: -97833660672248384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_29
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 223
+        width: 13
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 923c3bcd46032dee0800000000000000
+      internalID: -1237873737815833815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_30
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 241
+        width: 63
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f5f1174bb1e96590800000000000000
+      internalID: -7680359495036176907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_31
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 210
+        width: 49
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 224e3888933fc1550800000000000000
+      internalID: 6133044221000803362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_32
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 222
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 089a74855f870ec90800000000000000
+      internalID: -7142576013866194560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_33
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 218
+        width: 62
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a8b817094e80f50800000000000000
+      internalID: 6847974542448232962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_34
+      rect:
+        serializedVersion: 2
+        x: 2306
+        y: 220
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60e2a40b0be794b0800000000000000
+      internalID: -5433615992844263313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_35
+      rect:
+        serializedVersion: 2
+        x: 2777
+        y: 225
+        width: 71
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2e6212b5beca0f0800000000000000
+      internalID: -1104249031981866272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_36
+      rect:
+        serializedVersion: 2
+        x: 2819
+        y: 219
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c2e3a1f46029cc0800000000000000
+      internalID: -3705892606560031686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_37
+      rect:
+        serializedVersion: 2
+        x: 3290
+        y: 228
+        width: 73
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d9cdeb1038ba8f0800000000000000
+      internalID: -528184487765566203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_38
+      rect:
+        serializedVersion: 2
+        x: 3331
+        y: 219
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b4d32d004007850800000000000000
+      internalID: 6372597874302995307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_39
+      rect:
+        serializedVersion: 2
+        x: 3343
+        y: 203
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08318a4aa364973c0800000000000000
+      internalID: -4361377546447088768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_40
+      rect:
+        serializedVersion: 2
+        x: 3802
+        y: 228
+        width: 73
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e02ff2d67364fa190800000000000000
+      internalID: -7949057613416631794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_41
+      rect:
+        serializedVersion: 2
+        x: 3843
+        y: 219
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0aec7d3c55bf300800000000000000
+      internalID: 286917300895785166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_42
+      rect:
+        serializedVersion: 2
+        x: 3855
+        y: 203
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5833d7b6b1e55c80800000000000000
+      internalID: -8334507360494864289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_43
+      rect:
+        serializedVersion: 2
+        x: 4314
+        y: 228
+        width: 73
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d67dfc033721bacf0800000000000000
+      internalID: -240077869184723091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_44
+      rect:
+        serializedVersion: 2
+        x: 4355
+        y: 219
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d64cc1071f62070800000000000000
+      internalID: 8081412045184200088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_45
+      rect:
+        serializedVersion: 2
+        x: 4367
+        y: 203
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f50c76e3bc7f2870800000000000000
+      internalID: 8660277720564631029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_46
+      rect:
+        serializedVersion: 2
+        x: 4826
+        y: 228
+        width: 73
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294b3164c688e2f00800000000000000
+      internalID: 1093961758111151250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_47
+      rect:
+        serializedVersion: 2
+        x: 4867
+        y: 219
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9704033999a45d0800000000000000
+      internalID: -3077478537905538586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_48
+      rect:
+        serializedVersion: 2
+        x: 4879
+        y: 203
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45503a89b75c646c0800000000000000
+      internalID: -4159420071197604524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_49
+      rect:
+        serializedVersion: 2
+        x: 5338
+        y: 228
+        width: 73
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d2128eb08410ed0800000000000000
+      internalID: -2449597506336510614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_50
+      rect:
+        serializedVersion: 2
+        x: 5379
+        y: 219
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af048c4d9ff9adb70800000000000000
+      internalID: 8924621506953625850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_51
+      rect:
+        serializedVersion: 2
+        x: 5391
+        y: 203
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c749c5e9de2b346e0800000000000000
+      internalID: -1854441887912651652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_52
+      rect:
+        serializedVersion: 2
+        x: 5850
+        y: 228
+        width: 73
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ead31fe4a5be7710800000000000000
+      internalID: 1692990229928205031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_53
+      rect:
+        serializedVersion: 2
+        x: 5891
+        y: 219
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d6f9697ef984e530800000000000000
+      internalID: 3883380504751896276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_54
+      rect:
+        serializedVersion: 2
+        x: 5903
+        y: 203
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d023af925b2bcccd0800000000000000
+      internalID: -2536455998953344499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_55
+      rect:
+        serializedVersion: 2
+        x: 6362
+        y: 228
+        width: 73
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 348f3752490382530800000000000000
+      internalID: 3830364895920257091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_56
+      rect:
+        serializedVersion: 2
+        x: 6403
+        y: 219
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d06313f2c972120800000000000000
+      internalID: 2389049853846359297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_57
+      rect:
+        serializedVersion: 2
+        x: 6415
+        y: 203
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4055504b69d965390800000000000000
+      internalID: -7829897631546125052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_58
+      rect:
+        serializedVersion: 2
+        x: 6873
+        y: 225
+        width: 71
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b67ae8c2f6385dd0800000000000000
+      internalID: -2497185576996145480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_59
+      rect:
+        serializedVersion: 2
+        x: 6915
+        y: 219
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daaa0f1fe14f1e680800000000000000
+      internalID: -8727426189122032979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_60
+      rect:
+        serializedVersion: 2
+        x: 7387
+        y: 218
+        width: 62
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb58bd2847d12f90800000000000000
+      internalID: -6980061242442884124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_61
+      rect:
+        serializedVersion: 2
+        x: 7426
+        y: 220
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c118f9c4f172580800000000000000
+      internalID: -8852072128619406220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_62
+      rect:
+        serializedVersion: 2
+        x: 7903
+        y: 210
+        width: 49
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb8d14c887277320800000000000000
+      internalID: 2555554781915352052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_63
+      rect:
+        serializedVersion: 2
+        x: 7937
+        y: 222
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b427cb622ca70b6d0800000000000000
+      internalID: -2976744379399769525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_64
+      rect:
+        serializedVersion: 2
+        x: 8421
+        y: 207
+        width: 34
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d1f8760d144628b0800000000000000
+      internalID: -5177375830162476583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_65
+      rect:
+        serializedVersion: 2
+        x: 8448
+        y: 223
+        width: 13
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 602196e89570c0b00800000000000000
+      internalID: 796019315360469510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_66
+      rect:
+        serializedVersion: 2
+        x: 8461
+        y: 241
+        width: 63
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ecdae86693c16600800000000000000
+      internalID: 459863687741234409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_67
+      rect:
+        serializedVersion: 2
+        x: 8939
+        y: 207
+        width: 21
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013ca8c001a3c8dc0800000000000000
+      internalID: -3635466958590524656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_68
+      rect:
+        serializedVersion: 2
+        x: 8959
+        y: 224
+        width: 6
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc0410c0667457a20800000000000000
+      internalID: 3059430025481765069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_69
+      rect:
+        serializedVersion: 2
+        x: 8966
+        y: 216
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85424e4d36f3c2860800000000000000
+      internalID: 7506444376925807704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_70
+      rect:
+        serializedVersion: 2
+        x: 9453
+        y: 208
+        width: 16
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8fc38f0ea7068740800000000000000
+      internalID: 5153815267738111886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_71
+      rect:
+        serializedVersion: 2
+        x: 9470
+        y: 225
+        width: 6
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac826bc5ef7aad520800000000000000
+      internalID: 2727677235245230282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_72
+      rect:
+        serializedVersion: 2
+        x: 9475
+        y: 211
+        width: 25
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e1b34758ac757280800000000000000
+      internalID: -9046187214043368992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_73
+      rect:
+        serializedVersion: 2
+        x: 9965
+        y: 208
+        width: 16
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c50b5fb9426272e0800000000000000
+      internalID: -2129531604910275136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_74
+      rect:
+        serializedVersion: 2
+        x: 9982
+        y: 225
+        width: 6
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ccbe53876168af0800000000000000
+      internalID: -394603211791807479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_75
+      rect:
+        serializedVersion: 2
+        x: 9987
+        y: 211
+        width: 25
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 961921cb5e4dbfae0800000000000000
+      internalID: -1514382766512107159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_76
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 151
+        width: 16
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a907467562d99cc0800000000000000
+      internalID: -3703697885317625434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_77
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 152
+        width: 12
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f2133e7b07193a00800000000000000
+      internalID: 736645352181142256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_78
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 152
+        width: 21
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b6d1043ea3d2e60800000000000000
+      internalID: 7939066465831709596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_79
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 153
+        width: 16
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3e5090d9ea36600800000000000000
+      internalID: 460403576406402024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_80
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 155
+        width: 32
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4caa0240338cb96f0800000000000000
+      internalID: -676727197550990652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_81
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 158
+        width: 26
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5286d218e91c44140800000000000000
+      internalID: 4703096797397870629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_82
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 161
+        width: 47
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 001ec193b420101b0800000000000000
+      internalID: -5692265931915599616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_83
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 170
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91cdb81212049b840800000000000000
+      internalID: 5240290152463195161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_84
+      rect:
+        serializedVersion: 2
+        x: 2246
+        y: 171
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdcd3ad6bc3071d60800000000000000
+      internalID: 7860755846851189980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_85
+      rect:
+        serializedVersion: 2
+        x: 2316
+        y: 187
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72182dbf0e6a4eda0800000000000000
+      internalID: -5916420525230227161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_86
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 180
+        width: 67
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8106bec457ea0aa0800000000000000
+      internalID: -6193883986063392374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_87
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 199
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8903d7f85f4de76b0800000000000000
+      internalID: -5296561960601702248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_88
+      rect:
+        serializedVersion: 2
+        x: 3261
+        y: 183
+        width: 70
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773c59b94d2846890800000000000000
+      internalID: -7465698432618478729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_89
+      rect:
+        serializedVersion: 2
+        x: 3773
+        y: 183
+        width: 70
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ac0c18fd545dbb0800000000000000
+      internalID: -4911942992320738758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_90
+      rect:
+        serializedVersion: 2
+        x: 4285
+        y: 183
+        width: 70
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c4dbcbd869a3990800000000000000
+      internalID: -7405441101756281732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_91
+      rect:
+        serializedVersion: 2
+        x: 4797
+        y: 183
+        width: 70
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b47e19effa06d0050800000000000000
+      internalID: 5768373006737991499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_92
+      rect:
+        serializedVersion: 2
+        x: 5309
+        y: 183
+        width: 70
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ea6357d799b0c70800000000000000
+      internalID: 8938406649563360792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_93
+      rect:
+        serializedVersion: 2
+        x: 5821
+        y: 183
+        width: 70
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1ea534c767ba5f0800000000000000
+      internalID: -744371037321633295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_94
+      rect:
+        serializedVersion: 2
+        x: 6333
+        y: 183
+        width: 70
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2cc6a93bef8a4fe0800000000000000
+      internalID: -1203991709920867283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_95
+      rect:
+        serializedVersion: 2
+        x: 6848
+        y: 180
+        width: 67
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fcb68e739bd60690800000000000000
+      internalID: -7636174691630662408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_96
+      rect:
+        serializedVersion: 2
+        x: 6926
+        y: 199
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ede92de20f6421e0800000000000000
+      internalID: -2223530257654616600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_97
+      rect:
+        serializedVersion: 2
+        x: 7366
+        y: 171
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 416e95bf40466c240800000000000000
+      internalID: 4811643224451573268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_98
+      rect:
+        serializedVersion: 2
+        x: 7436
+        y: 187
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b138f53d975e770800000000000000
+      internalID: 8639445408927652727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_99
+      rect:
+        serializedVersion: 2
+        x: 7890
+        y: 161
+        width: 47
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84b4b94af333a520800000000000000
+      internalID: 2712068550678590605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_100
+      rect:
+        serializedVersion: 2
+        x: 7946
+        y: 170
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874c2f560eb19b550800000000000000
+      internalID: 6176999014512379000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_101
+      rect:
+        serializedVersion: 2
+        x: 8415
+        y: 155
+        width: 32
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de1defaca8576c70800000000000000
+      internalID: 8964231082013433557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_102
+      rect:
+        serializedVersion: 2
+        x: 8455
+        y: 158
+        width: 26
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc9c4a03e050f550800000000000000
+      internalID: 6192538423695023347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_103
+      rect:
+        serializedVersion: 2
+        x: 8938
+        y: 152
+        width: 21
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ef2893e3d4047d0800000000000000
+      internalID: -2936262027397366271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_104
+      rect:
+        serializedVersion: 2
+        x: 8965
+        y: 153
+        width: 16
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7391b1a704f64d8c0800000000000000
+      internalID: -3975430248344118985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_105
+      rect:
+        serializedVersion: 2
+        x: 9454
+        y: 151
+        width: 16
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f866319a3ea512e10800000000000000
+      internalID: 2171116429209986703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_106
+      rect:
+        serializedVersion: 2
+        x: 9476
+        y: 152
+        width: 12
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5107161b8f9e2ff00800000000000000
+      internalID: 1149238109270011925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_107
+      rect:
+        serializedVersion: 2
+        x: 9966
+        y: 151
+        width: 16
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66c5ceb59173f7e90800000000000000
+      internalID: -7025836311618757530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_temp_temp_108
+      rect:
+        serializedVersion: 2
+        x: 9988
+        y: 152
+        width: 12
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 240d86cb8805a5050800000000000000
+      internalID: 5790028819144953922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
