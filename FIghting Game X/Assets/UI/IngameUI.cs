@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -15,20 +16,35 @@ public class IngameUI : MonoBehaviour
 
     private float health = 0.5f;
 
+    private PersistentPlayerManager persistentPlayerManager;
+
+    void Awake()
+    {
+        persistentPlayerManager = FindAnyObjectByType<PersistentPlayerManager>();
+    }
+
     void OnEnable()
     {
-
+        int players = persistentPlayerManager.getPlayers().Count;
         var uiDocument = GetComponent<UIDocument>();
+
         if (uiDocument != null)
         {
             root = uiDocument.rootVisualElement;
         }
         for (int i = 0; i < 4; i++)
         {
+            if (i >= players)
+            {
+                root.Q<SquareElement>($"healtbar{i}").RemoveFromHierarchy();
+                continue;
+            }
             healthbar[i] = root.Q<SquareElement>($"healtbar{i}").hierarchy.ElementAt(0).hierarchy.ElementAt(0) as PartialCircle;
             healthbar[i].Fill = health;
             healthbar[i].Arc2Fill = health;
             healthbar[i].Arc3Fill = health;
+            healthbar[i].hierarchy.ElementAt(0).style.backgroundImage = new StyleBackground(persistentPlayerManager.getPlayers()[i].GetComponent<FighterHealth>().Icon);
+            setHealth(i, 1);
         }
         color = healthbar[0].Arc3Color;
     }
