@@ -78,6 +78,19 @@ public class FighterState : MonoBehaviour
 
 
     public Facing get_facing() { return _facing; }
+    public int get_facing_int() { return (int)_facing; }
+    public float get_facing_float() { return (int)_facing; }
+    public Vector2 get_facing_vec() { return new Vector2((int)_facing, 1.0f); }
+
+    public void set_facing(Facing dir)
+    {
+        if (!flags_any_set(FighterFlags.CanTurn)) return;
+
+        _facing = dir;
+        var scale = sprite_transform.localScale;
+        scale.x = (int)dir;
+        sprite_transform.localScale = scale;
+    }
 
     public void set_facing(int dir)
     {
@@ -89,18 +102,18 @@ public class FighterState : MonoBehaviour
             var scale = sprite_transform.localScale;
             scale.x = dir;
             sprite_transform.localScale = scale;
-
         }
     }
 
-    public void set_facing(Facing dir)
+    public void force_facing(int dir)
     {
-        if (!flags_any_set(FighterFlags.CanTurn)) return;
-
-        _facing = dir;
-        var scale = sprite_transform.localScale;
-        scale.x = (int)dir;
-        sprite_transform.localScale = scale;
+        if (dir == 1 || dir == -1)
+        {
+            _facing = (Facing)dir;
+            var scale = sprite_transform.localScale;
+            scale.x = dir;
+            sprite_transform.localScale = scale;
+        }
     }
 
 
