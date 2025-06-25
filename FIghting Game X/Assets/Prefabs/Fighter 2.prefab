@@ -279,15 +279,15 @@ GameObject:
   - component: {fileID: 1556262320957081972}
   - component: {fileID: 4859815249510380014}
   - component: {fileID: 2867311719178718406}
-  - component: {fileID: 2494248781339541154}
-  - component: {fileID: 4290826000508740263}
+  - component: {fileID: 4691852704737607804}
+  - component: {fileID: 4263306457812420113}
   m_Layer: 6
-  m_Name: Fighter
+  m_Name: Fighter 2
   m_TagString: Fighter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4219656904765551352
 Transform:
   m_ObjectHideFlags: 0
@@ -652,7 +652,7 @@ MonoBehaviour:
   maxLives: 3
   qteUsed: 0
   maxHealth: 300
---- !u!114 &2494248781339541154
+--- !u!114 &4691852704737607804
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -671,7 +671,7 @@ MonoBehaviour:
   jabHitClip: {fileID: 8300000, guid: ee742a6d09ca5e54a865a6fb5182f703, type: 3}
   jumpClip: {fileID: 8300000, guid: ac94430a1eeaffd44ba31a107e0923e0, type: 3}
   punchHitClip: {fileID: 8300000, guid: afd4b3253c3f99f4d876423383636924, type: 3}
---- !u!82 &4290826000508740263
+--- !u!82 &4263306457812420113
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -872,7 +872,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7812720279473141349, guid: 0d1fbe972da0fd44284f7951bdda188a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

@@ -12,7 +12,8 @@ public class QTEManager : MonoBehaviour
     
     [Header("Intro UI & SFX")]
     [SerializeField] private GameObject finishHimPanel;
-    [SerializeField] private AudioSource finishHimVoice;
+    [SerializeField] private AudioClip finishHimVoice;
+    private AudioSource finishHimAudioSource;
 
     [Header("Minigame Prefabs")]
     [SerializeField] private GameObject mirrorSequenceUIPrefab;
@@ -36,6 +37,7 @@ public class QTEManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+        finishHimAudioSource = GetComponent<AudioSource>();
         persistentPlayerManager = FindFirstObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>();
     }
 
@@ -54,7 +56,7 @@ public class QTEManager : MonoBehaviour
         // 1) Show “Finish Him” intro
         finishHimPanel.SetActive(true);
         
-        if (finishHimVoice != null) finishHimVoice.Play();
+        if (finishHimVoice != null) finishHimAudioSource.PlayOneShot(finishHimVoice);
 
         // (optional) trigger an Animator on finishHimPanel here
         // var anim = finishHimPanel.GetComponent<Animator>();
