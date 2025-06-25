@@ -1353,9 +1353,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characters:
-  - {fileID: 3396020354287734119, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
-  - {fileID: 3396020354287734119, guid: 83a9a397c43758c4e82e232b5037d0d4, type: 3}
-  - {fileID: 3396020354287734119, guid: bc1431fab96ea714eb57e149b31b4600, type: 3}
+  - {fileID: 5433043207104148075, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
+  - {fileID: 5433043207104148075, guid: 8acb41cf5e3b93147b613f55baae739e, type: 3}
+  - {fileID: 5433043207104148075, guid: 379e3478b07fa4046aa258ad9a02e899, type: 3}
   selectedCharacter: 0
   spriteRenderers:
   - {fileID: 8711834424833251530, guid: 7db8847ed6479f5cdbcc91b2038ebdfe, type: 3}

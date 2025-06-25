@@ -277,6 +277,8 @@ GameObject:
   - component: {fileID: 8266158835667872492}
   - component: {fileID: 4792304623778786022}
   - component: {fileID: 1556262320957081972}
+  - component: {fileID: 4859815249510380014}
+  - component: {fileID: 2867311719178718406}
   m_Layer: 6
   m_Name: Fighter
   m_TagString: Fighter
@@ -521,6 +523,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f9459d25-f3cd-4af8-99d7-0b8d91ea1fb2
+    m_ActionName: 'QTE/Smash[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 51fefa3a-2bd2-4987-83e4-2274fa66216d
+    m_ActionName: 'Player/test-minigame[/XInputControllerWindows/leftTrigger,/Keyboard/m]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -612,6 +622,33 @@ MonoBehaviour:
   remaining_flying_frames: 0
   animation_data: {fileID: 1333684296444455915}
   passive: 1
+--- !u!114 &4859815249510380014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433043207104148075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82f2d5bf012bdc4c962dd55300e63a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2867311719178718406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433043207104148075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d32cc61bbfbb2c419aa18ca06320dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxLives: 3
+  qteUsed: 0
+  maxHealth: 300
 --- !u!1 &7739751719961853797
 GameObject:
   m_ObjectHideFlags: 0

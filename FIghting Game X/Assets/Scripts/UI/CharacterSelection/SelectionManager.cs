@@ -16,7 +16,6 @@ public class SelectionManager : MonoBehaviour
     [Header("Character Selection")]
     public GameObject[] characters;
     public int selectedCharacter = -1;
-    [SerializeField] private List<SpriteRenderer> spriteRenderers;
     
     [Header("UI References")]
     public Image characterDisplayImage;
@@ -38,6 +37,9 @@ public class SelectionManager : MonoBehaviour
     // Block onSubmit to prevent accidentaly getting ready by pressing x to join
     [SerializeField] private float submitBlockDuration = 0.3f;
     private float _submitBlockUntil;
+    
+    // For testing
+    private string fightScene = "TestSceneMartin";
 
     private void Awake()
     {
@@ -76,7 +78,7 @@ public class SelectionManager : MonoBehaviour
     
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "CharacterController")
+        if (scene.name == "TestSceneMartin")
         {
             // Hide selection UI
             characterSelectionUI.SetActive(false);
@@ -159,7 +161,7 @@ public class SelectionManager : MonoBehaviour
         if (_isReady)
         {
             if (_instances.All(x => x._isReady))
-                SceneManager.LoadScene("CharacterController");
+                SceneManager.LoadScene(fightScene);
         }
     }
     
@@ -172,7 +174,7 @@ public class SelectionManager : MonoBehaviour
         
         if (characterDisplayImage != null)
         {
-            SpriteRenderer spriteRenderer = spriteRenderers[index].GetComponent<SpriteRenderer>();
+            SpriteRenderer spriteRenderer = characters[index].GetComponentInChildren<SpriteRenderer>();
             characterDisplayImage.sprite = spriteRenderer.sprite;
             characterDisplayImage.color = spriteRenderer.color;
             characterNameText.text = characters[index].name;
