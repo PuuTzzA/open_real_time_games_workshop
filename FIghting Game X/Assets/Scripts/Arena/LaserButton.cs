@@ -9,16 +9,11 @@ public class LaserButton : MonoBehaviour
     [SerializeField] public float activeTime;
     [SerializeField] float cooldownTime;
     private bool isPressed = false;
-    private bool isLaserActive = false;
-    private bool isOnCooldown = false;
+    [HideInInspector]
+    public bool isLaserActive = false;
+    [HideInInspector]
+    public bool isOnCooldown = false;
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Fighter") && !isPressed && !isLaserActive && !isOnCooldown) {
-            Debug.Log("Button pressed");
-            StartCoroutine(ActivateLaser());
-        }
-    }
 
     private void PressButton() {
         isPressed = true;
@@ -31,7 +26,16 @@ public class LaserButton : MonoBehaviour
         buttonPressed.enabled = false;
     }
 
-    private IEnumerator ActivateLaser() {
+    public void TriggerLaser()
+    {
+        if (!isPressed)
+        {
+            StartCoroutine(ActivateLaser());
+        }
+    }
+
+    private IEnumerator ActivateLaser()
+    {
         PressButton();
         isLaserActive = true;
         laser.SetActive(true);
