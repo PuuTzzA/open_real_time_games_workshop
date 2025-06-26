@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -49,29 +50,32 @@ public class IngameUI : MonoBehaviour
             setHealth(i, 1);
         }
         color = healthbar[0].Arc3Color;
+        Debug.Log(" " + healthbar[1].Fill + " " + healthbar[1].Arc2Fill + " " + healthbar[1].Arc3Fill);
     }
 
     public void setHealth(int playerid, float health)
     {
+        health /= 2;
         this.health = health;
-        healthbar[playerid].Arc2Fill = health / 2;
-        healthbar[playerid].Arc3Fill = health / 2;
+        
+        healthbar[playerid].Arc2Fill = Math.Clamp(health , 0f, 1f);
+        healthbar[playerid].Arc3Fill = Math.Clamp(health , 0f, 1f);
     }
 
     public void setNewHealth(int playerid, float health)
     {
+        health /= 2;
         this.health = health;
-        healthbar[playerid].Arc3Fill = health / 2;
+        health = healthbar[playerid].Arc3Fill = Math.Clamp(health, 0f, 1f);
         //healthbar[playerid].Arc3Color = blink_color;
         StartCoroutine(DelayedArc2Fill(playerid, health));
-        StartCoroutine(DelayedColorChange(playerid, color));
+        //StartCoroutine(DelayedColorChange(playerid, color));
     }
 
     IEnumerator DelayedArc2Fill(int playerid, float health)
     {
         yield return new WaitForSeconds(removed_health_duration);
-        healthbar[playerid].Arc2Fill = health / 2;
-
+        healthbar[playerid].Arc2Fill = health;
     }
 
     IEnumerator DelayedColorChange(int playerid, Color color)
@@ -82,11 +86,11 @@ public class IngameUI : MonoBehaviour
 
     public void changeStocks(int playerid, int stocks)
     {
-        healthbar[playerid].parent.hierarchy.ElementAt(0).style.backgroundImage = new StyleBackground(this.stocks[stocks]);
+        healthbar[playerid].hierarchy.ElementAt(0).style.backgroundImage = new StyleBackground(this.stocks[stocks]);
     }
     public void removeExtraStock(int playerid)
     {
-        healthbar[playerid].parent.hierarchy.ElementAt(0).style.backgroundImage = new StyleBackground(this.stocks[4]);
+        healthbar[playerid].hierarchy.ElementAt(0).style.backgroundImage = new StyleBackground(this.stocks[4]);
 
     }
 }

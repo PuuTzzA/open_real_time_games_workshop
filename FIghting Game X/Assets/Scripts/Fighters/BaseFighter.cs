@@ -24,15 +24,22 @@ public class BaseFighter : MonoBehaviour
     private DelayedActions delayed_actions;
     
     private PlayerSounds player_sounds;
+    public Animator animator;
+
+    public SubRoutine dash_routine;
+    public SubRoutine heavy_up_routine;
+    public SubRoutine heavy_down_routine;
+
+    // Tuple with x and y position (not a transform)
+    public Vector2 deathBounds = new Vector2(-15.0f, -8.0f);
+
+    private SubRoutine current_subroutine = null;
+    public bool died = false;
 
     private void Awake()
     {
         player_sounds = GetComponent<PlayerSounds>();
-    }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
         event_buffer = fighter_input.event_buffer;
 
         event_buffer.register(EventType.Jump, jump_action);
@@ -44,6 +51,10 @@ public class BaseFighter : MonoBehaviour
         event_buffer.register(EventType.Ult, ult_action);
 
         delayed_actions = new DelayedActions();
+
+        dash_routine = new SubRoutine(14, dash_tick);
+        heavy_up_routine = new SubRoutine(25, heavy_up_tick);
+        heavy_down_routine = new SubRoutine(180, heavy_down_tick);
     }
 
     public void FixedUpdate()
@@ -55,6 +66,11 @@ public class BaseFighter : MonoBehaviour
         foreach (var contact in contacts)
         {
             handle_contact(contact);
+        }
+
+        if (!died)
+        {
+            checkDeath();
         }
 
         check_signals();
@@ -76,16 +92,7 @@ public class BaseFighter : MonoBehaviour
         }
         else /**/
 
-        if(state.flags_any_set(FighterFlags.UseGravity))
-        {
-            rigidbody.gravityScale = 1.0f;
-            rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
-        } else
-        {
-            rigidbody.gravityScale = 0.0f;
-            rigidbody.linearVelocityY = 0.0f;
-            rigidbody.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
-        }
+        freezeXY(state.flags_any_set(FighterFlags.FreezeX), state.flags_any_set(FighterFlags.FreezeY));
 
         if (state.remaining_flying_frames > 0)
         {
@@ -96,20 +103,34 @@ public class BaseFighter : MonoBehaviour
             process_movement();
         }
 
+        if (current_subroutine == null || !current_subroutine.tick()) current_subroutine = null;
+
         debug_text.SetText(state.get_action() + "\n" + health.GetCurrentHealth() + "/" + health.maxHealth);
 
         state.set_grounded(false);
     }
 
+    private void checkDeath()
+    {
+        if (this.transform.position.x < deathBounds.x ||
+            transform.position.x > (-1 * deathBounds.x) || transform.position.y < deathBounds.y ||
+            transform.position.y > (-1f * deathBounds.y))
+        {
+            died = true;
+            health.TakeArenaDamage(1000);
+        }
+    }
+    
+
     public void process_movement()
     {
         state.set_facing(fighter_input.direction.x);
 
-        if(state.is_dashing())
-        {
-            rigidbody.linearVelocityX = state.get_dash_speed();
-            return;
-        }
+        //if(state.is_dashing())
+        //{
+        //    rigidbody.linearVelocityX = state.get_dash_speed();
+        //    return;
+        //}
 
         if (state.is_grounded())
         {
@@ -198,6 +219,91 @@ public class BaseFighter : MonoBehaviour
     }
 
 
+    public void start_subroutine(SubRoutine routine)
+    {
+        if (current_subroutine != null) return;
+
+        routine.start();
+        current_subroutine = routine;
+    }
+
+
+
+    public void freezeXY(bool x, bool y)
+    {
+        if (x)
+        {
+            rigidbody.linearVelocityX = 0.0f;
+            rigidbody.constraints |= RigidbodyConstraints2D.FreezePositionX;
+        }
+        else
+        {
+            rigidbody.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+        }
+
+        if (y)
+        {
+            rigidbody.gravityScale = 0.0f;
+            rigidbody.linearVelocityY = 0.0f;
+            rigidbody.constraints |= RigidbodyConstraints2D.FreezePositionY;
+        }
+        else
+        {
+            rigidbody.gravityScale = 1.0f;
+            rigidbody.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+        }
+    }
+
+
+    public bool dash_tick(int index)
+    {
+        if (index > 5)
+        {
+            rigidbody.linearVelocityX = state.dash_speed * state.get_facing_float();
+            return true;
+        }
+        rigidbody.linearVelocityX = 0.0f;
+        return true;
+    }
+
+    public bool heavy_up_tick(int index)
+    {
+        if (index < 18)
+        {
+            freezeXY(true, true);
+            return true;
+        }
+
+        if (index >= 18)
+        {
+            rigidbody.linearVelocity = new Vector2(3.0f * state.get_facing_float(), 15.0f);
+            return true;
+        }
+        return true;
+    }
+
+    public bool heavy_down_tick(int index)
+    {
+        if (index <= 28)
+        {
+            freezeXY(true, true);
+            return true;
+        } else
+        {
+            if(state.is_grounded())
+            {
+                animator.speed = 1.0f;
+                return false;
+            } else
+            {
+                rigidbody.linearVelocityY = -32.0f;
+                return true;
+            }
+
+        }
+    }
+
+
     public bool jump_action()
     {
         if (state.can_jump())
@@ -232,6 +338,15 @@ public class BaseFighter : MonoBehaviour
         state.force_facing(input.direction.x);
         player_sounds.PlayHeavy();
         state.start_action((FighterAction)((int)(FighterAction.HeavySide) - input.direction.y));
+        switch(input.direction.y)
+        {
+            case -1:
+                start_subroutine(heavy_down_routine);
+                break;
+            case 1:
+                start_subroutine(heavy_up_routine);
+                break;
+        }
         return true;
     }
 
@@ -249,6 +364,8 @@ public class BaseFighter : MonoBehaviour
         state.force_facing(input.direction.x);
         player_sounds.PlayDash();
         state.dash(state.base_stats.dash_factor * state.get_ground_speed());
+        start_subroutine(dash_routine);
+
         return true;
     }
 
