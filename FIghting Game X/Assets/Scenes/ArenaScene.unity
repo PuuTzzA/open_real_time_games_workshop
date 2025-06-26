@@ -401,8 +401,8 @@ GameObject:
   m_Component:
   - component: {fileID: 172278666}
   - component: {fileID: 172278665}
-  - component: {fileID: 172278668}
   - component: {fileID: 172278667}
+  - component: {fileID: 172278668}
   m_Layer: 0
   m_Name: LazerPlatform1
   m_TagString: Untagged

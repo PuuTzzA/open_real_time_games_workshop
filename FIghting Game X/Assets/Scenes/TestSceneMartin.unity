@@ -1465,6 +1465,7 @@ GameObject:
   - component: {fileID: 1456570951}
   - component: {fileID: 1456570953}
   - component: {fileID: 1456570952}
+  - component: {fileID: 1456570954}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -1505,6 +1506,8 @@ MonoBehaviour:
   laser: {fileID: 1410388920}
   activeTime: 10
   cooldownTime: 15
+  isLaserActive: 0
+  isOnCooldown: 0
 --- !u!61 &1456570953
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1551,6 +1554,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.15, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1456570954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456570950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f2067f958ef4d41848f4cb0fae57c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserButton: {fileID: 1456570952}
 --- !u!1 &1467441384
 GameObject:
   m_ObjectHideFlags: 0
