@@ -267,6 +267,7 @@ public class FighterHealth : MonoBehaviour
 
         qteUsed = true;
         currentHealth = maxHealth;
+        ingameUI.setHealth(playerInput.playerIndex, currentHealth/maxHealth);
     }
     
 

@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using System;
 using System.Collections.Generic;
+using UnityEngine.UIElements;
 
 public class QTEManager : MonoBehaviour
 {
@@ -46,7 +47,7 @@ public class QTEManager : MonoBehaviour
         Debug.Log($"{fallen.name} has fallen! {killer.name} is the killer. Starting QTE...");
         PauseAllExcept(fallen, killer);
         _ingameUI = FindAnyObjectByType<IngameUI>(FindObjectsInactive.Include);
-        _ingameUI.gameObject.SetActive(false);
+        _ingameUI.gameObject.GetComponent<UIDocument>().rootVisualElement.style.display = DisplayStyle.None;
         
         p1Input = fallen.GetComponent<PlayerInput>();
         p2Input = killer.GetComponent<PlayerInput>();
@@ -188,9 +189,10 @@ public class QTEManager : MonoBehaviour
 
     private void ResumeAll()
     {
-        _ingameUI.gameObject.SetActive(true);
+        _ingameUI.GetComponent<UIDocument>().rootVisualElement.style.display = DisplayStyle.Flex;
         foreach (var comp in pausedComponents)
         {
+            Debug.Log("Paused back to life " + comp.gameObject.name);
             if (comp != null) comp.enabled = true;
         }
         pausedComponents.Clear();

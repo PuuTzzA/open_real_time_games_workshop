@@ -58,24 +58,24 @@ public class IngameUI : MonoBehaviour
         health /= 2;
         this.health = health;
         
-        healthbar[playerid].Arc2Fill = Math.Clamp(health / 2, 0f, 1f);
-        healthbar[playerid].Arc3Fill = Math.Clamp(health / 2, 0f, 1f);
+        healthbar[playerid].Arc2Fill = Math.Clamp(health , 0f, 1f);
+        healthbar[playerid].Arc3Fill = Math.Clamp(health , 0f, 1f);
     }
 
     public void setNewHealth(int playerid, float health)
     {
         health /= 2;
         this.health = health;
-        health = healthbar[playerid].Arc3Fill = Math.Clamp(health / 2, 0f, 1f);
+        health = healthbar[playerid].Arc3Fill = Math.Clamp(health, 0f, 1f);
         //healthbar[playerid].Arc3Color = blink_color;
         StartCoroutine(DelayedArc2Fill(playerid, health));
-        StartCoroutine(DelayedColorChange(playerid, color));
+        //StartCoroutine(DelayedColorChange(playerid, color));
     }
 
     IEnumerator DelayedArc2Fill(int playerid, float health)
     {
         yield return new WaitForSeconds(removed_health_duration);
-        healthbar[playerid].Arc2Fill = health / 2;
+        healthbar[playerid].Arc2Fill = health;
     }
 
     IEnumerator DelayedColorChange(int playerid, Color color)
