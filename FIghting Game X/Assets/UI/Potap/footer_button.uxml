@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+>
+    <ui:Button text="Button" name="Cancel_button" class="footer_button" style="flex-direction: row; background-image: none; justify-content: flex-start; -unity-text-align: lower-left;">
+        <ui:VisualElement name="Button_Image" class="footer_button_image" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/xbox%20buttons_2.asset?fileID=21300000&amp;guid=db0577bb196ad9d43968ce4acb3dd67e&amp;type=2#xbox buttons_2&quot;); width: auto; height: auto;" />
+        <ui:Label text="LABEL" name="Button_label" class="footer_button_label" style="width: 61%; margin-top: 9px; margin-left: 4px; align-self: auto;" />
+    </ui:Button>
+</ui:UXML>

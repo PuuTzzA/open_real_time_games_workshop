@@ -11,7 +11,7 @@ public struct EventData
 
 public class FighterEvent
 {
-    public const int DEFAULT_TTL = 8;
+    public const int DEFAULT_TTL = 12;
 
     public EventData data;
     public int ttl;
