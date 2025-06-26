@@ -49,10 +49,12 @@ public class IngameUI : MonoBehaviour
             setHealth(i, 1);
         }
         color = healthbar[0].Arc3Color;
+        Debug.Log(" " + healthbar[1].Fill + " " + healthbar[1].Arc2Fill + " " + healthbar[1].Arc3Fill);
     }
 
     public void setHealth(int playerid, float health)
     {
+        health /= 2;
         this.health = health;
         healthbar[playerid].Arc2Fill = health / 2;
         healthbar[playerid].Arc3Fill = health / 2;
@@ -60,6 +62,7 @@ public class IngameUI : MonoBehaviour
 
     public void setNewHealth(int playerid, float health)
     {
+        health /= 2;
         this.health = health;
         healthbar[playerid].Arc3Fill = health / 2;
         //healthbar[playerid].Arc3Color = blink_color;
