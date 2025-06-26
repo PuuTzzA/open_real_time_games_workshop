@@ -37,6 +37,8 @@ public class AnimationData : MonoBehaviour
     public FighterFlags flags;
     public FighterSignals signals;
 
+    public Animator animator;
+
     public void signal_finished()
     {
         signals |= FighterSignals.Finished;
@@ -45,5 +47,10 @@ public class AnimationData : MonoBehaviour
     public void signal_jump()
     {
         signals |= FighterSignals.ShouldJump;
+    }
+
+    public void freeze_frame()
+    {
+        animator.speed = 0;
     }
 }
