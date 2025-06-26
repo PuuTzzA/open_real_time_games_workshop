@@ -330,7 +330,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bafa6772735030d468cc44e50457799c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stocks: []
+  stocks:
+  - {fileID: -4510105313863743945, guid: 07012ded1e89f6746b447a49c4a8998e, type: 3}
+  - {fileID: -5160945545526505469, guid: 12a4a17866ad91d4988467468b748027, type: 3}
+  - {fileID: -1893067389454009108, guid: ca546060b7a0c6d4380060bcd881d141, type: 3}
+  - {fileID: -6752804911035176022, guid: 35bf7b9c656afe847b5704883778c32f, type: 3}
+  - {fileID: -2905491457219612264, guid: cf17d7a3f696394479416b5935d72e67, type: 3}
   blink_duration: 0.2
   removed_health_duration: 0.2
   blink_color: {r: 1, g: 1, b: 1, a: 1}

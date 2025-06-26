@@ -29,6 +29,7 @@ public class FighterHealth : MonoBehaviour
         ingameUI = FindAnyObjectByType<IngameUI>(FindObjectsInactive.Include);
         currentHealth = maxHealth;
         currentLives = maxLives;
+        //ingameUI.changeStocks(playerInput.playerIndex, currentLives);
         persistentPlayerManager = FindFirstObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>();
     }
 
@@ -45,7 +46,8 @@ public class FighterHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-        StartCoroutine(HandleDeath(attacker));
+            Debug.Log("Start");
+            StartCoroutine(HandleDeath(attacker));
         }
     }
 
@@ -70,10 +72,14 @@ public class FighterHealth : MonoBehaviour
     private IEnumerator HandleDeath(GameObject killer)
     {
         currentLives--;
+        Debug.Log("hallo");
+        ingameUI.changeStocks(playerInput.playerIndex, currentLives);
+        Debug.Log("thaui");
+
         Debug.Log($"{this.gameObject.name} has died. Killer: {killer.name}");
         Debug.Log($"Current Lives: {currentLives}, Current Health: {currentHealth}");
         Debug.Log($"QTE Used: {qteUsed}");
-        
+
 
         if (currentLives <= 0)
         {
@@ -103,19 +109,19 @@ public class FighterHealth : MonoBehaviour
         {
             qteFinished = true;
         });
-        
+
         while (!qteFinished)
         {
             yield return null; // Wait until QTE is finished
         }
         Debug.Log("QTE finished.");
     }
-    
+
     private IEnumerator DelayedHandleDeath(GameObject killer)
     {
         yield return new WaitForSeconds(0.3f); // Delay before handling death
     }
-    
+
     private IEnumerator DelayedHandleArenaDeath()
     {
         yield return new WaitForSeconds(0.3f); // Delay before handling arena death
@@ -125,7 +131,9 @@ public class FighterHealth : MonoBehaviour
     private void HandleArenaDeath()
     {
         currentLives--;
-        
+        ingameUI.changeStocks(playerInput.playerIndex, currentLives);
+
+
 
         if (currentLives == 0)
         {
@@ -150,6 +158,8 @@ public class FighterHealth : MonoBehaviour
     public void GrantExtraLife()
     {
         currentLives = 1;
+        ingameUI.changeStocks(playerInput.playerIndex, 4);
+
         qteUsed = true;
         currentHealth = maxHealth;
     }
@@ -158,10 +168,10 @@ public class FighterHealth : MonoBehaviour
     {
         // TODO: Handle the death of the fighter, such as disabling controls, playing death animation, etc.
         Debug.Log("Fighter has died. Game Over.");
-        
+
         List<PlayerInput> playersAlive = persistentPlayerManager.getAlivePlayers();
         Debug.Log($"Players alive: {playersAlive.Count}");
-        
+
         // Check if there are still more than one fighter alive
         if (playersAlive.Count <= 1)
         {
@@ -171,7 +181,7 @@ public class FighterHealth : MonoBehaviour
             playersAlive[0].SwitchCurrentActionMap("UI");
 
             var winUI = FindAnyObjectByType<WinGameUI>(FindObjectsInactive.Include);
-            
+
             if (winUI != null)
             {
                 winUI.ShowWinner(winnerIndex);
@@ -188,7 +198,7 @@ public class FighterHealth : MonoBehaviour
         // Function to handle the finishing move to absolutely anihilate the fighter
         // TODO: Play the finishing animation
         Debug.Log($"{killer.name} has finished {this.gameObject.name}!");
-        
+
         // see if there are still more than one fighter alive
         return Die();
     }

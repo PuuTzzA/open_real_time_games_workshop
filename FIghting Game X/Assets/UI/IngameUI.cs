@@ -85,11 +85,11 @@ public class IngameUI : MonoBehaviour
 
     public void changeStocks(int playerid, int stocks)
     {
-        healthbar[playerid].parent.hierarchy.ElementAt(0).style.backgroundImage = new StyleBackground(this.stocks[stocks]);
+        healthbar[playerid].hierarchy.ElementAt(0).style.backgroundImage = new StyleBackground(this.stocks[stocks]);
     }
     public void removeExtraStock(int playerid)
     {
-        healthbar[playerid].parent.hierarchy.ElementAt(0).style.backgroundImage = new StyleBackground(this.stocks[4]);
+        healthbar[playerid].hierarchy.ElementAt(0).style.backgroundImage = new StyleBackground(this.stocks[4]);
 
     }
 }
