@@ -11,14 +11,16 @@ public enum FighterFlags
     CanJump = 0x04,
     Mobile = CanJump | CanTurn | CanMove,
 
-    UseGravity = 0x08,
+    Interruptable = 0x08,
 
     BlockSide = 0x10,
     BlockUp = 0x20,
 
-    Interruptable = 0x40,
+    FreezeX = 0x40,
+    FreezeY = 0x80,
 
-    Idle = CanJump | CanTurn | CanMove | UseGravity | Interruptable,
+
+    Idle = CanJump | CanTurn | CanMove | Interruptable,
 }
 
 [Flags]

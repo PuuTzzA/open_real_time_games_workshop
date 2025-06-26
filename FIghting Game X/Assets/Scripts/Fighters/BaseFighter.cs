@@ -24,15 +24,17 @@ public class BaseFighter : MonoBehaviour
     private DelayedActions delayed_actions;
     
     private PlayerSounds player_sounds;
+    public Animator animator;
+
+    public SubRoutine dash_routine;
+
+
+    private SubRoutine current_subroutine = null;
 
     private void Awake()
     {
         player_sounds = GetComponent<PlayerSounds>();
-    }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
         event_buffer = fighter_input.event_buffer;
 
         event_buffer.register(EventType.Jump, jump_action);
@@ -44,6 +46,8 @@ public class BaseFighter : MonoBehaviour
         event_buffer.register(EventType.Ult, ult_action);
 
         delayed_actions = new DelayedActions();
+
+        dash_routine = new SubRoutine(14, dash_tick);
     }
 
     public void FixedUpdate()
@@ -76,16 +80,7 @@ public class BaseFighter : MonoBehaviour
         }
         else /**/
 
-        if(state.flags_any_set(FighterFlags.UseGravity))
-        {
-            rigidbody.gravityScale = 1.0f;
-            rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
-        } else
-        {
-            rigidbody.gravityScale = 0.0f;
-            rigidbody.linearVelocityY = 0.0f;
-            rigidbody.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
-        }
+        freezeXY(state.flags_any_set(FighterFlags.FreezeX), state.flags_any_set(FighterFlags.FreezeY));
 
         if (state.remaining_flying_frames > 0)
         {
@@ -96,6 +91,8 @@ public class BaseFighter : MonoBehaviour
             process_movement();
         }
 
+        if (current_subroutine == null || !current_subroutine.tick()) current_subroutine = null;
+
         debug_text.SetText(state.get_action() + "\n" + health.GetCurrentHealth() + "/" + health.maxHealth);
 
         state.set_grounded(false);
@@ -105,11 +102,11 @@ public class BaseFighter : MonoBehaviour
     {
         state.set_facing(fighter_input.direction.x);
 
-        if(state.is_dashing())
-        {
-            rigidbody.linearVelocityX = state.get_dash_speed();
-            return;
-        }
+        //if(state.is_dashing())
+        //{
+        //    rigidbody.linearVelocityX = state.get_dash_speed();
+        //    return;
+        //}
 
         if (state.is_grounded())
         {
@@ -198,6 +195,53 @@ public class BaseFighter : MonoBehaviour
     }
 
 
+    public void start_subroutine(SubRoutine routine)
+    {
+        if (current_subroutine != null) return;
+
+        routine.start();
+        current_subroutine = routine;
+    }
+
+
+
+    public void freezeXY(bool x, bool y)
+    {
+        if (x)
+        {
+            rigidbody.linearVelocityX = 0.0f;
+            rigidbody.constraints |= RigidbodyConstraints2D.FreezePositionX;
+        }
+        else
+        {
+            rigidbody.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+        }
+
+        if (y)
+        {
+            rigidbody.gravityScale = 0.0f;
+            rigidbody.linearVelocityY = 0.0f;
+            rigidbody.constraints |= RigidbodyConstraints2D.FreezePositionY;
+        }
+        else
+        {
+            rigidbody.gravityScale = 1.0f;
+            rigidbody.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+        }
+    }
+
+
+    public void dash_tick(int index)
+    {
+        if (index > 5)
+        {
+            rigidbody.linearVelocityX = state.dash_speed * state.get_facing_float();
+            return;
+        }
+        rigidbody.linearVelocityX = 0.0f;
+    }
+
+
     public bool jump_action()
     {
         if (state.can_jump())
@@ -249,6 +293,9 @@ public class BaseFighter : MonoBehaviour
         state.force_facing(input.direction.x);
         player_sounds.PlayDash();
         state.dash(state.base_stats.dash_factor * state.get_ground_speed());
+
+        start_subroutine(dash_routine);
+
         return true;
     }
 
