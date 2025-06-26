@@ -140,10 +140,12 @@ public class PersistentPlayerManager : MonoBehaviour
         return players;
     }
 
-    public bool isGameFinished()
+    public List<PlayerInput> getAlivePlayers()
     {
-        int aliveCount = players.Count(p => p.GetComponent<FighterHealth>().GetCurrentLives() > 0);
-        return aliveCount <= 1;
+        List<PlayerInput> alivePlayers = players
+            .Where(p => p.GetComponent<FighterHealth>().GetCurrentLives() > 0)
+            .ToList();
+        return alivePlayers;
     }
 
 }

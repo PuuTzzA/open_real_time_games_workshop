@@ -63,6 +63,7 @@ public class BaseFighter : MonoBehaviour
 
         fighter_input.dispatch_events();
 
+        
         event_buffer.process();
 
         /*

@@ -654,9 +654,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Icon: {fileID: 1398893948369281781, guid: 71f95f6eb207cc1479db5e6fb700d7f9, type: 3}
-  maxLives: 3
+  maxLives: 1
   qteUsed: 0
-  maxHealth: 300
+  maxHealth: 10
 --- !u!114 &2494248781339541154
 MonoBehaviour:
   m_ObjectHideFlags: 0
