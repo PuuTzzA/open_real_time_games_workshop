@@ -15,6 +15,7 @@ public class WinGameUI : MonoBehaviour
     public void ShowWinner(int winnerIndex)
     {
         this.gameObject.SetActive(true);
+        FindAnyObjectByType<IngameUI>(FindObjectsInactive.Include).gameObject.SetActive(false);
 
         if (winnerIndex < 0)
         {

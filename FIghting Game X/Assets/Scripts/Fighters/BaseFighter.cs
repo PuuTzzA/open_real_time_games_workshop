@@ -30,8 +30,11 @@ public class BaseFighter : MonoBehaviour
     public SubRoutine heavy_up_routine;
     public SubRoutine heavy_down_routine;
 
+    // Tuple with x and y position (not a transform)
+    public Vector2 deathBounds = new Vector2(-15.0f, -8.0f);
 
     private SubRoutine current_subroutine = null;
+    public bool died = false;
 
     private void Awake()
     {
@@ -63,6 +66,11 @@ public class BaseFighter : MonoBehaviour
         foreach (var contact in contacts)
         {
             handle_contact(contact);
+        }
+
+        if (!died)
+        {
+            checkDeath();
         }
 
         check_signals();
@@ -101,6 +109,18 @@ public class BaseFighter : MonoBehaviour
 
         state.set_grounded(false);
     }
+
+    private void checkDeath()
+    {
+        if (this.transform.position.x < deathBounds.x ||
+            transform.position.x > (-1 * deathBounds.x) || transform.position.y < deathBounds.y ||
+            transform.position.y > (-1f * deathBounds.y))
+        {
+            died = true;
+            health.TakeArenaDamage(1000);
+        }
+    }
+    
 
     public void process_movement()
     {
