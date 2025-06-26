@@ -63,6 +63,7 @@ public class BaseFighter : MonoBehaviour
 
         fighter_input.dispatch_events();
 
+        
         event_buffer.process();
 
         /*
@@ -90,11 +91,6 @@ public class BaseFighter : MonoBehaviour
         {
             state.remaining_flying_frames--;
         }
-        else if (state.remaining_dash_frames > 0)
-        {
-            rigidbody.linearVelocityX = state.dash_speed;
-            state.remaining_dash_frames--;
-        }
         else
         {
             process_movement();
@@ -105,23 +101,15 @@ public class BaseFighter : MonoBehaviour
         state.set_grounded(false);
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        foreach (var contact in collision.contacts)
-            handle_contact(contact);
-    }
-
-    public void handle_contact(ContactPoint2D contact)
-    {
-        if (contact.normal.y > 0.7f)
-        {
-            state.set_grounded(true);
-        }
-    }
-
     public void process_movement()
     {
         state.set_facing(fighter_input.direction.x);
+
+        if(state.is_dashing())
+        {
+            rigidbody.linearVelocityX = state.get_dash_speed();
+            return;
+        }
 
         if (state.is_grounded())
         {
@@ -129,11 +117,16 @@ public class BaseFighter : MonoBehaviour
         }
         else
         {
-            float dist = (!state.flags_any_set(FighterFlags.CanMove) ? 0.0f : fighter_input.direction.x) * state.get_air_speed().x - rigidbody.linearVelocityX;
+            float dist = (!state.flags_any_set(FighterFlags.CanMove) ? 0.0f : fighter_input.direction.x) * state.get_air_speed() - rigidbody.linearVelocityX;
 
             float delta = (dist * 5.0f + 2.0f * Math.Sign(dist)) * Time.fixedDeltaTime;
             rigidbody.linearVelocityX += delta;
-            rigidbody.linearVelocityX = Math.Clamp(rigidbody.linearVelocityX, -state.get_air_speed().x, state.get_air_speed().x);
+            rigidbody.linearVelocityX = Math.Clamp(rigidbody.linearVelocityX, -state.get_air_speed(), state.get_air_speed());
+        }
+
+        if(rigidbody.linearVelocityY < state.get_terminal_speed())
+        {
+            rigidbody.linearVelocityY = state.get_terminal_speed();
         }
     }
 
@@ -165,13 +158,6 @@ public class BaseFighter : MonoBehaviour
             state.available_air_jumps--;
         }
         rigidbody.linearVelocityY = state.get_jump_strength();
-    }
-
-    public void dash(float speed)
-    {
-        state.dash_speed = speed;
-        state.remaining_dash_frames = 7;
-        state.start_action(FighterAction.Dash);
     }
 
     public void knockback(Vector2 direction)
@@ -218,7 +204,7 @@ public class BaseFighter : MonoBehaviour
         {
             player_sounds.PlayJump();
             state.start_action(FighterAction.Jump);
-            delayed_actions.push(new DelayedAction(jump, 8));
+            delayed_actions.push(new DelayedAction(jump, 6));
             return true;
         }
         return false;
@@ -229,9 +215,9 @@ public class BaseFighter : MonoBehaviour
     {
         if (!input.pressed) return true;
 
-        state.set_facing(input.direction.x);
-        if (state.get_action() == FighterAction.JabSide) return false;
+        if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
 
+        state.force_facing(input.direction.x);
         player_sounds.PlayJab();
         state.start_action((FighterAction)((int)(FighterAction.JabSide) - input.direction.y));
         return true;
@@ -241,7 +227,9 @@ public class BaseFighter : MonoBehaviour
     {
         if (!input.pressed) return true;
 
-        state.set_facing(input.direction.x);
+        if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
+
+        state.force_facing(input.direction.x);
         player_sounds.PlayHeavy();
         state.start_action((FighterAction)((int)(FighterAction.HeavySide) - input.direction.y));
         return true;
@@ -255,9 +243,12 @@ public class BaseFighter : MonoBehaviour
     public bool dash_action(EventData input)
     {
         if (!input.pressed) return true;
-        state.set_facing(input.direction.x);
+
+        if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
+
+        state.force_facing(input.direction.x);
         player_sounds.PlayDash();
-        dash((int)state.get_facing() * state.base_stats.dash_factor * state.get_ground_speed());
+        state.dash(state.base_stats.dash_factor * state.get_ground_speed());
         return true;
     }
 
@@ -270,7 +261,9 @@ public class BaseFighter : MonoBehaviour
             return true;
         }
 
-        state.set_facing(input.direction.x);
+        if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
+
+        state.force_facing(input.direction.x);
         state.start_action(input.direction.y == 1 ? FighterAction.BlockUp : FighterAction.BlockSide);
         return true;
     }
@@ -282,5 +275,20 @@ public class BaseFighter : MonoBehaviour
         knockback(new Vector2(-(float)(int)state.get_facing(), 0.0f) * 5.0f);
         Debug.Log("knocking back");
         return true;
+    }
+
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        foreach (var contact in collision.contacts)
+            handle_contact(contact);
+    }
+
+    public void handle_contact(ContactPoint2D contact)
+    {
+        if (contact.normal.y > 0.7f)
+        {
+            state.set_grounded(true);
+        }
     }
 }

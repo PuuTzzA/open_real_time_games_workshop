@@ -15,7 +15,7 @@ public class AttackHitbox : Hitbox
         int forced_facing = -source_fighter.state.get_facing_int();
         fighter.state.force_facing(forced_facing);
         fighter.knockback(knockback * source_fighter.state.get_facing_vec());
-        fighter.take_damage(damage, fighter.gameObject);
+        fighter.take_damage(damage, this.source_fighter.gameObject);
 
         if (direction.Equals(Vector2Int.down))
         {

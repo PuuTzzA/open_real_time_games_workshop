@@ -35,7 +35,7 @@ public class QTETriggerTester : MonoBehaviour
         if (fallen != null)
         {
             Debug.Log($"{killer.name} triggering test QTE against {fallen.name}");
-            QTEManager.Instance.StartQTE(fallen, killer);
+            //QTEManager.Instance.StartQTE(fallen, killer, );
         }
         else
         {

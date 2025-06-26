@@ -30,7 +30,6 @@ public class QTEManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -41,17 +40,18 @@ public class QTEManager : MonoBehaviour
         persistentPlayerManager = FindFirstObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>();
     }
 
-    public void StartQTE(GameObject fallen, GameObject killer)
+    public void StartQTE(GameObject fallen, GameObject killer, Action onDone)
     {
+        Debug.Log($"{fallen.name} has fallen! {killer.name} is the killer. Starting QTE...");
         PauseAllExcept(fallen, killer);
         
         p1Input = fallen.GetComponent<PlayerInput>();
         p2Input = killer.GetComponent<PlayerInput>();
         // Pick a random int between 0 and 2
-        StartCoroutine(StartQTESequence(fallen, killer));
+        StartCoroutine(StartQTESequence(fallen, killer, onDone));
     }
     
-    private IEnumerator StartQTESequence(GameObject fallen, GameObject killer)
+    private IEnumerator StartQTESequence(GameObject fallen, GameObject killer, Action onDone)
     {
         // 1) Show “Finish Him” intro
         finishHimPanel.SetActive(true);
@@ -70,10 +70,10 @@ public class QTEManager : MonoBehaviour
 
         // 3) Now start the actual minigame
         int type = 1;
-        SpawnMinigame(type, fallen, killer);
+        SpawnMinigame(type, fallen, killer, onDone);
     }
 
-    private void SpawnMinigame(int type, GameObject fallen, GameObject killer)
+    private void SpawnMinigame(int type, GameObject fallen, GameObject killer, Action onDone)
     {
         // instantiate the correct UI and init it
         IQTE qte;
@@ -96,6 +96,7 @@ public class QTEManager : MonoBehaviour
         }
         qte.Init(p1Input, p2Input, (r1, r2) => {
             EvaluateDualQTE(fallen, killer, r1, r2);
+            onDone?.Invoke();
         });
     }
 
@@ -123,7 +124,8 @@ public class QTEManager : MonoBehaviour
         }
         else
         {
-            fallenHealth.GetFinished(killer);
+            bool isFinished = fallenHealth.GetFinished(killer);
+            if (isFinished) return;
         }
         ResumeRound(fallen, killer);
     }
@@ -154,14 +156,6 @@ public class QTEManager : MonoBehaviour
 
     private void ResumeRound(GameObject fallen, GameObject killer)
     {
-        // Check if there are still more than one fighter alive
-        if (persistentPlayerManager.isGameFinished())
-        {
-            Debug.Log("Game is finished, no more fighters left.");
-            SceneManager.LoadScene("CharacterSelection");
-            return;
-        }
-        
         p1Input.SwitchCurrentActionMap("Player");
         p2Input.SwitchCurrentActionMap("Player");
         
@@ -171,12 +165,17 @@ public class QTEManager : MonoBehaviour
     private void PauseAllExcept(GameObject fallen, GameObject killer)
     {
         pausedComponents.Clear();
+        List<PlayerInput> players = persistentPlayerManager.getPlayers();
+        Debug.Log($"Pausing all fighters except {fallen.GetComponent<PlayerInput>().playerIndex} and {killer.GetComponent<PlayerInput>().playerIndex}");
+        Debug.Log($"Total players: {players.Count}");
+        
 
-        foreach (var fighter in FindObjectsByType<BaseFighter>(FindObjectsSortMode.None))
+        foreach (var fighter in players)
         {
-            if (fighter.gameObject == fallen || fighter.gameObject == killer)
+            if (fighter.playerIndex == fallen.GetComponent<PlayerInput>().playerIndex || fighter.playerIndex == killer.GetComponent<PlayerInput>().playerIndex)
                 continue;
 
+            Debug.Log($"Pausing fighter: {fighter.gameObject.name} with index {fighter.playerIndex}");
             fighter.enabled = false;
             pausedComponents.Add(fighter);
         }
