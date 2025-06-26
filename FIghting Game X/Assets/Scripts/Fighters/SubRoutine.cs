@@ -6,9 +6,9 @@ public class SubRoutine
     private int tick_index;
     private int tick_count;
 
-    private Action<int> each_tick;
+    private Func<int, bool> each_tick;
 
-    public SubRoutine(int tick_count, Action<int> each_tick)
+    public SubRoutine(int tick_count, Func<int, bool> each_tick)
     {
         this.tick_index = 0;
         this.tick_count = tick_count;
@@ -19,8 +19,7 @@ public class SubRoutine
     {
         if(tick_index < tick_count)
         {
-            each_tick(tick_index++);
-            return true;
+            return each_tick(tick_index++);
         }
         return false;
     }

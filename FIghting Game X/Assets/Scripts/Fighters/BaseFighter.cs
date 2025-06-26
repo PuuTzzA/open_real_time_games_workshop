@@ -27,6 +27,8 @@ public class BaseFighter : MonoBehaviour
     public Animator animator;
 
     public SubRoutine dash_routine;
+    public SubRoutine heavy_up_routine;
+    public SubRoutine heavy_down_routine;
 
 
     private SubRoutine current_subroutine = null;
@@ -48,6 +50,8 @@ public class BaseFighter : MonoBehaviour
         delayed_actions = new DelayedActions();
 
         dash_routine = new SubRoutine(14, dash_tick);
+        heavy_up_routine = new SubRoutine(25, heavy_up_tick);
+        heavy_down_routine = new SubRoutine(180, heavy_down_tick);
     }
 
     public void FixedUpdate()
@@ -231,14 +235,52 @@ public class BaseFighter : MonoBehaviour
     }
 
 
-    public void dash_tick(int index)
+    public bool dash_tick(int index)
     {
         if (index > 5)
         {
             rigidbody.linearVelocityX = state.dash_speed * state.get_facing_float();
-            return;
+            return true;
         }
         rigidbody.linearVelocityX = 0.0f;
+        return true;
+    }
+
+    public bool heavy_up_tick(int index)
+    {
+        if (index < 18)
+        {
+            freezeXY(true, true);
+            return true;
+        }
+
+        if (index >= 18)
+        {
+            rigidbody.linearVelocity = new Vector2(3.0f * state.get_facing_float(), 15.0f);
+            return true;
+        }
+        return true;
+    }
+
+    public bool heavy_down_tick(int index)
+    {
+        if (index <= 28)
+        {
+            freezeXY(true, true);
+            return true;
+        } else
+        {
+            if(state.is_grounded())
+            {
+                animator.speed = 1.0f;
+                return false;
+            } else
+            {
+                rigidbody.linearVelocityY = -32.0f;
+                return true;
+            }
+
+        }
     }
 
 
@@ -276,6 +318,15 @@ public class BaseFighter : MonoBehaviour
         state.force_facing(input.direction.x);
         player_sounds.PlayHeavy();
         state.start_action((FighterAction)((int)(FighterAction.HeavySide) - input.direction.y));
+        switch(input.direction.y)
+        {
+            case -1:
+                start_subroutine(heavy_down_routine);
+                break;
+            case 1:
+                start_subroutine(heavy_up_routine);
+                break;
+        }
         return true;
     }
 
@@ -293,7 +344,6 @@ public class BaseFighter : MonoBehaviour
         state.force_facing(input.direction.x);
         player_sounds.PlayDash();
         state.dash(state.base_stats.dash_factor * state.get_ground_speed());
-
         start_subroutine(dash_routine);
 
         return true;
