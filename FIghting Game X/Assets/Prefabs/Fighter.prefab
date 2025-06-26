@@ -560,6 +560,9 @@ MonoBehaviour:
   fighter_input: {fileID: 8266158835667872492}
   state: {fileID: 1556262320957081972}
   health: {fileID: 2867311719178718406}
+  animator: {fileID: 0}
+  deathBounds: {x: -15, y: -8}
+  died: 0
 --- !u!114 &8266158835667872492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,7 +657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Icon: {fileID: 1398893948369281781, guid: 71f95f6eb207cc1479db5e6fb700d7f9, type: 3}
-  maxLives: 1
+  maxLives: 3
   qteUsed: 0
   maxHealth: 10
 --- !u!114 &2494248781339541154

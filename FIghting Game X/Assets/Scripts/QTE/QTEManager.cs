@@ -24,6 +24,7 @@ public class QTEManager : MonoBehaviour
     private PlayerInput p2Input;
     private List<MonoBehaviour> pausedComponents = new();
     private PersistentPlayerManager persistentPlayerManager;
+    private IngameUI _ingameUI;
 
     private void Awake()
     {
@@ -44,6 +45,8 @@ public class QTEManager : MonoBehaviour
     {
         Debug.Log($"{fallen.name} has fallen! {killer.name} is the killer. Starting QTE...");
         PauseAllExcept(fallen, killer);
+        _ingameUI = FindAnyObjectByType<IngameUI>(FindObjectsInactive.Include);
+        _ingameUI.gameObject.SetActive(false);
         
         p1Input = fallen.GetComponent<PlayerInput>();
         p2Input = killer.GetComponent<PlayerInput>();
@@ -185,6 +188,7 @@ public class QTEManager : MonoBehaviour
 
     private void ResumeAll()
     {
+        _ingameUI.gameObject.SetActive(true);
         foreach (var comp in pausedComponents)
         {
             if (comp != null) comp.enabled = true;

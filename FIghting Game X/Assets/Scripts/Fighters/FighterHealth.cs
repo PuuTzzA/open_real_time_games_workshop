@@ -46,13 +46,13 @@ public class FighterHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            Debug.Log("Start");
             StartCoroutine(HandleDeath(attacker));
         }
     }
 
     public void TakeArenaDamage(int damage)
     {
+        Debug.Log($"Fighter {this.gameObject.name} taking arena damage: {damage}");
         if (currentHealth <= 0)
         {
             Debug.LogWarning("Fighter is already dead. Cannot take more damage.");
@@ -135,7 +135,7 @@ public class FighterHealth : MonoBehaviour
 
 
 
-        if (currentLives == 0)
+        if (currentLives <= 0)
         {
             Debug.Log("Fighter died and has no more lives left. Game Over!");
             Die();
@@ -147,13 +147,118 @@ public class FighterHealth : MonoBehaviour
         }
     }
 
+    // Disappear the fighter for about 1 seconds and then respawn
     private void Respawn()
     {
-        currentHealth = maxHealth;
-        Debug.Log("Fighter respawned with full health.");
-        ingameUI.setHealth(playerInput.playerIndex, 1);
-
+        StartCoroutine(RespawnRoutine());
     }
+
+    private IEnumerator RespawnRoutine()
+    {
+        Debug.Log($"{gameObject.name}: Starting respawn routine.");
+
+        // Hide the fighter temporarily
+        Debug.Log($"{gameObject.name}: Disabling fighter GameObject.");
+        SetSpriteRenderersVisible(false);
+
+        yield return new WaitForSeconds(1.5f); // Delay before respawning
+
+        SetSpriteRenderersVisible(true);
+        // Choose a random spawn point
+        Transform[] spawnPoints = persistentPlayerManager.spawnPoints;
+        int spawnIndex = Random.Range(0, spawnPoints.Length);
+        Debug.Log($"{gameObject.name}: Selected spawn point index {spawnIndex} at {spawnPoints[spawnIndex].position}.");
+        transform.position = spawnPoints[spawnIndex].position;
+
+        // Reset health and show UI
+        currentHealth = maxHealth;
+        ingameUI.setHealth(playerInput.playerIndex, 1);
+        Debug.Log($"{gameObject.name}: Health reset to max ({maxHealth}) and UI updated.");
+
+        // Reactivate and blink
+        Debug.Log($"{gameObject.name}: Reactivating GameObject and starting blink effect.");
+        gameObject.SetActive(true);
+        StartCoroutine(BlinkSprite(1f)); // 1 second blink effect
+
+        // Reset state
+        var fighterState = GetComponent<FighterState>();
+        if (fighterState != null)
+        {
+            fighterState.start_action(FighterAction.Idle);
+            fighterState.set_grounded(false);
+            fighterState.force_facing(1);
+            fighterState.passive = false;
+            Debug.Log($"{gameObject.name}: Fighter state reset to Idle.");
+        }
+        else
+        {
+            Debug.LogWarning($"{gameObject.name}: FighterState component not found.");
+        }
+
+        // Reset physics
+        var rb = GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+            rb.gravityScale = 1f;
+            Debug.Log($"{gameObject.name}: Rigidbody reset.");
+        }
+        else
+        {
+            Debug.LogWarning($"{gameObject.name}: Rigidbody2D component not found.");
+        }
+
+        GetComponent<BaseFighter>().died = false;
+
+        Debug.Log($"{gameObject.name} respawned successfully at spawn index {spawnIndex}.");
+    }
+    
+    private void SetSpriteRenderersVisible(bool visible)
+    {
+        foreach (var r in GetComponentsInChildren<SpriteRenderer>())
+        {
+            Color c = r.color;
+            c.a = visible ? 1f : 0f;
+            r.color = c;
+        }
+    }
+
+    private IEnumerator BlinkSprite(float duration)
+    {
+        Debug.Log($"{gameObject.name}: Starting blink animation for {duration} seconds.");
+        SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
+        float time = 0f;
+        float blinkInterval = 0.1f;
+        bool faded = false;
+
+        while (time < duration)
+        {
+            foreach (var r in renderers)
+            {
+                Color c = r.color;
+                c.a = faded ? 1f : 0.4f;
+                r.color = c;
+            }
+
+            faded = !faded;
+            yield return new WaitForSeconds(blinkInterval);
+            time += blinkInterval;
+        }
+
+        // Ensure final alpha is fully visible
+        foreach (var r in renderers)
+        {
+            Color c = r.color;
+            c.a = 1f;
+            r.color = c;
+        }
+
+        Debug.Log($"{gameObject.name}: Blink animation finished.");
+    }
+
+
+
 
     public void GrantExtraLife()
     {
@@ -163,6 +268,7 @@ public class FighterHealth : MonoBehaviour
         qteUsed = true;
         currentHealth = maxHealth;
     }
+    
 
     public bool Die()
     {
@@ -178,7 +284,7 @@ public class FighterHealth : MonoBehaviour
             Debug.Log("Game is finished, no more fighters left.");
 
             int winnerIndex = playersAlive.Count == 1 ? playersAlive[0].playerIndex : -1;
-            playersAlive[0].SwitchCurrentActionMap("UI");
+            persistentPlayerManager.getPlayers().ForEach(x => x.SwitchCurrentActionMap("UI"));
 
             var winUI = FindAnyObjectByType<WinGameUI>(FindObjectsInactive.Include);
 
