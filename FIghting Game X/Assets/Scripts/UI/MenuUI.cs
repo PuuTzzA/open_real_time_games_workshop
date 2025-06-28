@@ -178,6 +178,10 @@ public class MenuUI : MonoBehaviour
             {
                 SceneManager.LoadScene("Scenes/CharacterSelection");
             }
+            if (option.Equals(root.Q<VisualElement>("Exit_Option")))
+            {
+                Application.Quit();
+            }
 
         }
     }

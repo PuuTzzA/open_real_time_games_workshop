@@ -1,28 +1,48 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
+using Button = UnityEngine.UIElements.Button;
 
 public class ControlsUI : MonoBehaviour
 {
     [SerializeField] private InputActionAsset inputActions;
-    private readonly string[] actionNames = { "Jab", "Heavy", "Ult", "Block", "Interact", "Jump", "Dash" };
+    private readonly string[] actionNames = { "jab", "heavy", "ult", "block", "interact", "jump", "dash" };
     private Dictionary<string, Button> actionKeyBingings= new Dictionary<string, Button>();
     [SerializeField] UIDocument menuDocument;
     private VisualElement root;
-    private VisualElement focusAnchor;
-    void Awake()
+    private VisualElement focusEntrance;
+    private VisualElement focusExit;
+    private VisualElement controlsTabHeader;
+    private bool usingGamepad = false;
+    private InputActionMap actions;
+
+    private void Awake()
     {
+        LoadBindings();
         root = menuDocument.rootVisualElement;
-        var actions = inputActions.FindActionMap("Player");
-        focusAnchor = root.Q<VisualElement>(className: "action_option");
-        focusAnchor.RegisterCallback<FocusEvent>(OnAnchorFocused);
+        controlsTabHeader = root.Q<VisualElement>("Controls_Tab_Header");
+        actions = inputActions.FindActionMap("Player");
+        focusEntrance = root.Q<VisualElement>(className: "focus_entrance");
+        focusEntrance.RegisterCallback<FocusEvent>(OnEntranceFocused);
+        focusExit = root.Q<VisualElement>(className: "focus_exit");
+        focusExit.RegisterCallback<FocusEvent>(OnExitFocused);
         foreach (var actionName in actionNames)
         {
-            var action = actions.FindAction(actionName);
+            
             var button = root.Q<Button>(actionName + "_Keybinding");
             var changeButton = root.Q<Button>(actionName + "_Change_Button");
-
+            var allActions = inputActions.FindActionMap("UI").actions.ToList();
+            allActions.AddRange(actions.actions);
+            allActions.Remove(inputActions.FindAction("Point"));
+            foreach (var a in allActions)
+            {
+                a.performed += OnInputDeviceChanged;
+            }
+            var action = actions.FindAction(actionName);
             if (action == null)
             {
                 Debug.LogWarning($"Action missing for: {actionName}");
@@ -43,46 +63,86 @@ public class ControlsUI : MonoBehaviour
 
             button.text = GetBindingDisplayString(action);
             
-            changeButton.clicked += () => StartRebind(action, button);
+            changeButton.clicked += () => StartRebind(action);
         }
+
+        var restoreDefaultsButton = root.Q<VisualElement>("Restore_Defaults_Button") as Button;
+        restoreDefaultsButton.clicked += ResetToDefaults;
+    }
+    
+
+
+
+    private void OnInputDeviceChanged(InputAction.CallbackContext context)
+    {
+        //Debug.Log($"Device changed: {context.control.device.name}, Action: {context.action.name}");
+
+        bool isGamepadInput = context.control.device is Gamepad;
+
+
+        if (isGamepadInput == usingGamepad) return;
+        usingGamepad = isGamepadInput;
+        foreach (var actionName in actionKeyBingings.Keys)
+        {
+            actionKeyBingings[actionName].text = GetBindingDisplayString(actions.FindAction(actionName));
+        }
+
+        var cancelButton = root.Q<VisualElement>("Cancel_Button_Name") as Button;
+        cancelButton.text = GetBindingDisplayString(inputActions.FindAction("Cancel"));
+        var confirmButton = root.Q <VisualElement>("Confirm_Button_Name") as Button;
+        confirmButton.text = GetBindingDisplayString(inputActions.FindAction("Confirm"));
+
     }
 
-    private void OnAnchorFocused(FocusEvent evt)
+
+
+
+    private void OnEntranceFocused(FocusEvent evt)
     {
         root.Q<VisualElement>(className: "action_change_button").Focus();
     }
 
+    private void OnExitFocused(FocusEvent evt)
+    {
+        if (evt.relatedTarget is not VisualElement element)
+            return;
+        if (evt.relatedTarget.tabIndex == 0)
+        {
+            controlsTabHeader.Focus();
+        } else root.Q<VisualElement>(className: "action_change_button").Focus();
+    }
+
     string GetBindingDisplayString(InputAction action)
     {
-        foreach (InputBinding keyBinding in action.bindings)
-        {
-            if (keyBinding.isComposite || keyBinding.isPartOfComposite)
-                continue;
-            if (Gamepad.all.Count == 0 && (keyBinding.effectivePath.Contains("Keyboard") ||
-                                           keyBinding.effectivePath.Contains("Mouse")) ||
-                Gamepad.all.Count > 0 && keyBinding.effectivePath.Contains("Gamepad"))
-                return action.GetBindingDisplayString();
-        }
+        if (usingGamepad && action.bindings.Count(keyBinding => keyBinding.groups.Contains("Gamepad")) > 0)
+            return action.GetBindingDisplayString(group:"Gamepad");
+        if (!usingGamepad && action.bindings.Count(keyBinding => keyBinding.groups.Contains("Keyboard&Mouse")) > 0)
+            return action.GetBindingDisplayString(group:"Keyboard&Mouse");
         return "None";
     }
-    void StartRebind(InputAction action, Button button)
+    void StartRebind(InputAction action)
     {
-        button.text = "Press a key...";
+        Button keyBinding = root.Q<VisualElement>($"{action.name}_Keybinding") as Button;
+        keyBinding.text = "...";
         action.Disable();
-
+        Button changeButton = root.Q<VisualElement>($"{action.name}_Change_Button") as Button;
+        var changeButtonText = changeButton.text;
+        changeButton.text = "Press a key...";
         var rebindOperation = action.PerformInteractiveRebinding()
             .WithCancelingThrough("<Keyboard>/escape")
-            .OnMatchWaitForAnother(0.1f)
-            .OnComplete(operation =>
+            .OnMatchWaitForAnother(0.1f);
+        rebindOperation.WithBindingGroup(usingGamepad ? "Gamepad" : "Keyboard&Mouse" );
+        rebindOperation.OnComplete(operation =>
             {
                 operation.Dispose();
                 action.Enable();
                 inputActions.Enable();
 
-                button.text = GetBindingDisplayString(action);
+                keyBinding.text = GetBindingDisplayString(action);
+                changeButton.text = changeButtonText;
                 SaveBindings();
             });
-
+        
         rebindOperation.Start();
     }
     private void SaveBindings()
@@ -99,8 +159,24 @@ public class ControlsUI : MonoBehaviour
     }
     void ResetToDefaults()
     {
-        inputActions.RemoveAllBindingOverrides(); // Entfernt alle Änderungen
+        //Debug.Log($"Before reset - usingGamepad: {usingGamepad}");
+
+        //inputActions.RemoveAllBindingOverrides(); // Entfernt alle Änderungen
+        foreach (var actionName in actionKeyBingings.Keys)
+        {
+            var action = inputActions.FindAction(actionName);
+            for (int i = 0; i < action.bindings.Count; i++)
+            {
+                var binding = action.bindings[i];
+                if (binding.isComposite || binding.isPartOfComposite)
+                    continue;
+                if (usingGamepad && binding.groups.Contains("Gamepad") ||
+                    !usingGamepad && binding.groups.Contains("Keyboard&Mouse"))
+                    action.RemoveBindingOverride(i);
+            }
+        }
         SaveBindings(); // Speichert leere Overrides (also Default)
+        //Debug.Log($"After reset - usingGamepad: {usingGamepad}");
 
         // Alle Button-Texte aktualisieren
         var playerMap = inputActions.FindActionMap("Player");
@@ -112,11 +188,12 @@ public class ControlsUI : MonoBehaviour
                 if (action != null)
                 {
                     button.text = GetBindingDisplayString(action);
+                    //print(button.text);
                 }
             }
         }
 
-        Debug.Log("All controls have been reset to default.");
+        //Debug.Log("All controls have been reset to default.");
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
