@@ -20,7 +20,8 @@ public enum FighterAction
     Dash,
     KnockedBackLight,
     KnockedBackHeavy,
-    Stunned
+    Stunned,
+    Death
 }
 
 public enum Facing

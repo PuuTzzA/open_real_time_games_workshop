@@ -114,7 +114,7 @@ public class BaseFighter : MonoBehaviour
     {
         if (this.transform.position.x < deathBounds.x ||
             transform.position.x > (-1 * deathBounds.x) || transform.position.y < deathBounds.y ||
-            transform.position.y > (-1f * deathBounds.y))
+            transform.position.y > (-3f * deathBounds.y))
         {
             died = true;
             health.TakeArenaDamage(1000);
@@ -310,7 +310,8 @@ public class BaseFighter : MonoBehaviour
         {
             player_sounds.PlayJump();
             state.start_action(FighterAction.Jump);
-            delayed_actions.push(new DelayedAction(jump, 6));
+            //jump();
+            delayed_actions.push(new DelayedAction(jump, 10));
             return true;
         }
         return false;
