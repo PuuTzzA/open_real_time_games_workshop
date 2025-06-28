@@ -562,6 +562,7 @@ MonoBehaviour:
   health: {fileID: 2867311719178718406}
   animator: {fileID: 0}
   deathBounds: {x: -15, y: -8}
+  died: 0
 --- !u!114 &8266158835667872492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -990,3 +991,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flags: 7
   signals: 0
+  animator: {fileID: 0}
