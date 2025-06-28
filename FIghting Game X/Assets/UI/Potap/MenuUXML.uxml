@@ -10,7 +10,7 @@
                 <ui:Button text="Exit" name="Exit_Option" class="option_button menu_option_button" />
             </ui:VisualElement>
             <ui:VisualElement name="Option_specific_screen" class="option_specific_screen" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.16); width: 50%; background-image: none;">
-                <ui:VisualElement name="Default_side_placeholder" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; background-image: url(&quot;project://database/Assets/UI/Potap/Logo_Placeholder_noBackground2.png?fileID=2800000&amp;guid=e6d6c91ccff515f4ea4a1b0ba1b27fe5&amp;type=3#Logo_Placeholder_noBackground2&quot;); background-color: rgba(0, 0, 0, 0);" />
+                <ui:VisualElement name="Default_side_placeholder" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; background-image: url(&quot;project://database/Assets/UI/Potap/Logo_Placeholder_noBackground2.png?fileID=2800000&amp;guid=e6d6c91ccff515f4ea4a1b0ba1b27fe5&amp;type=3#Logo_Placeholder_noBackground2&quot;); background-color: rgba(0, 0, 0, 0); display: none;" />
                 <ui:VisualElement name="Exit_option_screen" enabled="false" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; -unity-font-definition: url(&quot;project://database/Assets/UI/Fonts/din-1451-std/DINEngschriftStd.otf?fileID=12800000&amp;guid=84e81fb098faefd4cbf1704c9e634dbb&amp;type=3#DINEngschriftStd&quot;); font-size: 114%; white-space: pre-wrap; display: none;">
                     <ui:Label text="You will close the game and return to the desktop.&#10;&#10;Continue?&#10;" name="Exit_message" style="white-space: pre-wrap; -unity-text-align: middle-center; height: 732px; color: rgb(237, 237, 238); font-size: 92px;" />
                 </ui:VisualElement>
@@ -18,18 +18,66 @@
                     <ui:Button text="P v P" name="PvP_Option" class="option_button play_option_button" style="align-self: auto; margin-left: 0%;" />
                     <ui:Button text="P v E" name="PvE_Option" enabled="false" class="option_button play_option_button" style="align-self: auto; margin-left: 0%;" />
                 </ui:VisualElement>
-                <ui:VisualElement name="Settings_option_screen" enabled="false" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; -unity-font-definition: url(&quot;project://database/Assets/UI/Fonts/din-1451-std/DINEngschriftStd.otf?fileID=12800000&amp;guid=84e81fb098faefd4cbf1704c9e634dbb&amp;type=3#DINEngschriftStd&quot;); font-size: 114%; white-space: pre-wrap; display: none;" />
+                <ui:VisualElement name="Settings_option_screen" enabled="true" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; -unity-font-definition: url(&quot;project://database/Assets/UI/Fonts/din-1451-std/DINEngschriftStd.otf?fileID=12800000&amp;guid=84e81fb098faefd4cbf1704c9e634dbb&amp;type=3#DINEngschriftStd&quot;); font-size: 114%; white-space: pre-wrap; display: flex; top: -1px; left: 0;">
+                    <ui:VisualElement name="Settings_Tab_View" class="settings_tab_view" style="flex-grow: 1; position: relative; justify-content: flex-start; flex-basis: auto;">
+                        <ui:Button text="Controls" name="Controls_Tab_Header" selectable="true" tabindex="0" class="settings_tab_header" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); margin-top: 0; margin-bottom: 0; padding-right: 10px; margin-right: 0; margin-left: 0; padding-left: 10px; padding-top: 0; padding-bottom: 0;" />
+                        <ui:Button text="Sound" name="Sound_Tab_Header" selectable="true" tabindex="1" class="settings_tab_header" style="border-top-width: 0; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-right-width: 0; border-bottom-width: 0; border-left-width: 0; margin-top: 0; margin-bottom: 0; padding-right: 10px; padding-left: 10px; margin-right: 0; margin-left: 0;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Settings_Tab_Body" class="settings_tab" style="flex-grow: 1; position: relative; color: rgb(190, 190, 190);">
+                        <ui:VisualElement name="Controls_Tab_Screen" tabindex="0" enabled="true" class="settings_tab_screen" style="flex-grow: 1; position: absolute; color: rgb(190, 190, 190); display: flex; justify-content: space-evenly; align-self: center; height: 100%; width: 100%;">
+                            <ui:VisualElement name="Jab_Action" focusable="true" class="action_option" style="flex-grow: 1; position: relative; flex-direction: row;">
+                                <ui:Label text="Jab" name="Jab_Label" class="action_label" />
+                                <ui:Button text="Button" name="Jab_Keybinding" focusable="false" class="action_keybinding" />
+                                <ui:Button text="Change" name="Jab_Change_Button" selectable="true" usage-hints="None" class="action_change_button" style="background-color: rgba(188, 188, 188, 0);" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="Heavy_Action" class="action_option" style="flex-grow: 1; position: relative; flex-direction: row;">
+                                <ui:Label text="Heavy Attack" name="Heavy_Label" class="action_label" />
+                                <ui:Button text="Button" name="Heavy_Keybinding" focusable="false" class="action_keybinding" />
+                                <ui:Button text="Change" name="Heavy_Change_Button" class="action_change_button" style="background-color: rgba(188, 188, 188, 0);" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="Ult_Action" class="action_option" style="flex-grow: 1; position: relative; flex-direction: row;">
+                                <ui:Label text="Ultimate Attack" name="Ult_Label" class="action_label" />
+                                <ui:Button text="Button" name="Ult_Keybinding" focusable="false" class="action_keybinding" />
+                                <ui:Button text="Change" name="Ult_Change_Button" class="action_change_button" style="background-color: rgba(188, 188, 188, 0);" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="Block_Action" class="action_option" style="flex-grow: 1; position: relative; flex-direction: row;">
+                                <ui:Label text="Block" name="Block_Label" class="action_label" />
+                                <ui:Button text="Button" name="Block_Keybinding" focusable="false" class="action_keybinding" />
+                                <ui:Button text="Change" name="Block_Change_Button" class="action_change_button" style="background-color: rgba(188, 188, 188, 0);" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="Interact_Action" class="action_option" style="flex-grow: 1; position: relative; flex-direction: row;">
+                                <ui:Label text="Interact" name="Interact_Label" class="action_label" />
+                                <ui:Button text="Button" name="Interact_Keybinding" focusable="false" class="action_keybinding" />
+                                <ui:Button text="Change" name="Interact_Change_Button" class="action_change_button" style="background-color: rgba(188, 188, 188, 0);" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="Jump_Action" class="action_option" style="flex-grow: 1; position: relative; flex-direction: row;">
+                                <ui:Label text="Jump" name="Jump_Label" class="action_label" />
+                                <ui:Button text="Button" name="Jump_Keybinding" focusable="false" class="action_keybinding" />
+                                <ui:Button text="Change" name="Jump_Change_Button" class="action_change_button" style="background-color: rgba(188, 188, 188, 0);" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="Dash_Action" class="action_option" style="flex-grow: 1; position: relative; flex-direction: row;">
+                                <ui:Label text="Dash" name="Dash_Label" class="action_label" />
+                                <ui:Button text="Button" name="Dash_Keybinding" focusable="false" class="action_keybinding" />
+                                <ui:Button text="Change" name="Dash_Change_Button" class="action_change_button" style="background-color: rgba(188, 188, 188, 0);" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="Sound_Tab_Screen" tabindex="1" enabled="false" class="settings_tab_screen" style="flex-grow: 1; position: absolute; color: rgb(190, 190, 190); display: none; height: 100%; width: 100%;">
+                            <ui:Slider label="Music" value="42" high-value="100" name="Music_Slider" style="width: 712px; font-size: 62px;" />
+                            <ui:Slider label="Effects" value="42" high-value="100" name="Effects_Slider" style="width: 712px; font-size: 62px;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
                 <ui:VisualElement name="Info_option_screen" enabled="false" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; -unity-font-definition: url(&quot;project://database/Assets/UI/Fonts/din-1451-std/DINEngschriftStd.otf?fileID=12800000&amp;guid=84e81fb098faefd4cbf1704c9e634dbb&amp;type=3#DINEngschriftStd&quot;); font-size: 114%; white-space: pre-wrap; display: none;" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Footer" class="menu_footer" style="flex-grow: 1; border-top-color: rgb(238, 238, 238); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; flex-direction: row; height: 10%; align-self: stretch;">
             <ui:VisualElement style="flex-grow: 1;" />
             <ui:Button text="Button" name="Cancel_Option" enabled="false" class="cancel_button footer_button" style="flex-direction: row; background-image: none; justify-content: flex-start; -unity-text-align: lower-left; display: none;">
-                <ui:VisualElement name="Button_Image" class="footer_button_image" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/xbox%20buttons_2.asset?fileID=21300000&amp;guid=db0577bb196ad9d43968ce4acb3dd67e&amp;type=2#xbox buttons_2&quot;); width: auto; height: auto;" />
+                <ui:VisualElement name="Button_Image" class="footer_button_image" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Potap/xbox%20buttons_2.asset?fileID=21300000&amp;guid=db0577bb196ad9d43968ce4acb3dd67e&amp;type=2#xbox buttons_2&quot;); width: auto; height: auto;" />
                 <ui:Label text="BACK" name="Button_label" class="footer_button_label" style="width: 61%; margin-top: 9px; margin-left: 4px; align-self: auto;" />
             </ui:Button>
             <ui:Button name="Confirm_Option" enabled="false" class="cancel_button footer_button" style="flex-direction: row; background-image: none; justify-content: flex-start; -unity-text-align: lower-left; display: none;">
-                <ui:VisualElement name="Button_Image" enabled="true" class="footer_button_image" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/xbox%20buttons_3.asset?fileID=21300000&amp;guid=503e909f476e711429ef1d4497d30b0a&amp;type=2#xbox buttons_3&quot;); width: auto; height: auto; visibility: visible; display: flex;" />
+                <ui:VisualElement name="Button_Image" enabled="true" class="footer_button_image" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Potap/xbox%20buttons_3.asset?fileID=21300000&amp;guid=503e909f476e711429ef1d4497d30b0a&amp;type=2#xbox buttons_3&quot;); width: auto; height: auto; visibility: visible; display: flex;" />
                 <ui:Label text="CONFIRM" name="Button_label" class="footer_button_label" style="width: 61%; margin-top: 9px; margin-left: 4px;" />
             </ui:Button>
         </ui:VisualElement>
