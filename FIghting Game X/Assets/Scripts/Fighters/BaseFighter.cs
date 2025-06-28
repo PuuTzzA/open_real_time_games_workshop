@@ -114,7 +114,7 @@ public class BaseFighter : MonoBehaviour
     {
         if (this.transform.position.x < deathBounds.x ||
             transform.position.x > (-1 * deathBounds.x) || transform.position.y < deathBounds.y ||
-            transform.position.y > (-1f * deathBounds.y))
+            transform.position.y > (-3f * deathBounds.y))
         {
             died = true;
             health.TakeArenaDamage(1000);
