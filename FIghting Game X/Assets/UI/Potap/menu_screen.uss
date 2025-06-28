@@ -125,6 +125,7 @@
     scale: 1.25 1.25;
     translate: 25% 0;
     rotate: 0;
+    color: rgb(255, 255, 255);
 }
 
 .option_button:focus {
@@ -132,6 +133,7 @@
     transition-property: background-color;
     transition-duration: 0.1s;
     transition-timing-function: ease-out;
+    color: rgb(255, 255, 255);
 }
 
 .play_option_button {
@@ -142,4 +144,129 @@
     background-color: rgb(102, 156, 224);
     transition-property: background-color;
     transition-duration: 0.1s;
+}
+
+.settings_tab_view {
+    height: 15%;
+    background-color: rgb(42, 74, 115);
+    border-left-color: rgb(237, 237, 238);
+    border-right-color: rgb(237, 237, 238);
+    border-top-color: rgb(237, 237, 238);
+    border-bottom-color: rgb(237, 237, 238);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 5px;
+    border-left-width: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.settings_tab_header {
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgb(190, 190, 190);
+    border-right-color: rgb(190, 190, 190);
+    border-top-color: rgb(190, 190, 190);
+    border-bottom-color: rgb(190, 190, 190);
+    border-right-width: 5px;
+    border-left-width: 0;
+    color: rgb(190, 190, 190);
+    font-size: 46%;
+    -unity-text-align: middle-left;
+    align-items: flex-start;
+    align-content: auto;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.settings_tab_header:focus {
+    width: auto;
+    height: auto;
+    background-color: rgb(102, 156, 224);
+    border-left-color: rgb(190, 190, 190);
+    border-right-color: rgb(190, 190, 190);
+    border-top-color: rgb(190, 190, 190);
+    border-bottom-color: rgb(190, 190, 190);
+    border-right-width: 5px;
+    border-left-width: 0;
+    color: rgb(255, 255, 255);
+    font-size: 46%;
+    -unity-text-align: middle-left;
+    align-items: flex-start;
+    align-content: auto;
+}
+
+.settings_tab {
+    height: 85%;
+}
+
+.action_label {
+    height: 100%;
+    width: 25%;
+    -unity-font-definition: url("project://database/Assets/Fonts/DINEngschriftStd.otf?fileID=12800000&guid=302840babc359724996439fb6b0da6c9&type=3#DINEngschriftStd");
+    color: rgb(237, 237, 238);
+    font-size: 40%;
+    -unity-text-align: middle-center;
+}
+
+.action_keybinding {
+    height: 80%;
+    color: rgb(237, 237, 238);
+    font-size: 35%;
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-left-color: rgb(198, 204, 213);
+    border-right-color: rgb(198, 204, 213);
+    border-top-color: rgb(198, 204, 213);
+    border-bottom-color: rgb(198, 204, 213);
+    background-color: rgb(42, 74, 115);
+    background-size: 100% 100%;
+}
+
+.action_change_button {
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    -unity-font-definition: url("project://database/Assets/Fonts/DINEngschriftStd.otf?fileID=12800000&guid=302840babc359724996439fb6b0da6c9&type=3#DINEngschriftStd");
+    color: rgb(190, 190, 190);
+    font-size: 35%;
+    -unity-text-align: middle-center;
+    border-left-color: rgb(190, 190, 190);
+    border-right-color: rgb(190, 190, 190);
+    border-top-color: rgb(190, 190, 190);
+    border-bottom-color: rgb(190, 190, 190);
+    -unity-text-outline-width: 0;
+    width: 30%;
+    height: 80%;
+}
+
+.action_change_button:focus {
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    -unity-font-definition: url("project://database/Assets/Fonts/DINEngschriftStd.otf?fileID=12800000&guid=302840babc359724996439fb6b0da6c9&type=3#DINEngschriftStd");
+    color: rgb(237, 237, 238);
+    font-size: 35%;
+    -unity-text-align: middle-center;
+    border-left-color: rgb(190, 190, 190);
+    border-right-color: rgb(190, 190, 190);
+    border-top-color: rgb(190, 190, 190);
+    border-bottom-color: rgb(190, 190, 190);
+    -unity-text-outline-width: 0;
+    width: 30%;
+    height: 80%;
+    background-color: rgb(102, 156, 224);
+}
+
+.action_option {
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
 }

@@ -289,6 +289,7 @@ GameObject:
   - component: {fileID: 149976601}
   - component: {fileID: 149976603}
   - component: {fileID: 149976604}
+  - component: {fileID: 149976605}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -375,6 +376,21 @@ MonoBehaviour:
   laser: {fileID: 225884830}
   activeTime: 10
   cooldownTime: 15
+  isLaserActive: 0
+  isOnCooldown: 0
+--- !u!114 &149976605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149976600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f2067f958ef4d41848f4cb0fae57c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserButton: {fileID: 149976604}
 --- !u!1 &172278664
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,8 +401,8 @@ GameObject:
   m_Component:
   - component: {fileID: 172278666}
   - component: {fileID: 172278665}
-  - component: {fileID: 172278668}
   - component: {fileID: 172278667}
+  - component: {fileID: 172278668}
   m_Layer: 0
   m_Name: LazerPlatform1
   m_TagString: Untagged

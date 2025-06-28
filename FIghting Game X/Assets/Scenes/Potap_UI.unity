@@ -267,6 +267,8 @@ GameObject:
   - component: {fileID: 2110655888}
   - component: {fileID: 2110655887}
   - component: {fileID: 2110655889}
+  - component: {fileID: 2110655890}
+  - component: {fileID: 2110655891}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -321,7 +323,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuDocument: {fileID: 2110655887}
+  settingsTabUI: {fileID: 2110655890}
   inputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+--- !u!114 &2110655890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110655886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd0ed80a1591cb24d8b88b1d4fbcfa16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuDocument: {fileID: 2110655887}
+--- !u!114 &2110655891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110655886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a58ea168ad11eb4198e507654d03d6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  menuDocument: {fileID: 2110655887}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

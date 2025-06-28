@@ -9,9 +9,9 @@ using UnityEngine.SceneManagement;
 public class MenuUI : MonoBehaviour
 {
     [SerializeField] UIDocument menuDocument;
-    
+    [SerializeField] SettingsTabUI settingsTabUI;
     private VisualElement root;
-    
+   
     #region menu options
     
     private VisualElement playOption;
@@ -105,6 +105,7 @@ public class MenuUI : MonoBehaviour
                 break;
             case "Settings_Option":
                 currentSideScreen = settingsScreen;
+                firstOption = settingsTabUI.FirstSetting();
                 break;
             case "Info_Option":
                 currentSideScreen = infoScreen;
