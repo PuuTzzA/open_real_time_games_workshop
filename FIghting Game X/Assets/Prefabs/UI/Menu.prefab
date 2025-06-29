@@ -68,7 +68,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuDocument: {fileID: 1808878301495846356}
   settingsTabUI: {fileID: 993497715824190528}
-  isMainMenu: 1
+  isMainMenu: 0
   inputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
 --- !u!114 &993497715824190528
 MonoBehaviour:
