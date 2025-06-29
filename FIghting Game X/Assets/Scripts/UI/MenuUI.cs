@@ -341,6 +341,8 @@ public class MenuUI : MonoBehaviour
                 exitText.SetEnabled(true);
                 exitText.style.display = DisplayStyle.Flex;
                 root.Q<VisualElement>("Exit_Option").Focus();
+                confirmButton.SetEnabled(true);
+                confirmButton.style.display = DisplayStyle.Flex;
             }
             
         }
@@ -371,6 +373,7 @@ public class MenuUI : MonoBehaviour
     {
         confirmAction.performed -= OnConfirmPressed;
         cancelAction.performed -= OnBackPressed;
+        
     }
 
     private void OnDestroy()
