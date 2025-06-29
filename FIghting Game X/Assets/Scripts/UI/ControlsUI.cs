@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -77,6 +78,7 @@ public class ControlsUI : MonoBehaviour
     {
         //Debug.Log($"Device changed: {context.control.device.name}, Action: {context.action.name}");
 
+        if (!this.gameObject.activeSelf) return;
         bool isGamepadInput = context.control.device is Gamepad;
 
 
@@ -195,15 +197,20 @@ public class ControlsUI : MonoBehaviour
 
         //Debug.Log("All controls have been reset to default.");
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    private void CleanTheShit()
     {
-        
+        var allActions = inputActions.FindActionMap("UI").actions.ToList();
+        allActions.AddRange(actions.actions);
+        allActions.Remove(inputActions.FindAction("Point"));
+        foreach (var a in allActions)
+        {
+            a.performed -= OnInputDeviceChanged;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDestroy()
     {
-        
+        CleanTheShit();
     }
 }
