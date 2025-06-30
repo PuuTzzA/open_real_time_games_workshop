@@ -22,7 +22,7 @@ public class BaseFighter : MonoBehaviour
     public FighterHealth health;
 
     private DelayedActions delayed_actions;
-    
+
     private PlayerSounds player_sounds;
     public Animator animator;
 
@@ -35,6 +35,13 @@ public class BaseFighter : MonoBehaviour
 
     private SubRoutine current_subroutine = null;
     public bool died = false;
+
+
+    private readonly float[] dash_curve = new float[] {
+    0.5f, 0.75f, 1f, 1f, 1f, 1f, 1f, 1f, 1f,
+    0.9f, 0.8f, 0.7f, 0.6f, 0.5f, 0.4f, 0.3f,
+    0.2f, 0.1f, 0.05f, 0.0f, 0.0f
+};
 
     private void Awake()
     {
@@ -52,9 +59,11 @@ public class BaseFighter : MonoBehaviour
 
         delayed_actions = new DelayedActions();
 
-        dash_routine = new SubRoutine(14, dash_tick);
+        dash_routine = new SubRoutine(dash_curve.Length, dash_tick);
         heavy_up_routine = new SubRoutine(25, heavy_up_tick);
         heavy_down_routine = new SubRoutine(180, heavy_down_tick);
+
+        state.start_action(FighterAction.Idle);
     }
 
     public void FixedUpdate()
@@ -73,13 +82,13 @@ public class BaseFighter : MonoBehaviour
             checkDeath();
         }
 
-        check_signals();
+        state.action_tick();
 
         delayed_actions.tick();
 
         fighter_input.dispatch_events();
 
-        
+
         event_buffer.process();
 
         /*
@@ -120,7 +129,7 @@ public class BaseFighter : MonoBehaviour
             health.TakeArenaDamage(1000);
         }
     }
-    
+
 
     public void process_movement()
     {
@@ -145,31 +154,10 @@ public class BaseFighter : MonoBehaviour
             rigidbody.linearVelocityX = Math.Clamp(rigidbody.linearVelocityX, -state.get_air_speed(), state.get_air_speed());
         }
 
-        if(rigidbody.linearVelocityY < state.get_terminal_speed())
+        if (rigidbody.linearVelocityY < state.get_terminal_speed())
         {
             rigidbody.linearVelocityY = state.get_terminal_speed();
         }
-    }
-
-    public void check_signals()
-    {
-        var signals = state.read_signals();
-
-        if (signals.HasFlag(FighterSignals.Finished))
-        {
-            on_animation_end();
-        }
-
-        if (signals.HasFlag(FighterSignals.ShouldJump))
-        {
-            //jump();
-        }
-    }
-
-    public void on_animation_end()
-    {
-        state.start_action(FighterAction.Idle);
-        state.animation_data.flags = FighterFlags.Idle;
     }
 
     public void jump()
@@ -214,7 +202,8 @@ public class BaseFighter : MonoBehaviour
         health.TakeDamage(damage, attacker);
     }
 
-    public void take_arena_damage(int damage) {
+    public void take_arena_damage(int damage)
+    {
         health.TakeArenaDamage(damage);
     }
 
@@ -257,14 +246,14 @@ public class BaseFighter : MonoBehaviour
 
     public bool dash_tick(int index)
     {
-        if (index > 5)
-        {
-            rigidbody.linearVelocityX = state.dash_speed * state.get_facing_float();
-            return true;
-        }
-        rigidbody.linearVelocityX = 0.0f;
+        if (index >= dash_curve.Length) return false;
+
+        float speed = dash_curve[index] * state.dash_speed * state.get_facing_float();
+        rigidbody.linearVelocityX = speed;
+
         return true;
     }
+
 
     public bool heavy_up_tick(int index)
     {
@@ -288,13 +277,15 @@ public class BaseFighter : MonoBehaviour
         {
             freezeXY(true, true);
             return true;
-        } else
+        }
+        else
         {
-            if(state.is_grounded())
+            if (state.is_grounded())
             {
                 animator.speed = 1.0f;
                 return false;
-            } else
+            }
+            else
             {
                 rigidbody.linearVelocityY = -32.0f;
                 return true;
@@ -339,7 +330,7 @@ public class BaseFighter : MonoBehaviour
         state.force_facing(input.direction.x);
         player_sounds.PlayHeavy();
         state.start_action((FighterAction)((int)(FighterAction.HeavySide) - input.direction.y));
-        switch(input.direction.y)
+        switch (input.direction.y)
         {
             case -1:
                 start_subroutine(heavy_down_routine);
@@ -375,7 +366,7 @@ public class BaseFighter : MonoBehaviour
         if (!input.pressed)
         {
             if (state.get_action() == FighterAction.BlockSide || state.get_action() == FighterAction.BlockUp)
-                on_animation_end();
+                state.start_action(FighterAction.Idle);
             return true;
         }
 
