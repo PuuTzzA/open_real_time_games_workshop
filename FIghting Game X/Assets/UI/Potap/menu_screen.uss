@@ -2,7 +2,7 @@
 }
 
 .menu_screen {
-    background-color: rgba(60, 107, 169, 0.97);
+    background-color: rgb(60, 107, 169);
 }
 
 .menu_header {
@@ -23,7 +23,7 @@
     width: 100%;
     height: 70%;
     flex-direction: column-reverse;
-    background-color: rgba(60, 108, 168, 0.58);
+    background-color: rgb(60, 108, 168);
     border-left-color: rgb(237, 237, 238);
     border-right-color: rgb(237, 237, 238);
     border-top-color: rgb(237, 237, 238);
@@ -38,18 +38,30 @@
     height: 6%;
     width: 100%;
     -unity-text-align: upper-left;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-content: auto;
     align-items: center;
     flex-direction: row;
     align-self: flex-end;
+    flex-wrap: wrap;
 }
 
 .option_selector {
     width: 25%;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-color: rgba(0, 0, 0, 0.31);
 }
 
 .option_specific_screen {
+    height: auto;
+    width: auto;
+    border-left-color: rgba(0, 0, 0, 0.16);
+    border-right-color: rgba(0, 0, 0, 0.16);
+    border-top-color: rgba(0, 0, 0, 0.16);
+    border-bottom-color: rgba(0, 0, 0, 0.16);
 }
 
 .option_button {
@@ -77,8 +89,8 @@
     background-color: rgba(0, 0, 0, 0);
     -unity-font-definition: url("project://database/Assets/UI/Fonts/din-1451-std/DINEngschriftStd.otf?fileID=12800000&guid=84e81fb098faefd4cbf1704c9e634dbb&type=3#DINEngschriftStd");
     color: rgba(237, 237, 238, 0);
-    width: 10%;
-    height: auto;
+    width: auto;
+    height: 100%;
     align-content: center;
     justify-content: flex-end;
     border-top-left-radius: 30px;
@@ -97,10 +109,43 @@
     --new-var1: none;
     -unity-text-align: upper-left;
     display: flex;
+    flex-wrap: nowrap;
 }
 
-.footer_button_image {
+.footer_button_name {
     color: rgb(254, 245, 255);
+    font-size: 282%;
+    -unity-text-align: middle-center;
+    border-top-left-radius: -90%;
+    border-top-right-radius: -90%;
+    border-bottom-right-radius: -90%;
+    border-bottom-left-radius: -90%;
+    border-left-color: rgba(237, 237, 238, 0);
+    border-right-color: rgba(237, 237, 238, 0);
+    border-top-color: rgba(237, 237, 238, 0);
+    border-bottom-color: rgba(237, 237, 238, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    padding-top: 0%;
+    padding-right: 0%;
+    padding-bottom: 0%;
+    padding-left: 0%;
+    height: 100%;
+    width: auto;
+    align-content: center;
+    align-self: center;
+    -unity-font-definition: url("project://database/Assets/Fonts/DINEngschriftStd.otf?fileID=12800000&guid=302840babc359724996439fb6b0da6c9&type=3#DINEngschriftStd");
+    -unity-font-style: bold;
+    -unity-text-outline-width: 0;
+    text-overflow: clip;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    min-width: 1%;
 }
 
 .footer_button_label {
@@ -159,6 +204,12 @@
     border-left-width: 0;
     flex-direction: row;
     justify-content: flex-start;
+    background-size: 100% 100%;
+    -unity-slice-scale: initial;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
 }
 
 .settings_tab_header {
@@ -180,6 +231,8 @@
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .settings_tab_header:focus {
@@ -226,6 +279,7 @@
     border-bottom-color: rgb(198, 204, 213);
     background-color: rgb(42, 74, 115);
     background-size: 100% 100%;
+    width: 20%;
 }
 
 .action_change_button {
@@ -244,6 +298,7 @@
     -unity-text-outline-width: 0;
     width: 30%;
     height: 80%;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .action_change_button:focus {
@@ -269,4 +324,109 @@
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+}
+
+.focus_entrance {
+}
+
+.focus_exit {
+}
+
+.restore_defaults_button {
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    -unity-font-definition: url("project://database/Assets/Fonts/DINEngschriftStd.otf?fileID=12800000&guid=302840babc359724996439fb6b0da6c9&type=3#DINEngschriftStd");
+    color: rgb(190, 190, 190);
+    font-size: 35%;
+    -unity-text-align: middle-center;
+    border-left-color: rgb(190, 190, 190);
+    border-right-color: rgb(190, 190, 190);
+    border-top-color: rgb(190, 190, 190);
+    border-bottom-color: rgb(190, 190, 190);
+    -unity-text-outline-width: 0;
+    width: 30%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.restore_defaults_button:focus {
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    -unity-font-definition: url("project://database/Assets/Fonts/DINEngschriftStd.otf?fileID=12800000&guid=302840babc359724996439fb6b0da6c9&type=3#DINEngschriftStd");
+    color: rgb(237, 237, 238);
+    font-size: 35%;
+    -unity-text-align: middle-center;
+    border-left-color: rgb(190, 190, 190);
+    border-right-color: rgb(190, 190, 190);
+    border-top-color: rgb(190, 190, 190);
+    border-bottom-color: rgb(190, 190, 190);
+    -unity-text-outline-width: 0;
+    width: 30%;
+    height: 80%;
+    background-color: rgb(102, 156, 224);
+}
+
+.pause_screen {
+    background-color: rgba(60, 107, 169, 0.38);
+}
+
+.pause_header {
+    width: 100%;
+    height: 20%;
+    font-size: 1232%;
+    -unity-text-align: lower-center;
+    border-bottom-color: rgb(237, 237, 238);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    -unity-font-definition: url("project://database/Assets/UI/Fonts/din-1451-std/DINEngschriftStd.otf?fileID=12800000&guid=84e81fb098faefd4cbf1704c9e634dbb&type=3#DINEngschriftStd");
+    color: rgb(237, 237, 238);
+}
+
+.pause_body {
+    width: 90%;
+    height: 70%;
+    flex-direction: column-reverse;
+    border-left-color: rgb(237, 237, 238);
+    border-right-color: rgb(237, 237, 238);
+    border-top-color: rgb(237, 237, 238);
+    border-bottom-color: rgb(237, 237, 238);
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    opacity: 1;
+    background-color: rgba(60, 108, 168, 0);
+    align-self: center;
+}
+
+.pause_option_selector {
+    width: 25%;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-color: rgba(12, 51, 122, 0.86);
+}
+
+.pause_option_specific_screen {
+    height: auto;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+}
+
+.exit_option_button {
+    width: 40%;
+}
+
+.exit_option_button:focus {
+    background-color: rgb(102, 156, 224);
+    transition-property: background-color;
+    transition-duration: 0.1s;
 }
