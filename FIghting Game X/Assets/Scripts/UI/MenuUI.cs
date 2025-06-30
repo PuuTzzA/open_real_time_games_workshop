@@ -1,23 +1,21 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
+// ReSharper disable InconsistentNaming
 
 public class MenuUI : MonoBehaviour
 {
     [SerializeField] UIDocument menuDocument;
     [SerializeField] SettingsTabUI settingsTabUI;
     private VisualElement root;
+    [SerializeField] private bool isMainMenu = true;
+    
    
     #region menu options
-    
-    private VisualElement playOption;
-    private VisualElement infoOption;
-    private VisualElement settingsOption; 
-    private VisualElement exitOption;
+
     private List<Button> menuOptions;
     #endregion
     
@@ -37,36 +35,47 @@ public class MenuUI : MonoBehaviour
     private InputAction confirmAction;
     private InputAction cancelAction;
     private List<Button> currentOptions;
+    private VisualElement menuScreen;
     private VisualElement currentSideScreen;
     #endregion
 
     private Focusable focusedElement;
-    public enum MenuLevel
+    private static bool gamePaused;
+
+    private enum MenuLevel
     {
         menu,
         option_chosen,
         option_specific
     }
     private MenuLevel menuLevel = MenuLevel.menu;
-    
+
+    public bool GetPauseStatus()
+    {
+        return gamePaused;
+    }
     void Awake()
     {
+        menuLevel = MenuLevel.menu;
         root = menuDocument.rootVisualElement;
         #region screens initilaization
+
+        menuScreen = root.Q<VisualElement>("Screen");
         sidePlaceholder = root.Q<VisualElement>("Default_side_placeholder");
         exitScreen = root.Q<VisualElement>("Exit_option_screen");
         playScreen = root.Q<VisualElement>("Play_option_screen");
         infoScreen = root.Q<VisualElement>("Info_option_screen");
         settingsScreen = root.Q<VisualElement>("Settings_option_screen");
+        currentSideScreen = sidePlaceholder;
         #endregion
         #region menu options intialization
-        playOption = root.Q<VisualElement>("Play_Option");
-        settingsOption = root.Q<VisualElement>("Settings_Option");
-        infoOption = root.Q<VisualElement>("Info_Option");
-        exitOption = root.Q<VisualElement>("Exit_Option");
+        root.Q<VisualElement>("Play_Option");
+        root.Q<VisualElement>("Settings_Option");
+        root.Q<VisualElement>("Info_Option");
+        root.Q<VisualElement>("Exit_Option");
         menuOptions = root.Query<Button>(className: "menu_option_button").ToList();
-        focusedElement = root.Q<Button>(className: "menu_option_button");
-        focusedElement.Focus();
+        
+        
         currentOptions = menuOptions;
         foreach (Button option in menuOptions)
         {
@@ -80,12 +89,102 @@ public class MenuUI : MonoBehaviour
         var gameplayActions = inputActions.FindActionMap("UI");
         confirmAction = gameplayActions.FindAction("Confirm");
         cancelAction = gameplayActions.FindAction("Cancel");
-        confirmAction.performed += ctx => OnConfirmPressed();
-        cancelAction.performed += ctx => OnBackPressed();
-        #endregion
         
+        #endregion
+        InitializeStyle();
+        focusedElement.Focus();
     }
 
+    private void InitializeStyle()
+    {
+        
+        var playButton = root.Q<VisualElement>("Play_Option");
+        var continueButton = root.Q<VisualElement>("Continue_Option");
+        var oldButton = isMainMenu ? continueButton : playButton;
+        var newButton = isMainMenu ? playButton : continueButton;
+        oldButton.SetEnabled(false);
+        oldButton.style.display = DisplayStyle.None;
+        oldButton.focusable = false;
+        newButton.SetEnabled(true);
+        newButton.style.display = DisplayStyle.Flex;
+        newButton.focusable = true;
+        focusedElement = newButton;
+        string[] mainMenuStyle = 
+            { "pause_screen", "pause_header", "pause_body", "pause_option_selector", "pause_option_specific_screen" };
+        string[] pauseStyle = 
+            {"menu_screen", "menu_header", "menu_body", "option_selector", "option_specific_screen"};
+        var oldStyles = isMainMenu ? mainMenuStyle : pauseStyle;
+        var newStyles = isMainMenu ? pauseStyle : mainMenuStyle;
+        for (var i = 0; i < oldStyles.Length; i++)
+        {
+            var visualElement = root.Q<VisualElement>(className: $"{oldStyles[i]}");
+            visualElement.RemoveFromClassList($"{oldStyles[i]}");
+            visualElement.AddToClassList($"{newStyles[i]}");
+        }
+
+        root.Q<Label>(className: $"{newStyles[1]}").text = isMainMenu ? "FIGHTING GAME X" : "PAUSE MENU";
+
+        if (!isMainMenu)
+        {
+            inputActions.FindAction("Pause Game").performed += OnGamePaused;
+            menuScreen.SetEnabled(false);
+            menuScreen.style.display = DisplayStyle.None;
+        }
+        else
+        {
+            inputActions.FindAction("Pause Game").performed -= OnGamePaused;
+            confirmAction.performed += OnConfirmPressed;
+            cancelAction.performed += OnBackPressed;
+        }
+
+        
+
+    }
+
+ 
+
+    private void OnGamePaused(InputAction.CallbackContext context)
+    {
+        PauseGame();
+    }
+
+    private void PauseGame()
+    {
+        if (!gamePaused)
+        {
+            
+            gamePaused = true;
+            PauseTime();
+            menuScreen.SetEnabled(true);
+            menuScreen.style.display = DisplayStyle.Flex;
+            confirmAction.performed += OnConfirmPressed;
+            cancelAction.performed += OnBackPressed;
+            focusedElement.Focus();
+        }
+        else
+        {
+            while (menuLevel != MenuLevel.menu)
+            {
+                Back();
+            }
+            
+            menuScreen.SetEnabled(false);
+            menuScreen.style.display = DisplayStyle.None;
+            CleanTheShit();
+            gamePaused = false;
+            focusedElement = root.Q<VisualElement>("Continue_Option");
+            UnpauseTime();
+        }
+    }
+    private void PauseTime()
+    {
+        Time.timeScale = 0;
+    }
+
+    private void UnpauseTime()
+    {
+        Time.timeScale = 1;
+    }
     private void OnOptionClicked(ClickEvent evt)
     {
         if (evt.target is not Button option) return;
@@ -95,7 +194,7 @@ public class MenuUI : MonoBehaviour
     private void ChooseOption(Button option)
     {
         menuLevel = MenuLevel.option_chosen;
-        option.AddToClassList("option_button_chosen");
+        
         Button firstOption = null;
         switch (option.name)
         {
@@ -103,22 +202,55 @@ public class MenuUI : MonoBehaviour
                 currentSideScreen = playScreen;
                 firstOption = root.Q<Button>(className: "play_option_button");
                 break;
+            case "Continue_Option":
+                if (!gamePaused) return;
+                Back();
+                PauseGame();
+                return;
             case "Settings_Option":
                 currentSideScreen = settingsScreen;
                 firstOption = settingsTabUI.FirstSetting();
+                root.Q<VisualElement>("Footer").focusable = true; 
                 break;
             case "Info_Option":
                 currentSideScreen = infoScreen;
                 break;
             case "Exit_Option":
                 currentSideScreen = exitScreen;
-                confirmButton.SetEnabled(true);
-                confirmButton.style.display = DisplayStyle.Flex;
+                if (!isMainMenu)
+                {
+                    firstOption = root.Q<Button>("Exit_To_Menu_Option");
+                    var exitButton1 = root.Q<VisualElement>("Exit_To_Menu_Option");
+                    var exitButton2 = root.Q<VisualElement>("Exit_Game_Option");
+                    exitButton1.SetEnabled(true);
+                    exitButton1.style.display = DisplayStyle.Flex;
+                    exitButton2.SetEnabled(true);
+                    exitButton2.style.display = DisplayStyle.Flex;
+                    var exitText = root.Q<Label>("Exit_Message");
+                    exitText.SetEnabled(false);
+                    exitText.style.display = DisplayStyle.None;
+                }
+                else
+                {
+                    firstOption = root.Q<Button>("Exit_To_Menu_Option");
+                    var exitButton1 = root.Q<VisualElement>("Exit_To_Menu_Option");
+                    var exitButton2 = root.Q<VisualElement>("Exit_Game_Option");
+                    exitButton1.SetEnabled(false);
+                    exitButton1.style.display = DisplayStyle.None;
+                    exitButton2.SetEnabled(false);
+                    exitButton2.style.display = DisplayStyle.None;
+                    var exitText = root.Q<Label>("Exit_Message");
+                    exitText.SetEnabled(true);
+                    exitText.style.display = DisplayStyle.Flex;
+                    confirmButton.SetEnabled(true);
+                    confirmButton.style.display = DisplayStyle.Flex;
+                }
                 break;
             default:
                 throw new ArgumentOutOfRangeException("Option not found");
                     
         }
+        option.AddToClassList("option_button_chosen");
         foreach (Button opt in currentOptions)
         {
             if (option != opt) opt.SetEnabled(false);
@@ -129,7 +261,12 @@ public class MenuUI : MonoBehaviour
         backButton.style.display = DisplayStyle.Flex;
         firstOption?.Focus();
     }
-    private void OnBackPressed()
+    
+    private void OnBackPressed(InputAction.CallbackContext obj)
+    {
+        Back();
+    }
+    private void Back()
     {
         switch (menuLevel)
         {
@@ -137,6 +274,7 @@ public class MenuUI : MonoBehaviour
                 return;
             case MenuLevel.option_chosen:
                 menuLevel = MenuLevel.menu;
+                root.Q<VisualElement>("Footer").focusable = false; 
                 break;
             case MenuLevel.option_specific:
                 menuLevel = MenuLevel.option_chosen;
@@ -144,7 +282,7 @@ public class MenuUI : MonoBehaviour
             default:
                 throw new ArgumentOutOfRangeException();
         }
-        foreach (Button option in currentOptions)
+        foreach (var option in currentOptions)
         {
             option.SetEnabled(true);
             option.focusable = true;
@@ -161,8 +299,13 @@ public class MenuUI : MonoBehaviour
         focusedElement.Focus();
     }
 
-    private void OnConfirmPressed()
+    private void OnConfirmPressed(InputAction.CallbackContext context)
     {
+        Confirm();
+    }
+    private void Confirm()
+    {
+        if (!this.gameObject.activeSelf) return;
         if (menuLevel == MenuLevel.menu)
         {
             if (focusedElement is Button option)
@@ -178,10 +321,34 @@ public class MenuUI : MonoBehaviour
             {
                 SceneManager.LoadScene("Scenes/CharacterSelection");
             }
-
+            else if (option.Equals(root.Q<VisualElement>("Exit_Option")))
+            {
+                Application.Quit();
+            }
+            else if (option.Equals(root.Q<VisualElement>("Exit_To_Menu_Option")))
+            {
+                SceneManager.LoadScene("Scenes/MainMenu");
+            }
+            else if (option.Equals(root.Q<VisualElement>("Exit_Game_Option")))
+            {
+                var exitButton1 = root.Q<VisualElement>("Exit_To_Menu_Option");
+                var exitButton2 = root.Q<VisualElement>("Exit_Game_Option");
+                exitButton1.SetEnabled(false);
+                exitButton1.style.display = DisplayStyle.None;
+                exitButton2.SetEnabled(false);
+                exitButton2.style.display = DisplayStyle.None;
+                var exitText = root.Q<Label>("Exit_Message");
+                exitText.SetEnabled(true);
+                exitText.style.display = DisplayStyle.Flex;
+                root.Q<VisualElement>("Exit_Option").Focus();
+                confirmButton.SetEnabled(true);
+                confirmButton.style.display = DisplayStyle.Flex;
+            }
+            
         }
     }
     private void OpenOptionScreen() {
+        if (currentSideScreen == sidePlaceholder) return;
         DisablePlaceholder();
         currentSideScreen.SetEnabled(true);
         currentSideScreen.style.display = DisplayStyle.Flex;
@@ -201,30 +368,17 @@ public class MenuUI : MonoBehaviour
         sidePlaceholder.SetEnabled(true);
         sidePlaceholder.style.display = DisplayStyle.Flex;
     }
-    
 
-
-
-    void Start()
+    private void CleanTheShit()
     {
-       
-    }
-
-
-
-    private void OnClickEvent(ClickEvent evt)
-    {
-        //;
-    }
-    
-
-
-    
-
-
-    // Update is called once per frame
-    void Update()
-    {
+        confirmAction.performed -= OnConfirmPressed;
+        cancelAction.performed -= OnBackPressed;
         
     }
+
+    private void OnDestroy()
+    {
+        CleanTheShit();
+    }
+    
 }
