@@ -33,6 +33,10 @@ public enum Facing
 public class FighterState : MonoBehaviour
 {
     public Animator animator;
+
+    [SerializeField]
+    private AnimationHandler animation_handler;
+
     public Transform sprite_transform;
     public BaseStats base_stats;
 
@@ -45,24 +49,24 @@ public class FighterState : MonoBehaviour
 
     public bool passive = true;
 
-    private FighterAction _current_action;
-
     private bool _grounded;
 
     private Facing _facing;
 
-    public FighterAction get_action() { return _current_action; }
+    public FighterAction get_action() { return animation_handler.get_action(); }
 
     public void start_action(FighterAction action)
     {
-        if (_current_action != action)
-        {
-            _current_action = action;
+        animation_handler.play(action);
 
-            animator.ResetTrigger("trigger");
-            animator.SetInteger("action", (int)action);
-            animator.SetTrigger("trigger");
-        }
+        //animator.ResetTrigger("trigger");
+        //animator.SetInteger("action", (int)action);
+        //animator.SetTrigger("trigger");
+    }
+
+    public void action_tick()
+    {
+        animation_handler.tick();
     }
 
 
@@ -196,7 +200,7 @@ public class FighterState : MonoBehaviour
     public float get_dash_speed()
     {
         var result = 0.0f;
-        if(remaining_dash_frames < 6)
+        if (remaining_dash_frames < 6)
         {
             result = dash_speed * get_facing_float();
         }
