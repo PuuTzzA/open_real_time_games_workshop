@@ -187,7 +187,6 @@ public class FighterHealth : MonoBehaviour
             fighterState.start_action(FighterAction.Idle);
             fighterState.set_grounded(false);
             fighterState.force_facing(1);
-            fighterState.passive = false;
             Debug.Log($"{gameObject.name}: Fighter state reset to Idle.");
         }
         else

@@ -62,6 +62,8 @@ public class BaseFighter : MonoBehaviour
         dash_routine = new SubRoutine(dash_curve.Length, dash_tick);
         heavy_up_routine = new SubRoutine(25, heavy_up_tick);
         heavy_down_routine = new SubRoutine(180, heavy_down_tick);
+
+        state.start_action(FighterAction.Idle);
     }
 
     public void FixedUpdate()
@@ -80,12 +82,14 @@ public class BaseFighter : MonoBehaviour
             checkDeath();
         }
 
-        check_signals();
+        if(state.action_tick() || state.is_idle())
+        {
+            next_idle_action();
+        }
 
         delayed_actions.tick();
 
         fighter_input.dispatch_events();
-
 
         event_buffer.process();
 
@@ -128,6 +132,25 @@ public class BaseFighter : MonoBehaviour
         }
     }
 
+    public void next_idle_action()
+    {
+        FighterAction next_action = FighterAction.Idle;
+        if(state.is_grounded())
+        {
+            if(fighter_input.direction.x != 0)
+                next_action = FighterAction.Running;
+        } else
+        {
+            next_action = FighterAction.Falling;
+        }
+
+        if(next_action != state.get_action())
+        {
+            state.start_action(next_action);
+            state.action_tick();
+        }
+    }
+
 
     public void process_movement()
     {
@@ -156,27 +179,6 @@ public class BaseFighter : MonoBehaviour
         {
             rigidbody.linearVelocityY = state.get_terminal_speed();
         }
-    }
-
-    public void check_signals()
-    {
-        var signals = state.read_signals();
-
-        if (signals.HasFlag(FighterSignals.Finished))
-        {
-            on_animation_end();
-        }
-
-        if (signals.HasFlag(FighterSignals.ShouldJump))
-        {
-            //jump();
-        }
-    }
-
-    public void on_animation_end()
-    {
-        state.start_action(FighterAction.Idle);
-        state.animation_data.flags = FighterFlags.Idle;
     }
 
     public void jump()
@@ -385,7 +387,7 @@ public class BaseFighter : MonoBehaviour
         if (!input.pressed)
         {
             if (state.get_action() == FighterAction.BlockSide || state.get_action() == FighterAction.BlockUp)
-                on_animation_end();
+                state.start_action(FighterAction.Idle);
             return true;
         }
 
