@@ -32,10 +32,7 @@ public enum Facing
 
 public class FighterState : MonoBehaviour
 {
-    public Animator animator;
-
-    [SerializeField]
-    private AnimationHandler animation_handler;
+    public AnimationHandler animation_handler;
 
     public Transform sprite_transform;
     public BaseStats base_stats;
@@ -60,11 +57,6 @@ public class FighterState : MonoBehaviour
         //animator.ResetTrigger("trigger");
         //animator.SetInteger("action", (int)action);
         //animator.SetTrigger("trigger");
-    }
-
-    public bool action_tick()
-    {
-        return animation_handler.tick();
     }
 
     public bool is_idle()

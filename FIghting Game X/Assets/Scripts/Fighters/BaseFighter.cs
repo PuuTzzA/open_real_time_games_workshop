@@ -24,16 +24,11 @@ public class BaseFighter : MonoBehaviour
     private DelayedActions delayed_actions;
 
     private PlayerSounds player_sounds;
-    public Animator animator;
 
-    public SubRoutine dash_routine;
-    public SubRoutine heavy_up_routine;
-    public SubRoutine heavy_down_routine;
+    private Action<int>[] frame_callbacks;
 
     // Tuple with x and y position (not a transform)
     public Vector2 deathBounds = new Vector2(-15.0f, -8.0f);
-
-    private SubRoutine current_subroutine = null;
     public bool died = false;
 
 
@@ -59,9 +54,11 @@ public class BaseFighter : MonoBehaviour
 
         delayed_actions = new DelayedActions();
 
-        dash_routine = new SubRoutine(dash_curve.Length, dash_tick);
-        heavy_up_routine = new SubRoutine(25, heavy_up_tick);
-        heavy_down_routine = new SubRoutine(180, heavy_down_tick);
+        frame_callbacks = new Action<int>[Enum.GetValues(typeof(FighterAction)).Length];
+
+        frame_callbacks[(int)FighterAction.Dash] = dash_tick;
+        frame_callbacks[(int)FighterAction.HeavyUp] = heavy_up_tick;
+        frame_callbacks[(int)FighterAction.HeavyDown] = heavy_down_tick;
 
         state.start_action(FighterAction.Idle);
     }
@@ -82,10 +79,13 @@ public class BaseFighter : MonoBehaviour
             checkDeath();
         }
 
-        if(state.action_tick() || state.is_idle())
+        if (state.animation_handler.is_finished() || state.is_idle())
         {
             next_idle_action();
         }
+
+        state.animation_handler.show();
+
 
         delayed_actions.tick();
 
@@ -114,11 +114,13 @@ public class BaseFighter : MonoBehaviour
             process_movement();
         }
 
-        if (current_subroutine == null || !current_subroutine.tick()) current_subroutine = null;
+        frame_callbacks[(int)state.get_action()]?.Invoke(state.animation_handler.get_index());
 
         debug_text.SetText(state.get_action() + "\n" + health.GetCurrentHealth() + "/" + health.maxHealth);
 
         state.set_grounded(false);
+
+        state.animation_handler.step();
     }
 
     private void checkDeath()
@@ -135,19 +137,19 @@ public class BaseFighter : MonoBehaviour
     public void next_idle_action()
     {
         FighterAction next_action = FighterAction.Idle;
-        if(state.is_grounded())
+        if (state.is_grounded())
         {
-            if(fighter_input.direction.x != 0)
+            if (fighter_input.direction.x != 0)
                 next_action = FighterAction.Running;
-        } else
+        }
+        else
         {
             next_action = FighterAction.Falling;
         }
 
-        if(next_action != state.get_action())
+        if (next_action != state.get_action())
         {
             state.start_action(next_action);
-            state.action_tick();
         }
     }
 
@@ -229,15 +231,6 @@ public class BaseFighter : MonoBehaviour
     }
 
 
-    public void start_subroutine(SubRoutine routine)
-    {
-        if (current_subroutine != null) return;
-
-        routine.start();
-        current_subroutine = routine;
-    }
-
-
 
     public void freezeXY(bool x, bool y)
     {
@@ -265,53 +258,49 @@ public class BaseFighter : MonoBehaviour
     }
 
 
-    public bool dash_tick(int index)
+    public void dash_tick(int index)
     {
-        if (index >= dash_curve.Length) return false;
+        freezeXY(false, true);
+        if (index >= dash_curve.Length) return;
 
         float speed = dash_curve[index] * state.dash_speed * state.get_facing_float();
         rigidbody.linearVelocityX = speed;
-
-        return true;
     }
 
 
-    public bool heavy_up_tick(int index)
+    public void heavy_up_tick(int index)
     {
         if (index < 18)
         {
             freezeXY(true, true);
-            return true;
+            return;
         }
 
-        if (index >= 18)
+        if (index >= 18 && index < 26)
         {
             rigidbody.linearVelocity = new Vector2(3.0f * state.get_facing_float(), 15.0f);
-            return true;
+            return;
         }
-        return true;
     }
 
-    public bool heavy_down_tick(int index)
+    public void heavy_down_tick(int index)
     {
-        if (index <= 28)
+        if (index < 26)
         {
             freezeXY(true, true);
-            return true;
+            return;
         }
-        else
-        {
-            if (state.is_grounded())
-            {
-                animator.speed = 1.0f;
-                return false;
-            }
-            else
-            {
-                rigidbody.linearVelocityY = -32.0f;
-                return true;
-            }
 
+        if(index == 26)
+        {
+            if(state.is_grounded())
+            {
+                state.animation_handler.set_frozen(false);
+            } else
+            {
+                state.animation_handler.set_frozen(true);
+                rigidbody.linearVelocityY = -32.0f;
+            }
         }
     }
 
@@ -351,15 +340,6 @@ public class BaseFighter : MonoBehaviour
         state.force_facing(input.direction.x);
         player_sounds.PlayHeavy();
         state.start_action((FighterAction)((int)(FighterAction.HeavySide) - input.direction.y));
-        switch (input.direction.y)
-        {
-            case -1:
-                start_subroutine(heavy_down_routine);
-                break;
-            case 1:
-                start_subroutine(heavy_up_routine);
-                break;
-        }
         return true;
     }
 
@@ -377,7 +357,6 @@ public class BaseFighter : MonoBehaviour
         state.force_facing(input.direction.x);
         player_sounds.PlayDash();
         state.dash(state.base_stats.dash_factor * state.get_ground_speed());
-        start_subroutine(dash_routine);
 
         return true;
     }
