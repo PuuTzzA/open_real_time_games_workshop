@@ -409,6 +409,77 @@ PolygonCollider2D:
       - {x: 0.31792927, y: 1.6271429}
       - {x: -0.6994445, y: 1.6271429}
   m_UseDelaunayMesh: 0
+--- !u!1 &465540593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 465540595}
+  - component: {fileID: 465540594}
+  - component: {fileID: 465540596}
+  m_Layer: 0
+  m_Name: miniGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &465540594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465540593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PanelSettings: {fileID: 11400000, guid: 108ed8f5779d4dd4fb5afd0c0c93dff5, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: ee9b3a639edfc814396ec8856df685ad, type: 3}
+  m_SortingOrder: 0
+  m_WorldSpaceSizeMode: 1
+  m_WorldSpaceWidth: 1920
+  m_WorldSpaceHeight: 1080
+--- !u!4 &465540595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465540593}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 325.7704, y: 358.7693, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &465540596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465540593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2237ca1c0a2f9a40b89fd1ad9eb8961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entryDuration: 0.25
+  pauseDuration: 1.5
+  exitDuration: 0.25
+  offset: 800
+  exitYOffset: 50
+  exitXOffset: 320
+  finalScale: 0.5
 --- !u!1 &476014778
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,6 +953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FinishHimPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4720139210247328335, guid: 9dbffe4f2b7619c499592f266163ab3c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5679606587419961553, guid: 9dbffe4f2b7619c499592f266163ab3c, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -944,11 +1019,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5679606587419961553, guid: 9dbffe4f2b7619c499592f266163ab3c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 522.369
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5679606587419961553, guid: 9dbffe4f2b7619c499592f266163ab3c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -794.44653
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5679606587419961553, guid: 9dbffe4f2b7619c499592f266163ab3c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2613,3 +2688,4 @@ SceneRoots:
   - {fileID: 154796361}
   - {fileID: 1264215292}
   - {fileID: 1591878322}
+  - {fileID: 465540595}

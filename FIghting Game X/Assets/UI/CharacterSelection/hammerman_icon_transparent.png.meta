@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: f808976815373f348bb4cef139751754
+guid: 090e0e198408b5c4fac913936aa49ee0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5830029872366931795
-    second: heartbeat_0
+      213: 635888242749862385
+    second: hammerman_icon_transparent_0
+  - first:
+      213: -3864874292717998877
+    second: hammerman_icon_transparent_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: heartbeat_0
+      name: hammerman_icon_transparent_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 637
-        height: 358
+        x: 272
+        y: 72
+        width: 453
+        height: 388
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35fc854b74d68e050800000000000000
-      internalID: 5830029872366931795
+      spriteID: 1f1f3f9dcf023d800800000000000000
+      internalID: 635888242749862385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerman_icon_transparent_1
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 432
+        width: 454
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec2109ce453d5ac0800000000000000
+      internalID: -3864874292717998877
       vertices: []
       indices: 
       edges: []
@@ -147,8 +172,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      heartbeat_0: 5830029872366931795
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

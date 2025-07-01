@@ -47,8 +47,6 @@ public class FighterState : MonoBehaviour
 
     public AnimationData animation_data;
 
-    public bool passive = true;
-
     private bool _grounded;
 
     private Facing _facing;
@@ -64,11 +62,15 @@ public class FighterState : MonoBehaviour
         //animator.SetTrigger("trigger");
     }
 
-    public void action_tick()
+    public bool action_tick()
     {
-        animation_handler.tick();
+        return animation_handler.tick();
     }
 
+    public bool is_idle()
+    {
+        return animation_handler.get_info().idle;
+    }
 
     public bool is_grounded() { return _grounded; }
 
