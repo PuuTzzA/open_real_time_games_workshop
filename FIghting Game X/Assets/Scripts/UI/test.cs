@@ -22,6 +22,5 @@ public class test : MonoBehaviour
 
     public void Jab()
     {
-        Debug.Log("JabJab");
     }
 }

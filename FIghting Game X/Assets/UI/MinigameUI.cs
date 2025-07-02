@@ -54,7 +54,6 @@ public class MinigameUI : MonoBehaviour
 
     void OnEnable()
     {
-        Debug.Log("MinigameUI OnEnable called");
         var root = GetComponent<UIDocument>().rootVisualElement;
         vLabel = root.Q<Label>("V");
         sLabel = root.Q<Label>("S");

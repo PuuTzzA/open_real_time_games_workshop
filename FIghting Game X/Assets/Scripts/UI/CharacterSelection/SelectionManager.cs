@@ -93,7 +93,6 @@ public class SelectionManager : MonoBehaviour
     public void OnNavigate(InputAction.CallbackContext context)
     {
         if (_isReady) return;
-        Debug.Log("NAVIGATE");
         Vector2 navigate = context.ReadValue<Vector2>();
         
         // Handle horizontal navigation for character selection
@@ -127,13 +126,11 @@ public class SelectionManager : MonoBehaviour
     {
         if (Time.time < _submitBlockUntil || _isReady) return;
         
-        Debug.Log("SUBMIT");
         ToggleReady();
     }
     
     public void OnCancel(InputAction.CallbackContext context)
     {
-        Debug.Log("CANCEL");
         if (_isReady)
         {
             ToggleReady();
