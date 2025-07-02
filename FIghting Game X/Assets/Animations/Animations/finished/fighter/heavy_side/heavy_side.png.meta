@@ -1,0 +1,6655 @@
+fileFormatVersion: 2
+guid: 3e65e2bf21de6b14f822cf579965996f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9194282603135316999
+    second: heavy_side_0
+  - first:
+      213: -2401869328887477011
+    second: heavy_side_1
+  - first:
+      213: -8382185877009018106
+    second: heavy_side_2
+  - first:
+      213: -3120971019889578702
+    second: heavy_side_3
+  - first:
+      213: -8710656880368342436
+    second: heavy_side_4
+  - first:
+      213: 6418795372078180893
+    second: heavy_side_5
+  - first:
+      213: -4405268084029881694
+    second: heavy_side_6
+  - first:
+      213: -73029024479057080
+    second: heavy_side_7
+  - first:
+      213: -5107769175240621414
+    second: heavy_side_8
+  - first:
+      213: -3059296243637595991
+    second: heavy_side_9
+  - first:
+      213: -399355551604557412
+    second: heavy_side_10
+  - first:
+      213: -1361342992289982628
+    second: heavy_side_11
+  - first:
+      213: -4110992930561246109
+    second: heavy_side_12
+  - first:
+      213: 5322013449480981098
+    second: heavy_side_13
+  - first:
+      213: -6012185228988069365
+    second: heavy_side_14
+  - first:
+      213: -5226543078545546097
+    second: heavy_side_15
+  - first:
+      213: 6015960722154716192
+    second: heavy_side_16
+  - first:
+      213: 1872591870186728298
+    second: heavy_side_17
+  - first:
+      213: 3525596173739795005
+    second: heavy_side_18
+  - first:
+      213: -624095461076601990
+    second: heavy_side_19
+  - first:
+      213: -5621118941206344580
+    second: heavy_side_20
+  - first:
+      213: -162113967867518634
+    second: heavy_side_21
+  - first:
+      213: -7743459388181983612
+    second: heavy_side_22
+  - first:
+      213: 6557984702967734889
+    second: heavy_side_23
+  - first:
+      213: -4928226143701485512
+    second: heavy_side_24
+  - first:
+      213: -8252751695173923738
+    second: heavy_side_25
+  - first:
+      213: 311735756014863022
+    second: heavy_side_26
+  - first:
+      213: 6133001892462759804
+    second: heavy_side_27
+  - first:
+      213: 5077949659394028150
+    second: heavy_side_28
+  - first:
+      213: -2104466801670453206
+    second: heavy_side_29
+  - first:
+      213: -8881958533825836515
+    second: heavy_side_30
+  - first:
+      213: -2142822527591107289
+    second: heavy_side_31
+  - first:
+      213: -4717304565673136899
+    second: heavy_side_32
+  - first:
+      213: -4616216054572981203
+    second: heavy_side_33
+  - first:
+      213: -2573717217810338094
+    second: heavy_side_34
+  - first:
+      213: 9033289552228728797
+    second: heavy_side_35
+  - first:
+      213: -7157678195460631734
+    second: heavy_side_36
+  - first:
+      213: 4614801314014225657
+    second: heavy_side_37
+  - first:
+      213: -4048329960917383929
+    second: heavy_side_38
+  - first:
+      213: -2709370377882103675
+    second: heavy_side_39
+  - first:
+      213: 3244777127961475821
+    second: heavy_side_40
+  - first:
+      213: 8807835528812600956
+    second: heavy_side_41
+  - first:
+      213: -1737595075217828468
+    second: heavy_side_42
+  - first:
+      213: 4396605129018529248
+    second: heavy_side_43
+  - first:
+      213: 4090896448446272539
+    second: heavy_side_44
+  - first:
+      213: -4049130544999494433
+    second: heavy_side_45
+  - first:
+      213: -1617095125983170688
+    second: heavy_side_46
+  - first:
+      213: -5235634080583740613
+    second: heavy_side_47
+  - first:
+      213: -5910039329040470108
+    second: heavy_side_48
+  - first:
+      213: -4112553261475149667
+    second: heavy_side_49
+  - first:
+      213: 3712607512157823229
+    second: heavy_side_50
+  - first:
+      213: 4602166582585963063
+    second: heavy_side_51
+  - first:
+      213: 810177752699103087
+    second: heavy_side_52
+  - first:
+      213: 1058963832818350343
+    second: heavy_side_53
+  - first:
+      213: -794366985303388931
+    second: heavy_side_54
+  - first:
+      213: -7758079973665643912
+    second: heavy_side_55
+  - first:
+      213: -2475445717815175889
+    second: heavy_side_56
+  - first:
+      213: 8412911769017655538
+    second: heavy_side_57
+  - first:
+      213: -6238491315372742238
+    second: heavy_side_58
+  - first:
+      213: -2590182166296498772
+    second: heavy_side_59
+  - first:
+      213: 6043890059070747920
+    second: heavy_side_60
+  - first:
+      213: 4365956984155330
+    second: heavy_side_61
+  - first:
+      213: 5746894777690195989
+    second: heavy_side_62
+  - first:
+      213: -5002965837006811290
+    second: heavy_side_63
+  - first:
+      213: -5233652032497698475
+    second: heavy_side_64
+  - first:
+      213: 7411876307725760501
+    second: heavy_side_65
+  - first:
+      213: 1214206156689137819
+    second: heavy_side_66
+  - first:
+      213: -3089597352104917456
+    second: heavy_side_67
+  - first:
+      213: 461349266496482288
+    second: heavy_side_68
+  - first:
+      213: -2157738267270987108
+    second: heavy_side_69
+  - first:
+      213: -661262726133003057
+    second: heavy_side_70
+  - first:
+      213: -8872618430655512888
+    second: heavy_side_71
+  - first:
+      213: 4273855438833273777
+    second: heavy_side_72
+  - first:
+      213: -5505308385071591750
+    second: heavy_side_73
+  - first:
+      213: -1553555458337191468
+    second: heavy_side_74
+  - first:
+      213: 1731833652428580873
+    second: heavy_side_75
+  - first:
+      213: -4455571722696783248
+    second: heavy_side_76
+  - first:
+      213: -1554961865695889760
+    second: heavy_side_77
+  - first:
+      213: 4797760307091818938
+    second: heavy_side_78
+  - first:
+      213: 8146480573435037195
+    second: heavy_side_79
+  - first:
+      213: 5625151605624961996
+    second: heavy_side_80
+  - first:
+      213: 1210997841780905233
+    second: heavy_side_81
+  - first:
+      213: 3646607272966271379
+    second: heavy_side_82
+  - first:
+      213: -295118547306922137
+    second: heavy_side_83
+  - first:
+      213: 3289586212460752442
+    second: heavy_side_84
+  - first:
+      213: 788858751129686158
+    second: heavy_side_85
+  - first:
+      213: -8975067072151996635
+    second: heavy_side_86
+  - first:
+      213: 5583537048701705063
+    second: heavy_side_87
+  - first:
+      213: 5993082491234793129
+    second: heavy_side_88
+  - first:
+      213: -5245017561226920609
+    second: heavy_side_89
+  - first:
+      213: -3312946406749111346
+    second: heavy_side_90
+  - first:
+      213: 6043615599730256765
+    second: heavy_side_91
+  - first:
+      213: -1794452643619764776
+    second: heavy_side_92
+  - first:
+      213: 2958511535724956637
+    second: heavy_side_93
+  - first:
+      213: -7888898235450052455
+    second: heavy_side_94
+  - first:
+      213: -782581375768100190
+    second: heavy_side_95
+  - first:
+      213: -7796021351522077197
+    second: heavy_side_96
+  - first:
+      213: -2053084248371897351
+    second: heavy_side_97
+  - first:
+      213: -5528750259609228916
+    second: heavy_side_98
+  - first:
+      213: 105654741303186125
+    second: heavy_side_99
+  - first:
+      213: 7902952086721452986
+    second: heavy_side_100
+  - first:
+      213: 1606515046901577066
+    second: heavy_side_101
+  - first:
+      213: 145530159419077100
+    second: heavy_side_102
+  - first:
+      213: 8905294742737476876
+    second: heavy_side_103
+  - first:
+      213: 4008445569462890129
+    second: heavy_side_104
+  - first:
+      213: -1817756235287585173
+    second: heavy_side_105
+  - first:
+      213: 3033713331689690310
+    second: heavy_side_106
+  - first:
+      213: 2404925329456775749
+    second: heavy_side_107
+  - first:
+      213: 5577667745318956129
+    second: heavy_side_108
+  - first:
+      213: 6873936656805551334
+    second: heavy_side_109
+  - first:
+      213: 4974855181691137512
+    second: heavy_side_110
+  - first:
+      213: 3270428612612271872
+    second: heavy_side_111
+  - first:
+      213: -502405475194604355
+    second: heavy_side_112
+  - first:
+      213: 62192617495318229
+    second: heavy_side_113
+  - first:
+      213: 3173635058432267796
+    second: heavy_side_114
+  - first:
+      213: -4570322003868564180
+    second: heavy_side_115
+  - first:
+      213: 511577165349633382
+    second: heavy_side_116
+  - first:
+      213: -4101110410144793192
+    second: heavy_side_117
+  - first:
+      213: 1701200361188891637
+    second: heavy_side_118
+  - first:
+      213: 4595699960855488610
+    second: heavy_side_119
+  - first:
+      213: 5977865141861696096
+    second: heavy_side_120
+  - first:
+      213: 6883337722575680594
+    second: heavy_side_121
+  - first:
+      213: -1464295051635078966
+    second: heavy_side_122
+  - first:
+      213: -8747891918585800368
+    second: heavy_side_123
+  - first:
+      213: 6103790580230713202
+    second: heavy_side_124
+  - first:
+      213: -2824069202737392123
+    second: heavy_side_125
+  - first:
+      213: 3326868689295608492
+    second: heavy_side_126
+  - first:
+      213: 1435249893864518661
+    second: heavy_side_127
+  - first:
+      213: 6825355511650368651
+    second: heavy_side_128
+  - first:
+      213: -7458757796390754985
+    second: heavy_side_129
+  - first:
+      213: 1764533821413281826
+    second: heavy_side_130
+  - first:
+      213: 9049628291962406769
+    second: heavy_side_131
+  - first:
+      213: 8352952897183984462
+    second: heavy_side_132
+  - first:
+      213: 8477347777832852871
+    second: heavy_side_133
+  - first:
+      213: -2464749139278580396
+    second: heavy_side_134
+  - first:
+      213: -8273120712424301557
+    second: heavy_side_135
+  - first:
+      213: 8312721753746534109
+    second: heavy_side_136
+  - first:
+      213: 5096473902773284676
+    second: heavy_side_137
+  - first:
+      213: 8526474869791259644
+    second: heavy_side_138
+  - first:
+      213: 4097592457160538634
+    second: heavy_side_139
+  - first:
+      213: -3953783782351137333
+    second: heavy_side_140
+  - first:
+      213: 7431716552163012792
+    second: heavy_side_141
+  - first:
+      213: 7355088493217364775
+    second: heavy_side_142
+  - first:
+      213: -5294968005840164374
+    second: heavy_side_143
+  - first:
+      213: 5404382856400500745
+    second: heavy_side_144
+  - first:
+      213: 3261925591070513670
+    second: heavy_side_145
+  - first:
+      213: -7000980704428976127
+    second: heavy_side_146
+  - first:
+      213: -6633698743307615057
+    second: heavy_side_147
+  - first:
+      213: -4667220309424063515
+    second: heavy_side_148
+  - first:
+      213: -2296329050373979176
+    second: heavy_side_149
+  - first:
+      213: -2819229935469636758
+    second: heavy_side_150
+  - first:
+      213: 3209893965131548328
+    second: heavy_side_151
+  - first:
+      213: -8018047593031884387
+    second: heavy_side_152
+  - first:
+      213: -1491402817026565797
+    second: heavy_side_153
+  - first:
+      213: 2779444747593784154
+    second: heavy_side_154
+  - first:
+      213: 4931545900373839978
+    second: heavy_side_155
+  - first:
+      213: 4522350528005267728
+    second: heavy_side_156
+  - first:
+      213: -7740816831838906588
+    second: heavy_side_157
+  - first:
+      213: 4582652697694012063
+    second: heavy_side_158
+  - first:
+      213: 3208128602613932521
+    second: heavy_side_159
+  - first:
+      213: -8224429178399459707
+    second: heavy_side_160
+  - first:
+      213: -2583513219830673386
+    second: heavy_side_161
+  - first:
+      213: -2711227569514403238
+    second: heavy_side_162
+  - first:
+      213: 3964006883177939051
+    second: heavy_side_163
+  - first:
+      213: 1512628976854817166
+    second: heavy_side_164
+  - first:
+      213: 1990326993892716462
+    second: heavy_side_165
+  - first:
+      213: -9184951194334010164
+    second: heavy_side_166
+  - first:
+      213: -9156276281862854940
+    second: heavy_side_167
+  - first:
+      213: -9143942193830583652
+    second: heavy_side_168
+  - first:
+      213: 7661135702716627839
+    second: heavy_side_169
+  - first:
+      213: 7507953648012021861
+    second: heavy_side_170
+  - first:
+      213: 2503036843034722724
+    second: heavy_side_171
+  - first:
+      213: 622875827242701799
+    second: heavy_side_172
+  - first:
+      213: -2962535666251876312
+    second: heavy_side_173
+  - first:
+      213: -1999650836178982941
+    second: heavy_side_174
+  - first:
+      213: -9094761478907102575
+    second: heavy_side_175
+  - first:
+      213: 724037747458066316
+    second: heavy_side_176
+  - first:
+      213: -5223516339381001750
+    second: heavy_side_177
+  - first:
+      213: -1756819418791119790
+    second: heavy_side_178
+  - first:
+      213: -9163730026978191093
+    second: heavy_side_179
+  - first:
+      213: 197853413653681113
+    second: heavy_side_180
+  - first:
+      213: 2025417173036697925
+    second: heavy_side_181
+  - first:
+      213: -3815774720238082611
+    second: heavy_side_182
+  - first:
+      213: 1537809156302101243
+    second: heavy_side_183
+  - first:
+      213: -4177933327281615951
+    second: heavy_side_184
+  - first:
+      213: -6484162778052267607
+    second: heavy_side_185
+  - first:
+      213: 7474390729916029157
+    second: heavy_side_186
+  - first:
+      213: -6344927502979545048
+    second: heavy_side_187
+  - first:
+      213: 5822743179833458313
+    second: heavy_side_188
+  - first:
+      213: -4377575219943801263
+    second: heavy_side_189
+  - first:
+      213: -7214604013970084715
+    second: heavy_side_190
+  - first:
+      213: -1131580705636839159
+    second: heavy_side_191
+  - first:
+      213: -8026400125592487662
+    second: heavy_side_192
+  - first:
+      213: 4664161913479592295
+    second: heavy_side_193
+  - first:
+      213: 4032779123557126442
+    second: heavy_side_194
+  - first:
+      213: -2056688065820452681
+    second: heavy_side_195
+  - first:
+      213: -4377444224553535946
+    second: heavy_side_196
+  - first:
+      213: -1990916638599706291
+    second: heavy_side_197
+  - first:
+      213: 3298105759274976340
+    second: heavy_side_198
+  - first:
+      213: 8470993070630430305
+    second: heavy_side_199
+  - first:
+      213: -812268191314453509
+    second: heavy_side_200
+  - first:
+      213: 5811975211628663417
+    second: heavy_side_201
+  - first:
+      213: 2341061538606101581
+    second: heavy_side_202
+  - first:
+      213: 8840373120045053120
+    second: heavy_side_203
+  - first:
+      213: 1169653985266987741
+    second: heavy_side_204
+  - first:
+      213: -9111135019996728000
+    second: heavy_side_205
+  - first:
+      213: 215217551813427073
+    second: heavy_side_206
+  - first:
+      213: -7707673182174831458
+    second: heavy_side_207
+  - first:
+      213: -4779978553191593202
+    second: heavy_side_208
+  - first:
+      213: 5043232272003629851
+    second: heavy_side_209
+  - first:
+      213: -280052587682825042
+    second: heavy_side_210
+  - first:
+      213: -328354453834274769
+    second: heavy_side_211
+  - first:
+      213: 4974905717498819921
+    second: heavy_side_212
+  - first:
+      213: 7639546267948899577
+    second: heavy_side_213
+  - first:
+      213: -2296657258987235790
+    second: heavy_side_214
+  - first:
+      213: -1636380188316708613
+    second: heavy_side_215
+  - first:
+      213: -7850471022122253382
+    second: heavy_side_216
+  - first:
+      213: -3897421098334703392
+    second: heavy_side_217
+  - first:
+      213: -503138826070301218
+    second: heavy_side_218
+  - first:
+      213: -7522210427568957627
+    second: heavy_side_219
+  - first:
+      213: 8439913682208246568
+    second: heavy_side_220
+  - first:
+      213: 2133387298961464281
+    second: heavy_side_221
+  - first:
+      213: -6337916576284692360
+    second: heavy_side_222
+  - first:
+      213: -8719810919920850968
+    second: heavy_side_223
+  - first:
+      213: 8804289258410793257
+    second: heavy_side_224
+  - first:
+      213: 7026302691191761255
+    second: heavy_side_225
+  - first:
+      213: -5082911755233039624
+    second: heavy_side_226
+  - first:
+      213: -5524700274567277913
+    second: heavy_side_227
+  - first:
+      213: 736297209388534888
+    second: heavy_side_228
+  - first:
+      213: -7270775072474668853
+    second: heavy_side_229
+  - first:
+      213: -101062400195014743
+    second: heavy_side_230
+  - first:
+      213: 3961108548602224830
+    second: heavy_side_231
+  - first:
+      213: 5127204600308987947
+    second: heavy_side_232
+  - first:
+      213: 1298368982833725446
+    second: heavy_side_233
+  - first:
+      213: -2595233421618797874
+    second: heavy_side_234
+  - first:
+      213: -4607736078797948021
+    second: heavy_side_235
+  - first:
+      213: -2415741515917375547
+    second: heavy_side_236
+  - first:
+      213: -1664620857885960848
+    second: heavy_side_237
+  - first:
+      213: 2889372455647118102
+    second: heavy_side_238
+  - first:
+      213: 5179216231910403420
+    second: heavy_side_239
+  - first:
+      213: -556619156863138075
+    second: heavy_side_240
+  - first:
+      213: 5222017741647900010
+    second: heavy_side_241
+  - first:
+      213: -4509369675864674755
+    second: heavy_side_242
+  - first:
+      213: 2333151801465445545
+    second: heavy_side_243
+  - first:
+      213: 3383955205062612261
+    second: heavy_side_244
+  - first:
+      213: -4222438858920084498
+    second: heavy_side_245
+  - first:
+      213: 7876846739795224985
+    second: heavy_side_246
+  - first:
+      213: -8952635962251544058
+    second: heavy_side_247
+  - first:
+      213: 2411462324579950283
+    second: heavy_side_248
+  - first:
+      213: -1925889048010307810
+    second: heavy_side_249
+  - first:
+      213: -7801272940146149173
+    second: heavy_side_250
+  - first:
+      213: -3710924203644158023
+    second: heavy_side_251
+  - first:
+      213: -2080139311298236809
+    second: heavy_side_252
+  - first:
+      213: 8075914012655872434
+    second: heavy_side_253
+  - first:
+      213: -6603326991822097589
+    second: heavy_side_254
+  - first:
+      213: -7347220323227435180
+    second: heavy_side_255
+  - first:
+      213: 6380477348965999599
+    second: heavy_side_256
+  - first:
+      213: -4762292527637216545
+    second: heavy_side_257
+  - first:
+      213: 1754592327934476735
+    second: heavy_side_258
+  - first:
+      213: -6234569482441667707
+    second: heavy_side_259
+  - first:
+      213: -1687562000917904094
+    second: heavy_side_260
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: heavy_side_0
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 7701
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7043f6c6057a89f70800000000000000
+      internalID: 9194282603135316999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_1
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 7637
+        width: 56
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec81ce2298daaed0800000000000000
+      internalID: -2401869328887477011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_2
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 7633
+        width: 64
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 603d4970b5e7cab80800000000000000
+      internalID: -8382185877009018106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_3
+      rect:
+        serializedVersion: 2
+        x: 2546
+        y: 7631
+        width: 67
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d613d946510b4d0800000000000000
+      internalID: -3120971019889578702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_4
+      rect:
+        serializedVersion: 2
+        x: 3562
+        y: 7630
+        width: 71
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a2555e7b78d1780800000000000000
+      internalID: -8710656880368342436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_5
+      rect:
+        serializedVersion: 2
+        x: 4576
+        y: 7691
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a24a6f164241950800000000000000
+      internalID: 6418795372078180893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_6
+      rect:
+        serializedVersion: 2
+        x: 5589
+        y: 7691
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a2880784085dd2c0800000000000000
+      internalID: -4405268084029881694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_7
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 7689
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84be1a93d7c8cfef0800000000000000
+      internalID: -73029024479057080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_8
+      rect:
+        serializedVersion: 2
+        x: 7611
+        y: 7687
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a92c71b4ffe8d19b0800000000000000
+      internalID: -5107769175240621414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_9
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 7575
+        width: 36
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a05b4776423b85d0800000000000000
+      internalID: -3059296243637595991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_10
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 7575
+        width: 34
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99b78fdd34357af0800000000000000
+      internalID: -399355551604557412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_11
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 7641
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57961fd2c98b1de0800000000000000
+      internalID: -1361342992289982628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_12
+      rect:
+        serializedVersion: 2
+        x: 3432
+        y: 7641
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c31cbe5b1d2f6c0800000000000000
+      internalID: -4110992930561246109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_13
+      rect:
+        serializedVersion: 2
+        x: 4434
+        y: 7637
+        width: 37
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6a4a2af8079bd940800000000000000
+      internalID: 5322013449480981098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_14
+      rect:
+        serializedVersion: 2
+        x: 4578
+        y: 7629
+        width: 71
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ac05e536d609ca0800000000000000
+      internalID: -6012185228988069365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_15
+      rect:
+        serializedVersion: 2
+        x: 5428
+        y: 7638
+        width: 68
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f842400f2c69777b0800000000000000
+      internalID: -5226543078545546097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_16
+      rect:
+        serializedVersion: 2
+        x: 5588
+        y: 7629
+        width: 70
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02cfbb2276cfc7350800000000000000
+      internalID: 6015960722154716192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_17
+      rect:
+        serializedVersion: 2
+        x: 6412
+        y: 7639
+        width: 108
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ba3cf6268ccf910800000000000000
+      internalID: 1872591870186728298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_18
+      rect:
+        serializedVersion: 2
+        x: 6598
+        y: 7627
+        width: 35
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d32ac356a0f6de030800000000000000
+      internalID: 3525596173739795005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_19
+      rect:
+        serializedVersion: 2
+        x: 6619
+        y: 7575
+        width: 76
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7378981c74c657f0800000000000000
+      internalID: -624095461076601990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_20
+      rect:
+        serializedVersion: 2
+        x: 7382
+        y: 7639
+        width: 162
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c0d2dda16cdf1b0800000000000000
+      internalID: -5621118941206344580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_21
+      rect:
+        serializedVersion: 2
+        x: 7607
+        y: 7617
+        width: 29
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 651a024843e00cdf0800000000000000
+      internalID: -162113967867518634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_22
+      rect:
+        serializedVersion: 2
+        x: 7626
+        y: 7618
+        width: 38
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ecfba86b4b98490800000000000000
+      internalID: -7743459388181983612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_23
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 7575
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96266d67754a20b50800000000000000
+      internalID: 6557984702967734889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_24
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 7575
+        width: 34
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83831e3ee6c6b9bb0800000000000000
+      internalID: -4928226143701485512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_25
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 7575
+        width: 39
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66cc7a5ee06587d80800000000000000
+      internalID: -8252751695173923738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_26
+      rect:
+        serializedVersion: 2
+        x: 2563
+        y: 7575
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea2cd09b402835400800000000000000
+      internalID: 311735756014863022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_27
+      rect:
+        serializedVersion: 2
+        x: 3547
+        y: 7575
+        width: 39
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f8a072abccc1550800000000000000
+      internalID: 6133001892462759804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_28
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 7575
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6723f73af40887640800000000000000
+      internalID: 5077949659394028150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_29
+      rect:
+        serializedVersion: 2
+        x: 4572
+        y: 7575
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2884d4089e6bc2e0800000000000000
+      internalID: -2104466801670453206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_30
+      rect:
+        serializedVersion: 2
+        x: 4605
+        y: 7575
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1acf89a5c1fcb480800000000000000
+      internalID: -8881958533825836515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_31
+      rect:
+        serializedVersion: 2
+        x: 5596
+        y: 7575
+        width: 37
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7253a3aa34a2342e0800000000000000
+      internalID: -2142822527591107289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_32
+      rect:
+        serializedVersion: 2
+        x: 5626
+        y: 7575
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc69b9ad74c88eb0800000000000000
+      internalID: -4717304565673136899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_33
+      rect:
+        serializedVersion: 2
+        x: 7644
+        y: 7575
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24e8b4c4f7efefb0800000000000000
+      internalID: -4616216054572981203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_34
+      rect:
+        serializedVersion: 2
+        x: 7669
+        y: 7575
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2deab1893d1584cd0800000000000000
+      internalID: -2573717217810338094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_35
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 6660
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddf37d1ccf0bc5d70800000000000000
+      internalID: 9033289552228728797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_36
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 6655
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43920faa91daac90800000000000000
+      internalID: -7157678195460631734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_37
+      rect:
+        serializedVersion: 2
+        x: 2455
+        y: 6650
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4e2d648511b0040800000000000000
+      internalID: 4614801314014225657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_38
+      rect:
+        serializedVersion: 2
+        x: 3470
+        y: 6646
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 705c2f9795171d7c0800000000000000
+      internalID: -4048329960917383929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_39
+      rect:
+        serializedVersion: 2
+        x: 4488
+        y: 6643
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5801f550ff1666ad0800000000000000
+      internalID: -2709370377882103675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_40
+      rect:
+        serializedVersion: 2
+        x: 5510
+        y: 6642
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deab4773b93c70d20800000000000000
+      internalID: 3244777127961475821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_41
+      rect:
+        serializedVersion: 2
+        x: 6536
+        y: 6643
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e90fe5fb7bb3a70800000000000000
+      internalID: 8807835528812600956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_42
+      rect:
+        serializedVersion: 2
+        x: 7565
+        y: 6645
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c855c2a3c72d2e7e0800000000000000
+      internalID: -1737595075217828468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_43
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 6600
+        width: 186
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e55fc41211e30d30800000000000000
+      internalID: 4396605129018529248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_44
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 6589
+        width: 35
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b141c8635a8c5c830800000000000000
+      internalID: 4090896448446272539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_45
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 6588
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc0f18f8399ec7c0800000000000000
+      internalID: -4049130544999494433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_46
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 6551
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08fe1c7fc8cee89e0800000000000000
+      internalID: -1617095125983170688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_47
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 6551
+        width: 54
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3390e41b8a4757b0800000000000000
+      internalID: -5235634080583740613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_48
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 6586
+        width: 208
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af64fffa825bfda0800000000000000
+      internalID: -5910039329040470108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_49
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 6591
+        width: 54
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9846e119964de6c0800000000000000
+      internalID: -4112553261475149667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_50
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 6590
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df02d90bcd4d58330800000000000000
+      internalID: 3712607512157823229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_51
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 6550
+        width: 33
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 732b530af1e2edf30800000000000000
+      internalID: 4602166582585963063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_52
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 6551
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f67ed82af545e3b00800000000000000
+      internalID: 810177752699103087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_53
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 6583
+        width: 240
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709bf1dcef132be00800000000000000
+      internalID: 1058963832818350343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_54
+      rect:
+        serializedVersion: 2
+        x: 2423
+        y: 6598
+        width: 114
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc81b38f67d9f4f0800000000000000
+      internalID: -794366985303388931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_55
+      rect:
+        serializedVersion: 2
+        x: 2524
+        y: 6551
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87266963e53c55490800000000000000
+      internalID: -7758079973665643912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_56
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 6551
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f255dd03c3375add0800000000000000
+      internalID: -2475445717815175889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_57
+      rect:
+        serializedVersion: 2
+        x: 3208
+        y: 6551
+        width: 373
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f0200f2eaaa0c470800000000000000
+      internalID: 8412911769017655538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_58
+      rect:
+        serializedVersion: 2
+        x: 3562
+        y: 6551
+        width: 61
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a929dc933d6c69a0800000000000000
+      internalID: -6238491315372742238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_59
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 6551
+        width: 381
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad685a0b03dd0cd0800000000000000
+      internalID: -2590182166296498772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_60
+      rect:
+        serializedVersion: 2
+        x: 4584
+        y: 6551
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0153d60acf530e350800000000000000
+      internalID: 6043890059070747920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_61
+      rect:
+        serializedVersion: 2
+        x: 5241
+        y: 6585
+        width: 324
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc252390d28f0000800000000000000
+      internalID: 4365956984155330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_62
+      rect:
+        serializedVersion: 2
+        x: 5555
+        y: 6551
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51885c91a5211cf40800000000000000
+      internalID: 5746894777690195989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_63
+      rect:
+        serializedVersion: 2
+        x: 5608
+        y: 6551
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f4bcdf315e19ab0800000000000000
+      internalID: -5002965837006811290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_64
+      rect:
+        serializedVersion: 2
+        x: 6269
+        y: 6585
+        width: 320
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55939fc94355e57b0800000000000000
+      internalID: -5233652032497698475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_65
+      rect:
+        serializedVersion: 2
+        x: 6581
+        y: 6550
+        width: 73
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f7b0296b364cd660800000000000000
+      internalID: 7411876307725760501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_66
+      rect:
+        serializedVersion: 2
+        x: 6633
+        y: 6551
+        width: 62
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b906c8df01ab9d010800000000000000
+      internalID: 1214206156689137819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_67
+      rect:
+        serializedVersion: 2
+        x: 7305
+        y: 6550
+        width: 375
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0368cc0e39b8f15d0800000000000000
+      internalID: -3089597352104917456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_68
+      rect:
+        serializedVersion: 2
+        x: 7660
+        y: 6551
+        width: 59
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fbe8eaa6ba076600800000000000000
+      internalID: 461349266496482288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_69
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 5624
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92cb056a7c2e02e0800000000000000
+      internalID: -2157738267270987108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_70
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 5626
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fccc2a9dd09b2d6f0800000000000000
+      internalID: -661262726133003057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_71
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 5629
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ceb135eb802ed480800000000000000
+      internalID: -8872618430655512888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_72
+      rect:
+        serializedVersion: 2
+        x: 3507
+        y: 5630
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb4705b0e8cf4b30800000000000000
+      internalID: 4273855438833273777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_73
+      rect:
+        serializedVersion: 2
+        x: 4546
+        y: 5631
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe04d031373993b0800000000000000
+      internalID: -5505308385071591750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_74
+      rect:
+        serializedVersion: 2
+        x: 5589
+        y: 5632
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d941feaa89a07ae0800000000000000
+      internalID: -1553555458337191468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_75
+      rect:
+        serializedVersion: 2
+        x: 6501
+        y: 5559
+        width: 251
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908a21ff785b80810800000000000000
+      internalID: 1731833652428580873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_76
+      rect:
+        serializedVersion: 2
+        x: 6637
+        y: 5632
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a0265ff11aa22c0800000000000000
+      internalID: -4455571722696783248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_77
+      rect:
+        serializedVersion: 2
+        x: 7691
+        y: 5631
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a6fae3fb6aab6ae0800000000000000
+      internalID: -1554961865695889760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_78
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 5561
+        width: 292
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab94da56491159240800000000000000
+      internalID: 4797760307091818938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_79
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 5574
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b06473d6bec1e0170800000000000000
+      internalID: 8146480573435037195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_80
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 5526
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb7efcf49d801e40800000000000000
+      internalID: 5625151605624961996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_81
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 5528
+        width: 56
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1159d17fe145ec010800000000000000
+      internalID: 1210997841780905233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_82
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 5561
+        width: 278
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391b2848ef95b9230800000000000000
+      internalID: 3646607272966271379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_83
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 5573
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f342dae3787ebf0800000000000000
+      internalID: -295118547306922137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_84
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 5527
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3eeeb33b35f6ad20800000000000000
+      internalID: 3289586212460752442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_85
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 5527
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e801b07cad692fa00800000000000000
+      internalID: 788858751129686158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_86
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 5561
+        width: 296
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5273311cc08227380800000000000000
+      internalID: -8975067072151996635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_87
+      rect:
+        serializedVersion: 2
+        x: 2525
+        y: 5527
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76b191aec55bc7d40800000000000000
+      internalID: 5583537048701705063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_88
+      rect:
+        serializedVersion: 2
+        x: 2552
+        y: 5527
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a6b9a7e5c4bb2350800000000000000
+      internalID: 5993082491234793129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_89
+      rect:
+        serializedVersion: 2
+        x: 3313
+        y: 5561
+        width: 266
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5d326e3154f537b0800000000000000
+      internalID: -5245017561226920609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_90
+      rect:
+        serializedVersion: 2
+        x: 3550
+        y: 5527
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecbffc9bbcc0602d0800000000000000
+      internalID: -3312946406749111346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_91
+      rect:
+        serializedVersion: 2
+        x: 3579
+        y: 5527
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b6ee41e5c3fd350800000000000000
+      internalID: 6043615599730256765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_92
+      rect:
+        serializedVersion: 2
+        x: 4373
+        y: 5561
+        width: 253
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d588caf3d2d817e0800000000000000
+      internalID: -1794452643619764776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_93
+      rect:
+        serializedVersion: 2
+        x: 4575
+        y: 5526
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddb08ce119ebe0920800000000000000
+      internalID: 2958511535724956637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_94
+      rect:
+        serializedVersion: 2
+        x: 4606
+        y: 5527
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9903bce1ad0058290800000000000000
+      internalID: -7888898235450052455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_95
+      rect:
+        serializedVersion: 2
+        x: 5436
+        y: 5562
+        width: 252
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a281819266b325f0800000000000000
+      internalID: -782581375768100190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_96
+      rect:
+        serializedVersion: 2
+        x: 5598
+        y: 5526
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f57a29c2e7fec390800000000000000
+      internalID: -7796021351522077197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_97
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 5527
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fbd7d9f0caf183e0800000000000000
+      internalID: -2053084248371897351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_98
+      rect:
+        serializedVersion: 2
+        x: 6620
+        y: 5527
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89a4247eeee543b0800000000000000
+      internalID: -5528750259609228916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_99
+      rect:
+        serializedVersion: 2
+        x: 6656
+        y: 5527
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2563c6d6c577100800000000000000
+      internalID: 105654741303186125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_100
+      rect:
+        serializedVersion: 2
+        x: 7566
+        y: 5558
+        width: 250
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbd6fd1d0decad60800000000000000
+      internalID: 7902952086721452986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_101
+      rect:
+        serializedVersion: 2
+        x: 7644
+        y: 5527
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6573e86cec7b4610800000000000000
+      internalID: 1606515046901577066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_102
+      rect:
+        serializedVersion: 2
+        x: 7686
+        y: 5527
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce1b740b8e6050200800000000000000
+      internalID: 145530159419077100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_103
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 4536
+        width: 265
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d5501e266f59b70800000000000000
+      internalID: 8905294742737476876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_104
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 4604
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ee25df10cd0a730800000000000000
+      internalID: 4008445569462890129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_105
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 4512
+        width: 271
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e9e6bb55806c6e0800000000000000
+      internalID: -1817756235287585173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_106
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 4600
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c41bbda33ae91a20800000000000000
+      internalID: 3033713331689690310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_107
+      rect:
+        serializedVersion: 2
+        x: 2433
+        y: 4514
+        width: 302
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5424c9568d2006120800000000000000
+      internalID: 2404925329456775749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_108
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 4597
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ce3ea334bd76d40800000000000000
+      internalID: 5577667745318956129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_109
+      rect:
+        serializedVersion: 2
+        x: 3425
+        y: 4518
+        width: 334
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec5e6d38f0256f50800000000000000
+      internalID: 6873936656805551334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_110
+      rect:
+        serializedVersion: 2
+        x: 3639
+        y: 4593
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ed26b90e6c3a0540800000000000000
+      internalID: 4974855181691137512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_111
+      rect:
+        serializedVersion: 2
+        x: 4499
+        y: 4550
+        width: 289
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f2706ee75e26d20800000000000000
+      internalID: 3270428612612271872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_112
+      rect:
+        serializedVersion: 2
+        x: 5607
+        y: 4553
+        width: 238
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db470d5d1e81709f0800000000000000
+      internalID: -502405475194604355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_113
+      rect:
+        serializedVersion: 2
+        x: 6663
+        y: 4553
+        width: 312
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dec5792bd3fcd000800000000000000
+      internalID: 62192617495318229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_114
+      rect:
+        serializedVersion: 2
+        x: 7731
+        y: 4586
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 416d49065440b0c20800000000000000
+      internalID: 3173635058432267796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_115
+      rect:
+        serializedVersion: 2
+        x: 7739
+        y: 4557
+        width: 317
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2543422a54f290c0800000000000000
+      internalID: -4570322003868564180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_116
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 4503
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66dbddfa8bc791700800000000000000
+      internalID: 511577165349633382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_117
+      rect:
+        serializedVersion: 2
+        x: 4541
+        y: 4525
+        width: 73
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89db9a28fcde517c0800000000000000
+      internalID: -4101110410144793192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_118
+      rect:
+        serializedVersion: 2
+        x: 4618
+        y: 4521
+        width: 40
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb1e6417b0eb9710800000000000000
+      internalID: 1701200361188891637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_119
+      rect:
+        serializedVersion: 2
+        x: 5567
+        y: 4525
+        width: 73
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 268611de3c437cf30800000000000000
+      internalID: 4595699960855488610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_120
+      rect:
+        serializedVersion: 2
+        x: 5643
+        y: 4522
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0624bd7aca4a5f250800000000000000
+      internalID: 5977865141861696096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_121
+      rect:
+        serializedVersion: 2
+        x: 6589
+        y: 4525
+        width: 73
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2547b2f6037868f50800000000000000
+      internalID: 6883337722575680594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_122
+      rect:
+        serializedVersion: 2
+        x: 6664
+        y: 4523
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac8cde0a867cdabe0800000000000000
+      internalID: -1464295051635078966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_123
+      rect:
+        serializedVersion: 2
+        x: 7606
+        y: 4524
+        width: 73
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 059de2bf5ae399680800000000000000
+      internalID: -8747891918585800368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_124
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 4553
+        width: 57
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27fe606813505b450800000000000000
+      internalID: 6103790580230713202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_125
+      rect:
+        serializedVersion: 2
+        x: 7681
+        y: 4523
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50697bdc504eec8d0800000000000000
+      internalID: -2824069202737392123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_126
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 4503
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caa85d742796b2e20800000000000000
+      internalID: 3326868689295608492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_127
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 4508
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50436b79c280be310800000000000000
+      internalID: 1435249893864518661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_128
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 3524
+        width: 318
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8cbca1fca888be50800000000000000
+      internalID: 6825355511650368651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_129
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 3562
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75524786d4b2d7890800000000000000
+      internalID: -7458757796390754985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_130
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 3518
+        width: 258
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22050836922ec7810800000000000000
+      internalID: 1764533821413281826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_131
+      rect:
+        serializedVersion: 2
+        x: 2423
+        y: 3479
+        width: 279
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1778ebb0cfcb69d70800000000000000
+      internalID: 9049628291962406769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_132
+      rect:
+        serializedVersion: 2
+        x: 3421
+        y: 3498
+        width: 250
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ba8367766abe370800000000000000
+      internalID: 8352952897183984462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_133
+      rect:
+        serializedVersion: 2
+        x: 4444
+        y: 3498
+        width: 249
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d9c2793e695a570800000000000000
+      internalID: 8477347777832852871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_134
+      rect:
+        serializedVersion: 2
+        x: 5469
+        y: 3497
+        width: 249
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 455b9d477b37bcdd0800000000000000
+      internalID: -2464749139278580396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_135
+      rect:
+        serializedVersion: 2
+        x: 6494
+        y: 3497
+        width: 250
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0cd5008b88ff2d80800000000000000
+      internalID: -8273120712424301557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_136
+      rect:
+        serializedVersion: 2
+        x: 7519
+        y: 3497
+        width: 250
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde69b07468bc5370800000000000000
+      internalID: 8312721753746534109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_137
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 3490
+        width: 71
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44fa9d523005ab640800000000000000
+      internalID: 5096473902773284676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_138
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 3490
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfbf33808bf145670800000000000000
+      internalID: 8526474869791259644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_139
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 3480
+        width: 68
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0abf5b31a29dd830800000000000000
+      internalID: 4097592457160538634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_140
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 3479
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5924619965129c0800000000000000
+      internalID: -3953783782351137333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_141
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 3478
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0311b44d2c22760800000000000000
+      internalID: 7431716552163012792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_142
+      rect:
+        serializedVersion: 2
+        x: 3512
+        y: 3480
+        width: 68
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72bb8c10406821660800000000000000
+      internalID: 7355088493217364775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_143
+      rect:
+        serializedVersion: 2
+        x: 3583
+        y: 3480
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae9a6d217ae7486b0800000000000000
+      internalID: -5294968005840164374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_144
+      rect:
+        serializedVersion: 2
+        x: 4535
+        y: 3480
+        width: 68
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90876f10399300b40800000000000000
+      internalID: 5404382856400500745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_145
+      rect:
+        serializedVersion: 2
+        x: 4606
+        y: 3480
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a938bea00b44d20800000000000000
+      internalID: 3261925591070513670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_146
+      rect:
+        serializedVersion: 2
+        x: 5560
+        y: 3480
+        width: 68
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1089521642587de90800000000000000
+      internalID: -7000980704428976127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_147
+      rect:
+        serializedVersion: 2
+        x: 5631
+        y: 3480
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa4c13ac32e50f3a0800000000000000
+      internalID: -6633698743307615057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_148
+      rect:
+        serializedVersion: 2
+        x: 6585
+        y: 3480
+        width: 69
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eb3a484bd3ba3fb0800000000000000
+      internalID: -4667220309424063515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_149
+      rect:
+        serializedVersion: 2
+        x: 6657
+        y: 3480
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d38c0925ecc120e0800000000000000
+      internalID: -2296329050373979176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_150
+      rect:
+        serializedVersion: 2
+        x: 7610
+        y: 3480
+        width: 68
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a635f248f4510e8d0800000000000000
+      internalID: -2819229935469636758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_151
+      rect:
+        serializedVersion: 2
+        x: 7682
+        y: 3480
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a60656fd85db8c20800000000000000
+      internalID: 3209893965131548328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_152
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 2473
+        width: 250
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d91a821123c2ab090800000000000000
+      internalID: -8018047593031884387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_153
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 2456
+        width: 68
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b595d1a2a097d4be0800000000000000
+      internalID: -1491402817026565797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_154
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 2456
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5b17259542929620800000000000000
+      internalID: 2779444747593784154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_155
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 2472
+        width: 250
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6011513ede507440800000000000000
+      internalID: 4931545900373839978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_156
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 2456
+        width: 68
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 011ed8348dd92ce30800000000000000
+      internalID: 4522350528005267728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_157
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 2456
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42790e2aa18139490800000000000000
+      internalID: -7740816831838906588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_158
+      rect:
+        serializedVersion: 2
+        x: 2398
+        y: 2472
+        width: 251
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92890f395ad89f30800000000000000
+      internalID: 4582652697694012063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_159
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 2456
+        width: 69
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e1e29877ff858c20800000000000000
+      internalID: 3208128602613932521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_160
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 2456
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5867425bc35fcdd80800000000000000
+      internalID: -8224429178399459707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_161
+      rect:
+        serializedVersion: 2
+        x: 3421
+        y: 2472
+        width: 251
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61097732a64852cd0800000000000000
+      internalID: -2583513219830673386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_162
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 2456
+        width: 68
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a29d5e3e8cf5ad0800000000000000
+      internalID: -2711227569514403238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_163
+      rect:
+        serializedVersion: 2
+        x: 3585
+        y: 2456
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b60460f024bf20730800000000000000
+      internalID: 3964006883177939051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_164
+      rect:
+        serializedVersion: 2
+        x: 4443
+        y: 2472
+        width: 253
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89d46a4a00fdf410800000000000000
+      internalID: 1512628976854817166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_165
+      rect:
+        serializedVersion: 2
+        x: 4538
+        y: 2456
+        width: 68
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eafa8d11bdf0f9b10800000000000000
+      internalID: 1990326993892716462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_166
+      rect:
+        serializedVersion: 2
+        x: 4609
+        y: 2456
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4eb6e7d8f788080800000000000000
+      internalID: -9184951194334010164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_167
+      rect:
+        serializedVersion: 2
+        x: 5465
+        y: 2472
+        width: 255
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e6ea32db3f5ee080800000000000000
+      internalID: -9156276281862854940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_168
+      rect:
+        serializedVersion: 2
+        x: 5561
+        y: 2456
+        width: 69
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92a50a75013a1180800000000000000
+      internalID: -9143942193830583652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_169
+      rect:
+        serializedVersion: 2
+        x: 5633
+        y: 2456
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7bbc78c452d15a60800000000000000
+      internalID: 7661135702716627839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_170
+      rect:
+        serializedVersion: 2
+        x: 6489
+        y: 2472
+        width: 255
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560dad3601c913860800000000000000
+      internalID: 7507953648012021861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_171
+      rect:
+        serializedVersion: 2
+        x: 6585
+        y: 2456
+        width: 68
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a1ccc04fb29cb220800000000000000
+      internalID: 2503036843034722724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_172
+      rect:
+        serializedVersion: 2
+        x: 6657
+        y: 2456
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e39af5c346e4a800800000000000000
+      internalID: 622875827242701799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_173
+      rect:
+        serializedVersion: 2
+        x: 7513
+        y: 2472
+        width: 253
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 828b1aaf185f2e6d0800000000000000
+      internalID: -2962535666251876312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_174
+      rect:
+        serializedVersion: 2
+        x: 7610
+        y: 2456
+        width: 68
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e72dbab820df34e0800000000000000
+      internalID: -1999650836178982941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_175
+      rect:
+        serializedVersion: 2
+        x: 7681
+        y: 2456
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19af5dcfe9ae8c180800000000000000
+      internalID: -9094761478907102575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_176
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1521
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c874635ce7c4c0a00800000000000000
+      internalID: 724037747458066316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_177
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 1447
+        width: 243
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae12fb090975287b0800000000000000
+      internalID: -5223516339381001750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_178
+      rect:
+        serializedVersion: 2
+        x: 2397
+        y: 1447
+        width: 228
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2547270fb068e97e0800000000000000
+      internalID: -1756819418791119790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_179
+      rect:
+        serializedVersion: 2
+        x: 3423
+        y: 1448
+        width: 216
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b09526c8714e3d080800000000000000
+      internalID: -9163730026978191093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_180
+      rect:
+        serializedVersion: 2
+        x: 4448
+        y: 1431
+        width: 206
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d31d66a1aaeeb200800000000000000
+      internalID: 197853413653681113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_181
+      rect:
+        serializedVersion: 2
+        x: 5473
+        y: 1431
+        width: 198
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54904d0103abb1c10800000000000000
+      internalID: 2025417173036697925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_182
+      rect:
+        serializedVersion: 2
+        x: 6632
+        y: 1567
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc52b49db15ab0bc0800000000000000
+      internalID: -3815774720238082611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_183
+      rect:
+        serializedVersion: 2
+        x: 7654
+        y: 1569
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfadabda745675510800000000000000
+      internalID: 1537809156302101243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_184
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 1448
+        width: 249
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb0d1446cff406c0800000000000000
+      internalID: -4177933327281615951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_185
+      rect:
+        serializedVersion: 2
+        x: 4621
+        y: 1490
+        width: 36
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a17264de40a306a0800000000000000
+      internalID: -6484162778052267607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_186
+      rect:
+        serializedVersion: 2
+        x: 6498
+        y: 1449
+        width: 121
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e81e1194ce5ab760800000000000000
+      internalID: 7474390729916029157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_187
+      rect:
+        serializedVersion: 2
+        x: 6633
+        y: 1431
+        width: 20
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8284c4b8d0a42f7a0800000000000000
+      internalID: -6344927502979545048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_188
+      rect:
+        serializedVersion: 2
+        x: 6638
+        y: 1486
+        width: 15
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e3d44621a8ec050800000000000000
+      internalID: 5822743179833458313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_189
+      rect:
+        serializedVersion: 2
+        x: 6653
+        y: 1504
+        width: 6
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e72b5e78abf33c0800000000000000
+      internalID: -4377575219943801263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_190
+      rect:
+        serializedVersion: 2
+        x: 6659
+        y: 1490
+        width: 27
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ca438bfd390eb90800000000000000
+      internalID: -7214604013970084715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_191
+      rect:
+        serializedVersion: 2
+        x: 6659
+        y: 1431
+        width: 14
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90194d5f751db40f0800000000000000
+      internalID: -1131580705636839159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_192
+      rect:
+        serializedVersion: 2
+        x: 7522
+        y: 1450
+        width: 97
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 219b8e88c9f7c9090800000000000000
+      internalID: -8026400125592487662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_193
+      rect:
+        serializedVersion: 2
+        x: 7659
+        y: 1488
+        width: 17
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7697bdb6c8e6ab040800000000000000
+      internalID: 4664161913479592295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_194
+      rect:
+        serializedVersion: 2
+        x: 7660
+        y: 1432
+        width: 17
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a21db3d0f3f47f730800000000000000
+      internalID: 4032779123557126442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_195
+      rect:
+        serializedVersion: 2
+        x: 7676
+        y: 1505
+        width: 6
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b89cf6d91d2573e0800000000000000
+      internalID: -2056688065820452681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_196
+      rect:
+        serializedVersion: 2
+        x: 7681
+        y: 1491
+        width: 25
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 636b663aba13043c0800000000000000
+      internalID: -4377444224553535946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_197
+      rect:
+        serializedVersion: 2
+        x: 7682
+        y: 1432
+        width: 13
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4989d29dd7de54e0800000000000000
+      internalID: -1990916638599706291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_198
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 1433
+        width: 66
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4544145c6b935cd20800000000000000
+      internalID: 3298105759274976340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_199
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1431
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166e8b501530f8570800000000000000
+      internalID: 8470993070630430305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_200
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1431
+        width: 62
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb5a52326e3ab4f0800000000000000
+      internalID: -812268191314453509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_201
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 1431
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 972908c69a848a050800000000000000
+      internalID: 5811975211628663417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_202
+      rect:
+        serializedVersion: 2
+        x: 2504
+        y: 1429
+        width: 54
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4432fdd01f1d7020800000000000000
+      internalID: 2341061538606101581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_203
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 1431
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4723ea3805faa70800000000000000
+      internalID: 8840373120045053120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_204
+      rect:
+        serializedVersion: 2
+        x: 3536
+        y: 1430
+        width: 46
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd275fd3a127b3010800000000000000
+      internalID: 1169653985266987741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_205
+      rect:
+        serializedVersion: 2
+        x: 3589
+        y: 1431
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0453970e8febe8180800000000000000
+      internalID: -9111135019996728000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_206
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 545
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18fb44d193b9cf200800000000000000
+      internalID: 215217551813427073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_207
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 545
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c1aabe318d80590800000000000000
+      internalID: -7707673182174831458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_208
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 545
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b870fc4da1aadb0800000000000000
+      internalID: -4779978553191593202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_209
+      rect:
+        serializedVersion: 2
+        x: 3558
+        y: 545
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b13009cf7092df540800000000000000
+      internalID: 5043232272003629851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_210
+      rect:
+        serializedVersion: 2
+        x: 4582
+        y: 545
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eac7cb0c7ad0d1cf0800000000000000
+      internalID: -280052587682825042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_211
+      rect:
+        serializedVersion: 2
+        x: 5606
+        y: 545
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f286aca2d53717bf0800000000000000
+      internalID: -328354453834274769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_212
+      rect:
+        serializedVersion: 2
+        x: 6630
+        y: 545
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 155b392546a6a0540800000000000000
+      internalID: 4974905717498819921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_213
+      rect:
+        serializedVersion: 2
+        x: 7654
+        y: 545
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc514acade150a60800000000000000
+      internalID: 7639546267948899577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_214
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 426
+        width: 87
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2365e332462a020e0800000000000000
+      internalID: -2296657258987235790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_215
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 464
+        width: 17
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf055ed73e86a49e0800000000000000
+      internalID: -1636380188316708613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_216
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 408
+        width: 17
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3c7eee2368d0390800000000000000
+      internalID: -7850471022122253382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_217
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 481
+        width: 6
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e0b5a5192499e9c0800000000000000
+      internalID: -3897421098334703392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_218
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 467
+        width: 25
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed56f5747ed7409f0800000000000000
+      internalID: -503138826070301218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_219
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 408
+        width: 13
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5475303787dbb9790800000000000000
+      internalID: -7522210427568957627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_220
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 426
+        width: 83
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82b4bf207c8902570800000000000000
+      internalID: 8439913682208246568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_221
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 464
+        width: 17
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db9deaf1705b9d10800000000000000
+      internalID: 2133387298961464281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_222
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 408
+        width: 17
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870bd7e14723b08a0800000000000000
+      internalID: -6337916576284692360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_223
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 481
+        width: 6
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e7ab89fa220df680800000000000000
+      internalID: -8719810919920850968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_224
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 467
+        width: 25
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 929dc53fe6e1f2a70800000000000000
+      internalID: 8804289258410793257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_225
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 408
+        width: 13
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7692bd81211728160800000000000000
+      internalID: 7026302691191761255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_226
+      rect:
+        serializedVersion: 2
+        x: 2404
+        y: 426
+        width: 83
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fa6da460bed579b0800000000000000
+      internalID: -5082911755233039624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_227
+      rect:
+        serializedVersion: 2
+        x: 2539
+        y: 464
+        width: 17
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a21ae31f525453b0800000000000000
+      internalID: -5524700274567277913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_228
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 408
+        width: 17
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86c07be296ad73a00800000000000000
+      internalID: 736297209388534888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_229
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 481
+        width: 6
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0e1630894091b90800000000000000
+      internalID: -7270775072474668853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_230
+      rect:
+        serializedVersion: 2
+        x: 2561
+        y: 467
+        width: 25
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af4a305844f89ef0800000000000000
+      internalID: -101062400195014743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_231
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 408
+        width: 13
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0e234fc3fa8f630800000000000000
+      internalID: 3961108548602224830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_232
+      rect:
+        serializedVersion: 2
+        x: 3427
+        y: 426
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b287a2c3b6d772740800000000000000
+      internalID: 5127204600308987947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_233
+      rect:
+        serializedVersion: 2
+        x: 3563
+        y: 464
+        width: 17
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6008039f5bbb40210800000000000000
+      internalID: 1298368982833725446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_234
+      rect:
+        serializedVersion: 2
+        x: 3564
+        y: 408
+        width: 17
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec2a03304f0ebfbd0800000000000000
+      internalID: -2595233421618797874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_235
+      rect:
+        serializedVersion: 2
+        x: 3580
+        y: 481
+        width: 6
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b3f7cf2780e00c0800000000000000
+      internalID: -4607736078797948021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_236
+      rect:
+        serializedVersion: 2
+        x: 3585
+        y: 467
+        width: 25
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c7c492f3ef897ed0800000000000000
+      internalID: -2415741515917375547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_237
+      rect:
+        serializedVersion: 2
+        x: 3586
+        y: 408
+        width: 13
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0755008362416e8e0800000000000000
+      internalID: -1664620857885960848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_238
+      rect:
+        serializedVersion: 2
+        x: 4452
+        y: 427
+        width: 36
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61305aa90fc191820800000000000000
+      internalID: 2889372455647118102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_239
+      rect:
+        serializedVersion: 2
+        x: 4587
+        y: 464
+        width: 17
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5de4f5e8b540e740800000000000000
+      internalID: 5179216231910403420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_240
+      rect:
+        serializedVersion: 2
+        x: 4588
+        y: 408
+        width: 17
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6ceff63dd7648f0800000000000000
+      internalID: -556619156863138075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_241
+      rect:
+        serializedVersion: 2
+        x: 4604
+        y: 481
+        width: 6
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6de5b5f775587840800000000000000
+      internalID: 5222017741647900010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_242
+      rect:
+        serializedVersion: 2
+        x: 4609
+        y: 467
+        width: 25
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3eea25eb208b61c0800000000000000
+      internalID: -4509369675864674755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_243
+      rect:
+        serializedVersion: 2
+        x: 4610
+        y: 408
+        width: 13
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac196da335016020800000000000000
+      internalID: 2333151801465445545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_244
+      rect:
+        serializedVersion: 2
+        x: 5477
+        y: 428
+        width: 19
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 525579d745936fe20800000000000000
+      internalID: 3383955205062612261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_245
+      rect:
+        serializedVersion: 2
+        x: 5611
+        y: 464
+        width: 17
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb3340ba32e665c0800000000000000
+      internalID: -4222438858920084498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_246
+      rect:
+        serializedVersion: 2
+        x: 5612
+        y: 408
+        width: 17
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99920b3606e205d60800000000000000
+      internalID: 7876846739795224985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_247
+      rect:
+        serializedVersion: 2
+        x: 5628
+        y: 481
+        width: 6
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60afb928609d1c380800000000000000
+      internalID: -8952635962251544058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_248
+      rect:
+        serializedVersion: 2
+        x: 5633
+        y: 467
+        width: 25
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce53dd253c377120800000000000000
+      internalID: 2411462324579950283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_249
+      rect:
+        serializedVersion: 2
+        x: 5634
+        y: 408
+        width: 13
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e17c7885d1ed545e0800000000000000
+      internalID: -1925889048010307810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_250
+      rect:
+        serializedVersion: 2
+        x: 6635
+        y: 464
+        width: 17
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc8b8b6089f4cb390800000000000000
+      internalID: -7801272940146149173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_251
+      rect:
+        serializedVersion: 2
+        x: 6636
+        y: 408
+        width: 17
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bff36d1916208cc0800000000000000
+      internalID: -3710924203644158023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_252
+      rect:
+        serializedVersion: 2
+        x: 6652
+        y: 481
+        width: 6
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e2eb2415cd123e0800000000000000
+      internalID: -2080139311298236809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_253
+      rect:
+        serializedVersion: 2
+        x: 6657
+        y: 467
+        width: 25
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9e3f8a109631070800000000000000
+      internalID: 8075914012655872434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_254
+      rect:
+        serializedVersion: 2
+        x: 6658
+        y: 408
+        width: 13
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43f1bc36154c54a0800000000000000
+      internalID: -6603326991822097589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_255
+      rect:
+        serializedVersion: 2
+        x: 7659
+        y: 464
+        width: 17
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f7f731b0e690a90800000000000000
+      internalID: -7347220323227435180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_256
+      rect:
+        serializedVersion: 2
+        x: 7660
+        y: 408
+        width: 17
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe36b8af7520c8850800000000000000
+      internalID: 6380477348965999599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_257
+      rect:
+        serializedVersion: 2
+        x: 7676
+        y: 481
+        width: 6
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd2cfa58d20f8edb0800000000000000
+      internalID: -4762292527637216545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_258
+      rect:
+        serializedVersion: 2
+        x: 7681
+        y: 467
+        width: 25
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb109201d60995810800000000000000
+      internalID: 1754592327934476735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_259
+      rect:
+        serializedVersion: 2
+        x: 7682
+        y: 408
+        width: 13
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58bc29f761c5a79a0800000000000000
+      internalID: -6234569482441667707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_side_260
+      rect:
+        serializedVersion: 2
+        x: 6505
+        y: 431
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22547de1d439498e0800000000000000
+      internalID: -1687562000917904094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
