@@ -338,7 +338,7 @@ public class BaseFighter : MonoBehaviour
         if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
 
         state.force_facing(input.direction.x);
-        player_sounds.PlayHeavy();
+        player_sounds.PlayHeavySidewaysClip();
         state.start_action((FighterAction)((int)(FighterAction.HeavySide) - input.direction.y));
         return true;
     }
