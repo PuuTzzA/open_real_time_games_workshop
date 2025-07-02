@@ -676,7 +676,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dashClip: {fileID: 8300000, guid: 999e686180c446a488b353b09b0d69ac, type: 3}
-  heavyClip: {fileID: 8300000, guid: 6e5c17e636f846e4f991b3516c2d0930, type: 3}
+  heavySidewaysClip: {fileID: 8300000, guid: fedf7aea043d7da4c90d65d19f2be129, type: 3}
+  heavyUpClip: {fileID: 8300000, guid: 6e5c17e636f846e4f991b3516c2d0930, type: 3}
   heavyHitClip: {fileID: 8300000, guid: cbbdb0aa1ece1584992d2134853bfb99, type: 3}
   jabClip: {fileID: 8300000, guid: aaca02764734149459383db92a82eff4, type: 3}
   jabHitClip: {fileID: 8300000, guid: ee742a6d09ca5e54a865a6fb5182f703, type: 3}

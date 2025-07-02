@@ -4,7 +4,8 @@ public class PlayerSounds : MonoBehaviour
 {
     [Header("Audio Clips")]
     public AudioClip dashClip;
-    public AudioClip heavyClip;
+    public AudioClip heavySidewaysClip;
+    public AudioClip heavyUpClip;
     public AudioClip heavyHitClip;
     public AudioClip jabClip;
     public AudioClip jabHitClip;
@@ -23,7 +24,8 @@ public class PlayerSounds : MonoBehaviour
     }
 
     public void PlayDash() => Play(dashClip);
-    public void PlayHeavy() => Play(heavyClip);
+    public void PlayHeavySidewaysClip() => Play(heavySidewaysClip);
+    public void PlayHeavyUpClip() => Play(heavyUpClip);
     public void PlayHammerHit() => Play(heavyHitClip);
     public void PlayJab() => Play(jabClip);
     public void PlayJabHit() => Play(jabHitClip);

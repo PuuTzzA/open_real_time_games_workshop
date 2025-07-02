@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hammerman_icon_0: 6353497865673364783
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
