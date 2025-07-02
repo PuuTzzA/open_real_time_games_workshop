@@ -54,6 +54,7 @@ public class MinigameUI : MonoBehaviour
 
     void OnEnable()
     {
+        Debug.Log("MinigameUI OnEnable called");
         var root = GetComponent<UIDocument>().rootVisualElement;
         vLabel = root.Q<Label>("V");
         sLabel = root.Q<Label>("S");
@@ -93,7 +94,7 @@ public class MinigameUI : MonoBehaviour
         for (int i = 0; i < 2; i++)
         {
 
-            skillchecks[i].ArrowAngle += spinSpeed * Time.deltaTime;
+            skillchecks[i].ArrowAngle += spinSpeed * Time.unscaledDeltaTime;
             skillchecks[i].ArrowAngle %= 360f;
         }
     }
@@ -106,7 +107,7 @@ public class MinigameUI : MonoBehaviour
         yield return AnimateTranslate(element, direction, Vector2.zero, entryDuration, EaseOutCubic);
 
         // Step 3: Stay a bit longer than V/S
-        yield return new WaitForSeconds(iconExitDelay);
+        yield return new WaitForSecondsRealtime(iconExitDelay);
 
         // Step 4: Slide Out (from center back to where it came from)
         yield return AnimateTranslate(element, Vector2.zero, direction, exitDuration, EaseInCubic);
@@ -117,9 +118,9 @@ public class MinigameUI : MonoBehaviour
 
     IEnumerator SlideThrough(VisualElement element, Vector2 entryOffset, Vector2 exitOffset)
     {
-        yield return new WaitForSeconds(iconStartOffset);
+        yield return new WaitForSecondsRealtime(iconStartOffset);
         yield return AnimateTranslate(element, entryOffset, Vector2.zero, entryDuration, EaseOutCubic);
-        yield return new WaitForSeconds(pauseDuration);
+        yield return new WaitForSecondsRealtime(pauseDuration);
         yield return AnimateTranslate(element, Vector2.zero, exitOffset, exitDuration, EaseInCubic);
 
     }
@@ -129,7 +130,7 @@ public class MinigameUI : MonoBehaviour
         float elapsed = 0f;
         while (elapsed < duration)
         {
-            elapsed += Time.deltaTime;
+            elapsed += Time.unscaledDeltaTime;
             float t = Mathf.Clamp01(elapsed / duration);
             float easedT = easing(t);
             Vector2 current = Vector2.Lerp(from, to, easedT);
@@ -143,7 +144,7 @@ public class MinigameUI : MonoBehaviour
     IEnumerator ShrinkAndMove(Label label, float horizontalOffset)
     {
         // Wait only for entry to finish
-        yield return new WaitForSeconds(entryDuration);
+        yield return new WaitForSecondsRealtime(entryDuration);
 
         float totalAnimTime = pauseDuration + exitDuration;
         float elapsed = 0f;
@@ -159,7 +160,7 @@ public class MinigameUI : MonoBehaviour
 
         while (elapsed < totalAnimTime)
         {
-            elapsed += Time.deltaTime;
+            elapsed += Time.unscaledDeltaTime;
             float t = Mathf.Clamp01(elapsed / totalAnimTime);
             float easedT = EaseInCubic(t);
 

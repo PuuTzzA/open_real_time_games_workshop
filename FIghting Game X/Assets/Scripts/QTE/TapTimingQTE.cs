@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using TMPro;
 
-public class ButtonSmashQTE : MonoBehaviour, IQTE
+public class TapTimingQTE : MonoBehaviour, IQTE
 {
     [Header("UI Elements")]
     public Slider p1Slider;

@@ -60,6 +60,10 @@ public class QTEManager : MonoBehaviour
         // 1) Show “Finish Him” intro
         finishHimPanel.SetActive(true);
         
+        var minigameUI = finishHimPanel.GetComponent<MinigameUI>();
+        
+        float totalDuration = minigameUI.entryDuration + minigameUI.pauseDuration + minigameUI.exitDuration + minigameUI.iconEndOffset + minigameUI.iconStartOffset; 
+        
         if (finishHimVoice != null) finishHimAudioSource.PlayOneShot(finishHimVoice);
 
         // (optional) trigger an Animator on finishHimPanel here
@@ -67,30 +71,24 @@ public class QTEManager : MonoBehaviour
         // anim.SetTrigger("PopIn");
 
         // wait one real-time second (unscaled)
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(totalDuration);
 
         // 2) Hide intro
         finishHimPanel.SetActive(false);
 
         // 3) Now start the actual minigame
-        int type = 1;
-        SpawnMinigame(type, fallen, killer, onDone);
+        int type = UnityEngine.Random.Range(0, 1); // Randomly choose between 0, 1
+        StartCoroutine(SpawnMinigame(type, fallen, killer, onDone));
     }
 
-    private void SpawnMinigame(int type, GameObject fallen, GameObject killer, Action onDone)
+    private IEnumerator SpawnMinigame(int type, GameObject fallen, GameObject killer, Action onDone)
     {
         // instantiate the correct UI and init it
         IQTE qte;
         if (type == 0)
         {
-            var prefab = Instantiate(mirrorSequenceUIPrefab);
-            // qte = prefab.GetComponent<MirrorSequenceQTE>();
-            qte = prefab.GetComponent<ButtonSmashQTE>(); // For simplicity, using ButtonSmashQTE here
-        }
-        else if (type == 1)
-        {
             var prefab = Instantiate(buttonSmashUIPrefab);
-             qte = prefab.GetComponent<ButtonSmashQTE>();
+            qte = prefab.GetComponent<ButtonSmashQTE>();
         }
         else
         {
@@ -98,6 +96,9 @@ public class QTEManager : MonoBehaviour
             // qte = prefab.GetComponent<TapTimingQTE>();
             qte = prefab.GetComponent<ButtonSmashQTE>(); // For simplicity, using ButtonSmashQTE here
         }
+        
+        yield return new WaitForSecondsRealtime(0.5f); // Give some time for the UI to instantiate and show up
+        
         qte.Init(p1Input, p2Input, (r1, r2) => {
             EvaluateDualQTE(fallen, killer, r1, r2);
             onDone?.Invoke();
