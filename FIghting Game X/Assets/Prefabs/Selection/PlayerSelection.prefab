@@ -1343,6 +1343,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: f9459d25-f3cd-4af8-99d7-0b8d91ea1fb2
     m_ActionName: 'QTE/Smash[/Keyboard/space,/SwitchProControllerHID/buttonSouth]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 00843831-69ed-4b44-acbb-27fbaa717038
+    m_ActionName: 'UI/Confirm[/Gamepad/buttonSouth,/Keyboard/enter]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b7729fdc-6108-4e08-942f-e35a9d88df07
+    m_ActionName: 'UI/Pause Game[/Keyboard/escape,/Gamepad/start]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: UI
@@ -1362,8 +1370,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - {fileID: 5433043207104148075, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
-  - {fileID: 5433043207104148075, guid: b501cd97a8574934f95f5f47f19c1109, type: 3}
-  - {fileID: 5433043207104148075, guid: c02442a78fead2e48bf2160d7d42a6a9, type: 3}
+  - {fileID: 5433043207104148075, guid: d64c55a02ba994f3ea6d66e6e51bf01e, type: 3}
+  - {fileID: 5433043207104148075, guid: 136650703059dae5f8e56dead428f004, type: 3}
   selectedCharacter: 0
   characterDisplayImage: {fileID: 6377793426404930210}
   characterNameText: {fileID: 3758074233020555856}

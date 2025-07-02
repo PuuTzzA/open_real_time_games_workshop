@@ -426,7 +426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &465540594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,6 +473,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2237ca1c0a2f9a40b89fd1ad9eb8961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iconStartOffset: 0.3
+  iconEndOffset: 0.3
   entryDuration: 0.25
   pauseDuration: 1.5
   exitDuration: 0.25
