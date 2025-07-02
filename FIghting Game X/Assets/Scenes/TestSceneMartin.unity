@@ -473,6 +473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2237ca1c0a2f9a40b89fd1ad9eb8961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spinSpeed: 90
   iconStartOffset: 0.3
   iconEndOffset: 0.3
   entryDuration: 0.25
@@ -1044,11 +1045,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dbffe4f2b7619c499592f266163ab3c, type: 3}
---- !u!1 &851320856 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4720139210247328335, guid: 9dbffe4f2b7619c499592f266163ab3c, type: 3}
-  m_PrefabInstance: {fileID: 851320855}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &851442324
 GameObject:
   m_ObjectHideFlags: 0
@@ -2164,7 +2160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6058923b87e4844af32308d3b464c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finishHimPanel: {fileID: 851320856}
+  finishHimPanel: {fileID: 465540593}
   finishHimVoice: {fileID: 8300000, guid: 27ff2432cb21d3d4b906ce85ea277261, type: 3}
   mirrorSequenceUIPrefab: {fileID: 0}
   buttonSmashUIPrefab: {fileID: 4720139210247328335, guid: 3f6d17648b8607649a510bc45cfb736f, type: 3}
