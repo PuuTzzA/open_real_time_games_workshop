@@ -7,7 +7,7 @@ public enum AnimationEndAction
 {
     Loop,
     Wait,
-    GoIdle
+    Signal
 }
 
 public class AnimationInfo
@@ -30,23 +30,23 @@ public class AnimationHandler : MonoBehaviour
     private static readonly AnimationInfo[] state_infos = {
         new ("idle", AnimationEndAction.Loop, true),
         new ("running", AnimationEndAction.Loop, true),
-        new ("jump", AnimationEndAction.GoIdle),
-        new ("jab_up", AnimationEndAction.GoIdle),
-        new ("jab_side", AnimationEndAction.GoIdle),
-        new ("jab_down", AnimationEndAction.GoIdle),
+        new ("jump", AnimationEndAction.Signal),
+        new ("jab_up", AnimationEndAction.Signal),
+        new ("jab_side", AnimationEndAction.Signal),
+        new ("jab_down", AnimationEndAction.Signal),
         new ("falling", AnimationEndAction.Loop, true),
-        new ("ult", AnimationEndAction.GoIdle),
-        new ("emote", AnimationEndAction.GoIdle),
+        new ("ult", AnimationEndAction.Signal),
+        new ("emote", AnimationEndAction.Signal),
         new ("block_up", AnimationEndAction.Wait),
         new ("block_side", AnimationEndAction.Wait),
-        new ("heavy_up", AnimationEndAction.GoIdle),
-        new ("heavy_side", AnimationEndAction.GoIdle),
-        new ("heavy_down", AnimationEndAction.GoIdle),
-        new ("dash", AnimationEndAction.GoIdle),
-        new ("knocked_back_light", AnimationEndAction.GoIdle),
-        new ("knocked_back_heavy", AnimationEndAction.GoIdle),
-        new ("stunned", AnimationEndAction.GoIdle),
-        new ("die", AnimationEndAction.GoIdle)
+        new ("heavy_up", AnimationEndAction.Signal),
+        new ("heavy_side", AnimationEndAction.Signal),
+        new ("heavy_down", AnimationEndAction.Signal),
+        new ("dash", AnimationEndAction.Signal),
+        new ("knocked_back_light", AnimationEndAction.Signal),
+        new ("knocked_back_heavy", AnimationEndAction.Signal),
+        new ("stunned", AnimationEndAction.Signal),
+        new ("die", AnimationEndAction.Signal)
     };
 
     private int _current_frame_count;
@@ -54,9 +54,25 @@ public class AnimationHandler : MonoBehaviour
     private FighterAction _action;
     private AnimationInfo _info;
 
+    private bool _frozen = false;
+    private bool _finished;
+
+    private Action<int>[] _callbacks;
+
+    public FighterAction get_action() { return _action; }
+    public AnimationInfo get_info() { return _info; }
+
+    public bool is_frozen() { return _frozen; }
+    public void set_frozen(bool frozen) {  _frozen = frozen; }
+
+    public bool is_finished() { return _finished; }
+    public int get_index() { return _frame_index; }
+
     private void Awake()
     {
         animator.speed = 0.0f;
+
+        play(FighterAction.Idle);
     }
 
     public void play(FighterAction action)
@@ -69,13 +85,21 @@ public class AnimationHandler : MonoBehaviour
         var clip = animator.GetCurrentAnimatorClipInfo(0)[0].clip;
         _current_frame_count = Mathf.RoundToInt(clip.frameRate * clip.length);
         _frame_index = 0;
+        _finished = false;
     }
 
-    public FighterAction get_action() { return _action; }
-    public AnimationInfo get_info() { return _info; }
-
-    public bool tick()
+    public void show()
     {
+        float normalized_time = _frame_index / (float)_current_frame_count;
+        animator.Play(_info.state_name, 0, normalized_time);
+        animator.Update(0.0f);
+    }
+
+    public void step()
+    {
+        if (!_frozen)
+            _frame_index++;
+
         switch (_info.end_action)
         {
             case AnimationEndAction.Loop:
@@ -85,18 +109,13 @@ public class AnimationHandler : MonoBehaviour
                 if (_frame_index >= _current_frame_count)
                     _frame_index = _current_frame_count - 1;
                 break;
-            case AnimationEndAction.GoIdle:
+            case AnimationEndAction.Signal:
                 if (_frame_index >= _current_frame_count)
                 {
-                    return true;
+                    _frame_index = _current_frame_count - 1;
+                    _finished = true;
                 }
                 break;
         }
-
-        float normalized_time = _frame_index / (float)_current_frame_count;
-        animator.Play(_info.state_name, 0, normalized_time);
-        animator.Update(0.0f);
-        _frame_index++;
-        return false;
     }
 }

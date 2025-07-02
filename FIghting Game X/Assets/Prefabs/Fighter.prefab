@@ -298,7 +298,7 @@ Transform:
   m_GameObject: {fileID: 5433043207104148075}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.76991, y: 1.712, z: 0}
+  m_LocalPosition: {x: 2.76991, y: 3.17, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -565,7 +565,6 @@ MonoBehaviour:
   fighter_input: {fileID: 8266158835667872492}
   state: {fileID: 1556262320957081972}
   health: {fileID: 2867311719178718406}
-  animator: {fileID: 4497933916085059567}
   deathBounds: {x: -15, y: -8}
   died: 0
 --- !u!114 &8266158835667872492
@@ -629,7 +628,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433299da7bac5e94684e72ecc7b78f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 4497933916085059567}
   animation_handler: {fileID: 5143516375130627310}
   sprite_transform: {fileID: 7005465704683545578}
   available_air_jumps: 0
@@ -637,7 +635,6 @@ MonoBehaviour:
   dash_speed: 0
   remaining_flying_frames: 0
   animation_data: {fileID: 1333684296444455915}
-  passive: 1
 --- !u!114 &4859815249510380014
 MonoBehaviour:
   m_ObjectHideFlags: 0
