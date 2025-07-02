@@ -1,10 +1,34 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using System.Collections;
+using System;
 
-public class SlideInLabels : MonoBehaviour
+public class MinigameUI : MonoBehaviour
 {
 
+    /// <summary>
+    /// SkillCheck
+    /// </summary>
+    private SkillCheck[] skillchecks = new SkillCheck[2];
+
+    public float spinSpeed = 90f;
+
+    private VisualElement skillCheckSection;
+
+
+
+
+
+
+
+
+
+
+
+
+    /// <summary>
+    /// Slide in Labels
+    /// </summary>
     public float iconStartOffset = 0.3f;
     public float iconEndOffset = 0.3f;
 
@@ -23,6 +47,11 @@ public class SlideInLabels : MonoBehaviour
     private Label player1;
     private Label player2;
 
+    void Awake()
+    {
+
+    }
+
     void OnEnable()
     {
         var root = GetComponent<UIDocument>().rootVisualElement;
@@ -33,7 +62,18 @@ public class SlideInLabels : MonoBehaviour
         icon1 = root.Q<SquareElement>("icon1");
         icon2 = root.Q<SquareElement>("icon2");
 
-        StartCoroutine(SlideIcon(icon1, Vector2.left * offset)); // enters from left, exits to left ✅
+
+        skillCheckSection = root.Q<VisualElement>("MiniGame1");
+
+        for (int i = 0; i < skillchecks.Length; i++)
+        {
+            skillchecks[i] = (SkillCheck)root.Q<VisualElement>($"SkillCheck{i}").hierarchy.ElementAt(0).hierarchy.ElementAt(0);
+        }
+
+
+
+
+        StartCoroutine(SlideIcon(icon1, Vector2.left * offset, () => { skillCheckSection.style.visibility = Visibility.Visible; })); // enters from left, exits to left ✅
         StartCoroutine(SlideIcon(icon2, Vector2.right * offset)); // enters from right, exits to right ✅
 
 
@@ -48,9 +88,19 @@ public class SlideInLabels : MonoBehaviour
         StartCoroutine(ShrinkAndMove(player2, exitXOffset));  // move right
     }
 
-    IEnumerator SlideIcon(VisualElement element, Vector2 direction)
+    void Update()
     {
-        float iconExitDelay = pauseDuration + iconEndOffset +iconStartOffset;
+        for (int i = 0; i < 2; i++)
+        {
+
+            skillchecks[i].ArrowAngle += spinSpeed * Time.deltaTime;
+            skillchecks[i].ArrowAngle %= 360f;
+        }
+    }
+
+    IEnumerator SlideIcon(VisualElement element, Vector2 direction, Action onComplete = null)
+    {
+        float iconExitDelay = pauseDuration + iconEndOffset + iconStartOffset;
 
         // Step 2: Slide In (from offset to center)
         yield return AnimateTranslate(element, direction, Vector2.zero, entryDuration, EaseOutCubic);
@@ -60,6 +110,7 @@ public class SlideInLabels : MonoBehaviour
 
         // Step 4: Slide Out (from center back to where it came from)
         yield return AnimateTranslate(element, Vector2.zero, direction, exitDuration, EaseInCubic);
+        onComplete?.Invoke();
     }
 
 
@@ -70,6 +121,7 @@ public class SlideInLabels : MonoBehaviour
         yield return AnimateTranslate(element, entryOffset, Vector2.zero, entryDuration, EaseOutCubic);
         yield return new WaitForSeconds(pauseDuration);
         yield return AnimateTranslate(element, Vector2.zero, exitOffset, exitDuration, EaseInCubic);
+
     }
 
     IEnumerator AnimateTranslate(VisualElement element, Vector2 from, Vector2 to, float duration, System.Func<float, float> easing)
@@ -131,3 +183,4 @@ public class SlideInLabels : MonoBehaviour
     float EaseOutCubic(float t) => 1f - Mathf.Pow(1f - Mathf.Clamp01(t), 3f);
     float EaseInCubic(float t) => Mathf.Pow(Mathf.Clamp01(t), 3f);
 }
+
