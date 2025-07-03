@@ -20,9 +20,6 @@ public class TapTimingQTE : MonoBehaviour, IQTE
     [Header("Audio")]
     public AudioSource finishHimAudio;
 
-    private float p1VisualValue = 0;
-    private float p2VisualValue = 0;
-
     private float duration = 3f;
     private Action<QTEResult, QTEResult> onFinished;
 
