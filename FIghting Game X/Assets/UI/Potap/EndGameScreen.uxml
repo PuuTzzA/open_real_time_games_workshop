@@ -1,0 +1,15 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Potap/endgame_screen.uss?fileID=7433441132597879392&amp;guid=6d23c185fb427e14ca6b1e8cdc10fb38&amp;type=3#endgame_screen" />
+    <ui:VisualElement name="Screen" class="screen">
+        <ui:Label text="K.O!" name="Header" class="endgame_header" />
+        <ui:VisualElement name="Body" class="endscreen_body">
+            <ui:Label text="PLAYER1 wins!&#10;" name="Winner_Nomination" style="height: 25%; font-size: 117%; -unity-font-definition: url(&quot;project://database/Assets/Fonts/DINEngschriftStd.otf?fileID=12800000&amp;guid=302840babc359724996439fb6b0da6c9&amp;type=3#DINEngschriftStd&quot;); -unity-text-align: middle-center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; color: rgb(234, 235, 235); -unity-font-style: normal;" />
+            <ui:VisualElement name="Options_Selector" style="flex-grow: 1; background-color: rgb(49, 91, 141); width: 60%; align-self: center; height: 100%; border-left-color: rgb(234, 235, 235); border-right-color: rgb(234, 235, 235); border-top-color: rgb(234, 235, 235); border-bottom-color: rgb(234, 235, 235); border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; justify-content: space-evenly;">
+                <ui:Button text="Rematch" name="Rematch_Button" class="endscreen_option_button" />
+                <ui:Button text="Character Selection" name="Character_Selection_Button" emoji-fallback-support="true" class="endscreen_option_button" />
+                <ui:Button text="Return to Main Menu" name="Return_To_Menu_Button" emoji-fallback-support="true" class="endscreen_option_button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Footer" class="endscreen_footer" />
+    </ui:VisualElement>
+</ui:UXML>
