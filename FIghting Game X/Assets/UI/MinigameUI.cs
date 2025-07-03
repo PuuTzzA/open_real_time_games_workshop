@@ -9,11 +9,11 @@ public class MinigameUI : MonoBehaviour
     /// <summary>
     /// SkillCheck
     /// </summary>
-    private SkillCheck[] skillchecks = new SkillCheck[2];
+    public SkillCheck[] skillchecks = new SkillCheck[2];
 
-    public float spinSpeed = 90f;
 
     private VisualElement skillCheckSection;
+    public int minigamenumber = 0;
 
 
 
@@ -44,17 +44,24 @@ public class MinigameUI : MonoBehaviour
 
     private Label vLabel;
     private Label sLabel;
-    private Label player1;
-    private Label player2;
+    public Label player1;
+    public Label player2;
 
-    void Awake()
-    {
+    private VisualElement root;
 
-    }
 
     void OnEnable()
     {
-        var root = GetComponent<UIDocument>().rootVisualElement;
+        root = GetComponent<UIDocument>().rootVisualElement;
+
+
+        for (int i = 0; i < skillchecks.Length; i++)
+        {
+            skillchecks[i] = (SkillCheck)root.Q<VisualElement>($"SkillCheck{i}").hierarchy.ElementAt(0).hierarchy.ElementAt(0);
+        }
+
+        root = GetComponent<UIDocument>().rootVisualElement;
+
         vLabel = root.Q<Label>("V");
         sLabel = root.Q<Label>("S");
         player1 = root.Q<Label>("player1");
@@ -65,15 +72,9 @@ public class MinigameUI : MonoBehaviour
 
         skillCheckSection = root.Q<VisualElement>("MiniGame1");
 
-        for (int i = 0; i < skillchecks.Length; i++)
-        {
-            skillchecks[i] = (SkillCheck)root.Q<VisualElement>($"SkillCheck{i}").hierarchy.ElementAt(0).hierarchy.ElementAt(0);
-        }
 
 
-
-
-        StartCoroutine(SlideIcon(icon1, Vector2.left * offset, () => { skillCheckSection.style.visibility = Visibility.Visible; })); // enters from left, exits to left ✅
+        StartCoroutine(SlideIcon(icon1, Vector2.left * offset, () => { Debug.Log(minigamenumber); if (minigamenumber == 1) { skillCheckSection.style.visibility = Visibility.Visible; minigamenumber = 0; } })); // enters from left, exits to left ✅
         StartCoroutine(SlideIcon(icon2, Vector2.right * offset)); // enters from right, exits to right ✅
 
 
@@ -92,9 +93,11 @@ public class MinigameUI : MonoBehaviour
     {
         for (int i = 0; i < 2; i++)
         {
-
-            skillchecks[i].ArrowAngle += spinSpeed * Time.unscaledDeltaTime;
-            skillchecks[i].ArrowAngle %= 360f;
+            if (skillchecks[i].rotating)
+            {
+                skillchecks[i].ArrowAngle += skillchecks[i].spinSpeed * Time.unscaledDeltaTime;
+                skillchecks[i].ArrowAngle %= 360f;
+            }
         }
     }
 

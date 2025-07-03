@@ -4,50 +4,59 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using TMPro;
+using Random = System.Random;
 
 public class TapTimingQTE : MonoBehaviour, IQTE
 {
-    [Header("UI Elements")]
-    public Slider p1Slider;
-    public Slider p2Slider;
-    public TextMeshProUGUI timerText;
-    public TextMeshProUGUI p1NameText;
-    public TextMeshProUGUI p2NameText;
-    public GameObject finishHimImageObject;
-    
+    private MinigameUI ui;
+
+    private int[] points = new int[2];
+    private float[] angles = new float[3];
+
+    private float spinSpeedmultiplier = 1.1f;
+    [SerializeField]
+    private float arrowstunn = 0.2f;
+
     [Header("Audio")]
     public AudioSource finishHimAudio;
-
-    private float p1Taps = 0;
-    private float p2Taps = 0;
 
     private float p1VisualValue = 0;
     private float p2VisualValue = 0;
 
-    private float duration = 3f;
+    private float duration = 20f;
     private Action<QTEResult, QTEResult> onFinished;
 
     private InputAction p1Smash;
     private InputAction p2Smash;
 
-    // Constants
-    public float TAP_BOOST = 8f;
-    public float GRAVITY = 50f; // Downforce per second
-    public float SMOOTHNESS = 150f; // Higher is snappier
+
+
+    void OnEnable()
+    {
+        ui = this.gameObject.GetComponent<MinigameUI>();
+        angles[0] = (float)(new Random().NextDouble() * (180f - 8f) + 8f);
+        for (int i = 1; i < 3; i++)
+        {
+            ui.skillchecks[0].Arrow2Angle = angles[i - 1];
+            angles[i] = ui.skillchecks[0].GetValidNewArrow2Angle();
+        }
+
+
+        ui.skillchecks[0].Arrow2Angle = angles[0];
+        ui.skillchecks[1].Arrow2Angle = angles[0];
+    }
 
     public void Init(PlayerInput p1, PlayerInput p2, Action<QTEResult, QTEResult> callback)
     {
+
+        
+        ui.skillchecks[0].rotating = true;
+        ui.skillchecks[1].rotating = true;
+        points[0] = 0;
+        points[1] = 0;
         onFinished = callback;
-        p1NameText.text = "Player " + p1.playerIndex;
-        p2NameText.text = "Player " + p2.playerIndex;
-
-        p1Taps = 0;
-        p2Taps = 0;
-
-        p1Slider.minValue = 0;
-        p1Slider.maxValue = 100;
-        p2Slider.minValue = 0;
-        p2Slider.maxValue = 100;
+        ui.player1.text = "Player " + p1.playerIndex;
+        ui.player2.text = "Player " + p2.playerIndex;
 
         // Switch to QTE map
         p1.SwitchCurrentActionMap("QTE");
@@ -56,8 +65,8 @@ public class TapTimingQTE : MonoBehaviour, IQTE
         p1Smash = p1.actions["Smash"];
         p2Smash = p2.actions["Smash"];
 
-        p1Smash.performed += OnP1Smash;
-        p2Smash.performed += OnP2Smash;
+        p1Smash.performed += ctx => OnSmash(0);
+        p2Smash.performed += ctx => OnSmash(1);
 
         p1Smash.Enable();
         p2Smash.Enable();
@@ -65,56 +74,75 @@ public class TapTimingQTE : MonoBehaviour, IQTE
         StartCoroutine(QTERoutine());
     }
 
-    private void OnP1Smash(InputAction.CallbackContext ctx)
+    private void OnSmash(int player)
     {
-        p1Taps += TAP_BOOST;
-        p1Taps = Mathf.Clamp(p1Taps, 0f, 100f);
+        int hitResult = ui.skillchecks[player].CheckArrowHit();
+
+        switch (hitResult)
+        {
+            case 1:
+                points[player]++;
+                ui.skillchecks[player].spinSpeed *= -1;
+                ui.skillchecks[player].Arrow2Angle = angles[points[player]];
+                ui.skillchecks[player].Circle2FillPercent *= -1;
+                break;
+            case 2:
+                points[player]++;
+                ui.skillchecks[player].spinSpeed *= spinSpeedmultiplier;
+                ui.skillchecks[player].spinSpeed *= -1;
+                ui.skillchecks[player].Arrow2Angle = angles[points[player]];
+                ui.skillchecks[player].Circle2FillPercent *= -1;
+                break;
+            default:
+                ui.skillchecks[player].rotating = false;
+                StartCoroutine(pauseArrow(player));
+                if (player == 0)
+                    p1Smash.Disable();
+                else
+                    p2Smash.Disable();
+                break;
+        }
     }
 
-    private void OnP2Smash(InputAction.CallbackContext ctx)
+    private IEnumerator pauseArrow(int player)
     {
-        p2Taps += TAP_BOOST;
-        p2Taps = Mathf.Clamp(p2Taps, 0f, 100f);
+        yield return new WaitForSecondsRealtime(arrowstunn);
+        ui.skillchecks[player].rotating = true;
+        if (player == 0)
+            p1Smash.Enable();
+        else
+            p2Smash.Enable();
+        yield return null;
     }
-    
+
     private IEnumerator QTERoutine()
     {
+
         float timeLeft = duration;
 
         while (timeLeft > 0f &&
-               p1Taps < 100f &&
-               p2Taps < 100f)
+               points[0] < 3 &&
+               points[1] < 3)
         {
             float dt = Time.unscaledDeltaTime;
             timeLeft -= dt;
-            timerText.text = timeLeft.ToString("F1");
+            //timerText.text = timeLeft.ToString("F1");
 
             // Apply downforce (gravity)
-            p1Taps -= GRAVITY * dt;
-            p2Taps -= GRAVITY * dt;
-            p1Taps = Mathf.Clamp(p1Taps, 0f, 100f);
-            p2Taps = Mathf.Clamp(p2Taps, 0f, 100f);
-
-            float smoothingSpeed = SMOOTHNESS * dt;
-            p1VisualValue = Mathf.MoveTowards(p1VisualValue, p1Taps, smoothingSpeed);
-            p2VisualValue = Mathf.MoveTowards(p2VisualValue, p2Taps, smoothingSpeed);
-
-            p1Slider.value = p1VisualValue;
-            p2Slider.value = p2VisualValue;
 
             yield return null;
         }
 
-        p1Smash.performed -= OnP1Smash;
-        p2Smash.performed -= OnP2Smash;
+        p1Smash.performed -= ctx => OnSmash(0);
+        p2Smash.performed -= ctx => OnSmash(1);
         p1Smash.Disable();
         p2Smash.Disable();
 
-        Destroy(gameObject);
+        //Destroy(gameObject);
 
         onFinished?.Invoke(
-            new QTEResult { IsSuccess = p1Taps >= 100f, Score = Mathf.RoundToInt(p1Taps) },
-            new QTEResult { IsSuccess = p2Taps >= 100f, Score = Mathf.RoundToInt(p2Taps) }
+            new QTEResult { IsSuccess = points[0] >= 3, Score = points[0] },
+            new QTEResult { IsSuccess = points[1] >= 3, Score = points[1] }
         );
     }
 }

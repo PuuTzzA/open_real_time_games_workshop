@@ -13,7 +13,7 @@ public class FighterHealth : MonoBehaviour
     [Header("Health Settings")]
     public int maxLives = 3;
     public bool qteUsed = false;
-    public int maxHealth = 300;
+    public int maxHealth = 10;
 
     // Current health and lives
     private int currentLives;

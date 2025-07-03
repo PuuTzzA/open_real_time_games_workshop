@@ -194,7 +194,6 @@ public class BaseFighter : MonoBehaviour
 
     public void knockback(Vector2 direction)
     {
-        Debug.Log("knockback");
         player_sounds.PlayJabHit();
         state.start_action(FighterAction.KnockedBackLight);
         state.remaining_flying_frames = 5;
@@ -203,8 +202,7 @@ public class BaseFighter : MonoBehaviour
 
     public void handle_hit(AttackHitbox hitbox_data)
     {
-        Debug.Log(hitbox_data.knockback);
-        Debug.Log(hitbox_data.source_fighter.state.get_facing_vec());
+
         knockback(hitbox_data.knockback * hitbox_data.source_fighter.state.get_facing_vec());
     }
 
@@ -382,7 +380,6 @@ public class BaseFighter : MonoBehaviour
         if (!input.pressed) return true;
 
         knockback(new Vector2(-(float)(int)state.get_facing(), 0.0f) * 5.0f);
-        Debug.Log("knocking back");
         return true;
     }
 

@@ -8,6 +8,11 @@ using UnityEngine.UIElements;
 
 public class QTEManager : MonoBehaviour
 {
+    int type = 1;
+
+
+    [SerializeField]
+    private GameObject ui;
 
     public static QTEManager Instance { get; private set; }
 
@@ -56,6 +61,11 @@ public class QTEManager : MonoBehaviour
 
     private IEnumerator StartQTESequence(GameObject fallen, GameObject killer, Action onDone)
     {
+        //int type = UnityEngine.Random.Range(0, 1); // Randomly choose between 0, 1
+        if (type == 1)
+            ui.GetComponent<MinigameUI>().minigamenumber = 1;
+
+
         // 1) Show “Finish Him” intro
         finishHimPanel.SetActive(true);
 
@@ -75,7 +85,6 @@ public class QTEManager : MonoBehaviour
         // 2) Hide intro
 
         // 3) Now start the actual minigame
-        int type = UnityEngine.Random.Range(0, 1); // Randomly choose between 0, 1
         StartCoroutine(SpawnMinigame(type, fallen, killer, onDone));
     }
 
@@ -95,9 +104,8 @@ public class QTEManager : MonoBehaviour
         }
         else
         {
-            var prefab = Instantiate(tapTimingUIPrefab);
             // qte = prefab.GetComponent<TapTimingQTE>();
-            qte = prefab.GetComponent<ButtonSmashQTE>(); // For simplicity, using ButtonSmashQTE here
+            qte = ui.GetComponent<TapTimingQTE>(); // For simplicity, using ButtonSmashQTE here
         }
 
         yield return new WaitForSecondsRealtime(0.5f); // Give some time for the UI to instantiate and show up
