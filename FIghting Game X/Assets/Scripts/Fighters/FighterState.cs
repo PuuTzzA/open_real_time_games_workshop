@@ -44,6 +44,8 @@ public class FighterState : MonoBehaviour
 
     public AnimationData animation_data;
 
+    public float air_resistance;
+
     private bool _grounded;
 
     private Facing _facing;
@@ -118,12 +120,14 @@ public class FighterState : MonoBehaviour
 
 
 
-    public void Start()
+    public void Awake()
     {
         base_stats = BaseStats.DEFAULT;
 
         available_air_jumps = base_stats.air_jumps;
         remaining_dash_frames = 0;
+
+        air_resistance = - Physics2D.gravity.y / (base_stats.terminal_speed * base_stats.terminal_speed);
 
         set_facing(Facing.Right);
         start_action(FighterAction.Idle);
