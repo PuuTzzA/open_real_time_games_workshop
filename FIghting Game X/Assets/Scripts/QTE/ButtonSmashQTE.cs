@@ -77,39 +77,6 @@ public class ButtonSmashQTE : MonoBehaviour, IQTE
         p2Taps = Mathf.Clamp(p2Taps, 0f, 100f);
     }
     
-    private IEnumerator AnimateIntroAndStartMinigame()
-    {
-        finishHimImageObject.SetActive(true);
-        RectTransform rt = finishHimImageObject.GetComponent<RectTransform>();
-
-        Vector3 startScale = rt.localScale;
-        Vector3 endScale = Vector3.one * 1f;
-
-        Vector2 startPos = rt.anchoredPosition;
-        Vector2 endPos = new Vector2(0, 300); // move to top
-
-        float duration = 1f;
-        float elapsed = 0f;
-
-        if (finishHimAudio != null) finishHimAudio.Play();
-
-        // Animate: scale + move
-        while (elapsed < duration)
-        {
-            elapsed += Time.unscaledDeltaTime;
-            float t = Mathf.SmoothStep(0, 1, elapsed / duration);
-            rt.localScale = Vector3.Lerp(startScale, endScale, t);
-            rt.anchoredPosition = Vector2.Lerp(startPos, endPos, t);
-            yield return null;
-        }
-
-        rt.localScale = endScale;
-        rt.anchoredPosition = endPos;
-
-        // Now start the actual QTE
-        StartCoroutine(QTERoutine());
-    }
-
     private IEnumerator QTERoutine()
     {
         float timeLeft = duration;

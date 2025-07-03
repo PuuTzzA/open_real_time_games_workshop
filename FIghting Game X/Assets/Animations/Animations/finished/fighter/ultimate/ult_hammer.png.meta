@@ -1,0 +1,3770 @@
+fileFormatVersion: 2
+guid: 4a53afedebbdc254faa65efb9f0f1d4f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 263749119777484490
+    second: ult_hammer_0
+  - first:
+      213: -1290093809297913571
+    second: ult_hammer_1
+  - first:
+      213: 678975878473577598
+    second: ult_hammer_2
+  - first:
+      213: -6795882872405157582
+    second: ult_hammer_3
+  - first:
+      213: -58861218953330349
+    second: ult_hammer_4
+  - first:
+      213: 1396004806526656500
+    second: ult_hammer_5
+  - first:
+      213: -3674745779574970612
+    second: ult_hammer_6
+  - first:
+      213: -5837880913158479205
+    second: ult_hammer_7
+  - first:
+      213: -5180498327132483597
+    second: ult_hammer_8
+  - first:
+      213: -8897123129308601781
+    second: ult_hammer_9
+  - first:
+      213: -7575215081272113784
+    second: ult_hammer_10
+  - first:
+      213: -5371772735318490154
+    second: ult_hammer_11
+  - first:
+      213: 5733811925905457517
+    second: ult_hammer_12
+  - first:
+      213: 8209337998594158194
+    second: ult_hammer_13
+  - first:
+      213: -1068840542518294233
+    second: ult_hammer_14
+  - first:
+      213: 1982447222350422695
+    second: ult_hammer_15
+  - first:
+      213: 5030468448840152809
+    second: ult_hammer_16
+  - first:
+      213: -2209409948410182621
+    second: ult_hammer_17
+  - first:
+      213: 2314296254772468125
+    second: ult_hammer_18
+  - first:
+      213: 8804600918847750777
+    second: ult_hammer_19
+  - first:
+      213: -8283987453001941928
+    second: ult_hammer_20
+  - first:
+      213: -4968210292360573724
+    second: ult_hammer_21
+  - first:
+      213: -7482458156474095345
+    second: ult_hammer_22
+  - first:
+      213: -2320414426324806408
+    second: ult_hammer_23
+  - first:
+      213: -4485147417214724437
+    second: ult_hammer_24
+  - first:
+      213: 5239318023097695590
+    second: ult_hammer_25
+  - first:
+      213: 8720786589981564204
+    second: ult_hammer_26
+  - first:
+      213: 8178149518918674414
+    second: ult_hammer_27
+  - first:
+      213: 5479754839087312659
+    second: ult_hammer_28
+  - first:
+      213: -5363591480282629860
+    second: ult_hammer_29
+  - first:
+      213: -4827444124023970587
+    second: ult_hammer_30
+  - first:
+      213: 2350704157125427806
+    second: ult_hammer_31
+  - first:
+      213: -5402399433163425718
+    second: ult_hammer_32
+  - first:
+      213: -4698840494045352142
+    second: ult_hammer_33
+  - first:
+      213: 4592569522511052860
+    second: ult_hammer_34
+  - first:
+      213: -1350778068041766207
+    second: ult_hammer_35
+  - first:
+      213: 1994419831934421033
+    second: ult_hammer_36
+  - first:
+      213: -1979552686337912799
+    second: ult_hammer_37
+  - first:
+      213: -5565895329129820446
+    second: ult_hammer_38
+  - first:
+      213: 7351194339237715161
+    second: ult_hammer_39
+  - first:
+      213: -7323066995606438521
+    second: ult_hammer_40
+  - first:
+      213: 1276328088979716772
+    second: ult_hammer_41
+  - first:
+      213: 3495461619609011196
+    second: ult_hammer_42
+  - first:
+      213: 5945134620892623904
+    second: ult_hammer_43
+  - first:
+      213: -4713619784417927970
+    second: ult_hammer_44
+  - first:
+      213: 8226910244888472833
+    second: ult_hammer_45
+  - first:
+      213: -8794838264012478285
+    second: ult_hammer_46
+  - first:
+      213: -2186571387448698130
+    second: ult_hammer_47
+  - first:
+      213: -3025498539860553302
+    second: ult_hammer_48
+  - first:
+      213: 6103878680483310692
+    second: ult_hammer_49
+  - first:
+      213: -5270211491049299642
+    second: ult_hammer_50
+  - first:
+      213: 5958916529201973480
+    second: ult_hammer_51
+  - first:
+      213: 1451939991103057745
+    second: ult_hammer_52
+  - first:
+      213: -103538025549362281
+    second: ult_hammer_53
+  - first:
+      213: 7454412376202512522
+    second: ult_hammer_54
+  - first:
+      213: -4849909504818939794
+    second: ult_hammer_55
+  - first:
+      213: 6928478804463102255
+    second: ult_hammer_56
+  - first:
+      213: -2416778159626078592
+    second: ult_hammer_57
+  - first:
+      213: 9209745742063146647
+    second: ult_hammer_58
+  - first:
+      213: 1476114559914451049
+    second: ult_hammer_59
+  - first:
+      213: -5650504553554082901
+    second: ult_hammer_60
+  - first:
+      213: -2615339017728653099
+    second: ult_hammer_61
+  - first:
+      213: 22850541686973445
+    second: ult_hammer_62
+  - first:
+      213: 9148706072591631770
+    second: ult_hammer_63
+  - first:
+      213: -9111644466762435881
+    second: ult_hammer_64
+  - first:
+      213: 4330891547592093852
+    second: ult_hammer_65
+  - first:
+      213: 7700120290178172405
+    second: ult_hammer_66
+  - first:
+      213: 7672543070834953826
+    second: ult_hammer_67
+  - first:
+      213: -6697062442631192130
+    second: ult_hammer_68
+  - first:
+      213: -8440767945054424084
+    second: ult_hammer_69
+  - first:
+      213: -5172678440958027658
+    second: ult_hammer_70
+  - first:
+      213: -610324441099186222
+    second: ult_hammer_71
+  - first:
+      213: 5271102502177248177
+    second: ult_hammer_72
+  - first:
+      213: -9000382071330512724
+    second: ult_hammer_73
+  - first:
+      213: 7670946786064269322
+    second: ult_hammer_74
+  - first:
+      213: 1803595634620274465
+    second: ult_hammer_75
+  - first:
+      213: 3630717103048225491
+    second: ult_hammer_76
+  - first:
+      213: -5044069567979007033
+    second: ult_hammer_77
+  - first:
+      213: 2001241616368218964
+    second: ult_hammer_78
+  - first:
+      213: 6004011164139423511
+    second: ult_hammer_79
+  - first:
+      213: 1833874096007854982
+    second: ult_hammer_80
+  - first:
+      213: -3132089922531030361
+    second: ult_hammer_81
+  - first:
+      213: 5051960220142766494
+    second: ult_hammer_82
+  - first:
+      213: -3553579264075077653
+    second: ult_hammer_83
+  - first:
+      213: 158066444370820949
+    second: ult_hammer_84
+  - first:
+      213: 4664692230515105522
+    second: ult_hammer_85
+  - first:
+      213: 6944066823754064240
+    second: ult_hammer_86
+  - first:
+      213: -3663149707386385827
+    second: ult_hammer_87
+  - first:
+      213: -5571344154107921095
+    second: ult_hammer_88
+  - first:
+      213: 2834113088700332129
+    second: ult_hammer_89
+  - first:
+      213: 7292989929697910032
+    second: ult_hammer_90
+  - first:
+      213: 6442720812649047553
+    second: ult_hammer_91
+  - first:
+      213: -1982842358935476847
+    second: ult_hammer_92
+  - first:
+      213: 4537350147584390712
+    second: ult_hammer_93
+  - first:
+      213: 8146234665726370329
+    second: ult_hammer_94
+  - first:
+      213: -941554099253197187
+    second: ult_hammer_95
+  - first:
+      213: -7035910231175543005
+    second: ult_hammer_96
+  - first:
+      213: -5679458742591489830
+    second: ult_hammer_97
+  - first:
+      213: -908918196456151276
+    second: ult_hammer_98
+  - first:
+      213: -6326561475267168187
+    second: ult_hammer_99
+  - first:
+      213: -7940584844487984239
+    second: ult_hammer_100
+  - first:
+      213: 969677329353750998
+    second: ult_hammer_101
+  - first:
+      213: -7851709499938359710
+    second: ult_hammer_102
+  - first:
+      213: -1634930784140709009
+    second: ult_hammer_103
+  - first:
+      213: 4063251125714587015
+    second: ult_hammer_104
+  - first:
+      213: 7143767473451794312
+    second: ult_hammer_105
+  - first:
+      213: 2184906960061352332
+    second: ult_hammer_106
+  - first:
+      213: -5339914814320850776
+    second: ult_hammer_107
+  - first:
+      213: -2368407524604279668
+    second: ult_hammer_108
+  - first:
+      213: -6524021558968729791
+    second: ult_hammer_109
+  - first:
+      213: 3710932106371791801
+    second: ult_hammer_110
+  - first:
+      213: -1531957991692722969
+    second: ult_hammer_111
+  - first:
+      213: 4866922303492582927
+    second: ult_hammer_112
+  - first:
+      213: -4320010048890525915
+    second: ult_hammer_113
+  - first:
+      213: 5148468112982388563
+    second: ult_hammer_114
+  - first:
+      213: 3966629993280798899
+    second: ult_hammer_115
+  - first:
+      213: 7889229715947808141
+    second: ult_hammer_116
+  - first:
+      213: -7439562931068283802
+    second: ult_hammer_117
+  - first:
+      213: 4775885041121217577
+    second: ult_hammer_118
+  - first:
+      213: -5611679975948639978
+    second: ult_hammer_119
+  - first:
+      213: 8252693472657583517
+    second: ult_hammer_120
+  - first:
+      213: 4910247793627038647
+    second: ult_hammer_121
+  - first:
+      213: 8123079868969035323
+    second: ult_hammer_122
+  - first:
+      213: 8724926744704685226
+    second: ult_hammer_123
+  - first:
+      213: -8690602644122870670
+    second: ult_hammer_124
+  - first:
+      213: -1486716837746723646
+    second: ult_hammer_125
+  - first:
+      213: -8058948439833720543
+    second: ult_hammer_126
+  - first:
+      213: 2336327779869472445
+    second: ult_hammer_127
+  - first:
+      213: -1011480368853312789
+    second: ult_hammer_128
+  - first:
+      213: 5351117592159121403
+    second: ult_hammer_129
+  - first:
+      213: 7016035714267085468
+    second: ult_hammer_130
+  - first:
+      213: -846363454642605972
+    second: ult_hammer_131
+  - first:
+      213: 2298028861240115634
+    second: ult_hammer_132
+  - first:
+      213: -2451827457736166382
+    second: ult_hammer_133
+  - first:
+      213: -459735606595673972
+    second: ult_hammer_134
+  - first:
+      213: 7441328369423438519
+    second: ult_hammer_135
+  - first:
+      213: -7071759503276780113
+    second: ult_hammer_136
+  - first:
+      213: -72293965962629233
+    second: ult_hammer_137
+  - first:
+      213: 814402660021194247
+    second: ult_hammer_138
+  - first:
+      213: 962565152362597486
+    second: ult_hammer_139
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ult_hammer_0
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 13329
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acea8225d6609a300800000000000000
+      internalID: 263749119777484490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_1
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 13320
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d190ed1048aa81ee0800000000000000
+      internalID: -1290093809297913571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_2
+      rect:
+        serializedVersion: 2
+        x: 3183
+        y: 13318
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e74f97fc6f43c6900800000000000000
+      internalID: 678975878473577598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_3
+      rect:
+        serializedVersion: 2
+        x: 4462
+        y: 13317
+        width: 38
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 239112f988c20b1a0800000000000000
+      internalID: -6795882872405157582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_4
+      rect:
+        serializedVersion: 2
+        x: 5742
+        y: 13317
+        width: 38
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3518d318802ee2ff0800000000000000
+      internalID: -58861218953330349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_5
+      rect:
+        serializedVersion: 2
+        x: 7021
+        y: 13318
+        width: 40
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff52c5a9fa9f5310800000000000000
+      internalID: 1396004806526656500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_6
+      rect:
+        serializedVersion: 2
+        x: 8299
+        y: 13315
+        width: 45
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c076190ee2ea00dc0800000000000000
+      internalID: -3674745779574970612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_7
+      rect:
+        serializedVersion: 2
+        x: 9581
+        y: 13319
+        width: 38
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b92e72a6d3eabfea0800000000000000
+      internalID: -5837880913158479205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_8
+      rect:
+        serializedVersion: 2
+        x: 10861
+        y: 13319
+        width: 38
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ff43cb083c2b18b0800000000000000
+      internalID: -5180498327132483597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_9
+      rect:
+        serializedVersion: 2
+        x: 12139
+        y: 13318
+        width: 42
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4226a227a1178480800000000000000
+      internalID: -8897123129308601781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_10
+      rect:
+        serializedVersion: 2
+        x: 13417
+        y: 13318
+        width: 46
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885089fc40e6fd690800000000000000
+      internalID: -7575215081272113784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_11
+      rect:
+        serializedVersion: 2
+        x: 14691
+        y: 13318
+        width: 58
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d386397821a375b0800000000000000
+      internalID: -5371772735318490154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_12
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 12037
+        width: 101
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d614e7c4197929f40800000000000000
+      internalID: 5733811925905457517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_13
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 12037
+        width: 101
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e225f2a6d6de170800000000000000
+      internalID: 8209337998594158194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_14
+      rect:
+        serializedVersion: 2
+        x: 3126
+        y: 12037
+        width: 146
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72949a58037ba21f0800000000000000
+      internalID: -1068840542518294233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_15
+      rect:
+        serializedVersion: 2
+        x: 4389
+        y: 12035
+        width: 190
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2282ace31138b10800000000000000
+      internalID: 1982447222350422695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_16
+      rect:
+        serializedVersion: 2
+        x: 5663
+        y: 12039
+        width: 198
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e67de2d660dfc540800000000000000
+      internalID: 5030468448840152809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_17
+      rect:
+        serializedVersion: 2
+        x: 6943
+        y: 12039
+        width: 198
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3240ccd9b599651e0800000000000000
+      internalID: -2209409948410182621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_18
+      rect:
+        serializedVersion: 2
+        x: 8223
+        y: 12039
+        width: 198
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d99daba9e280e1020800000000000000
+      internalID: 2314296254772468125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_19
+      rect:
+        serializedVersion: 2
+        x: 9505
+        y: 12037
+        width: 198
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9728ffc03e9303a70800000000000000
+      internalID: 8804600918847750777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_20
+      rect:
+        serializedVersion: 2
+        x: 10782
+        y: 12038
+        width: 198
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85cb60c4d4d590d80800000000000000
+      internalID: -8283987453001941928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_21
+      rect:
+        serializedVersion: 2
+        x: 12062
+        y: 12038
+        width: 198
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec8862df0f5d0bb0800000000000000
+      internalID: -4968210292360573724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_22
+      rect:
+        serializedVersion: 2
+        x: 13342
+        y: 12038
+        width: 198
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0923a053f7f82890800000000000000
+      internalID: -7482458156474095345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_23
+      rect:
+        serializedVersion: 2
+        x: 14622
+        y: 12038
+        width: 198
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f4d7339f5b3ccfd0800000000000000
+      internalID: -2320414426324806408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_24
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 10758
+        width: 198
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6d7a7ff2e81c1c0800000000000000
+      internalID: -4485147417214724437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_25
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 10758
+        width: 198
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d3a00abfbc5b840800000000000000
+      internalID: 5239318023097695590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_26
+      rect:
+        serializedVersion: 2
+        x: 3102
+        y: 10758
+        width: 198
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d57d9e235760970800000000000000
+      internalID: 8720786589981564204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_27
+      rect:
+        serializedVersion: 2
+        x: 4368
+        y: 10758
+        width: 212
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7ed2368af9e7170800000000000000
+      internalID: 8178149518918674414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_28
+      rect:
+        serializedVersion: 2
+        x: 5628
+        y: 10758
+        width: 232
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31fe6004efffb0c40800000000000000
+      internalID: 5479754839087312659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_29
+      rect:
+        serializedVersion: 2
+        x: 6880
+        y: 10758
+        width: 260
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19317957f1b095b0800000000000000
+      internalID: -5363591480282629860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_30
+      rect:
+        serializedVersion: 2
+        x: 8134
+        y: 10758
+        width: 286
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e421866529710db0800000000000000
+      internalID: -4827444124023970587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_31
+      rect:
+        serializedVersion: 2
+        x: 9386
+        y: 10758
+        width: 314
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e52ce71f9f06f9020800000000000000
+      internalID: 2350704157125427806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_32
+      rect:
+        serializedVersion: 2
+        x: 10642
+        y: 10758
+        width: 338
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a48b583b652d605b0800000000000000
+      internalID: -5402399433163425718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_33
+      rect:
+        serializedVersion: 2
+        x: 11892
+        y: 10758
+        width: 368
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23fa438577d5aceb0800000000000000
+      internalID: -4698840494045352142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_34
+      rect:
+        serializedVersion: 2
+        x: 13155
+        y: 10758
+        width: 385
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c308e83f5a51cbf30800000000000000
+      internalID: 4592569522511052860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_35
+      rect:
+        serializedVersion: 2
+        x: 14423
+        y: 10758
+        width: 397
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca6bfbf082114de0800000000000000
+      internalID: -1350778068041766207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_36
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 9478
+        width: 418
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 928027f254a9dab10800000000000000
+      internalID: 1994419831934421033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_37
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 9478
+        width: 439
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12098a4e1573784e0800000000000000
+      internalID: -1979552686337912799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_38
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 9478
+        width: 490
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee063200b7f1c2b0800000000000000
+      internalID: -5565895329129820446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_39
+      rect:
+        serializedVersion: 2
+        x: 4070
+        y: 9478
+        width: 510
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc5021ad40b40660800000000000000
+      internalID: 7351194339237715161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_40
+      rect:
+        serializedVersion: 2
+        x: 5336
+        y: 9478
+        width: 524
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78dbd74ed5d3f5a90800000000000000
+      internalID: -7323066995606438521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_41
+      rect:
+        serializedVersion: 2
+        x: 6607
+        y: 9478
+        width: 533
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aa3d7872ad66b110800000000000000
+      internalID: 1276328088979716772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_42
+      rect:
+        serializedVersion: 2
+        x: 7879
+        y: 9478
+        width: 541
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf38ec2c2df528030800000000000000
+      internalID: 3495461619609011196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_43
+      rect:
+        serializedVersion: 2
+        x: 9151
+        y: 9478
+        width: 549
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0247e24607c518250800000000000000
+      internalID: 5945134620892623904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_44
+      rect:
+        serializedVersion: 2
+        x: 10419
+        y: 9478
+        width: 561
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edc1487a7cbd59eb0800000000000000
+      internalID: -4713619784417927970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_45
+      rect:
+        serializedVersion: 2
+        x: 11691
+        y: 9478
+        width: 569
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d6999974bdb2270800000000000000
+      internalID: 8226910244888472833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_46
+      rect:
+        serializedVersion: 2
+        x: 12944
+        y: 9478
+        width: 596
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b8e588223572f580800000000000000
+      internalID: -8794838264012478285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_47
+      rect:
+        serializedVersion: 2
+        x: 14198
+        y: 9478
+        width: 622
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea561778ecb7a1e0800000000000000
+      internalID: -2186571387448698130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_48
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 8198
+        width: 654
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa116279b154306d0800000000000000
+      internalID: -3025498539860553302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_49
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 8175
+        width: 675
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46ca946f15555b450800000000000000
+      internalID: 6103878680483310692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_50
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 8131
+        width: 695
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64123d852927cd6b0800000000000000
+      internalID: -5270211491049299642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_51
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 8018
+        width: 728
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e88949f20352b250800000000000000
+      internalID: 5958916529201973480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_52
+      rect:
+        serializedVersion: 2
+        x: 5132
+        y: 8018
+        width: 728
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15fa1ecaab3562410800000000000000
+      internalID: 1451939991103057745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_53
+      rect:
+        serializedVersion: 2
+        x: 6412
+        y: 8018
+        width: 728
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b826ed6b8209ef0800000000000000
+      internalID: -103538025549362281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_54
+      rect:
+        serializedVersion: 2
+        x: 7692
+        y: 8018
+        width: 728
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8883dc9f84637760800000000000000
+      internalID: 7454412376202512522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_55
+      rect:
+        serializedVersion: 2
+        x: 8970
+        y: 8009
+        width: 730
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e68f9745009a1bcb0800000000000000
+      internalID: -4849909504818939794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_56
+      rect:
+        serializedVersion: 2
+        x: 10250
+        y: 8009
+        width: 730
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29a8d593c6e62060800000000000000
+      internalID: 6928478804463102255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_57
+      rect:
+        serializedVersion: 2
+        x: 11530
+        y: 8009
+        width: 730
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 086b0968111e57ed0800000000000000
+      internalID: -2416778159626078592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_58
+      rect:
+        serializedVersion: 2
+        x: 12810
+        y: 8009
+        width: 730
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796175305f69fcf70800000000000000
+      internalID: 9209745742063146647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_59
+      rect:
+        serializedVersion: 2
+        x: 14092
+        y: 8019
+        width: 728
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960ab771f563c7410800000000000000
+      internalID: 1476114559914451049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_60
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 6739
+        width: 728
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba38ea3db006591b0800000000000000
+      internalID: -5650504553554082901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_61
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 6739
+        width: 728
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d88011250374bbd0800000000000000
+      internalID: -2615339017728653099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_62
+      rect:
+        serializedVersion: 2
+        x: 2572
+        y: 6739
+        width: 728
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5046d24527e215000800000000000000
+      internalID: 22850541686973445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_63
+      rect:
+        serializedVersion: 2
+        x: 3853
+        y: 6746
+        width: 727
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a95884b73bbb6fe70800000000000000
+      internalID: 9148706072591631770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_64
+      rect:
+        serializedVersion: 2
+        x: 5133
+        y: 6746
+        width: 727
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2b8fe02afec8180800000000000000
+      internalID: -9111644466762435881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_65
+      rect:
+        serializedVersion: 2
+        x: 6413
+        y: 6746
+        width: 727
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90f7fe9aea6a1c30800000000000000
+      internalID: 4330891547592093852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_66
+      rect:
+        serializedVersion: 2
+        x: 7693
+        y: 6746
+        width: 727
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f509df5b925cda60800000000000000
+      internalID: 7700120290178172405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_67
+      rect:
+        serializedVersion: 2
+        x: 8973
+        y: 6746
+        width: 727
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e8005a5495a7a60800000000000000
+      internalID: 7672543070834953826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_68
+      rect:
+        serializedVersion: 2
+        x: 10252
+        y: 6738
+        width: 728
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb1ab54e0314f03a0800000000000000
+      internalID: -6697062442631192130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_69
+      rect:
+        serializedVersion: 2
+        x: 11532
+        y: 6738
+        width: 728
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce3f68b664e5cda80800000000000000
+      internalID: -8440767945054424084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_70
+      rect:
+        serializedVersion: 2
+        x: 12812
+        y: 6738
+        width: 728
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 678106d2d54f638b0800000000000000
+      internalID: -5172678440958027658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_71
+      rect:
+        serializedVersion: 2
+        x: 14092
+        y: 6738
+        width: 728
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df4b8a8721b787f0800000000000000
+      internalID: -610324441099186222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_72
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 5449
+        width: 730
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b392f85cc7b62940800000000000000
+      internalID: 5271102502177248177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_73
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 5449
+        width: 730
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca0ec833138381380800000000000000
+      internalID: -9000382071330512724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_74
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 5449
+        width: 730
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a000942a57da47a60800000000000000
+      internalID: 7670946786064269322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_75
+      rect:
+        serializedVersion: 2
+        x: 3850
+        y: 5449
+        width: 730
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1279cff7ca8a70910800000000000000
+      internalID: 1803595634620274465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_76
+      rect:
+        serializedVersion: 2
+        x: 5130
+        y: 5449
+        width: 730
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d2ff1708f5e26230800000000000000
+      internalID: 3630717103048225491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_77
+      rect:
+        serializedVersion: 2
+        x: 6412
+        y: 5458
+        width: 728
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c3d04ad37ddff9b0800000000000000
+      internalID: -5044069567979007033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_78
+      rect:
+        serializedVersion: 2
+        x: 7692
+        y: 5458
+        width: 728
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4533b55a5a6d5cb10800000000000000
+      internalID: 2001241616368218964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_79
+      rect:
+        serializedVersion: 2
+        x: 8972
+        y: 5458
+        width: 728
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 717820ad758825350800000000000000
+      internalID: 6004011164139423511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_80
+      rect:
+        serializedVersion: 2
+        x: 10252
+        y: 5458
+        width: 728
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68bb65726ca337910800000000000000
+      internalID: 1833874096007854982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_81
+      rect:
+        serializedVersion: 2
+        x: 11530
+        y: 5449
+        width: 730
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aa05fa5fc49884d0800000000000000
+      internalID: -3132089922531030361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_82
+      rect:
+        serializedVersion: 2
+        x: 12810
+        y: 5449
+        width: 730
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e998305cd0b2c1640800000000000000
+      internalID: 5051960220142766494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_83
+      rect:
+        serializedVersion: 2
+        x: 14090
+        y: 5449
+        width: 730
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be76c9bac762faec0800000000000000
+      internalID: -3553579264075077653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_84
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 4169
+        width: 730
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55fb1abf790913200800000000000000
+      internalID: 158066444370820949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_85
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 4179
+        width: 728
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe906a7ed05cb040800000000000000
+      internalID: 4664692230515105522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_86
+      rect:
+        serializedVersion: 2
+        x: 2572
+        y: 4179
+        width: 728
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071af662cf74e5060800000000000000
+      internalID: 6944066823754064240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_87
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4179
+        width: 728
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a8824dfb0e92dc0800000000000000
+      internalID: -3663149707386385827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_88
+      rect:
+        serializedVersion: 2
+        x: 5132
+        y: 4179
+        width: 728
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93db2f4920c9ea2b0800000000000000
+      internalID: -5571344154107921095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_89
+      rect:
+        serializedVersion: 2
+        x: 6413
+        y: 4186
+        width: 727
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 168b441a6dac45720800000000000000
+      internalID: 2834113088700332129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_90
+      rect:
+        serializedVersion: 2
+        x: 7693
+        y: 4186
+        width: 727
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d152e73b7e53560800000000000000
+      internalID: 7292989929697910032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_91
+      rect:
+        serializedVersion: 2
+        x: 8973
+        y: 4186
+        width: 727
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10666f0b174296950800000000000000
+      internalID: 6442720812649047553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_92
+      rect:
+        serializedVersion: 2
+        x: 10252
+        y: 4178
+        width: 728
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 195ad0e41678b74e0800000000000000
+      internalID: -1982842358935476847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_93
+      rect:
+        serializedVersion: 2
+        x: 11532
+        y: 4178
+        width: 728
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83675585be7e7fe30800000000000000
+      internalID: 4537350147584390712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_94
+      rect:
+        serializedVersion: 2
+        x: 12812
+        y: 4178
+        width: 728
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 912e793944d3d0170800000000000000
+      internalID: 8146234665726370329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_95
+      rect:
+        serializedVersion: 2
+        x: 14092
+        y: 4178
+        width: 728
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d764339098deee2f0800000000000000
+      internalID: -941554099253197187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_96
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 2889
+        width: 730
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 327ce3f2cec6b5e90800000000000000
+      internalID: -7035910231175543005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_97
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 2889
+        width: 730
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad8f85b5d528e21b0800000000000000
+      internalID: -5679458742591489830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_98
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 2889
+        width: 730
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 417a75a47bfd263f0800000000000000
+      internalID: -908918196456151276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_99
+      rect:
+        serializedVersion: 2
+        x: 3850
+        y: 2889
+        width: 730
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54877099bd98338a0800000000000000
+      internalID: -6326561475267168187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_100
+      rect:
+        serializedVersion: 2
+        x: 5132
+        y: 2899
+        width: 728
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b717ba7206dc190800000000000000
+      internalID: -7940584844487984239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_101
+      rect:
+        serializedVersion: 2
+        x: 6412
+        y: 2899
+        width: 728
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d931eab46cf47d00800000000000000
+      internalID: 969677329353750998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_102
+      rect:
+        serializedVersion: 2
+        x: 7692
+        y: 2899
+        width: 728
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2663d985fcf190390800000000000000
+      internalID: -7851709499938359710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_103
+      rect:
+        serializedVersion: 2
+        x: 8972
+        y: 2899
+        width: 728
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6331f23d1f8f49e0800000000000000
+      internalID: -1634930784140709009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_104
+      rect:
+        serializedVersion: 2
+        x: 10253
+        y: 2906
+        width: 727
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d8c6dee51936830800000000000000
+      internalID: 4063251125714587015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_105
+      rect:
+        serializedVersion: 2
+        x: 11533
+        y: 2906
+        width: 727
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f7515faa2c32360800000000000000
+      internalID: 7143767473451794312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_106
+      rect:
+        serializedVersion: 2
+        x: 12813
+        y: 2906
+        width: 727
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c894cb5dd49525e10800000000000000
+      internalID: 2184906960061352332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_107
+      rect:
+        serializedVersion: 2
+        x: 14101
+        y: 2937
+        width: 719
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a84f89b4cfc4e5b0800000000000000
+      internalID: -5339914814320850776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_108
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1657
+        width: 719
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c84899c97e9b12fd0800000000000000
+      internalID: -2368407524604279668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_109
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 1721
+        width: 697
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14fbda635f40675a0800000000000000
+      internalID: -6524021558968729791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_110
+      rect:
+        serializedVersion: 2
+        x: 2609
+        y: 1740
+        width: 691
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bbf1e1e611ef7330800000000000000
+      internalID: 3710932106371791801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_111
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 1754
+        width: 680
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec955eb2546dbae0800000000000000
+      internalID: -1531957991692722969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_112
+      rect:
+        serializedVersion: 2
+        x: 5196
+        y: 1787
+        width: 664
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ee9198c08ca8340800000000000000
+      internalID: 4866922303492582927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_113
+      rect:
+        serializedVersion: 2
+        x: 6476
+        y: 1787
+        width: 664
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52723c9bfbd3c04c0800000000000000
+      internalID: -4320010048890525915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_114
+      rect:
+        serializedVersion: 2
+        x: 7769
+        y: 1814
+        width: 654
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35fadb39878037740800000000000000
+      internalID: 5148468112982388563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_115
+      rect:
+        serializedVersion: 2
+        x: 9088
+        y: 1848
+        width: 616
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b089e876fc4c0730800000000000000
+      internalID: 3966629993280798899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_116
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 1865
+        width: 615
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d856682b0ac2c7d60800000000000000
+      internalID: 7889229715947808141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_117
+      rect:
+        serializedVersion: 2
+        x: 11684
+        y: 1902
+        width: 581
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 664d2814eec51c890800000000000000
+      internalID: -7439562931068283802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_118
+      rect:
+        serializedVersion: 2
+        x: 12964
+        y: 1902
+        width: 584
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92cc124242a574240800000000000000
+      internalID: 4775885041121217577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_119
+      rect:
+        serializedVersion: 2
+        x: 14290
+        y: 1929
+        width: 540
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 611a8683bce4f12b0800000000000000
+      internalID: -5611679975948639978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_120
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 649
+        width: 539
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9da0fd1df4778270800000000000000
+      internalID: 8252693472657583517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_121
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 661
+        width: 508
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b3094a4a54b42440800000000000000
+      internalID: 4910247793627038647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_122
+      rect:
+        serializedVersion: 2
+        x: 2806
+        y: 675
+        width: 504
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36a6085a1afab070800000000000000
+      internalID: 8123079868969035323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_123
+      rect:
+        serializedVersion: 2
+        x: 4105
+        y: 686
+        width: 485
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa49d6dc5aa251970800000000000000
+      internalID: 8724926744704685226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_124
+      rect:
+        serializedVersion: 2
+        x: 5428
+        y: 788
+        width: 438
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c5cf0a0f6c46780800000000000000
+      internalID: -8690602644122870670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_125
+      rect:
+        serializedVersion: 2
+        x: 6799
+        y: 832
+        width: 348
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c4b38cb9ee1e5be0800000000000000
+      internalID: -1486716837746723646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_126
+      rect:
+        serializedVersion: 2
+        x: 8123
+        y: 843
+        width: 302
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129c584971dd82090800000000000000
+      internalID: -8058948439833720543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_127
+      rect:
+        serializedVersion: 2
+        x: 9456
+        y: 849
+        width: 252
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db63ff5ccbd4c6020800000000000000
+      internalID: 2336327779869472445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_128
+      rect:
+        serializedVersion: 2
+        x: 10809
+        y: 848
+        width: 178
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea973da6ff76f1f0800000000000000
+      internalID: -1011480368853312789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_129
+      rect:
+        serializedVersion: 2
+        x: 12167
+        y: 849
+        width: 103
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bffecff391df24a40800000000000000
+      internalID: 5351117592159121403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_130
+      rect:
+        serializedVersion: 2
+        x: 13497
+        y: 852
+        width: 51
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9af7504f47fd5160800000000000000
+      internalID: 7016035714267085468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_131
+      rect:
+        serializedVersion: 2
+        x: 14798
+        y: 851
+        width: 27
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c60b7271cec1144f0800000000000000
+      internalID: -846363454642605972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_132
+      rect:
+        serializedVersion: 2
+        x: 5441
+        y: 693
+        width: 427
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b100d5e21d34ef10800000000000000
+      internalID: 2298028861240115634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_133
+      rect:
+        serializedVersion: 2
+        x: 6841
+        y: 731
+        width: 309
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2143613eaeb59fdd0800000000000000
+      internalID: -2451827457736166382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_134
+      rect:
+        serializedVersion: 2
+        x: 8163
+        y: 625
+        width: 266
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80244ec6e0be99f0800000000000000
+      internalID: -459735606595673972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_135
+      rect:
+        serializedVersion: 2
+        x: 9490
+        y: 737
+        width: 222
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b25584e9b8e44760800000000000000
+      internalID: 7441328369423438519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_136
+      rect:
+        serializedVersion: 2
+        x: 10832
+        y: 737
+        width: 162
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa5d13613301cdd90800000000000000
+      internalID: -7071759503276780113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_137
+      rect:
+        serializedVersion: 2
+        x: 12174
+        y: 737
+        width: 103
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8fa46f55092ffef0800000000000000
+      internalID: -72293965962629233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_138
+      rect:
+        serializedVersion: 2
+        x: 13484
+        y: 743
+        width: 72
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70e42b687e65d4b00800000000000000
+      internalID: 814402660021194247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult_hammer_139
+      rect:
+        serializedVersion: 2
+        x: 14799
+        y: 745
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c0ebbf7e7bb5d00800000000000000
+      internalID: 962565152362597486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ult_hammer_0: 263749119777484490
+      ult_hammer_1: -1290093809297913571
+      ult_hammer_10: -7575215081272113784
+      ult_hammer_100: -7940584844487984239
+      ult_hammer_101: 969677329353750998
+      ult_hammer_102: -7851709499938359710
+      ult_hammer_103: -1634930784140709009
+      ult_hammer_104: 4063251125714587015
+      ult_hammer_105: 7143767473451794312
+      ult_hammer_106: 2184906960061352332
+      ult_hammer_107: -5339914814320850776
+      ult_hammer_108: -2368407524604279668
+      ult_hammer_109: -6524021558968729791
+      ult_hammer_11: -5371772735318490154
+      ult_hammer_110: 3710932106371791801
+      ult_hammer_111: -1531957991692722969
+      ult_hammer_112: 4866922303492582927
+      ult_hammer_113: -4320010048890525915
+      ult_hammer_114: 5148468112982388563
+      ult_hammer_115: 3966629993280798899
+      ult_hammer_116: 7889229715947808141
+      ult_hammer_117: -7439562931068283802
+      ult_hammer_118: 4775885041121217577
+      ult_hammer_119: -5611679975948639978
+      ult_hammer_12: 5733811925905457517
+      ult_hammer_120: 8252693472657583517
+      ult_hammer_121: 4910247793627038647
+      ult_hammer_122: 8123079868969035323
+      ult_hammer_123: 8724926744704685226
+      ult_hammer_124: -8690602644122870670
+      ult_hammer_125: -1486716837746723646
+      ult_hammer_126: -8058948439833720543
+      ult_hammer_127: 2336327779869472445
+      ult_hammer_128: -1011480368853312789
+      ult_hammer_129: 5351117592159121403
+      ult_hammer_13: 8209337998594158194
+      ult_hammer_130: 7016035714267085468
+      ult_hammer_131: -846363454642605972
+      ult_hammer_132: 2298028861240115634
+      ult_hammer_133: -2451827457736166382
+      ult_hammer_134: -459735606595673972
+      ult_hammer_135: 7441328369423438519
+      ult_hammer_136: -7071759503276780113
+      ult_hammer_137: -72293965962629233
+      ult_hammer_138: 814402660021194247
+      ult_hammer_139: 962565152362597486
+      ult_hammer_14: -1068840542518294233
+      ult_hammer_15: 1982447222350422695
+      ult_hammer_16: 5030468448840152809
+      ult_hammer_17: -2209409948410182621
+      ult_hammer_18: 2314296254772468125
+      ult_hammer_19: 8804600918847750777
+      ult_hammer_2: 678975878473577598
+      ult_hammer_20: -8283987453001941928
+      ult_hammer_21: -4968210292360573724
+      ult_hammer_22: -7482458156474095345
+      ult_hammer_23: -2320414426324806408
+      ult_hammer_24: -4485147417214724437
+      ult_hammer_25: 5239318023097695590
+      ult_hammer_26: 8720786589981564204
+      ult_hammer_27: 8178149518918674414
+      ult_hammer_28: 5479754839087312659
+      ult_hammer_29: -5363591480282629860
+      ult_hammer_3: -6795882872405157582
+      ult_hammer_30: -4827444124023970587
+      ult_hammer_31: 2350704157125427806
+      ult_hammer_32: -5402399433163425718
+      ult_hammer_33: -4698840494045352142
+      ult_hammer_34: 4592569522511052860
+      ult_hammer_35: -1350778068041766207
+      ult_hammer_36: 1994419831934421033
+      ult_hammer_37: -1979552686337912799
+      ult_hammer_38: -5565895329129820446
+      ult_hammer_39: 7351194339237715161
+      ult_hammer_4: -58861218953330349
+      ult_hammer_40: -7323066995606438521
+      ult_hammer_41: 1276328088979716772
+      ult_hammer_42: 3495461619609011196
+      ult_hammer_43: 5945134620892623904
+      ult_hammer_44: -4713619784417927970
+      ult_hammer_45: 8226910244888472833
+      ult_hammer_46: -8794838264012478285
+      ult_hammer_47: -2186571387448698130
+      ult_hammer_48: -3025498539860553302
+      ult_hammer_49: 6103878680483310692
+      ult_hammer_5: 1396004806526656500
+      ult_hammer_50: -5270211491049299642
+      ult_hammer_51: 5958916529201973480
+      ult_hammer_52: 1451939991103057745
+      ult_hammer_53: -103538025549362281
+      ult_hammer_54: 7454412376202512522
+      ult_hammer_55: -4849909504818939794
+      ult_hammer_56: 6928478804463102255
+      ult_hammer_57: -2416778159626078592
+      ult_hammer_58: 9209745742063146647
+      ult_hammer_59: 1476114559914451049
+      ult_hammer_6: -3674745779574970612
+      ult_hammer_60: -5650504553554082901
+      ult_hammer_61: -2615339017728653099
+      ult_hammer_62: 22850541686973445
+      ult_hammer_63: 9148706072591631770
+      ult_hammer_64: -9111644466762435881
+      ult_hammer_65: 4330891547592093852
+      ult_hammer_66: 7700120290178172405
+      ult_hammer_67: 7672543070834953826
+      ult_hammer_68: -6697062442631192130
+      ult_hammer_69: -8440767945054424084
+      ult_hammer_7: -5837880913158479205
+      ult_hammer_70: -5172678440958027658
+      ult_hammer_71: -610324441099186222
+      ult_hammer_72: 5271102502177248177
+      ult_hammer_73: -9000382071330512724
+      ult_hammer_74: 7670946786064269322
+      ult_hammer_75: 1803595634620274465
+      ult_hammer_76: 3630717103048225491
+      ult_hammer_77: -5044069567979007033
+      ult_hammer_78: 2001241616368218964
+      ult_hammer_79: 6004011164139423511
+      ult_hammer_8: -5180498327132483597
+      ult_hammer_80: 1833874096007854982
+      ult_hammer_81: -3132089922531030361
+      ult_hammer_82: 5051960220142766494
+      ult_hammer_83: -3553579264075077653
+      ult_hammer_84: 158066444370820949
+      ult_hammer_85: 4664692230515105522
+      ult_hammer_86: 6944066823754064240
+      ult_hammer_87: -3663149707386385827
+      ult_hammer_88: -5571344154107921095
+      ult_hammer_89: 2834113088700332129
+      ult_hammer_9: -8897123129308601781
+      ult_hammer_90: 7292989929697910032
+      ult_hammer_91: 6442720812649047553
+      ult_hammer_92: -1982842358935476847
+      ult_hammer_93: 4537350147584390712
+      ult_hammer_94: 8146234665726370329
+      ult_hammer_95: -941554099253197187
+      ult_hammer_96: -7035910231175543005
+      ult_hammer_97: -5679458742591489830
+      ult_hammer_98: -908918196456151276
+      ult_hammer_99: -6326561475267168187
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
