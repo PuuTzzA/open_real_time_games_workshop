@@ -17,7 +17,7 @@ public struct BaseStats
         dash_factor = 3.0f,
         dash_duration = 7,
         air_speed = 7.0f,
-        terminal_speed = -8.0f,
+        terminal_speed = -10.0f,
         air_control = 1.0f,
         jump_strength = 12.0f,
         air_jumps = 1,
