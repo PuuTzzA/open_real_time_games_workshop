@@ -23,7 +23,7 @@ public class TapTimingQTE : MonoBehaviour, IQTE
     private float p1VisualValue = 0;
     private float p2VisualValue = 0;
 
-    private float duration = 20f;
+    private float duration = 3f;
     private Action<QTEResult, QTEResult> onFinished;
 
     private InputAction p1Smash;
@@ -49,7 +49,7 @@ public class TapTimingQTE : MonoBehaviour, IQTE
     public void Init(PlayerInput p1, PlayerInput p2, Action<QTEResult, QTEResult> callback)
     {
 
-        
+
         ui.skillchecks[0].rotating = true;
         ui.skillchecks[1].rotating = true;
         points[0] = 0;
@@ -126,9 +126,8 @@ public class TapTimingQTE : MonoBehaviour, IQTE
         {
             float dt = Time.unscaledDeltaTime;
             timeLeft -= dt;
-            //timerText.text = timeLeft.ToString("F1");
+            ui.timer.text = timeLeft.ToString("F1");
 
-            // Apply downforce (gravity)
 
             yield return null;
         }

@@ -46,6 +46,7 @@ public class MinigameUI : MonoBehaviour
     private Label sLabel;
     public Label player1;
     public Label player2;
+    public ResponsiveLabel timer;
 
     private VisualElement root;
 
@@ -68,13 +69,14 @@ public class MinigameUI : MonoBehaviour
         player2 = root.Q<Label>("player2");
         icon1 = root.Q<SquareElement>("icon1");
         icon2 = root.Q<SquareElement>("icon2");
+        timer = root.Q<ResponsiveLabel>("timer");
 
 
         skillCheckSection = root.Q<VisualElement>("MiniGame1");
 
 
 
-        StartCoroutine(SlideIcon(icon1, Vector2.left * offset, () => { Debug.Log(minigamenumber); if (minigamenumber == 1) { skillCheckSection.style.visibility = Visibility.Visible; minigamenumber = 0; } })); // enters from left, exits to left ✅
+        StartCoroutine(SlideIcon(icon1, Vector2.left * offset, () => { timer.style.visibility = Visibility.Visible; if (minigamenumber == 1) { skillCheckSection.style.visibility = Visibility.Visible; minigamenumber = 0; } })); // enters from left, exits to left ✅
         StartCoroutine(SlideIcon(icon2, Vector2.right * offset)); // enters from right, exits to right ✅
 
 
