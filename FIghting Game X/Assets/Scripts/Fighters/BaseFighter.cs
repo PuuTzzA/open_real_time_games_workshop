@@ -164,6 +164,13 @@ public class BaseFighter : MonoBehaviour
         //    return;
         //}
 
+        // air resistance
+        var vel = rigidbody.linearVelocity.y;
+        if (vel < 0)
+        {
+            rigidbody.linearVelocityY += state.air_resistance * vel * vel * Time.fixedDeltaTime;
+        }
+
         if (state.is_grounded())
         {
             rigidbody.linearVelocityX = !state.flags_any_set(FighterFlags.CanMove) ? 0.0f : fighter_input.direction.x * state.get_ground_speed();
@@ -177,10 +184,10 @@ public class BaseFighter : MonoBehaviour
             rigidbody.linearVelocityX = Math.Clamp(rigidbody.linearVelocityX, -state.get_air_speed(), state.get_air_speed());
         }
 
-        if (rigidbody.linearVelocityY < state.get_terminal_speed())
-        {
-            rigidbody.linearVelocityY = state.get_terminal_speed();
-        }
+        //if (rigidbody.linearVelocityY < state.get_terminal_speed())
+        //{
+        //    rigidbody.linearVelocityY = state.get_terminal_speed();
+        //}
     }
 
     public void jump()
@@ -338,7 +345,19 @@ public class BaseFighter : MonoBehaviour
         if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
 
         state.force_facing(input.direction.x);
-        player_sounds.PlayHeavySidewaysClip();
+        switch (input.direction.y)
+        {
+            case -1:
+                player_sounds.PlayHeavySidewaysClip();
+                break;
+            case 0:
+                player_sounds.PlayHeavySidewaysClip();
+                break;
+            case 1:
+                player_sounds.PlayHeavyUpClip();
+                break;
+        }
+        // player_sounds.PlayHeavySidewaysClip();
         state.start_action((FighterAction)((int)(FighterAction.HeavySide) - input.direction.y));
         return true;
     }
