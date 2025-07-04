@@ -1,0 +1,19 @@
+change fighter collider:
+    - rhomus collider 
+    - fighters collide
+    - disable collision between fighters while dashing
+
+knockback:
+    - knockback based on health
+    - knockback physics
+
+invincibilty flag
+ult:
+    - ult points
+
+ability restriction:
+    - no abilities after recovery
+    - ...
+
+crouch
+animation when finished
