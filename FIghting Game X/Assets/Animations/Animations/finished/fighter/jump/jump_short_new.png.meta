@@ -294,10 +294,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -338,20 +338,51 @@ TextureImporter:
       name: jump_short_new_0
       rect:
         serializedVersion: 2
-        x: 232
-        y: 1823
-        width: 56
-        height: 56
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -21, y: 13}
+        - {x: -21, y: -50}
+        - {x: -11, y: -50}
+        - {x: -10.735855, y: -49.735855}
+        - {x: -18, y: -92}
+        - {x: -18, y: -105}
+        - {x: -11, y: -105}
+        - {x: -9, y: -104}
+        - {x: -5, y: -105}
+        - {x: 19, y: -105}
+        - {x: 21, y: -91}
+        - {x: 21, y: -42}
+        - {x: 23, y: -46}
+        - {x: 31, y: -46}
+        - {x: 31, y: -31}
+        - {x: 20, y: 8}
+        - {x: 9, y: 27}
+        - {x: 3.9862976, y: 27}
+        - {x: 3.246582, y: 30}
+        - {x: 28, y: 30}
+        - {x: 33, y: 35}
+        - {x: 33, y: 73}
+        - {x: 28, y: 88}
+        - {x: -6, y: 88}
+        - {x: -23, y: 78}
+        - {x: -23, y: 67}
+        - {x: -20, y: 64}
+        - {x: -25, y: 62}
+        - {x: -25, y: 48}
+        - {x: -19, y: 30}
+        - {x: -12, y: 30}
+      tessellationDetail: 0
       bones: []
-      spriteID: 75015ba9aadb56580800000000000000
-      internalID: -8834446553579712425
+      spriteID: 7e64230bd8bebb74391d6809e09a535c
+      internalID: 1948479815
       vertices: []
       indices: 
       edges: []
@@ -360,20 +391,57 @@ TextureImporter:
       name: jump_short_new_1
       rect:
         serializedVersion: 2
-        x: 744
-        y: 1818
-        width: 57
-        height: 56
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -11.421051, y: 18.330826}
+        - {x: -23, y: -4}
+        - {x: -23, y: -36}
+        - {x: -22, y: -53}
+        - {x: -20, y: -55}
+        - {x: -18, y: -55}
+        - {x: -18, y: -105}
+        - {x: -10, y: -105}
+        - {x: 10.459015, y: -77.72131}
+        - {x: 6, y: -95}
+        - {x: 10, y: -105}
+        - {x: 15, y: -105}
+        - {x: 19, y: -101}
+        - {x: 26, y: -71}
+        - {x: 26, y: -53}
+        - {x: 20.10144, y: -32.739716}
+        - {x: 30, y: -48}
+        - {x: 36, y: -48}
+        - {x: 37, y: -46}
+        - {x: 37, y: -38}
+        - {x: 9, y: 22}
+        - {x: 4.164551, y: 22}
+        - {x: 3, y: 26}
+        - {x: 19, y: 26}
+        - {x: 31, y: 36}
+        - {x: 33, y: 39}
+        - {x: 33, y: 66}
+        - {x: 27, y: 83}
+        - {x: -7, y: 83}
+        - {x: -23, y: 76}
+        - {x: -23, y: 63}
+        - {x: -19, y: 61}
+        - {x: -25, y: 60}
+        - {x: -25, y: 44}
+        - {x: -19, y: 26}
+        - {x: -6, y: 26}
+        - {x: -11, y: 22}
+      tessellationDetail: 0
       bones: []
-      spriteID: 806e4b1b322b72220800000000000000
-      internalID: 2461131587756287496
+      spriteID: 27ac1766ef465ab42b6303b5e1715341
+      internalID: 1879510272
       vertices: []
       indices: 
       edges: []
@@ -382,20 +450,65 @@ TextureImporter:
       name: jump_short_new_2
       rect:
         serializedVersion: 2
-        x: 1256
-        y: 1814
-        width: 57
-        height: 56
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 5.152542, y: -88.52542}
+        - {x: 6, y: -97}
+        - {x: 9, y: -105}
+        - {x: 17, y: -105}
+        - {x: 23, y: -100}
+        - {x: 30, y: -71}
+        - {x: 30, y: -62}
+        - {x: 11, y: -37.571426}
+        - {x: 11, y: -29}
+        - {x: 35, y: -50}
+        - {x: 44, y: -50}
+        - {x: 44, y: -41}
+        - {x: 8, y: 16}
+        - {x: 3.0800018, y: 16}
+        - {x: 2.1799927, y: 21}
+        - {x: 22, y: 21}
+        - {x: 34, y: 25}
+        - {x: 34, y: 79}
+        - {x: -11, y: 79}
+        - {x: -25, y: 62}
+        - {x: -25, y: 61}
+        - {x: -20, y: 56}
+        - {x: -17, y: 57}
+        - {x: -21, y: 55}
+        - {x: -24, y: 53}
+        - {x: -25, y: 51}
+        - {x: -25, y: 40}
+        - {x: -16, y: 22}
+        - {x: -10, y: 21}
+        - {x: -4.222229, y: 21}
+        - {x: -5, y: 17.5}
+        - {x: -5, y: 19}
+        - {x: -9, y: 19}
+        - {x: -24, y: 0}
+        - {x: -26, y: -6}
+        - {x: -26, y: -36}
+        - {x: -20, y: -59}
+        - {x: -12, y: -59}
+        - {x: -11, y: -58}
+        - {x: -7.7224274, y: -24.131668}
+        - {x: -5, y: -47}
+        - {x: -18, y: -92}
+        - {x: -18, y: -103}
+        - {x: -17, y: -105}
+        - {x: -4, y: -105}
+      tessellationDetail: 0
       bones: []
-      spriteID: b6f67372c4d0f33d0800000000000000
-      internalID: -3224844187447365781
+      spriteID: e4911ed5e05a8c843adeb911632929cd
+      internalID: -1351205303
       vertices: []
       indices: 
       edges: []
@@ -404,20 +517,54 @@ TextureImporter:
       name: jump_short_new_3
       rect:
         serializedVersion: 2
-        x: 1769
-        y: 1812
-        width: 56
-        height: 56
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -26, y: -10}
+        - {x: -26, y: -30}
+        - {x: -23, y: -60}
+        - {x: -18, y: -60}
+        - {x: -18, y: -105}
+        - {x: -4, y: -105}
+        - {x: 5.3686676, y: -90.4265}
+        - {x: 6, y: -104}
+        - {x: 11, y: -105}
+        - {x: 16, y: -105}
+        - {x: 32, y: -69}
+        - {x: 32, y: -62}
+        - {x: 14, y: -43.217392}
+        - {x: 14, y: -35}
+        - {x: 11.013779, y: -20.340363}
+        - {x: 34, y: -50}
+        - {x: 46, y: -50}
+        - {x: 46, y: -39}
+        - {x: 6, y: 14}
+        - {x: 4.144516, y: 13.3815}
+        - {x: 3, y: 19}
+        - {x: 25, y: 19}
+        - {x: 34, y: 22}
+        - {x: 34, y: 63}
+        - {x: 21, y: 74}
+        - {x: 13, y: 76}
+        - {x: -13, y: 76}
+        - {x: -24, y: 59}
+        - {x: -24, y: 54}
+        - {x: -17, y: 53}
+        - {x: -24, y: 51}
+        - {x: -24, y: 31}
+        - {x: -18, y: 19}
+        - {x: -10, y: 19}
+      tessellationDetail: 0
       bones: []
-      spriteID: 4df60ec165d4add00800000000000000
-      internalID: 998195299662983124
+      spriteID: cfb7640d329c6d346b7b68158325ab0c
+      internalID: 1189533609
       vertices: []
       indices: 
       edges: []
@@ -426,20 +573,49 @@ TextureImporter:
       name: jump_short_new_4
       rect:
         serializedVersion: 2
-        x: 236
-        y: 1742
-        width: 17
-        height: 79
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 5, y: -102.677414}
+        - {x: 5, y: -126}
+        - {x: 7, y: -127}
+        - {x: 12, y: -127}
+        - {x: 14, y: -123}
+        - {x: 15, y: -109}
+        - {x: 15, y: -55}
+        - {x: 14.710876, y: -53.496536}
+        - {x: 16.013672, y: -46.898468}
+        - {x: 17, y: -54}
+        - {x: 23, y: -58}
+        - {x: 26, y: -57}
+        - {x: 27, y: -48}
+        - {x: 27, y: -24}
+        - {x: 23.651749, y: -8.215363}
+        - {x: 31, y: 29}
+        - {x: 33, y: 52}
+        - {x: 33, y: 103}
+        - {x: 23, y: 107}
+        - {x: -19, y: 107}
+        - {x: -25, y: 96}
+        - {x: -25, y: 85}
+        - {x: -22, y: 82}
+        - {x: -19, y: 83}
+        - {x: 8, y: 68}
+        - {x: -25, y: 82}
+        - {x: -25, y: -33}
+        - {x: -17, y: -128}
+        - {x: 0, y: -128}
+      tessellationDetail: 0
       bones: []
-      spriteID: f8d21de7250bfd4f0800000000000000
-      internalID: -801728340287214193
+      spriteID: 8d3c817b3d0cd474b8fc1f19e831b91f
+      internalID: -1607102374
       vertices: []
       indices: 
       edges: []
@@ -448,20 +624,32 @@ TextureImporter:
       name: jump_short_new_5
       rect:
         serializedVersion: 2
-        x: 238
-        y: 1687
-        width: 20
-        height: 78
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 33, y: 93}
+        - {x: 18, y: 107}
+        - {x: -13, y: 107}
+        - {x: -25, y: 93}
+        - {x: -25, y: 85}
+        - {x: -22, y: 82}
+        - {x: -19, y: 83}
+        - {x: -22, y: 81}
+        - {x: -25, y: 81}
+        - {x: -25, y: -121}
+        - {x: -22, y: -125}
+        - {x: 33, y: -125}
+      tessellationDetail: 0
       bones: []
-      spriteID: 3d202482b2183ed20800000000000000
-      internalID: 3306628573779067603
+      spriteID: a709dd109be891746945f9825c5587d4
+      internalID: -88892160
       vertices: []
       indices: 
       edges: []
@@ -470,20 +658,64 @@ TextureImporter:
       name: jump_short_new_6
       rect:
         serializedVersion: 2
-        x: 253
-        y: 1759
-        width: 7
-        height: 63
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 7, y: 37.28572}
+        - {x: 7, y: 26}
+        - {x: 11, y: -11}
+        - {x: 20, y: -54}
+        - {x: 25, y: -54}
+        - {x: 27, y: -53}
+        - {x: 27, y: -27}
+        - {x: 15, y: 31}
+        - {x: 13.909088, y: 37}
+        - {x: 28, y: 37}
+        - {x: 33, y: 58}
+        - {x: 33, y: 88}
+        - {x: 26, y: 104}
+        - {x: 17, y: 107}
+        - {x: -16, y: 107}
+        - {x: -25, y: 94}
+        - {x: -25, y: 85}
+        - {x: -22, y: 82}
+        - {x: -19, y: 83}
+        - {x: 6, y: 70}
+        - {x: -25, y: 82}
+        - {x: -25, y: 63}
+        - {x: -16, y: 45}
+        - {x: -10.333328, y: 43}
+        - {x: -17, y: 43}
+        - {x: -22, y: 5}
+        - {x: -22, y: -53}
+        - {x: -18, y: -53}
+        - {x: -16, y: -52}
+        - {x: -11.64328, y: -44.593567}
+        - {x: -15, y: -79}
+        - {x: -15, y: -114}
+        - {x: -13, y: -121}
+        - {x: -7, y: -121}
+        - {x: 5, y: -44}
+        - {x: 5, y: -122}
+        - {x: 6, y: -123}
+        - {x: 10, y: -123}
+        - {x: 13, y: -122}
+        - {x: 15, y: -110}
+        - {x: 15, y: -44}
+        - {x: 10, y: -27}
+        - {x: 5, y: -27}
+        - {x: 5, y: 37.857147}
+      tessellationDetail: 0
       bones: []
-      spriteID: 81c97a4a21c616240800000000000000
-      internalID: 4783223106571836440
+      spriteID: d4b62ed3d1d2b63478291fc8d37b9671
+      internalID: -780575046
       vertices: []
       indices: 
       edges: []
@@ -492,20 +724,65 @@ TextureImporter:
       name: jump_short_new_7
       rect:
         serializedVersion: 2
-        x: 259
-        y: 1746
-        width: 28
-        height: 75
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 33, y: 62}
+        - {x: 33, y: 92}
+        - {x: 32, y: 99}
+        - {x: 17, y: 107}
+        - {x: -13, y: 107}
+        - {x: -25, y: 93}
+        - {x: -25, y: 85}
+        - {x: -22, y: 82}
+        - {x: -19, y: 83}
+        - {x: -25, y: 80}
+        - {x: -25, y: 68}
+        - {x: -18, y: 49}
+        - {x: 8, y: 43}
+        - {x: 22, y: 43}
+      - - {x: -2, y: 37}
+        - {x: -2, y: 43}
+        - {x: -15, y: 43}
+        - {x: -21, y: 1}
+        - {x: -21, y: -49}
+        - {x: -14, y: -49}
+      - - {x: 27, y: -16}
+        - {x: 13, y: 42}
+        - {x: 7, y: 42}
+        - {x: 7, y: 19}
+        - {x: 18, y: -47}
+        - {x: 23, y: -50}
+        - {x: 27, y: -50}
+      - - {x: 3, y: 44}
+        - {x: 0, y: 44}
+        - {x: -1, y: 42}
+        - {x: -9, y: -35}
+        - {x: -14, y: -86}
+        - {x: -14, y: -118}
+        - {x: -11, y: -119}
+        - {x: -5, y: -119}
+        - {x: 5, y: -48}
+        - {x: 5, y: -112}
+        - {x: 8, y: -119}
+        - {x: 11, y: -119}
+        - {x: 12, y: -118}
+        - {x: 15, y: -110}
+        - {x: 15, y: -45}
+        - {x: 10, y: -27}
+        - {x: 5, y: -27}
+        - {x: 5, y: 43}
+      tessellationDetail: 0
       bones: []
-      spriteID: fdfb3b9e42f1d1340800000000000000
-      internalID: 4836055818265935839
+      spriteID: befc8b4164f8275448d7df4d5e60a583
+      internalID: -1308716360
       vertices: []
       indices: 
       edges: []
@@ -514,20 +791,70 @@ TextureImporter:
       name: jump_short_new_8
       rect:
         serializedVersion: 2
-        x: 260
-        y: 1688
-        width: 16
-        height: 77
+        x: 0
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 33, y: 51}
+        - {x: 33, y: 98}
+        - {x: 29, y: 107}
+        - {x: -13, y: 107}
+        - {x: -25, y: 93}
+        - {x: -25, y: 85}
+        - {x: -22, y: 82}
+        - {x: -19, y: 83}
+        - {x: 9, y: 66}
+        - {x: -25, y: 82}
+        - {x: -25, y: 65}
+        - {x: -16, y: 47}
+        - {x: -3, y: 46}
+        - {x: 26, y: 46}
+      - - {x: -9, y: 42}
+        - {x: -20, y: 8}
+        - {x: -21, y: -16}
+        - {x: -21, y: -47}
+        - {x: -20, y: -48}
+        - {x: -15, y: -48}
+        - {x: -13, y: -41}
+        - {x: -2, y: 37}
+        - {x: -2, y: -23}
+        - {x: 1, y: -23}
+        - {x: 5, y: -22}
+        - {x: 5, y: 44}
+        - {x: -1, y: 44}
+        - {x: -2, y: 43}
+        - {x: -6, y: 43}
+      - - {x: 27, y: -13}
+        - {x: 17, y: 42}
+        - {x: 7, y: 42}
+        - {x: 7, y: -4}
+        - {x: 20, y: -46}
+        - {x: 27, y: -46}
+      - - {x: 0, y: -98}
+        - {x: 0, y: -24}
+        - {x: -8, y: -24}
+        - {x: -14, y: -63}
+        - {x: -14, y: -113}
+        - {x: -13, y: -116}
+        - {x: -7, y: -116}
+      - - {x: 14, y: -115}
+        - {x: 15, y: -110}
+        - {x: 15, y: -59}
+        - {x: 12, y: -27}
+        - {x: 5, y: -27}
+        - {x: 5, y: -106}
+        - {x: 9, y: -116}
+        - {x: 12, y: -116}
+      tessellationDetail: 0
       bones: []
-      spriteID: 48c5bf5cf0e794130800000000000000
-      internalID: 3551508387369540740
+      spriteID: ef48eb0a52ab4a44b8d8aec1799dba19
+      internalID: -1052477333
       vertices: []
       indices: 
       edges: []
@@ -536,20 +863,73 @@ TextureImporter:
       name: jump_short_new_9
       rect:
         serializedVersion: 2
-        x: 745
-        y: 1738
-        width: 19
-        height: 79
+        x: 512
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 33, y: 57}
+        - {x: 33, y: 93}
+        - {x: 27, y: 105}
+        - {x: 17, y: 107}
+        - {x: -14, y: 107}
+        - {x: -25, y: 93}
+        - {x: -25, y: 85}
+        - {x: -22, y: 82}
+        - {x: -19, y: 83}
+        - {x: -22, y: 81}
+        - {x: -25, y: 81}
+        - {x: -25, y: 54}
+        - {x: -9, y: 48}
+        - {x: 29, y: 48}
+      - - {x: 5, y: -22}
+        - {x: 5, y: 43}
+        - {x: 3, y: 44}
+        - {x: 1, y: 44}
+        - {x: -1, y: 42}
+        - {x: -2, y: 26}
+        - {x: -2, y: -22}
+        - {x: 1, y: -23}
+      - - {x: -13, y: -41}
+        - {x: -2, y: 37}
+        - {x: -2, y: 43}
+        - {x: -6, y: 43}
+        - {x: -9, y: 42}
+        - {x: -21, y: 14}
+        - {x: -21, y: -47}
+        - {x: -16, y: -47}
+      - - {x: 27, y: -44}
+        - {x: 27, y: -21}
+        - {x: 14, y: 42}
+        - {x: 7, y: 42}
+        - {x: 7, y: 18}
+        - {x: 17, y: -44}
+        - {x: 20, y: -45}
+        - {x: 25, y: -45}
+      - - {x: 0, y: -67}
+        - {x: 0, y: -24}
+        - {x: -8, y: -24}
+        - {x: -14, y: -54}
+        - {x: -14, y: -114}
+        - {x: -4, y: -114}
+      - - {x: 14, y: -114}
+        - {x: 15, y: -107}
+        - {x: 15, y: -61}
+        - {x: 12, y: -28}
+        - {x: 8, y: -27}
+        - {x: 5, y: -28}
+        - {x: 5, y: -109}
+        - {x: 9, y: -115}
+        - {x: 12, y: -115}
+      tessellationDetail: 0
       bones: []
-      spriteID: 6c8fd6012d1f42750800000000000000
-      internalID: 6279409664982382790
+      spriteID: c00f813226c47424481358997c8b5a93
+      internalID: -619121347
       vertices: []
       indices: 
       edges: []
@@ -558,20 +938,71 @@ TextureImporter:
       name: jump_short_new_10
       rect:
         serializedVersion: 2
-        x: 750
-        y: 1687
-        width: 25
-        height: 131
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 33, y: 64}
+        - {x: 33, y: 97}
+        - {x: 19, y: 107}
+        - {x: -13, y: 107}
+        - {x: -25, y: 93}
+        - {x: -25, y: 85}
+        - {x: -22, y: 82}
+        - {x: -19, y: 83}
+        - {x: -22, y: 81}
+        - {x: -25, y: 81}
+        - {x: -25, y: 50}
+        - {x: 28, y: 50}
+      - - {x: 5, y: -21}
+        - {x: 5, y: 42}
+        - {x: 3, y: 44}
+        - {x: -1, y: 44}
+        - {x: -2, y: 35}
+        - {x: -2, y: -22}
+        - {x: 1, y: -23}
+        - {x: 4, y: -23}
+      - - {x: -2, y: 37}
+        - {x: -2, y: 43}
+        - {x: -6, y: 43}
+        - {x: -9, y: 42}
+        - {x: -21, y: -2}
+        - {x: -21, y: -45}
+        - {x: -13, y: -45}
+      - - {x: 27, y: -39}
+        - {x: 27, y: -27}
+        - {x: 15, y: 31}
+        - {x: 13, y: 42}
+        - {x: 7, y: 42}
+        - {x: 7, y: 18}
+        - {x: 17, y: -42}
+        - {x: 26, y: -42}
+      - - {x: -6, y: -112}
+        - {x: -3, y: -95}
+        - {x: 0, y: -48}
+        - {x: 0, y: -24}
+        - {x: -8, y: -24}
+        - {x: -14, y: -58}
+        - {x: -14, y: -111}
+        - {x: -13, y: -113}
+        - {x: -8, y: -113}
+      - - {x: 15, y: -113}
+        - {x: 15, y: -46}
+        - {x: 10, y: -27}
+        - {x: 5, y: -27}
+        - {x: 5, y: -113}
+        - {x: 6, y: -114}
+        - {x: 12, y: -114}
+      tessellationDetail: 0
       bones: []
-      spriteID: 5f62bff31d400d050800000000000000
-      internalID: 5823159614958151413
+      spriteID: 467e648882fcabc43a4ba56e89ab509a
+      internalID: -838789125
       vertices: []
       indices: 
       edges: []
@@ -580,20 +1011,68 @@ TextureImporter:
       name: jump_short_new_11
       rect:
         serializedVersion: 2
-        x: 771
-        y: 1744
-        width: 34
-        height: 72
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 33, y: 58}
+        - {x: 33, y: 101}
+        - {x: 17, y: 107}
+        - {x: -17, y: 107}
+        - {x: -25, y: 94}
+        - {x: -25, y: 85}
+        - {x: -22, y: 82}
+        - {x: -19, y: 83}
+        - {x: -22, y: 81}
+        - {x: -25, y: 81}
+        - {x: -25, y: 57}
+        - {x: -18, y: 50}
+        - {x: 24, y: 50}
+      - - {x: -13, y: -40}
+        - {x: -2, y: 37}
+        - {x: -2, y: -23}
+        - {x: 1, y: -23}
+        - {x: 5, y: -22}
+        - {x: 5, y: 43}
+        - {x: 4, y: 44}
+        - {x: -2, y: 44}
+        - {x: -2, y: 43}
+        - {x: -7, y: 43}
+        - {x: -9, y: 42}
+        - {x: -21, y: -4}
+        - {x: -21, y: -43}
+        - {x: -15, y: -43}
+      - - {x: 27, y: 1}
+        - {x: 13, y: 42}
+        - {x: 7, y: 42}
+        - {x: 7, y: 18}
+        - {x: 17, y: -41}
+        - {x: 27, y: -41}
+      - - {x: 0, y: -61}
+        - {x: 0, y: -24}
+        - {x: -8, y: -24}
+        - {x: -14, y: -57}
+        - {x: -14, y: -113}
+        - {x: -4, y: -113}
+      - - {x: 14, y: -111}
+        - {x: 15, y: -99}
+        - {x: 15, y: -62}
+        - {x: 11, y: -28}
+        - {x: 8, y: -27}
+        - {x: 5, y: -28}
+        - {x: 5, y: -107}
+        - {x: 9, y: -112}
+        - {x: 11, y: -112}
+      tessellationDetail: 0
       bones: []
-      spriteID: 642b3fd59042c1d20800000000000000
-      internalID: 3250512653704213062
+      spriteID: f144c0c3d16926141a5a1693487891fa
+      internalID: 1496748591
       vertices: []
       indices: 
       edges: []
@@ -602,20 +1081,70 @@ TextureImporter:
       name: jump_short_new_12
       rect:
         serializedVersion: 2
-        x: 772
-        y: 1688
-        width: 22
-        height: 73
+        x: 0
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 33, y: 58}
+        - {x: 33, y: 90}
+        - {x: 32, y: 98}
+        - {x: 17, y: 107}
+        - {x: -13, y: 107}
+        - {x: -25, y: 93}
+        - {x: -25, y: 85}
+        - {x: -22, y: 82}
+        - {x: -19, y: 83}
+        - {x: -25, y: 80}
+        - {x: -25, y: 60}
+        - {x: -11, y: 50}
+        - {x: 23, y: 50}
+      - - {x: 5, y: -21}
+        - {x: 5, y: 42}
+        - {x: 3, y: 44}
+        - {x: -1, y: 44}
+        - {x: -2, y: 35}
+        - {x: -2, y: -22}
+        - {x: 1, y: -23}
+        - {x: 4, y: -23}
+      - - {x: -2, y: 37}
+        - {x: -2, y: 43}
+        - {x: -15, y: 43}
+        - {x: -21, y: 3}
+        - {x: -21, y: -42}
+        - {x: -12, y: -42}
+      - - {x: 27, y: -26}
+        - {x: 20, y: 7}
+        - {x: 13, y: 42}
+        - {x: 7, y: 42}
+        - {x: 7, y: 21}
+        - {x: 15, y: -32}
+        - {x: 21, y: -40}
+        - {x: 27, y: -40}
+      - - {x: -4, y: -107}
+        - {x: 0, y: -52}
+        - {x: 0, y: -24}
+        - {x: -6, y: -24}
+        - {x: -9, y: -35}
+        - {x: -14, y: -88}
+        - {x: -14, y: -111}
+        - {x: -7, y: -111}
+      - - {x: 15, y: -106}
+        - {x: 15, y: -44}
+        - {x: 10, y: -27}
+        - {x: 5, y: -27}
+        - {x: 5, y: -103}
+        - {x: 7, y: -110}
+        - {x: 12, y: -110}
+      tessellationDetail: 0
       bones: []
-      spriteID: ae6829a593ce21d60800000000000000
-      internalID: 7859604030791780074
+      spriteID: 5880bb9454d8df444970daec039f75a5
+      internalID: -1382421744
       vertices: []
       indices: 
       edges: []
@@ -624,1362 +1153,69 @@ TextureImporter:
       name: jump_short_new_13
       rect:
         serializedVersion: 2
-        x: 1255
-        y: 1734
-        width: 20
-        height: 78
+        x: 512
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 23, y: 51}
+        - {x: 33, y: 69}
+        - {x: 33, y: 102}
+        - {x: 18, y: 107}
+        - {x: -18, y: 107}
+        - {x: -25, y: 95}
+        - {x: -25, y: 85}
+        - {x: -22, y: 82}
+        - {x: -19, y: 83}
+        - {x: -22, y: 81}
+        - {x: -25, y: 81}
+        - {x: -25, y: 61}
+        - {x: -9, y: 50}
+        - {x: 17, y: 50}
+      - - {x: -3, y: -101}
+        - {x: 0, y: -51}
+        - {x: 0, y: -24}
+        - {x: -6, y: -24}
+        - {x: -9.593582, y: -29.133682}
+        - {x: -2, y: 2}
+        - {x: -2, y: -20}
+        - {x: 2, y: -21}
+        - {x: 5, y: -20}
+        - {x: 5, y: 42}
+        - {x: 4, y: 44}
+        - {x: -2, y: 44}
+        - {x: -2, y: 43}
+        - {x: -16, y: 43}
+        - {x: -21, y: 11}
+        - {x: -21, y: -39}
+        - {x: -13.084747, y: -39}
+        - {x: -14, y: -93}
+        - {x: -14, y: -105}
+        - {x: -7, y: -105}
+      - - {x: 27, y: -21}
+        - {x: 13, y: 42}
+        - {x: 7, y: 42}
+        - {x: 7, y: 26}
+        - {x: 11, y: -11}
+        - {x: 20, y: -37}
+        - {x: 27, y: -37}
+      - - {x: 15, y: -101}
+        - {x: 15, y: -51}
+        - {x: 10, y: -28}
+        - {x: 8, y: -27}
+        - {x: 5, y: -27}
+        - {x: 5, y: -104}
+        - {x: 6, y: -105}
+        - {x: 14, y: -105}
+      tessellationDetail: 0
       bones: []
-      spriteID: a155d0765eeb31cb0800000000000000
-      internalID: -4894358477535881958
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_14
-      rect:
-        serializedVersion: 2
-        x: 1262
-        y: 1687
-        width: 29
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a71c475980bbc6ac0800000000000000
-      internalID: -3860505135021768326
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_15
-      rect:
-        serializedVersion: 2
-        x: 1283
-        y: 1743
-        width: 40
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5c9066031cb469000800000000000000
-      internalID: 42304539619363269
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_16
-      rect:
-        serializedVersion: 2
-        x: 1766
-        y: 1733
-        width: 21
-        height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e11be9c545f4e670800000000000000
-      internalID: 8567242071254700516
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_17
-      rect:
-        serializedVersion: 2
-        x: 1774
-        y: 1687
-        width: 32
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 24fa483f76960e160800000000000000
-      internalID: 7052752911650303810
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_18
-      rect:
-        serializedVersion: 2
-        x: 1795
-        y: 1742
-        width: 43
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2e34b3ea16520f020800000000000000
-      internalID: 2373438105089426402
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_19
-      rect:
-        serializedVersion: 2
-        x: 1284
-        y: 1688
-        width: 25
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd2bd4625752cabe0800000000000000
-      internalID: -1464754593718226212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_20
-      rect:
-        serializedVersion: 2
-        x: 1796
-        y: 1688
-        width: 28
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 31b4d0109cbef6810800000000000000
-      internalID: 1760885227863755539
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_21
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 1313
-        width: 57
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 674b279a7ce3db820800000000000000
-      internalID: 2935571559377712246
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_22
-      rect:
-        serializedVersion: 2
-        x: 743
-        y: 1315
-        width: 57
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b058e97c318cda850800000000000000
-      internalID: 6389983433587590411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_23
-      rect:
-        serializedVersion: 2
-        x: 1255
-        y: 1318
-        width: 57
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 274614dbe15a462c0800000000000000
-      internalID: -4439241781237685134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_24
-      rect:
-        serializedVersion: 2
-        x: 1767
-        y: 1324
-        width: 57
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b633ec7f4d51b8df0800000000000000
-      internalID: -177023755916266645
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_25
-      rect:
-        serializedVersion: 2
-        x: 235
-        y: 1221
-        width: 18
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5caf37d615ed5d010800000000000000
-      internalID: 1213120115956251333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_26
-      rect:
-        serializedVersion: 2
-        x: 243
-        y: 1153
-        width: 12
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5b1135da2b3294c40800000000000000
-      internalID: 5496964070501454261
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_27
-      rect:
-        serializedVersion: 2
-        x: 255
-        y: 1251
-        width: 6
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8e5d6a429d921ba50800000000000000
-      internalID: 6535050546890855912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_28
-      rect:
-        serializedVersion: 2
-        x: 261
-        y: 1154
-        width: 9
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 864236ae417077840800000000000000
-      internalID: 5221650079372485736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_29
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 1221
-        width: 19
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f75011c62e29a62c0800000000000000
-      internalID: -4437572981646883457
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_30
-      rect:
-        serializedVersion: 2
-        x: 747
-        y: 1224
-        width: 18
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6b9e0d35099536980800000000000000
-      internalID: -8546889191402706506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_31
-      rect:
-        serializedVersion: 2
-        x: 754
-        y: 1156
-        width: 13
-        height: 99
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3739886a220268400800000000000000
-      internalID: 325983356225885043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_32
-      rect:
-        serializedVersion: 2
-        x: 767
-        y: 1252
-        width: 6
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 14da494dea2533520800000000000000
-      internalID: 2680577114059877697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_33
-      rect:
-        serializedVersion: 2
-        x: 773
-        y: 1155
-        width: 9
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a020c18ca4cab02a0800000000000000
-      internalID: -6770128177636572662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_34
-      rect:
-        serializedVersion: 2
-        x: 776
-        y: 1224
-        width: 19
-        height: 97
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 998ffa7059f225860800000000000000
-      internalID: 7517123045160384665
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_35
-      rect:
-        serializedVersion: 2
-        x: 1259
-        y: 1227
-        width: 18
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8601912b1a9fb7f80800000000000000
-      internalID: -8107612231277408152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_36
-      rect:
-        serializedVersion: 2
-        x: 1266
-        y: 1159
-        width: 13
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 62ad64f20f2bcd0d0800000000000000
-      internalID: -3396643274289128922
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_37
-      rect:
-        serializedVersion: 2
-        x: 1279
-        y: 1253
-        width: 6
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 991fb42f7f8ef34c0800000000000000
-      internalID: -4305466567123275367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_38
-      rect:
-        serializedVersion: 2
-        x: 1285
-        y: 1158
-        width: 9
-        height: 97
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1fdf3b39d4c43ae40800000000000000
-      internalID: 5666456652236455409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_39
-      rect:
-        serializedVersion: 2
-        x: 1288
-        y: 1227
-        width: 19
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 897a88fe70a104920800000000000000
-      internalID: 2972404375450331032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_40
-      rect:
-        serializedVersion: 2
-        x: 1771
-        y: 1229
-        width: 18
-        height: 93
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 72568bb273f1c1ca0800000000000000
-      internalID: -6044922278020881113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_41
-      rect:
-        serializedVersion: 2
-        x: 1778
-        y: 1161
-        width: 13
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f9ef8a827bfc10c0800000000000000
-      internalID: -4603528249709958669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_42
-      rect:
-        serializedVersion: 2
-        x: 1791
-        y: 1255
-        width: 6
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 64a387b4fdedc4c20800000000000000
-      internalID: 3192171286524082758
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_43
-      rect:
-        serializedVersion: 2
-        x: 1797
-        y: 1160
-        width: 9
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 463a77befca0cb080800000000000000
-      internalID: -9170442853108178076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_44
-      rect:
-        serializedVersion: 2
-        x: 1800
-        y: 1230
-        width: 19
-        height: 91
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dc7701e65cd564080800000000000000
-      internalID: -9203565685948516403
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_45
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 814
-        width: 57
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 40d82c3f630d79c40800000000000000
-      internalID: 5519108802802257156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_46
-      rect:
-        serializedVersion: 2
-        x: 743
-        y: 816
-        width: 57
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e0a6e4b1b55cb6de0800000000000000
-      internalID: -1338759469121770994
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_47
-      rect:
-        serializedVersion: 2
-        x: 1255
-        y: 818
-        width: 57
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a00ffc50c6489d130800000000000000
-      internalID: 3592047777293529098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_48
-      rect:
-        serializedVersion: 2
-        x: 1767
-        y: 819
-        width: 57
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bcc49055c5ec63340800000000000000
-      internalID: 4843285345242533067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_49
-      rect:
-        serializedVersion: 2
-        x: 235
-        y: 721
-        width: 18
-        height: 89
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d4cb237b79142d90800000000000000
-      internalID: -7123540692589361964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_50
-      rect:
-        serializedVersion: 2
-        x: 243
-        y: 652
-        width: 17
-        height: 159
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7f7d188eb044d13e0800000000000000
-      internalID: -2081432634839148553
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_51
-      rect:
-        serializedVersion: 2
-        x: 261
-        y: 652
-        width: 9
-        height: 91
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1009e39bab3bdee80800000000000000
-      internalID: -8147658536290185215
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_52
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 722
-        width: 19
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8150d49e074b58670800000000000000
-      internalID: 8540430665421489432
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_53
-      rect:
-        serializedVersion: 2
-        x: 747
-        y: 722
-        width: 25
-        height: 89
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 460a91dbab6c41610800000000000000
-      internalID: 1591115073707417700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_54
-      rect:
-        serializedVersion: 2
-        x: 755
-        y: 654
-        width: 12
-        height: 89
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f68af3730d4770960800000000000000
-      internalID: 7568146136448346223
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_55
-      rect:
-        serializedVersion: 2
-        x: 773
-        y: 653
-        width: 9
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 25094ecc570bf7240800000000000000
-      internalID: 4791742548540690514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_56
-      rect:
-        serializedVersion: 2
-        x: 776
-        y: 723
-        width: 19
-        height: 86
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e917a0f26ac9820a0800000000000000
-      internalID: -6906097791004937826
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_57
-      rect:
-        serializedVersion: 2
-        x: 1260
-        y: 723
-        width: 24
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a683d8c550122a210800000000000000
-      internalID: 1342671945821141098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_58
-      rect:
-        serializedVersion: 2
-        x: 1267
-        y: 655
-        width: 12
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9d43103c79b53fe60800000000000000
-      internalID: 7994834470882587865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_59
-      rect:
-        serializedVersion: 2
-        x: 1285
-        y: 655
-        width: 9
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1af718676c1aeee50800000000000000
-      internalID: 6840582757786156961
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_60
-      rect:
-        serializedVersion: 2
-        x: 1288
-        y: 727
-        width: 19
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a4770903b48f5e160800000000000000
-      internalID: 7054317393166759754
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_61
-      rect:
-        serializedVersion: 2
-        x: 1772
-        y: 725
-        width: 24
-        height: 86
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a084b3ad7b4a7d990800000000000000
-      internalID: -7361233956366497782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_62
-      rect:
-        serializedVersion: 2
-        x: 1779
-        y: 656
-        width: 12
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b2067e86c8309f30800000000000000
-      internalID: 4580223246480573106
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_63
-      rect:
-        serializedVersion: 2
-        x: 1797
-        y: 656
-        width: 9
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f2b40c25036186fa0800000000000000
-      internalID: -5807367322691679441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_64
-      rect:
-        serializedVersion: 2
-        x: 1800
-        y: 727
-        width: 19
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ffdec26e2c0770240800000000000000
-      internalID: 4757895513727888895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_65
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 307
-        width: 57
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d28d84ba6b29f1f40800000000000000
-      internalID: 5701436966529718317
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_66
-      rect:
-        serializedVersion: 2
-        x: 743
-        y: 307
-        width: 57
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fbeecc51f7467c8f0800000000000000
-      internalID: -520336734948626753
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_67
-      rect:
-        serializedVersion: 2
-        x: 236
-        y: 215
-        width: 24
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7214c96b6a1abc920800000000000000
-      internalID: 3011678513227645223
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_68
-      rect:
-        serializedVersion: 2
-        x: 243
-        y: 146
-        width: 12
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 97a556aa1c8da4d50800000000000000
-      internalID: 6722423720102943353
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_69
-      rect:
-        serializedVersion: 2
-        x: 261
-        y: 147
-        width: 9
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b13b4797238a2d830800000000000000
-      internalID: 4094519945972724507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_70
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 217
-        width: 19
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 16d7bdf6f56a1f990800000000000000
-      internalID: -7353913787690549919
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_71
-      rect:
-        serializedVersion: 2
-        x: 748
-        y: 217
-        width: 24
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dde186c3d60405da0800000000000000
-      internalID: -5958191469102096675
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_72
-      rect:
-        serializedVersion: 2
-        x: 755
-        y: 151
-        width: 12
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a626a44bd205598a0800000000000000
-      internalID: -6299040346579246486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_73
-      rect:
-        serializedVersion: 2
-        x: 773
-        y: 151
-        width: 9
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d6152752884b4fb70800000000000000
-      internalID: 8931962457819337069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_short_new_74
-      rect:
-        serializedVersion: 2
-        x: 776
-        y: 219
-        width: 19
-        height: 78
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 43fdb403bd27740d0800000000000000
-      internalID: -3438653504740401356
+      spriteID: 6c139229546b16844aec0eddd2057dc9
+      internalID: 1498601538
       vertices: []
       indices: 
       edges: []
@@ -1988,7 +1224,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1f71919eedfdbbe4cae6cb2e2c31aa92
     internalID: 0
     vertices: []
     indices: 
@@ -1996,8 +1232,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      jump_short_new_0: 1948479815
+      jump_short_new_1: 1879510272
+      jump_short_new_10: -838789125
+      jump_short_new_11: 1496748591
+      jump_short_new_12: -1382421744
+      jump_short_new_13: 1498601538
+      jump_short_new_2: -1351205303
+      jump_short_new_3: 1189533609
+      jump_short_new_4: -1607102374
+      jump_short_new_5: -88892160
+      jump_short_new_6: -780575046
+      jump_short_new_7: -1308716360
+      jump_short_new_8: -1052477333
+      jump_short_new_9: -619121347
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
