@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class Bomb : MonoBehaviour
 {
-    public float explodeAfter = 3f;
-    public GameObject explosionEffect;
     private Rigidbody2D rb;
     
     [Header("Throw Settings")]
@@ -12,7 +10,19 @@ public class Bomb : MonoBehaviour
     public float throwAngle = 45f; 
     
     [Header("Explosion Settings")]
+    public float explodeAfter = 3f;
+    public GameObject explosionIdle;
+    public GameObject explosionEffect; // Prefab for explosion effect
     public float explosionRadius = 2f;
+    public float knockbackForce = 15f; // Force applied to fighters hit by the explosion
+    public float explosionGrowthFactor = 1.2f; // How much the explosion grows over time
+    private bool exploding = false;
+    
+    
+    // Animations
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+    private Color originalColor;
 
     // Pickup
     private BaseFighter holder;
@@ -34,6 +44,12 @@ public class Bomb : MonoBehaviour
         rb.bodyType = RigidbodyType2D.Kinematic;
         rb.linearVelocity = Vector2.zero;
         rb.gravityScale = 0;
+        
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        originalColor = spriteRenderer.color;
+        
+        
         originalLocalScale = transform.localScale;
         Debug.Log($"{gameObject.name}: Bomb spawned and initialized.");
     }
@@ -73,9 +89,21 @@ public class Bomb : MonoBehaviour
             }
         }
 
-        if (thrown)
+        if (exploding)
         {
             timer += Time.deltaTime;
+            
+            // ⚠️ Calculate progress [0, 1]
+            float t = Mathf.Clamp01(timer / explodeAfter);
+
+            // 🔴 Color lerp
+            if (spriteRenderer != null)
+                spriteRenderer.color = Color.Lerp(originalColor, Color.red, t);
+
+            // ⏫ Scale lerp
+            float scaleMult = Mathf.Lerp(1f, explosionGrowthFactor, t);
+            transform.localScale = originalLocalScale * scaleMult;
+
             if (timer >= explodeAfter)
             {
                 Explode();
@@ -150,10 +178,9 @@ public class Bomb : MonoBehaviour
             }
         }
         
-        if (explosionEffect)
+        if (animator != null)
         {
-            Instantiate(explosionEffect, transform.position, Quaternion.identity);
-            Debug.Log($"{gameObject.name}: Explosion effect instantiated.");
+            animator.SetTrigger("Explode");
         }
         
         Physics2D.IgnoreLayerCollision(gameObject.layer, 6, false);
@@ -170,10 +197,14 @@ public class Bomb : MonoBehaviour
             {
                 Debug.Log($"{name}: Damaging {bf.name}");
                 bf.take_damage(50, gameObject);  // or your damage logic
+                
+                // 💥 Add knockback
+                Vector2 knockDir = (bf.transform.position - transform.position).normalized;
+                bf.knockback(knockDir * knockbackForce);
             }
         }
 
-        Destroy(gameObject);
+        Destroy(gameObject, 0.4f);
     }
     
     private void OnCollisionEnter2D(Collision2D collision)
@@ -183,6 +214,7 @@ public class Bomb : MonoBehaviour
             if (contact.normal.y > 0.7f)
             {
                 Debug.Log($"{name}: Landed on ground.");
+                exploding = true;
                 rb.linearVelocity = Vector2.zero;
                 rb.gravityScale = 0f;
                 rb.constraints |= RigidbodyConstraints2D.FreezePositionY;
