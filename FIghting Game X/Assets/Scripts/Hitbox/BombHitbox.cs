@@ -8,7 +8,7 @@ public class BombHitbox : Hitbox
     {
         if (bomb.HasHolder()) return;
         
-        if (fighter.fighter_input.interact && !bomb.HasHolder() && !fighter.holdingBomb && !bomb.thrown)
+        if (fighter.fighter_input.interact && !bomb.HasHolder() && fighter.holdingBomb == null && !bomb.thrown)
         {
             bomb.Pickup(fighter);
         }

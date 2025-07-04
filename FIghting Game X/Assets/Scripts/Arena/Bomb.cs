@@ -43,7 +43,7 @@ public class Bomb : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         if (holder != null)
         {
-            holder.holdingBomb = false;
+            holder.holdingBomb = null;
             holder = null;
             Debug.Log($"{gameObject.name}: Bomb holder cleared after delay.");
         }
@@ -87,7 +87,7 @@ public class Bomb : MonoBehaviour
     {
         if (holder != null) return;
 
-        fighter.holdingBomb = true;
+        fighter.holdingBomb = this.gameObject;
         holder = fighter;
         transform.SetParent(fighter.transform);
         transform.localPosition = new Vector3(holdOffset.x * fighter.state.get_facing_int(), holdOffset.y, 0f);
