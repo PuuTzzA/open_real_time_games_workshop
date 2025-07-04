@@ -30,6 +30,7 @@ public class BaseFighter : MonoBehaviour
     // Tuple with x and y position (not a transform)
     public Vector2 deathBounds = new Vector2(-15.0f, -8.0f);
     public bool died = false;
+    public bool holdingBomb = false;
 
 
     private readonly float[] dash_curve = new float[] {
