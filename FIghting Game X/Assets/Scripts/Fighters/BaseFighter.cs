@@ -61,6 +61,8 @@ public class BaseFighter : MonoBehaviour
         frame_callbacks[(int)FighterAction.HeavyUp] = heavy_up_tick;
         frame_callbacks[(int)FighterAction.HeavyDown] = heavy_down_tick;
 
+        frame_callbacks[(int)FighterAction.Stunned] = stun_tick;
+
         state.start_action(FighterAction.Idle);
     }
 
@@ -158,12 +160,6 @@ public class BaseFighter : MonoBehaviour
     public void process_movement()
     {
         state.set_facing(fighter_input.direction.x);
-
-        //if(state.is_dashing())
-        //{
-        //    rigidbody.linearVelocityX = state.get_dash_speed();
-        //    return;
-        //}
 
         // air resistance
         var vel = rigidbody.linearVelocity.y;
@@ -273,7 +269,7 @@ public class BaseFighter : MonoBehaviour
         freezeXY(false, true);
         if (index >= dash_curve.Length) return;
 
-        float speed = dash_curve[index] * state.dash_speed * state.get_facing_float();
+        float speed = dash_curve[index] * state.base_stats.dash_factor * state.base_stats.ground_speed * state.get_facing_float();
         rigidbody.linearVelocityX = speed;
     }
 
@@ -312,6 +308,11 @@ public class BaseFighter : MonoBehaviour
                 rigidbody.linearVelocityY = -32.0f;
             }
         }
+    }
+
+    public void stun_tick(int index)
+    {
+        state.animation_handler.set_frozen(--state.stun_duration > 0);
     }
 
 
@@ -378,7 +379,7 @@ public class BaseFighter : MonoBehaviour
 
         state.force_facing(input.direction.x);
         player_sounds.PlayDash();
-        state.dash(state.base_stats.dash_factor * state.get_ground_speed());
+        state.start_action(FighterAction.Dash);
 
         return true;
     }
