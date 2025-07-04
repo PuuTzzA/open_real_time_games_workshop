@@ -21,7 +21,8 @@ public enum FighterAction
     KnockedBackLight,
     KnockedBackHeavy,
     Stunned,
-    Death
+    Death,
+    Crouch
 }
 
 public enum Facing

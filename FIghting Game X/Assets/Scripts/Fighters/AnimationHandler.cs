@@ -46,7 +46,8 @@ public class AnimationHandler : MonoBehaviour
         new ("knocked_back_light", AnimationEndAction.Signal),
         new ("knocked_back_heavy", AnimationEndAction.Signal),
         new ("stunned", AnimationEndAction.Signal),
-        new ("die", AnimationEndAction.Signal)
+        new ("die", AnimationEndAction.Signal),
+        new ("crouch", AnimationEndAction.Wait),
     };
 
     private int _current_frame_count;
