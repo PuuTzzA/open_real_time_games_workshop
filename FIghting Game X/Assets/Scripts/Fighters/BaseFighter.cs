@@ -165,6 +165,13 @@ public class BaseFighter : MonoBehaviour
         //    return;
         //}
 
+        // air resistance
+        var vel = rigidbody.linearVelocity.y;
+        if (vel < 0)
+        {
+            rigidbody.linearVelocityY += state.air_resistance * vel * vel * Time.fixedDeltaTime;
+        }
+
         if (state.is_grounded())
         {
             rigidbody.linearVelocityX = !state.flags_any_set(FighterFlags.CanMove) ? 0.0f : fighter_input.direction.x * state.get_ground_speed();
@@ -178,10 +185,10 @@ public class BaseFighter : MonoBehaviour
             rigidbody.linearVelocityX = Math.Clamp(rigidbody.linearVelocityX, -state.get_air_speed(), state.get_air_speed());
         }
 
-        if (rigidbody.linearVelocityY < state.get_terminal_speed())
-        {
-            rigidbody.linearVelocityY = state.get_terminal_speed();
-        }
+        //if (rigidbody.linearVelocityY < state.get_terminal_speed())
+        //{
+        //    rigidbody.linearVelocityY = state.get_terminal_speed();
+        //}
     }
 
     public void jump()
@@ -195,7 +202,6 @@ public class BaseFighter : MonoBehaviour
 
     public void knockback(Vector2 direction)
     {
-        Debug.Log("knockback");
         player_sounds.PlayJabHit();
         state.start_action(FighterAction.KnockedBackLight);
         state.remaining_flying_frames = 5;
@@ -204,8 +210,7 @@ public class BaseFighter : MonoBehaviour
 
     public void handle_hit(AttackHitbox hitbox_data)
     {
-        Debug.Log(hitbox_data.knockback);
-        Debug.Log(hitbox_data.source_fighter.state.get_facing_vec());
+
         knockback(hitbox_data.knockback * hitbox_data.source_fighter.state.get_facing_vec());
     }
 
@@ -339,7 +344,19 @@ public class BaseFighter : MonoBehaviour
         if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
 
         state.force_facing(input.direction.x);
-        player_sounds.PlayHeavySidewaysClip();
+        switch (input.direction.y)
+        {
+            case -1:
+                player_sounds.PlayHeavySidewaysClip();
+                break;
+            case 0:
+                player_sounds.PlayHeavySidewaysClip();
+                break;
+            case 1:
+                player_sounds.PlayHeavyUpClip();
+                break;
+        }
+        // player_sounds.PlayHeavySidewaysClip();
         state.start_action((FighterAction)((int)(FighterAction.HeavySide) - input.direction.y));
         return true;
     }
@@ -383,7 +400,6 @@ public class BaseFighter : MonoBehaviour
         if (!input.pressed) return true;
 
         knockback(new Vector2(-(float)(int)state.get_facing(), 0.0f) * 5.0f);
-        Debug.Log("knocking back");
         return true;
     }
 

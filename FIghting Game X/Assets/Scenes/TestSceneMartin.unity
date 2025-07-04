@@ -451,6 +451,7 @@ GameObject:
   - component: {fileID: 465540595}
   - component: {fileID: 465540594}
   - component: {fileID: 465540596}
+  - component: {fileID: 465540597}
   m_Layer: 0
   m_Name: miniGame
   m_TagString: Untagged
@@ -504,7 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2237ca1c0a2f9a40b89fd1ad9eb8961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spinSpeed: 90
+  minigamenumber: 0
   iconStartOffset: 0.3
   iconEndOffset: 0.3
   entryDuration: 0.25
@@ -514,6 +515,20 @@ MonoBehaviour:
   exitYOffset: 50
   exitXOffset: 320
   finalScale: 0.5
+--- !u!114 &465540597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465540593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41fb82852cc54762a295e1c9311dbe0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowstunn: 0.2
+  finishHimAudio: {fileID: 0}
 --- !u!1 &476014778
 GameObject:
   m_ObjectHideFlags: 0
@@ -1475,6 +1490,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3748536631666959534, guid: 5d75320298b0cd478bbc9daafbae1543, type: 3}
+      propertyPath: inputActions
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    - target: {fileID: 3748536631666959534, guid: 5d75320298b0cd478bbc9daafbae1543, type: 3}
+      propertyPath: menuDocument
+      value: 
+      objectReference: {fileID: 1264215294}
     - target: {fileID: 4720139210247328335, guid: 5d75320298b0cd478bbc9daafbae1543, type: 3}
       propertyPath: m_Name
       value: WinScreen
@@ -1567,11 +1590,41 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0.9607843
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7573505312214755110, guid: 5d75320298b0cd478bbc9daafbae1543, type: 3}
+    - {fileID: 1240672638900251950, guid: 5d75320298b0cd478bbc9daafbae1543, type: 3}
+    - {fileID: 4036587229105510103, guid: 5d75320298b0cd478bbc9daafbae1543, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4720139210247328335, guid: 5d75320298b0cd478bbc9daafbae1543, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1264215294}
   m_SourcePrefab: {fileID: 100100000, guid: 5d75320298b0cd478bbc9daafbae1543, type: 3}
+--- !u!1 &1264215293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4720139210247328335, guid: 5d75320298b0cd478bbc9daafbae1543, type: 3}
+  m_PrefabInstance: {fileID: 1264215292}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1264215294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264215293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PanelSettings: {fileID: 11400000, guid: 108ed8f5779d4dd4fb5afd0c0c93dff5, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: 29b5497ff270d7f4db3f02cd488a35e7, type: 3}
+  m_SortingOrder: 0
+  m_WorldSpaceSizeMode: 1
+  m_WorldSpaceWidth: 1920
+  m_WorldSpaceHeight: 1080
 --- !u!1 &1410388920
 GameObject:
   m_ObjectHideFlags: 0
@@ -2194,6 +2247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6058923b87e4844af32308d3b464c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ui: {fileID: 465540593}
   finishHimPanel: {fileID: 465540593}
   finishHimVoice: {fileID: 8300000, guid: 27ff2432cb21d3d4b906ce85ea277261, type: 3}
   mirrorSequenceUIPrefab: {fileID: 0}

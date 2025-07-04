@@ -28,18 +28,15 @@ public class QTETriggerTester : MonoBehaviour
 
     public void OnTestMinigame(InputAction.CallbackContext ctx)
     {
-        Debug.Log("Test minigame action triggered");
         GameObject killer = this.gameObject;
         GameObject fallen = FindClosestOtherFighter(killer);
 
         if (fallen != null)
         {
-            Debug.Log($"{killer.name} triggering test QTE against {fallen.name}");
             //QTEManager.Instance.StartQTE(fallen, killer, );
         }
         else
         {
-            Debug.LogWarning("No nearby fighter found to target.");
         }
     }
 

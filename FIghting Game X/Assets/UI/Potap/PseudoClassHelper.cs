@@ -21,7 +21,6 @@ public static class PseudoClassHelper
         }
         else
         {
-            Debug.Log("pseudoStates is not enum");
         }
     }
 
@@ -37,7 +36,6 @@ public static class PseudoClassHelper
         }
         else
         {
-            Debug.Log("pseudoStates is not enum");
         }
     }
 

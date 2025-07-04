@@ -12,6 +12,5 @@ public class LaserHitbox : Hitbox
     {
         if (!isActive) return;
         fighter.take_arena_damage(damage);
-        Debug.Log("Fighter taking laser damage.");
     }
 }
