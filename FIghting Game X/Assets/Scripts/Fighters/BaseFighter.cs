@@ -7,6 +7,7 @@ using UnityEditor.VersionControl;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using static UnityEngine.Rendering.DebugUI;
 using System.Runtime.CompilerServices;
+using UnityEditor.Experimental.GraphView;
 
 public class BaseFighter : MonoBehaviour
 {
@@ -62,6 +63,8 @@ public class BaseFighter : MonoBehaviour
         frame_callbacks[(int)FighterAction.HeavyDown] = heavy_down_tick;
 
         frame_callbacks[(int)FighterAction.Stunned] = stun_tick;
+
+        frame_callbacks[(int)FighterAction.Crouch] = crouch_tick;
 
         state.start_action(FighterAction.Idle);
     }
@@ -144,6 +147,8 @@ public class BaseFighter : MonoBehaviour
         {
             if (fighter_input.direction.x != 0)
                 next_action = FighterAction.Running;
+            else if(fighter_input.direction.y == -1)
+                next_action = FighterAction.Crouch;
         }
         else
         {
@@ -208,10 +213,10 @@ public class BaseFighter : MonoBehaviour
         rigidbody.linearVelocity = direction;
     }
 
-    public void handle_hit(AttackHitbox hitbox_data)
+    public void stun(int duration)
     {
-
-        knockback(hitbox_data.knockback * hitbox_data.source_fighter.state.get_facing_vec());
+        state.stun_duration = duration;
+        state.start_action(FighterAction.Stunned);
     }
 
     public bool is_blocking(Vector2Int direction)
@@ -264,6 +269,7 @@ public class BaseFighter : MonoBehaviour
     }
 
 
+
     public void dash_tick(int index)
     {
         freezeXY(false, true);
@@ -272,7 +278,6 @@ public class BaseFighter : MonoBehaviour
         float speed = dash_curve[index] * state.base_stats.dash_factor * state.base_stats.ground_speed * state.get_facing_float();
         rigidbody.linearVelocityX = speed;
     }
-
 
     public void heavy_up_tick(int index)
     {
@@ -313,6 +318,11 @@ public class BaseFighter : MonoBehaviour
     public void stun_tick(int index)
     {
         state.animation_handler.set_frozen(--state.stun_duration > 0);
+    }
+
+    public void crouch_tick(int index)
+    {
+        next_idle_action();
     }
 
 
@@ -404,7 +414,7 @@ public class BaseFighter : MonoBehaviour
     {
         if (!input.pressed) return true;
 
-        knockback(new Vector2(-(float)(int)state.get_facing(), 0.0f) * 5.0f);
+        stun(180);
         return true;
     }
 
