@@ -172,17 +172,21 @@ public class BaseFighter : MonoBehaviour
             rigidbody.linearVelocityY += state.air_resistance * vel * vel * Time.fixedDeltaTime;
         }
 
+        var new_dir_x = !state.flags_any_set(FighterFlags.CanMove) ? 0.0f : fighter_input.direction.x;
+
         if (state.is_grounded())
         {
-            rigidbody.linearVelocityX = !state.flags_any_set(FighterFlags.CanMove) ? 0.0f : fighter_input.direction.x * state.get_ground_speed();
+            rigidbody.linearVelocityX = new_dir_x * state.get_ground_speed();
         }
         else
         {
-            float dist = (!state.flags_any_set(FighterFlags.CanMove) ? 0.0f : fighter_input.direction.x) * state.get_air_speed() - rigidbody.linearVelocityX;
+            vel = rigidbody.linearVelocity.x;
+            rigidbody.linearVelocityX -= Math.Sign(vel) * 2.0f * state.air_resistance * vel * vel * Time.fixedDeltaTime;
 
-            float delta = (dist * 5.0f + 2.0f * Math.Sign(dist)) * Time.fixedDeltaTime;
+            float delta = new_dir_x * state.get_air_speed() * Time.fixedDeltaTime * 5.0f;
+
             rigidbody.linearVelocityX += delta;
-            rigidbody.linearVelocityX = Math.Clamp(rigidbody.linearVelocityX, -state.get_air_speed(), state.get_air_speed());
+            // rigidbody.linearVelocityX = Math.Clamp(rigidbody.linearVelocityX, -state.get_air_speed(), state.get_air_speed());
         }
 
         //if (rigidbody.linearVelocityY < state.get_terminal_speed())
