@@ -3,12 +3,13 @@ using UnityEngine;
 
 public class BombPlatformMove : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer buttonNormal;
-    [SerializeField] private SpriteRenderer buttonPressed;
+    [SerializeField] private SpriteRenderer leverNormal;
+    [SerializeField] private SpriteRenderer leverSwitched;
     [SerializeField] private float waitTimeOffScreen;
     [SerializeField] private float cooldownTime;
     [SerializeField] private float dropDistance;
     [SerializeField] private float moveSpeed;
+    [SerializeField] private Collider2D platformCollider;
     [SerializeField] private GameObject bombPrefab;
     [SerializeField] private Transform bombSpawnPoint;
     private Vector3 originalPosition;
@@ -36,13 +37,13 @@ public class BombPlatformMove : MonoBehaviour
 
     private void PressButton() {
         isPressed = true;
-        buttonNormal.enabled = false;
-        buttonPressed.enabled = true;
+        leverNormal.enabled = false;
+        leverSwitched.enabled = true;
     }
     private void ButtonReady() {
         isPressed = false;
-        buttonNormal.enabled = true;
-        buttonPressed.enabled = false;
+        leverNormal.enabled = true;
+        leverSwitched.enabled = false;
     }
 
     public void TriggerDrop()
@@ -64,9 +65,11 @@ public class BombPlatformMove : MonoBehaviour
         }
 
         transform.position = dropPosition;
+        platformCollider.enabled = false;
 
         yield return new WaitForSeconds(waitTimeOffScreen);
-        
+
+        platformCollider.enabled = true;
         SpawnBomb();
 
         while (Vector3.Distance(transform.position, originalPosition) > 0.01f)

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 138e5b92091032b4e959a7149e2133ae
+guid: 949349a7fba8c3b4382f598e1cf886e0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7276040600684834590
-    second: Basic_laser 1_0
+      213: 6882445957100414110
+    second: Lazer_Platform_New_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 900
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,27 +96,40 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Basic_laser 1_0
+      name: Lazer_Platform_New_0
       rect:
         serializedVersion: 2
-        x: 368
-        y: 1045
-        width: 2562
-        height: 458
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+        x: 0
+        y: 0
+        width: 550
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e05cd0bf9f460b90800000000000000
-      internalID: -7276040600684834590
+      spriteID: e942bca122c538f50800000000000000
+      internalID: 6882445957100414110
       vertices: []
       indices: 
       edges: []
@@ -125,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0a63c59545f17034b95a1dd2f73d3cee
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Basic_laser 1_0: -7276040600684834590
+      Lazer_Platform_New_0: 6882445957100414110
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
