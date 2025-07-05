@@ -87,10 +87,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,130 +131,27 @@ TextureImporter:
       name: stunned_0
       rect:
         serializedVersion: 2
-        x: 232
-        y: 206
-        width: 28
-        height: 76
+        x: 0
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -27, y: -4}
+        - {x: -38, y: -106}
+        - {x: 38, y: -105}
+        - {x: 31, y: 9}
+        - {x: 75, y: 38}
+        - {x: 57, y: 80}
+        - {x: 13, y: 77}
+      tessellationDetail: 0
       bones: []
       spriteID: c30387292ada9f810800000000000000
       internalID: 1799660439864881212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stunned_1
-      rect:
-        serializedVersion: 2
-        x: 253
-        y: 225
-        width: 19
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1500a28a79de21d0800000000000000
-      internalID: -3373519950653160162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stunned_2
-      rect:
-        serializedVersion: 2
-        x: 267
-        y: 276
-        width: 57
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 41f89e2f7d1e7f1d0800000000000000
-      internalID: -3316934282925469932
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stunned_3
-      rect:
-        serializedVersion: 2
-        x: 274
-        y: 204
-        width: 13
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 699de8303bb5edb30800000000000000
-      internalID: 4313986317484480918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stunned_4
-      rect:
-        serializedVersion: 2
-        x: 223
-        y: 152
-        width: 30
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 121ec54e9c71abe70800000000000000
-      internalID: 9131637350334259489
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stunned_5
-      rect:
-        serializedVersion: 2
-        x: 262
-        y: 152
-        width: 28
-        height: 76
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8b59fb1c546ecbc10800000000000000
-      internalID: 2070783115961275832
       vertices: []
       indices: 
       edges: []
@@ -263,7 +160,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5229cbb5961f81a43892c23da28e0d99
     internalID: 0
     vertices: []
     indices: 
@@ -271,14 +168,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       stunned_0: 1799660439864881212
-      stunned_1: -3373519950653160162
-      stunned_2: -3316934282925469932
-      stunned_3: 4313986317484480918
-      stunned_4: 9131637350334259489
-      stunned_5: 2070783115961275832
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

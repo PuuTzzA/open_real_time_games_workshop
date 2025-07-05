@@ -119,6 +119,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &7712733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7712734}
+  m_Layer: 0
+  m_Name: BombSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7712734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7712733}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.52, y: 1.17, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 981016221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &154796358
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,6 +451,7 @@ GameObject:
   - component: {fileID: 465540595}
   - component: {fileID: 465540594}
   - component: {fileID: 465540596}
+  - component: {fileID: 465540597}
   m_Layer: 0
   m_Name: miniGame
   m_TagString: Untagged
@@ -473,7 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2237ca1c0a2f9a40b89fd1ad9eb8961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spinSpeed: 90
+  minigamenumber: 0
   iconStartOffset: 0.3
   iconEndOffset: 0.3
   entryDuration: 0.25
@@ -483,6 +515,20 @@ MonoBehaviour:
   exitYOffset: 50
   exitXOffset: 320
   finalScale: 0.5
+--- !u!114 &465540597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465540593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41fb82852cc54762a295e1c9311dbe0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowstunn: 0.2
+  finishHimAudio: {fileID: 0}
 --- !u!1 &476014778
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,10 +1322,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonNormal: {fileID: 851442325}
   buttonPressed: {fileID: 1625323556}
-  waitTimeOffScreen: 10
+  waitTimeOffScreen: 5
   cooldownTime: 15
   dropDistance: 4
   moveSpeed: 2
+  bombPrefab: {fileID: 4238680019386585109, guid: f2e50d11d5429cc4ea524a5a4bbbc9c0, type: 3}
+  bombSpawnPoint: {fileID: 7712734}
   isPressed: 0
   isMoving: 0
   isOnCooldown: 0
@@ -1427,6 +1475,7 @@ Transform:
   - {fileID: 476014779}
   - {fileID: 1855989289}
   - {fileID: 1625323557}
+  - {fileID: 7712734}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1264215292
@@ -2198,6 +2247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6058923b87e4844af32308d3b464c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ui: {fileID: 465540593}
   finishHimPanel: {fileID: 465540593}
   finishHimVoice: {fileID: 8300000, guid: 27ff2432cb21d3d4b906ce85ea277261, type: 3}
   mirrorSequenceUIPrefab: {fileID: 0}

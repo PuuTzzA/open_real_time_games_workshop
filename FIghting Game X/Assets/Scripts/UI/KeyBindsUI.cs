@@ -34,17 +34,14 @@ public class KeyBindsUI : MonoBehaviour
 
             if (action == null)
             {
-                Debug.LogWarning($"Action missing for: {actionName}");
                 continue;
             }
             if (button == null)
             {
-                Debug.LogWarning($"button missing for: {actionName}");
                 continue;
             }
             if (resetbutton == null)
             {
-                Debug.LogWarning($"resetbutton missing for: {actionName}");
                 continue;
             }
 
@@ -150,7 +147,6 @@ public class KeyBindsUI : MonoBehaviour
             }
         }
 
-        Debug.Log("Bindings wurden auf Standardwerte zurückgesetzt.");
     }
     void ResetSingleBinding(InputAction action, Button button)
     {

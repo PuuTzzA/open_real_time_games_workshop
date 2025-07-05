@@ -9,6 +9,8 @@ public class BombPlatformMove : MonoBehaviour
     [SerializeField] private float cooldownTime;
     [SerializeField] private float dropDistance;
     [SerializeField] private float moveSpeed;
+    [SerializeField] private GameObject bombPrefab;
+    [SerializeField] private Transform bombSpawnPoint;
     private Vector3 originalPosition;
     private Vector3 dropPosition;
 
@@ -23,6 +25,13 @@ public class BombPlatformMove : MonoBehaviour
     {
         originalPosition = transform.position;
         dropPosition = originalPosition + Vector3.down * dropDistance;
+    }
+
+    private void SpawnBomb()
+    {
+        Vector3 bombPos = bombSpawnPoint.position;
+        GameObject bomb = Instantiate(bombPrefab, bombPos, Quaternion.identity);
+        bomb.transform.SetParent(this.transform);
     }
 
     private void PressButton() {
@@ -57,6 +66,8 @@ public class BombPlatformMove : MonoBehaviour
         transform.position = dropPosition;
 
         yield return new WaitForSeconds(waitTimeOffScreen);
+        
+        SpawnBomb();
 
         while (Vector3.Distance(transform.position, originalPosition) > 0.01f)
         {

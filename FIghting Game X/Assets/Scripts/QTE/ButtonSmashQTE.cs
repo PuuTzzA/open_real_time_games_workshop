@@ -10,9 +10,6 @@ public class ButtonSmashQTE : MonoBehaviour, IQTE
     [Header("UI Elements")]
     public Slider p1Slider;
     public Slider p2Slider;
-    public TextMeshProUGUI timerText;
-    public TextMeshProUGUI p1NameText;
-    public TextMeshProUGUI p2NameText;
     public GameObject finishHimImageObject;
     
     [Header("Audio")]
@@ -35,11 +32,12 @@ public class ButtonSmashQTE : MonoBehaviour, IQTE
     public float GRAVITY = 50f; // Downforce per second
     public float SMOOTHNESS = 150f; // Higher is snappier
 
+    private MinigameUI ui;
+
     public void Init(PlayerInput p1, PlayerInput p2, Action<QTEResult, QTEResult> callback)
     {
+        ui = FindAnyObjectByType<MinigameUI>();
         onFinished = callback;
-        p1NameText.text = "Player " + p1.playerIndex;
-        p2NameText.text = "Player " + p2.playerIndex;
 
         p1Taps = 0;
         p2Taps = 0;
@@ -87,7 +85,7 @@ public class ButtonSmashQTE : MonoBehaviour, IQTE
         {
             float dt = Time.unscaledDeltaTime;
             timeLeft -= dt;
-            timerText.text = timeLeft.ToString("F1");
+            ui.timer.text = timeLeft.ToString("F1");
 
             // Apply downforce (gravity)
             p1Taps -= GRAVITY * dt;

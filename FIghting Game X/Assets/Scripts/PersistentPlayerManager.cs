@@ -112,7 +112,6 @@ public class PersistentPlayerManager : MonoBehaviour
 
             if (data.Choice < 0 || data.Choice >= characterPrefabs.Length)
             {
-                Debug.LogError($"Invalid character choice for player {data.Index}");
                 continue;
             }
 

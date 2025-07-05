@@ -46,17 +46,14 @@ public class ControlsUI : MonoBehaviour
             var action = actions.FindAction(actionName);
             if (action == null)
             {
-                Debug.LogWarning($"Action missing for: {actionName}");
                 continue;
             }
             if (button == null)
             {
-                Debug.LogWarning($"button missing for: {actionName}");
                 continue;
             }
             if (changeButton == null)
             {
-                Debug.LogWarning($"Change Button is missing for: {actionName}");
                 continue;
             }
 
@@ -76,7 +73,6 @@ public class ControlsUI : MonoBehaviour
 
     private void OnInputDeviceChanged(InputAction.CallbackContext context)
     {
-        //Debug.Log($"Device changed: {context.control.device.name}, Action: {context.action.name}");
 
         if (!this.gameObject.activeSelf) return;
         bool isGamepadInput = context.control.device is Gamepad;
@@ -161,7 +157,6 @@ public class ControlsUI : MonoBehaviour
     }
     void ResetToDefaults()
     {
-        //Debug.Log($"Before reset - usingGamepad: {usingGamepad}");
 
         //inputActions.RemoveAllBindingOverrides(); // Entfernt alle Änderungen
         foreach (var actionName in actionKeyBingings.Keys)
@@ -178,7 +173,6 @@ public class ControlsUI : MonoBehaviour
             }
         }
         SaveBindings(); // Speichert leere Overrides (also Default)
-        //Debug.Log($"After reset - usingGamepad: {usingGamepad}");
 
         // Alle Button-Texte aktualisieren
         var playerMap = inputActions.FindActionMap("Player");
@@ -195,7 +189,6 @@ public class ControlsUI : MonoBehaviour
             }
         }
 
-        //Debug.Log("All controls have been reset to default.");
     }
 
     private void CleanTheShit()

@@ -489,10 +489,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -533,10 +533,10 @@ TextureImporter:
       name: ult_hammer_0
       rect:
         serializedVersion: 2
-        x: 633
-        y: 13329
-        width: 15
-        height: 18
+        x: 0
+        y: 12800
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -555,10 +555,10 @@ TextureImporter:
       name: ult_hammer_1
       rect:
         serializedVersion: 2
-        x: 1905
-        y: 13320
-        width: 36
-        height: 35
+        x: 1280
+        y: 12800
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -577,10 +577,10 @@ TextureImporter:
       name: ult_hammer_2
       rect:
         serializedVersion: 2
-        x: 3183
-        y: 13318
-        width: 36
-        height: 62
+        x: 2560
+        y: 12800
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -599,10 +599,10 @@ TextureImporter:
       name: ult_hammer_3
       rect:
         serializedVersion: 2
-        x: 4462
-        y: 13317
-        width: 38
-        height: 91
+        x: 3840
+        y: 12800
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -621,10 +621,10 @@ TextureImporter:
       name: ult_hammer_4
       rect:
         serializedVersion: 2
-        x: 5742
-        y: 13317
-        width: 38
-        height: 91
+        x: 5120
+        y: 12800
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -643,10 +643,10 @@ TextureImporter:
       name: ult_hammer_5
       rect:
         serializedVersion: 2
-        x: 7021
-        y: 13318
-        width: 40
-        height: 129
+        x: 6400
+        y: 12800
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -665,10 +665,10 @@ TextureImporter:
       name: ult_hammer_6
       rect:
         serializedVersion: 2
-        x: 8299
-        y: 13315
-        width: 45
-        height: 158
+        x: 7680
+        y: 12800
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -687,10 +687,10 @@ TextureImporter:
       name: ult_hammer_7
       rect:
         serializedVersion: 2
-        x: 9581
-        y: 13319
-        width: 38
-        height: 174
+        x: 8960
+        y: 12800
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -709,10 +709,10 @@ TextureImporter:
       name: ult_hammer_8
       rect:
         serializedVersion: 2
-        x: 10861
-        y: 13319
-        width: 38
-        height: 174
+        x: 10240
+        y: 12800
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -731,10 +731,10 @@ TextureImporter:
       name: ult_hammer_9
       rect:
         serializedVersion: 2
-        x: 12139
-        y: 13318
-        width: 42
-        height: 209
+        x: 11520
+        y: 12800
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -753,10 +753,10 @@ TextureImporter:
       name: ult_hammer_10
       rect:
         serializedVersion: 2
-        x: 13417
-        y: 13318
-        width: 46
-        height: 227
+        x: 12800
+        y: 12800
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -775,10 +775,10 @@ TextureImporter:
       name: ult_hammer_11
       rect:
         serializedVersion: 2
-        x: 14691
-        y: 13318
-        width: 58
-        height: 249
+        x: 14080
+        y: 12800
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -797,10 +797,10 @@ TextureImporter:
       name: ult_hammer_12
       rect:
         serializedVersion: 2
-        x: 594
-        y: 12037
-        width: 101
-        height: 265
+        x: 0
+        y: 11520
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -819,10 +819,10 @@ TextureImporter:
       name: ult_hammer_13
       rect:
         serializedVersion: 2
-        x: 1874
-        y: 12037
-        width: 101
-        height: 265
+        x: 1280
+        y: 11520
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -841,10 +841,10 @@ TextureImporter:
       name: ult_hammer_14
       rect:
         serializedVersion: 2
-        x: 3126
-        y: 12037
-        width: 146
-        height: 349
+        x: 2560
+        y: 11520
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -863,10 +863,10 @@ TextureImporter:
       name: ult_hammer_15
       rect:
         serializedVersion: 2
-        x: 4389
-        y: 12035
-        width: 190
-        height: 366
+        x: 3840
+        y: 11520
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -885,10 +885,10 @@ TextureImporter:
       name: ult_hammer_16
       rect:
         serializedVersion: 2
-        x: 5663
-        y: 12039
-        width: 198
-        height: 365
+        x: 5120
+        y: 11520
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -907,10 +907,10 @@ TextureImporter:
       name: ult_hammer_17
       rect:
         serializedVersion: 2
-        x: 6943
-        y: 12039
-        width: 198
-        height: 368
+        x: 6400
+        y: 11520
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -929,10 +929,10 @@ TextureImporter:
       name: ult_hammer_18
       rect:
         serializedVersion: 2
-        x: 8223
-        y: 12039
-        width: 198
-        height: 368
+        x: 7680
+        y: 11520
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -951,10 +951,10 @@ TextureImporter:
       name: ult_hammer_19
       rect:
         serializedVersion: 2
-        x: 9505
-        y: 12037
-        width: 198
-        height: 390
+        x: 8960
+        y: 11520
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -973,10 +973,10 @@ TextureImporter:
       name: ult_hammer_20
       rect:
         serializedVersion: 2
-        x: 10782
-        y: 12038
-        width: 198
-        height: 391
+        x: 10240
+        y: 11520
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -995,10 +995,10 @@ TextureImporter:
       name: ult_hammer_21
       rect:
         serializedVersion: 2
-        x: 12062
-        y: 12038
-        width: 198
-        height: 391
+        x: 11520
+        y: 11520
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1017,10 +1017,10 @@ TextureImporter:
       name: ult_hammer_22
       rect:
         serializedVersion: 2
-        x: 13342
-        y: 12038
-        width: 198
-        height: 391
+        x: 12800
+        y: 11520
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1039,10 +1039,10 @@ TextureImporter:
       name: ult_hammer_23
       rect:
         serializedVersion: 2
-        x: 14622
-        y: 12038
-        width: 198
-        height: 391
+        x: 14080
+        y: 11520
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1061,10 +1061,10 @@ TextureImporter:
       name: ult_hammer_24
       rect:
         serializedVersion: 2
-        x: 542
-        y: 10758
-        width: 198
-        height: 391
+        x: 0
+        y: 10240
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1083,10 +1083,10 @@ TextureImporter:
       name: ult_hammer_25
       rect:
         serializedVersion: 2
-        x: 1822
-        y: 10758
-        width: 198
-        height: 391
+        x: 1280
+        y: 10240
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1105,10 +1105,10 @@ TextureImporter:
       name: ult_hammer_26
       rect:
         serializedVersion: 2
-        x: 3102
-        y: 10758
-        width: 198
-        height: 391
+        x: 2560
+        y: 10240
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1127,10 +1127,10 @@ TextureImporter:
       name: ult_hammer_27
       rect:
         serializedVersion: 2
-        x: 4368
-        y: 10758
-        width: 212
-        height: 391
+        x: 3840
+        y: 10240
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1149,10 +1149,10 @@ TextureImporter:
       name: ult_hammer_28
       rect:
         serializedVersion: 2
-        x: 5628
-        y: 10758
-        width: 232
-        height: 391
+        x: 5120
+        y: 10240
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1171,10 +1171,10 @@ TextureImporter:
       name: ult_hammer_29
       rect:
         serializedVersion: 2
-        x: 6880
-        y: 10758
-        width: 260
-        height: 391
+        x: 6400
+        y: 10240
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1193,10 +1193,10 @@ TextureImporter:
       name: ult_hammer_30
       rect:
         serializedVersion: 2
-        x: 8134
-        y: 10758
-        width: 286
-        height: 391
+        x: 7680
+        y: 10240
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1215,10 +1215,10 @@ TextureImporter:
       name: ult_hammer_31
       rect:
         serializedVersion: 2
-        x: 9386
-        y: 10758
-        width: 314
-        height: 391
+        x: 8960
+        y: 10240
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1237,10 +1237,10 @@ TextureImporter:
       name: ult_hammer_32
       rect:
         serializedVersion: 2
-        x: 10642
-        y: 10758
-        width: 338
-        height: 391
+        x: 10240
+        y: 10240
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1259,10 +1259,10 @@ TextureImporter:
       name: ult_hammer_33
       rect:
         serializedVersion: 2
-        x: 11892
-        y: 10758
-        width: 368
-        height: 391
+        x: 11520
+        y: 10240
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1281,10 +1281,10 @@ TextureImporter:
       name: ult_hammer_34
       rect:
         serializedVersion: 2
-        x: 13155
-        y: 10758
-        width: 385
-        height: 391
+        x: 12800
+        y: 10240
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1303,10 +1303,10 @@ TextureImporter:
       name: ult_hammer_35
       rect:
         serializedVersion: 2
-        x: 14423
-        y: 10758
-        width: 397
-        height: 391
+        x: 14080
+        y: 10240
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1325,10 +1325,10 @@ TextureImporter:
       name: ult_hammer_36
       rect:
         serializedVersion: 2
-        x: 322
-        y: 9478
-        width: 418
-        height: 391
+        x: 0
+        y: 8960
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1347,10 +1347,10 @@ TextureImporter:
       name: ult_hammer_37
       rect:
         serializedVersion: 2
-        x: 1581
-        y: 9478
-        width: 439
-        height: 391
+        x: 1280
+        y: 8960
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1369,10 +1369,10 @@ TextureImporter:
       name: ult_hammer_38
       rect:
         serializedVersion: 2
-        x: 2810
-        y: 9478
-        width: 490
-        height: 391
+        x: 2560
+        y: 8960
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1391,10 +1391,10 @@ TextureImporter:
       name: ult_hammer_39
       rect:
         serializedVersion: 2
-        x: 4070
-        y: 9478
-        width: 510
-        height: 391
+        x: 3840
+        y: 8960
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1413,10 +1413,10 @@ TextureImporter:
       name: ult_hammer_40
       rect:
         serializedVersion: 2
-        x: 5336
-        y: 9478
-        width: 524
-        height: 391
+        x: 5120
+        y: 8960
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1435,10 +1435,10 @@ TextureImporter:
       name: ult_hammer_41
       rect:
         serializedVersion: 2
-        x: 6607
-        y: 9478
-        width: 533
-        height: 391
+        x: 6400
+        y: 8960
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1457,10 +1457,10 @@ TextureImporter:
       name: ult_hammer_42
       rect:
         serializedVersion: 2
-        x: 7879
-        y: 9478
-        width: 541
-        height: 391
+        x: 7680
+        y: 8960
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1479,10 +1479,10 @@ TextureImporter:
       name: ult_hammer_43
       rect:
         serializedVersion: 2
-        x: 9151
-        y: 9478
-        width: 549
-        height: 391
+        x: 8960
+        y: 8960
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1501,10 +1501,10 @@ TextureImporter:
       name: ult_hammer_44
       rect:
         serializedVersion: 2
-        x: 10419
-        y: 9478
-        width: 561
-        height: 391
+        x: 10240
+        y: 8960
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1523,10 +1523,10 @@ TextureImporter:
       name: ult_hammer_45
       rect:
         serializedVersion: 2
-        x: 11691
-        y: 9478
-        width: 569
-        height: 391
+        x: 11520
+        y: 8960
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1545,10 +1545,10 @@ TextureImporter:
       name: ult_hammer_46
       rect:
         serializedVersion: 2
-        x: 12944
-        y: 9478
-        width: 596
-        height: 391
+        x: 12800
+        y: 8960
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1567,10 +1567,10 @@ TextureImporter:
       name: ult_hammer_47
       rect:
         serializedVersion: 2
-        x: 14198
-        y: 9478
-        width: 622
-        height: 391
+        x: 14080
+        y: 8960
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1589,10 +1589,10 @@ TextureImporter:
       name: ult_hammer_48
       rect:
         serializedVersion: 2
-        x: 86
-        y: 8198
-        width: 654
-        height: 391
+        x: 0
+        y: 7680
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1611,10 +1611,10 @@ TextureImporter:
       name: ult_hammer_49
       rect:
         serializedVersion: 2
-        x: 1345
-        y: 8175
-        width: 675
-        height: 414
+        x: 1280
+        y: 7680
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1633,10 +1633,10 @@ TextureImporter:
       name: ult_hammer_50
       rect:
         serializedVersion: 2
-        x: 2605
-        y: 8131
-        width: 695
-        height: 458
+        x: 2560
+        y: 7680
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1655,10 +1655,10 @@ TextureImporter:
       name: ult_hammer_51
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 8018
-        width: 728
-        height: 571
+        x: 3840
+        y: 7680
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1677,10 +1677,10 @@ TextureImporter:
       name: ult_hammer_52
       rect:
         serializedVersion: 2
-        x: 5132
-        y: 8018
-        width: 728
-        height: 571
+        x: 5120
+        y: 7680
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1699,10 +1699,10 @@ TextureImporter:
       name: ult_hammer_53
       rect:
         serializedVersion: 2
-        x: 6412
-        y: 8018
-        width: 728
-        height: 571
+        x: 6400
+        y: 7680
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1721,10 +1721,10 @@ TextureImporter:
       name: ult_hammer_54
       rect:
         serializedVersion: 2
-        x: 7692
-        y: 8018
-        width: 728
-        height: 571
+        x: 7680
+        y: 7680
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1743,10 +1743,10 @@ TextureImporter:
       name: ult_hammer_55
       rect:
         serializedVersion: 2
-        x: 8970
-        y: 8009
-        width: 730
-        height: 580
+        x: 8960
+        y: 7680
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1765,10 +1765,10 @@ TextureImporter:
       name: ult_hammer_56
       rect:
         serializedVersion: 2
-        x: 10250
-        y: 8009
-        width: 730
-        height: 580
+        x: 10240
+        y: 7680
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1787,10 +1787,10 @@ TextureImporter:
       name: ult_hammer_57
       rect:
         serializedVersion: 2
-        x: 11530
-        y: 8009
-        width: 730
-        height: 580
+        x: 11520
+        y: 7680
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1809,10 +1809,10 @@ TextureImporter:
       name: ult_hammer_58
       rect:
         serializedVersion: 2
-        x: 12810
-        y: 8009
-        width: 730
-        height: 580
+        x: 12800
+        y: 7680
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1831,10 +1831,10 @@ TextureImporter:
       name: ult_hammer_59
       rect:
         serializedVersion: 2
-        x: 14092
-        y: 8019
-        width: 728
-        height: 570
+        x: 14080
+        y: 7680
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1853,10 +1853,10 @@ TextureImporter:
       name: ult_hammer_60
       rect:
         serializedVersion: 2
-        x: 12
-        y: 6739
-        width: 728
-        height: 570
+        x: 0
+        y: 6400
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1875,10 +1875,10 @@ TextureImporter:
       name: ult_hammer_61
       rect:
         serializedVersion: 2
-        x: 1292
-        y: 6739
-        width: 728
-        height: 570
+        x: 1280
+        y: 6400
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1897,10 +1897,10 @@ TextureImporter:
       name: ult_hammer_62
       rect:
         serializedVersion: 2
-        x: 2572
-        y: 6739
-        width: 728
-        height: 570
+        x: 2560
+        y: 6400
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1919,10 +1919,10 @@ TextureImporter:
       name: ult_hammer_63
       rect:
         serializedVersion: 2
-        x: 3853
-        y: 6746
-        width: 727
-        height: 563
+        x: 3840
+        y: 6400
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1941,10 +1941,10 @@ TextureImporter:
       name: ult_hammer_64
       rect:
         serializedVersion: 2
-        x: 5133
-        y: 6746
-        width: 727
-        height: 563
+        x: 5120
+        y: 6400
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1963,10 +1963,10 @@ TextureImporter:
       name: ult_hammer_65
       rect:
         serializedVersion: 2
-        x: 6413
-        y: 6746
-        width: 727
-        height: 563
+        x: 6400
+        y: 6400
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1985,10 +1985,10 @@ TextureImporter:
       name: ult_hammer_66
       rect:
         serializedVersion: 2
-        x: 7693
-        y: 6746
-        width: 727
-        height: 563
+        x: 7680
+        y: 6400
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2007,10 +2007,10 @@ TextureImporter:
       name: ult_hammer_67
       rect:
         serializedVersion: 2
-        x: 8973
-        y: 6746
-        width: 727
-        height: 563
+        x: 8960
+        y: 6400
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2029,10 +2029,10 @@ TextureImporter:
       name: ult_hammer_68
       rect:
         serializedVersion: 2
-        x: 10252
-        y: 6738
-        width: 728
-        height: 571
+        x: 10240
+        y: 6400
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2051,10 +2051,10 @@ TextureImporter:
       name: ult_hammer_69
       rect:
         serializedVersion: 2
-        x: 11532
-        y: 6738
-        width: 728
-        height: 571
+        x: 11520
+        y: 6400
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2073,10 +2073,10 @@ TextureImporter:
       name: ult_hammer_70
       rect:
         serializedVersion: 2
-        x: 12812
-        y: 6738
-        width: 728
-        height: 571
+        x: 12800
+        y: 6400
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2095,10 +2095,10 @@ TextureImporter:
       name: ult_hammer_71
       rect:
         serializedVersion: 2
-        x: 14092
-        y: 6738
-        width: 728
-        height: 571
+        x: 14080
+        y: 6400
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2117,10 +2117,10 @@ TextureImporter:
       name: ult_hammer_72
       rect:
         serializedVersion: 2
-        x: 10
-        y: 5449
-        width: 730
-        height: 580
+        x: 0
+        y: 5120
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2139,10 +2139,10 @@ TextureImporter:
       name: ult_hammer_73
       rect:
         serializedVersion: 2
-        x: 1290
-        y: 5449
-        width: 730
-        height: 580
+        x: 1280
+        y: 5120
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2161,10 +2161,10 @@ TextureImporter:
       name: ult_hammer_74
       rect:
         serializedVersion: 2
-        x: 2570
-        y: 5449
-        width: 730
-        height: 580
+        x: 2560
+        y: 5120
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2183,10 +2183,10 @@ TextureImporter:
       name: ult_hammer_75
       rect:
         serializedVersion: 2
-        x: 3850
-        y: 5449
-        width: 730
-        height: 580
+        x: 3840
+        y: 5120
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2205,10 +2205,10 @@ TextureImporter:
       name: ult_hammer_76
       rect:
         serializedVersion: 2
-        x: 5130
-        y: 5449
-        width: 730
-        height: 580
+        x: 5120
+        y: 5120
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2227,10 +2227,10 @@ TextureImporter:
       name: ult_hammer_77
       rect:
         serializedVersion: 2
-        x: 6412
-        y: 5458
-        width: 728
-        height: 571
+        x: 6400
+        y: 5120
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2249,10 +2249,10 @@ TextureImporter:
       name: ult_hammer_78
       rect:
         serializedVersion: 2
-        x: 7692
-        y: 5458
-        width: 728
-        height: 571
+        x: 7680
+        y: 5120
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2271,10 +2271,10 @@ TextureImporter:
       name: ult_hammer_79
       rect:
         serializedVersion: 2
-        x: 8972
-        y: 5458
-        width: 728
-        height: 571
+        x: 8960
+        y: 5120
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2293,10 +2293,10 @@ TextureImporter:
       name: ult_hammer_80
       rect:
         serializedVersion: 2
-        x: 10252
-        y: 5458
-        width: 728
-        height: 571
+        x: 10240
+        y: 5120
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2315,10 +2315,10 @@ TextureImporter:
       name: ult_hammer_81
       rect:
         serializedVersion: 2
-        x: 11530
-        y: 5449
-        width: 730
-        height: 580
+        x: 11520
+        y: 5120
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2337,10 +2337,10 @@ TextureImporter:
       name: ult_hammer_82
       rect:
         serializedVersion: 2
-        x: 12810
-        y: 5449
-        width: 730
-        height: 580
+        x: 12800
+        y: 5120
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2359,10 +2359,10 @@ TextureImporter:
       name: ult_hammer_83
       rect:
         serializedVersion: 2
-        x: 14090
-        y: 5449
-        width: 730
-        height: 580
+        x: 14080
+        y: 5120
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2381,10 +2381,10 @@ TextureImporter:
       name: ult_hammer_84
       rect:
         serializedVersion: 2
-        x: 10
-        y: 4169
-        width: 730
-        height: 580
+        x: 0
+        y: 3840
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2403,10 +2403,10 @@ TextureImporter:
       name: ult_hammer_85
       rect:
         serializedVersion: 2
-        x: 1292
-        y: 4179
-        width: 728
-        height: 570
+        x: 1280
+        y: 3840
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2425,10 +2425,10 @@ TextureImporter:
       name: ult_hammer_86
       rect:
         serializedVersion: 2
-        x: 2572
-        y: 4179
-        width: 728
-        height: 570
+        x: 2560
+        y: 3840
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2447,10 +2447,10 @@ TextureImporter:
       name: ult_hammer_87
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 4179
-        width: 728
-        height: 570
+        x: 3840
+        y: 3840
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2469,10 +2469,10 @@ TextureImporter:
       name: ult_hammer_88
       rect:
         serializedVersion: 2
-        x: 5132
-        y: 4179
-        width: 728
-        height: 570
+        x: 5120
+        y: 3840
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2491,10 +2491,10 @@ TextureImporter:
       name: ult_hammer_89
       rect:
         serializedVersion: 2
-        x: 6413
-        y: 4186
-        width: 727
-        height: 563
+        x: 6400
+        y: 3840
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2513,10 +2513,10 @@ TextureImporter:
       name: ult_hammer_90
       rect:
         serializedVersion: 2
-        x: 7693
-        y: 4186
-        width: 727
-        height: 563
+        x: 7680
+        y: 3840
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2535,10 +2535,10 @@ TextureImporter:
       name: ult_hammer_91
       rect:
         serializedVersion: 2
-        x: 8973
-        y: 4186
-        width: 727
-        height: 563
+        x: 8960
+        y: 3840
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2557,10 +2557,10 @@ TextureImporter:
       name: ult_hammer_92
       rect:
         serializedVersion: 2
-        x: 10252
-        y: 4178
-        width: 728
-        height: 571
+        x: 10240
+        y: 3840
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2579,10 +2579,10 @@ TextureImporter:
       name: ult_hammer_93
       rect:
         serializedVersion: 2
-        x: 11532
-        y: 4178
-        width: 728
-        height: 571
+        x: 11520
+        y: 3840
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2601,10 +2601,10 @@ TextureImporter:
       name: ult_hammer_94
       rect:
         serializedVersion: 2
-        x: 12812
-        y: 4178
-        width: 728
-        height: 571
+        x: 12800
+        y: 3840
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2623,10 +2623,10 @@ TextureImporter:
       name: ult_hammer_95
       rect:
         serializedVersion: 2
-        x: 14092
-        y: 4178
-        width: 728
-        height: 571
+        x: 14080
+        y: 3840
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2645,10 +2645,10 @@ TextureImporter:
       name: ult_hammer_96
       rect:
         serializedVersion: 2
-        x: 10
-        y: 2889
-        width: 730
-        height: 580
+        x: 0
+        y: 2560
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2667,10 +2667,10 @@ TextureImporter:
       name: ult_hammer_97
       rect:
         serializedVersion: 2
-        x: 1290
-        y: 2889
-        width: 730
-        height: 580
+        x: 1280
+        y: 2560
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2689,10 +2689,10 @@ TextureImporter:
       name: ult_hammer_98
       rect:
         serializedVersion: 2
-        x: 2570
-        y: 2889
-        width: 730
-        height: 580
+        x: 2560
+        y: 2560
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2711,10 +2711,10 @@ TextureImporter:
       name: ult_hammer_99
       rect:
         serializedVersion: 2
-        x: 3850
-        y: 2889
-        width: 730
-        height: 580
+        x: 3840
+        y: 2560
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2733,10 +2733,10 @@ TextureImporter:
       name: ult_hammer_100
       rect:
         serializedVersion: 2
-        x: 5132
-        y: 2899
-        width: 728
-        height: 570
+        x: 5120
+        y: 2560
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2755,10 +2755,10 @@ TextureImporter:
       name: ult_hammer_101
       rect:
         serializedVersion: 2
-        x: 6412
-        y: 2899
-        width: 728
-        height: 570
+        x: 6400
+        y: 2560
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2777,10 +2777,10 @@ TextureImporter:
       name: ult_hammer_102
       rect:
         serializedVersion: 2
-        x: 7692
-        y: 2899
-        width: 728
-        height: 570
+        x: 7680
+        y: 2560
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2799,10 +2799,10 @@ TextureImporter:
       name: ult_hammer_103
       rect:
         serializedVersion: 2
-        x: 8972
-        y: 2899
-        width: 728
-        height: 570
+        x: 8960
+        y: 2560
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2821,10 +2821,10 @@ TextureImporter:
       name: ult_hammer_104
       rect:
         serializedVersion: 2
-        x: 10253
-        y: 2906
-        width: 727
-        height: 563
+        x: 10240
+        y: 2560
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2843,10 +2843,10 @@ TextureImporter:
       name: ult_hammer_105
       rect:
         serializedVersion: 2
-        x: 11533
-        y: 2906
-        width: 727
-        height: 563
+        x: 11520
+        y: 2560
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2865,10 +2865,10 @@ TextureImporter:
       name: ult_hammer_106
       rect:
         serializedVersion: 2
-        x: 12813
-        y: 2906
-        width: 727
-        height: 563
+        x: 12800
+        y: 2560
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2887,10 +2887,10 @@ TextureImporter:
       name: ult_hammer_107
       rect:
         serializedVersion: 2
-        x: 14101
-        y: 2937
-        width: 719
-        height: 532
+        x: 14080
+        y: 2560
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2909,10 +2909,10 @@ TextureImporter:
       name: ult_hammer_108
       rect:
         serializedVersion: 2
-        x: 21
-        y: 1657
-        width: 719
-        height: 532
+        x: 0
+        y: 1280
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2931,10 +2931,10 @@ TextureImporter:
       name: ult_hammer_109
       rect:
         serializedVersion: 2
-        x: 1323
-        y: 1721
-        width: 697
-        height: 468
+        x: 1280
+        y: 1280
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2953,10 +2953,10 @@ TextureImporter:
       name: ult_hammer_110
       rect:
         serializedVersion: 2
-        x: 2609
-        y: 1740
-        width: 691
-        height: 449
+        x: 2560
+        y: 1280
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2975,10 +2975,10 @@ TextureImporter:
       name: ult_hammer_111
       rect:
         serializedVersion: 2
-        x: 3900
-        y: 1754
-        width: 680
-        height: 435
+        x: 3840
+        y: 1280
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2997,10 +2997,10 @@ TextureImporter:
       name: ult_hammer_112
       rect:
         serializedVersion: 2
-        x: 5196
-        y: 1787
-        width: 664
-        height: 402
+        x: 5120
+        y: 1280
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3019,10 +3019,10 @@ TextureImporter:
       name: ult_hammer_113
       rect:
         serializedVersion: 2
-        x: 6476
-        y: 1787
-        width: 664
-        height: 402
+        x: 6400
+        y: 1280
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3041,10 +3041,10 @@ TextureImporter:
       name: ult_hammer_114
       rect:
         serializedVersion: 2
-        x: 7769
-        y: 1814
-        width: 654
-        height: 373
+        x: 7680
+        y: 1280
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3063,10 +3063,10 @@ TextureImporter:
       name: ult_hammer_115
       rect:
         serializedVersion: 2
-        x: 9088
-        y: 1848
-        width: 616
-        height: 337
+        x: 8960
+        y: 1280
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3085,10 +3085,10 @@ TextureImporter:
       name: ult_hammer_116
       rect:
         serializedVersion: 2
-        x: 10368
-        y: 1865
-        width: 615
-        height: 322
+        x: 10240
+        y: 1280
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3107,10 +3107,10 @@ TextureImporter:
       name: ult_hammer_117
       rect:
         serializedVersion: 2
-        x: 11684
-        y: 1902
-        width: 581
-        height: 282
+        x: 11520
+        y: 1280
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3129,10 +3129,10 @@ TextureImporter:
       name: ult_hammer_118
       rect:
         serializedVersion: 2
-        x: 12964
-        y: 1902
-        width: 584
-        height: 287
+        x: 12800
+        y: 1280
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3151,10 +3151,10 @@ TextureImporter:
       name: ult_hammer_119
       rect:
         serializedVersion: 2
-        x: 14290
-        y: 1929
-        width: 540
-        height: 260
+        x: 14080
+        y: 1280
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3173,10 +3173,10 @@ TextureImporter:
       name: ult_hammer_120
       rect:
         serializedVersion: 2
-        x: 210
-        y: 649
-        width: 539
-        height: 265
+        x: 0
+        y: 0
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3195,10 +3195,10 @@ TextureImporter:
       name: ult_hammer_121
       rect:
         serializedVersion: 2
-        x: 1522
-        y: 661
-        width: 508
-        height: 246
+        x: 1280
+        y: 0
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3217,10 +3217,10 @@ TextureImporter:
       name: ult_hammer_122
       rect:
         serializedVersion: 2
-        x: 2806
-        y: 675
-        width: 504
-        height: 224
+        x: 2560
+        y: 0
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3239,10 +3239,10 @@ TextureImporter:
       name: ult_hammer_123
       rect:
         serializedVersion: 2
-        x: 4105
-        y: 686
-        width: 485
-        height: 216
+        x: 3840
+        y: 0
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3261,10 +3261,10 @@ TextureImporter:
       name: ult_hammer_124
       rect:
         serializedVersion: 2
-        x: 5428
-        y: 788
-        width: 438
-        height: 110
+        x: 5120
+        y: 0
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3283,10 +3283,10 @@ TextureImporter:
       name: ult_hammer_125
       rect:
         serializedVersion: 2
-        x: 6799
-        y: 832
-        width: 348
-        height: 60
+        x: 6400
+        y: 0
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3305,10 +3305,10 @@ TextureImporter:
       name: ult_hammer_126
       rect:
         serializedVersion: 2
-        x: 8123
-        y: 843
-        width: 302
-        height: 42
+        x: 7680
+        y: 0
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3327,10 +3327,10 @@ TextureImporter:
       name: ult_hammer_127
       rect:
         serializedVersion: 2
-        x: 9456
-        y: 849
-        width: 252
-        height: 26
+        x: 8960
+        y: 0
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3349,10 +3349,10 @@ TextureImporter:
       name: ult_hammer_128
       rect:
         serializedVersion: 2
-        x: 10809
-        y: 848
-        width: 178
-        height: 20
+        x: 10240
+        y: 0
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3371,10 +3371,10 @@ TextureImporter:
       name: ult_hammer_129
       rect:
         serializedVersion: 2
-        x: 12167
-        y: 849
-        width: 103
-        height: 16
+        x: 11520
+        y: 0
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3393,10 +3393,10 @@ TextureImporter:
       name: ult_hammer_130
       rect:
         serializedVersion: 2
-        x: 13497
-        y: 852
-        width: 51
-        height: 12
+        x: 12800
+        y: 0
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3415,10 +3415,10 @@ TextureImporter:
       name: ult_hammer_131
       rect:
         serializedVersion: 2
-        x: 14798
-        y: 851
-        width: 27
-        height: 10
+        x: 14080
+        y: 0
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3433,187 +3433,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: ult_hammer_132
-      rect:
-        serializedVersion: 2
-        x: 5441
-        y: 693
-        width: 427
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b100d5e21d34ef10800000000000000
-      internalID: 2298028861240115634
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ult_hammer_133
-      rect:
-        serializedVersion: 2
-        x: 6841
-        y: 731
-        width: 309
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2143613eaeb59fdd0800000000000000
-      internalID: -2451827457736166382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ult_hammer_134
-      rect:
-        serializedVersion: 2
-        x: 8163
-        y: 625
-        width: 266
-        height: 147
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c80244ec6e0be99f0800000000000000
-      internalID: -459735606595673972
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ult_hammer_135
-      rect:
-        serializedVersion: 2
-        x: 9490
-        y: 737
-        width: 222
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b25584e9b8e44760800000000000000
-      internalID: 7441328369423438519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ult_hammer_136
-      rect:
-        serializedVersion: 2
-        x: 10832
-        y: 737
-        width: 162
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fa5d13613301cdd90800000000000000
-      internalID: -7071759503276780113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ult_hammer_137
-      rect:
-        serializedVersion: 2
-        x: 12174
-        y: 737
-        width: 103
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f8fa46f55092ffef0800000000000000
-      internalID: -72293965962629233
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ult_hammer_138
-      rect:
-        serializedVersion: 2
-        x: 13484
-        y: 743
-        width: 72
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 70e42b687e65d4b00800000000000000
-      internalID: 814402660021194247
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ult_hammer_139
-      rect:
-        serializedVersion: 2
-        x: 14799
-        y: 745
-        width: 34
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e6c0ebbf7e7bb5d00800000000000000
-      internalID: 962565152362597486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cfdd5ecbf68ab674b8b1a319513e9bc3
     internalID: 0
     vertices: []
     indices: 
@@ -3621,7 +3445,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1280.0,"y":1280.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       ult_hammer_0: 263749119777484490
       ult_hammer_1: -1290093809297913571
@@ -3661,14 +3487,6 @@ TextureImporter:
       ult_hammer_13: 8209337998594158194
       ult_hammer_130: 7016035714267085468
       ult_hammer_131: -846363454642605972
-      ult_hammer_132: 2298028861240115634
-      ult_hammer_133: -2451827457736166382
-      ult_hammer_134: -459735606595673972
-      ult_hammer_135: 7441328369423438519
-      ult_hammer_136: -7071759503276780113
-      ult_hammer_137: -72293965962629233
-      ult_hammer_138: 814402660021194247
-      ult_hammer_139: 962565152362597486
       ult_hammer_14: -1068840542518294233
       ult_hammer_15: 1982447222350422695
       ult_hammer_16: 5030468448840152809

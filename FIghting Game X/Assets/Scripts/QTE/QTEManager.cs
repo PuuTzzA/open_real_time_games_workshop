@@ -8,9 +8,14 @@ using UnityEngine.UIElements;
 
 public class QTEManager : MonoBehaviour
 {
-    
+    int type = 1;
+
+
+    [SerializeField]
+    private GameObject ui;
+
     public static QTEManager Instance { get; private set; }
-    
+
     [Header("Intro UI & SFX")]
     [SerializeField] private GameObject finishHimPanel;
     [SerializeField] private AudioClip finishHimVoice;
@@ -44,26 +49,30 @@ public class QTEManager : MonoBehaviour
 
     public void StartQTE(GameObject fallen, GameObject killer, Action onDone)
     {
-        Debug.Log($"{fallen.name} has fallen! {killer.name} is the killer. Starting QTE...");
         PauseAllExcept(fallen, killer);
         _ingameUI = FindAnyObjectByType<IngameUI>(FindObjectsInactive.Include);
         _ingameUI.gameObject.GetComponent<UIDocument>().rootVisualElement.style.display = DisplayStyle.None;
-        
+
         p1Input = fallen.GetComponent<PlayerInput>();
         p2Input = killer.GetComponent<PlayerInput>();
         // Pick a random int between 0 and 2
         StartCoroutine(StartQTESequence(fallen, killer, onDone));
     }
-    
+
     private IEnumerator StartQTESequence(GameObject fallen, GameObject killer, Action onDone)
     {
+        type = UnityEngine.Random.Range(0, 2); // Randomly choose between 0, 1
+        if (type == 1)
+            ui.GetComponent<MinigameUI>().minigamenumber = 1;
+
+
         // 1) Show “Finish Him” intro
         finishHimPanel.SetActive(true);
-        
+
         var minigameUI = finishHimPanel.GetComponent<MinigameUI>();
-        
-        float totalDuration = minigameUI.entryDuration + minigameUI.pauseDuration + minigameUI.exitDuration + minigameUI.iconEndOffset + minigameUI.iconStartOffset; 
-        
+
+        float totalDuration = minigameUI.entryDuration + minigameUI.pauseDuration + minigameUI.exitDuration + minigameUI.iconEndOffset + minigameUI.iconStartOffset;
+
         if (finishHimVoice != null) finishHimAudioSource.PlayOneShot(finishHimVoice);
 
         // (optional) trigger an Animator on finishHimPanel here
@@ -74,10 +83,8 @@ public class QTEManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(totalDuration);
 
         // 2) Hide intro
-        finishHimPanel.SetActive(false);
 
         // 3) Now start the actual minigame
-        int type = UnityEngine.Random.Range(0, 1); // Randomly choose between 0, 1
         StartCoroutine(SpawnMinigame(type, fallen, killer, onDone));
     }
 
@@ -88,18 +95,23 @@ public class QTEManager : MonoBehaviour
         if (type == 0)
         {
             var prefab = Instantiate(buttonSmashUIPrefab);
+            Canvas canvas = prefab.GetComponent<Canvas>();
+
+            // Setup Canvas to render in front of UI Toolkit UI
+            canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+            canvas.sortingOrder = 100;
             qte = prefab.GetComponent<ButtonSmashQTE>();
         }
         else
         {
-            var prefab = Instantiate(tapTimingUIPrefab);
             // qte = prefab.GetComponent<TapTimingQTE>();
-            qte = prefab.GetComponent<ButtonSmashQTE>(); // For simplicity, using ButtonSmashQTE here
+            qte = ui.GetComponent<TapTimingQTE>(); // For simplicity, using ButtonSmashQTE here
         }
-        
+
         yield return new WaitForSecondsRealtime(0.5f); // Give some time for the UI to instantiate and show up
-        
-        qte.Init(p1Input, p2Input, (r1, r2) => {
+
+        qte.Init(p1Input, p2Input, (r1, r2) =>
+        {
             EvaluateDualQTE(fallen, killer, r1, r2);
             onDone?.Invoke();
         });
@@ -108,23 +120,21 @@ public class QTEManager : MonoBehaviour
     private void EvaluateDualQTE(GameObject fallen, GameObject killer, QTEResult fallenResult, QTEResult killerResult)
     {
         bool isTie = fallenResult.IsSuccess && killerResult.IsSuccess ||
-                     (!fallenResult.IsSuccess && !killerResult.IsSuccess && 
+                     (!fallenResult.IsSuccess && !killerResult.IsSuccess &&
                       fallenResult.Score == killerResult.Score);
-        
+
         if (isTie)
         {
             // Handle tie situation, e.g., both players get a second chance
-            Debug.Log("It's a tie! Both players get a second chance.");
             ResumeRound(fallen, killer);
             return;
         }
-        
+
         bool fallenWins = fallenResult.IsSuccess && !killerResult.IsSuccess || fallenResult.Score > killerResult.Score;
 
         var fallenHealth = fallen.GetComponent<FighterHealth>();
         if (fallenWins)
         {
-            Debug.Log($"{fallen.name} wins the QTE against {killer.name}!");
             fallenHealth.GrantExtraLife();
         }
         else
@@ -134,25 +144,25 @@ public class QTEManager : MonoBehaviour
         }
         ResumeRound(fallen, killer);
     }
-    
+
     private void MirrorSequenceMinigame(GameObject fallen, GameObject killer)
     {
         // Implement the Mirror Sequence Minigame logic here
         // This could involve showing a sequence of inputs that the player must replicate
     }
-    
+
     private void ButtonSmashMinigame(GameObject fallen, GameObject killer)
     {
         var ui = Instantiate(buttonSmashUIPrefab);
         var qteUI = ui.GetComponent<ButtonSmashQTE>();
-        
+
         // Initialize the QTE UI with player inputs and define the callback to evaluate results after finishing
         qteUI.Init(p1Input, p2Input, (fallenResult, killerResult) =>
         {
             EvaluateDualQTE(fallen, killer, fallenResult, killerResult);
         });
     }
-    
+
     private void TapTimingMinigame(GameObject fallen, GameObject killer)
     {
         // Implement the Tap Timing Minigame logic here
@@ -163,7 +173,7 @@ public class QTEManager : MonoBehaviour
     {
         p1Input.SwitchCurrentActionMap("Player");
         p2Input.SwitchCurrentActionMap("Player");
-        
+
         ResumeAll();
     }
 
@@ -171,16 +181,13 @@ public class QTEManager : MonoBehaviour
     {
         pausedComponents.Clear();
         List<PlayerInput> players = persistentPlayerManager.getPlayers();
-        Debug.Log($"Pausing all fighters except {fallen.GetComponent<PlayerInput>().playerIndex} and {killer.GetComponent<PlayerInput>().playerIndex}");
-        Debug.Log($"Total players: {players.Count}");
-        
+
 
         foreach (var fighter in players)
         {
             if (fighter.playerIndex == fallen.GetComponent<PlayerInput>().playerIndex || fighter.playerIndex == killer.GetComponent<PlayerInput>().playerIndex)
                 continue;
 
-            Debug.Log($"Pausing fighter: {fighter.gameObject.name} with index {fighter.playerIndex}");
             fighter.enabled = false;
             pausedComponents.Add(fighter);
         }
@@ -193,11 +200,11 @@ public class QTEManager : MonoBehaviour
         _ingameUI.GetComponent<UIDocument>().rootVisualElement.style.display = DisplayStyle.Flex;
         foreach (var comp in pausedComponents)
         {
-            Debug.Log("Paused back to life " + comp.gameObject.name);
             if (comp != null) comp.enabled = true;
         }
         pausedComponents.Clear();
-        
+        finishHimPanel.SetActive(false);
+
         Time.timeScale = 1f;
     }
 

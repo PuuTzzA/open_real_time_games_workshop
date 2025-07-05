@@ -4,7 +4,6 @@ using UnityEngine.UIElements;
 public class RemoveElementOnKey : MonoBehaviour
 {
     private VisualElement root;
-    private int removeIndex = 0;
     public IngameUI ui;
 
     void OnEnable()
