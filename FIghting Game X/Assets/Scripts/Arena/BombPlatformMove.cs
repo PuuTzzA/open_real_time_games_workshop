@@ -9,6 +9,7 @@ public class BombPlatformMove : MonoBehaviour
     [SerializeField] private float cooldownTime;
     [SerializeField] private float dropDistance;
     [SerializeField] private float moveSpeed;
+    [SerializeField] private Collider2D platformCollider;
     [SerializeField] private GameObject bombPrefab;
     [SerializeField] private Transform bombSpawnPoint;
     private Vector3 originalPosition;
@@ -64,9 +65,11 @@ public class BombPlatformMove : MonoBehaviour
         }
 
         transform.position = dropPosition;
+        platformCollider.enabled = false;
 
         yield return new WaitForSeconds(waitTimeOffScreen);
-        
+
+        platformCollider.enabled = true;
         SpawnBomb();
 
         while (Vector3.Distance(transform.position, originalPosition) > 0.01f)
