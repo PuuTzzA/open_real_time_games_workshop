@@ -120,6 +120,8 @@ public class BaseFighter : MonoBehaviour
         if (!state.flags_any_set(FighterFlags.CustomMovement))
             process_movement();
 
+        gameObject.layer = state.flags_any_set(FighterFlags.Phasing) ? 10 : 6;
+
         frame_callbacks[(int)state.get_action()]?.Invoke(state.animation_handler.get_index());
 
         debug_text.SetText(state.get_action() + "\n" + health.GetCurrentHealth() + "/" + health.maxHealth);
@@ -325,6 +327,7 @@ public class BaseFighter : MonoBehaviour
 
     public void knockback_heavy_tick(int index)
     {
+
         state.force_facing(Math.Sign(-rigidbody.linearVelocityX));
         state.sprite_transform.eulerAngles = Vector3.forward * (float)(Math.Atan2(-rigidbody.linearVelocityY, -rigidbody.linearVelocityX * state.get_facing_float()) * state.get_facing_float() * 180.0f / Math.PI);
     }

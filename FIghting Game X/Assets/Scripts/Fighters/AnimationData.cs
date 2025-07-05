@@ -20,6 +20,7 @@ public enum FighterFlags
     FreezeY = 0x080,
 
     CustomMovement = 0x100,
+    Phasing = 0x200,
 
 
     Idle = CanJump | CanTurn | CanMove | Interruptable,
