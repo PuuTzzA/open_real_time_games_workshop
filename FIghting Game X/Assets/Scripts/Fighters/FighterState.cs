@@ -39,9 +39,9 @@ public class FighterState : MonoBehaviour
     public BaseStats base_stats;
 
     public int available_air_jumps;
-    public int remaining_flying_frames;
 
     public int stun_duration;
+    public int knockback_duration;
 
     public AnimationData animation_data;
 

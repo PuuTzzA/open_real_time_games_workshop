@@ -6,18 +6,20 @@ using UnityEngine;
 public enum FighterFlags
 {
     None = 0,
-    CanTurn = 0x01,
-    CanMove = 0x02,
-    CanJump = 0x04,
+    CanTurn = 0x001,
+    CanMove = 0x002,
+    CanJump = 0x004,
     Mobile = CanJump | CanTurn | CanMove,
 
-    Interruptable = 0x08,
+    Interruptable = 0x008,
 
-    BlockSide = 0x10,
-    BlockUp = 0x20,
+    BlockSide = 0x010,
+    BlockUp = 0x020,
 
-    FreezeX = 0x40,
-    FreezeY = 0x80,
+    FreezeX = 0x040,
+    FreezeY = 0x080,
+
+    CustomMovement = 0x100,
 
 
     Idle = CanJump | CanTurn | CanMove | Interruptable,

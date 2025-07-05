@@ -63,6 +63,8 @@ public class BaseFighter : MonoBehaviour
         frame_callbacks[(int)FighterAction.HeavyDown] = heavy_down_tick;
 
         frame_callbacks[(int)FighterAction.Stunned] = stun_tick;
+        frame_callbacks[(int)FighterAction.KnockedBackLight] = knockback_light_tick;
+        frame_callbacks[(int)FighterAction.KnockedBackHeavy] = knockback_heavy_tick;
 
         frame_callbacks[(int)FighterAction.Crouch] = crouch_tick;
 
@@ -111,14 +113,12 @@ public class BaseFighter : MonoBehaviour
 
         freezeXY(state.flags_any_set(FighterFlags.FreezeX), state.flags_any_set(FighterFlags.FreezeY));
 
-        if (state.remaining_flying_frames > 0)
-        {
-            state.remaining_flying_frames--;
-        }
-        else
-        {
+        state.set_facing(fighter_input.direction.x);
+
+        state.sprite_transform.eulerAngles = Vector3.zero;
+
+        if (!state.flags_any_set(FighterFlags.CustomMovement))
             process_movement();
-        }
 
         frame_callbacks[(int)state.get_action()]?.Invoke(state.animation_handler.get_index());
 
@@ -164,7 +164,6 @@ public class BaseFighter : MonoBehaviour
 
     public void process_movement()
     {
-        state.set_facing(fighter_input.direction.x);
 
         // air resistance
         var vel = rigidbody.linearVelocity.y;
@@ -208,8 +207,7 @@ public class BaseFighter : MonoBehaviour
     public void knockback(Vector2 direction)
     {
         player_sounds.PlayJabHit();
-        state.start_action(FighterAction.KnockedBackLight);
-        state.remaining_flying_frames = 5;
+        state.start_action(FighterAction.KnockedBackHeavy);
         rigidbody.linearVelocity = direction;
     }
 
@@ -320,6 +318,19 @@ public class BaseFighter : MonoBehaviour
         state.animation_handler.set_frozen(--state.stun_duration > 0);
     }
 
+    public void knockback_light_tick(int index)
+    {
+
+    }
+
+    public void knockback_heavy_tick(int index)
+    {
+        state.force_facing(Math.Sign(-rigidbody.linearVelocityX));
+        state.sprite_transform.eulerAngles = Vector3.forward * (float)(Math.Atan2(-rigidbody.linearVelocityY, -rigidbody.linearVelocityX * state.get_facing_float()) * state.get_facing_float() * 180.0f / Math.PI);
+    }
+
+
+
     public void crouch_tick(int index)
     {
         next_idle_action();
@@ -333,7 +344,7 @@ public class BaseFighter : MonoBehaviour
             player_sounds.PlayJump();
             state.start_action(FighterAction.Jump);
             //jump();
-            delayed_actions.push(new DelayedAction(jump, 10));
+            delayed_actions.push(new DelayedAction(jump, 5));
             return true;
         }
         return false;
@@ -414,7 +425,7 @@ public class BaseFighter : MonoBehaviour
     {
         if (!input.pressed) return true;
 
-        stun(180);
+        knockback(new Vector2(-15 * state.get_facing_float(), 15));
         return true;
     }
 

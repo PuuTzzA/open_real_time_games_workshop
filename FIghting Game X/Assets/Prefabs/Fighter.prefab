@@ -632,8 +632,8 @@ MonoBehaviour:
   animation_handler: {fileID: 5143516375130627310}
   sprite_transform: {fileID: 7005465704683545578}
   available_air_jumps: 0
-  remaining_flying_frames: 0
   stun_duration: 0
+  knockback_duration: 0
   animation_data: {fileID: 1333684296444455915}
   air_resistance: 0
 --- !u!114 &4859815249510380014
@@ -823,10 +823,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7739751719961853797}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6471333511865713166}
   m_Father: {fileID: 4219656904765551352}
