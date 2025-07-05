@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class BombPlatformMove : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer buttonNormal;
-    [SerializeField] private SpriteRenderer buttonPressed;
+    [SerializeField] private SpriteRenderer leverNormal;
+    [SerializeField] private SpriteRenderer leverSwitched;
     [SerializeField] private float waitTimeOffScreen;
     [SerializeField] private float cooldownTime;
     [SerializeField] private float dropDistance;
@@ -36,13 +36,13 @@ public class BombPlatformMove : MonoBehaviour
 
     private void PressButton() {
         isPressed = true;
-        buttonNormal.enabled = false;
-        buttonPressed.enabled = true;
+        leverNormal.enabled = false;
+        leverSwitched.enabled = true;
     }
     private void ButtonReady() {
         isPressed = false;
-        buttonNormal.enabled = true;
-        buttonPressed.enabled = false;
+        leverNormal.enabled = true;
+        leverSwitched.enabled = false;
     }
 
     public void TriggerDrop()

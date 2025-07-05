@@ -371,8 +371,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 777d2de843b65ef49933e9aea78f59be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonNormal: {fileID: 1933458434}
-  buttonPressed: {fileID: 1532040967}
+  leverNormal: {fileID: 0}
+  leverSwitched: {fileID: 0}
   laser: {fileID: 225884830}
   activeTime: 10
   cooldownTime: 15
@@ -556,93 +556,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &208525175
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 208525177}
-  - component: {fileID: 208525176}
-  m_Layer: 0
-  m_Name: LaserSample
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &208525176
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208525175}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.924155, b: 1, a: 0.30980393}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &208525177
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208525175}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.0021996, y: 2, z: 0}
-  m_LocalScale: {x: 8.84775, y: 0.3, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &225884830
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,12 +827,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7203cab71c8809d4699762ca9a64a9eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonNormal: {fileID: 535848464}
-  buttonPressed: {fileID: 795144226}
+  leverNormal: {fileID: 0}
+  leverSwitched: {fileID: 0}
   waitTimeOffScreen: 10
   cooldownTime: 15
   dropDistance: 4
   moveSpeed: 2
+  bombPrefab: {fileID: 0}
+  bombSpawnPoint: {fileID: 0}
   isPressed: 0
   isMoving: 0
   isOnCooldown: 0
@@ -934,7 +849,7 @@ GameObject:
   - component: {fileID: 348706539}
   - component: {fileID: 348706540}
   m_Layer: 0
-  m_Name: Button (Pressed)
+  m_Name: LeverSprite (Switch)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -949,11 +864,11 @@ Transform:
   m_GameObject: {fileID: 348706538}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8, y: 1.34, z: 0}
-  m_LocalScale: {x: 0.64463997, y: 0.63026, z: 1}
+  m_LocalPosition: {x: -0.13, y: 0.8, z: 0}
+  m_LocalScale: {x: 1, y: 2.735, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 688353672}
+  m_Father: {fileID: 592842710}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &348706540
 SpriteRenderer:
@@ -999,12 +914,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9152226264453509441, guid: c4e1a0215503c0147a5db9c7a829d012, type: 3}
+  m_Sprite: {fileID: -4454914845596493489, guid: 954a0268c2705ff43b20a83738662058, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 25.61, y: 4.2812295}
+  m_Size: {x: 1.15, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1515,7 +1430,7 @@ GameObject:
   - component: {fileID: 592842712}
   - component: {fileID: 592842711}
   m_Layer: 8
-  m_Name: Button
+  m_Name: Lever
   m_TagString: Hitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1535,6 +1450,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1024897462}
+  - {fileID: 348706539}
   m_Father: {fileID: 688353672}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &592842711
@@ -1957,7 +1873,7 @@ Transform:
   m_Children:
   - {fileID: 481640384}
   - {fileID: 592842710}
-  - {fileID: 348706539}
+  - {fileID: 1428202025}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &688353673
@@ -2018,12 +1934,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7203cab71c8809d4699762ca9a64a9eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonNormal: {fileID: 1024897463}
-  buttonPressed: {fileID: 348706540}
+  leverNormal: {fileID: 1024897463}
+  leverSwitched: {fileID: 348706540}
   waitTimeOffScreen: 10
   cooldownTime: 15
-  dropDistance: 4
+  dropDistance: 6
   moveSpeed: 2
+  bombPrefab: {fileID: 4238680019386585109, guid: f2e50d11d5429cc4ea524a5a4bbbc9c0, type: 3}
+  bombSpawnPoint: {fileID: 1428202025}
   isPressed: 0
   isMoving: 0
   isOnCooldown: 0
@@ -2217,7 +2135,6 @@ Transform:
   m_Children:
   - {fileID: 1995464143}
   - {fileID: 1897535655}
-  - {fileID: 871847659}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &785194540
@@ -2397,7 +2314,7 @@ GameObject:
   - component: {fileID: 871847659}
   - component: {fileID: 871847660}
   m_Layer: 0
-  m_Name: Button (Pressed)
+  m_Name: LeverSprite (Switched)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2411,12 +2328,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871847658}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1990001, y: 0.9885998, z: 0}
-  m_LocalScale: {x: 0.64464116, y: 0.6302572, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.13, y: 0.8, z: 0}
+  m_LocalScale: {x: 1, y: 2.912048, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 785194539}
+  m_Father: {fileID: 1897535655}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &871847660
 SpriteRenderer:
@@ -2462,9 +2379,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9152226264453509441, guid: c4e1a0215503c0147a5db9c7a829d012, type: 3}
+  m_Sprite: {fileID: -4454914845596493489, guid: 954a0268c2705ff43b20a83738662058, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 25.61, y: 4.2812295}
@@ -2818,7 +2735,7 @@ GameObject:
   - component: {fileID: 1024897462}
   - component: {fileID: 1024897463}
   m_Layer: 0
-  m_Name: ButtonSprite
+  m_Name: LeverSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2833,7 +2750,7 @@ Transform:
   m_GameObject: {fileID: 1024897461}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 2.735, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2883,7 +2800,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5405059527281791697, guid: 8d3c29894e0bf0d4a8b1943a538f23f1, type: 3}
+  m_Sprite: {fileID: -4454914845596493489, guid: 954a0268c2705ff43b20a83738662058, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3086,7 +3003,7 @@ GameObject:
   - component: {fileID: 1168173527}
   - component: {fileID: 1168173528}
   m_Layer: 0
-  m_Name: ButtonSprite
+  m_Name: LeverSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3101,7 +3018,7 @@ Transform:
   m_GameObject: {fileID: 1168173526}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 2.735, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3151,7 +3068,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5405059527281791697, guid: 8d3c29894e0bf0d4a8b1943a538f23f1, type: 3}
+  m_Sprite: {fileID: -4454914845596493489, guid: 954a0268c2705ff43b20a83738662058, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3272,6 +3189,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1428202024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1428202025}
+  m_Layer: 0
+  m_Name: BombSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1428202025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428202024}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.52, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 688353672}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1532040965
 GameObject:
   m_ObjectHideFlags: 0
@@ -3597,7 +3545,7 @@ GameObject:
   - component: {fileID: 1897535657}
   - component: {fileID: 1897535656}
   m_Layer: 8
-  m_Name: Button
+  m_Name: Lever
   m_TagString: Hitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3617,6 +3565,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1168173527}
+  - {fileID: 871847659}
   m_Father: {fileID: 785194539}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1897535656
@@ -3644,8 +3593,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 777d2de843b65ef49933e9aea78f59be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonNormal: {fileID: 1168173528}
-  buttonPressed: {fileID: 871847660}
+  leverNormal: {fileID: 1168173528}
+  leverSwitched: {fileID: 871847660}
   laser: {fileID: 1995464142}
   activeTime: 10
   cooldownTime: 15
@@ -4278,4 +4227,3 @@ SceneRoots:
   - {fileID: 367639192}
   - {fileID: 688353672}
   - {fileID: 785194539}
-  - {fileID: 208525177}
