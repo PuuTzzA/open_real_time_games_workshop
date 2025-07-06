@@ -46,6 +46,11 @@ public class TapTimingQTE : MonoBehaviour, IQTE
     public void Init(PlayerInput p1, PlayerInput p2, Action<QTEResult, QTEResult> callback)
     {
 
+        ui.icon1.style.unityBackgroundImageTintColor = p1.GetComponentInChildren<SpriteRenderer>().color;
+        ui.player1.style.unityBackgroundImageTintColor = p1.GetComponentInChildren<SpriteRenderer>().color;
+        ui.icon2.style.unityBackgroundImageTintColor = p1.GetComponentInChildren<SpriteRenderer>().color;
+        ui.player2.style.unityBackgroundImageTintColor = p1.GetComponentInChildren<SpriteRenderer>().color;
+
 
         ui.skillchecks[0].rotating = true;
         ui.skillchecks[1].rotating = true;
