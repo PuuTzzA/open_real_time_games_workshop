@@ -193,7 +193,7 @@
 
 .settings_tab_view {
     height: 15%;
-    background-color: rgb(42, 74, 115);
+    background-color: rgba(0, 0, 0, 0.31);
     border-left-color: rgb(237, 237, 238);
     border-right-color: rgb(237, 237, 238);
     border-top-color: rgb(237, 237, 238);
