@@ -110,9 +110,9 @@ public class MenuUI : MonoBehaviour
         newButton.focusable = true;
         focusedElement = newButton;
         string[] mainMenuStyle = 
-            { "pause_screen", "pause_header", "pause_body", "pause_option_selector", "pause_option_specific_screen" };
+            { "pause_screen", "pause_header", "pause_body", "pause_option_selector", "pause_option_specific_screen", "pause_settings_tab_view"};
         string[] pauseStyle = 
-            {"menu_screen", "menu_header", "menu_body", "option_selector", "option_specific_screen"};
+            {"menu_screen", "menu_header", "menu_body", "option_selector", "option_specific_screen", "settings_tab_view"};
         var oldStyles = isMainMenu ? mainMenuStyle : pauseStyle;
         var newStyles = isMainMenu ? pauseStyle : mainMenuStyle;
         for (var i = 0; i < oldStyles.Length; i++)
