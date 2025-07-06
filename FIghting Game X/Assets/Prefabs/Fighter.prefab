@@ -661,7 +661,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d32cc61bbfbb2c419aa18ca06320dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 1398893948369281781, guid: 71f95f6eb207cc1479db5e6fb700d7f9, type: 3}
+  Icon: {fileID: 6353497865673364783, guid: 63b4a393ee880bf439c1ad1d42db1221, type: 3}
+  IconWithoutBackground: {fileID: 635888242749862385, guid: 090e0e198408b5c4fac913936aa49ee0, type: 3}
   maxLives: 3
   qteUsed: 0
   maxHealth: 10
