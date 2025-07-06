@@ -203,17 +203,30 @@ public class Bomb : MonoBehaviour
         Destroy(gameObject, 0.4f);
     }
     
-    private void OnCollisionEnter2D(Collision2D collision)
+    private bool hasStuck = false;
+
+private void OnCollisionEnter2D(Collision2D collision)
+{
+    if (hasStuck || pickedUp || !thrown) return; // prevent multiple sticking or invalid states
+    hasStuck = true;
+
+    // Stick the bomb to the object it collided with
+    Transform target = collision.transform;
+    transform.SetParent(target);
+    rb.velocity = Vector2.zero;
+    rb.angularVelocity = 0f;
+    rb.bodyType = RigidbodyType2D.Kinematic;
+    rb.gravityScale = 0f;
+    rb.constraints = RigidbodyConstraints2D.FreezeAll;
+
+    exploding = true;
+    timer = 0f; // reset timer to start explosion countdown
+
+    // Optionally, adjust position slightly to match contact point
+    if (collision.contacts.Length > 0)
     {
-        foreach (var contact in collision.contacts)
-        {
-            if (contact.normal.y > 0.7f)
-            {
-                exploding = true;
-                rb.linearVelocity = Vector2.zero;
-                rb.gravityScale = 0f;
-                rb.constraints |= RigidbodyConstraints2D.FreezePositionY;
-            }
-        }
+        transform.position = collision.contacts[0].point;
     }
+}
+
 }
