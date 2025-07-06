@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      character_selection_image_hollow_0: 1827615722254254552
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

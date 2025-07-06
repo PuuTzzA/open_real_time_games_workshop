@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      button template image hollow_0: 6527168288430620028
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

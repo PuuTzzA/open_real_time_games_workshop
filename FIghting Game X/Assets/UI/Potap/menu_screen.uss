@@ -451,3 +451,9 @@
     margin-bottom: 0;
     margin-left: 0;
 }
+
+.action_option {
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
