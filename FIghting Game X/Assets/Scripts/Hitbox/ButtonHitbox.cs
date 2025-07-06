@@ -7,6 +7,8 @@ public class ButtonHitbox : Hitbox
     private bool lastFrame = false;
     private bool thisFrame = false;
 
+    private BaseFighter _fighter;
+
 
     public override void hit(BaseFighter fighter, HitType type)
     {
@@ -17,6 +19,7 @@ public class ButtonHitbox : Hitbox
         else if (!platform.isPressed && !platform.isOnCooldown && !fighter.holdingBomb)
         {
             thisFrame = true;
+            _fighter = fighter;
         }
     }
 
@@ -24,7 +27,7 @@ public class ButtonHitbox : Hitbox
     {
         if (thisFrame && !lastFrame)
         {
-            platform.TriggerActivatable();
+            platform.TriggerActivatable(_fighter);
         }
         if (!thisFrame && lastFrame)
         {

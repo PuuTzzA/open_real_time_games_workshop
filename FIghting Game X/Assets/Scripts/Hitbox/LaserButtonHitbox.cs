@@ -7,6 +7,8 @@ public class LaserButtonHitbox : Hitbox
     private bool lastFrame = false;
     private bool thisFrame = false;
 
+    private BaseFighter _fighter;
+
     public override void hit(BaseFighter fighter, HitType type)
     {
         if (fighter.fighter_input.interact == true && !laserButton.isLaserActive && !laserButton.isOnCooldown && !fighter.holdingBomb)
@@ -15,6 +17,7 @@ public class LaserButtonHitbox : Hitbox
         }
         else if (!laserButton.isLaserActive && !laserButton.isOnCooldown && !fighter.holdingBomb)
         {
+            _fighter = fighter;
             thisFrame = true;
         }
     }
@@ -23,7 +26,7 @@ public class LaserButtonHitbox : Hitbox
     {
         if (thisFrame && !lastFrame)
         {
-            laserButton.TriggerActivatable();
+            laserButton.TriggerActivatable(_fighter);
         }
         if (!thisFrame && lastFrame)
         {
