@@ -4,7 +4,7 @@ using UnityEngine.UIElements;
 public class SkillCheck : VisualElement
 {
     public bool rotating = false;
-    public float spinSpeed = 120f;
+    public float spinSpeed = 240f;
 
 
     public new class UxmlFactory : UxmlFactory<SkillCheck, UxmlTraits> { }

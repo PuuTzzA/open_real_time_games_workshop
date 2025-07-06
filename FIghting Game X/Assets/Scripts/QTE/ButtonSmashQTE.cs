@@ -52,6 +52,16 @@ public class ButtonSmashQTE : MonoBehaviour, IQTE
         p2Slider.maxValue = 100;
 
 
+        Image p1FillImage = p1Slider.fillRect.GetComponent<Image>();
+        Image p2FillImage = p2Slider.fillRect.GetComponent<Image>();
+
+        Color p1Color = p1.GetComponentInChildren<SpriteRenderer>().color;
+        Color p2Color = p2.GetComponentInChildren<SpriteRenderer>().color;
+
+        p1FillImage.color = p1Color;
+        p2FillImage.color = p2Color;
+
+
         // Switch to QTE map
         p1.SwitchCurrentActionMap("QTE");
         p2.SwitchCurrentActionMap("QTE");

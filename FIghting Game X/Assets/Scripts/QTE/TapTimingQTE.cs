@@ -20,7 +20,7 @@ public class TapTimingQTE : MonoBehaviour, IQTE
     [Header("Audio")]
     public AudioSource finishHimAudio;
 
-    private float duration = 3f;
+    private float duration = 4f;
     private Action<QTEResult, QTEResult> onFinished;
 
     private InputAction p1Smash;
