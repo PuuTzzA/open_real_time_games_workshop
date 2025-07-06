@@ -9,11 +9,13 @@ using System.Linq;
 [RequireComponent(typeof(PlayerInputManager))]
 public class PersistentPlayerManager : MonoBehaviour
 {
+    private static PersistentPlayerManager _instance;
     private PlayerInputManager _pim;
     private List<PlayerInput> players;
 
     [Header("UI References")]
     [SerializeField] private GameObject defaultJoinScreen;
+    [SerializeField] private GameObject playerSelectionPrefab; 
 
     [Header("CharacterController Setup")]
     public Transform[] spawnPoints;
@@ -26,8 +28,21 @@ public class PersistentPlayerManager : MonoBehaviour
 
     private void Awake()
     {
+        if (_instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        _instance = this;
+        
+        if (spawnPointsObject == null)
+        {
+            spawnPointsObject = GameObject.Find("SpawnPointsMapping");
+        }
+        
         _pim = GetComponent<PlayerInputManager>();
         players = new List<PlayerInput>();
+        _pim.EnableJoining();
 
         foreach (var player in FindObjectsByType<PlayerInput>(FindObjectsSortMode.None))
         {
@@ -48,11 +63,13 @@ public class PersistentPlayerManager : MonoBehaviour
 
     private void OnEnable()
     {
+        if (_pim == null) return;
         _pim.onPlayerJoined += OnPlayerJoined;
     }
 
     private void OnDisable()
     {
+        if (_pim == null) return;
         _pim.onPlayerJoined -= OnPlayerJoined;
     }
 
@@ -60,9 +77,20 @@ public class PersistentPlayerManager : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name != "CharacterSelection") return;
 
+        // Check if player already exists
+
+        foreach (var existingPlayer in players)
+        {
+            if (existingPlayer.playerIndex == player.playerIndex)
+            {
+                return;
+            }
+        }
+        
         // Keep the player alive across scenes
         DontDestroyOnLoad(player.gameObject);
         players.Add(player);
+        
 
         // Hide "press X to join" if first player joins
         if (defaultJoinScreen != null)
@@ -75,6 +103,67 @@ public class PersistentPlayerManager : MonoBehaviour
         {
             _pim.DisableJoining();
             StartCoroutine(SpawnAllPlayers());
+        }
+        else if (scene.name == "CharacterSelection")
+        {
+            if (spawnPointsObject == null)
+            {
+                spawnPointsObject = GameObject.Find("SpawnPointsMapping");
+                
+                spawnPoints = spawnPointsObject.GetComponentsInChildren<Transform>()
+                    .Where(t => t != spawnPointsObject.transform).ToArray();
+                DontDestroyOnLoad(spawnPointsObject);
+            }
+            
+            // Ensure spawn points are set up
+            
+            // 1) Switch back into join-mode
+            _pim.EnableJoining();
+
+            // 2) If we're coming from the fight, re-use that data:
+            if (players.Count > 0)
+            {
+                // 2a) Capture index+scheme+devices from the fighter inputs
+                var selectionData = players.Select(p => new
+                {
+                    Choice = GameManager.PlayerChoices[p.playerIndex],
+                    Index        = p.playerIndex,
+                    Scheme       = p.currentControlScheme,
+                    Devices      = p.devices.ToArray()
+                }).ToList();
+                
+
+                // 2b) Tear down the fighter inputs
+                foreach (var player in players)
+                {
+                    // Unpair their devices to avoid double control
+                    foreach (var device in player.devices)
+                        InputUser.PerformPairingWithDevice(device, user: default);
+
+                    player.DeactivateInput();
+                    if (player.user.valid) player.user.UnpairDevicesAndRemoveUser();
+                    Destroy(player.gameObject);
+                }
+                players.Clear();
+
+                // 2c) Re-instantiate CharacterSelection panels
+                foreach (var data in selectionData)
+                {
+                    var selection = PlayerInput.Instantiate(
+                        playerSelectionPrefab,
+                        playerIndex:     data.Index,
+                        controlScheme:   data.Scheme,
+                        pairWithDevices: data.Devices
+                    );
+                    selection.GetComponent<SelectionManager>().selectedCharacter = data.Choice;
+                    DontDestroyOnLoad(selection.gameObject);
+                    players.Add(selection);
+                }
+
+                // 2d) Hide the “press to join” prompt since we have existing players
+                if (defaultJoinScreen != null)
+                    defaultJoinScreen.SetActive(false);
+            }
         }
     }
 
@@ -90,6 +179,7 @@ public class PersistentPlayerManager : MonoBehaviour
             Scheme = p.currentControlScheme,
             Devices = p.devices.ToArray()
         }).ToList();
+        
 
         // Destroy all old player input objects
         foreach (var player in players)
@@ -99,21 +189,27 @@ public class PersistentPlayerManager : MonoBehaviour
                 InputUser.PerformPairingWithDevice(device, user: default);
 
             player.DeactivateInput();
-            player.user.UnpairDevicesAndRemoveUser();
+            
+            if (player.user.valid) player.user.UnpairDevicesAndRemoveUser();
             Destroy(player.gameObject);
         }
 
         players.Clear();
 
+        var usedDevices = new HashSet<InputDevice>();
+
         // Instantiate new player prefabs with correct inputs
         for (int i = 0; i < playerData.Count; i++)
         {
             var data = playerData[i];
-
-            if (data.Choice < 0 || data.Choice >= characterPrefabs.Length)
+            // Check if this data.Devices are already used
+            if (data.Devices.Any(d => usedDevices.Contains(d)))
             {
                 continue;
             }
+
+            if (data.Choice < 0 || data.Choice >= characterPrefabs.Length)
+                continue;
 
             var character = PlayerInput.Instantiate(
                 characterPrefabs[data.Choice],
@@ -123,8 +219,12 @@ public class PersistentPlayerManager : MonoBehaviour
             );
 
             players.Add(character);
+            DontDestroyOnLoad(character);
 
             character.transform.position = spawnPoints[i].position;
+
+            foreach (var d in data.Devices)
+                usedDevices.Add(d);
         }
 
 

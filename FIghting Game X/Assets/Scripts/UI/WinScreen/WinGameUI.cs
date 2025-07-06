@@ -81,6 +81,7 @@ public class WinGameUI : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 break;
             case "Character_Selection_Button":
+                Destroy(GameObject.Find("SpawnPointsMapping"));
                 SceneManager.LoadScene("Scenes/CharacterSelection");
                 break;
             case "Return_To_Menu_Button":
