@@ -128,9 +128,7 @@ public class SelectionManager : MonoBehaviour
 
     public void OnSubmit(InputAction.CallbackContext context)
     {
-        if (!context.performed) return; // Only handle performed, skip started/canceled
-
-        Debug.Log("Submit performed");
+        if (!context.performed) return;
 
         if (Time.time < _submitBlockUntil) return;
 
@@ -139,22 +137,24 @@ public class SelectionManager : MonoBehaviour
             case SelectionState.ChoosingCharacter:
                 if (selectedCharacter >= 0)
                 {
-                    selectText.text = "Select Your Character:";
                     GameManager.PlayerChoices[_playerInput.playerIndex] = selectedCharacter;
                     _state = SelectionState.ChoosingColor;
+                    selectText.text = "Select your Color:"; // ✅ Correct now
+                    ShowCharacter(selectedCharacter); // ✅ Refresh color
                     Debug.Log("Now choosing color");
                 }
                 break;
 
             case SelectionState.ChoosingColor:
-                selectText.text = "Select your Color:";
                 GameManager.PlayerColorChoices[_playerInput.playerIndex] = selectedColorIndex;
                 _state = SelectionState.Ready;
+                selectText.text = "Ready!";
                 ApplyReadyState(true);
                 Debug.Log("Now ready");
                 break;
         }
     }
+
 
 
 
@@ -166,20 +166,22 @@ public class SelectionManager : MonoBehaviour
                 ApplyReadyState(false);
                 GameManager.PlayerColorChoices[_playerInput.playerIndex] = -1;
                 _state = SelectionState.ChoosingColor;
+                selectText.text = "Select your Color:";
                 break;
 
             case SelectionState.ChoosingColor:
-                selectText.text = "Select your Color:";
                 GameManager.PlayerChoices[_playerInput.playerIndex] = -1;
                 _state = SelectionState.ChoosingCharacter;
+                selectText.text = "Select your Character:";
                 break;
 
             case SelectionState.ChoosingCharacter:
                 selectText.text = "Select your Character:";
-                GoBack();  // Leave screen or UI
+                GoBack();
                 break;
         }
     }
+
 
 
     private void ApplyReadyState(bool isReady)

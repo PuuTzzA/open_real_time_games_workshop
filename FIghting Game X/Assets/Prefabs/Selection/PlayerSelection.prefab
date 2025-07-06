@@ -1382,11 +1382,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   availableColors:
-  - {r: 1, g: 0, b: 0, a: 0}
-  - {r: 0, g: 1, b: 0.083954096, a: 0}
-  - {r: 0, g: 0.80497885, b: 1, a: 0}
-  - {r: 0.917763, g: 1, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0, g: 1, b: 0.083954096, a: 1}
+  - {r: 0, g: 0.80497885, b: 1, a: 1}
+  - {r: 0.917763, g: 1, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
   characters:
   - {fileID: 5433043207104148075, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
   - {fileID: 5433043207104148075, guid: d64c55a02ba994f3ea6d66e6e51bf01e, type: 3}
