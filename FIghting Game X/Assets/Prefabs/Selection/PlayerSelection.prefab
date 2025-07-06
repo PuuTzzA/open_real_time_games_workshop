@@ -316,7 +316,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 1, g: 0.2216981, b: 0.46951565, a: 1}
     m_PressedColor: {r: 0.33009538, g: 0.381132, b: 0, a: 1}
     m_SelectedColor: {r: 1, g: 0.42098024, b: 0.3915094, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -330,7 +330,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2653541809351169502}
   m_OnClick:
     m_PersistentCalls:
@@ -517,8 +517,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 75}
-  m_SizeDelta: {x: 600, y: 600}
+  m_AnchoredPosition: {x: -0.0722, y: 99.74}
+  m_SizeDelta: {x: 587, y: 587}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4548931672458868099
 CanvasRenderer:
@@ -1345,7 +1345,19 @@ MonoBehaviour:
     m_ActionId: f9459d25-f3cd-4af8-99d7-0b8d91ea1fb2
     m_ActionName: 'QTE/Smash[/Keyboard/space,/SwitchProControllerHID/buttonSouth]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3986361088077641438}
+        m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
+        m_MethodName: OnConfirm
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 00843831-69ed-4b44-acbb-27fbaa717038
     m_ActionName: 'UI/Confirm[/Gamepad/buttonSouth,/Keyboard/enter]'
   - m_PersistentCalls:
@@ -1369,12 +1381,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad34a65b02fc2f641b5f3cb7bc050afb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedColorIndex: 0
   characters:
   - {fileID: 5433043207104148075, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
   - {fileID: 5433043207104148075, guid: d64c55a02ba994f3ea6d66e6e51bf01e, type: 3}
   - {fileID: 5433043207104148075, guid: 136650703059dae5f8e56dead428f004, type: 3}
   selectedCharacter: 0
   characterDisplayImage: {fileID: 6377793426404930210}
+  selectText: {fileID: 8148081259923056542}
   characterNameText: {fileID: 3758074233020555856}
   startGameButton: {fileID: 7552888378279524786}
   backButton: {fileID: 105694323368431936}
@@ -2147,7 +2161,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 1, g: 0.2216981, b: 0.46951565, a: 1}
     m_PressedColor: {r: 0.33009538, g: 0.381132, b: 0, a: 1}
     m_SelectedColor: {r: 1, g: 0.42098024, b: 0.3915094, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2161,7 +2175,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 4762782437209686808}
   m_OnClick:
     m_PersistentCalls:

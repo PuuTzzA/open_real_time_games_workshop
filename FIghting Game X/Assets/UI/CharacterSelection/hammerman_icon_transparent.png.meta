@@ -119,10 +119,10 @@ TextureImporter:
       name: hammerman_icon_transparent_0
       rect:
         serializedVersion: 2
-        x: 272
-        y: 72
-        width: 453
-        height: 388
+        x: 0
+        y: 0
+        width: 1080
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,33 +137,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: hammerman_icon_transparent_1
-      rect:
-        serializedVersion: 2
-        x: 317
-        y: 432
-        width: 454
-        height: 452
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3ec2109ce453d5ac0800000000000000
-      internalID: -3864874292717998877
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 329653c690ff165418237f84d75f69c4
     internalID: 0
     vertices: []
     indices: 
@@ -171,10 +149,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1080.0,"y":1080.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       hammerman_icon_transparent_0: 635888242749862385
-      hammerman_icon_transparent_1: -3864874292717998877
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

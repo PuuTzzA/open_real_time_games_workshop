@@ -9,6 +9,7 @@ public class FighterHealth : MonoBehaviour
 
     [Header("UI Settings")]
     public Sprite Icon;
+    public Sprite IconWithoutBackground;
 
     [Header("Health Settings")]
     public int maxLives = 3;
@@ -187,7 +188,7 @@ public class FighterHealth : MonoBehaviour
         GetComponent<BaseFighter>().died = false;
 
     }
-    
+
     private void SetSpriteRenderersVisible(bool visible)
     {
         foreach (var r in GetComponentsInChildren<SpriteRenderer>())
@@ -239,9 +240,9 @@ public class FighterHealth : MonoBehaviour
 
         qteUsed = true;
         currentHealth = maxHealth;
-        ingameUI.setHealth(playerInput.playerIndex, currentHealth/maxHealth);
+        ingameUI.setHealth(playerInput.playerIndex, currentHealth / maxHealth);
     }
-    
+
 
     public bool Die()
     {

@@ -567,6 +567,7 @@ MonoBehaviour:
   health: {fileID: 2867311719178718406}
   deathBounds: {x: -15, y: -8}
   died: 0
+  holdingBomb: {fileID: 0}
 --- !u!114 &8266158835667872492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -631,10 +632,10 @@ MonoBehaviour:
   animation_handler: {fileID: 5143516375130627310}
   sprite_transform: {fileID: 7005465704683545578}
   available_air_jumps: 0
-  remaining_dash_frames: 0
-  dash_speed: 0
-  remaining_flying_frames: 0
+  stun_duration: 0
+  knockback_duration: 0
   animation_data: {fileID: 1333684296444455915}
+  air_resistance: 0
 --- !u!114 &4859815249510380014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -659,7 +660,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d32cc61bbfbb2c419aa18ca06320dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 1398893948369281781, guid: 71f95f6eb207cc1479db5e6fb700d7f9, type: 3}
+  Icon: {fileID: 6353497865673364783, guid: 63b4a393ee880bf439c1ad1d42db1221, type: 3}
+  IconWithoutBackground: {fileID: -3920415096154208720, guid: fc34712432ffee34689bd71e48692a72, type: 3}
   maxLives: 3
   qteUsed: 0
   maxHealth: 300
