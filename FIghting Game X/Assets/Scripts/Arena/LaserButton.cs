@@ -1,10 +1,14 @@
 using System.Collections;
 using UnityEngine;
+using TMPro;
+using UnityEngine.InputSystem;
 
 public class LaserButton : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer leverNormal;
     [SerializeField] private SpriteRenderer leverSwitched;
+    [SerializeField] private SpriteRenderer leverActivatable;
+    [SerializeField] private TextMeshPro activatableText;
     [SerializeField] private GameObject laser;
     [SerializeField] public float activeTime;
     [SerializeField] float cooldownTime;
@@ -15,12 +19,39 @@ public class LaserButton : MonoBehaviour
     public bool isOnCooldown = false;
 
 
-    private void PressButton() {
+    private void PressButton()
+    {
         isPressed = true;
         leverNormal.enabled = false;
+        leverActivatable.enabled = false;
+        activatableText.enabled = false;
         leverSwitched.enabled = true;
     }
-    private void ButtonReady() {
+
+
+    public void TriggerActivatable(BaseFighter fighter)
+    {
+        leverNormal.enabled = false;
+        leverActivatable.enabled = true;
+        PlayerInput pI = fighter.gameObject.GetComponent<PlayerInput>();
+        bool isKeyboard = pI.currentControlScheme == "Keyboard&Mouse";
+        activatableText.text = isKeyboard ? pI.actions["Interact"].GetBindingDisplayString() : pI.actions["Interact"].GetBindingDisplayString(group: "Gamepad");
+        activatableText.enabled = true;
+
+    }
+
+    public void TriggerDisableActivatable()
+    {
+        if (!isOnCooldown && !isPressed)
+        {
+            leverNormal.enabled = true;
+            leverActivatable.enabled = false;
+            activatableText.enabled = false;
+        }
+    }
+
+    private void ButtonReady()
+    {
         isPressed = false;
         leverNormal.enabled = true;
         leverSwitched.enabled = false;

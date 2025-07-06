@@ -1,10 +1,14 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class BombPlatformMove : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer leverNormal;
     [SerializeField] private SpriteRenderer leverSwitched;
+    [SerializeField] private SpriteRenderer leverActivatable;
+    [SerializeField] private TextMeshPro activatableText;
     [SerializeField] private float waitTimeOffScreen;
     [SerializeField] private float cooldownTime;
     [SerializeField] private float dropDistance;
@@ -35,15 +39,39 @@ public class BombPlatformMove : MonoBehaviour
         bomb.transform.SetParent(this.transform);
     }
 
-    private void PressButton() {
+    private void PressButton()
+    {
         isPressed = true;
         leverNormal.enabled = false;
+        leverActivatable.enabled = false;
+        activatableText.enabled = false;
         leverSwitched.enabled = true;
     }
-    private void ButtonReady() {
+    private void ButtonReady()
+    {
         isPressed = false;
         leverNormal.enabled = true;
         leverSwitched.enabled = false;
+    }
+
+    public void TriggerActivatable(BaseFighter fighter)
+    {
+        leverNormal.enabled = false;
+        leverActivatable.enabled = true;
+        PlayerInput pI = fighter.gameObject.GetComponent<PlayerInput>();
+        bool isKeyboard = pI.currentControlScheme == "Keyboard&Mouse";
+        activatableText.text = isKeyboard ? pI.actions["Interact"].GetBindingDisplayString() : pI.actions["Interact"].GetBindingDisplayString(group: "Gamepad");
+        activatableText.enabled = true;
+    }
+
+    public void TriggerDisableActivatable()
+    {
+        if (!isMoving && !isPressed)
+        {
+            leverNormal.enabled = true;
+            leverActivatable.enabled = false;
+            activatableText.enabled = false;
+        }
     }
 
     public void TriggerDrop()
