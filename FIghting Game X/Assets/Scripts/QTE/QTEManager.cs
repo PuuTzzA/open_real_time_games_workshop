@@ -8,9 +8,6 @@ using UnityEngine.UIElements;
 
 public class QTEManager : MonoBehaviour
 {
-    int type = 1;
-
-
     [SerializeField]
     private GameObject ui;
 
@@ -61,7 +58,7 @@ public class QTEManager : MonoBehaviour
 
     private IEnumerator StartQTESequence(GameObject fallen, GameObject killer, Action onDone)
     {
-        type = UnityEngine.Random.Range(0, 2); // Randomly choose between 0, 1
+        int type = UnityEngine.Random.Range(0, 1); // Randomly choose between 0, 1
         if (type == 1)
             ui.GetComponent<MinigameUI>().minigamenumber = 1;
 
@@ -119,6 +116,7 @@ public class QTEManager : MonoBehaviour
 
     private void EvaluateDualQTE(GameObject fallen, GameObject killer, QTEResult fallenResult, QTEResult killerResult)
     {
+        Time.timeScale = 1f; 
         bool isTie = fallenResult.IsSuccess && killerResult.IsSuccess ||
                      (!fallenResult.IsSuccess && !killerResult.IsSuccess &&
                       fallenResult.Score == killerResult.Score);
