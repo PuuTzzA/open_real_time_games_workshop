@@ -147,11 +147,16 @@ public class SelectionManager : MonoBehaviour
 
             case SelectionState.ChoosingColor:
                 GameManager.PlayerColorChoices[_playerInput.playerIndex] = selectedColorIndex;
+
+                // Notify other players to resolve color conflicts
+                NotifyColorTaken(selectedColorIndex, _playerInput.playerIndex);
+
                 _state = SelectionState.Ready;
                 selectText.text = "Ready!";
                 ApplyReadyState(true);
                 Debug.Log("Now ready");
                 break;
+
         }
     }
 
@@ -160,6 +165,8 @@ public class SelectionManager : MonoBehaviour
 
     public void OnCancel(InputAction.CallbackContext context)
     {
+        if (!context.performed) return;
+
         switch (_state)
         {
             case SelectionState.Ready:
@@ -250,12 +257,12 @@ public class SelectionManager : MonoBehaviour
 
     public void NextColor()
     {
-
         int originalIndex = selectedColorIndex;
         do
         {
             selectedColorIndex = (selectedColorIndex + 1) % manager.availableColors.Length;
-        } while (IsColorTaken(selectedColorIndex) && selectedColorIndex != originalIndex);
+        }
+        while (IsColorTaken(selectedColorIndex) && selectedColorIndex != originalIndex);
 
         ApplyColorPreview();
     }
@@ -266,7 +273,8 @@ public class SelectionManager : MonoBehaviour
         do
         {
             selectedColorIndex = (selectedColorIndex - 1 + manager.availableColors.Length) % manager.availableColors.Length;
-        } while (IsColorTaken(selectedColorIndex) && selectedColorIndex != originalIndex);
+        }
+        while (IsColorTaken(selectedColorIndex) && selectedColorIndex != originalIndex);
 
         ApplyColorPreview();
     }
@@ -278,6 +286,31 @@ public class SelectionManager : MonoBehaviour
         {
             characterDisplayImage.color = manager.availableColors[selectedColorIndex];
         }
+    }
+
+    private static void NotifyColorTaken(int takenColorIndex, int byPlayerIndex)
+    {
+        foreach (var instance in _instances)
+        {
+            // Only update other players who are in color-select stage and have the same color
+            if (instance._playerInput.playerIndex != byPlayerIndex &&
+                instance._state == SelectionState.ChoosingColor &&
+                instance.selectedColorIndex == takenColorIndex)
+            {
+                instance.ForceNextAvailableColor();
+            }
+        }
+    }
+
+    private void ForceNextAvailableColor()
+    {
+        int originalIndex = selectedColorIndex;
+        do
+        {
+            selectedColorIndex = (selectedColorIndex + 1) % manager.availableColors.Length;
+        } while (IsColorTaken(selectedColorIndex) && selectedColorIndex != originalIndex);
+
+        ApplyColorPreview();
     }
 
 
