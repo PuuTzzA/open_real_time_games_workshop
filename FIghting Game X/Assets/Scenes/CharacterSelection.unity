@@ -858,7 +858,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 078953e60f3f2fa358928ac2f4f024b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  availableColors:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0.13940072, b: 1, a: 1}
+  - {r: 0.058092833, g: 1, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0.8421259, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
   defaultJoinScreen: {fileID: 446547146}
+  playerSelectionPrefab: {fileID: 0}
   spawnPoints:
   - {fileID: 1443903726}
   - {fileID: 677765685}

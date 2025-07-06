@@ -11,10 +11,11 @@ using System.Reflection.Emit;
 
 public class SelectionManager : MonoBehaviour
 {
+    private PersistentPlayerManager manager;
+
 
     [Header("Color Selection")]
-    public Color[] availableColors;
-    private int selectedColorIndex = 0;
+    public int selectedColorIndex = 0;
     // All instances of SelectionManager
     private static List<SelectionManager> _instances = new List<SelectionManager>();
 
@@ -59,7 +60,7 @@ public class SelectionManager : MonoBehaviour
 
     private void Awake()
     {
-
+        manager = FindAnyObjectByType<PersistentPlayerManager>();
         _playerInput = GetComponent<PlayerInput>();
         InputActions = _playerInput.actions;
 
@@ -212,7 +213,7 @@ public class SelectionManager : MonoBehaviour
 
             if (_state == SelectionState.ChoosingCharacter)
             {
-                characterDisplayImage.color = Color.white;
+                characterDisplayImage.color = manager.availableColors[index];
             }
             else
             {
@@ -253,7 +254,7 @@ public class SelectionManager : MonoBehaviour
         int originalIndex = selectedColorIndex;
         do
         {
-            selectedColorIndex = (selectedColorIndex + 1) % availableColors.Length;
+            selectedColorIndex = (selectedColorIndex + 1) % manager.availableColors.Length;
         } while (IsColorTaken(selectedColorIndex) && selectedColorIndex != originalIndex);
 
         ApplyColorPreview();
@@ -264,7 +265,7 @@ public class SelectionManager : MonoBehaviour
         int originalIndex = selectedColorIndex;
         do
         {
-            selectedColorIndex = (selectedColorIndex - 1 + availableColors.Length) % availableColors.Length;
+            selectedColorIndex = (selectedColorIndex - 1 + manager.availableColors.Length) % manager.availableColors.Length;
         } while (IsColorTaken(selectedColorIndex) && selectedColorIndex != originalIndex);
 
         ApplyColorPreview();
@@ -275,7 +276,7 @@ public class SelectionManager : MonoBehaviour
         Debug.Log("" + characterDisplayImage);
         if (characterDisplayImage != null && selectedColorIndex >= 0)
         {
-            characterDisplayImage.color = availableColors[selectedColorIndex];
+            characterDisplayImage.color = manager.availableColors[selectedColorIndex];
         }
     }
 

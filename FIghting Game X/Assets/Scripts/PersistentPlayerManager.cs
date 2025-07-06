@@ -9,13 +9,15 @@ using System.Linq;
 [RequireComponent(typeof(PlayerInputManager))]
 public class PersistentPlayerManager : MonoBehaviour
 {
+
+    public Color[] availableColors;
     private static PersistentPlayerManager _instance;
     private PlayerInputManager _pim;
     private List<PlayerInput> players;
 
     [Header("UI References")]
     [SerializeField] private GameObject defaultJoinScreen;
-    [SerializeField] private GameObject playerSelectionPrefab; 
+    [SerializeField] private GameObject playerSelectionPrefab;
 
     [Header("CharacterController Setup")]
     public Transform[] spawnPoints;
@@ -34,12 +36,12 @@ public class PersistentPlayerManager : MonoBehaviour
             return;
         }
         _instance = this;
-        
+
         if (spawnPointsObject == null)
         {
             spawnPointsObject = GameObject.Find("SpawnPointsMapping");
         }
-        
+
         _pim = GetComponent<PlayerInputManager>();
         players = new List<PlayerInput>();
         _pim.EnableJoining();
@@ -86,11 +88,11 @@ public class PersistentPlayerManager : MonoBehaviour
                 return;
             }
         }
-        
+
         // Keep the player alive across scenes
         DontDestroyOnLoad(player.gameObject);
         players.Add(player);
-        
+
 
         // Hide "press X to join" if first player joins
         if (defaultJoinScreen != null)
@@ -109,14 +111,14 @@ public class PersistentPlayerManager : MonoBehaviour
             if (spawnPointsObject == null)
             {
                 spawnPointsObject = GameObject.Find("SpawnPointsMapping");
-                
+
                 spawnPoints = spawnPointsObject.GetComponentsInChildren<Transform>()
                     .Where(t => t != spawnPointsObject.transform).ToArray();
                 DontDestroyOnLoad(spawnPointsObject);
             }
-            
+
             // Ensure spawn points are set up
-            
+
             // 1) Switch back into join-mode
             _pim.EnableJoining();
 
@@ -126,12 +128,13 @@ public class PersistentPlayerManager : MonoBehaviour
                 // 2a) Capture index+scheme+devices from the fighter inputs
                 var selectionData = players.Select(p => new
                 {
-                    Choice = GameManager.PlayerChoices[p.playerIndex],
-                    Index        = p.playerIndex,
-                    Scheme       = p.currentControlScheme,
-                    Devices      = p.devices.ToArray()
+                    PrefabChoice = GameManager.PlayerChoices[p.playerIndex],
+                    ColorChoice = GameManager.PlayerColorChoices[p.playerIndex],
+                    Index = p.playerIndex,
+                    Scheme = p.currentControlScheme,
+                    Devices = p.devices.ToArray()
                 }).ToList();
-                
+
 
                 // 2b) Tear down the fighter inputs
                 foreach (var player in players)
@@ -151,11 +154,12 @@ public class PersistentPlayerManager : MonoBehaviour
                 {
                     var selection = PlayerInput.Instantiate(
                         playerSelectionPrefab,
-                        playerIndex:     data.Index,
-                        controlScheme:   data.Scheme,
+                        playerIndex: data.Index,
+                        controlScheme: data.Scheme,
                         pairWithDevices: data.Devices
                     );
-                    selection.GetComponent<SelectionManager>().selectedCharacter = data.Choice;
+                    selection.GetComponent<SelectionManager>().selectedCharacter = data.PrefabChoice;
+                    selection.GetComponent<SelectionManager>().selectedColorIndex = data.ColorChoice;
                     DontDestroyOnLoad(selection.gameObject);
                     players.Add(selection);
                 }
@@ -175,11 +179,12 @@ public class PersistentPlayerManager : MonoBehaviour
         var playerData = players.Select(p => new
         {
             Index = p.playerIndex,
-            Choice = GameManager.PlayerChoices[p.playerIndex],
+            PrefabChoice = GameManager.PlayerChoices[p.playerIndex],
+            ColorChoice = GameManager.PlayerColorChoices[p.playerIndex],
             Scheme = p.currentControlScheme,
             Devices = p.devices.ToArray()
         }).ToList();
-        
+
 
         // Destroy all old player input objects
         foreach (var player in players)
@@ -189,7 +194,7 @@ public class PersistentPlayerManager : MonoBehaviour
                 InputUser.PerformPairingWithDevice(device, user: default);
 
             player.DeactivateInput();
-            
+
             if (player.user.valid) player.user.UnpairDevicesAndRemoveUser();
             Destroy(player.gameObject);
         }
@@ -208,15 +213,16 @@ public class PersistentPlayerManager : MonoBehaviour
                 continue;
             }
 
-            if (data.Choice < 0 || data.Choice >= characterPrefabs.Length)
+            if (data.PrefabChoice < 0 || data.PrefabChoice >= characterPrefabs.Length)
                 continue;
 
             var character = PlayerInput.Instantiate(
-                characterPrefabs[data.Choice],
+                characterPrefabs[data.PrefabChoice],
                 playerIndex: data.Index,
                 controlScheme: data.Scheme,
                 pairWithDevices: data.Devices
             );
+            character.GetComponentInChildren<SpriteRenderer>().color = availableColors[data.ColorChoice];
 
             players.Add(character);
             DontDestroyOnLoad(character);
