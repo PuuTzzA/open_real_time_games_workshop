@@ -5,6 +5,7 @@ public class BombPlatformMove : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer leverNormal;
     [SerializeField] private SpriteRenderer leverSwitched;
+    [SerializeField] private SpriteRenderer leverActivatable;
     [SerializeField] private float waitTimeOffScreen;
     [SerializeField] private float cooldownTime;
     [SerializeField] private float dropDistance;
@@ -35,15 +36,33 @@ public class BombPlatformMove : MonoBehaviour
         bomb.transform.SetParent(this.transform);
     }
 
-    private void PressButton() {
+    private void PressButton()
+    {
         isPressed = true;
         leverNormal.enabled = false;
+        leverActivatable.enabled = false;
         leverSwitched.enabled = true;
     }
-    private void ButtonReady() {
+    private void ButtonReady()
+    {
         isPressed = false;
         leverNormal.enabled = true;
         leverSwitched.enabled = false;
+    }
+
+    public void TriggerActivatable()
+    {
+        leverNormal.enabled = false;
+        leverActivatable.enabled = true;
+    }
+
+    public void TriggerDisableActivatable()
+    {
+        if (!isMoving && !isPressed)
+        {
+            leverNormal.enabled = true;
+            leverActivatable.enabled = false;
+        }
     }
 
     public void TriggerDrop()

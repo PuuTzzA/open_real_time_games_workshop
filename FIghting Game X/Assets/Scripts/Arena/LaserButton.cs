@@ -5,6 +5,7 @@ public class LaserButton : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer leverNormal;
     [SerializeField] private SpriteRenderer leverSwitched;
+    [SerializeField] private SpriteRenderer leverActivatable;
     [SerializeField] private GameObject laser;
     [SerializeField] public float activeTime;
     [SerializeField] float cooldownTime;
@@ -15,12 +16,32 @@ public class LaserButton : MonoBehaviour
     public bool isOnCooldown = false;
 
 
-    private void PressButton() {
+    private void PressButton()
+    {
         isPressed = true;
         leverNormal.enabled = false;
+        leverActivatable.enabled = false;
         leverSwitched.enabled = true;
     }
-    private void ButtonReady() {
+
+
+    public void TriggerActivatable()
+    {
+        leverNormal.enabled = false;
+        leverActivatable.enabled = true;
+    }
+
+    public void TriggerDisableActivatable()
+    {
+        if (!isOnCooldown && !isPressed)
+        {
+            leverNormal.enabled = true;
+            leverActivatable.enabled = false;
+        }
+    }
+
+    private void ButtonReady()
+    {
         isPressed = false;
         leverNormal.enabled = true;
         leverSwitched.enabled = false;
