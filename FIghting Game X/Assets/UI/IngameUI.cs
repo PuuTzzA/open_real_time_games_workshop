@@ -50,7 +50,6 @@ public class IngameUI : MonoBehaviour
             setHealth(i, 1);
         }
         color = healthbar[0].Arc3Color;
-        Debug.Log(" " + healthbar[1].Fill + " " + healthbar[1].Arc2Fill + " " + healthbar[1].Arc3Fill);
     }
 
     public void setHealth(int playerid, float health)

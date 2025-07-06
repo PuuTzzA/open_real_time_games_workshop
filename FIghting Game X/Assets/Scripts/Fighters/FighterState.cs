@@ -21,7 +21,8 @@ public enum FighterAction
     KnockedBackLight,
     KnockedBackHeavy,
     Stunned,
-    Death
+    Death,
+    Crouch
 }
 
 public enum Facing
@@ -38,11 +39,13 @@ public class FighterState : MonoBehaviour
     public BaseStats base_stats;
 
     public int available_air_jumps;
-    public int remaining_dash_frames;
-    public float dash_speed;
-    public int remaining_flying_frames;
+
+    public int stun_duration;
+    public int knockback_duration;
 
     public AnimationData animation_data;
+
+    public float air_resistance;
 
     private bool _grounded;
 
@@ -118,12 +121,13 @@ public class FighterState : MonoBehaviour
 
 
 
-    public void Start()
+    public void Awake()
     {
         base_stats = BaseStats.DEFAULT;
 
         available_air_jumps = base_stats.air_jumps;
-        remaining_dash_frames = 0;
+
+        air_resistance = - Physics2D.gravity.y / (base_stats.terminal_speed * base_stats.terminal_speed);
 
         set_facing(Facing.Right);
         start_action(FighterAction.Idle);
@@ -177,28 +181,5 @@ public class FighterState : MonoBehaviour
         animation_data.signals = FighterSignals.None;
 
         return ret;
-    }
-
-    public void dash(float speed)
-    {
-        dash_speed = speed;
-        remaining_dash_frames = 12;
-        start_action(FighterAction.Dash);
-    }
-
-    public bool is_dashing()
-    {
-        return remaining_dash_frames > 0;
-    }
-
-    public float get_dash_speed()
-    {
-        var result = 0.0f;
-        if (remaining_dash_frames < 6)
-        {
-            result = dash_speed * get_facing_float();
-        }
-        remaining_dash_frames--;
-        return result;
     }
 }

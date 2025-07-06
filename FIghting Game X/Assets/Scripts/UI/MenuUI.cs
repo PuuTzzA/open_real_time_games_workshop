@@ -110,16 +110,17 @@ public class MenuUI : MonoBehaviour
         newButton.focusable = true;
         focusedElement = newButton;
         string[] mainMenuStyle = 
-            { "pause_screen", "pause_header", "pause_body", "pause_option_selector", "pause_option_specific_screen" };
+            { "pause_screen", "pause_header", "pause_body", "pause_option_selector", "pause_option_specific_screen", "pause_settings_tab_view", "pause_action_keybinding"};
         string[] pauseStyle = 
-            {"menu_screen", "menu_header", "menu_body", "option_selector", "option_specific_screen"};
+            {"menu_screen", "menu_header", "menu_body", "option_selector", "option_specific_screen", "settings_tab_view", "action_keybinding"};
         var oldStyles = isMainMenu ? mainMenuStyle : pauseStyle;
         var newStyles = isMainMenu ? pauseStyle : mainMenuStyle;
         for (var i = 0; i < oldStyles.Length; i++)
         {
-            var visualElement = root.Q<VisualElement>(className: $"{oldStyles[i]}");
-            visualElement.RemoveFromClassList($"{oldStyles[i]}");
-            visualElement.AddToClassList($"{newStyles[i]}");
+            var styleIndex = i;
+            var visualElements = root.Query<VisualElement>(className: $"{oldStyles[styleIndex]}");
+            visualElements.ForEach(visualElement => visualElement.RemoveFromClassList($"{oldStyles[styleIndex]}"));
+            visualElements.ForEach(visualElement => visualElement.AddToClassList($"{newStyles[styleIndex]}"));
         }
 
         root.Q<Label>(className: $"{newStyles[1]}").text = isMainMenu ? "FIGHTING GAME X" : "PAUSE MENU";

@@ -60,7 +60,6 @@ public class CharacterSelector : MonoBehaviour
 
         if (input.actions["Submit"].triggered)
         {
-            Debug.Log($"{playerHighlightClass} selected character {selectedIndex}");
         }
     }
 
@@ -77,7 +76,6 @@ public class CharacterSelector : MonoBehaviour
 
     private void UpdateHighlight()
     {
-        Debug.Log(characterButtons.Length);
         characterButtons[selectedIndex].text = "test";
         characterButtons[selectedIndex].AddToClassList(playerHighlightClass);
     }

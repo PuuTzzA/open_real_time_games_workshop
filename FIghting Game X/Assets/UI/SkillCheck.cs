@@ -3,6 +3,10 @@ using UnityEngine.UIElements;
 
 public class SkillCheck : VisualElement
 {
+    public bool rotating = false;
+    public float spinSpeed = 120f;
+
+
     public new class UxmlFactory : UxmlFactory<SkillCheck, UxmlTraits> { }
 
     public new class UxmlTraits : VisualElement.UxmlTraits
@@ -47,7 +51,7 @@ public class SkillCheck : VisualElement
             skillCheck.Arrow2Length = Mathf.Clamp01(arrow2LengthAttr.GetValueFromBag(bag, cc));
 
             skillCheck.Circle2Thickness = Mathf.Clamp01(circle2ThicknessAttr.GetValueFromBag(bag, cc));
-            skillCheck.Circle2FillPercent = Mathf.Clamp01(circle2FillPercentAttr.GetValueFromBag(bag, cc));
+            skillCheck.Circle2FillPercent = circle2FillPercentAttr.GetValueFromBag(bag, cc);
             skillCheck.Circle2Color = circle2ColorAttr.GetValueFromBag(bag, cc);
         }
     }
@@ -144,7 +148,7 @@ public class SkillCheck : VisualElement
     public float Circle2FillPercent
     {
         get => circle2FillPercent;
-        set { circle2FillPercent = Mathf.Clamp01(value); MarkDirtyRepaint(); }
+        set { circle2FillPercent = value; MarkDirtyRepaint(); }
     }
 
     private Color circle2Color = Color.gray;
@@ -198,14 +202,15 @@ public class SkillCheck : VisualElement
 
 
         // --- Draw Second Circle (on top) ---
-        if (circle2FillPercent > 0f && circle2Thickness > 0f)
+        if (circle2FillPercent != 0f && circle2Thickness > 0f)
         {
+
             int segments = 128;
-            float totalAngle = 360f * circle2FillPercent;
+
+            float absFill = Mathf.Clamp01(Mathf.Abs(circle2FillPercent));
+            float totalAngle = 360f * absFill;
             float angleStep = totalAngle / segments;
 
-            // Increase radius so second circle overextends equally on both sides of first circle:
-            // Add half thickness of first circle and half thickness of second circle to baseRadius
             float circle2Radius = baseRadius;
 
             painter.strokeColor = circle2Color;
@@ -213,22 +218,33 @@ public class SkillCheck : VisualElement
 
             painter.BeginPath();
 
+            // Direction: +1 for clockwise, -1 for counter-clockwise
+            float direction = Mathf.Sign(circle2FillPercent);
+
+            // Draw segment points
             for (int i = 0; i <= segments; i++)
             {
-                // Start at arrow2Angle, sweep clockwise by totalAngle
-                float angle = Mathf.Deg2Rad * (arrow2Angle + i * angleStep);
+                float angleDeg = arrow2Angle + direction * i * angleStep;
+                float angleRad = Mathf.Deg2Rad * angleDeg;
 
-                float x = center.x + Mathf.Cos(angle) * circle2Radius;
-                float y = center.y + Mathf.Sin(angle) * circle2Radius;
+                float x = center.x + Mathf.Cos(angleRad) * circle2Radius;
+                float y = center.y + Mathf.Sin(angleRad) * circle2Radius;
+
+                Vector2 point = new Vector2(x, y);
 
                 if (i == 0)
-                    painter.MoveTo(new Vector2(x, y));
+                    painter.MoveTo(point);
                 else
-                    painter.LineTo(new Vector2(x, y));
+                    painter.LineTo(point);
             }
 
             painter.Stroke();
         }
+
+
+
+
+
         // --- Draw Arrows ---
         DrawArrow2(painter, center, baseRadius, arrow2Angle, arrow2Color, arrow2Thickness, arrow2Length);
         DrawArrow1(painter, center, size, arrowAngle, arrowColor, arrowThickness, arrowLength);
@@ -300,5 +316,103 @@ public class SkillCheck : VisualElement
         painter.ClosePath();
         painter.Fill();
     }
+
+    public int CheckArrowHit()
+    {
+        float arrow1Angle = NormalizeAngle(ArrowAngle);
+        float arrow2Angle = NormalizeAngle(Arrow2Angle);
+
+        // === 1. Check if arrow1 is inside arrow2 sector ===
+        float angularThickness = arrow2Thickness; // degrees of tolerance
+        float halfSector = angularThickness * 0.5f;
+
+        if (AngleInRange(arrow1Angle, arrow2Angle - halfSector, arrow2Angle + halfSector))
+            return 2;
+
+        // === 2. Check if arrow1 is inside circle2 arc ===
+        float absFill = Mathf.Clamp01(Mathf.Abs(Circle2FillPercent));
+        if (absFill > 0f && Circle2Thickness > 0f)
+        {
+            float startAngle = NormalizeAngle(Arrow2Angle);
+            float fillAngle = 360f * absFill;
+            float direction = Mathf.Sign(Circle2FillPercent);
+
+            float endAngle = NormalizeAngle(startAngle + direction * fillAngle);
+
+            if (AngleInRangeDirectional(arrow1Angle, startAngle, endAngle, direction))
+                return 1;
+        }
+
+        return 0;
+    }
+
+    // Checks if 'angle' is between 'start' and 'end' considering direction (+1 clockwise, -1 counterclockwise)
+    private bool AngleInRangeDirectional(float angle, float start, float end, float direction)
+    {
+        angle = NormalizeAngle(angle);
+        start = NormalizeAngle(start);
+        end = NormalizeAngle(end);
+
+        if (direction >= 0)
+        {
+            // Clockwise arc: angle is inside if it lies between start and end in clockwise direction
+            if (start <= end)
+                return angle >= start && angle <= end;
+            else
+                return angle >= start || angle <= end; // wraparound
+        }
+        else
+        {
+            // Counterclockwise arc: angle is inside if it lies between start and end going counterclockwise
+            // We can invert logic: angle is inside if NOT between end and start clockwise
+            if (end <= start)
+                return angle >= end && angle <= start;
+            else
+                return angle >= end || angle <= start; // wraparound
+        }
+    }
+
+    private float NormalizeAngle(float angle)
+    {
+        angle %= 360f;
+        return angle < 0 ? angle + 360f : angle;
+    }
+
+    private bool AngleInRange(float angle, float start, float end)
+    {
+        start = NormalizeAngle(start);
+        end = NormalizeAngle(end);
+
+        if (start <= end)
+            return angle >= start && angle <= end;
+        else
+            return angle >= start || angle <= end; // wraparound
+    }
+
+    public float GetValidNewArrow2Angle()
+    {
+        const float paddingDegrees = 5f;
+        const float arrowThicknessDeg = 10f; // Fixed angular size
+
+        float oldStart = NormalizeAngle(Arrow2Angle);
+        float fillAngle = 360f * Mathf.Clamp01(Mathf.Abs(Circle2FillPercent));
+        float oldEnd = NormalizeAngle(oldStart + Mathf.Sign(Circle2FillPercent) * fillAngle);
+
+        float forbiddenStart = NormalizeAngle(oldStart - paddingDegrees - arrowThicknessDeg);
+        float forbiddenEnd = NormalizeAngle(oldEnd + paddingDegrees + arrowThicknessDeg);
+
+        float forbiddenLength = forbiddenStart < forbiddenEnd
+            ? (forbiddenEnd - forbiddenStart)
+            : (360f - (forbiddenStart - forbiddenEnd));
+
+        float allowedLength = 360f - forbiddenLength;
+        float randomOffset = UnityEngine.Random.Range(0f, allowedLength);
+        float newAngle = NormalizeAngle(forbiddenEnd + randomOffset);
+
+        return newAngle;
+
+    }
+
+
 
 }

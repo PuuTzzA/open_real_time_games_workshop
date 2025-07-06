@@ -13,7 +13,7 @@ public class FighterHealth : MonoBehaviour
     [Header("Health Settings")]
     public int maxLives = 3;
     public bool qteUsed = false;
-    public int maxHealth = 300;
+    public int maxHealth = 10;
 
     // Current health and lives
     private int currentLives;
@@ -37,7 +37,6 @@ public class FighterHealth : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            Debug.LogWarning("Fighter is already dead. Cannot take more damage.");
             return;
         }
 
@@ -52,10 +51,8 @@ public class FighterHealth : MonoBehaviour
 
     public void TakeArenaDamage(int damage)
     {
-        Debug.Log($"Fighter {this.gameObject.name} taking arena damage: {damage}");
         if (currentHealth <= 0)
         {
-            Debug.LogWarning("Fighter is already dead. Cannot take more damage.");
             return;
         }
 
@@ -72,31 +69,22 @@ public class FighterHealth : MonoBehaviour
     private IEnumerator HandleDeath(GameObject killer)
     {
         currentLives--;
-        Debug.Log("hallo");
         ingameUI.changeStocks(playerInput.playerIndex, currentLives);
-        Debug.Log("thaui");
-
-        Debug.Log($"{this.gameObject.name} has died. Killer: {killer.name}");
-        Debug.Log($"Current Lives: {currentLives}, Current Health: {currentHealth}");
-        Debug.Log($"QTE Used: {qteUsed}");
 
 
         if (currentLives <= 0)
         {
             if (!qteUsed)
             {
-                Debug.Log("Fighter died but has another change, win a QTE to stay in the game!");
                 yield return DeferQTEStart(killer);
             }
             else
             {
-                Debug.Log("Fighter died and has no more lives left. Game Over!");
                 Die();
             }
         }
         else
         {
-            Debug.Log("Fighter died. Remaining lives: " + currentLives);
             Respawn();
         }
     }
@@ -114,7 +102,6 @@ public class FighterHealth : MonoBehaviour
         {
             yield return null; // Wait until QTE is finished
         }
-        Debug.Log("QTE finished.");
     }
 
     private IEnumerator DelayedHandleDeath(GameObject killer)
@@ -137,12 +124,10 @@ public class FighterHealth : MonoBehaviour
 
         if (currentLives <= 0)
         {
-            Debug.Log("Fighter died and has no more lives left. Game Over!");
             Die();
         }
         else
         {
-            Debug.Log("Fighter died. Remaining lives: " + currentLives);
             Respawn();
         }
     }
@@ -155,10 +140,8 @@ public class FighterHealth : MonoBehaviour
 
     private IEnumerator RespawnRoutine()
     {
-        Debug.Log($"{gameObject.name}: Starting respawn routine.");
 
         // Hide the fighter temporarily
-        Debug.Log($"{gameObject.name}: Disabling fighter GameObject.");
         SetSpriteRenderersVisible(false);
 
         yield return new WaitForSeconds(1.5f); // Delay before respawning
@@ -167,16 +150,13 @@ public class FighterHealth : MonoBehaviour
         // Choose a random spawn point
         Transform[] spawnPoints = persistentPlayerManager.spawnPoints;
         int spawnIndex = Random.Range(0, spawnPoints.Length);
-        Debug.Log($"{gameObject.name}: Selected spawn point index {spawnIndex} at {spawnPoints[spawnIndex].position}.");
         transform.position = spawnPoints[spawnIndex].position;
 
         // Reset health and show UI
         currentHealth = maxHealth;
         ingameUI.setHealth(playerInput.playerIndex, 1);
-        Debug.Log($"{gameObject.name}: Health reset to max ({maxHealth}) and UI updated.");
 
         // Reactivate and blink
-        Debug.Log($"{gameObject.name}: Reactivating GameObject and starting blink effect.");
         gameObject.SetActive(true);
         StartCoroutine(BlinkSprite(1f)); // 1 second blink effect
 
@@ -187,11 +167,9 @@ public class FighterHealth : MonoBehaviour
             fighterState.start_action(FighterAction.Idle);
             fighterState.set_grounded(false);
             fighterState.force_facing(1);
-            Debug.Log($"{gameObject.name}: Fighter state reset to Idle.");
         }
         else
         {
-            Debug.LogWarning($"{gameObject.name}: FighterState component not found.");
         }
 
         // Reset physics
@@ -201,16 +179,13 @@ public class FighterHealth : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0f;
             rb.gravityScale = 1f;
-            Debug.Log($"{gameObject.name}: Rigidbody reset.");
         }
         else
         {
-            Debug.LogWarning($"{gameObject.name}: Rigidbody2D component not found.");
         }
 
         GetComponent<BaseFighter>().died = false;
 
-        Debug.Log($"{gameObject.name} respawned successfully at spawn index {spawnIndex}.");
     }
     
     private void SetSpriteRenderersVisible(bool visible)
@@ -225,7 +200,6 @@ public class FighterHealth : MonoBehaviour
 
     private IEnumerator BlinkSprite(float duration)
     {
-        Debug.Log($"{gameObject.name}: Starting blink animation for {duration} seconds.");
         SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
         float time = 0f;
         float blinkInterval = 0.1f;
@@ -253,7 +227,6 @@ public class FighterHealth : MonoBehaviour
             r.color = c;
         }
 
-        Debug.Log($"{gameObject.name}: Blink animation finished.");
     }
 
 
@@ -273,15 +246,12 @@ public class FighterHealth : MonoBehaviour
     public bool Die()
     {
         // TODO: Handle the death of the fighter, such as disabling controls, playing death animation, etc.
-        Debug.Log("Fighter has died. Game Over.");
 
         List<PlayerInput> playersAlive = persistentPlayerManager.getAlivePlayers();
-        Debug.Log($"Players alive: {playersAlive.Count}");
 
         // Check if there are still more than one fighter alive
         if (playersAlive.Count <= 1)
         {
-            Debug.Log("Game is finished, no more fighters left.");
 
             int winnerIndex = playersAlive.Count == 1 ? playersAlive[0].playerIndex : -1;
             persistentPlayerManager.getPlayers().ForEach(x => x.SwitchCurrentActionMap("UI"));
@@ -303,7 +273,6 @@ public class FighterHealth : MonoBehaviour
     {
         // Function to handle the finishing move to absolutely anihilate the fighter
         // TODO: Play the finishing animation
-        Debug.Log($"{killer.name} has finished {this.gameObject.name}!");
 
         // see if there are still more than one fighter alive
         return Die();

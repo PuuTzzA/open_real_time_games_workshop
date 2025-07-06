@@ -16,8 +16,8 @@ TagManager:
   - Fighter
   - Hurtbox
   - Hitbox
-  - 
-  - 
+  - Bomb
+  - Phasing
   - 
   - 
   - 
@@ -42,6 +42,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI2
+    uniqueID: 776698815
     locked: 0
   m_RenderingLayers:
   - Default

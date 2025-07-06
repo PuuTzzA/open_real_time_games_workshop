@@ -411,13 +411,13 @@
     border-right-width: 0;
     border-bottom-width: 0;
     border-left-width: 0;
-    background-color: rgba(12, 51, 122, 0.86);
+    background-color: rgb(86, 100, 128);
 }
 
 .pause_option_specific_screen {
     height: auto;
     width: auto;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     opacity: 1;
 }
 
@@ -429,4 +429,31 @@
     background-color: rgb(102, 156, 224);
     transition-property: background-color;
     transition-duration: 0.1s;
+}
+
+.pause_settings_tab_view {
+    height: 15%;
+    background-color: rgb(86, 100, 128);
+    border-left-color: rgb(237, 237, 238);
+    border-right-color: rgb(237, 237, 238);
+    border-top-color: rgb(237, 237, 238);
+    border-bottom-color: rgb(237, 237, 238);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 5px;
+    border-left-width: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-size: 100% 100%;
+    -unity-slice-scale: initial;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.action_option {
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
 }

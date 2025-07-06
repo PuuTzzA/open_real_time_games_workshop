@@ -1,40 +1,99 @@
-using System.Collections.Generic;
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using TMPro;
+using UnityEngine.UIElements;
+// ReSharper disable InconsistentNaming
 
 public class WinGameUI : MonoBehaviour
 {
-    [SerializeField] private Button mainMenuButton;
-    [SerializeField] private Button characterSelectionButton;
-
-    // Winner text tmpro
-    [SerializeField] private TextMeshProUGUI winnerText;
+    [SerializeField] private UIDocument menuDocument;
+    private VisualElement root;
+    [SerializeField] private InputActionAsset inputActions;
+    private void Awake()
+    {
+        root = menuDocument.rootVisualElement;
+        root.Query<Button>(className: "endscreen_option_button").
+            ForEach(option =>
+            {
+                option.RegisterCallback<ClickEvent>(OnOptionClicked);
+            });
+        
+    }
     
     public void ShowWinner(int winnerIndex)
     {
         this.gameObject.SetActive(true);
         FindAnyObjectByType<IngameUI>(FindObjectsInactive.Include).gameObject.SetActive(false);
-
+        var winnerText = "";
         if (winnerIndex < 0)
         {
-            winnerText.text = "No One Wins";
+            winnerText = "No Winner! What a Situation!";
         }
         else
         {
-            winnerText.text = "Player " + (winnerIndex + 1) + " Wins!";
+            winnerText = "PLAYER " + (winnerIndex + 1) + " Wins!";
         }
-        
-        characterSelectionButton.onClick.AddListener(() =>
+        root.Q<Label>("Winner_Nomination").text = winnerText;
+        root.Q<Button>("Rematch_Button").Focus();
+        inputActions.FindAction("Confirm").performed += OnConfirmPressed;
+    }
+
+    private void OnConfirmPressed(InputAction.CallbackContext obj)
+    {
+        ChooseOption(root.focusController.focusedElement as Button);
+    }
+
+    private void ShowWinner()
+    { 
+        var persistentPlayerManager
+            = FindFirstObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>();
+        var playersAlive = persistentPlayerManager.getAlivePlayers();
+        //Debug.Log($"Players alive: {playersAlive.Count}");
+        //Debug.Log("Game is finished, no more fighters left.");
+
+        var winnerIndex = playersAlive.Count == 1 ? playersAlive[0].playerIndex : -1;
+        persistentPlayerManager.getPlayers().ForEach(x => x.SwitchCurrentActionMap("UI"));
+        FindAnyObjectByType<IngameUI>(FindObjectsInactive.Include).gameObject.SetActive(false);
+        var winnerText = "";
+        if (winnerIndex < 0)
         {
-            Destroy(FindAnyObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>().gameObject);
-            SceneManager.LoadScene("CharacterSelection");
-        });
-        mainMenuButton.onClick.AddListener(() =>
+            winnerText = "No Winner! What a Situation!";
+        }
+        else
         {
-            Destroy(FindAnyObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>().gameObject);
-            SceneManager.LoadScene("Potap_UI");
-        });
+            winnerText = "PLAYER " + (winnerIndex + 1) + " Wins!";
+        }
+        root.Q<Label>("Winner_Nomination").text = winnerText;
+    }
+
+    private void OnOptionClicked(ClickEvent evt)
+    {
+       ChooseOption(evt.target as Button);
+    }
+
+    private void ChooseOption(Button option)
+    {
+        switch (option.name)
+        {
+            case "Rematch_Button":
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                break;
+            case "Character_Selection_Button":
+                SceneManager.LoadScene("Scenes/CharacterSelection");
+                break;
+            case "Return_To_Menu_Button":
+                SceneManager.LoadScene("Scenes/MainMenu");
+                break;
+            default:
+                // ReSharper disable once NotResolvedInText
+                throw new ArgumentOutOfRangeException("WTF IS HAPPENED?");
+                break;
+        }
+    }
+    private void OnDestroy()
+    {
+        inputActions.FindAction("Confirm").performed -= OnConfirmPressed;
     }
 }

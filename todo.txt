@@ -1,0 +1,13 @@
+knockback:
+    - knockback based on health
+    - knockback physics
+
+invincibilty flag
+ult:
+    - ult points
+
+ability restriction:
+    - no abilities after recovery
+    - ...
+
+animation when finished
