@@ -1320,12 +1320,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7203cab71c8809d4699762ca9a64a9eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonNormal: {fileID: 851442325}
-  buttonPressed: {fileID: 1625323556}
+  leverNormal: {fileID: 851442325}
+  leverSwitched: {fileID: 1625323556}
   waitTimeOffScreen: 5
   cooldownTime: 15
   dropDistance: 4
   moveSpeed: 2
+  platformCollider: {fileID: 981016220}
   bombPrefab: {fileID: 4238680019386585109, guid: f2e50d11d5429cc4ea524a5a4bbbc9c0, type: 3}
   bombSpawnPoint: {fileID: 7712734}
   isPressed: 0
@@ -1765,8 +1766,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 777d2de843b65ef49933e9aea78f59be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonNormal: {fileID: 2052003598}
-  buttonPressed: {fileID: 1467441386}
+  leverNormal: {fileID: 2052003598}
+  leverSwitched: {fileID: 1467441386}
   laser: {fileID: 1410388920}
   activeTime: 10
   cooldownTime: 15

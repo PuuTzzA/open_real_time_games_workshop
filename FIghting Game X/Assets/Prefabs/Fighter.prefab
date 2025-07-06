@@ -282,6 +282,7 @@ GameObject:
   - component: {fileID: 2494248781339541154}
   - component: {fileID: 4290826000508740263}
   - component: {fileID: 5143516375130627310}
+  - component: {fileID: 8741731321134584292}
   m_Layer: 6
   m_Name: Fighter
   m_TagString: Fighter
@@ -560,7 +561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 6480166069264356360}
-  collider: {fileID: 4792304623778786022}
+  collider: {fileID: 8741731321134584292}
   debug_text: {fileID: 7214940668690671881}
   fighter_input: {fileID: 8266158835667872492}
   state: {fileID: 1556262320957081972}
@@ -587,7 +588,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5433043207104148075}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -632,8 +633,8 @@ MonoBehaviour:
   animation_handler: {fileID: 5143516375130627310}
   sprite_transform: {fileID: 7005465704683545578}
   available_air_jumps: 0
-  remaining_flying_frames: 0
   stun_duration: 0
+  knockback_duration: 0
   animation_data: {fileID: 1333684296444455915}
   air_resistance: 0
 --- !u!114 &4859815249510380014
@@ -794,6 +795,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 4497933916085059567}
+--- !u!60 &8741731321134584292
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433043207104148075}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -0.07}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.96}
+      - {x: -0.24, y: 0.12}
+      - {x: -0.24, y: -0.12}
+      - {x: 0, y: -0.96}
+      - {x: 0.24, y: -0.12}
+      - {x: 0.24, y: 0.12}
+  m_UseDelaunayMesh: 0
 --- !u!1 &7739751719961853797
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,10 +877,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7739751719961853797}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6471333511865713166}
   m_Father: {fileID: 4219656904765551352}

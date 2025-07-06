@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class LaserButton : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer buttonNormal;
-    [SerializeField] private SpriteRenderer buttonPressed;
+    [SerializeField] private SpriteRenderer leverNormal;
+    [SerializeField] private SpriteRenderer leverSwitched;
     [SerializeField] private GameObject laser;
     [SerializeField] public float activeTime;
     [SerializeField] float cooldownTime;
@@ -17,13 +17,13 @@ public class LaserButton : MonoBehaviour
 
     private void PressButton() {
         isPressed = true;
-        buttonNormal.enabled = false;
-        buttonPressed.enabled = true;
+        leverNormal.enabled = false;
+        leverSwitched.enabled = true;
     }
     private void ButtonReady() {
         isPressed = false;
-        buttonNormal.enabled = true;
-        buttonPressed.enabled = false;
+        leverNormal.enabled = true;
+        leverSwitched.enabled = false;
     }
 
     public void TriggerLaser()
