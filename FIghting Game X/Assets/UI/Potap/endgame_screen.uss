@@ -4,6 +4,7 @@
 .screen {
     width: 100%;
     height: 100%;
+    background-image: url("project://database/Assets/Images/background/background_blue.png?fileID=2800000&guid=3d346040fd6f0f34bb1faad5a8a1d01c&type=3#background_blue");
 }
 
 .endgame_header {
@@ -38,7 +39,7 @@
 }
 
 .endscreen_body {
-    background-color: rgb(14, 35, 63);
+    background-color: rgba(0, 0, 0, 0.31);
     opacity: 1;
     width: 100%;
     height: 70%;
