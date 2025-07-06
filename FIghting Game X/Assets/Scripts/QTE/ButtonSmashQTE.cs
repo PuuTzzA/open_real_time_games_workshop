@@ -11,7 +11,7 @@ public class ButtonSmashQTE : MonoBehaviour, IQTE
     public Slider p1Slider;
     public Slider p2Slider;
     public GameObject finishHimImageObject;
-    
+
     [Header("Audio")]
     public AudioSource finishHimAudio;
 
@@ -34,10 +34,20 @@ public class ButtonSmashQTE : MonoBehaviour, IQTE
 
     private MinigameUI ui;
 
+
     public void Init(PlayerInput p1, PlayerInput p2, Action<QTEResult, QTEResult> callback)
     {
+
+
+
         ui = FindAnyObjectByType<MinigameUI>();
         onFinished = callback;
+
+
+        ui.icon1.style.unityBackgroundImageTintColor = p1.GetComponentInChildren<SpriteRenderer>().color;
+        ui.player1.style.unityBackgroundImageTintColor = p1.GetComponentInChildren<SpriteRenderer>().color;
+        ui.icon2.style.unityBackgroundImageTintColor = p1.GetComponentInChildren<SpriteRenderer>().color;
+        ui.player2.style.unityBackgroundImageTintColor = p1.GetComponentInChildren<SpriteRenderer>().color;
 
         p1Taps = 0;
         p2Taps = 0;
@@ -74,7 +84,7 @@ public class ButtonSmashQTE : MonoBehaviour, IQTE
         p2Taps += TAP_BOOST;
         p2Taps = Mathf.Clamp(p2Taps, 0f, 100f);
     }
-    
+
     private IEnumerator QTERoutine()
     {
         float timeLeft = duration;
