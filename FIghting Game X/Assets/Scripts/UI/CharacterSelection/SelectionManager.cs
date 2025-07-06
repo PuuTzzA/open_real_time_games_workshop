@@ -141,7 +141,6 @@ public class SelectionManager : MonoBehaviour
                     _state = SelectionState.ChoosingColor;
                     selectText.text = "Select your Color:"; // ✅ Correct now
                     ShowCharacter(selectedCharacter); // ✅ Refresh color
-                    Debug.Log("Now choosing color");
                 }
                 break;
 
@@ -154,7 +153,6 @@ public class SelectionManager : MonoBehaviour
                 _state = SelectionState.Ready;
                 selectText.text = "Ready!";
                 ApplyReadyState(true);
-                Debug.Log("Now ready");
                 break;
 
         }
@@ -281,7 +279,6 @@ public class SelectionManager : MonoBehaviour
 
     private void ApplyColorPreview()
     {
-        Debug.Log("" + characterDisplayImage);
         if (characterDisplayImage != null && selectedColorIndex >= 0)
         {
             characterDisplayImage.color = manager.availableColors[selectedColorIndex];

@@ -51,7 +51,6 @@ public class Bomb : MonoBehaviour
         
         
         originalLocalScale = transform.localScale;
-        Debug.Log($"{gameObject.name}: Bomb spawned and initialized.");
     }
 
     private IEnumerator setHoldingBomb()
@@ -61,7 +60,6 @@ public class Bomb : MonoBehaviour
         {
             holder.holdingBomb = null;
             holder = null;
-            Debug.Log($"{gameObject.name}: Bomb holder cleared after delay.");
         }
     }
 
@@ -73,7 +71,6 @@ public class Bomb : MonoBehaviour
             bool isHeld = holder.fighter_input.interact;
             if (!wasInteractHeld && isHeld)
             {
-                Debug.Log($"{gameObject.name}: Throw triggered by player {holder.name}.");
                 Throw();
             }
             else
@@ -195,7 +192,6 @@ public class Bomb : MonoBehaviour
             var bf = c.GetComponentInParent<BaseFighter>();
             if (bf != null)
             {
-                Debug.Log($"{name}: Damaging {bf.name}");
                 bf.take_damage(50, gameObject);  // or your damage logic
                 
                 // 💥 Add knockback
@@ -213,7 +209,6 @@ public class Bomb : MonoBehaviour
         {
             if (contact.normal.y > 0.7f)
             {
-                Debug.Log($"{name}: Landed on ground.");
                 exploding = true;
                 rb.linearVelocity = Vector2.zero;
                 rb.gravityScale = 0f;

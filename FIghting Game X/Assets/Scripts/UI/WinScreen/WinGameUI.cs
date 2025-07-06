@@ -50,8 +50,7 @@ public class WinGameUI : MonoBehaviour
         var persistentPlayerManager
             = FindFirstObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>();
         var playersAlive = persistentPlayerManager.getAlivePlayers();
-        //Debug.Log($"Players alive: {playersAlive.Count}");
-        //Debug.Log("Game is finished, no more fighters left.");
+
 
         var winnerIndex = playersAlive.Count == 1 ? playersAlive[0].playerIndex : -1;
         persistentPlayerManager.getPlayers().ForEach(x => x.SwitchCurrentActionMap("UI"));

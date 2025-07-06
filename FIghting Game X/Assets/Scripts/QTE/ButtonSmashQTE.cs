@@ -43,12 +43,6 @@ public class ButtonSmashQTE : MonoBehaviour, IQTE
         ui = FindAnyObjectByType<MinigameUI>();
         onFinished = callback;
 
-
-        ui.icon1.style.unityBackgroundImageTintColor = p1.GetComponentInChildren<SpriteRenderer>().color;
-        ui.player1.style.unityBackgroundImageTintColor = p1.GetComponentInChildren<SpriteRenderer>().color;
-        ui.icon2.style.unityBackgroundImageTintColor = p1.GetComponentInChildren<SpriteRenderer>().color;
-        ui.player2.style.unityBackgroundImageTintColor = p1.GetComponentInChildren<SpriteRenderer>().color;
-
         p1Taps = 0;
         p2Taps = 0;
 
@@ -56,6 +50,7 @@ public class ButtonSmashQTE : MonoBehaviour, IQTE
         p1Slider.maxValue = 100;
         p2Slider.minValue = 0;
         p2Slider.maxValue = 100;
+
 
         // Switch to QTE map
         p1.SwitchCurrentActionMap("QTE");
