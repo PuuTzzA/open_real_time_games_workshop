@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
+using UnityEngine.InputSystem;
 
 public class Bomb : MonoBehaviour
 {
+    [SerializeField] private TextMeshPro activatableText;
+
     private Rigidbody2D rb;
     private Collider2D col;
 
@@ -48,6 +52,7 @@ public class Bomb : MonoBehaviour
         animator = GetComponent<Animator>();
 
         originalLocalScale = transform.localScale;
+        activatableText.enabled = false;
     }
 
     private IEnumerator setHoldingBomb()
@@ -62,6 +67,11 @@ public class Bomb : MonoBehaviour
 
     void Update()
     {
+        if (pickedUp)
+        {
+            TriggerDisableInteractionText();
+        }
+
         if (pickedUp && holder != null && !thrown)
         {
             bool isHeld = holder.fighter_input.interact;
@@ -217,9 +227,6 @@ public class Bomb : MonoBehaviour
         );
     }
 
-
-
-
     private void StickToTarget(Transform target, bool isPlayer)
     {
         animator.SetTrigger("cd");
@@ -289,10 +296,16 @@ public class Bomb : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!thrown) return;
-
         BaseFighter player = other.GetComponentInParent<BaseFighter>();
+
         bool isPlayer = (player != null);
+
+        if (isPlayer && !thrown)
+        {
+            TriggerInteractionText(player);
+        }
+
+        if (!thrown) return;
 
         if (isPlayer && player == holder && Time.time - throwTime < 0.2f)
             return;
@@ -307,6 +320,15 @@ public class Bomb : MonoBehaviour
             {
                 StickToTarget(other.transform, false);
             }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        BaseFighter player = other.GetComponentInParent<BaseFighter>();
+        if (player != null)
+        {
+            TriggerDisableInteractionText();
         }
     }
 
@@ -328,4 +350,20 @@ public class Bomb : MonoBehaviour
         transform.position = worldPosition;
         transform.rotation = worldRotation;
     }
+
+    public void TriggerInteractionText(BaseFighter fighter)
+    {
+        PlayerInput pI = fighter.gameObject.GetComponent<PlayerInput>();
+        bool isKeyboard = pI.currentControlScheme == "Keyboard&Mouse";
+        activatableText.text = isKeyboard ? pI.actions["Interact"].GetBindingDisplayString().ToLower() : pI.actions["Interact"].GetBindingDisplayString(group: "Gamepad").ToLower();
+        activatableText.enabled = true;
+        Debug.Log("Triggering interaction text: ");
+    }
+
+    public void TriggerDisableInteractionText()
+    {
+        activatableText.enabled = false;
+        Debug.Log("disable interaction text: ");
+    }
+
 }
