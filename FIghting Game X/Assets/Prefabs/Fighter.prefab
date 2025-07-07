@@ -628,7 +628,9 @@ PolygonCollider2D:
     - - {x: 0, y: 0.96}
       - {x: -0.24, y: 0.12}
       - {x: -0.24, y: -0.12}
+      - {x: -0.06, y: -0.93}
       - {x: 0, y: -0.96}
+      - {x: 0.06, y: -0.93}
       - {x: 0.24, y: -0.12}
       - {x: 0.24, y: 0.12}
   m_UseDelaunayMesh: 0
@@ -727,7 +729,7 @@ MonoBehaviour:
   IconWithoutBackground: {fileID: 635888242749862385, guid: 090e0e198408b5c4fac913936aa49ee0, type: 3}
   maxLives: 3
   qteUsed: 0
-  maxHealth: 10
+  maxHealth: 200
 --- !u!114 &2494248781339541154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1156,6 +1158,10 @@ PrefabInstance:
     - target: {fileID: 7084995748452417644, guid: 32b89a66c46f1994384a7dead92476c6, type: 3}
       propertyPath: m_Name
       value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7084995748452417644, guid: 32b89a66c46f1994384a7dead92476c6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
