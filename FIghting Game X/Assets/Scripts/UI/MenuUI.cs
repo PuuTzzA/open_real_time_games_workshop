@@ -4,43 +4,39 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
-// ReSharper disable InconsistentNaming
 
 public class MenuUI : MonoBehaviour
 {
-    [SerializeField] UIDocument menuDocument;
-    [SerializeField] SettingsTabUI settingsTabUI;
-    private VisualElement root;
+    private List<PlayerInput> otherPlayers = new();
+
+    [SerializeField] private UIDocument menuDocument;
+    [SerializeField] private SettingsTabUI settingsTabUI;
+    public PlayerInput playerInput;
     [SerializeField] private bool isMainMenu = true;
-    
-   
-    #region menu options
+
+    private VisualElement root;
 
     private List<Button> menuOptions;
-    #endregion
-    
-    #region screens
+    private List<Button> currentOptions;
+    private VisualElement menuScreen;
     private VisualElement sidePlaceholder;
     private VisualElement exitScreen;
     private VisualElement playScreen;
     private VisualElement infoScreen;
     private VisualElement settingsScreen;
-    #endregion
-    
-    #region universal elements
+    private VisualElement currentSideScreen;
+
     private Button backButton;
     private Button confirmButton;
-    [SerializeField] private InputActionAsset inputActions;
-    
+
     private InputAction confirmAction;
     private InputAction cancelAction;
-    private List<Button> currentOptions;
-    private VisualElement menuScreen;
-    private VisualElement currentSideScreen;
-    #endregion
 
     private Focusable focusedElement;
     private static bool gamePaused;
+
+    private const string UIActionMap = "UI";
+    private const string PlayerActionMap = "Player";
 
     private enum MenuLevel
     {
@@ -48,17 +44,15 @@ public class MenuUI : MonoBehaviour
         option_chosen,
         option_specific
     }
+
     private MenuLevel menuLevel = MenuLevel.menu;
 
-    public bool GetPauseStatus()
-    {
-        return gamePaused;
-    }
-    void Awake()
+    public bool GetPauseStatus() => gamePaused;
+
+    private void Awake()
     {
         menuLevel = MenuLevel.menu;
         root = menuDocument.rootVisualElement;
-        #region screens initilaization
 
         menuScreen = root.Q<VisualElement>("Screen");
         sidePlaceholder = root.Q<VisualElement>("Default_side_placeholder");
@@ -67,41 +61,38 @@ public class MenuUI : MonoBehaviour
         infoScreen = root.Q<VisualElement>("Info_option_screen");
         settingsScreen = root.Q<VisualElement>("Settings_option_screen");
         currentSideScreen = sidePlaceholder;
-        #endregion
-        #region menu options intialization
+
         root.Q<VisualElement>("Play_Option");
         root.Q<VisualElement>("Settings_Option");
         root.Q<VisualElement>("Info_Option");
         root.Q<VisualElement>("Exit_Option");
         menuOptions = root.Query<Button>(className: "menu_option_button").ToList();
-        
-        
+
         currentOptions = menuOptions;
         foreach (Button option in menuOptions)
         {
             option.RegisterCallback<ClickEvent>(OnOptionClicked);
             option.RegisterCallback<FocusEvent>(evt => focusedElement = evt.target as Focusable);
         }
-        #endregion
-        #region universal elements initialization
+
         backButton = root.Q<Button>("Cancel_Option");
         confirmButton = root.Q<Button>("Confirm_Option");
-        var gameplayActions = inputActions.FindActionMap("UI");
-        confirmAction = gameplayActions.FindAction("Confirm");
-        cancelAction = gameplayActions.FindAction("Cancel");
-        
-        #endregion
+
+        var uiActions = playerInput.actions.FindActionMap(UIActionMap);
+        confirmAction = uiActions.FindAction("Confirm");
+        cancelAction = uiActions.FindAction("Cancel");
+
         InitializeStyle();
-        focusedElement.Focus();
+        focusedElement?.Focus();
     }
 
     private void InitializeStyle()
     {
-        
         var playButton = root.Q<VisualElement>("Play_Option");
         var continueButton = root.Q<VisualElement>("Continue_Option");
         var oldButton = isMainMenu ? continueButton : playButton;
         var newButton = isMainMenu ? playButton : continueButton;
+
         oldButton.SetEnabled(false);
         oldButton.style.display = DisplayStyle.None;
         oldButton.focusable = false;
@@ -109,58 +100,58 @@ public class MenuUI : MonoBehaviour
         newButton.style.display = DisplayStyle.Flex;
         newButton.focusable = true;
         focusedElement = newButton;
-        string[] mainMenuStyle = 
-            { "pause_screen", "pause_header", "pause_body", "pause_option_selector", "pause_option_specific_screen", "pause_settings_tab_view", "pause_action_keybinding"};
-        string[] pauseStyle = 
-            {"menu_screen", "menu_header", "menu_body", "option_selector", "option_specific_screen", "settings_tab_view", "action_keybinding"};
+
+        string[] mainMenuStyle = { "pause_screen", "pause_header", "pause_body", "pause_option_selector", "pause_option_specific_screen", "pause_settings_tab_view", "pause_action_keybinding" };
+        string[] pauseStyle = { "menu_screen", "menu_header", "menu_body", "option_selector", "option_specific_screen", "settings_tab_view", "action_keybinding" };
+
         var oldStyles = isMainMenu ? mainMenuStyle : pauseStyle;
         var newStyles = isMainMenu ? pauseStyle : mainMenuStyle;
-        for (var i = 0; i < oldStyles.Length; i++)
+
+        for (int i = 0; i < oldStyles.Length; i++)
         {
-            var styleIndex = i;
-            var visualElements = root.Query<VisualElement>(className: $"{oldStyles[styleIndex]}");
-            visualElements.ForEach(visualElement => visualElement.RemoveFromClassList($"{oldStyles[styleIndex]}"));
-            visualElements.ForEach(visualElement => visualElement.AddToClassList($"{newStyles[styleIndex]}"));
+            var visualElements = root.Query<VisualElement>(className: oldStyles[i]);
+            visualElements.ForEach(el =>
+            {
+                el.RemoveFromClassList(oldStyles[i]);
+                el.AddToClassList(newStyles[i]);
+            });
         }
 
-        root.Q<Label>(className: $"{newStyles[1]}").text = isMainMenu ? "FIGHTING GAME X" : "PAUSE MENU";
+        root.Q<Label>(className: newStyles[1]).text = isMainMenu ? "FIGHTING GAME X" : "PAUSE MENU";
 
         if (!isMainMenu)
         {
-            inputActions.FindAction("Pause Game").performed += OnGamePaused;
+            playerInput.actions.FindAction("Pause Game").performed += OnGamePaused;
             menuScreen.SetEnabled(false);
             menuScreen.style.display = DisplayStyle.None;
         }
         else
         {
-            inputActions.FindAction("Pause Game").performed -= OnGamePaused;
             confirmAction.performed += OnConfirmPressed;
             cancelAction.performed += OnBackPressed;
         }
-
-        
-
     }
-
- 
 
     private void OnGamePaused(InputAction.CallbackContext context)
     {
-        PauseGame();
-    }
-
-    private void PauseGame()
-    {
+        Debug.Log("pause now");
         if (!gamePaused)
         {
-            
             gamePaused = true;
             PauseTime();
             menuScreen.SetEnabled(true);
             menuScreen.style.display = DisplayStyle.Flex;
             confirmAction.performed += OnConfirmPressed;
             cancelAction.performed += OnBackPressed;
-            focusedElement.Focus();
+            focusedElement?.Focus();
+
+            // Switch to UI input
+            if (playerInput.currentActionMap.name != UIActionMap)
+                playerInput.SwitchCurrentActionMap(UIActionMap);
+
+            // 👇 Disable all other players
+            Debug.Log("disabled");
+            DisableOtherPlayers();
         }
         else
         {
@@ -168,24 +159,28 @@ public class MenuUI : MonoBehaviour
             {
                 Back();
             }
-            
+
             menuScreen.SetEnabled(false);
             menuScreen.style.display = DisplayStyle.None;
-            CleanTheShit();
+            CleanUpActions();
             gamePaused = false;
             focusedElement = root.Q<VisualElement>("Continue_Option");
             UnpauseTime();
+
+            // Switch back to Player input
+            if (playerInput.currentActionMap.name != PlayerActionMap)
+                playerInput.SwitchCurrentActionMap(PlayerActionMap);
+
+            // 👇 Re-enable all other players
+            Debug.Log("reenabled");
+            ReenableOtherPlayers();
         }
-    }
-    private void PauseTime()
-    {
-        Time.timeScale = 0;
+
     }
 
-    private void UnpauseTime()
-    {
-        Time.timeScale = 1;
-    }
+    private void PauseTime() => Time.timeScale = 0;
+    private void UnpauseTime() => Time.timeScale = 1;
+
     private void OnOptionClicked(ClickEvent evt)
     {
         if (evt.target is not Button option) return;
@@ -195,8 +190,8 @@ public class MenuUI : MonoBehaviour
     private void ChooseOption(Button option)
     {
         menuLevel = MenuLevel.option_chosen;
-        
         Button firstOption = null;
+
         switch (option.name)
         {
             case "Play_Option":
@@ -206,12 +201,12 @@ public class MenuUI : MonoBehaviour
             case "Continue_Option":
                 if (!gamePaused) return;
                 Back();
-                PauseGame();
+                OnGamePaused(new InputAction.CallbackContext());
                 return;
             case "Settings_Option":
                 currentSideScreen = settingsScreen;
                 firstOption = settingsTabUI.FirstSetting();
-                root.Q<VisualElement>("Footer").focusable = true; 
+                root.Q<VisualElement>("Footer").focusable = true;
                 break;
             case "Info_Option":
                 currentSideScreen = infoScreen;
@@ -221,165 +216,153 @@ public class MenuUI : MonoBehaviour
                 if (!isMainMenu)
                 {
                     firstOption = root.Q<Button>("Exit_To_Menu_Option");
-                    var exitButton1 = root.Q<VisualElement>("Exit_To_Menu_Option");
-                    var exitButton2 = root.Q<VisualElement>("Exit_Game_Option");
-                    exitButton1.SetEnabled(true);
-                    exitButton1.style.display = DisplayStyle.Flex;
-                    exitButton2.SetEnabled(true);
-                    exitButton2.style.display = DisplayStyle.Flex;
-                    var exitText = root.Q<Label>("Exit_Message");
-                    exitText.SetEnabled(false);
-                    exitText.style.display = DisplayStyle.None;
+                    root.Q<VisualElement>("Exit_To_Menu_Option").style.display = DisplayStyle.Flex;
+                    root.Q<VisualElement>("Exit_Game_Option").style.display = DisplayStyle.Flex;
+                    root.Q<Label>("Exit_Message").style.display = DisplayStyle.None;
                 }
                 else
                 {
                     firstOption = root.Q<Button>("Exit_To_Menu_Option");
-                    var exitButton1 = root.Q<VisualElement>("Exit_To_Menu_Option");
-                    var exitButton2 = root.Q<VisualElement>("Exit_Game_Option");
-                    exitButton1.SetEnabled(false);
-                    exitButton1.style.display = DisplayStyle.None;
-                    exitButton2.SetEnabled(false);
-                    exitButton2.style.display = DisplayStyle.None;
-                    var exitText = root.Q<Label>("Exit_Message");
-                    exitText.SetEnabled(true);
-                    exitText.style.display = DisplayStyle.Flex;
-                    confirmButton.SetEnabled(true);
+                    root.Q<VisualElement>("Exit_To_Menu_Option").style.display = DisplayStyle.None;
+                    root.Q<VisualElement>("Exit_Game_Option").style.display = DisplayStyle.None;
+                    root.Q<Label>("Exit_Message").style.display = DisplayStyle.Flex;
                     confirmButton.style.display = DisplayStyle.Flex;
+                    confirmButton.SetEnabled(true);
                 }
                 break;
-            default:
-                throw new ArgumentOutOfRangeException("Option not found");
-                    
         }
+
         option.AddToClassList("option_button_chosen");
+
         foreach (Button opt in currentOptions)
         {
             if (option != opt) opt.SetEnabled(false);
-            option.focusable = false;
+            opt.focusable = false;
         }
+
         OpenOptionScreen();
-        backButton.SetEnabled(true);
         backButton.style.display = DisplayStyle.Flex;
+        backButton.SetEnabled(true);
         firstOption?.Focus();
     }
-    
-    private void OnBackPressed(InputAction.CallbackContext obj)
-    {
-        Back();
-    }
+
+    private void OnBackPressed(InputAction.CallbackContext ctx) => Back();
+
     private void Back()
     {
-        switch (menuLevel)
-        {
-            case MenuLevel.menu:
-                return;
-            case MenuLevel.option_chosen:
-                menuLevel = MenuLevel.menu;
-                root.Q<VisualElement>("Footer").focusable = false; 
-                break;
-            case MenuLevel.option_specific:
-                menuLevel = MenuLevel.option_chosen;
-                break;
-            default:
-                throw new ArgumentOutOfRangeException();
-        }
+        if (menuLevel == MenuLevel.menu) return;
+
+        menuLevel = (MenuLevel)Math.Max(0, (int)menuLevel - 1);
+        root.Q<VisualElement>("Footer").focusable = false;
+
         foreach (var option in currentOptions)
         {
             option.SetEnabled(true);
             option.focusable = true;
-            if (option.ClassListContains("option_button_chosen"))
-            {
-                option.RemoveFromClassList("option_button_chosen");
-            }
-            backButton.style.display = DisplayStyle.None;
-            backButton.SetEnabled(false);
-            confirmButton.style.display = DisplayStyle.None;
-            confirmButton.SetEnabled(false);
-            CloseOptionScreen();
+            option.RemoveFromClassList("option_button_chosen");
         }
-        focusedElement.Focus();
+
+        backButton.style.display = DisplayStyle.None;
+        backButton.SetEnabled(false);
+        confirmButton.style.display = DisplayStyle.None;
+        confirmButton.SetEnabled(false);
+        CloseOptionScreen();
+        focusedElement?.Focus();
     }
 
-    private void OnConfirmPressed(InputAction.CallbackContext context)
-    {
-        Confirm();
-    }
+    private void OnConfirmPressed(InputAction.CallbackContext ctx) => Confirm();
+
     private void Confirm()
     {
-        if (!this.gameObject.activeSelf) return;
-        if (menuLevel == MenuLevel.menu)
-        {
-            if (focusedElement is Button option)
-            {
-                ChooseOption(option);
-            }
+        if (!gameObject.activeSelf) return;
 
+        if (menuLevel == MenuLevel.menu && focusedElement is Button button)
+        {
+            ChooseOption(button);
         }
         else if (menuLevel == MenuLevel.option_chosen)
         {
-            if (root.panel.focusController.focusedElement is not Button option) return;
-            if (option.Equals(root.Q<VisualElement>("PvP_Option")))
-            {
+            var option = root.panel.focusController.focusedElement as Button;
+            if (option == null) return;
+
+            if (option.name == "PvP_Option")
                 SceneManager.LoadScene("Scenes/CharacterSelection");
-            }
-            else if (option.Equals(root.Q<VisualElement>("Exit_Option")))
-            {
+            else if (option.name == "Exit_Option")
                 Application.Quit();
-            }
-            else if (option.Equals(root.Q<VisualElement>("Exit_To_Menu_Option")))
-            {
+            else if (option.name == "Exit_To_Menu_Option")
                 SceneManager.LoadScene("Scenes/MainMenu");
-            }
-            else if (option.Equals(root.Q<VisualElement>("Exit_Game_Option")))
+            else if (option.name == "Exit_Game_Option")
             {
-                var exitButton1 = root.Q<VisualElement>("Exit_To_Menu_Option");
-                var exitButton2 = root.Q<VisualElement>("Exit_Game_Option");
-                exitButton1.SetEnabled(false);
-                exitButton1.style.display = DisplayStyle.None;
-                exitButton2.SetEnabled(false);
-                exitButton2.style.display = DisplayStyle.None;
-                var exitText = root.Q<Label>("Exit_Message");
-                exitText.SetEnabled(true);
-                exitText.style.display = DisplayStyle.Flex;
+                root.Q<VisualElement>("Exit_To_Menu_Option").style.display = DisplayStyle.None;
+                root.Q<VisualElement>("Exit_Game_Option").style.display = DisplayStyle.None;
+                root.Q<Label>("Exit_Message").style.display = DisplayStyle.Flex;
                 root.Q<VisualElement>("Exit_Option").Focus();
-                confirmButton.SetEnabled(true);
                 confirmButton.style.display = DisplayStyle.Flex;
+                confirmButton.SetEnabled(true);
             }
-            
         }
     }
-    private void OpenOptionScreen() {
+
+    private void OpenOptionScreen()
+    {
         if (currentSideScreen == sidePlaceholder) return;
         DisablePlaceholder();
-        currentSideScreen.SetEnabled(true);
         currentSideScreen.style.display = DisplayStyle.Flex;
+        currentSideScreen.SetEnabled(true);
     }
-    private void CloseOptionScreen() {
+
+    private void CloseOptionScreen()
+    {
         EnablePlaceholder();
-        currentSideScreen.SetEnabled(false);
         currentSideScreen.style.display = DisplayStyle.None;
+        currentSideScreen.SetEnabled(false);
     }
-    private void DisablePlaceholder() //disable side placeholder
+
+    private void DisablePlaceholder()
     {
         sidePlaceholder.style.display = DisplayStyle.None;
         sidePlaceholder.SetEnabled(false);
     }
-    private void EnablePlaceholder() //enable side placeholder
+
+    private void EnablePlaceholder()
     {
-        sidePlaceholder.SetEnabled(true);
         sidePlaceholder.style.display = DisplayStyle.Flex;
+        sidePlaceholder.SetEnabled(true);
     }
 
-    private void CleanTheShit()
+    private void CleanUpActions()
     {
         confirmAction.performed -= OnConfirmPressed;
         cancelAction.performed -= OnBackPressed;
-        
     }
 
     private void OnDestroy()
     {
-        CleanTheShit();
+        CleanUpActions();
+
+        if (!isMainMenu)
+            playerInput.actions.FindAction("Pause Game").performed -= OnGamePaused;
     }
-    
+
+    private void DisableOtherPlayers()
+    {
+        otherPlayers.Clear();
+        foreach (var pi in FindObjectsOfType<PlayerInput>())
+        {
+            if (pi != playerInput)
+            {
+                pi.DeactivateInput();
+                otherPlayers.Add(pi);
+            }
+        }
+    }
+
+    private void ReenableOtherPlayers()
+    {
+        foreach (var pi in otherPlayers)
+        {
+            pi.ActivateInput();
+        }
+        otherPlayers.Clear();
+    }
 }

@@ -171,6 +171,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause Game"",
+                    ""type"": ""Button"",
+                    ""id"": ""684eb9e7-6dd6-4aa3-87a0-b25124e77a22"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -424,6 +433,28 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
                     ""action"": ""test-minigame"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c26aaa7f-cf83-41ee-b7be-5ab60472db9e"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Pause Game"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d46fb7d8-d36d-4dfa-a6bd-1fd203407939"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Pause Game"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1099,6 +1130,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Player_block = m_Player.FindAction("block", throwIfNotFound: true);
         m_Player_ult = m_Player.FindAction("ult", throwIfNotFound: true);
         m_Player_testminigame = m_Player.FindAction("test-minigame", throwIfNotFound: true);
+        m_Player_PauseGame = m_Player.FindAction("Pause Game", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1207,6 +1239,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_block;
     private readonly InputAction m_Player_ult;
     private readonly InputAction m_Player_testminigame;
+    private readonly InputAction m_Player_PauseGame;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -1254,6 +1287,10 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/testminigame".
         /// </summary>
         public InputAction @testminigame => m_Wrapper.m_Player_testminigame;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/PauseGame".
+        /// </summary>
+        public InputAction @PauseGame => m_Wrapper.m_Player_PauseGame;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1307,6 +1344,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @testminigame.started += instance.OnTestminigame;
             @testminigame.performed += instance.OnTestminigame;
             @testminigame.canceled += instance.OnTestminigame;
+            @PauseGame.started += instance.OnPauseGame;
+            @PauseGame.performed += instance.OnPauseGame;
+            @PauseGame.canceled += instance.OnPauseGame;
         }
 
         /// <summary>
@@ -1345,6 +1385,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @testminigame.started -= instance.OnTestminigame;
             @testminigame.performed -= instance.OnTestminigame;
             @testminigame.canceled -= instance.OnTestminigame;
+            @PauseGame.started -= instance.OnPauseGame;
+            @PauseGame.performed -= instance.OnPauseGame;
+            @PauseGame.canceled -= instance.OnPauseGame;
         }
 
         /// <summary>
@@ -1787,6 +1830,13 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnTestminigame(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Pause Game" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnPauseGame(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.
