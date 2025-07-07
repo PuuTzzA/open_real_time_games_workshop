@@ -287,7 +287,7 @@ public class Bomb : MonoBehaviour
             {
                 bf.take_damage(50, gameObject);
                 Vector2 knockDir = (bf.transform.position - transform.position).normalized;
-                bf.knockback(knockDir * knockbackForce);
+                bf.knockback(knockDir * knockbackForce, 6);
             }
         }
 

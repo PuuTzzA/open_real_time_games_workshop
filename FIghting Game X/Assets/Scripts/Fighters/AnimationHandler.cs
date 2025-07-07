@@ -35,7 +35,7 @@ public class AnimationHandler : MonoBehaviour
         new ("jab_side", AnimationEndAction.Signal),
         new ("jab_down", AnimationEndAction.Signal),
         new ("falling", AnimationEndAction.Loop, true),
-        new ("ult", AnimationEndAction.Signal),
+        new ("ultimate", AnimationEndAction.Signal),
         new ("emote", AnimationEndAction.Signal),
         new ("block_up", AnimationEndAction.Wait),
         new ("block_side", AnimationEndAction.Wait),
@@ -87,6 +87,7 @@ public class AnimationHandler : MonoBehaviour
         _current_frame_count = Mathf.RoundToInt(clip.frameRate * clip.length);
         _frame_index = 0;
         _finished = false;
+        _frozen = false;
     }
 
     public void show()
