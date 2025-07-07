@@ -307,6 +307,11 @@ public class Bomb : MonoBehaviour
 
         if (!thrown) return;
 
+        if (other.GetComponent<Bomb>())
+        {
+            return;
+        }
+
         if (isPlayer && player == holder && Time.time - throwTime < 0.2f)
             return;
 
