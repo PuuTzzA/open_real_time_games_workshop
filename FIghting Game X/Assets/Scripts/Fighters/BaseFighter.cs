@@ -42,6 +42,12 @@ public class BaseFighter : MonoBehaviour
     0.9f, 0.8f, 0.7f, 0.6f, 0.5f, 0.4f, 0.3f,
     0.2f, 0.1f, 0.05f, 0.0f, 0.0f
 };
+    private readonly float[] short_dash_curve = new float[] {
+    1f, 1f, 1f, 1f, 1f, 0.9f, 0.8f, 0.6f,
+    0.5f, 0.4f, 0.3f, 0.2f, 0.1f, 0.05f, 0.0f, 0.0f,
+    0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f,
+    0.0f
+};
 
     private void Awake()
     {
@@ -68,8 +74,10 @@ public class BaseFighter : MonoBehaviour
         frame_callbacks[(int)FighterAction.Stunned] = stun_tick;
         frame_callbacks[(int)FighterAction.KnockedBackLight] = knockback_light_tick;
         frame_callbacks[(int)FighterAction.KnockedBackHeavy] = knockback_heavy_tick;
+        frame_callbacks[(int)FighterAction.HeavySide] = heavy_side_tick;
 
         frame_callbacks[(int)FighterAction.Crouch] = crouch_tick;
+
 
         state.start_action(FighterAction.Idle);
 
@@ -324,6 +332,18 @@ public class BaseFighter : MonoBehaviour
             }
         }
     }
+    public void heavy_side_tick(int index)
+    {
+        freezeXY(false, true);
+        if (index < 26 || index > 50) return; // only active during frames 26–50
+
+        int dash_index = index - 26;
+        if (dash_index >= short_dash_curve.Length) return;
+
+        float speed = short_dash_curve[dash_index] * state.base_stats.dash_factor * state.base_stats.ground_speed * state.get_facing_float();
+        rigidbody.linearVelocityX = speed;
+    }
+
 
     public void stun_tick(int index)
     {
