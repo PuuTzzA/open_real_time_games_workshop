@@ -222,17 +222,24 @@ public class BaseFighter : MonoBehaviour
         rigidbody.linearVelocityY = state.get_jump_strength();
     }
 
+    public void knockback_light(Vector2 direction)
+    {
+        player_sounds.PlayJabHit();
+        state.start_action(FighterAction.KnockedBackLight);
+        rigidbody.linearVelocity = direction;
+    }
+
     public void knockback_heavy(Vector2 direction, int duration)
     {
         player_sounds.PlayJabHit();
         state.knockback_duration = duration;
-        state.start_action(FighterAction.KnockedBackLight);
+        state.start_action(FighterAction.KnockedBackHeavy);
         rigidbody.linearVelocity = direction;
     }
 
     public void stun(int duration)
     {
-        state.stun_duration = duration;
+        state.stun_duration = Math.Max(duration, state.stun_duration);
         state.start_action(FighterAction.Stunned);
     }
 
