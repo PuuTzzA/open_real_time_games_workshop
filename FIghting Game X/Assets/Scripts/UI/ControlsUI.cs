@@ -1,209 +1,180 @@
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UI;
 using UnityEngine.UIElements;
 using Button = UnityEngine.UIElements.Button;
 
 public class ControlsUI : MonoBehaviour
 {
-    [SerializeField] private InputActionAsset inputActions;
+    [SerializeField] private PlayerInput playerInput;
+    [SerializeField] private UIDocument menuDocument;
+
     private readonly string[] actionNames = { "jab", "heavy", "ult", "block", "interact", "jump", "dash" };
-    private Dictionary<string, Button> actionKeyBingings= new Dictionary<string, Button>();
-    [SerializeField] UIDocument menuDocument;
     private VisualElement root;
-    private VisualElement focusEntrance;
-    private VisualElement focusExit;
-    private VisualElement controlsTabHeader;
-    private bool usingGamepad = false;
     private InputActionMap actions;
 
     private void Awake()
     {
-        LoadBindings();
         root = menuDocument.rootVisualElement;
-        controlsTabHeader = root.Q<VisualElement>("Controls_Tab_Header");
-        actions = inputActions.FindActionMap("Player");
-        focusEntrance = root.Q<VisualElement>(className: "focus_entrance");
-        focusEntrance.RegisterCallback<FocusEvent>(OnEntranceFocused);
-        focusExit = root.Q<VisualElement>(className: "focus_exit");
-        focusExit.RegisterCallback<FocusEvent>(OnExitFocused);
+        actions = playerInput.actions.FindActionMap("Player");
+
+        // Register pointer and navigation event filtering
+        root.RegisterCallback<PointerDownEvent>(OnPointerDown, TrickleDown.TrickleDown);
+        root.RegisterCallback<NavigationSubmitEvent>(OnNavigationSubmit, TrickleDown.TrickleDown);
+        root.RegisterCallback<NavigationMoveEvent>(OnNavigationMove, TrickleDown.TrickleDown);
+
+        // Setup UI buttons and bindings
         foreach (var actionName in actionNames)
         {
-            
             var button = root.Q<Button>(actionName + "_Keybinding");
             var changeButton = root.Q<Button>(actionName + "_Change_Button");
-            var allActions = inputActions.FindActionMap("UI").actions.ToList();
-            allActions.AddRange(actions.actions);
-            allActions.Remove(inputActions.FindAction("Point"));
-            foreach (var a in allActions)
-            {
-                a.performed += OnInputDeviceChanged;
-            }
             var action = actions.FindAction(actionName);
-            if (action == null)
-            {
-                continue;
-            }
-            if (button == null)
-            {
-                continue;
-            }
-            if (changeButton == null)
-            {
-                continue;
-            }
 
-            actionKeyBingings[actionName] = button;
+            if (button == null || changeButton == null || action == null)
+                continue;
 
             button.text = GetBindingDisplayString(action);
-            
-            changeButton.clicked += () => StartRebind(action);
+
+            changeButton.clicked += () =>
+            {
+                if (PlayerOwnsInput())
+                    StartRebind(action);
+            };
         }
 
-        var restoreDefaultsButton = root.Q<VisualElement>("Restore_Defaults_Button") as Button;
-        restoreDefaultsButton.clicked += ResetToDefaults;
-    }
-    
-
-
-
-    private void OnInputDeviceChanged(InputAction.CallbackContext context)
-    {
-
-        if (!this.gameObject.activeSelf) return;
-        bool isGamepadInput = context.control.device is Gamepad;
-
-
-        if (isGamepadInput == usingGamepad) return;
-        usingGamepad = isGamepadInput;
-        foreach (var actionName in actionKeyBingings.Keys)
+        root.Q<Button>("Restore_Defaults_Button").clicked += () =>
         {
-            actionKeyBingings[actionName].text = GetBindingDisplayString(actions.FindAction(actionName));
+            if (PlayerOwnsInput())
+                ResetToDefaults();
+        };
+    }
+
+    private void OnPointerDown(PointerDownEvent evt)
+    {
+        // Get device from pointer ID or pointer type
+        InputDevice device = null;
+
+        if (evt.pointerId == PointerId.mousePointerId)
+            device = Mouse.current;
+        else if (evt.pointerId >= PointerId.touchPointerIdBase && evt.pointerId < PointerId.touchPointerIdBase + 10)
+            device = Touchscreen.current;
+        else if (evt.pointerType == UnityEngine.UIElements.PointerType.pen)
+            device = Pen.current;
+
+        if (device == null || !IsFromThisPlayer(device))
+        {
+            evt.StopImmediatePropagation();
         }
-
-        var cancelButton = root.Q<VisualElement>("Cancel_Button_Name") as Button;
-        cancelButton.text = GetBindingDisplayString(inputActions.FindAction("Cancel"));
-        var confirmButton = root.Q <VisualElement>("Confirm_Button_Name") as Button;
-        confirmButton.text = GetBindingDisplayString(inputActions.FindAction("Confirm"));
-
     }
 
-
-
-
-    private void OnEntranceFocused(FocusEvent evt)
+    private void OnNavigationSubmit(NavigationSubmitEvent evt)
     {
-        root.Q<VisualElement>(className: "action_change_button").Focus();
+        if (!PlayerOwnsInput())
+            evt.StopImmediatePropagation();
     }
 
-    private void OnExitFocused(FocusEvent evt)
+    private void OnNavigationMove(NavigationMoveEvent evt)
     {
-        if (evt.relatedTarget is not VisualElement element)
-            return;
-        if (evt.relatedTarget.tabIndex == 0)
-        {
-            controlsTabHeader.Focus();
-        } else root.Q<VisualElement>(className: "action_change_button").Focus();
+        if (!PlayerOwnsInput())
+            evt.StopImmediatePropagation();
     }
 
-    string GetBindingDisplayString(InputAction action)
+    private bool IsFromThisPlayer(InputDevice device)
     {
-        if (usingGamepad && action.bindings.Count(keyBinding => keyBinding.groups.Contains("Gamepad")) > 0)
-            return action.GetBindingDisplayString(group:"Gamepad");
-        if (!usingGamepad && action.bindings.Count(keyBinding => keyBinding.groups.Contains("Keyboard&Mouse")) > 0)
-            return action.GetBindingDisplayString(group:"Keyboard&Mouse");
+        return playerInput.user.valid && playerInput.user.pairedDevices.Contains(device);
+    }
+
+    private bool PlayerOwnsInput()
+    {
+        var focused = root.focusController?.focusedElement as VisualElement;
+        return focused != null && root.Contains(focused);
+    }
+
+    private string GetBindingDisplayString(InputAction action)
+    {
+        var usingGamepad = playerInput.currentControlScheme == "Gamepad";
+        string group = usingGamepad ? "Gamepad" : "Keyboard&Mouse";
+        if (action.bindings.Any(b => b.groups.Contains(group)))
+            return action.GetBindingDisplayString(group: group);
         return "None";
     }
-    void StartRebind(InputAction action)
+
+    private void StartRebind(InputAction action)
     {
-        Button keyBinding = root.Q<VisualElement>($"{action.name}_Keybinding") as Button;
+        var keyBinding = root.Q<Button>($"{action.name}_Keybinding");
+        var changeButton = root.Q<Button>($"{action.name}_Change_Button");
+
         keyBinding.text = "...";
-        action.Disable();
-        Button changeButton = root.Q<VisualElement>($"{action.name}_Change_Button") as Button;
-        var changeButtonText = changeButton.text;
+        var originalText = changeButton.text;
         changeButton.text = "Press a key...";
-        var rebindOperation = action.PerformInteractiveRebinding()
+
+        action.Disable();
+
+        var rebind = action.PerformInteractiveRebinding()
             .WithCancelingThrough("<Keyboard>/escape")
-            .OnMatchWaitForAnother(0.1f);
-        rebindOperation.WithBindingGroup(usingGamepad ? "Gamepad" : "Keyboard&Mouse" );
-        rebindOperation.OnComplete(operation =>
+            .WithBindingGroup(playerInput.currentControlScheme)
+            .OnComplete(operation =>
             {
                 operation.Dispose();
                 action.Enable();
-                inputActions.Enable();
+                playerInput.actions.Enable();
 
                 keyBinding.text = GetBindingDisplayString(action);
-                changeButton.text = changeButtonText;
+                changeButton.text = originalText;
                 SaveBindings();
             });
-        
-        rebindOperation.Start();
+
+        if (playerInput.user.valid)
+        {
+            foreach (var device in InputSystem.devices)
+            {
+                if (!playerInput.user.pairedDevices.Contains(device))
+                    rebind.WithControlsExcluding($"<{device.layout}>");
+            }
+        }
+
+        rebind.Start();
     }
+
     private void SaveBindings()
     {
-        var json = inputActions.SaveBindingOverridesAsJson();
-        PlayerPrefs.SetString("inputBindings", json);
+        string json = playerInput.actions.SaveBindingOverridesAsJson();
+        PlayerPrefs.SetString($"inputBindings_{playerInput.playerIndex}", json);
         PlayerPrefs.Save();
     }
-    void LoadBindings()
-    {
-        if (!PlayerPrefs.HasKey("inputBindings")) return;
-        var json = PlayerPrefs.GetString("inputBindings");
-        inputActions.LoadBindingOverridesFromJson(json);
-    }
-    void ResetToDefaults()
-    {
 
-        //inputActions.RemoveAllBindingOverrides(); // Entfernt alle Änderungen
-        foreach (var actionName in actionKeyBingings.Keys)
+    private void ResetToDefaults()
+    {
+        var usingGamepad = playerInput.currentControlScheme == "Gamepad";
+
+        foreach (var actionName in actionNames)
         {
-            var action = inputActions.FindAction(actionName);
+            var action = actions.FindAction(actionName);
+            if (action == null)
+                continue;
+
             for (int i = 0; i < action.bindings.Count; i++)
             {
                 var binding = action.bindings[i];
                 if (binding.isComposite || binding.isPartOfComposite)
                     continue;
-                if (usingGamepad && binding.groups.Contains("Gamepad") ||
-                    !usingGamepad && binding.groups.Contains("Keyboard&Mouse"))
-                    action.RemoveBindingOverride(i);
-            }
-        }
-        SaveBindings(); // Speichert leere Overrides (also Default)
 
-        // Alle Button-Texte aktualisieren
-        var playerMap = inputActions.FindActionMap("Player");
-        foreach (string actionName in actionNames)
-        {
-            if (actionKeyBingings.TryGetValue(actionName, out var button))
-            {
-                var action = playerMap.FindAction(actionName);
-                if (action != null)
+                if ((usingGamepad && binding.groups.Contains("Gamepad")) ||
+                    (!usingGamepad && binding.groups.Contains("Keyboard&Mouse")))
                 {
-                    button.text = GetBindingDisplayString(action);
-                    //print(button.text);
+                    action.RemoveBindingOverride(i);
                 }
             }
         }
 
-    }
+        SaveBindings();
 
-    private void CleanTheShit()
-    {
-        var allActions = inputActions.FindActionMap("UI").actions.ToList();
-        allActions.AddRange(actions.actions);
-        allActions.Remove(inputActions.FindAction("Point"));
-        foreach (var a in allActions)
+        foreach (var actionName in actionNames)
         {
-            a.performed -= OnInputDeviceChanged;
+            var button = root.Q<Button>(actionName + "_Keybinding");
+            var action = actions.FindAction(actionName);
+            if (button != null && action != null)
+                button.text = GetBindingDisplayString(action);
         }
-    }
-
-    private void OnDestroy()
-    {
-        CleanTheShit();
     }
 }
