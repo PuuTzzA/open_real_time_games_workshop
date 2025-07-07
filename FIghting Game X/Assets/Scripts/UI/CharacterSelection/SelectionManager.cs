@@ -138,11 +138,25 @@ public class SelectionManager : MonoBehaviour
                 if (selectedCharacter >= 0)
                 {
                     GameManager.PlayerChoices[_playerInput.playerIndex] = selectedCharacter;
+
+                    // Pick first available color automatically:
+                    selectedColorIndex = 0;
+                    while (IsColorTaken(selectedColorIndex) && selectedColorIndex < manager.availableColors.Length)
+                    {
+                        selectedColorIndex++;
+                    }
+                    if (selectedColorIndex >= manager.availableColors.Length)
+                    {
+                        // No color available? Just fallback to 0
+                        selectedColorIndex = 0;
+                    }
+
                     _state = SelectionState.ChoosingColor;
-                    selectText.text = "Select your Color:"; // ✅ Correct now
-                    ShowCharacter(selectedCharacter); // ✅ Refresh color
+                    selectText.text = "Select your Color:";
+                    ShowCharacter(selectedCharacter); // refresh color preview
                 }
                 break;
+
 
             case SelectionState.ChoosingColor:
                 GameManager.PlayerColorChoices[_playerInput.playerIndex] = selectedColorIndex;
