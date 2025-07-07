@@ -10,6 +10,8 @@ public class LaserButton : MonoBehaviour
     [SerializeField] private SpriteRenderer leverActivatable;
     [SerializeField] private TextMeshPro activatableText;
     [SerializeField] private GameObject laser;
+    [SerializeField] private ParticleSystem laserParticleSystemStart;
+    [SerializeField] private ParticleSystem laserParticleSystemEnd;
     [SerializeField] public float activeTime;
     [SerializeField] float cooldownTime;
     private bool isPressed = false;
@@ -18,6 +20,13 @@ public class LaserButton : MonoBehaviour
     [HideInInspector]
     public bool isOnCooldown = false;
 
+
+    private void Start()
+    {
+        laserParticleSystemEnd?.Stop();
+        laserParticleSystemStart?.Stop();
+        laser.SetActive(false);
+    }
 
     private void PressButton()
     {
@@ -35,7 +44,7 @@ public class LaserButton : MonoBehaviour
         leverActivatable.enabled = true;
         PlayerInput pI = fighter.gameObject.GetComponent<PlayerInput>();
         bool isKeyboard = pI.currentControlScheme == "Keyboard&Mouse";
-        activatableText.text = isKeyboard ? pI.actions["Interact"].GetBindingDisplayString() : pI.actions["Interact"].GetBindingDisplayString(group: "Gamepad");
+        activatableText.text = isKeyboard ? pI.actions["Interact"].GetBindingDisplayString().ToLower() : pI.actions["Interact"].GetBindingDisplayString(group: "Gamepad").ToLower();
         activatableText.enabled = true;
 
     }
@@ -72,11 +81,17 @@ public class LaserButton : MonoBehaviour
         laser.SetActive(true);
         laser.GetComponent<LaserHitbox>()?.Activate();
 
+        laserParticleSystemStart?.Play();
+        laserParticleSystemEnd?.Play();
+
         yield return new WaitForSeconds(activeTime);
 
         laser.SetActive(false);
         laser.GetComponent<LaserHitbox>()?.Deactivate();
         isLaserActive = false;
+
+        laserParticleSystemStart?.Stop();
+        laserParticleSystemEnd?.Stop();
 
         isOnCooldown = true;
         yield return new WaitForSeconds(cooldownTime);

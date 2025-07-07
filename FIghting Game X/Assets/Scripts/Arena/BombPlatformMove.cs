@@ -9,6 +9,8 @@ public class BombPlatformMove : MonoBehaviour
     [SerializeField] private SpriteRenderer leverSwitched;
     [SerializeField] private SpriteRenderer leverActivatable;
     [SerializeField] private TextMeshPro activatableText;
+    [SerializeField] private GameObject propulsion;
+    [SerializeField] private ParticleSystem propulsionParticleSystem;
     [SerializeField] private float waitTimeOffScreen;
     [SerializeField] private float cooldownTime;
     [SerializeField] private float dropDistance;
@@ -30,6 +32,8 @@ public class BombPlatformMove : MonoBehaviour
     {
         originalPosition = transform.position;
         dropPosition = originalPosition + Vector3.down * dropDistance;
+        propulsion.SetActive(false);
+        propulsionParticleSystem.Stop();
     }
 
     private void SpawnBomb()
@@ -60,7 +64,7 @@ public class BombPlatformMove : MonoBehaviour
         leverActivatable.enabled = true;
         PlayerInput pI = fighter.gameObject.GetComponent<PlayerInput>();
         bool isKeyboard = pI.currentControlScheme == "Keyboard&Mouse";
-        activatableText.text = isKeyboard ? pI.actions["Interact"].GetBindingDisplayString() : pI.actions["Interact"].GetBindingDisplayString(group: "Gamepad");
+        activatableText.text = isKeyboard ? pI.actions["Interact"].GetBindingDisplayString().ToLower() : pI.actions["Interact"].GetBindingDisplayString(group: "Gamepad").ToLower();
         activatableText.enabled = true;
     }
 
@@ -84,6 +88,8 @@ public class BombPlatformMove : MonoBehaviour
     {
         PressButton();
         isMoving = true;
+        propulsion.SetActive(true);
+        propulsionParticleSystem.Play();
 
         // Move down
         while (Vector3.Distance(transform.position, dropPosition) > 0.01f)
@@ -105,6 +111,9 @@ public class BombPlatformMove : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, originalPosition, moveSpeed * Time.deltaTime);
             yield return null;
         }
+
+        propulsion.SetActive(false);
+        propulsionParticleSystem.Stop();
 
         transform.position = originalPosition;
         isMoving = false;

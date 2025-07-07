@@ -1,16 +1,15 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Bomb : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Collider2D col;
 
-    [Header("Throw Settings")]
     public float throwForce = 10f;
     public float throwAngle = 45f;
 
-    [Header("Explosion Settings")]
     public float explodeAfter = 3f;
     public GameObject explosionIdle;
     public GameObject explosionEffect;
@@ -42,7 +41,7 @@ public class Bomb : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
-        col.isTrigger = true;  // ALWAYS trigger collider
+        col.isTrigger = true;
 
         rb.bodyType = RigidbodyType2D.Kinematic;
         rb.linearVelocity = Vector2.zero;
@@ -79,10 +78,7 @@ public class Bomb : MonoBehaviour
                 wasInteractHeld = isHeld;
 
                 int f = holder.state.get_facing_int();
-                transform.localPosition = new Vector3(holdOffset.x * f, holdOffset.y, 0f);
-                transform.localScale = new Vector3(originalLocalScale.x * f,
-                                                  originalLocalScale.y,
-                                                  originalLocalScale.z);
+                // Note: position will be set in LateUpdate for smoother visuals
             }
         }
 
@@ -104,14 +100,41 @@ public class Bomb : MonoBehaviour
         }
     }
 
+    void LateUpdate()
+    {
+        // If held by a player and not thrown, follow holder with offset
+        if (pickedUp && holder != null && !thrown)
+        {
+            int f = holder.state.get_facing_int();
+            transform.position = holder.transform.position + new Vector3(holdOffset.x * f, holdOffset.y, 0f);
+        }
+
+        // Cancel out parent scale changes to keep constant screen size
+        if (transform.parent != null)
+        {
+            Vector3 parentScale = transform.parent.lossyScale;
+            transform.localScale = new Vector3(
+                originalLocalScale.x / parentScale.x,
+                originalLocalScale.y / parentScale.y,
+                originalLocalScale.z / parentScale.z
+            );
+        }
+        else
+        {
+            // If no parent, just keep original scale
+            transform.localScale = originalLocalScale;
+        }
+    }
+
     public void Pickup(BaseFighter fighter)
     {
         if (holder != null) return;
 
         fighter.holdingBomb = this.gameObject;
         holder = fighter;
-        transform.SetParent(fighter.transform);
-        transform.localPosition = new Vector3(holdOffset.x * fighter.state.get_facing_int(), holdOffset.y, 0f);
+
+        ReparentKeepWorldScale(fighter.transform);
+
         pickedUp = true;
         wasInteractHeld = true;
     }
@@ -123,44 +146,66 @@ public class Bomb : MonoBehaviour
 
     private void Throw()
     {
+        var inputComponent = holder.GetComponent<PlayerInput>();
+        Vector2 aimVector = inputComponent.actions["direction"].ReadValue<Vector2>();
+
+        Vector2 baseDir;
+
+        if (aimVector.sqrMagnitude > 0.01f)
+        {
+            aimVector.Normalize();
+            float angle = Mathf.Atan2(aimVector.y, aimVector.x) * Mathf.Rad2Deg;
+            angle = Mathf.Round(angle / 45f) * 45f;
+            throwAngle = angle;
+
+            float rad = throwAngle * Mathf.Deg2Rad;
+            baseDir = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad));
+        }
+        else
+        {
+            int f = holder.state.get_facing_int(); // 1 = right, -1 = left
+            baseDir = new Vector2(f, 0f);
+        }
+
+        // ✅ Apply a consistent upward tilt (relative to direction)
+        int facing = holder.state.get_facing_int(); // 1 = right, -1 = left
+        float angleOffset = facing; // Positive tilt if facing right, negative if left
+        if (baseDir.y > 0.5f) // upward or diagonally up
+            angleOffset *= -5f;
+        else
+            angleOffset *= 5f;
+
+        Vector2 throwDir = RotateVector(baseDir.normalized, angleOffset);
+        throwAngle = Mathf.Atan2(throwDir.y, throwDir.x) * Mathf.Rad2Deg;
+
         thrown = true;
         throwTime = Time.time;
-        transform.SetParent(null);
 
-        // Check for players overlapping just in front of thrower to stick immediately
-        int f = holder.state.get_facing_int();
-        Vector2 checkPos = (Vector2)holder.transform.position + new Vector2(f * 0.5f, 0f); // 0.5 units in front
+        ReparentKeepWorldScale(null);
+
+        // Check stick-to-target
+        Vector2 checkPos = (Vector2)holder.transform.position + throwDir * 0.5f;
         float checkRadius = 0.4f;
-
-        // LayerMask for players, adjust as needed
-        int playerLayerMask = 1 << 7; // Assuming players are on layer 7
+        int playerLayerMask = 1 << 7;
 
         Collider2D[] playersInFront = Physics2D.OverlapCircleAll(checkPos, checkRadius, playerLayerMask);
-
         foreach (var colInFront in playersInFront)
         {
             BaseFighter player = colInFront.GetComponentInParent<BaseFighter>();
             if (player != null && player != holder)
             {
-                // Immediately stick to this player instead of throwing
                 StickToTarget(player.transform, true);
-
-                // Reset Rigidbody to kinematic, no throw force needed
                 rb.bodyType = RigidbodyType2D.Kinematic;
                 rb.linearVelocity = Vector2.zero;
                 rb.gravityScale = 0f;
-                return; // Exit Throw early
+                return;
             }
         }
 
-        // If no players blocking, proceed with normal throw
-
         rb.bodyType = RigidbodyType2D.Dynamic;
-        rb.gravityScale = 1f;
+        rb.gravityScale = 0.2f;
 
-        float rad = throwAngle * Mathf.Deg2Rad;
-        initialVelocity = new Vector2(Mathf.Cos(rad) * throwForce * f,
-                                      Mathf.Sin(rad) * throwForce);
+        initialVelocity = throwDir * throwForce;
         rb.linearVelocity = Vector2.zero;
         rb.AddForce(initialVelocity, ForceMode2D.Impulse);
 
@@ -168,17 +213,30 @@ public class Bomb : MonoBehaviour
         StartCoroutine(setHoldingBomb());
     }
 
+    private Vector2 RotateVector(Vector2 v, float degrees)
+    {
+        float rad = degrees * Mathf.Deg2Rad;
+        float cos = Mathf.Cos(rad);
+        float sin = Mathf.Sin(rad);
+        return new Vector2(
+            v.x * cos - v.y * sin,
+            v.x * sin + v.y * cos
+        );
+    }
+
+
+
 
     private void StickToTarget(Transform target, bool isPlayer)
     {
         if (hasStuck)
         {
-            // If already stuck to terrain and now a player passes through, switch to player and never switch again
             if (!stuckToPlayer && isPlayer)
             {
                 stuckToPlayer = true;
                 stuckTarget = target;
-                transform.SetParent(target);
+                ReparentKeepWorldScale(target);
+
                 rb.bodyType = RigidbodyType2D.Kinematic;
                 rb.linearVelocity = Vector2.zero;
                 rb.angularVelocity = 0f;
@@ -192,7 +250,8 @@ public class Bomb : MonoBehaviour
         stuckToPlayer = isPlayer;
         stuckTarget = target;
 
-        transform.SetParent(target);
+        ReparentKeepWorldScale(target);
+
         rb.bodyType = RigidbodyType2D.Kinematic;
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
@@ -242,22 +301,38 @@ public class Bomb : MonoBehaviour
         BaseFighter player = other.GetComponentInParent<BaseFighter>();
         bool isPlayer = (player != null);
 
-        // Prevent sticking to thrower for first 0.2 seconds after throw
         if (isPlayer && player == holder && Time.time - throwTime < 0.2f)
             return;
 
         if (isPlayer)
         {
-            // Stick to player if never stuck or currently stuck to terrain
             StickToTarget(player.transform, true);
         }
         else
         {
-            // Stick to terrain or other non-player only if not already stuck
             if (!hasStuck)
             {
                 StickToTarget(other.transform, false);
             }
         }
+    }
+
+    private void ReparentKeepWorldScale(Transform newParent)
+    {
+        Vector3 worldPosition = transform.position;
+        Quaternion worldRotation = transform.rotation;
+        Vector3 worldScale = transform.lossyScale;
+
+        transform.SetParent(newParent, true);
+
+        Vector3 parentScale = newParent != null ? newParent.lossyScale : Vector3.one;
+        transform.localScale = new Vector3(
+            worldScale.x / parentScale.x,
+            worldScale.y / parentScale.y,
+            worldScale.z / parentScale.z
+        );
+
+        transform.position = worldPosition;
+        transform.rotation = worldRotation;
     }
 }
