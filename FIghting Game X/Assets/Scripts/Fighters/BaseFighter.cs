@@ -214,11 +214,11 @@ public class BaseFighter : MonoBehaviour
         rigidbody.linearVelocityY = state.get_jump_strength();
     }
 
-    public void knockback(Vector2 direction, int duration)
+    public void knockback_heavy(Vector2 direction, int duration)
     {
         player_sounds.PlayJabHit();
         state.knockback_duration = duration;
-        state.start_action(FighterAction.KnockedBackHeavy);
+        state.start_action(FighterAction.KnockedBackLight);
         rigidbody.linearVelocity = direction;
     }
 
@@ -452,7 +452,8 @@ public class BaseFighter : MonoBehaviour
         //state.force_facing(input.direction.x);
         //state.start_action(FighterAction.Ult);
 
-        knockback(new Vector2(-15 * state.get_facing_float(), 15), 15);
+        // knockback(new Vector2(-15 * state.get_facing_float(), 15), 15);
+        stun(120);
         return true;
     }
 
