@@ -59,9 +59,11 @@ public class QTEManager : MonoBehaviour
     private IEnumerator StartQTESequence(GameObject fallen, GameObject killer, Action onDone)
     {
         int type = UnityEngine.Random.Range(0, 2); // Randomly choose between 0, 1
-        Debug.Log(type);
         if (type == 1)
             ui.GetComponent<MinigameUI>().minigamenumber = 1;
+        ui.GetComponent<MinigameUI>().killer =  killer.GetComponentInChildren<SpriteRenderer>().color;
+        ui.GetComponent<MinigameUI>().fallen =  fallen.GetComponentInChildren<SpriteRenderer>().color;
+
 
 
         // 1) Show “Finish Him” intro
@@ -117,7 +119,7 @@ public class QTEManager : MonoBehaviour
 
     private void EvaluateDualQTE(GameObject fallen, GameObject killer, QTEResult fallenResult, QTEResult killerResult)
     {
-        Time.timeScale = 1f; 
+        Time.timeScale = 1f;
         bool isTie = fallenResult.IsSuccess && killerResult.IsSuccess ||
                      (!fallenResult.IsSuccess && !killerResult.IsSuccess &&
                       fallenResult.Score == killerResult.Score);
