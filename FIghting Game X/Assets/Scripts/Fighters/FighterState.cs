@@ -41,7 +41,9 @@ public class FighterState : MonoBehaviour
     public int available_air_jumps;
 
     public int stun_duration;
+
     public int knockback_duration;
+    public static readonly float[] knockback_rotation_factors = {0.0f, 0.3f, 0.7f, 1.0f, 0.9f, 0.7f, 0.3f, 0.1f, 0.0f };
 
     public AnimationData animation_data;
 

@@ -45,7 +45,7 @@ public class Bomb : MonoBehaviour
         col.isTrigger = true;  // ALWAYS trigger collider
 
         rb.bodyType = RigidbodyType2D.Kinematic;
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         rb.gravityScale = 0f;
 
         animator = GetComponent<Animator>();
@@ -147,7 +147,7 @@ public class Bomb : MonoBehaviour
 
                 // Reset Rigidbody to kinematic, no throw force needed
                 rb.bodyType = RigidbodyType2D.Kinematic;
-                rb.velocity = Vector2.zero;
+                rb.linearVelocity = Vector2.zero;
                 rb.gravityScale = 0f;
                 return; // Exit Throw early
             }
@@ -161,7 +161,7 @@ public class Bomb : MonoBehaviour
         float rad = throwAngle * Mathf.Deg2Rad;
         initialVelocity = new Vector2(Mathf.Cos(rad) * throwForce * f,
                                       Mathf.Sin(rad) * throwForce);
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         rb.AddForce(initialVelocity, ForceMode2D.Impulse);
 
         pickedUp = false;
@@ -180,7 +180,7 @@ public class Bomb : MonoBehaviour
                 stuckTarget = target;
                 transform.SetParent(target);
                 rb.bodyType = RigidbodyType2D.Kinematic;
-                rb.velocity = Vector2.zero;
+                rb.linearVelocity = Vector2.zero;
                 rb.angularVelocity = 0f;
                 rb.gravityScale = 0f;
                 rb.constraints = RigidbodyConstraints2D.FreezeAll;
@@ -194,7 +194,7 @@ public class Bomb : MonoBehaviour
 
         transform.SetParent(target);
         rb.bodyType = RigidbodyType2D.Kinematic;
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
         rb.gravityScale = 0f;
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
@@ -228,7 +228,7 @@ public class Bomb : MonoBehaviour
             {
                 bf.take_damage(50, gameObject);
                 Vector2 knockDir = (bf.transform.position - transform.position).normalized;
-                bf.knockback(knockDir * knockbackForce);
+                bf.knockback(knockDir * knockbackForce, 6);
             }
         }
 
