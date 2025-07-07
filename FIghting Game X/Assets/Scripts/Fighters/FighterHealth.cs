@@ -288,4 +288,9 @@ public class FighterHealth : MonoBehaviour
     {
         return currentHealth;
     }
+
+    public float GetMissingHealthPortion()
+    {
+        return (maxHealth - currentHealth) / (float)maxHealth;
+    }
 }

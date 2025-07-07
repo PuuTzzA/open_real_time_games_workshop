@@ -6,23 +6,29 @@ using System.Collections.Generic;
 public class KeyBindsUI : MonoBehaviour
 {
     [Header("References")]
-    public PlayerInput playerInput; // Im Inspector setzen
+    public PlayerInput playerInput; // Set via Inspector or automatically
 
     private VisualElement _root;
     private string controlScheme;
 
-    // Liste der unterstützten Aktionen
+    // List of supported actions
     private readonly string[] actionNames = { "jab", "ult", "heavy", "block", "jump", "interact", "dash" };
 
-    // Button-Referenzen zwischenspeichern
+    // Cache button references
     private Dictionary<string, Button> actionButtons = new Dictionary<string, Button>();
+
+    void Awake()
+    {
+        if (playerInput == null)
+            playerInput = GetComponent<PlayerInput>();
+    }
 
     void OnEnable()
     {
         controlScheme = GetControlScheme();
         _root = GetComponent<UIDocument>().rootVisualElement;
 
-        LoadBindings(); // optional
+        LoadBindings(); // Load saved bindings for this player
 
         var playerMap = playerInput.actions.FindActionMap("Player");
 
@@ -32,18 +38,8 @@ public class KeyBindsUI : MonoBehaviour
             var button = _root.Q<Button>(actionName + "button");
             var resetbutton = _root.Q<Button>(actionName + "reset");
 
-            if (action == null)
-            {
+            if (action == null || button == null || resetbutton == null)
                 continue;
-            }
-            if (button == null)
-            {
-                continue;
-            }
-            if (resetbutton == null)
-            {
-                continue;
-            }
 
             actionButtons[actionName] = button;
 
@@ -52,17 +48,13 @@ public class KeyBindsUI : MonoBehaviour
             resetbutton.clicked += () => ResetSingleBinding(action, button);
         }
 
-        // Back-Button
         var backButton = _root.Q<Button>("back");
         if (backButton != null)
-        {
             backButton.clicked += () => gameObject.SetActive(false);
-        }
+
         var resetAllButton = _root.Q<Button>("resetall");
         if (resetAllButton != null)
-        {
             resetAllButton.clicked += () => ResetToDefaults();
-        }
     }
 
     string GetControlScheme()
@@ -75,7 +67,6 @@ public class KeyBindsUI : MonoBehaviour
         for (int i = 0; i < action.bindings.Count; i++)
         {
             var binding = action.bindings[i];
-
             if (binding.isComposite || binding.isPartOfComposite)
                 continue;
 
@@ -115,25 +106,24 @@ public class KeyBindsUI : MonoBehaviour
     void SaveBindings()
     {
         string json = playerInput.actions.SaveBindingOverridesAsJson();
-        PlayerPrefs.SetString("inputBindings", json);
+        PlayerPrefs.SetString(GetBindingsKey(), json);
         PlayerPrefs.Save();
     }
 
     void LoadBindings()
     {
-        if (PlayerPrefs.HasKey("inputBindings"))
+        if (PlayerPrefs.HasKey(GetBindingsKey()))
         {
-            string json = PlayerPrefs.GetString("inputBindings");
+            string json = PlayerPrefs.GetString(GetBindingsKey());
             playerInput.actions.LoadBindingOverridesFromJson(json);
         }
     }
 
     void ResetToDefaults()
     {
-        playerInput.actions.RemoveAllBindingOverrides(); // Entfernt alle Änderungen
-        SaveBindings(); // Speichert leere Overrides (also Default)
+        playerInput.actions.RemoveAllBindingOverrides(); // Reset all changes
+        SaveBindings(); // Save empty overrides (defaults)
 
-        // Alle Button-Texte aktualisieren
         var playerMap = playerInput.actions.FindActionMap("Player");
         foreach (string actionName in actionNames)
         {
@@ -146,11 +136,10 @@ public class KeyBindsUI : MonoBehaviour
                 }
             }
         }
-
     }
+
     void ResetSingleBinding(InputAction action, Button button)
     {
-        // Alle nicht-kompositen Bindings zurücksetzen
         for (int i = 0; i < action.bindings.Count; i++)
         {
             if (!action.bindings[i].isComposite && !action.bindings[i].isPartOfComposite)
@@ -159,9 +148,12 @@ public class KeyBindsUI : MonoBehaviour
             }
         }
 
-        SaveBindings(); // Optional: Änderungen speichern
-        button.text = GetBindingDisplayString(action); // UI aktualisieren
+        SaveBindings();
+        button.text = GetBindingDisplayString(action);
     }
 
-
+    string GetBindingsKey()
+    {
+        return $"inputBindings_{playerInput.playerIndex}";
+    }
 }
