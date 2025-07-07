@@ -12,14 +12,12 @@ public class Bomb : MonoBehaviour
 
     public float explodeAfter = 3f;
     public GameObject explosionIdle;
-    public GameObject explosionEffect;
     public float explosionRadius = 2f;
     public float knockbackForce = 15f;
     public float explosionGrowthFactor = 1.2f;
     private bool exploding = false;
 
     private Animator animator;
-    private SpriteRenderer spriteRenderer;
     private Color originalColor;
 
     private BaseFighter holder;
@@ -48,8 +46,6 @@ public class Bomb : MonoBehaviour
         rb.gravityScale = 0f;
 
         animator = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        originalColor = spriteRenderer.color;
 
         originalLocalScale = transform.localScale;
     }
@@ -86,9 +82,6 @@ public class Bomb : MonoBehaviour
         {
             timer += Time.deltaTime;
             float t = Mathf.Clamp01(timer / explodeAfter);
-
-            if (spriteRenderer != null)
-                spriteRenderer.color = Color.Lerp(originalColor, Color.red, t);
 
             float scaleMult = Mathf.Lerp(1f, explosionGrowthFactor, t);
             transform.localScale = originalLocalScale * scaleMult;
@@ -229,6 +222,8 @@ public class Bomb : MonoBehaviour
 
     private void StickToTarget(Transform target, bool isPlayer)
     {
+        animator.SetTrigger("cd");
+
         if (hasStuck)
         {
             if (!stuckToPlayer && isPlayer)
@@ -264,6 +259,9 @@ public class Bomb : MonoBehaviour
 
     private void Explode()
     {
+        animator.SetTrigger("ex");
+        ReparentKeepWorldScale(null);
+
         foreach (var fighter in FindObjectsOfType<BaseFighter>())
         {
             var fighterCollider = fighter.GetComponent<Collider2D>();
@@ -271,11 +269,6 @@ public class Bomb : MonoBehaviour
             {
                 Physics2D.IgnoreCollision(col, fighterCollider, false);
             }
-        }
-
-        if (animator != null)
-        {
-            animator.SetTrigger("Explode");
         }
 
         int layerMask = 1 << 7;
@@ -291,7 +284,7 @@ public class Bomb : MonoBehaviour
             }
         }
 
-        Destroy(gameObject, 0.4f);
+        Destroy(gameObject, 1f);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
