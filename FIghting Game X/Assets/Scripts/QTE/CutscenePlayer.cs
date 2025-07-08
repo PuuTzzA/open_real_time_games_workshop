@@ -28,9 +28,6 @@ public class CutscenePlayer : MonoBehaviour
     /// <param name="finishedColor">Color to apply to the finished sprite</param>
     public void PlayCutscene(Color finisherColor, Color finishedColor)
     {
-        // Pause the game
-        Time.timeScale = 0f;
-
         // Disable all root objects except the cutsceneRoot or its children
         foreach (GameObject obj in SceneRootObjects())
         {
@@ -44,13 +41,14 @@ public class CutscenePlayer : MonoBehaviour
             }
         }
 
-        // Ensure cutsceneRoot is active
-        cutsceneRoot.SetActive(true);
 
         // Set sprite colors
         if (finisherSprite != null) finisherSprite.color = finisherColor;
         if (finishedSprite != null) finishedSprite.color = finishedColor;
 
+        // Ensure cutsceneRoot is active
+        cutsceneRoot.SetActive(true);
+        
         // Play animations
         finisherAnimator.Play(finisherAnimation, 0, 0f);
         finishedAnimator.Play(finishedAnimation, 0, 0f);
@@ -74,7 +72,6 @@ public class CutscenePlayer : MonoBehaviour
         }
 
         reenableObjects.Clear();
-        Time.timeScale = 1f;
 
         OnCutsceneFinished?.Invoke(); // <-- Notify listeners
     }
