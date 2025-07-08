@@ -269,6 +269,7 @@ public class FighterHealth : MonoBehaviour
         toggleFighter(false);
         SetSpriteRenderersVisible(false);
         List<PlayerInput> playersAlive = persistentPlayerManager.getAlivePlayers();
+        Time.timeScale = 1f;
 
         // Check if there are still more than one fighter alive
         if (playersAlive.Count <= 1)
