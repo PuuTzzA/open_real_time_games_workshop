@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 public class FighterHealth : MonoBehaviour
 {
 
+    [SerializeField]
+    Animator animator;
+
     [Header("UI Settings")]
     public Sprite Icon;
     public Sprite IconWithoutBackground;
@@ -246,7 +249,7 @@ public class FighterHealth : MonoBehaviour
     }
 
 
-    public bool Die()
+    public void Die(GameObject killer = null)
     {
         // TODO: Handle the death of the fighter, such as disabling controls, playing death animation, etc.
 
@@ -266,19 +269,32 @@ public class FighterHealth : MonoBehaviour
                 winUI.ShowWinner(winnerIndex);
             }
 
-            return true;
+        }
+        else if (killer != null)
+        {
+            QTEManager.Instance.ResumeRound(gameObject, killer);
         }
 
-        return false;
+
     }
 
-    public bool GetFinished(GameObject killer)
+    public IEnumerator GetFinished(GameObject killer)
     {
-        // Function to handle the finishing move to absolutely anihilate the fighter
-        // TODO: Play the finishing animation
+        // Play cutscene
+        var cutscene = GetComponentInChildren<CutscenePlayer>(true);
+        cutscene.PlayCutscene(
+            killer.GetComponentInChildren<SpriteRenderer>().color,
+            GetComponentInChildren<SpriteRenderer>().color
+        );
 
-        // see if there are still more than one fighter alive
-        return Die();
+        // Option A: Wait for animation to finish
+        yield return new WaitForSecondsRealtime(8.8f);
+
+        // OR Option B: Wait fixed time
+        // yield return new WaitForSecondsRealtime(8.75f);
+
+        // Continue after cutscene
+        Die(killer);
     }
 
     public int GetCurrentLives()

@@ -5848,6 +5848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d32cc61bbfbb2c419aa18ca06320dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 4095515536248359823}
   Icon: {fileID: 6353497865673364783, guid: 63b4a393ee880bf439c1ad1d42db1221, type: 3}
   IconWithoutBackground: {fileID: 635888242749862385, guid: 090e0e198408b5c4fac913936aa49ee0, type: 3}
   maxLives: 3
@@ -6232,6 +6233,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1461142218130816279, guid: 3741717144b84194d9af585387606392, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5826877999470238841, guid: 3741717144b84194d9af585387606392, type: 3}
       propertyPath: m_Name
       value: finishing_001_to_256_0
@@ -6250,7 +6255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6186006862117739902, guid: 3741717144b84194d9af585387606392, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 6.26
       objectReference: {fileID: 0}
     - target: {fileID: 6186006862117739902, guid: 3741717144b84194d9af585387606392, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6280,11 +6285,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6269704386387886744, guid: 3741717144b84194d9af585387606392, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3741717144b84194d9af585387606392, type: 3}
+--- !u!95 &4095515536248359823 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1461142218130816279, guid: 3741717144b84194d9af585387606392, type: 3}
+  m_PrefabInstance: {fileID: 3211405963301893784}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8739279891180432358 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6186006862117739902, guid: 3741717144b84194d9af585387606392, type: 3}
