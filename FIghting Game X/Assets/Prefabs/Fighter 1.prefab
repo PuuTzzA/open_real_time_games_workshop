@@ -542,6 +542,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: b7729fdc-6108-4e08-942f-e35a9d88df07
     m_ActionName: 'UI/Pause Game[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 684eb9e7-6dd6-4aa3-87a0-b25124e77a22
+    m_ActionName: 'Player/Pause Game[/Keyboard/escape,/XInputControllerWindows/start]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -566,7 +570,6 @@ MonoBehaviour:
   fighter_input: {fileID: 8266158835667872492}
   state: {fileID: 1556262320957081972}
   health: {fileID: 2867311719178718406}
-  material_selector: {fileID: 0}
   deathBounds: {x: -15, y: -8}
   died: 0
   holdingBomb: {fileID: 0}
@@ -638,6 +641,7 @@ MonoBehaviour:
   knockback_duration: 0
   hammer_animation_handler: {fileID: 0}
   hammer_base_transform: {fileID: 0}
+  ult_hitbox: {fileID: 0}
   ult_index: 0
   animation_data: {fileID: 1333684296444455915}
   air_resistance: 0
