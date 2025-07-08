@@ -28,10 +28,10 @@ public class UltHitbox : Hitbox
         {
             hit_fighters[fighter]++;
             fighter_cooldowns[fighter] = 18;
+            fighter.stun(10);
+            fighter.take_damage(10, source_fighter.gameObject);
         }
-        fighter.stun(10);
 
-        fighter.take_damage(10, source_fighter.gameObject);
     }
 
     public void knockback_fighters()
@@ -39,11 +39,13 @@ public class UltHitbox : Hitbox
         foreach(var (fighter, hits) in hit_fighters)
         {
             var sign = Math.Sign(fighter.transform.position.x - source_fighter.transform.position.x);
-            var knockback = new Vector2(3.0f * (sign == 0 ? 1 : sign), 5.0f) * (1 + hits * 0.5f);
-            Debug.Log(knockback + " hits: " + hits);
+            //var knockback = new Vector2(3.0f * (sign == 0 ? 1 : sign), 5.0f) * (2 + hits * 0.5f);
+            var knockback = (fighter.transform.position - source_fighter.transform.position).normalized * 5.0f * (2 + hits * 0.5f);
             fighter.knockback_heavy(knockback, 10 + hits * 2);
             fighter.take_damage(10 + hits * 5, source_fighter.gameObject);
         }
+
+        hit_fighters.Clear();
     }
 
     public void reduce_fighter_cooldowns()

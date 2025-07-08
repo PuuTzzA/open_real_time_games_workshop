@@ -36,12 +36,14 @@ public class FighterHealth : MonoBehaviour
 
     public void TakeDamage(int dmg, GameObject attacker)
     {
+
         if (currentHealth <= 0)
         {
             return;
         }
 
         currentHealth -= dmg;
+        Debug.Log("dmg: " + dmg + " health: " + currentHealth);
         ingameUI.setNewHealth(playerInput.playerIndex, currentHealth * 1.0f / maxHealth);
 
         if (currentHealth <= 0)

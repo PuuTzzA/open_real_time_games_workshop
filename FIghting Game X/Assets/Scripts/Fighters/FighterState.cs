@@ -75,6 +75,8 @@ public class FighterState : MonoBehaviour
 
     private Facing _facing;
 
+    public (bool, bool) freeze_pos;
+
     public FighterAction get_action() { return animation_handler.get_action(); }
 
     public void start_action(FighterAction action)
