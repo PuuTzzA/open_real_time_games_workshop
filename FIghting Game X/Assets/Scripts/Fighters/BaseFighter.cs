@@ -44,10 +44,9 @@ public class BaseFighter : MonoBehaviour
     0.2f, 0.1f, 0.05f, 0.0f, 0.0f
 };
     private readonly float[] short_dash_curve = new float[] {
-    1f, 1f, 1f, 1f, 1f, 0.9f, 0.8f, 0.6f,
-    0.5f, 0.4f, 0.3f, 0.2f, 0.1f, 0.05f, 0.0f, 0.0f,
-    0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f,
-    0.0f
+    1f, 1f, 1f, 1f, 1f, 1f, 1f, 0.9f, 0.8f, 0.7f, 0.6f,
+    0.5f, 0.4f, 0.3f, 0.2f, 0.1f, 0.0f,
+    0.0f, 0.0f, 0.0f, 0.0f
 };
 
     private void Awake()
@@ -208,6 +207,10 @@ public class BaseFighter : MonoBehaviour
         if (state.is_grounded())
         {
             rigidbody.linearVelocityX = new_dir_x * state.get_ground_speed();
+            if(new_dir_x != 0 && state.get_action() != FighterAction.Running)
+            {
+                state.start_action(FighterAction.Running);
+            }
         }
         else
         {
@@ -250,7 +253,7 @@ public class BaseFighter : MonoBehaviour
         freezeXY(false, false);
         select_collider(1);
         state.knockback_duration = duration;
-        rigidbody.linearVelocity = direction * (0.5f + health.GetMissingHealthPortion());
+        rigidbody.linearVelocity = direction * (0.8f + health.GetMissingHealthPortion() * 0.7f);
     }
 
     public void stun(int duration)
@@ -321,6 +324,8 @@ public class BaseFighter : MonoBehaviour
 
     public void dash_tick(int index)
     {
+        state.dash_available = state.is_grounded();
+
         freezeXY(false, true);
         if (index >= dash_curve.Length) return;
 
@@ -330,6 +335,8 @@ public class BaseFighter : MonoBehaviour
 
     public void heavy_up_tick(int index)
     {
+        state.heavy_available[0] = state.is_grounded();
+
         if (index < 18)
         {
             freezeXY(true, true);
@@ -345,6 +352,8 @@ public class BaseFighter : MonoBehaviour
 
     public void heavy_down_tick(int index)
     {
+        state.heavy_available[2] = state.is_grounded();
+
         if (index < 26)
         {
             freezeXY(true, true);
@@ -366,11 +375,14 @@ public class BaseFighter : MonoBehaviour
     }
     public void heavy_side_tick(int index)
     {
-        freezeXY(false, true);
-        if (index < 26 || index > 50) return; // only active during frames 26–50
+        state.heavy_available[1] = state.is_grounded();
 
-        int dash_index = index - 26;
-        if (dash_index >= short_dash_curve.Length) return;
+        if (index < 22 || index > 38) return; // only active during frames 26–50
+
+        freezeXY(false, true);
+        int dash_index = index - 22;
+        //if (dash_index >= short_dash_curve.Length) return;
+
 
         float speed = short_dash_curve[dash_index] * state.base_stats.dash_factor * state.base_stats.ground_speed * state.get_facing_float();
         rigidbody.linearVelocityX = speed;
@@ -525,6 +537,8 @@ public class BaseFighter : MonoBehaviour
 
         if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
 
+        if(!state.heavy_available[1 - input.direction.y]) return false;
+
         state.force_facing(input.direction.x);
         switch (input.direction.y)
         {
@@ -539,6 +553,7 @@ public class BaseFighter : MonoBehaviour
                 break;
         }
         // player_sounds.PlayHeavySidewaysClip();
+
         state.start_action((FighterAction)((int)(FighterAction.HeavySide) - input.direction.y));
         return true;
     }
@@ -553,6 +568,8 @@ public class BaseFighter : MonoBehaviour
         if (!input.pressed) return true;
 
         if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
+
+        if (!state.is_grounded() && !state.dash_available) return false;
 
         state.force_facing(input.direction.x);
         player_sounds.PlayDash();

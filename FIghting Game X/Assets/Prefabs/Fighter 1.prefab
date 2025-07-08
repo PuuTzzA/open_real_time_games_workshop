@@ -542,6 +542,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: b7729fdc-6108-4e08-942f-e35a9d88df07
     m_ActionName: 'UI/Pause Game[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 684eb9e7-6dd6-4aa3-87a0-b25124e77a22
+    m_ActionName: 'Player/Pause Game[/Keyboard/escape,/XInputControllerWindows/start]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -560,7 +564,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 6480166069264356360}
-  collider: {fileID: 4792304623778786022}
+  colliders: []
+  current_collider: {fileID: 0}
   debug_text: {fileID: 7214940668690671881}
   fighter_input: {fileID: 8266158835667872492}
   state: {fileID: 1556262320957081972}
@@ -634,6 +639,10 @@ MonoBehaviour:
   available_air_jumps: 0
   stun_duration: 0
   knockback_duration: 0
+  hammer_animation_handler: {fileID: 0}
+  hammer_base_transform: {fileID: 0}
+  ult_hitbox: {fileID: 0}
+  ult_index: 0
   animation_data: {fileID: 1333684296444455915}
   air_resistance: 0
 --- !u!114 &4859815249510380014
@@ -795,6 +804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 4497933916085059567}
+  default_fighter_action: 0
 --- !u!1 &7739751719961853797
 GameObject:
   m_ObjectHideFlags: 0

@@ -58,11 +58,11 @@ public class QTEManager : MonoBehaviour
 
     private IEnumerator StartQTESequence(GameObject fallen, GameObject killer, Action onDone)
     {
-        int type = UnityEngine.Random.Range(0, 2); // Randomly choose between 0, 1
+        int type = 0; //UnityEngine.Random.Range(0, 2); // Randomly choose between 0, 1
         if (type == 1)
             ui.GetComponent<MinigameUI>().minigamenumber = 1;
-        ui.GetComponent<MinigameUI>().killer =  killer.GetComponentInChildren<SpriteRenderer>().color;
-        ui.GetComponent<MinigameUI>().fallen =  fallen.GetComponentInChildren<SpriteRenderer>().color;
+        ui.GetComponent<MinigameUI>().killer = killer.GetComponentInChildren<SpriteRenderer>().color;
+        ui.GetComponent<MinigameUI>().fallen = fallen.GetComponentInChildren<SpriteRenderer>().color;
 
 
 
@@ -119,7 +119,6 @@ public class QTEManager : MonoBehaviour
 
     private void EvaluateDualQTE(GameObject fallen, GameObject killer, QTEResult fallenResult, QTEResult killerResult)
     {
-        Time.timeScale = 1f;
         bool isTie = fallenResult.IsSuccess && killerResult.IsSuccess ||
                      (!fallenResult.IsSuccess && !killerResult.IsSuccess &&
                       fallenResult.Score == killerResult.Score);
@@ -140,8 +139,12 @@ public class QTEManager : MonoBehaviour
         }
         else
         {
-            bool isFinished = fallenHealth.GetFinished(killer);
-            if (isFinished) return;
+            //bool isFinished = false;
+            finishHimPanel.SetActive(false);
+            StartCoroutine(fallenHealth.GetFinished(killer));
+            return;
+            // Time.timeScale = 1f;
+            //if (isFinished) return;
         }
         ResumeRound(fallen, killer);
     }
@@ -170,7 +173,7 @@ public class QTEManager : MonoBehaviour
         // This could involve tapping a button at the right time to score points
     }
 
-    private void ResumeRound(GameObject fallen, GameObject killer)
+    public void ResumeRound(GameObject fallen, GameObject killer)
     {
         p1Input.SwitchCurrentActionMap("Player");
         p2Input.SwitchCurrentActionMap("Player");
