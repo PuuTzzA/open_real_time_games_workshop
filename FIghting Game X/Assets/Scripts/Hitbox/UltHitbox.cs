@@ -41,7 +41,7 @@ public class UltHitbox : Hitbox
             var sign = Math.Sign(fighter.transform.position.x - source_fighter.transform.position.x);
             //var knockback = new Vector2(3.0f * (sign == 0 ? 1 : sign), 5.0f) * (2 + hits * 0.5f);
             var knockback = (fighter.transform.position - source_fighter.transform.position).normalized * 5.0f * (2 + hits * 0.5f);
-            fighter.knockback_heavy(knockback, 10 + hits * 2);
+            fighter.knockback_heavy(knockback, 14 + hits * 2);
             fighter.take_damage(10 + hits * 5, source_fighter.gameObject);
         }
 
