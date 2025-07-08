@@ -371,13 +371,11 @@ public class Bomb : MonoBehaviour
         bool isKeyboard = pI.currentControlScheme == "Keyboard&Mouse";
         activatableText.text = isKeyboard ? pI.actions["Interact"].GetBindingDisplayString().ToLower() : pI.actions["Interact"].GetBindingDisplayString(group: "Gamepad").ToLower();
         activatableText.enabled = true;
-        Debug.Log("Triggering interaction text: ");
     }
 
     public void TriggerDisableInteractionText()
     {
         activatableText.enabled = false;
-        Debug.Log("disable interaction text: ");
     }
 
 }
