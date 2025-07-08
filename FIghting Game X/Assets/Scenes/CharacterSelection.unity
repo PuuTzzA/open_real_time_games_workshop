@@ -859,11 +859,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   availableColors:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.13940072, b: 1, a: 1}
-  - {r: 0.058092833, g: 1, b: 0, a: 1}
-  - {r: 1, g: 0, b: 0.8421259, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0, b: 0.3882353, a: 1}
+  - {r: 0, g: 1, b: 0.11372549, a: 1}
+  - {r: 1, g: 0.7254902, b: 0.07450981, a: 1}
   defaultJoinScreen: {fileID: 446547146}
   playerSelectionPrefab: {fileID: 4626352494101566082, guid: fb916ccebc7d4fc49925ec7854d635ea, type: 3}
   spawnPoints:

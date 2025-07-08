@@ -63,6 +63,7 @@ public class FighterState : MonoBehaviour
 
     public AnimationHandler hammer_animation_handler;
     public Transform hammer_base_transform;
+    public UltHitbox ult_hitbox;
     public UltData[] ult_data;
     public int ult_index;
 
@@ -73,6 +74,8 @@ public class FighterState : MonoBehaviour
     private bool _grounded;
 
     private Facing _facing;
+
+    public (bool, bool) freeze_pos;
 
     public FighterAction get_action() { return animation_handler.get_action(); }
 
