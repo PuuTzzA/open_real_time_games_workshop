@@ -21,6 +21,7 @@ public enum FighterFlags
 
     CustomMovement = 0x100,
     Phasing = 0x200,
+    Invincible = 0x400,
 
 
     Idle = CanJump | CanTurn | CanMove | Interruptable,

@@ -137,6 +137,7 @@ public class SelectionManager : MonoBehaviour
             case SelectionState.ChoosingCharacter:
                 if (selectedCharacter >= 0)
                 {
+                    if (characters[selectedCharacter].name == "Coming Soon") return;
                     GameManager.PlayerChoices[_playerInput.playerIndex] = selectedCharacter;
 
                     // Pick first available color automatically:
