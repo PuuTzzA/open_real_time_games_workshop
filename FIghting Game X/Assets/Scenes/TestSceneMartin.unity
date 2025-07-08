@@ -18362,6 +18362,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8649916715265653702, guid: 398e251a9e48a6140b6b0a2688447f08, type: 3}
+      propertyPath: heartSprite
+      value: 
+      objectReference: {fileID: 2134347927}
     - target: {fileID: 9035730479361116303, guid: 398e251a9e48a6140b6b0a2688447f08, type: 3}
       propertyPath: m_Name
       value: finishing
@@ -18375,6 +18379,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 398e251a9e48a6140b6b0a2688447f08, type: 3}
+--- !u!212 &2134347927 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4577560773793022630, guid: 398e251a9e48a6140b6b0a2688447f08, type: 3}
+  m_PrefabInstance: {fileID: 2134347926}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
