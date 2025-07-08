@@ -12,25 +12,9 @@ public class AttackHitbox : Hitbox
 
     public HashSet<BaseFighter> hit_fighters = new HashSet<BaseFighter>();
 
-    public void FixedUpdate()
-    {
-        var colliders = gameObject.GetComponents<Collider>();
-
-        bool no_active = true;
-        foreach(Collider collider in colliders)
-        {
-            if(collider.enabled)
-            {
-                no_active = false;
-                break;
-            }
-        }
-        if(no_active)
-            hit_fighters.Clear();
-    }
-
     public override void hit(BaseFighter fighter, HitType type)
     {
+        Debug.Log("hit " + hit_fighters.Contains(fighter));
         if (type != HitType.Start || hit_fighters.Contains(fighter)) { return; }
 
         if(jab)

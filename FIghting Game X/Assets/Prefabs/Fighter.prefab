@@ -5064,7 +5064,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3682529173007666366
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5418,7 +5418,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &2853638271935044122
 MonoBehaviour:
@@ -5656,6 +5656,7 @@ MonoBehaviour:
   - {fileID: 4244798904052949231}
   - {fileID: 5743070707981462479}
   current_collider: {fileID: 0}
+  hurtbox: {fileID: 6148420401035353989}
   debug_text: {fileID: 7214940668690671881}
   fighter_input: {fileID: 8266158835667872492}
   state: {fileID: 1556262320957081972}
@@ -5818,6 +5819,8 @@ MonoBehaviour:
   animation_handler: {fileID: 5143516375130627310}
   sprite_transform: {fileID: 7005465704683545578}
   available_air_jumps: 0
+  heavy_available: 010101
+  dash_available: 1
   stun_duration: 0
   knockback_duration: 0
   hammer_animation_handler: {fileID: 1450031776339933549}

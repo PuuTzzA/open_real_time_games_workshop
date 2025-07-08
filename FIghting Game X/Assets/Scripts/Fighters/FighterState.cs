@@ -83,11 +83,8 @@ public class FighterState : MonoBehaviour
 
     public void start_action(FighterAction action)
     {
+        hammer_base_transform.gameObject.SetActive(false);
         animation_handler.play(action);
-
-        //animator.ResetTrigger("trigger");
-        //animator.SetInteger("action", (int)action);
-        //animator.SetTrigger("trigger");
     }
 
     public bool is_idle()
