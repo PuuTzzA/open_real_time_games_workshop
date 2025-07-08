@@ -962,7 +962,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d32cc61bbfbb2c419aa18ca06320dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cutscenePlayer: {fileID: 6154448029242277378}
   Icon: {fileID: 6353497865673364783, guid: 63b4a393ee880bf439c1ad1d42db1221, type: 3}
   IconWithoutBackground: {fileID: 635888242749862385, guid: 090e0e198408b5c4fac913936aa49ee0, type: 3}
   maxLives: 3
@@ -1400,17 +1399,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3741717144b84194d9af585387606392, type: 3}
---- !u!114 &6154448029242277378 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8789277607103858842, guid: 3741717144b84194d9af585387606392, type: 3}
-  m_PrefabInstance: {fileID: 3211405963301893784}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0afc1a97d3a88f54abb72b7224afb4a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &8739279891180432358 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6186006862117739902, guid: 3741717144b84194d9af585387606392, type: 3}

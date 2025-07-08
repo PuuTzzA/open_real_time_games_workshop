@@ -13,10 +13,20 @@ public class ControlsUI : MonoBehaviour
     private VisualElement root;
     private InputActionMap actions;
 
+    private VisualElement controlsTabHeader;
+    private VisualElement focusEntrance;
+    private VisualElement focusExit;
+
     private void Awake()
     {
         root = menuDocument.rootVisualElement;
         actions = playerInput.actions.FindActionMap("Player");
+
+        controlsTabHeader = root.Q<VisualElement>("Controls_Tab_Header");
+        focusEntrance = root.Q<VisualElement>(className: "focus_entrance");
+        focusEntrance.RegisterCallback<FocusEvent>(OnEntranceFocused);
+        focusExit = root.Q<VisualElement>(className: "focus_exit");
+        focusExit.RegisterCallback<FocusEvent>(OnExitFocused);
 
         // Register pointer and navigation event filtering
         root.RegisterCallback<PointerDownEvent>(OnPointerDown, TrickleDown.TrickleDown);
@@ -177,4 +187,21 @@ public class ControlsUI : MonoBehaviour
                 button.text = GetBindingDisplayString(action);
         }
     }
+
+    private void OnEntranceFocused(FocusEvent evt)
+    {
+        root.Q<VisualElement>(className: "action_change_button").Focus();
+    }
+
+    private void OnExitFocused(FocusEvent evt)
+    {
+        if (evt.relatedTarget is not VisualElement element)
+            return;
+        if (evt.relatedTarget.tabIndex == 0)
+        {
+            controlsTabHeader.Focus();
+        }
+        else root.Q<VisualElement>(className: "action_change_button").Focus();
+    }
+
 }
