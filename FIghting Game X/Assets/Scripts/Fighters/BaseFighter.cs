@@ -149,6 +149,14 @@ public class BaseFighter : MonoBehaviour
 
         state.set_grounded(false);
 
+        if (state.freeze_pos.Item1)
+            rigidbody.linearVelocityX = 0.0f;
+        if (state.freeze_pos.Item2)
+        {
+            rigidbody.linearVelocityY = 0.0f;
+            rigidbody.gravityScale = 0.0f;
+        }
+
         state.animation_handler.step();
     }
 
@@ -284,27 +292,29 @@ public class BaseFighter : MonoBehaviour
 
     public void freezeXY(bool x, bool y)
     {
-        if (x)
-        {
-            rigidbody.linearVelocityX = 0.0f;
-            rigidbody.constraints |= RigidbodyConstraints2D.FreezePositionX;
-        }
-        else
-        {
-            rigidbody.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
-        }
+        //if (x)
+        //{
+        //    rigidbody.linearVelocityX = 0.0f;
+        //    rigidbody.constraints |= RigidbodyConstraints2D.FreezePositionX;
+        //}
+        //else
+        //{
+        //    rigidbody.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+        //}
 
-        if (y)
-        {
-            rigidbody.gravityScale = 0.0f;
-            rigidbody.linearVelocityY = 0.0f;
-            rigidbody.constraints |= RigidbodyConstraints2D.FreezePositionY;
-        }
-        else
-        {
-            rigidbody.gravityScale = 1.0f;
-            rigidbody.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
-        }
+        //if (y)
+        //{
+        //    rigidbody.gravityScale = 0.0f;
+        //    rigidbody.linearVelocityY = 0.0f;
+        //    rigidbody.constraints |= RigidbodyConstraints2D.FreezePositionY;
+        //}
+        //else
+        //{
+        //    rigidbody.gravityScale = 1.0f;
+        //    rigidbody.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+        //}
+
+        state.freeze_pos = (x, y);
     }
 
 
