@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      button_smash_border1_0: -2474126999799279987
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

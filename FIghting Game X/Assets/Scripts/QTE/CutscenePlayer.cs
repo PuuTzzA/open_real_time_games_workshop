@@ -29,17 +29,17 @@ public class CutscenePlayer : MonoBehaviour
     public void PlayCutscene(Color finisherColor, Color finishedColor)
     {
         // Disable all root objects except the cutsceneRoot or its children
-        foreach (GameObject obj in SceneRootObjects())
-        {
-            if (obj == null || obj == cutsceneRoot || cutsceneRoot.transform.IsChildOf(obj.transform))
-                continue;
+        //foreach (GameObject obj in SceneRootObjects())
+        //{
+         //   if (obj == null || obj == cutsceneRoot || cutsceneRoot.transform.IsChildOf(obj.transform))
+          //      continue;
 
-            if (obj.activeInHierarchy)
-            {
-                obj.SetActive(false);
-                reenableObjects.Add(obj);
-            }
-        }
+           // if (obj.activeInHierarchy)
+            //{
+            //   obj.SetActive(false);
+            //    reenableObjects.Add(obj);
+            //}
+        //}
 
 
         // Set sprite colors
@@ -65,13 +65,13 @@ public class CutscenePlayer : MonoBehaviour
 
     public void EndCutscene()
     {
-        foreach (var obj in reenableObjects)
-        {
-            if (obj != null)
-                obj.SetActive(true);
-        }
+        //foreach (var obj in reenableObjects)
+        //{
+            //if (obj != null)
+                //obj.SetActive(true);
+        //}
 
-        reenableObjects.Clear();
+        //reenableObjects.Clear();
 
         OnCutsceneFinished?.Invoke(); // <-- Notify listeners
     }
