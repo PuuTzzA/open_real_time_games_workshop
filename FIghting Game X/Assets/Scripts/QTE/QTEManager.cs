@@ -140,6 +140,7 @@ public class QTEManager : MonoBehaviour
         else
         {
             //bool isFinished = false;
+            finishHimPanel.SetActive(false);
             StartCoroutine(fallenHealth.GetFinished(killer));
             return;
             // Time.timeScale = 1f;
