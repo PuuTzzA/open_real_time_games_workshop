@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: a7c15b9bc53cced4292cec886dacf0c0
+guid: 6e9a4acd764f2e64f93a1ab7e8949f5e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1074384759841869744
-    second: bomb_countdown_0
+      213: -9115938624207856695
+    second: sprite_sheet_0
   - first:
-      213: 2535609217902595341
-    second: bomb_countdown_1
+      213: -8198574232401945530
+    second: sprite_sheet_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bomb_countdown_0
+      name: sprite_sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 512
+        x: 188
+        y: 187
+        width: 135
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0503885d0c40711f0800000000000000
-      internalID: -1074384759841869744
+      spriteID: 9cbd3dd9e1ead7180800000000000000
+      internalID: -9115938624207856695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomb_countdown_1
+      name: sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 512
-        height: 512
+        x: 700
+        y: 187
+        width: 135
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d0d4a42462b403320800000000000000
-      internalID: 2535609217902595341
+      spriteID: 64cd20d6c20d83e80800000000000000
+      internalID: -8198574232401945530
       vertices: []
       indices: 
       edges: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2d2d9d470f6df6944a48bb7d834dd3b4
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -171,12 +171,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      bomb_countdown_0: -1074384759841869744
-      bomb_countdown_1: 2535609217902595341
+      sprite_sheet_0: -9115938624207856695
+      sprite_sheet_1: -8198574232401945530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

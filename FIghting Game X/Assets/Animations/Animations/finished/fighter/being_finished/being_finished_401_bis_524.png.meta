@@ -456,10 +456,17 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+<<<<<<< HEAD
     maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+=======
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -500,10 +507,17 @@ TextureImporter:
       name: being_finished_401_bis_524_0
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 0
         y: 13650
         width: 1365
         height: 1365
+=======
+        x: 632
+        y: 14226
+        width: 649
+        height: 36
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -522,10 +536,17 @@ TextureImporter:
       name: being_finished_401_bis_524_1
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1365
         y: 13650
         width: 1365
         height: 1365
+=======
+        x: 1997
+        y: 14226
+        width: 649
+        height: 36
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -544,10 +565,17 @@ TextureImporter:
       name: being_finished_401_bis_524_2
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2730
         y: 13650
         width: 1365
         height: 1365
+=======
+        x: 3362
+        y: 14225
+        width: 692
+        height: 35
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -566,10 +594,17 @@ TextureImporter:
       name: being_finished_401_bis_524_3
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 4095
         y: 13650
         width: 1365
         height: 1365
+=======
+        x: 4727
+        y: 14225
+        width: 692
+        height: 35
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -588,10 +623,17 @@ TextureImporter:
       name: being_finished_401_bis_524_4
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 5460
         y: 13650
         width: 1365
         height: 1365
+=======
+        x: 6092
+        y: 14225
+        width: 692
+        height: 35
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -610,10 +652,17 @@ TextureImporter:
       name: being_finished_401_bis_524_5
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 6825
         y: 13650
         width: 1365
         height: 1365
+=======
+        x: 7456
+        y: 14225
+        width: 707
+        height: 31
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -632,10 +681,17 @@ TextureImporter:
       name: being_finished_401_bis_524_6
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 8190
         y: 13650
         width: 1365
         height: 1365
+=======
+        x: 8821
+        y: 14225
+        width: 707
+        height: 31
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -654,10 +710,17 @@ TextureImporter:
       name: being_finished_401_bis_524_7
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 9555
         y: 13650
         width: 1365
         height: 1365
+=======
+        x: 10178
+        y: 14225
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -676,10 +739,17 @@ TextureImporter:
       name: being_finished_401_bis_524_8
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 10920
         y: 13650
         width: 1365
         height: 1365
+=======
+        x: 11543
+        y: 14225
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -698,10 +768,17 @@ TextureImporter:
       name: being_finished_401_bis_524_9
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 12285
         y: 13650
         width: 1365
         height: 1365
+=======
+        x: 12908
+        y: 14225
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -720,10 +797,17 @@ TextureImporter:
       name: being_finished_401_bis_524_10
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 13650
         y: 13650
         width: 1365
         height: 1365
+=======
+        x: 14270
+        y: 14225
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -742,10 +826,17 @@ TextureImporter:
       name: being_finished_401_bis_524_11
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 15015
         y: 13650
         width: 1365
         height: 1365
+=======
+        x: 15635
+        y: 14225
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -764,10 +855,17 @@ TextureImporter:
       name: being_finished_401_bis_524_12
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 0
         y: 12285
         width: 1365
         height: 1365
+=======
+        x: 620
+        y: 12860
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -786,10 +884,17 @@ TextureImporter:
       name: being_finished_401_bis_524_13
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1365
         y: 12285
         width: 1365
         height: 1365
+=======
+        x: 1985
+        y: 12860
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -808,10 +913,17 @@ TextureImporter:
       name: being_finished_401_bis_524_14
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2730
         y: 12285
         width: 1365
         height: 1365
+=======
+        x: 3345
+        y: 12860
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -830,10 +942,17 @@ TextureImporter:
       name: being_finished_401_bis_524_15
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 4095
         y: 12285
         width: 1365
         height: 1365
+=======
+        x: 4710
+        y: 12860
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -852,10 +971,17 @@ TextureImporter:
       name: being_finished_401_bis_524_16
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 5460
         y: 12285
         width: 1365
         height: 1365
+=======
+        x: 6075
+        y: 12860
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -874,10 +1000,17 @@ TextureImporter:
       name: being_finished_401_bis_524_17
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 6825
         y: 12285
         width: 1365
         height: 1365
+=======
+        x: 7440
+        y: 12860
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -896,10 +1029,17 @@ TextureImporter:
       name: being_finished_401_bis_524_18
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 8190
         y: 12285
         width: 1365
         height: 1365
+=======
+        x: 8813
+        y: 12860
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -918,10 +1058,17 @@ TextureImporter:
       name: being_finished_401_bis_524_19
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 9555
         y: 12285
         width: 1365
         height: 1365
+=======
+        x: 10178
+        y: 12860
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -940,10 +1087,17 @@ TextureImporter:
       name: being_finished_401_bis_524_20
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 10920
         y: 12285
         width: 1365
         height: 1365
+=======
+        x: 11543
+        y: 12860
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -962,10 +1116,17 @@ TextureImporter:
       name: being_finished_401_bis_524_21
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 12285
         y: 12285
         width: 1365
         height: 1365
+=======
+        x: 12905
+        y: 12860
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -984,10 +1145,17 @@ TextureImporter:
       name: being_finished_401_bis_524_22
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 13650
         y: 12285
         width: 1365
         height: 1365
+=======
+        x: 14270
+        y: 12860
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1006,10 +1174,17 @@ TextureImporter:
       name: being_finished_401_bis_524_23
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 15015
         y: 12285
         width: 1365
         height: 1365
+=======
+        x: 15635
+        y: 12860
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1028,10 +1203,17 @@ TextureImporter:
       name: being_finished_401_bis_524_24
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 0
         y: 10920
         width: 1365
         height: 1365
+=======
+        x: 620
+        y: 11495
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1050,10 +1232,17 @@ TextureImporter:
       name: being_finished_401_bis_524_25
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1365
         y: 10920
         width: 1365
         height: 1365
+=======
+        x: 1980
+        y: 11495
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1072,10 +1261,17 @@ TextureImporter:
       name: being_finished_401_bis_524_26
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2730
         y: 10920
         width: 1365
         height: 1365
+=======
+        x: 3345
+        y: 11495
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1094,10 +1290,17 @@ TextureImporter:
       name: being_finished_401_bis_524_27
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 4095
         y: 10920
         width: 1365
         height: 1365
+=======
+        x: 4710
+        y: 11495
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1116,10 +1319,17 @@ TextureImporter:
       name: being_finished_401_bis_524_28
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 5460
         y: 10920
         width: 1365
         height: 1365
+=======
+        x: 6075
+        y: 11495
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1138,10 +1348,17 @@ TextureImporter:
       name: being_finished_401_bis_524_29
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 6825
         y: 10920
         width: 1365
         height: 1365
+=======
+        x: 7440
+        y: 11495
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1160,10 +1377,17 @@ TextureImporter:
       name: being_finished_401_bis_524_30
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 8190
         y: 10920
         width: 1365
         height: 1365
+=======
+        x: 8805
+        y: 11495
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1182,10 +1406,17 @@ TextureImporter:
       name: being_finished_401_bis_524_31
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 9555
         y: 10920
         width: 1365
         height: 1365
+=======
+        x: 10178
+        y: 11495
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1204,10 +1435,17 @@ TextureImporter:
       name: being_finished_401_bis_524_32
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 10920
         y: 10920
         width: 1365
         height: 1365
+=======
+        x: 11543
+        y: 11495
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1226,10 +1464,17 @@ TextureImporter:
       name: being_finished_401_bis_524_33
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 12285
         y: 10920
         width: 1365
         height: 1365
+=======
+        x: 12908
+        y: 11495
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1248,10 +1493,17 @@ TextureImporter:
       name: being_finished_401_bis_524_34
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 13650
         y: 10920
         width: 1365
         height: 1365
+=======
+        x: 14273
+        y: 11495
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1270,10 +1522,17 @@ TextureImporter:
       name: being_finished_401_bis_524_35
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 15015
         y: 10920
         width: 1365
         height: 1365
+=======
+        x: 15638
+        y: 11495
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1292,10 +1551,17 @@ TextureImporter:
       name: being_finished_401_bis_524_36
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 0
         y: 9555
         width: 1365
         height: 1365
+=======
+        x: 623
+        y: 10130
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1314,10 +1580,17 @@ TextureImporter:
       name: being_finished_401_bis_524_37
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1365
         y: 9555
         width: 1365
         height: 1365
+=======
+        x: 1985
+        y: 10130
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1336,10 +1609,17 @@ TextureImporter:
       name: being_finished_401_bis_524_38
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2730
         y: 9555
         width: 1365
         height: 1365
+=======
+        x: 3350
+        y: 10130
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1358,10 +1638,17 @@ TextureImporter:
       name: being_finished_401_bis_524_39
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 4095
         y: 9555
         width: 1365
         height: 1365
+=======
+        x: 4715
+        y: 10130
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1380,10 +1667,17 @@ TextureImporter:
       name: being_finished_401_bis_524_40
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 5460
         y: 9555
         width: 1365
         height: 1365
+=======
+        x: 6080
+        y: 10130
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1402,10 +1696,17 @@ TextureImporter:
       name: being_finished_401_bis_524_41
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 6825
         y: 9555
         width: 1365
         height: 1365
+=======
+        x: 7445
+        y: 10130
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1424,10 +1725,17 @@ TextureImporter:
       name: being_finished_401_bis_524_42
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 8190
         y: 9555
         width: 1365
         height: 1365
+=======
+        x: 8810
+        y: 10130
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1446,10 +1754,17 @@ TextureImporter:
       name: being_finished_401_bis_524_43
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 9555
         y: 9555
         width: 1365
         height: 1365
+=======
+        x: 10175
+        y: 10130
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1468,10 +1783,17 @@ TextureImporter:
       name: being_finished_401_bis_524_44
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 10920
         y: 9555
         width: 1365
         height: 1365
+=======
+        x: 11535
+        y: 10130
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1490,10 +1812,17 @@ TextureImporter:
       name: being_finished_401_bis_524_45
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 12285
         y: 9555
         width: 1365
         height: 1365
+=======
+        x: 12900
+        y: 10130
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1512,10 +1841,17 @@ TextureImporter:
       name: being_finished_401_bis_524_46
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 13650
         y: 9555
         width: 1365
         height: 1365
+=======
+        x: 14265
+        y: 10130
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1534,10 +1870,17 @@ TextureImporter:
       name: being_finished_401_bis_524_47
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 15015
         y: 9555
         width: 1365
         height: 1365
+=======
+        x: 15630
+        y: 10130
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1556,10 +1899,17 @@ TextureImporter:
       name: being_finished_401_bis_524_48
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 0
         y: 8190
         width: 1365
         height: 1365
+=======
+        x: 615
+        y: 8765
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1578,10 +1928,17 @@ TextureImporter:
       name: being_finished_401_bis_524_49
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1365
         y: 8190
         width: 1365
         height: 1365
+=======
+        x: 1980
+        y: 8765
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1600,10 +1957,17 @@ TextureImporter:
       name: being_finished_401_bis_524_50
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2730
         y: 8190
         width: 1365
         height: 1365
+=======
+        x: 3353
+        y: 8765
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1622,10 +1986,17 @@ TextureImporter:
       name: being_finished_401_bis_524_51
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 4095
         y: 8190
         width: 1365
         height: 1365
+=======
+        x: 4718
+        y: 8765
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1644,10 +2015,17 @@ TextureImporter:
       name: being_finished_401_bis_524_52
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 5460
         y: 8190
         width: 1365
         height: 1365
+=======
+        x: 6083
+        y: 8765
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1666,10 +2044,17 @@ TextureImporter:
       name: being_finished_401_bis_524_53
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 6825
         y: 8190
         width: 1365
         height: 1365
+=======
+        x: 7448
+        y: 8765
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1688,10 +2073,17 @@ TextureImporter:
       name: being_finished_401_bis_524_54
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 8190
         y: 8190
         width: 1365
         height: 1365
+=======
+        x: 8813
+        y: 8765
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1710,10 +2102,17 @@ TextureImporter:
       name: being_finished_401_bis_524_55
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 9555
         y: 8190
         width: 1365
         height: 1365
+=======
+        x: 10178
+        y: 8765
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1732,10 +2131,17 @@ TextureImporter:
       name: being_finished_401_bis_524_56
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 10920
         y: 8190
         width: 1365
         height: 1365
+=======
+        x: 11540
+        y: 8765
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1754,10 +2160,17 @@ TextureImporter:
       name: being_finished_401_bis_524_57
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 12285
         y: 8190
         width: 1365
         height: 1365
+=======
+        x: 12905
+        y: 8765
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1776,10 +2189,17 @@ TextureImporter:
       name: being_finished_401_bis_524_58
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 13650
         y: 8190
         width: 1365
         height: 1365
+=======
+        x: 14270
+        y: 8765
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1798,10 +2218,17 @@ TextureImporter:
       name: being_finished_401_bis_524_59
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 15015
         y: 8190
         width: 1365
         height: 1365
+=======
+        x: 15635
+        y: 8765
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1820,10 +2247,17 @@ TextureImporter:
       name: being_finished_401_bis_524_60
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 0
         y: 6825
         width: 1365
         height: 1365
+=======
+        x: 620
+        y: 7400
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1842,10 +2276,17 @@ TextureImporter:
       name: being_finished_401_bis_524_61
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1365
         y: 6825
         width: 1365
         height: 1365
+=======
+        x: 1985
+        y: 7400
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1864,10 +2305,17 @@ TextureImporter:
       name: being_finished_401_bis_524_62
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2730
         y: 6825
         width: 1365
         height: 1365
+=======
+        x: 3350
+        y: 7400
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1886,10 +2334,17 @@ TextureImporter:
       name: being_finished_401_bis_524_63
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 4095
         y: 6825
         width: 1365
         height: 1365
+=======
+        x: 4715
+        y: 7400
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1908,10 +2363,17 @@ TextureImporter:
       name: being_finished_401_bis_524_64
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 5460
         y: 6825
         width: 1365
         height: 1365
+=======
+        x: 6075
+        y: 7400
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1930,10 +2392,17 @@ TextureImporter:
       name: being_finished_401_bis_524_65
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 6825
         y: 6825
         width: 1365
         height: 1365
+=======
+        x: 7440
+        y: 7400
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1952,10 +2421,17 @@ TextureImporter:
       name: being_finished_401_bis_524_66
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 8190
         y: 6825
         width: 1365
         height: 1365
+=======
+        x: 8805
+        y: 7400
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1974,10 +2450,17 @@ TextureImporter:
       name: being_finished_401_bis_524_67
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 9555
         y: 6825
         width: 1365
         height: 1365
+=======
+        x: 10170
+        y: 7400
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1996,10 +2479,17 @@ TextureImporter:
       name: being_finished_401_bis_524_68
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 10920
         y: 6825
         width: 1365
         height: 1365
+=======
+        x: 11535
+        y: 7400
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2018,10 +2508,17 @@ TextureImporter:
       name: being_finished_401_bis_524_69
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 12285
         y: 6825
         width: 1365
         height: 1365
+=======
+        x: 12900
+        y: 7400
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2040,10 +2537,17 @@ TextureImporter:
       name: being_finished_401_bis_524_70
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 13650
         y: 6825
         width: 1365
         height: 1365
+=======
+        x: 14273
+        y: 7400
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2062,10 +2566,17 @@ TextureImporter:
       name: being_finished_401_bis_524_71
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 15015
         y: 6825
         width: 1365
         height: 1365
+=======
+        x: 15638
+        y: 7400
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2084,10 +2595,17 @@ TextureImporter:
       name: being_finished_401_bis_524_72
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 0
         y: 5460
         width: 1365
         height: 1365
+=======
+        x: 623
+        y: 6035
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2106,10 +2624,17 @@ TextureImporter:
       name: being_finished_401_bis_524_73
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1365
         y: 5460
         width: 1365
         height: 1365
+=======
+        x: 1988
+        y: 6035
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2128,10 +2653,17 @@ TextureImporter:
       name: being_finished_401_bis_524_74
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2730
         y: 5460
         width: 1365
         height: 1365
+=======
+        x: 3353
+        y: 6035
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2150,10 +2682,17 @@ TextureImporter:
       name: being_finished_401_bis_524_75
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 4095
         y: 5460
         width: 1365
         height: 1365
+=======
+        x: 4718
+        y: 6035
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2172,10 +2711,17 @@ TextureImporter:
       name: being_finished_401_bis_524_76
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 5460
         y: 5460
         width: 1365
         height: 1365
+=======
+        x: 6080
+        y: 6035
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2194,10 +2740,17 @@ TextureImporter:
       name: being_finished_401_bis_524_77
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 6825
         y: 5460
         width: 1365
         height: 1365
+=======
+        x: 7445
+        y: 6035
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2216,10 +2769,17 @@ TextureImporter:
       name: being_finished_401_bis_524_78
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 8190
         y: 5460
         width: 1365
         height: 1365
+=======
+        x: 8810
+        y: 6035
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2238,10 +2798,17 @@ TextureImporter:
       name: being_finished_401_bis_524_79
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 9555
         y: 5460
         width: 1365
         height: 1365
+=======
+        x: 10175
+        y: 6035
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2260,10 +2827,17 @@ TextureImporter:
       name: being_finished_401_bis_524_80
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 10920
         y: 5460
         width: 1365
         height: 1365
+=======
+        x: 11540
+        y: 6035
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2282,10 +2856,17 @@ TextureImporter:
       name: being_finished_401_bis_524_81
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 12285
         y: 5460
         width: 1365
         height: 1365
+=======
+        x: 12905
+        y: 6035
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2304,10 +2885,17 @@ TextureImporter:
       name: being_finished_401_bis_524_82
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 13650
         y: 5460
         width: 1365
         height: 1365
+=======
+        x: 14270
+        y: 6035
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2326,10 +2914,17 @@ TextureImporter:
       name: being_finished_401_bis_524_83
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 15015
         y: 5460
         width: 1365
         height: 1365
+=======
+        x: 15630
+        y: 6035
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2348,10 +2943,17 @@ TextureImporter:
       name: being_finished_401_bis_524_84
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 0
         y: 4095
         width: 1365
         height: 1365
+=======
+        x: 615
+        y: 4670
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2370,10 +2972,17 @@ TextureImporter:
       name: being_finished_401_bis_524_85
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1365
         y: 4095
         width: 1365
         height: 1365
+=======
+        x: 1980
+        y: 4670
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2392,10 +3001,17 @@ TextureImporter:
       name: being_finished_401_bis_524_86
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2730
         y: 4095
         width: 1365
         height: 1365
+=======
+        x: 3345
+        y: 4670
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2414,10 +3030,17 @@ TextureImporter:
       name: being_finished_401_bis_524_87
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 4095
         y: 4095
         width: 1365
         height: 1365
+=======
+        x: 4710
+        y: 4670
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2436,10 +3059,17 @@ TextureImporter:
       name: being_finished_401_bis_524_88
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 5460
         y: 4095
         width: 1365
         height: 1365
+=======
+        x: 6075
+        y: 4670
+        width: 738
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2458,10 +3088,17 @@ TextureImporter:
       name: being_finished_401_bis_524_89
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 6825
         y: 4095
         width: 1365
         height: 1365
+=======
+        x: 7448
+        y: 4670
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2480,10 +3117,17 @@ TextureImporter:
       name: being_finished_401_bis_524_90
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 8190
         y: 4095
         width: 1365
         height: 1365
+=======
+        x: 8813
+        y: 4670
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2502,10 +3146,17 @@ TextureImporter:
       name: being_finished_401_bis_524_91
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 9555
         y: 4095
         width: 1365
         height: 1365
+=======
+        x: 10178
+        y: 4670
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2524,10 +3175,17 @@ TextureImporter:
       name: being_finished_401_bis_524_92
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 10920
         y: 4095
         width: 1365
         height: 1365
+=======
+        x: 11543
+        y: 4670
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2546,10 +3204,17 @@ TextureImporter:
       name: being_finished_401_bis_524_93
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 12285
         y: 4095
         width: 1365
         height: 1365
+=======
+        x: 12908
+        y: 4670
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2568,10 +3233,17 @@ TextureImporter:
       name: being_finished_401_bis_524_94
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 13650
         y: 4095
         width: 1365
         height: 1365
+=======
+        x: 14273
+        y: 4670
+        width: 723
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2590,10 +3262,17 @@ TextureImporter:
       name: being_finished_401_bis_524_95
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 15015
         y: 4095
         width: 1365
         height: 1365
+=======
+        x: 15635
+        y: 4670
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2612,10 +3291,17 @@ TextureImporter:
       name: being_finished_401_bis_524_96
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 0
         y: 2730
         width: 1365
         height: 1365
+=======
+        x: 620
+        y: 3305
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2634,10 +3320,17 @@ TextureImporter:
       name: being_finished_401_bis_524_97
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1365
         y: 2730
         width: 1365
         height: 1365
+=======
+        x: 1985
+        y: 3305
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2656,10 +3349,17 @@ TextureImporter:
       name: being_finished_401_bis_524_98
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2730
         y: 2730
         width: 1365
         height: 1365
+=======
+        x: 3350
+        y: 3305
+        width: 731
+        height: 34
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2678,10 +3378,17 @@ TextureImporter:
       name: being_finished_401_bis_524_99
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 4095
         y: 2730
         width: 1365
         height: 1365
+=======
+        x: 4710
+        y: 3306
+        width: 739
+        height: 24
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2700,10 +3407,17 @@ TextureImporter:
       name: being_finished_401_bis_524_100
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 5460
         y: 2730
         width: 1365
         height: 1365
+=======
+        x: 6075
+        y: 3306
+        width: 739
+        height: 24
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2722,10 +3436,17 @@ TextureImporter:
       name: being_finished_401_bis_524_101
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 6825
         y: 2730
         width: 1365
         height: 1365
+=======
+        x: 7440
+        y: 3306
+        width: 739
+        height: 24
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2744,10 +3465,17 @@ TextureImporter:
       name: being_finished_401_bis_524_102
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 8190
         y: 2730
         width: 1365
         height: 1365
+=======
+        x: 8798
+        y: 3305
+        width: 753
+        height: 21
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2766,10 +3494,17 @@ TextureImporter:
       name: being_finished_401_bis_524_103
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 9555
         y: 2730
         width: 1365
         height: 1365
+=======
+        x: 10163
+        y: 3305
+        width: 753
+        height: 21
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2788,10 +3523,17 @@ TextureImporter:
       name: being_finished_401_bis_524_104
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 10920
         y: 2730
         width: 1365
         height: 1365
+=======
+        x: 11528
+        y: 3305
+        width: 753
+        height: 21
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2810,10 +3552,17 @@ TextureImporter:
       name: being_finished_401_bis_524_105
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 12285
         y: 2730
         width: 1365
         height: 1365
+=======
+        x: 12880
+        y: 3306
+        width: 771
+        height: 16
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2832,10 +3581,17 @@ TextureImporter:
       name: being_finished_401_bis_524_106
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 13650
         y: 2730
         width: 1365
         height: 1365
+=======
+        x: 14245
+        y: 3306
+        width: 771
+        height: 16
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2854,10 +3610,17 @@ TextureImporter:
       name: being_finished_401_bis_524_107
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 15015
         y: 2730
         width: 1365
         height: 1365
+=======
+        x: 15610
+        y: 3306
+        width: 770
+        height: 16
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2876,10 +3639,17 @@ TextureImporter:
       name: being_finished_401_bis_524_108
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 0
         y: 1365
         width: 1365
         height: 1365
+=======
+        x: 592
+        y: 1941
+        width: 774
+        height: 13
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2898,10 +3668,17 @@ TextureImporter:
       name: being_finished_401_bis_524_109
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1365
         y: 1365
         width: 1365
         height: 1365
+=======
+        x: 765
+        y: 576
+        width: 3331
+        height: 1378
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2920,10 +3697,17 @@ TextureImporter:
       name: being_finished_401_bis_524_110
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2730
         y: 1365
         width: 1365
         height: 1365
+=======
+        x: 1957
+        y: 1941
+        width: 774
+        height: 13
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2942,19 +3726,32 @@ TextureImporter:
       name: being_finished_401_bis_524_111
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 4095
         y: 1365
         width: 1365
         height: 1365
+=======
+        x: 4682
+        y: 1941
+        width: 779
+        height: 10
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: 0
       bones: []
       spriteID: 83e21070c331e624c8e900f57a58cdb0
+=======
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c9011e9a932b0350800000000000000
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       internalID: 5983915676875688388
       vertices: []
       indices: 
@@ -2964,19 +3761,32 @@ TextureImporter:
       name: being_finished_401_bis_524_112
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 5460
         y: 1365
         width: 1365
         height: 1365
+=======
+        x: 6047
+        y: 1941
+        width: 779
+        height: 10
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: 0
       bones: []
       spriteID: e0a51af0de2eff942b2911456ea9f966
+=======
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ac1df4808f2ffc0800000000000000
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       internalID: -3462432448911914353
       vertices: []
       indices: 
@@ -2986,19 +3796,32 @@ TextureImporter:
       name: being_finished_401_bis_524_113
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 6825
         y: 1365
         width: 1365
         height: 1365
+=======
+        x: 7412
+        y: 1941
+        width: 779
+        height: 10
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: 0
       bones: []
       spriteID: d2bfc75002a63064890181bec8f17c9d
+=======
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b185adc4b9f2cb0800000000000000
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       internalID: -4886516316290671735
       vertices: []
       indices: 
@@ -3008,19 +3831,32 @@ TextureImporter:
       name: being_finished_401_bis_524_114
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 8190
         y: 1365
         width: 1365
         height: 1365
+=======
+        x: 8829
+        y: 1941
+        width: 267
+        height: 6
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: 0
       bones: []
       spriteID: eddc339d39e60374d88c05f0ee2ab903
+=======
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2051a3e4dbbb1ebf0800000000000000
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       internalID: -296749678694099710
       vertices: []
       indices: 
@@ -3030,19 +3866,32 @@ TextureImporter:
       name: being_finished_401_bis_524_115
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 9555
         y: 1365
         width: 1365
         height: 1365
+=======
+        x: 9181
+        y: 1942
+        width: 218
+        height: 6
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: 0
       bones: []
       spriteID: fb994a5cfcc824d46b361d3cccb078ea
+=======
+      tessellationDetail: -1
+      bones: []
+      spriteID: 886a2986d748f19e0800000000000000
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       internalID: -1648453264434092408
       vertices: []
       indices: 
@@ -3052,19 +3901,32 @@ TextureImporter:
       name: being_finished_401_bis_524_116
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 10920
         y: 1365
         width: 1365
         height: 1365
+=======
+        x: 9404
+        y: 1942
+        width: 115
+        height: 6
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: 0
       bones: []
       spriteID: 33c4c5de2ad5499488cef78cb8dc62f1
+=======
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2cc32c171d82d6c0800000000000000
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       internalID: -4120075578694710225
       vertices: []
       indices: 
@@ -3074,19 +3936,32 @@ TextureImporter:
       name: being_finished_401_bis_524_117
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 12285
         y: 1365
         width: 1365
         height: 1365
+=======
+        x: 10194
+        y: 1941
+        width: 267
+        height: 6
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: 0
       bones: []
       spriteID: 03a482f4715f3434a89ad86b18242e72
+=======
+      tessellationDetail: -1
+      bones: []
+      spriteID: 712a0e2e93a186350800000000000000
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       internalID: 6010082538647757335
       vertices: []
       indices: 
@@ -3096,19 +3971,32 @@ TextureImporter:
       name: being_finished_401_bis_524_118
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 13650
         y: 1365
         width: 1365
         height: 1365
+=======
+        x: 10546
+        y: 1942
+        width: 218
+        height: 6
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: 0
       bones: []
       spriteID: 9081feee6995d8e41a84736810382248
+=======
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f482a3276a814210800000000000000
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       internalID: 1315484741753013490
       vertices: []
       indices: 
@@ -3118,19 +4006,32 @@ TextureImporter:
       name: being_finished_401_bis_524_119
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 15015
         y: 1365
         width: 1365
         height: 1365
+=======
+        x: 10769
+        y: 1942
+        width: 115
+        height: 6
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: 0
       bones: []
       spriteID: 3b334ccf269689d4eb4fe4de653ae148
+=======
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27222483db0072330800000000000000
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       internalID: 3685915632718717554
       vertices: []
       indices: 
@@ -3140,19 +4041,32 @@ TextureImporter:
       name: being_finished_401_bis_524_120
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 0
         y: 0
         width: 1365
         height: 1365
+=======
+        x: 11559
+        y: 1941
+        width: 267
+        height: 6
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: 0
       bones: []
       spriteID: 0ce91dec7bc177a48a8af284bb40e039
+=======
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb840fa714b2ffed0800000000000000
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       internalID: -2378134517992896325
       vertices: []
       indices: 
@@ -3162,19 +4076,32 @@ TextureImporter:
       name: being_finished_401_bis_524_121
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1365
         y: 0
         width: 1365
         height: 1365
+=======
+        x: 11911
+        y: 1942
+        width: 218
+        height: 6
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: 0
       bones: []
       spriteID: fa9598ba29bd54842997d7411ff3f371
+=======
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d69dc2a13cbbf360800000000000000
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       internalID: 7204558950280042192
       vertices: []
       indices: 
@@ -3184,29 +4111,181 @@ TextureImporter:
       name: being_finished_401_bis_524_122
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2730
         y: 0
         width: 1365
         height: 1365
+=======
+        x: 12134
+        y: 1942
+        width: 115
+        height: 6
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: 0
       bones: []
       spriteID: ce7b9d1f8dfd53a48b6d476fa8fd51fc
+=======
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6001f337cd73b0a0800000000000000
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
       internalID: -6867006712286478228
       vertices: []
       indices: 
       edges: []
       weights: []
+<<<<<<< HEAD
+=======
+    - serializedVersion: 2
+      name: being_finished_401_bis_524_123
+      rect:
+        serializedVersion: 2
+        x: 12924
+        y: 1942
+        width: 111
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef51bf6b2af0e9e0800000000000000
+      internalID: -1593999203624722453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_401_bis_524_124
+      rect:
+        serializedVersion: 2
+        x: 13048
+        y: 1941
+        width: 423
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8cf88deb90cc8b20800000000000000
+      internalID: 3138094816308034699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_401_bis_524_125
+      rect:
+        serializedVersion: 2
+        x: 14289
+        y: 1942
+        width: 111
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53fa996c120c1be80800000000000000
+      internalID: -8164533398147584203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_401_bis_524_126
+      rect:
+        serializedVersion: 2
+        x: 14413
+        y: 1941
+        width: 423
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df109dd1a6dfe3710800000000000000
+      internalID: 1675054743637524989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_401_bis_524_127
+      rect:
+        serializedVersion: 2
+        x: 15654
+        y: 1942
+        width: 111
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db247434efb38950800000000000000
+      internalID: 6450210078178159574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_401_bis_524_128
+      rect:
+        serializedVersion: 2
+        x: 15778
+        y: 1941
+        width: 423
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f247010c1e2015700800000000000000
+      internalID: 527205799992259631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
     outline: []
     customData: 
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: f240b35de2a83dc42963a8aef5588181
+=======
+    spriteID: 
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
     internalID: 0
     vertices: []
     indices: 
@@ -3214,6 +4293,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
+<<<<<<< HEAD
       entries:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":12.0,"y":11.0},"gridSpriteSize":{"x":1365.0,"y":1365.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
@@ -3341,6 +4421,10 @@ TextureImporter:
       being_finished_401_bis_524_97: -2548389465486364489
       being_finished_401_bis_524_98: -5594301047249634440
       being_finished_401_bis_524_99: -5106281969345114353
+=======
+      entries: []
+    nameFileIdTable: {}
+>>>>>>> c42f0dd60881070b24772bde40f9e2c7325384e1
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

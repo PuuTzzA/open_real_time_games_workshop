@@ -39,6 +39,8 @@ public class Bomb : MonoBehaviour
     private Transform stuckTarget = null;
     private bool stuckToPlayer = false;
 
+    private AudioSource audioSource;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -48,6 +50,8 @@ public class Bomb : MonoBehaviour
         rb.bodyType = RigidbodyType2D.Kinematic;
         rb.linearVelocity = Vector2.zero;
         rb.gravityScale = 0f;
+
+        audioSource = GetComponent<AudioSource>();
 
         animator = GetComponent<Animator>();
 
@@ -231,6 +235,11 @@ public class Bomb : MonoBehaviour
     {
         animator.SetTrigger("cd");
 
+        if (!hasStuck)
+        {
+            audioSource.Play();
+        }
+
         if (hasStuck)
         {
             if (!stuckToPlayer && isPlayer)
@@ -306,6 +315,11 @@ public class Bomb : MonoBehaviour
         }
 
         if (!thrown) return;
+
+        if (other.GetComponent<Bomb>() || other.GetComponent<LaserHitbox>())
+        {
+            return;
+        }
 
         if (isPlayer && player == holder && Time.time - throwTime < 0.2f)
             return;

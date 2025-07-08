@@ -5519,6 +5519,7 @@ Transform:
   - {fileID: 1212554263}
   - {fileID: 592842710}
   - {fileID: 1428202025}
+  - {fileID: 1353145960}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &688353674
@@ -5539,13 +5540,15 @@ MonoBehaviour:
   activatableText: {fileID: 1937402266}
   propulsion: {fileID: 1874382681}
   propulsionParticleSystem: {fileID: 1212554262}
-  waitTimeOffScreen: 1
-  cooldownTime: 3
+  waitTimeOffScreen: 4
+  cooldownTime: 4
   dropDistance: 6
-  moveSpeed: 2
+  moveSpeed: 4
   platformCollider: {fileID: 688353675}
   bombPrefab: {fileID: 4238680019386585109, guid: f2e50d11d5429cc4ea524a5a4bbbc9c0, type: 3}
-  bombSpawnPoint: {fileID: 1428202025}
+  bombSpawnPointList:
+  - {fileID: 1428202025}
+  - {fileID: 1353145960}
   isPressed: 0
   isMoving: 0
   isOnCooldown: 0
@@ -11493,6 +11496,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 688353672}
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
+--- !u!1 &1353145959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1353145960}
+  m_Layer: 0
+  m_Name: BombSpawnPoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1353145960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353145959}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.36, y: 1.6, z: 0.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 688353672}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1428202024
 GameObject:
   m_ObjectHideFlags: 0
@@ -11518,7 +11552,7 @@ Transform:
   m_GameObject: {fileID: 1428202024}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.52, y: 1.6, z: 0.1}
+  m_LocalPosition: {x: -0.37, y: 1.6, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
