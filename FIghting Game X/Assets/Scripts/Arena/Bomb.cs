@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
+using UnityEngine.InputSystem;
 
 public class Bomb : MonoBehaviour
 {
+    [SerializeField] private TextMeshPro activatableText;
+
     private Rigidbody2D rb;
     private Collider2D col;
 
@@ -12,14 +16,12 @@ public class Bomb : MonoBehaviour
 
     public float explodeAfter = 3f;
     public GameObject explosionIdle;
-    public GameObject explosionEffect;
     public float explosionRadius = 2f;
     public float knockbackForce = 15f;
     public float explosionGrowthFactor = 1.2f;
     private bool exploding = false;
 
     private Animator animator;
-    private SpriteRenderer spriteRenderer;
     private Color originalColor;
 
     private BaseFighter holder;
@@ -37,6 +39,8 @@ public class Bomb : MonoBehaviour
     private Transform stuckTarget = null;
     private bool stuckToPlayer = false;
 
+    private AudioSource audioSource;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -47,11 +51,12 @@ public class Bomb : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
         rb.gravityScale = 0f;
 
+        audioSource = GetComponent<AudioSource>();
+
         animator = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        originalColor = spriteRenderer.color;
 
         originalLocalScale = transform.localScale;
+        activatableText.enabled = false;
     }
 
     private IEnumerator setHoldingBomb()
@@ -66,6 +71,11 @@ public class Bomb : MonoBehaviour
 
     void Update()
     {
+        if (pickedUp)
+        {
+            TriggerDisableInteractionText();
+        }
+
         if (pickedUp && holder != null && !thrown)
         {
             bool isHeld = holder.fighter_input.interact;
@@ -86,9 +96,6 @@ public class Bomb : MonoBehaviour
         {
             timer += Time.deltaTime;
             float t = Mathf.Clamp01(timer / explodeAfter);
-
-            if (spriteRenderer != null)
-                spriteRenderer.color = Color.Lerp(originalColor, Color.red, t);
 
             float scaleMult = Mathf.Lerp(1f, explosionGrowthFactor, t);
             transform.localScale = originalLocalScale * scaleMult;
@@ -224,11 +231,15 @@ public class Bomb : MonoBehaviour
         );
     }
 
-
-
-
     private void StickToTarget(Transform target, bool isPlayer)
     {
+        animator.SetTrigger("cd");
+
+        if (!hasStuck)
+        {
+            audioSource.Play();
+        }
+
         if (hasStuck)
         {
             if (!stuckToPlayer && isPlayer)
@@ -264,6 +275,9 @@ public class Bomb : MonoBehaviour
 
     private void Explode()
     {
+        animator.SetTrigger("ex");
+        ReparentKeepWorldScale(null);
+
         foreach (var fighter in FindObjectsOfType<BaseFighter>())
         {
             var fighterCollider = fighter.GetComponent<Collider2D>();
@@ -271,11 +285,6 @@ public class Bomb : MonoBehaviour
             {
                 Physics2D.IgnoreCollision(col, fighterCollider, false);
             }
-        }
-
-        if (animator != null)
-        {
-            animator.SetTrigger("Explode");
         }
 
         int layerMask = 1 << 7;
@@ -291,15 +300,26 @@ public class Bomb : MonoBehaviour
             }
         }
 
-        Destroy(gameObject, 0.4f);
+        Destroy(gameObject, 1f);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        BaseFighter player = other.GetComponentInParent<BaseFighter>();
+
+        bool isPlayer = (player != null);
+
+        if (isPlayer && !thrown)
+        {
+            TriggerInteractionText(player);
+        }
+
         if (!thrown) return;
 
-        BaseFighter player = other.GetComponentInParent<BaseFighter>();
-        bool isPlayer = (player != null);
+        if (other.GetComponent<Bomb>() || other.GetComponent<LaserHitbox>())
+        {
+            return;
+        }
 
         if (isPlayer && player == holder && Time.time - throwTime < 0.2f)
             return;
@@ -314,6 +334,15 @@ public class Bomb : MonoBehaviour
             {
                 StickToTarget(other.transform, false);
             }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        BaseFighter player = other.GetComponentInParent<BaseFighter>();
+        if (player != null)
+        {
+            TriggerDisableInteractionText();
         }
     }
 
@@ -335,4 +364,20 @@ public class Bomb : MonoBehaviour
         transform.position = worldPosition;
         transform.rotation = worldRotation;
     }
+
+    public void TriggerInteractionText(BaseFighter fighter)
+    {
+        PlayerInput pI = fighter.gameObject.GetComponent<PlayerInput>();
+        bool isKeyboard = pI.currentControlScheme == "Keyboard&Mouse";
+        activatableText.text = isKeyboard ? pI.actions["Interact"].GetBindingDisplayString().ToLower() : pI.actions["Interact"].GetBindingDisplayString(group: "Gamepad").ToLower();
+        activatableText.enabled = true;
+        Debug.Log("Triggering interaction text: ");
+    }
+
+    public void TriggerDisableInteractionText()
+    {
+        activatableText.enabled = false;
+        Debug.Log("disable interaction text: ");
+    }
+
 }
