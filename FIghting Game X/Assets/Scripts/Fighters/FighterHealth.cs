@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -25,10 +26,12 @@ public class FighterHealth : MonoBehaviour
     private PlayerInput playerInput;
     private PersistentPlayerManager persistentPlayerManager;
     private IngameUI ingameUI;
+    private FighterState fighterState;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        fighterState = GetComponent<FighterState>();
         playerInput = GetComponent<PlayerInput>();
         ingameUI = FindAnyObjectByType<IngameUI>(FindObjectsInactive.Include);
         currentHealth = maxHealth;
@@ -76,6 +79,7 @@ public class FighterHealth : MonoBehaviour
     {
         currentLives--;
         ingameUI.changeStocks(playerInput.playerIndex, currentLives);
+        fighterState.start_action(FighterAction.Death);
 
 
         if (currentLives <= 0)
@@ -110,23 +114,16 @@ public class FighterHealth : MonoBehaviour
         }
     }
 
-    private IEnumerator DelayedHandleDeath(GameObject killer)
-    {
-        yield return new WaitForSeconds(0.3f); // Delay before handling death
-    }
-
-    private IEnumerator DelayedHandleArenaDeath()
-    {
-        yield return new WaitForSeconds(0.3f); // Delay before handling arena death
-        HandleArenaDeath();
-    }
-
     private void HandleArenaDeath()
     {
         currentLives--;
         ingameUI.changeStocks(playerInput.playerIndex, currentLives);
-
-
+        
+        // Hide the fighter temporarily
+        toggleFighter(false);
+        
+        fighterState.start_action(FighterAction.Death);
+        
 
         if (currentLives <= 0)
         {
@@ -147,12 +144,12 @@ public class FighterHealth : MonoBehaviour
     private IEnumerator RespawnRoutine()
     {
 
-        // Hide the fighter temporarily
-        SetSpriteRenderersVisible(false);
 
         yield return new WaitForSeconds(1.5f); // Delay before respawning
 
-        SetSpriteRenderersVisible(true);
+        // Reactivate the fighter
+        toggleFighter(true);
+        
         // Choose a random spawn point
         Transform[] spawnPoints = persistentPlayerManager.spawnPoints;
         int spawnIndex = Random.Range(0, spawnPoints.Length);
@@ -167,15 +164,11 @@ public class FighterHealth : MonoBehaviour
         StartCoroutine(BlinkSprite(1f)); // 1 second blink effect
 
         // Reset state
-        var fighterState = GetComponent<FighterState>();
         if (fighterState != null)
         {
             fighterState.start_action(FighterAction.Idle);
             fighterState.set_grounded(false);
             fighterState.force_facing(1);
-        }
-        else
-        {
         }
 
         // Reset physics
@@ -186,12 +179,32 @@ public class FighterHealth : MonoBehaviour
             rb.angularVelocity = 0f;
             rb.gravityScale = 1f;
         }
-        else
-        {
-        }
 
         GetComponent<BaseFighter>().died = false;
 
+    }
+    
+    private void toggleFighter(bool value)
+    {
+        // Disable the fighter's controls and components
+        var fighter = GetComponent<BaseFighter>();
+        if (fighter != null)
+        {
+            fighter.enabled = value; }
+
+        // Disable the collider
+        var collider = GetComponent<Collider2D>();
+        if (collider != null)
+        {
+            collider.enabled = value;
+        }
+
+        // Disable the rigidbody
+        var rb = GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.simulated = value;
+        }
     }
 
     private void SetSpriteRenderersVisible(bool visible)
@@ -253,6 +266,8 @@ public class FighterHealth : MonoBehaviour
     {
         // TODO: Handle the death of the fighter, such as disabling controls, playing death animation, etc.
 
+        toggleFighter(false);
+        SetSpriteRenderersVisible(false);
         List<PlayerInput> playersAlive = persistentPlayerManager.getAlivePlayers();
 
         // Check if there are still more than one fighter alive
