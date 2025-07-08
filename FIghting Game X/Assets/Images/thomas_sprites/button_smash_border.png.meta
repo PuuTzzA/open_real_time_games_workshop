@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e46efb54d07bdaa4fbb02a03c149a8b5
+guid: 6d45f06156add4e4cab004dba971238d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -235166017121453576
-    second: layout_0
+      213: 8127013172565746560
+    second: button_smash_border_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: layout_0
+      name: button_smash_border_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2252
-        height: 2252
+        width: 260
+        height: 1253
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8f97b3ed0c58cbcf0800000000000000
-      internalID: -235166017121453576
+      spriteID: 083a3b3fb63f8c070800000000000000
+      internalID: 8127013172565746560
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      button_smash_border_0: 8127013172565746560
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
