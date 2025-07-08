@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      button_smash_innen_0: 8459988511467219062
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

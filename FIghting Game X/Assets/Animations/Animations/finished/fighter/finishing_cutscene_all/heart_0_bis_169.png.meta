@@ -141,7 +141,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -185,12 +185,12 @@ TextureImporter:
       name: heart_0_bis_169_0
       rect:
         serializedVersion: 2
-        x: 1736
-        y: 1604
-        width: 894
-        height: 17
+        x: 905
+        y: 905
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -207,12 +207,12 @@ TextureImporter:
       name: heart_0_bis_169_1
       rect:
         serializedVersion: 2
-        x: 3466
-        y: 1603
-        width: 27
-        height: 31
+        x: 1810
+        y: 905
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -229,12 +229,12 @@ TextureImporter:
       name: heart_0_bis_169_2
       rect:
         serializedVersion: 2
-        x: 4334
-        y: 1602
-        width: 27
-        height: 31
+        x: 2715
+        y: 905
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -251,12 +251,12 @@ TextureImporter:
       name: heart_0_bis_169_3
       rect:
         serializedVersion: 2
-        x: 5198
-        y: 1602
-        width: 26
-        height: 31
+        x: 3620
+        y: 905
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -273,12 +273,12 @@ TextureImporter:
       name: heart_0_bis_169_4
       rect:
         serializedVersion: 2
-        x: 6093
-        y: 1599
-        width: 26
-        height: 30
+        x: 4525
+        y: 905
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -295,12 +295,12 @@ TextureImporter:
       name: heart_0_bis_169_5
       rect:
         serializedVersion: 2
-        x: 6994
-        y: 1597
-        width: 26
-        height: 30
+        x: 5430
+        y: 905
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -317,12 +317,12 @@ TextureImporter:
       name: heart_0_bis_169_6
       rect:
         serializedVersion: 2
-        x: 7896
-        y: 1597
-        width: 27
-        height: 32
+        x: 6335
+        y: 905
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -339,12 +339,12 @@ TextureImporter:
       name: heart_0_bis_169_7
       rect:
         serializedVersion: 2
-        x: 8800
-        y: 1597
-        width: 26
-        height: 31
+        x: 7240
+        y: 905
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -361,12 +361,12 @@ TextureImporter:
       name: heart_0_bis_169_8
       rect:
         serializedVersion: 2
-        x: 9703
-        y: 1598
-        width: 26
-        height: 30
+        x: 8145
+        y: 905
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -383,12 +383,12 @@ TextureImporter:
       name: heart_0_bis_169_9
       rect:
         serializedVersion: 2
-        x: 10607
-        y: 1598
-        width: 26
-        height: 30
+        x: 9050
+        y: 905
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -405,12 +405,12 @@ TextureImporter:
       name: heart_0_bis_169_10
       rect:
         serializedVersion: 2
-        x: 11510
-        y: 1598
-        width: 26
-        height: 30
+        x: 9955
+        y: 905
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -427,12 +427,12 @@ TextureImporter:
       name: heart_0_bis_169_11
       rect:
         serializedVersion: 2
-        x: 649
-        y: 693
-        width: 26
-        height: 30
+        x: 10860
+        y: 905
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -449,12 +449,12 @@ TextureImporter:
       name: heart_0_bis_169_12
       rect:
         serializedVersion: 2
-        x: 1553
-        y: 693
-        width: 26
-        height: 30
+        x: 0
+        y: 0
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -471,12 +471,12 @@ TextureImporter:
       name: heart_0_bis_169_13
       rect:
         serializedVersion: 2
-        x: 2457
-        y: 693
-        width: 26
-        height: 30
+        x: 905
+        y: 0
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -493,12 +493,12 @@ TextureImporter:
       name: heart_0_bis_169_14
       rect:
         serializedVersion: 2
-        x: 3362
-        y: 693
-        width: 26
-        height: 30
+        x: 1810
+        y: 0
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -515,12 +515,12 @@ TextureImporter:
       name: heart_0_bis_169_15
       rect:
         serializedVersion: 2
-        x: 4266
-        y: 693
-        width: 26
-        height: 30
+        x: 2715
+        y: 0
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -537,12 +537,12 @@ TextureImporter:
       name: heart_0_bis_169_16
       rect:
         serializedVersion: 2
-        x: 5171
-        y: 693
-        width: 26
-        height: 30
+        x: 3620
+        y: 0
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -559,12 +559,12 @@ TextureImporter:
       name: heart_0_bis_169_17
       rect:
         serializedVersion: 2
-        x: 6075
-        y: 693
-        width: 26
-        height: 30
+        x: 4525
+        y: 0
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -581,12 +581,12 @@ TextureImporter:
       name: heart_0_bis_169_18
       rect:
         serializedVersion: 2
-        x: 6980
-        y: 693
-        width: 26
-        height: 30
+        x: 5430
+        y: 0
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -603,12 +603,12 @@ TextureImporter:
       name: heart_0_bis_169_19
       rect:
         serializedVersion: 2
-        x: 7885
-        y: 693
-        width: 26
-        height: 30
+        x: 6335
+        y: 0
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -625,12 +625,12 @@ TextureImporter:
       name: heart_0_bis_169_20
       rect:
         serializedVersion: 2
-        x: 8790
-        y: 693
-        width: 26
-        height: 31
+        x: 7240
+        y: 0
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -647,12 +647,12 @@ TextureImporter:
       name: heart_0_bis_169_21
       rect:
         serializedVersion: 2
-        x: 9695
-        y: 693
-        width: 26
-        height: 31
+        x: 8145
+        y: 0
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -669,12 +669,12 @@ TextureImporter:
       name: heart_0_bis_169_22
       rect:
         serializedVersion: 2
-        x: 10600
-        y: 694
-        width: 26
-        height: 30
+        x: 9050
+        y: 0
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -691,12 +691,12 @@ TextureImporter:
       name: heart_0_bis_169_23
       rect:
         serializedVersion: 2
-        x: 11505
-        y: 694
-        width: 26
-        height: 30
+        x: 9955
+        y: 0
+        width: 905
+        height: 905
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -709,11 +709,77 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: heart_0_bis_169_24
+      rect:
+        serializedVersion: 2
+        x: 10860
+        y: 0
+        width: 905
+        height: 905
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6e48ea5af17b547afcd24b675e056e
+      internalID: -668020670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart_0_bis_169_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 905
+        width: 905
+        height: 905
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a714311582063b44a7632f5a3188a1f
+      internalID: 529549329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart_0_bis_169_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1810
+        width: 905
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61ba20092a679342ad3581cb5c41b9c
+      internalID: -1480700677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c742f66d59605d6478c746f0ea12a3db
     internalID: 0
     vertices: []
     indices: 
@@ -721,8 +787,37 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":905.0,"y":905.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      heart_0_bis_169_0: -9084672429500879768
+      heart_0_bis_169_1: 4333678087089666503
+      heart_0_bis_169_10: -1017667799466571855
+      heart_0_bis_169_11: 2539595890464209411
+      heart_0_bis_169_12: -3369673262152888407
+      heart_0_bis_169_13: 6190808059614697172
+      heart_0_bis_169_14: -6331830805683798724
+      heart_0_bis_169_15: -5210210307645590935
+      heart_0_bis_169_16: -8872908062121896270
+      heart_0_bis_169_17: -2061825381398472786
+      heart_0_bis_169_18: 934624340611510835
+      heart_0_bis_169_19: -888541176497847234
+      heart_0_bis_169_2: 1004901545978767766
+      heart_0_bis_169_20: 5181647991936646288
+      heart_0_bis_169_21: 3422614356079897253
+      heart_0_bis_169_22: 4393133855049127795
+      heart_0_bis_169_23: 1769917445779998517
+      heart_0_bis_169_24: -668020670
+      heart_0_bis_169_25: 529549329
+      heart_0_bis_169_26: -1480700677
+      heart_0_bis_169_3: 6500228586589331082
+      heart_0_bis_169_4: 8922252219115690213
+      heart_0_bis_169_5: 7500187185922558220
+      heart_0_bis_169_6: 2295552649431566562
+      heart_0_bis_169_7: 1610764470095270074
+      heart_0_bis_169_8: -1140887794678874460
+      heart_0_bis_169_9: -4722934247174776668
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

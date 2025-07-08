@@ -9,28 +9,13 @@ public class AttackHitbox : Hitbox
     public BaseFighter source_fighter;
     public bool jab = true;
     public int duration = 10;
+    public int ult_points;
 
     public HashSet<BaseFighter> hit_fighters = new HashSet<BaseFighter>();
 
-    public void FixedUpdate()
-    {
-        var colliders = gameObject.GetComponents<Collider>();
-
-        bool no_active = true;
-        foreach(Collider collider in colliders)
-        {
-            if(collider.enabled)
-            {
-                no_active = false;
-                break;
-            }
-        }
-        if(no_active)
-            hit_fighters.Clear();
-    }
-
     public override void hit(BaseFighter fighter, HitType type)
     {
+        Debug.Log("hit " + hit_fighters.Contains(fighter));
         if (type != HitType.Start || hit_fighters.Contains(fighter)) { return; }
 
         if(jab)
@@ -53,6 +38,7 @@ public class AttackHitbox : Hitbox
 
         fighter.knockback_light(knockback * source_fighter.state.get_facing_vec());
         fighter.take_damage(damage, this.source_fighter.gameObject);
+        source_fighter.state.add_ult_points(ult_points);
 
         if (direction.Equals(Vector2Int.down))
         {
@@ -65,5 +51,7 @@ public class AttackHitbox : Hitbox
         
         fighter.knockback_heavy(knockback * source_fighter.state.get_facing_vec(), duration);
         fighter.take_damage(damage, this.source_fighter.gameObject);
+
+        source_fighter.state.add_ult_points(ult_points);
     }
 }

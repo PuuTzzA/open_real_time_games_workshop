@@ -15,6 +15,7 @@ public class BaseFighter : MonoBehaviour
     public new Rigidbody2D rigidbody;
     public Collider2D[] colliders;
     public Collider2D current_collider;
+    public Collider2D hurtbox;
 
     public TextMeshPro debug_text;
 
@@ -36,6 +37,8 @@ public class BaseFighter : MonoBehaviour
     public Vector2 deathBounds = new Vector2(-15.0f, -8.0f);
     public bool died = false;
     public GameObject holdingBomb;
+
+    private ParticleSystem particle_system;
 
 
     private readonly float[] dash_curve = new float[] {
@@ -84,6 +87,8 @@ public class BaseFighter : MonoBehaviour
         state.start_action(FighterAction.Idle);
 
         select_collider(0);
+
+        particle_system = GetComponentInChildren<ParticleSystem>();
     }
 
     public void FixedUpdate()
@@ -116,15 +121,13 @@ public class BaseFighter : MonoBehaviour
 
         event_buffer.process();
 
-        /*
-        if (remaining_dash_frames > 10)
+        if (state.can_ult())
         {
-            rigidbody.gravityScale = 1.0f;
-            rigidbody.linearVelocityX = 0.0f;
-            // rigidbody.linearVelocityY = 0.0f;
-            remaining_dash_frames--;
+            if (!particle_system.isPlaying) particle_system.Play();
+        } else
+        {
+            if (!particle_system.isStopped) particle_system.Stop();
         }
-        else /**/
 
         rigidbody.gravityScale = 1.0f;
 
@@ -138,6 +141,8 @@ public class BaseFighter : MonoBehaviour
             process_movement();
 
         gameObject.layer = state.flags_any_set(FighterFlags.Phasing) ? 10 : 6;
+
+        hurtbox.enabled = !state.flags_any_set(FighterFlags.Invincible);
 
         // material_selector.set_elastic(false);
         select_collider(0);
@@ -258,6 +263,7 @@ public class BaseFighter : MonoBehaviour
 
     public void stun(int duration)
     {
+        player_sounds.PlayJabHit();
         state.stun_duration = Math.Max(duration, state.stun_duration);
         state.start_action(FighterAction.Stunned);
     }
@@ -369,7 +375,7 @@ public class BaseFighter : MonoBehaviour
             else
             {
                 state.animation_handler.set_frozen(true);
-                rigidbody.linearVelocityY = -32.0f;
+                rigidbody.linearVelocityY = -20.0f;
             }
         }
     }
@@ -384,7 +390,7 @@ public class BaseFighter : MonoBehaviour
         //if (dash_index >= short_dash_curve.Length) return;
 
 
-        float speed = short_dash_curve[dash_index] * state.base_stats.dash_factor * state.base_stats.ground_speed * state.get_facing_float();
+        float speed = short_dash_curve[dash_index] * state.base_stats.dash_factor * state.base_stats.ground_speed * state.get_facing_float() * 1.2f;
         rigidbody.linearVelocityX = speed;
     }
 
@@ -492,7 +498,8 @@ public class BaseFighter : MonoBehaviour
             }
         }
 
-        Debug.Log(index);
+        if (index >= 158)
+            state.reset_ult_points();
 
         state.ult_hitbox.reduce_fighter_cooldowns();
     }
@@ -527,6 +534,8 @@ public class BaseFighter : MonoBehaviour
 
         state.force_facing(input.direction.x);
         player_sounds.PlayJab();
+
+        GetComponentInChildren<AttackHitbox>().hit_fighters.Clear();
         state.start_action((FighterAction)((int)(FighterAction.JabSide) - input.direction.y));
         return true;
     }
@@ -554,6 +563,7 @@ public class BaseFighter : MonoBehaviour
         }
         // player_sounds.PlayHeavySidewaysClip();
 
+        GetComponentInChildren<AttackHitbox>().hit_fighters.Clear();
         state.start_action((FighterAction)((int)(FighterAction.HeavySide) - input.direction.y));
         return true;
     }
@@ -599,6 +609,8 @@ public class BaseFighter : MonoBehaviour
         if (!input.pressed) return true;
 
         if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
+
+        if(!state.can_ult()) return false;
 
         state.force_facing(input.direction.x);
         state.start_action(FighterAction.Ult);

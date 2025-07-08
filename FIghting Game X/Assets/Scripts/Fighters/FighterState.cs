@@ -63,6 +63,9 @@ public class FighterState : MonoBehaviour
     public int knockback_duration;
     public static readonly float[] knockback_rotation_factors = {0.0f, 0.3f, 0.7f, 1.0f, 0.9f, 0.7f, 0.3f, 0.1f, 0.0f };
 
+    public const int MAX_ULT_POINTS = 100;
+
+    public int ult_points;
     public AnimationHandler hammer_animation_handler;
     public Transform hammer_base_transform;
     public UltHitbox ult_hitbox;
@@ -83,11 +86,8 @@ public class FighterState : MonoBehaviour
 
     public void start_action(FighterAction action)
     {
+        hammer_base_transform.gameObject.SetActive(false);
         animation_handler.play(action);
-
-        //animator.ResetTrigger("trigger");
-        //animator.SetInteger("action", (int)action);
-        //animator.SetTrigger("trigger");
     }
 
     public bool is_idle()
@@ -240,5 +240,20 @@ public class FighterState : MonoBehaviour
         }
 
         ult_data = data.ToArray();
+    }
+
+    public bool can_ult()
+    {
+        return ult_points >= MAX_ULT_POINTS;
+    }
+
+    public void add_ult_points(int points)
+    {
+        ult_points += points;
+    }
+
+    public void reset_ult_points()
+    {
+        ult_points = 0;
     }
 }
