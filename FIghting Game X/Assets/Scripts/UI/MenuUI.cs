@@ -250,24 +250,40 @@ public class MenuUI : MonoBehaviour
 
     private void Back()
     {
-        if (menuLevel == MenuLevel.menu) return;
-
-        menuLevel = (MenuLevel)Math.Max(0, (int)menuLevel - 1);
-        root.Q<VisualElement>("Footer").focusable = false;
-
+        switch (menuLevel)
+        {
+            case MenuLevel.menu:
+                return;
+            case MenuLevel.option_chosen:
+                menuLevel = MenuLevel.menu;
+                root.Q<VisualElement>("Footer").focusable = false; 
+                break;
+            case MenuLevel.option_specific:
+                menuLevel = MenuLevel.option_chosen;
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
         foreach (var option in currentOptions)
         {
+            if (option.name == "Settings_Option")
+            {
+                root.Q<VisualElement>("Sound_Tab_Screen").style.display = DisplayStyle.None;
+                root.Q<VisualElement>("Sound_Tab_Screen").SetEnabled(false);
+            }
             option.SetEnabled(true);
             option.focusable = true;
-            option.RemoveFromClassList("option_button_chosen");
+            if (option.ClassListContains("option_button_chosen"))
+            {
+                option.RemoveFromClassList("option_button_chosen");
+            }
+            backButton.style.display = DisplayStyle.None;
+            backButton.SetEnabled(false);
+            confirmButton.style.display = DisplayStyle.None;
+            confirmButton.SetEnabled(false);
+            CloseOptionScreen();
         }
-
-        backButton.style.display = DisplayStyle.None;
-        backButton.SetEnabled(false);
-        confirmButton.style.display = DisplayStyle.None;
-        confirmButton.SetEnabled(false);
-        CloseOptionScreen();
-        focusedElement?.Focus();
+        focusedElement.Focus();
     }
 
     private void OnConfirmPressed(InputAction.CallbackContext ctx) => Confirm();
