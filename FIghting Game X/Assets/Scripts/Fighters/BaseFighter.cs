@@ -8,6 +8,7 @@ using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using static UnityEngine.Rendering.DebugUI;
 using System.Runtime.CompilerServices;
 using UnityEditor.Experimental.GraphView;
+using Unity.VisualScripting;
 
 public class BaseFighter : MonoBehaviour
 {
@@ -76,6 +77,8 @@ public class BaseFighter : MonoBehaviour
         frame_callbacks[(int)FighterAction.KnockedBackHeavy] = knockback_heavy_tick;
         frame_callbacks[(int)FighterAction.HeavySide] = heavy_side_tick;
 
+        frame_callbacks[(int)FighterAction.Ult] = ult_tick;
+
         frame_callbacks[(int)FighterAction.Crouch] = crouch_tick;
 
 
@@ -123,6 +126,8 @@ public class BaseFighter : MonoBehaviour
             remaining_dash_frames--;
         }
         else /**/
+
+        rigidbody.gravityScale = 1.0f;
 
         freezeXY(state.flags_any_set(FighterFlags.FreezeX), state.flags_any_set(FighterFlags.FreezeY));
 
@@ -380,6 +385,76 @@ public class BaseFighter : MonoBehaviour
 
 
 
+    public void ult_tick(int index)
+    {
+        if (index == 0)
+        {
+            state.hammer_base_transform.gameObject.SetActive(true);
+            state.hammer_base_transform.eulerAngles = Vector3.zero;
+            state.hammer_animation_handler.play(FighterAction.UltHammer);
+            state.ult_index = 0;
+        }
+
+        if (state.flags_any_set(FighterFlags.CustomMovement))
+        {
+            rigidbody.gravityScale = 0.0f;
+
+            select_collider(2);
+
+            var target_speed = new Vector2(fighter_input.direction.x, fighter_input.direction.y).normalized * state.get_air_speed() * 0.7f;
+
+            var dist = target_speed - rigidbody.linearVelocity;
+
+            float delta = state.get_air_speed() * Time.fixedDeltaTime * 2.0f;
+
+            if (dist.magnitude <= delta)
+            {
+                rigidbody.linearVelocity = target_speed;
+            }
+            else
+            {
+                rigidbody.linearVelocity += delta * dist.normalized;
+            }
+
+            //var vel = rigidbody.linearVelocity.x;
+            //rigidbody.linearVelocityX -= Math.Sign(vel) * 2.0f * state.air_resistance * vel * vel * Time.fixedDeltaTime;
+
+            //vel = rigidbody.linearVelocity.y;
+            //rigidbody.linearVelocityY -= Math.Sign(vel) * 2.0f * state.air_resistance * vel * vel * Time.fixedDeltaTime;
+
+            //rigidbody.linearVelocity += new Vector2(fighter_input.direction.x, fighter_input.direction.y).normalized * state.get_air_speed() * Time.fixedDeltaTime * 5.0f;
+        }
+
+        if (state.ult_index < state.ult_data.Length)
+        {
+            state.hammer_base_transform.eulerAngles = Vector3.back * state.get_facing_float() * state.ult_data[state.ult_index].angle;
+            state.hammer_animation_handler.set_index(state.ult_data[state.ult_index].index);
+            state.hammer_animation_handler.show();
+
+            if (index == 124)
+                state.animation_handler.set_frozen(true);
+
+            state.ult_index++;
+        }
+        else
+        {
+            state.animation_handler.set_frozen(false);
+
+            state.hammer_animation_handler.step();
+
+            if (state.hammer_animation_handler.is_finished())
+            {
+                state.hammer_base_transform.gameObject.SetActive(false);
+            }
+            else
+            {
+                state.hammer_animation_handler.show();
+            }
+        }
+    }
+
+
+
     public void crouch_tick(int index)
     {
         next_idle_action();
@@ -474,13 +549,13 @@ public class BaseFighter : MonoBehaviour
     {
         if (!input.pressed) return true;
 
-        //if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
+        if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
 
-        //state.force_facing(input.direction.x);
-        //state.start_action(FighterAction.Ult);
+        state.force_facing(input.direction.x);
+        state.start_action(FighterAction.Ult);
 
         // knockback(new Vector2(-15 * state.get_facing_float(), 15), 15);
-        stun(120);
+        //stun(120);
         return true;
     }
 

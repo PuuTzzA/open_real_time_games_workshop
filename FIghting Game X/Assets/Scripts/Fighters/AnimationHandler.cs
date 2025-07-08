@@ -48,7 +48,10 @@ public class AnimationHandler : MonoBehaviour
         new ("stunned", AnimationEndAction.Signal),
         new ("die", AnimationEndAction.Signal),
         new ("crouch", AnimationEndAction.Wait),
+        new ("ult_hammer", AnimationEndAction.Signal),
     };
+
+    public FighterAction default_fighter_action;
 
     private int _current_frame_count;
     private int _frame_index;
@@ -73,7 +76,7 @@ public class AnimationHandler : MonoBehaviour
     {
         animator.speed = 0.0f;
 
-        play(FighterAction.Idle);
+        play(default_fighter_action);
     }
 
     public void play(FighterAction action)
@@ -119,5 +122,10 @@ public class AnimationHandler : MonoBehaviour
                 }
                 break;
         }
+    }
+
+    public void set_index(int index)
+    {
+        _frame_index = Math.Clamp(index, 0, _current_frame_count - 1);
     }
 }
