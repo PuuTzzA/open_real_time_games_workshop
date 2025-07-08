@@ -5661,10 +5661,9 @@ MonoBehaviour:
   fighter_input: {fileID: 8266158835667872492}
   state: {fileID: 1556262320957081972}
   health: {fileID: 2867311719178718406}
-  deathBounds: {x: -15, y: -8}
+  deathBounds: {x: -23.5, y: -11}
   died: 0
   holdingBomb: {fileID: 0}
-  ult_indicator: {fileID: 1133126804945532230}
 --- !u!60 &8741731321134584292
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5855,7 +5854,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d32cc61bbfbb2c419aa18ca06320dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
   Icon: {fileID: 6353497865673364783, guid: 63b4a393ee880bf439c1ad1d42db1221, type: 3}
   IconWithoutBackground: {fileID: 635888242749862385, guid: 090e0e198408b5c4fac913936aa49ee0, type: 3}
   maxLives: 3
