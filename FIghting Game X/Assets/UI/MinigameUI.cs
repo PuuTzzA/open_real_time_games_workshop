@@ -15,6 +15,9 @@ public class MinigameUI : MonoBehaviour
     private VisualElement skillCheckSection;
     public int minigamenumber = 0;
 
+    public Color killer;
+    public Color fallen;
+
 
 
 
@@ -32,8 +35,8 @@ public class MinigameUI : MonoBehaviour
     public float iconStartOffset = 0.3f;
     public float iconEndOffset = 0.3f;
 
-    private SquareElement icon1;
-    private SquareElement icon2;
+    public SquareElement icon1;
+    public SquareElement icon2;
     public float entryDuration = 1f;
     public float pauseDuration = 1f;
     public float exitDuration = 1f;
@@ -55,24 +58,28 @@ public class MinigameUI : MonoBehaviour
     {
         root = GetComponent<UIDocument>().rootVisualElement;
 
-
-        for (int i = 0; i < skillchecks.Length; i++)
-        {
-            skillchecks[i] = (SkillCheck)root.Q<VisualElement>($"SkillCheck{i}").hierarchy.ElementAt(0).hierarchy.ElementAt(0);
-        }
-
-        root = GetComponent<UIDocument>().rootVisualElement;
-
         vLabel = root.Q<Label>("V");
         sLabel = root.Q<Label>("S");
         player1 = root.Q<Label>("player1");
         player2 = root.Q<Label>("player2");
         icon1 = root.Q<SquareElement>("icon1");
         icon2 = root.Q<SquareElement>("icon2");
+        skillCheckSection = root.Q<VisualElement>("MiniGame1");
         timer = root.Q<ResponsiveLabel>("timer");
 
 
-        skillCheckSection = root.Q<VisualElement>("MiniGame1");
+        player1.style.color = fallen;
+        player2.style.color = killer;
+        icon1.style.unityBackgroundImageTintColor = fallen;
+        icon2.style.unityBackgroundImageTintColor = killer;
+
+
+
+
+        for (int i = 0; i < skillchecks.Length; i++)
+        {
+            skillchecks[i] = (SkillCheck)root.Q<VisualElement>($"SkillCheck{i}").hierarchy.ElementAt(0).hierarchy.ElementAt(0);
+        }
 
 
 

@@ -8,11 +8,13 @@ using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using static UnityEngine.Rendering.DebugUI;
 using System.Runtime.CompilerServices;
 using UnityEditor.Experimental.GraphView;
+using Unity.VisualScripting;
 
 public class BaseFighter : MonoBehaviour
 {
     public new Rigidbody2D rigidbody;
-    public new Collider2D collider;
+    public Collider2D[] colliders;
+    public Collider2D current_collider;
 
     public TextMeshPro debug_text;
 
@@ -26,6 +28,8 @@ public class BaseFighter : MonoBehaviour
 
     private PlayerSounds player_sounds;
 
+    // public MaterialSelector material_selector;
+
     private Action<int>[] frame_callbacks;
 
     // Tuple with x and y position (not a transform)
@@ -38,6 +42,11 @@ public class BaseFighter : MonoBehaviour
     0.5f, 0.75f, 1f, 1f, 1f, 1f, 1f, 1f, 1f,
     0.9f, 0.8f, 0.7f, 0.6f, 0.5f, 0.4f, 0.3f,
     0.2f, 0.1f, 0.05f, 0.0f, 0.0f
+};
+    private readonly float[] short_dash_curve = new float[] {
+    1f, 1f, 1f, 1f, 1f, 1f, 1f, 0.9f, 0.8f, 0.7f, 0.6f,
+    0.5f, 0.4f, 0.3f, 0.2f, 0.1f, 0.0f,
+    0.0f, 0.0f, 0.0f, 0.0f
 };
 
     private void Awake()
@@ -63,17 +72,25 @@ public class BaseFighter : MonoBehaviour
         frame_callbacks[(int)FighterAction.HeavyDown] = heavy_down_tick;
 
         frame_callbacks[(int)FighterAction.Stunned] = stun_tick;
+        frame_callbacks[(int)FighterAction.KnockedBackLight] = knockback_light_tick;
+        frame_callbacks[(int)FighterAction.KnockedBackHeavy] = knockback_heavy_tick;
+        frame_callbacks[(int)FighterAction.HeavySide] = heavy_side_tick;
+
+        frame_callbacks[(int)FighterAction.Ult] = ult_tick;
 
         frame_callbacks[(int)FighterAction.Crouch] = crouch_tick;
 
+
         state.start_action(FighterAction.Idle);
+
+        select_collider(0);
     }
 
     public void FixedUpdate()
     {
         List<ContactPoint2D> contacts = new List<ContactPoint2D>();
 
-        collider.GetContacts(contacts);
+        current_collider.GetContacts(contacts);
 
         foreach (var contact in contacts)
         {
@@ -109,22 +126,35 @@ public class BaseFighter : MonoBehaviour
         }
         else /**/
 
+        rigidbody.gravityScale = 1.0f;
+
         freezeXY(state.flags_any_set(FighterFlags.FreezeX), state.flags_any_set(FighterFlags.FreezeY));
 
-        if (state.remaining_flying_frames > 0)
-        {
-            state.remaining_flying_frames--;
-        }
-        else
-        {
+        state.set_facing(fighter_input.direction.x);
+
+        state.sprite_transform.eulerAngles = Vector3.zero;
+
+        if (!state.flags_any_set(FighterFlags.CustomMovement))
             process_movement();
-        }
+
+        gameObject.layer = state.flags_any_set(FighterFlags.Phasing) ? 10 : 6;
+
+        // material_selector.set_elastic(false);
+        select_collider(0);
 
         frame_callbacks[(int)state.get_action()]?.Invoke(state.animation_handler.get_index());
 
         debug_text.SetText(state.get_action() + "\n" + health.GetCurrentHealth() + "/" + health.maxHealth);
 
         state.set_grounded(false);
+
+        if (state.freeze_pos.Item1)
+            rigidbody.linearVelocityX = 0.0f;
+        if (state.freeze_pos.Item2)
+        {
+            rigidbody.linearVelocityY = 0.0f;
+            rigidbody.gravityScale = 0.0f;
+        }
 
         state.animation_handler.step();
     }
@@ -147,7 +177,7 @@ public class BaseFighter : MonoBehaviour
         {
             if (fighter_input.direction.x != 0)
                 next_action = FighterAction.Running;
-            else if(fighter_input.direction.y == -1)
+            else if (fighter_input.direction.y == -1)
                 next_action = FighterAction.Crouch;
         }
         else
@@ -164,7 +194,6 @@ public class BaseFighter : MonoBehaviour
 
     public void process_movement()
     {
-        state.set_facing(fighter_input.direction.x);
 
         // air resistance
         var vel = rigidbody.linearVelocity.y;
@@ -178,6 +207,10 @@ public class BaseFighter : MonoBehaviour
         if (state.is_grounded())
         {
             rigidbody.linearVelocityX = new_dir_x * state.get_ground_speed();
+            if(new_dir_x != 0 && state.get_action() != FighterAction.Running)
+            {
+                state.start_action(FighterAction.Running);
+            }
         }
         else
         {
@@ -205,17 +238,27 @@ public class BaseFighter : MonoBehaviour
         rigidbody.linearVelocityY = state.get_jump_strength();
     }
 
-    public void knockback(Vector2 direction)
+    public void knockback_light(Vector2 direction)
     {
         player_sounds.PlayJabHit();
         state.start_action(FighterAction.KnockedBackLight);
-        state.remaining_flying_frames = 5;
-        rigidbody.linearVelocity = direction;
+        freezeXY(false, false);
+        rigidbody.linearVelocity = direction * (0.6f + health.GetMissingHealthPortion() * 0.4f);
+    }
+
+    public void knockback_heavy(Vector2 direction, int duration)
+    {
+        player_sounds.PlayJabHit();
+        state.start_action(FighterAction.KnockedBackHeavy);
+        freezeXY(false, false);
+        select_collider(1);
+        state.knockback_duration = duration;
+        rigidbody.linearVelocity = direction * (0.8f + health.GetMissingHealthPortion() * 0.7f);
     }
 
     public void stun(int duration)
     {
-        state.stun_duration = duration;
+        state.stun_duration = Math.Max(duration, state.stun_duration);
         state.start_action(FighterAction.Stunned);
     }
 
@@ -233,7 +276,14 @@ public class BaseFighter : MonoBehaviour
 
     public void take_damage(int damage, GameObject attacker)
     {
-        health.TakeDamage(damage, attacker);
+        try
+        {
+            health.TakeDamage(damage, attacker);
+
+        } catch (Exception e)
+        {
+
+        }
     }
 
     public void take_arena_damage(int damage)
@@ -245,33 +295,37 @@ public class BaseFighter : MonoBehaviour
 
     public void freezeXY(bool x, bool y)
     {
-        if (x)
-        {
-            rigidbody.linearVelocityX = 0.0f;
-            rigidbody.constraints |= RigidbodyConstraints2D.FreezePositionX;
-        }
-        else
-        {
-            rigidbody.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
-        }
+        //if (x)
+        //{
+        //    rigidbody.linearVelocityX = 0.0f;
+        //    rigidbody.constraints |= RigidbodyConstraints2D.FreezePositionX;
+        //}
+        //else
+        //{
+        //    rigidbody.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+        //}
 
-        if (y)
-        {
-            rigidbody.gravityScale = 0.0f;
-            rigidbody.linearVelocityY = 0.0f;
-            rigidbody.constraints |= RigidbodyConstraints2D.FreezePositionY;
-        }
-        else
-        {
-            rigidbody.gravityScale = 1.0f;
-            rigidbody.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
-        }
+        //if (y)
+        //{
+        //    rigidbody.gravityScale = 0.0f;
+        //    rigidbody.linearVelocityY = 0.0f;
+        //    rigidbody.constraints |= RigidbodyConstraints2D.FreezePositionY;
+        //}
+        //else
+        //{
+        //    rigidbody.gravityScale = 1.0f;
+        //    rigidbody.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+        //}
+
+        state.freeze_pos = (x, y);
     }
 
 
 
     public void dash_tick(int index)
     {
+        state.dash_available = state.is_grounded();
+
         freezeXY(false, true);
         if (index >= dash_curve.Length) return;
 
@@ -281,6 +335,8 @@ public class BaseFighter : MonoBehaviour
 
     public void heavy_up_tick(int index)
     {
+        state.heavy_available[0] = state.is_grounded();
+
         if (index < 18)
         {
             freezeXY(true, true);
@@ -296,29 +352,152 @@ public class BaseFighter : MonoBehaviour
 
     public void heavy_down_tick(int index)
     {
+        state.heavy_available[2] = state.is_grounded();
+
         if (index < 26)
         {
             freezeXY(true, true);
             return;
         }
 
-        if(index == 26)
+        if (index == 26)
         {
-            if(state.is_grounded())
+            if (state.is_grounded())
             {
                 state.animation_handler.set_frozen(false);
-            } else
+            }
+            else
             {
                 state.animation_handler.set_frozen(true);
                 rigidbody.linearVelocityY = -32.0f;
             }
         }
     }
+    public void heavy_side_tick(int index)
+    {
+        state.heavy_available[1] = state.is_grounded();
+
+        if (index < 22 || index > 38) return; // only active during frames 26–50
+
+        freezeXY(false, true);
+        int dash_index = index - 22;
+        //if (dash_index >= short_dash_curve.Length) return;
+
+
+        float speed = short_dash_curve[dash_index] * state.base_stats.dash_factor * state.base_stats.ground_speed * state.get_facing_float();
+        rigidbody.linearVelocityX = speed;
+    }
+
 
     public void stun_tick(int index)
     {
+        freezeXY(true, true);
         state.animation_handler.set_frozen(--state.stun_duration > 0);
     }
+
+    public void knockback_light_tick(int index)
+    {
+
+    }
+
+    public void knockback_heavy_tick(int index)
+    {
+        select_collider(1);
+        if (index == 3)
+        {
+            state.animation_handler.set_frozen(--state.knockback_duration > 0);
+        }
+        else
+        {
+            state.animation_handler.set_frozen(false);
+        }
+        state.force_facing(Math.Sign(-rigidbody.linearVelocityX));
+        state.sprite_transform.eulerAngles = Vector3.forward * (float)(Math.Atan2(-rigidbody.linearVelocityY, -rigidbody.linearVelocityX * state.get_facing_float()) * state.get_facing_float() * FighterState.knockback_rotation_factors[index] * 180.0f / Math.PI);
+        // material_selector.set_elastic(true);
+    }
+
+
+
+    public void ult_tick(int index)
+    {
+        if (index == 0)
+        {
+            state.hammer_base_transform.gameObject.SetActive(true);
+            state.hammer_base_transform.eulerAngles = Vector3.zero;
+            state.hammer_animation_handler.play(FighterAction.UltHammer);
+            state.ult_index = 0;
+            state.ult_hitbox.init();
+        }
+
+        if (state.flags_any_set(FighterFlags.CustomMovement))
+        {
+            rigidbody.gravityScale = 0.0f;
+
+            select_collider(2);
+
+            var target_speed = new Vector2(fighter_input.direction.x, fighter_input.direction.y).normalized * state.get_air_speed() * 0.7f;
+
+            var dist = target_speed - rigidbody.linearVelocity;
+
+            float delta = state.get_air_speed() * Time.fixedDeltaTime * 2.0f;
+
+            if (dist.magnitude <= delta)
+            {
+                rigidbody.linearVelocity = target_speed;
+            }
+            else
+            {
+                rigidbody.linearVelocity += delta * dist.normalized;
+            }
+
+            //var vel = rigidbody.linearVelocity.x;
+            //rigidbody.linearVelocityX -= Math.Sign(vel) * 2.0f * state.air_resistance * vel * vel * Time.fixedDeltaTime;
+
+            //vel = rigidbody.linearVelocity.y;
+            //rigidbody.linearVelocityY -= Math.Sign(vel) * 2.0f * state.air_resistance * vel * vel * Time.fixedDeltaTime;
+
+            //rigidbody.linearVelocity += new Vector2(fighter_input.direction.x, fighter_input.direction.y).normalized * state.get_air_speed() * Time.fixedDeltaTime * 5.0f;
+        }
+
+        if (state.ult_index < state.ult_data.Length)
+        {
+            state.hammer_base_transform.eulerAngles = Vector3.back * state.get_facing_float() * state.ult_data[state.ult_index].angle;
+            state.hammer_animation_handler.set_index(state.ult_data[state.ult_index].index);
+            state.hammer_animation_handler.show();
+
+            if (index == 124)
+                state.animation_handler.set_frozen(true);
+
+            state.ult_index++;
+        }
+        else
+        {
+            if(index == 125)
+            {
+                Debug.Log("ult finished");
+                state.ult_hitbox.knockback_fighters();
+            }
+
+            state.animation_handler.set_frozen(false);
+
+            state.hammer_animation_handler.step();
+
+            if (state.hammer_animation_handler.is_finished())
+            {
+                state.hammer_base_transform.gameObject.SetActive(false);
+            }
+            else
+            {
+                state.hammer_animation_handler.show();
+            }
+        }
+
+        Debug.Log(index);
+
+        state.ult_hitbox.reduce_fighter_cooldowns();
+    }
+
+
 
     public void crouch_tick(int index)
     {
@@ -333,7 +512,7 @@ public class BaseFighter : MonoBehaviour
             player_sounds.PlayJump();
             state.start_action(FighterAction.Jump);
             //jump();
-            delayed_actions.push(new DelayedAction(jump, 10));
+            delayed_actions.push(new DelayedAction(jump, 5));
             return true;
         }
         return false;
@@ -358,6 +537,8 @@ public class BaseFighter : MonoBehaviour
 
         if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
 
+        if(!state.heavy_available[1 - input.direction.y]) return false;
+
         state.force_facing(input.direction.x);
         switch (input.direction.y)
         {
@@ -372,6 +553,7 @@ public class BaseFighter : MonoBehaviour
                 break;
         }
         // player_sounds.PlayHeavySidewaysClip();
+
         state.start_action((FighterAction)((int)(FighterAction.HeavySide) - input.direction.y));
         return true;
     }
@@ -386,6 +568,8 @@ public class BaseFighter : MonoBehaviour
         if (!input.pressed) return true;
 
         if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
+
+        if (!state.is_grounded() && !state.dash_available) return false;
 
         state.force_facing(input.direction.x);
         player_sounds.PlayDash();
@@ -414,7 +598,13 @@ public class BaseFighter : MonoBehaviour
     {
         if (!input.pressed) return true;
 
-        stun(180);
+        if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
+
+        state.force_facing(input.direction.x);
+        state.start_action(FighterAction.Ult);
+
+        // knockback(new Vector2(-15 * state.get_facing_float(), 15), 15);
+        //stun(120);
         return true;
     }
 
@@ -423,6 +613,16 @@ public class BaseFighter : MonoBehaviour
     {
         foreach (var contact in collision.contacts)
             handle_contact(contact);
+    }
+
+    public void select_collider(int index)
+    {
+        foreach (var collider in colliders)
+        {
+            collider.enabled = false;
+        }
+        current_collider = colliders[index];
+        current_collider.enabled = true;
     }
 
     public void handle_contact(ContactPoint2D contact)

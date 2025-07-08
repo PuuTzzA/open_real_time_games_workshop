@@ -1,17 +1,23 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class BombPlatformMove : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer leverNormal;
     [SerializeField] private SpriteRenderer leverSwitched;
+    [SerializeField] private SpriteRenderer leverActivatable;
+    [SerializeField] private TextMeshPro activatableText;
+    [SerializeField] private GameObject propulsion;
+    [SerializeField] private ParticleSystem propulsionParticleSystem;
     [SerializeField] private float waitTimeOffScreen;
     [SerializeField] private float cooldownTime;
     [SerializeField] private float dropDistance;
     [SerializeField] private float moveSpeed;
     [SerializeField] private Collider2D platformCollider;
     [SerializeField] private GameObject bombPrefab;
-    [SerializeField] private Transform bombSpawnPoint;
+    [SerializeField] private Transform[] bombSpawnPointList;
     private Vector3 originalPosition;
     private Vector3 dropPosition;
 
@@ -26,24 +32,53 @@ public class BombPlatformMove : MonoBehaviour
     {
         originalPosition = transform.position;
         dropPosition = originalPosition + Vector3.down * dropDistance;
+        propulsion.SetActive(false);
+        propulsionParticleSystem.Stop();
     }
 
     private void SpawnBomb()
     {
-        Vector3 bombPos = bombSpawnPoint.position;
-        GameObject bomb = Instantiate(bombPrefab, bombPos, Quaternion.identity);
-        bomb.transform.SetParent(this.transform);
+        foreach (var bombSpawnPoint in bombSpawnPointList)
+        {
+            Vector3 bombPos = bombSpawnPoint.position;
+            GameObject bomb = Instantiate(bombPrefab, bombPos, Quaternion.identity);
+            bomb.transform.SetParent(this.transform);
+        }
     }
 
-    private void PressButton() {
+    private void PressButton()
+    {
         isPressed = true;
         leverNormal.enabled = false;
+        leverActivatable.enabled = false;
+        activatableText.enabled = false;
         leverSwitched.enabled = true;
     }
-    private void ButtonReady() {
+    private void ButtonReady()
+    {
         isPressed = false;
         leverNormal.enabled = true;
         leverSwitched.enabled = false;
+    }
+
+    public void TriggerActivatable(BaseFighter fighter)
+    {
+        leverNormal.enabled = false;
+        leverActivatable.enabled = true;
+        PlayerInput pI = fighter.gameObject.GetComponent<PlayerInput>();
+        bool isKeyboard = pI.currentControlScheme == "Keyboard&Mouse";
+        activatableText.text = isKeyboard ? pI.actions["Interact"].GetBindingDisplayString().ToLower() : pI.actions["Interact"].GetBindingDisplayString(group: "Gamepad").ToLower();
+        activatableText.enabled = true;
+    }
+
+    public void TriggerDisableActivatable()
+    {
+        if (!isMoving && !isPressed)
+        {
+            leverNormal.enabled = true;
+            leverActivatable.enabled = false;
+            activatableText.enabled = false;
+        }
     }
 
     public void TriggerDrop()
@@ -56,6 +91,8 @@ public class BombPlatformMove : MonoBehaviour
     {
         PressButton();
         isMoving = true;
+        propulsion.SetActive(true);
+        propulsionParticleSystem.Play();
 
         // Move down
         while (Vector3.Distance(transform.position, dropPosition) > 0.01f)
@@ -77,6 +114,9 @@ public class BombPlatformMove : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, originalPosition, moveSpeed * Time.deltaTime);
             yield return null;
         }
+
+        propulsion.SetActive(false);
+        propulsionParticleSystem.Stop();
 
         transform.position = originalPosition;
         isMoving = false;

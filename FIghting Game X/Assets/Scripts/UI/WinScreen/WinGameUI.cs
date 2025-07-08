@@ -13,15 +13,16 @@ public class WinGameUI : MonoBehaviour
     [SerializeField] private InputActionAsset inputActions;
     private void Awake()
     {
+        inputActions.FindActionMap("UI").Enable();
         root = menuDocument.rootVisualElement;
         root.Query<Button>(className: "endscreen_option_button").
             ForEach(option =>
             {
                 option.RegisterCallback<ClickEvent>(OnOptionClicked);
             });
-        
+
     }
-    
+
     public void ShowWinner(int winnerIndex)
     {
         this.gameObject.SetActive(true);
@@ -46,12 +47,11 @@ public class WinGameUI : MonoBehaviour
     }
 
     private void ShowWinner()
-    { 
+    {
         var persistentPlayerManager
             = FindFirstObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>();
         var playersAlive = persistentPlayerManager.getAlivePlayers();
-        //Debug.Log($"Players alive: {playersAlive.Count}");
-        //Debug.Log("Game is finished, no more fighters left.");
+
 
         var winnerIndex = playersAlive.Count == 1 ? playersAlive[0].playerIndex : -1;
         persistentPlayerManager.getPlayers().ForEach(x => x.SwitchCurrentActionMap("UI"));
@@ -70,7 +70,7 @@ public class WinGameUI : MonoBehaviour
 
     private void OnOptionClicked(ClickEvent evt)
     {
-       ChooseOption(evt.target as Button);
+        ChooseOption(evt.target as Button);
     }
 
     private void ChooseOption(Button option)
@@ -81,6 +81,7 @@ public class WinGameUI : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 break;
             case "Character_Selection_Button":
+                Destroy(GameObject.Find("SpawnPointsMapping"));
                 SceneManager.LoadScene("Scenes/CharacterSelection");
                 break;
             case "Return_To_Menu_Button":
@@ -94,6 +95,7 @@ public class WinGameUI : MonoBehaviour
     }
     private void OnDestroy()
     {
+        inputActions.FindActionMap("UI").Disable();
         inputActions.FindAction("Confirm").performed -= OnConfirmPressed;
     }
 }

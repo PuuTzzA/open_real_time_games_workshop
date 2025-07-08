@@ -1,7 +1,7 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Potap/menu_screen.uss?fileID=7433441132597879392&amp;guid=0e63f533398250544a5e7814d0f2da9e&amp;type=3#menu_screen" />
-    <ui:VisualElement name="Screen" enabled="true" class="menu_screen pause_screen" style="flex-grow: 1; width: 100%; height: 100%; display: flex;">
-        <ui:Label text="PAUSE MENU" name="Header" class="menu_header pause_header" style="align-content: center; align-self: center; -unity-text-align: lower-center; -unity-font-style: normal;" />
+    <ui:VisualElement name="Screen" enabled="true" class="menu_screen pause_screen" style="flex-grow: 1; width: 100%; height: 100%; display: flex; background-image: url(&quot;project://database/Assets/Images/background/background_blue.png?fileID=2800000&amp;guid=3d346040fd6f0f34bb1faad5a8a1d01c&amp;type=3#background_blue&quot;); background-color: rgb(255, 255, 255);">
+        <ui:Label text="PAUSE MENU" name="Header" class="menu_header pause_header" style="align-content: center; align-self: center; -unity-text-align: lower-center; -unity-font-style: normal; margin-top: 1px; padding-top: 48px;" />
         <ui:VisualElement name="Body" class="menu_body pause_body" style="flex-grow: 1; flex-direction: row;">
             <ui:VisualElement name="Option_Selector" class="option_selector pause_option_selector" style="flex-grow: 1; align-self: stretch; justify-content: space-evenly; align-content: center; height: 100%;">
                 <ui:Button text="Play" name="Play_Option" enabled="false" focusable="false" class="option_button menu_option_button" style="display: none;" />
@@ -22,50 +22,50 @@
                     <ui:Button text="P v E" name="PvE_Option" enabled="false" class="option_button play_option_button" style="align-self: auto; margin-left: 0%;" />
                 </ui:VisualElement>
                 <ui:VisualElement name="Settings_option_screen" enabled="false" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; -unity-font-definition: url(&quot;project://database/Assets/UI/Fonts/din-1451-std/DINEngschriftStd.otf?fileID=12800000&amp;guid=84e81fb098faefd4cbf1704c9e634dbb&amp;type=3#DINEngschriftStd&quot;); font-size: 114%; white-space: pre-wrap; display: none; top: -1px; left: 0; flex-wrap: wrap;">
-                    <ui:VisualElement name="Settings_Tab_View" focusable="false" class="settings_tab_view">
-                        <ui:Button text="Controls" name="Controls_Tab_Header" selectable="true" tabindex="0" class="settings_tab_header" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); margin-top: 0; margin-bottom: 0; padding-right: 10px; margin-right: 0; margin-left: 0; padding-left: 10px; padding-top: 0; padding-bottom: 0;" />
+                    <ui:VisualElement name="Settings_Tab_View" focusable="false" class="settings_tab_view pause_settings_tab_view" style="margin-top: 2px; display: flex;">
+                        <ui:Button text="Controls" name="Controls_Tab_Header" selectable="true" tabindex="0" class="settings_tab_header" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); margin-top: 0; margin-bottom: 0; padding-right: 10px; margin-right: 0; margin-left: 0; padding-left: 10px; padding-top: 0; padding-bottom: 0; background-size: 100% 100%;" />
                         <ui:Button text="Sound" name="Sound_Tab_Header" selectable="true" tabindex="1" class="settings_tab_header" style="border-top-width: 0; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-right-width: 0; border-bottom-width: 0; border-left-width: 0; margin-top: 0; margin-bottom: 0; padding-right: 10px; padding-left: 10px; margin-right: 0; margin-left: 0;" />
                     </ui:VisualElement>
                     <ui:VisualElement name="Settings_Tab_Body" class="settings_tab" style="flex-grow: 1; position: relative; color: rgb(190, 190, 190); flex-wrap: wrap;">
                         <ui:VisualElement name="Controls_Tab_Screen" tabindex="0" enabled="true" class="settings_tab_screen" style="flex-grow: 1; position: absolute; color: rgb(190, 190, 190); display: flex; justify-content: space-evenly; align-self: center; height: 100%; width: 100%;">
                             <ui:VisualElement name="jab_Action" focusable="true" class="action_option focus_entrance" style="flex-grow: 1; position: relative; flex-direction: row;">
                                 <ui:Label text="Jab" name="jab_Label" class="action_label" />
-                                <ui:Button text="Button" name="jab_Keybinding" focusable="false" class="action_keybinding" />
+                                <ui:Button text="Button" name="jab_Keybinding" focusable="false" class="action_keybinding pause_action_keybinding" />
                                 <ui:Button text="Change" name="jab_Change_Button" selectable="true" usage-hints="None" tabindex="0" class="action_change_button" />
                             </ui:VisualElement>
                             <ui:VisualElement name="heavy_Action" class="action_option" style="flex-grow: 1; position: relative; flex-direction: row;">
                                 <ui:Label text="Heavy Attack" name="heavy_Label" class="action_label" />
-                                <ui:Button text="Button" name="heavy_Keybinding" focusable="false" class="action_keybinding" />
+                                <ui:Button text="Button" name="heavy_Keybinding" focusable="false" class="action_keybinding pause_action_keybinding" />
                                 <ui:Button text="Change" name="heavy_Change_Button" tabindex="1" double-click-selects-word="false" class="action_change_button" />
                             </ui:VisualElement>
                             <ui:VisualElement name="ult_Action" class="action_option" style="flex-grow: 1; position: relative; flex-direction: row;">
                                 <ui:Label text="Ultimate Attack" name="ult_Label" class="action_label" />
-                                <ui:Button text="Button" name="ult_Keybinding" focusable="false" class="action_keybinding" />
+                                <ui:Button text="Button" name="ult_Keybinding" focusable="false" class="action_keybinding pause_action_keybinding" />
                                 <ui:Button text="Change" name="ult_Change_Button" tabindex="2" class="action_change_button" />
                             </ui:VisualElement>
                             <ui:VisualElement name="block_Action" class="action_option" style="flex-grow: 1; position: relative; flex-direction: row;">
                                 <ui:Label text="Block" name="block_Label" class="action_label" />
-                                <ui:Button text="Button" name="block_Keybinding" focusable="false" class="action_keybinding" />
+                                <ui:Button text="Button" name="block_Keybinding" focusable="false" class="action_keybinding pause_action_keybinding" />
                                 <ui:Button text="Change" name="block_Change_Button" tabindex="3" class="action_change_button" />
                             </ui:VisualElement>
                             <ui:VisualElement name="interact_Action" class="action_option" style="flex-grow: 1; position: relative; flex-direction: row;">
                                 <ui:Label text="Interact" name="interact_Label" class="action_label" />
-                                <ui:Button text="Button" name="interact_Keybinding" focusable="false" class="action_keybinding" />
+                                <ui:Button text="Button" name="interact_Keybinding" focusable="false" class="action_keybinding pause_action_keybinding" />
                                 <ui:Button text="Change" name="interact_Change_Button" tabindex="4" class="action_change_button" />
                             </ui:VisualElement>
                             <ui:VisualElement name="jump_Action" class="action_option" style="flex-grow: 1; position: relative; flex-direction: row;">
                                 <ui:Label text="Jump" name="jump_Label" class="action_label" />
-                                <ui:Button text="Button" name="jump_Keybinding" focusable="false" class="action_keybinding" />
+                                <ui:Button text="Button" name="jump_Keybinding" focusable="false" class="action_keybinding pause_action_keybinding" />
                                 <ui:Button text="Change" name="jump_Change_Button" tabindex="5" class="action_change_button" />
                             </ui:VisualElement>
                             <ui:VisualElement name="dash_Action" class="action_option" style="flex-grow: 1; position: relative; flex-direction: row;">
                                 <ui:Label text="Dash" name="dash_Label" class="action_label" />
-                                <ui:Button text="Button" name="dash_Keybinding" focusable="false" class="action_keybinding" />
+                                <ui:Button text="Button" name="dash_Keybinding" focusable="false" class="action_keybinding pause_action_keybinding" />
                                 <ui:Button text="Change" name="dash_Change_Button" tabindex="6" class="action_change_button" />
                             </ui:VisualElement>
                             <ui:VisualElement name="Restore_Defaults_Option" class="action_option" style="flex-grow: 1; position: relative; flex-direction: row; align-content: auto; justify-content: space-around;">
                                 <ui:Label text="Dash" name="Label_Placeholder" enabled="false" class="action_label" style="display: flex; color: rgba(237, 237, 238, 0);" />
-                                <ui:Button text="Button" name="Keybinding_Placeholder" focusable="false" enabled="false" class="action_keybinding" style="-unity-text-outline-color: rgba(0, 0, 0, 0); background-color: rgba(42, 74, 115, 0); color: rgba(237, 237, 238, 0); border-left-color: rgba(198, 204, 213, 0); border-right-color: rgba(198, 204, 213, 0); border-top-color: rgba(198, 204, 213, 0); border-bottom-color: rgba(198, 204, 213, 0);" />
+                                <ui:Button text="Button" name="Keybinding_Placeholder" focusable="false" enabled="false" class="action_keybinding pause_action_keybinding" style="-unity-text-outline-color: rgba(0, 0, 0, 0); background-color: rgba(42, 74, 115, 0); color: rgba(237, 237, 238, 0); border-left-color: rgba(198, 204, 213, 0); border-right-color: rgba(198, 204, 213, 0); border-top-color: rgba(198, 204, 213, 0); border-bottom-color: rgba(198, 204, 213, 0);" />
                                 <ui:Button text="Restore Defaults" name="Restore_Defaults_Button" tabindex="7" class="restore_defaults_button" />
                             </ui:VisualElement>
                         </ui:VisualElement>

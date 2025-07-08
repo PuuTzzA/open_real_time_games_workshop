@@ -47,6 +47,7 @@ public class IngameUI : MonoBehaviour
             healthbar[i].Arc2Fill = health;
             healthbar[i].Arc3Fill = health;
             healthbar[i].hierarchy.ElementAt(1).style.backgroundImage = new StyleBackground(persistentPlayerManager.getPlayers()[i].GetComponent<FighterHealth>().Icon);
+            healthbar[i].hierarchy.ElementAt(1).style.unityBackgroundImageTintColor = persistentPlayerManager.getPlayers()[i].GetComponentInChildren<SpriteRenderer>().color;
             setHealth(i, 1);
         }
         color = healthbar[0].Arc3Color;
@@ -56,9 +57,9 @@ public class IngameUI : MonoBehaviour
     {
         health /= 2;
         this.health = health;
-        
-        healthbar[playerid].Arc2Fill = Math.Clamp(health , 0f, 1f);
-        healthbar[playerid].Arc3Fill = Math.Clamp(health , 0f, 1f);
+
+        healthbar[playerid].Arc2Fill = Math.Clamp(health, 0f, 1f);
+        healthbar[playerid].Arc3Fill = Math.Clamp(health, 0f, 1f);
     }
 
     public void setNewHealth(int playerid, float health)

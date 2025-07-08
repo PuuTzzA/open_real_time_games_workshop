@@ -1,5 +1,8 @@
 
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public enum FighterAction
 {
@@ -22,13 +25,26 @@ public enum FighterAction
     KnockedBackHeavy,
     Stunned,
     Death,
-    Crouch
+    Crouch,
+    UltHammer
 }
 
 public enum Facing
 {
     Left = -1,
     Right = 1
+}
+
+public class UltData
+{
+    public float angle;
+    public int index;
+
+    public UltData(float angle, int index)
+    {
+        this.angle = angle;
+        this.index = index;
+    }
 }
 
 public class FighterState : MonoBehaviour
@@ -39,9 +55,19 @@ public class FighterState : MonoBehaviour
     public BaseStats base_stats;
 
     public int available_air_jumps;
-    public int remaining_flying_frames;
+    public bool[] heavy_available = { true, true, true };
+    public bool dash_available = true;
 
     public int stun_duration;
+
+    public int knockback_duration;
+    public static readonly float[] knockback_rotation_factors = {0.0f, 0.3f, 0.7f, 1.0f, 0.9f, 0.7f, 0.3f, 0.1f, 0.0f };
+
+    public AnimationHandler hammer_animation_handler;
+    public Transform hammer_base_transform;
+    public UltHitbox ult_hitbox;
+    public UltData[] ult_data;
+    public int ult_index;
 
     public AnimationData animation_data;
 
@@ -50,6 +76,8 @@ public class FighterState : MonoBehaviour
     private bool _grounded;
 
     private Facing _facing;
+
+    public (bool, bool) freeze_pos;
 
     public FighterAction get_action() { return animation_handler.get_action(); }
 
@@ -74,6 +102,8 @@ public class FighterState : MonoBehaviour
         if (grounded)
         {
             available_air_jumps = base_stats.air_jumps;
+            dash_available = true;
+            heavy_available = new bool[]{ true, true, true };
         }
         _grounded = grounded;
     }
@@ -129,6 +159,8 @@ public class FighterState : MonoBehaviour
 
         air_resistance = - Physics2D.gravity.y / (base_stats.terminal_speed * base_stats.terminal_speed);
 
+        init_ult_data();
+
         set_facing(Facing.Right);
         start_action(FighterAction.Idle);
     }
@@ -181,5 +213,32 @@ public class FighterState : MonoBehaviour
         animation_data.signals = FighterSignals.None;
 
         return ret;
+    }
+
+    public void init_ult_data()
+    {
+        List<UltData> data = new List<UltData>();
+
+        for (int i = 0; i < 25; i++)
+        {
+            data.Add(new UltData(0, i));
+        }
+
+        for (int i = 0; i < 25; i++)
+        {
+            data.Add(new UltData(5.0f * (i * i) / 24.0f, data.Count));
+        }
+
+        for (int i = 0; i < 127; i++)
+        {
+            data.Add(new UltData((130 + i * 10) % 360, 51));
+        }
+
+        for (int i = 0; i < 11; i++)
+        {
+            data.Add(new UltData(360.0f - ((10 - i) * (10 - i) * 0.5f), 52 + i));
+        }
+
+        ult_data = data.ToArray();
     }
 }

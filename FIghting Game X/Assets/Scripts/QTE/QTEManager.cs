@@ -8,9 +8,6 @@ using UnityEngine.UIElements;
 
 public class QTEManager : MonoBehaviour
 {
-    int type = 1;
-
-
     [SerializeField]
     private GameObject ui;
 
@@ -61,9 +58,12 @@ public class QTEManager : MonoBehaviour
 
     private IEnumerator StartQTESequence(GameObject fallen, GameObject killer, Action onDone)
     {
-        type = UnityEngine.Random.Range(0, 2); // Randomly choose between 0, 1
+        int type = 0; //UnityEngine.Random.Range(0, 2); // Randomly choose between 0, 1
         if (type == 1)
             ui.GetComponent<MinigameUI>().minigamenumber = 1;
+        ui.GetComponent<MinigameUI>().killer = killer.GetComponentInChildren<SpriteRenderer>().color;
+        ui.GetComponent<MinigameUI>().fallen = fallen.GetComponentInChildren<SpriteRenderer>().color;
+
 
 
         // 1) Show “Finish Him” intro
@@ -139,8 +139,12 @@ public class QTEManager : MonoBehaviour
         }
         else
         {
-            bool isFinished = fallenHealth.GetFinished(killer);
-            if (isFinished) return;
+            //bool isFinished = false;
+            finishHimPanel.SetActive(false);
+            StartCoroutine(fallenHealth.GetFinished(killer));
+            return;
+            // Time.timeScale = 1f;
+            //if (isFinished) return;
         }
         ResumeRound(fallen, killer);
     }
@@ -169,7 +173,7 @@ public class QTEManager : MonoBehaviour
         // This could involve tapping a button at the right time to score points
     }
 
-    private void ResumeRound(GameObject fallen, GameObject killer)
+    public void ResumeRound(GameObject fallen, GameObject killer)
     {
         p1Input.SwitchCurrentActionMap("Player");
         p2Input.SwitchCurrentActionMap("Player");
