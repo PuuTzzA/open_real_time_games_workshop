@@ -1,17 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: a7c15b9bc53cced4292cec886dacf0c0
-=======
-guid: b267fa63405dcf8489c12d859a1130ae
->>>>>>> 5c9eb54294551cd45477d5b83b6f0dc98b802504
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -2660100306601294985
-    second: bomb_idle_0
-  - first:
-      213: -4143506893485625027
-    second: bomb_idle_1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -73,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,20 +113,20 @@ TextureImporter:
       name: bomb_idle_0
       rect:
         serializedVersion: 2
-        x: 188
-        y: 187
-        width: 135
-        height: 140
+        x: 0
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7734f1e6ddc651bd0800000000000000
-      internalID: -2660100306601294985
+      spriteID: 6938344239638db48b16cf730f5f437e
+      internalID: -1760432851
       vertices: []
       indices: 
       edges: []
@@ -145,20 +135,20 @@ TextureImporter:
       name: bomb_idle_1
       rect:
         serializedVersion: 2
-        x: 700
-        y: 187
-        width: 135
-        height: 140
+        x: 512
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d3138610f6e4f76c0800000000000000
-      internalID: -4143506893485625027
+      spriteID: 36a7c2109bee5524fa374fb8b1c5c129
+      internalID: -1765965202
       vertices: []
       indices: 
       edges: []
@@ -167,7 +157,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 305cf758eda02d64b9f3a624298ad42b
     internalID: 0
     vertices: []
     indices: 
@@ -175,14 +165,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-<<<<<<< HEAD
-    nameFileIdTable: {}
-=======
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      bomb_idle_0: -2660100306601294985
-      bomb_idle_1: -4143506893485625027
->>>>>>> 5c9eb54294551cd45477d5b83b6f0dc98b802504
+      bomb_idle_0: -1760432851
+      bomb_idle_1: -1765965202
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
