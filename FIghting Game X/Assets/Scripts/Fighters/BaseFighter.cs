@@ -232,7 +232,7 @@ public class BaseFighter : MonoBehaviour
         player_sounds.PlayJabHit();
         state.start_action(FighterAction.KnockedBackLight);
         freezeXY(false, false);
-        rigidbody.linearVelocity = direction;
+        rigidbody.linearVelocity = direction * (0.6f + health.GetMissingHealthPortion() * 0.4f);
     }
 
     public void knockback_heavy(Vector2 direction, int duration)
@@ -242,8 +242,7 @@ public class BaseFighter : MonoBehaviour
         freezeXY(false, false);
         select_collider(1);
         state.knockback_duration = duration;
-        rigidbody.linearVelocity = direction;
-        Debug.Log(rigidbody.linearVelocity);
+        rigidbody.linearVelocity = direction * (0.5f + health.GetMissingHealthPortion());
     }
 
     public void stun(int duration)
@@ -266,7 +265,14 @@ public class BaseFighter : MonoBehaviour
 
     public void take_damage(int damage, GameObject attacker)
     {
-        health.TakeDamage(damage, attacker);
+        try
+        {
+            health.TakeDamage(damage, attacker);
+
+        } catch (Exception e)
+        {
+
+        }
     }
 
     public void take_arena_damage(int damage)
@@ -446,6 +452,7 @@ public class BaseFighter : MonoBehaviour
         {
             if(index == 125)
             {
+                Debug.Log("ult finished");
                 state.ult_hitbox.knockback_fighters();
             }
 
@@ -462,6 +469,8 @@ public class BaseFighter : MonoBehaviour
                 state.hammer_animation_handler.show();
             }
         }
+
+        Debug.Log(index);
 
         state.ult_hitbox.reduce_fighter_cooldowns();
     }
