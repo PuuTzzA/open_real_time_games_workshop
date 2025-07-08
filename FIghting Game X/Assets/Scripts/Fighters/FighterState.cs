@@ -55,6 +55,8 @@ public class FighterState : MonoBehaviour
     public BaseStats base_stats;
 
     public int available_air_jumps;
+    public bool[] heavy_available = { true, true, true };
+    public bool dash_available = true;
 
     public int stun_duration;
 
@@ -100,6 +102,8 @@ public class FighterState : MonoBehaviour
         if (grounded)
         {
             available_air_jumps = base_stats.air_jumps;
+            dash_available = true;
+            heavy_available = new bool[]{ true, true, true };
         }
         _grounded = grounded;
     }

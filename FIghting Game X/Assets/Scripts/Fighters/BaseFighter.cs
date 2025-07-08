@@ -324,6 +324,8 @@ public class BaseFighter : MonoBehaviour
 
     public void dash_tick(int index)
     {
+        state.dash_available = state.is_grounded();
+
         freezeXY(false, true);
         if (index >= dash_curve.Length) return;
 
@@ -333,6 +335,8 @@ public class BaseFighter : MonoBehaviour
 
     public void heavy_up_tick(int index)
     {
+        state.heavy_available[0] = state.is_grounded();
+
         if (index < 18)
         {
             freezeXY(true, true);
@@ -348,6 +352,8 @@ public class BaseFighter : MonoBehaviour
 
     public void heavy_down_tick(int index)
     {
+        state.heavy_available[2] = state.is_grounded();
+
         if (index < 26)
         {
             freezeXY(true, true);
@@ -369,6 +375,8 @@ public class BaseFighter : MonoBehaviour
     }
     public void heavy_side_tick(int index)
     {
+        state.heavy_available[1] = state.is_grounded();
+
         if (index < 22 || index > 38) return; // only active during frames 26–50
 
         freezeXY(false, true);
@@ -529,6 +537,8 @@ public class BaseFighter : MonoBehaviour
 
         if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
 
+        if(!state.heavy_available[1 - input.direction.y]) return false;
+
         state.force_facing(input.direction.x);
         switch (input.direction.y)
         {
@@ -543,6 +553,7 @@ public class BaseFighter : MonoBehaviour
                 break;
         }
         // player_sounds.PlayHeavySidewaysClip();
+
         state.start_action((FighterAction)((int)(FighterAction.HeavySide) - input.direction.y));
         return true;
     }
@@ -557,6 +568,8 @@ public class BaseFighter : MonoBehaviour
         if (!input.pressed) return true;
 
         if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
+
+        if (!state.is_grounded() && !state.dash_available) return false;
 
         state.force_facing(input.direction.x);
         player_sounds.PlayDash();
