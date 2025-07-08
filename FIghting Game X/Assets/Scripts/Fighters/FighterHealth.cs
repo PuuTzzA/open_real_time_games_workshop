@@ -295,7 +295,7 @@ public class FighterHealth : MonoBehaviour
     public IEnumerator GetFinished(GameObject killer)
     {
         // Play cutscene
-        var cutscene = GetComponentInChildren<CutscenePlayer>(true);
+        var cutscene = FindAnyObjectByType<CutscenePlayer>(FindObjectsInactive.Include);
         cutscene.PlayCutscene(
             killer.GetComponentInChildren<SpriteRenderer>().color,
             GetComponentInChildren<SpriteRenderer>().color

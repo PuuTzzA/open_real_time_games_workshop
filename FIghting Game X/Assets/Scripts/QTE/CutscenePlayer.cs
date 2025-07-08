@@ -50,8 +50,8 @@ public class CutscenePlayer : MonoBehaviour
         cutsceneRoot.SetActive(true);
         
         // Play animations
-        finisherAnimator.Play(finisherAnimation, 0, 0f);
-        finishedAnimator.Play(finishedAnimation, 0, 0f);
+        //finisherAnimator.Play(finisherAnimation, 0, 0f);
+        //finishedAnimator.Play(finishedAnimation, 0, 0f);
 
         // Start coroutine to end the cutscene
         StartCoroutine(WaitAndEndCutscene());
