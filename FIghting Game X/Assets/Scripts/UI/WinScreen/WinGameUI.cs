@@ -13,15 +13,16 @@ public class WinGameUI : MonoBehaviour
     [SerializeField] private InputActionAsset inputActions;
     private void Awake()
     {
+        inputActions.FindActionMap("UI").Enable();
         root = menuDocument.rootVisualElement;
         root.Query<Button>(className: "endscreen_option_button").
             ForEach(option =>
             {
                 option.RegisterCallback<ClickEvent>(OnOptionClicked);
             });
-        
+
     }
-    
+
     public void ShowWinner(int winnerIndex)
     {
         this.gameObject.SetActive(true);
@@ -46,7 +47,7 @@ public class WinGameUI : MonoBehaviour
     }
 
     private void ShowWinner()
-    { 
+    {
         var persistentPlayerManager
             = FindFirstObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>();
         var playersAlive = persistentPlayerManager.getAlivePlayers();
@@ -69,7 +70,7 @@ public class WinGameUI : MonoBehaviour
 
     private void OnOptionClicked(ClickEvent evt)
     {
-       ChooseOption(evt.target as Button);
+        ChooseOption(evt.target as Button);
     }
 
     private void ChooseOption(Button option)
@@ -94,6 +95,7 @@ public class WinGameUI : MonoBehaviour
     }
     private void OnDestroy()
     {
+        inputActions.FindActionMap("UI").Disable();
         inputActions.FindAction("Confirm").performed -= OnConfirmPressed;
     }
 }
