@@ -1,14 +1,7 @@
 using System.Collections.Generic;
 using System;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using TMPro;
-using UnityEditor.VersionControl;
-using Unity.VisualScripting.Antlr3.Runtime.Misc;
-using static UnityEngine.Rendering.DebugUI;
-using System.Runtime.CompilerServices;
-using UnityEditor.Experimental.GraphView;
-using Unity.VisualScripting;
 
 public class BaseFighter : MonoBehaviour
 {
