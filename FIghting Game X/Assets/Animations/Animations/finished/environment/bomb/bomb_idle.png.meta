@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: a7c15b9bc53cced4292cec886dacf0c0
+=======
+guid: b267fa63405dcf8489c12d859a1130ae
+>>>>>>> 5c9eb54294551cd45477d5b83b6f0dc98b802504
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -172,7 +176,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<< HEAD
     nameFileIdTable: {}
+=======
+    nameFileIdTable:
+      bomb_idle_0: -2660100306601294985
+      bomb_idle_1: -4143506893485625027
+>>>>>>> 5c9eb54294551cd45477d5b83b6f0dc98b802504
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
