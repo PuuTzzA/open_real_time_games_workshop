@@ -294,7 +294,7 @@ public class Bomb : MonoBehaviour
             var bf = c.GetComponentInParent<BaseFighter>();
             if (bf != null)
             {
-                bf.take_damage(50, gameObject);
+                bf.take_arena_damage(50);
                 Vector2 knockDir = (bf.transform.position - transform.position).normalized;
                 bf.knockback_heavy(knockDir * knockbackForce, 6);
             }
