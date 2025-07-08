@@ -476,6 +476,8 @@ MonoBehaviour:
   knockback: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   source_fighter: {fileID: 3784939749288748778}
+  jab: 1
+  duration: 10
 --- !u!1 &4774552859288678719
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,7 +1381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c79f6d0ac487a644098d9715d996a160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flags: 768
+  flags: 15
   signals: 0
   animator: {fileID: 4497933916085059567}
 --- !u!1001 &3211405963301893784
