@@ -5311,6 +5311,7 @@ MonoBehaviour:
   source_fighter: {fileID: 3784939749288748778}
   jab: 1
   duration: 10
+  ult_points: 0
 --- !u!1 &4774552859288678719
 GameObject:
   m_ObjectHideFlags: 0
@@ -5664,6 +5665,7 @@ MonoBehaviour:
   deathBounds: {x: -15, y: -8}
   died: 0
   holdingBomb: {fileID: 0}
+  ult_indicator: {fileID: 1133126804945532230}
 --- !u!60 &8741731321134584292
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5823,6 +5825,7 @@ MonoBehaviour:
   dash_available: 1
   stun_duration: 0
   knockback_duration: 0
+  ult_points: 0
   hammer_animation_handler: {fileID: 1450031776339933549}
   hammer_base_transform: {fileID: 1866321574814130246}
   ult_hitbox: {fileID: 494541261890564727}
@@ -5858,7 +5861,7 @@ MonoBehaviour:
   IconWithoutBackground: {fileID: 635888242749862385, guid: 090e0e198408b5c4fac913936aa49ee0, type: 3}
   maxLives: 3
   qteUsed: 0
-  maxHealth: 200
+  maxHealth: 400
 --- !u!114 &2494248781339541154
 MonoBehaviour:
   m_ObjectHideFlags: 0

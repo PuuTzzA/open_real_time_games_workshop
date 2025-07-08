@@ -38,6 +38,8 @@ public class BaseFighter : MonoBehaviour
     public bool died = false;
     public GameObject holdingBomb;
 
+    private ParticleSystem particle_system;
+
 
     private readonly float[] dash_curve = new float[] {
     0.5f, 0.75f, 1f, 1f, 1f, 1f, 1f, 1f, 1f,
@@ -85,6 +87,8 @@ public class BaseFighter : MonoBehaviour
         state.start_action(FighterAction.Idle);
 
         select_collider(0);
+
+        particle_system = GetComponentInChildren<ParticleSystem>();
     }
 
     public void FixedUpdate()
@@ -117,15 +121,13 @@ public class BaseFighter : MonoBehaviour
 
         event_buffer.process();
 
-        /*
-        if (remaining_dash_frames > 10)
+        if (state.can_ult())
         {
-            rigidbody.gravityScale = 1.0f;
-            rigidbody.linearVelocityX = 0.0f;
-            // rigidbody.linearVelocityY = 0.0f;
-            remaining_dash_frames--;
+            if (!particle_system.isPlaying) particle_system.Play();
+        } else
+        {
+            if (!particle_system.isStopped) particle_system.Stop();
         }
-        else /**/
 
         rigidbody.gravityScale = 1.0f;
 
@@ -496,6 +498,9 @@ public class BaseFighter : MonoBehaviour
             }
         }
 
+        if (index >= 158)
+            state.reset_ult_points();
+
         state.ult_hitbox.reduce_fighter_cooldowns();
     }
 
@@ -604,6 +609,8 @@ public class BaseFighter : MonoBehaviour
         if (!input.pressed) return true;
 
         if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
+
+        if(!state.can_ult()) return false;
 
         state.force_facing(input.direction.x);
         state.start_action(FighterAction.Ult);

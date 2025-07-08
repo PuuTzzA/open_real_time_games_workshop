@@ -9,6 +9,7 @@ public class AttackHitbox : Hitbox
     public BaseFighter source_fighter;
     public bool jab = true;
     public int duration = 10;
+    public int ult_points;
 
     public HashSet<BaseFighter> hit_fighters = new HashSet<BaseFighter>();
 
@@ -37,6 +38,7 @@ public class AttackHitbox : Hitbox
 
         fighter.knockback_light(knockback * source_fighter.state.get_facing_vec());
         fighter.take_damage(damage, this.source_fighter.gameObject);
+        source_fighter.state.add_ult_points(ult_points);
 
         if (direction.Equals(Vector2Int.down))
         {
@@ -49,5 +51,7 @@ public class AttackHitbox : Hitbox
         
         fighter.knockback_heavy(knockback * source_fighter.state.get_facing_vec(), duration);
         fighter.take_damage(damage, this.source_fighter.gameObject);
+
+        source_fighter.state.add_ult_points(ult_points);
     }
 }
