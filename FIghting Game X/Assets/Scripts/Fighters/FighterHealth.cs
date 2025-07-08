@@ -8,8 +8,6 @@ using UnityEngine.SceneManagement;
 public class FighterHealth : MonoBehaviour
 {
 
-    [SerializeField]
-    Animator animator;
 
     [Header("UI Settings")]
     public Sprite Icon;
@@ -297,7 +295,7 @@ public class FighterHealth : MonoBehaviour
     public IEnumerator GetFinished(GameObject killer)
     {
         // Play cutscene
-        var cutscene = GetComponentInChildren<CutscenePlayer>(true);
+        var cutscene = FindAnyObjectByType<CutscenePlayer>(FindObjectsInactive.Include);
         cutscene.PlayCutscene(
             killer.GetComponentInChildren<SpriteRenderer>().color,
             GetComponentInChildren<SpriteRenderer>().color

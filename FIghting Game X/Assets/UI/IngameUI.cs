@@ -49,6 +49,7 @@ public class IngameUI : MonoBehaviour
             healthbar[i].hierarchy.ElementAt(1).style.backgroundImage = new StyleBackground(persistentPlayerManager.getPlayers()[i].GetComponent<FighterHealth>().Icon);
             healthbar[i].hierarchy.ElementAt(1).style.unityBackgroundImageTintColor = persistentPlayerManager.getPlayers()[i].GetComponentInChildren<SpriteRenderer>().color;
             setHealth(i, 1);
+            (root.Q<SquareElement>($"healtbar{i}").hierarchy.ElementAt(0).hierarchy.ElementAt(0).hierarchy.ElementAt(2) as ResponsiveLabel).text = "Player" + i;
         }
         color = healthbar[0].Arc3Color;
     }
