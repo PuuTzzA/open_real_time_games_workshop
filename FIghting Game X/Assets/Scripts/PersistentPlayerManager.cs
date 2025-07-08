@@ -113,7 +113,7 @@ public class PersistentPlayerManager : MonoBehaviour
                 spawnPointsObject = GameObject.Find("SpawnPointsMapping");
 
                 spawnPoints = spawnPointsObject.GetComponentsInChildren<Transform>()
-                    .Where(t => t != spawnPointsObject.transform).ToArray();
+                    .ToArray();
                 DontDestroyOnLoad(spawnPointsObject);
             }
 
