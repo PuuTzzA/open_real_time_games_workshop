@@ -8,8 +8,6 @@ using UnityEngine.SceneManagement;
 public class FighterHealth : MonoBehaviour
 {
 
-    [SerializeField]
-    Animator animator;
 
     [Header("UI Settings")]
     public Sprite Icon;
