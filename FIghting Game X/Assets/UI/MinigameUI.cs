@@ -156,8 +156,9 @@ public class MinigameUI : MonoBehaviour
     {
         // Wait only for entry to finish
         yield return new WaitForSecondsRealtime(entryDuration);
+        yield return new WaitForSecondsRealtime(pauseDuration);
 
-        float totalAnimTime = pauseDuration + exitDuration;
+        float totalAnimTime =  exitDuration;
         float elapsed = 0f;
 
         Vector3 startScale = Vector3.one;

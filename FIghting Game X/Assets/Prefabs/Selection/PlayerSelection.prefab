@@ -1364,6 +1364,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: b7729fdc-6108-4e08-942f-e35a9d88df07
     m_ActionName: 'UI/Pause Game[/Keyboard/escape,/Gamepad/start]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 684eb9e7-6dd6-4aa3-87a0-b25124e77a22
+    m_ActionName: 'Player/Pause Game[/Keyboard/escape,/Gamepad/start,/Gamepad1/start]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: UI
@@ -1384,8 +1388,7 @@ MonoBehaviour:
   selectedColorIndex: 0
   characters:
   - {fileID: 5433043207104148075, guid: 66eec224c3d3b684792b528b6f3190ed, type: 3}
-  - {fileID: 5433043207104148075, guid: d64c55a02ba994f3ea6d66e6e51bf01e, type: 3}
-  - {fileID: 5433043207104148075, guid: 136650703059dae5f8e56dead428f004, type: 3}
+  - {fileID: 7073553681062930824, guid: db853793feec3146196f5be46ee98d9d, type: 3}
   selectedCharacter: 0
   characterDisplayImage: {fileID: 6377793426404930210}
   selectText: {fileID: 8148081259923056542}

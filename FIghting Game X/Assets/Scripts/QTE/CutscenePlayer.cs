@@ -9,11 +9,10 @@ public class CutscenePlayer : MonoBehaviour
 
     [Header("Cutscene Setup")]
     public GameObject cutsceneRoot; // Parent object containing the animators
-    public Animator finisherAnimator;
-    public Animator finishedAnimator;
 
     public SpriteRenderer finisherSprite;
     public SpriteRenderer finishedSprite;
+    public SpriteRenderer heartSprite;
 
     public string finisherAnimation = "finishing";
     public string finishedAnimation = "being_finished";
@@ -31,27 +30,31 @@ public class CutscenePlayer : MonoBehaviour
         // Disable all root objects except the cutsceneRoot or its children
         //foreach (GameObject obj in SceneRootObjects())
         //{
-         //   if (obj == null || obj == cutsceneRoot || cutsceneRoot.transform.IsChildOf(obj.transform))
-          //      continue;
+        //   if (obj == null || obj == cutsceneRoot || cutsceneRoot.transform.IsChildOf(obj.transform))
+        //      continue;
 
-           // if (obj.activeInHierarchy)
-            //{
-            //   obj.SetActive(false);
-            //    reenableObjects.Add(obj);
-            //}
+        // if (obj.activeInHierarchy)
+        //{
+        //   obj.SetActive(false);
+        //    reenableObjects.Add(obj);
+        //}
         //}
 
 
         // Set sprite colors
         if (finisherSprite != null) finisherSprite.color = finisherColor;
         if (finishedSprite != null) finishedSprite.color = finishedColor;
+        if (heartSprite != null) heartSprite.color = finishedColor;
+
+
+        
 
         // Ensure cutsceneRoot is active
         cutsceneRoot.SetActive(true);
-        
+
         // Play animations
-        finisherAnimator.Play(finisherAnimation, 0, 0f);
-        finishedAnimator.Play(finishedAnimation, 0, 0f);
+        //finisherAnimator.Play(finisherAnimation, 0, 0f);
+        //finishedAnimator.Play(finishedAnimation, 0, 0f);
 
         // Start coroutine to end the cutscene
         StartCoroutine(WaitAndEndCutscene());
@@ -67,8 +70,8 @@ public class CutscenePlayer : MonoBehaviour
     {
         //foreach (var obj in reenableObjects)
         //{
-            //if (obj != null)
-                //obj.SetActive(true);
+        //if (obj != null)
+        //obj.SetActive(true);
         //}
 
         //reenableObjects.Clear();
