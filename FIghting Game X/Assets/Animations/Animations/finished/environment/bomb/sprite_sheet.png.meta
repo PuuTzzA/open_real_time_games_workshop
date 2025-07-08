@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 645bc05b97b6a884f838dd230c3487ea
+guid: 50ac9e911749a9b4dbef1c9d06fddc6e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2660100306601294985
-    second: bomb_idle_0
+      213: -9115938624207856695
+    second: sprite_sheet_0
   - first:
-      213: -4143506893485625027
-    second: bomb_idle_1
+      213: -8198574232401945530
+    second: sprite_sheet_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bomb_idle_0
+      name: sprite_sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 512
+        x: 188
+        y: 187
+        width: 135
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7734f1e6ddc651bd0800000000000000
-      internalID: -2660100306601294985
+      spriteID: 9cbd3dd9e1ead7180800000000000000
+      internalID: -9115938624207856695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomb_idle_1
+      name: sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 512
-        height: 512
+        x: 700
+        y: 187
+        width: 135
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d3138610f6e4f76c0800000000000000
-      internalID: -4143506893485625027
+      spriteID: 64cd20d6c20d83e80800000000000000
+      internalID: -8198574232401945530
       vertices: []
       indices: 
       edges: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 30808a3cb34de76488d6879453728489
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -171,12 +171,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
-    nameFileIdTable:
-      bomb_idle_0: -2660100306601294985
-      bomb_idle_1: -4143506893485625027
+      entries: []
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

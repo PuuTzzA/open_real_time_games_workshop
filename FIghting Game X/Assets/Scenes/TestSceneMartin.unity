@@ -527,6 +527,8 @@ MonoBehaviour:
   leverSwitched: {fileID: 1754676831}
   leverActivatable: {fileID: 1275149884}
   activatableText: {fileID: 1264770261}
+  propulsion: {fileID: 0}
+  propulsionParticleSystem: {fileID: 0}
   waitTimeOffScreen: 1
   cooldownTime: 3
   dropDistance: 6
@@ -1177,6 +1179,8 @@ MonoBehaviour:
   leverActivatable: {fileID: 366007973}
   activatableText: {fileID: 2058714100}
   laser: {fileID: 1033180352}
+  laserParticleSystemStart: {fileID: 0}
+  laserParticleSystemEnd: {fileID: 0}
   activeTime: 5
   cooldownTime: 3
   isLaserActive: 0

@@ -1,0 +1,4824 @@
+fileFormatVersion: 2
+guid: 649415a773885ca44a9e7d190e885a5e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1774569660690551468
+    second: being_finished_0_bis_132_0
+  - first:
+      213: -3601944241289433539
+    second: being_finished_0_bis_132_1
+  - first:
+      213: 4996690648297871316
+    second: being_finished_0_bis_132_2
+  - first:
+      213: -116140914195219824
+    second: being_finished_0_bis_132_3
+  - first:
+      213: 7082998706347118229
+    second: being_finished_0_bis_132_4
+  - first:
+      213: 7549657643273421151
+    second: being_finished_0_bis_132_5
+  - first:
+      213: -1672232670408583694
+    second: being_finished_0_bis_132_6
+  - first:
+      213: -2788369203779716051
+    second: being_finished_0_bis_132_7
+  - first:
+      213: -4297133394735930432
+    second: being_finished_0_bis_132_8
+  - first:
+      213: -9007229842969029892
+    second: being_finished_0_bis_132_9
+  - first:
+      213: 8081172173374704138
+    second: being_finished_0_bis_132_10
+  - first:
+      213: -6976190420422827820
+    second: being_finished_0_bis_132_11
+  - first:
+      213: -2852132933028645699
+    second: being_finished_0_bis_132_12
+  - first:
+      213: -3118260089710784262
+    second: being_finished_0_bis_132_13
+  - first:
+      213: 3125599768904740753
+    second: being_finished_0_bis_132_14
+  - first:
+      213: -1823719301332873075
+    second: being_finished_0_bis_132_15
+  - first:
+      213: 730016240243476489
+    second: being_finished_0_bis_132_16
+  - first:
+      213: -4273061490435285281
+    second: being_finished_0_bis_132_17
+  - first:
+      213: 4262959274634997634
+    second: being_finished_0_bis_132_18
+  - first:
+      213: 9021658681232160967
+    second: being_finished_0_bis_132_19
+  - first:
+      213: -7582240048944611270
+    second: being_finished_0_bis_132_20
+  - first:
+      213: 3462724274125746104
+    second: being_finished_0_bis_132_21
+  - first:
+      213: 2015027730320128323
+    second: being_finished_0_bis_132_22
+  - first:
+      213: 5062386685338718348
+    second: being_finished_0_bis_132_23
+  - first:
+      213: 551536407222850276
+    second: being_finished_0_bis_132_24
+  - first:
+      213: -1246401745332704815
+    second: being_finished_0_bis_132_25
+  - first:
+      213: 4797883839302119779
+    second: being_finished_0_bis_132_26
+  - first:
+      213: 6534770933122832317
+    second: being_finished_0_bis_132_27
+  - first:
+      213: 3767556530850415559
+    second: being_finished_0_bis_132_28
+  - first:
+      213: -1715217361773360881
+    second: being_finished_0_bis_132_29
+  - first:
+      213: 1801467510763008004
+    second: being_finished_0_bis_132_30
+  - first:
+      213: -6040537084189332877
+    second: being_finished_0_bis_132_31
+  - first:
+      213: -6023149713217143373
+    second: being_finished_0_bis_132_32
+  - first:
+      213: -6007417174746985371
+    second: being_finished_0_bis_132_33
+  - first:
+      213: 6249787408076100834
+    second: being_finished_0_bis_132_34
+  - first:
+      213: 1379890760742771906
+    second: being_finished_0_bis_132_35
+  - first:
+      213: 9046106479995166782
+    second: being_finished_0_bis_132_36
+  - first:
+      213: 3150310149668260447
+    second: being_finished_0_bis_132_37
+  - first:
+      213: 729789540446232718
+    second: being_finished_0_bis_132_38
+  - first:
+      213: 2987474888488717034
+    second: being_finished_0_bis_132_39
+  - first:
+      213: 75590448813902664
+    second: being_finished_0_bis_132_40
+  - first:
+      213: -2253942408923414537
+    second: being_finished_0_bis_132_41
+  - first:
+      213: 5724834094496998538
+    second: being_finished_0_bis_132_42
+  - first:
+      213: -2949990489909387495
+    second: being_finished_0_bis_132_43
+  - first:
+      213: -6135850280505331787
+    second: being_finished_0_bis_132_44
+  - first:
+      213: -7560720488348801704
+    second: being_finished_0_bis_132_45
+  - first:
+      213: -1508583757316620221
+    second: being_finished_0_bis_132_46
+  - first:
+      213: -9138661555929583115
+    second: being_finished_0_bis_132_47
+  - first:
+      213: 3001229454831863342
+    second: being_finished_0_bis_132_48
+  - first:
+      213: -5890569283802989556
+    second: being_finished_0_bis_132_49
+  - first:
+      213: -8906477735286991138
+    second: being_finished_0_bis_132_50
+  - first:
+      213: -8025869987696913959
+    second: being_finished_0_bis_132_51
+  - first:
+      213: -1197151093677921697
+    second: being_finished_0_bis_132_52
+  - first:
+      213: 6548226702842435716
+    second: being_finished_0_bis_132_53
+  - first:
+      213: -3348829720568020344
+    second: being_finished_0_bis_132_54
+  - first:
+      213: -5085424861134688287
+    second: being_finished_0_bis_132_55
+  - first:
+      213: -3674130800947580501
+    second: being_finished_0_bis_132_56
+  - first:
+      213: 7794137106075113896
+    second: being_finished_0_bis_132_57
+  - first:
+      213: 8717149541227604019
+    second: being_finished_0_bis_132_58
+  - first:
+      213: 6225268054509084954
+    second: being_finished_0_bis_132_59
+  - first:
+      213: -681209795844698902
+    second: being_finished_0_bis_132_60
+  - first:
+      213: 4739276864772158095
+    second: being_finished_0_bis_132_61
+  - first:
+      213: -8583343664704916465
+    second: being_finished_0_bis_132_62
+  - first:
+      213: -879033210773901939
+    second: being_finished_0_bis_132_63
+  - first:
+      213: -7418118808634031659
+    second: being_finished_0_bis_132_64
+  - first:
+      213: -4399563606833243283
+    second: being_finished_0_bis_132_65
+  - first:
+      213: -18591572140030019
+    second: being_finished_0_bis_132_66
+  - first:
+      213: -1991493242156022815
+    second: being_finished_0_bis_132_67
+  - first:
+      213: -8703775797531952852
+    second: being_finished_0_bis_132_68
+  - first:
+      213: 3548396237824780792
+    second: being_finished_0_bis_132_69
+  - first:
+      213: 3919074886882190687
+    second: being_finished_0_bis_132_70
+  - first:
+      213: -8705946479777388061
+    second: being_finished_0_bis_132_71
+  - first:
+      213: -1942112861763316691
+    second: being_finished_0_bis_132_72
+  - first:
+      213: -7395503602423383298
+    second: being_finished_0_bis_132_73
+  - first:
+      213: 427919021465015207
+    second: being_finished_0_bis_132_74
+  - first:
+      213: -8154126190124213143
+    second: being_finished_0_bis_132_75
+  - first:
+      213: 4689233976420343017
+    second: being_finished_0_bis_132_76
+  - first:
+      213: 6688684265528944203
+    second: being_finished_0_bis_132_77
+  - first:
+      213: -8125043463779142621
+    second: being_finished_0_bis_132_78
+  - first:
+      213: 5301628537427530485
+    second: being_finished_0_bis_132_79
+  - first:
+      213: 6187167803710833328
+    second: being_finished_0_bis_132_80
+  - first:
+      213: -7420478127452949871
+    second: being_finished_0_bis_132_81
+  - first:
+      213: 7248666881880191220
+    second: being_finished_0_bis_132_82
+  - first:
+      213: -4395889494689825519
+    second: being_finished_0_bis_132_83
+  - first:
+      213: -243664843647344398
+    second: being_finished_0_bis_132_84
+  - first:
+      213: -2594691629189739459
+    second: being_finished_0_bis_132_85
+  - first:
+      213: 8814541561959842730
+    second: being_finished_0_bis_132_86
+  - first:
+      213: -7107354054322424218
+    second: being_finished_0_bis_132_87
+  - first:
+      213: -1679889360421682983
+    second: being_finished_0_bis_132_88
+  - first:
+      213: -6921845825951899082
+    second: being_finished_0_bis_132_89
+  - first:
+      213: -8278448152815358221
+    second: being_finished_0_bis_132_90
+  - first:
+      213: -5979201777736132204
+    second: being_finished_0_bis_132_91
+  - first:
+      213: 5421403939418292386
+    second: being_finished_0_bis_132_92
+  - first:
+      213: -8926077924929098924
+    second: being_finished_0_bis_132_93
+  - first:
+      213: -2512828430457218348
+    second: being_finished_0_bis_132_94
+  - first:
+      213: -2154495208523850875
+    second: being_finished_0_bis_132_95
+  - first:
+      213: 8067285065415794410
+    second: being_finished_0_bis_132_96
+  - first:
+      213: 8048225390063736503
+    second: being_finished_0_bis_132_97
+  - first:
+      213: 2181675982345713237
+    second: being_finished_0_bis_132_98
+  - first:
+      213: -664435377045319804
+    second: being_finished_0_bis_132_99
+  - first:
+      213: -7224001894690386466
+    second: being_finished_0_bis_132_100
+  - first:
+      213: 6215827289534293293
+    second: being_finished_0_bis_132_101
+  - first:
+      213: 8297791053939499016
+    second: being_finished_0_bis_132_102
+  - first:
+      213: 1699982196988091477
+    second: being_finished_0_bis_132_103
+  - first:
+      213: 2721502037371615359
+    second: being_finished_0_bis_132_104
+  - first:
+      213: 2795999580165406546
+    second: being_finished_0_bis_132_105
+  - first:
+      213: 5202323194511319396
+    second: being_finished_0_bis_132_106
+  - first:
+      213: 513202868718496694
+    second: being_finished_0_bis_132_107
+  - first:
+      213: -2718005210798130575
+    second: being_finished_0_bis_132_108
+  - first:
+      213: -6578483429321975530
+    second: being_finished_0_bis_132_109
+  - first:
+      213: 6860962046294727417
+    second: being_finished_0_bis_132_110
+  - first:
+      213: -6005648625428336772
+    second: being_finished_0_bis_132_111
+  - first:
+      213: -7577762803907278919
+    second: being_finished_0_bis_132_112
+  - first:
+      213: -1318562677664077337
+    second: being_finished_0_bis_132_113
+  - first:
+      213: -1372172642908776913
+    second: being_finished_0_bis_132_114
+  - first:
+      213: 7933435464563324991
+    second: being_finished_0_bis_132_115
+  - first:
+      213: 6041172695333008873
+    second: being_finished_0_bis_132_116
+  - first:
+      213: 2014759195281082354
+    second: being_finished_0_bis_132_117
+  - first:
+      213: -2388650602745222531
+    second: being_finished_0_bis_132_118
+  - first:
+      213: 8848749047857634135
+    second: being_finished_0_bis_132_119
+  - first:
+      213: -46838110229140107
+    second: being_finished_0_bis_132_120
+  - first:
+      213: -7817946769720204449
+    second: being_finished_0_bis_132_121
+  - first:
+      213: -4286529869167492640
+    second: being_finished_0_bis_132_122
+  - first:
+      213: -512123924240579436
+    second: being_finished_0_bis_132_123
+  - first:
+      213: 8766657188253629469
+    second: being_finished_0_bis_132_124
+  - first:
+      213: -4592675153776198682
+    second: being_finished_0_bis_132_125
+  - first:
+      213: 3560933645992104152
+    second: being_finished_0_bis_132_126
+  - first:
+      213: -8911534844976951518
+    second: being_finished_0_bis_132_127
+  - first:
+      213: 4283574990351253986
+    second: being_finished_0_bis_132_128
+  - first:
+      213: -5013678440037716577
+    second: being_finished_0_bis_132_129
+  - first:
+      213: 7982836799254798754
+    second: being_finished_0_bis_132_130
+  - first:
+      213: 4288533738955279517
+    second: being_finished_0_bis_132_131
+  - first:
+      213: -3038321099018298343
+    second: being_finished_0_bis_132_132
+  - first:
+      213: 6503329609329463701
+    second: being_finished_0_bis_132_133
+  - first:
+      213: 4683863215877742555
+    second: being_finished_0_bis_132_134
+  - first:
+      213: 7315063642389455739
+    second: being_finished_0_bis_132_135
+  - first:
+      213: 96978487670717769
+    second: being_finished_0_bis_132_136
+  - first:
+      213: -2792292247620908005
+    second: being_finished_0_bis_132_137
+  - first:
+      213: -8285539361555048044
+    second: being_finished_0_bis_132_138
+  - first:
+      213: -9187710499303890257
+    second: being_finished_0_bis_132_139
+  - first:
+      213: -4923304366850858575
+    second: being_finished_0_bis_132_140
+  - first:
+      213: -7051907760366397665
+    second: being_finished_0_bis_132_141
+  - first:
+      213: -6793263591111831470
+    second: being_finished_0_bis_132_142
+  - first:
+      213: 3871726204565583803
+    second: being_finished_0_bis_132_143
+  - first:
+      213: 4650530018307584616
+    second: being_finished_0_bis_132_144
+  - first:
+      213: -7742266242556563024
+    second: being_finished_0_bis_132_145
+  - first:
+      213: 3959282775251557192
+    second: being_finished_0_bis_132_146
+  - first:
+      213: 5584390859166015601
+    second: being_finished_0_bis_132_147
+  - first:
+      213: 4830924098005207735
+    second: being_finished_0_bis_132_148
+  - first:
+      213: -2684571884054625325
+    second: being_finished_0_bis_132_149
+  - first:
+      213: -7515262596661495772
+    second: being_finished_0_bis_132_150
+  - first:
+      213: 2433187570436252749
+    second: being_finished_0_bis_132_151
+  - first:
+      213: 1423790108552578804
+    second: being_finished_0_bis_132_152
+  - first:
+      213: 8355595390744423470
+    second: being_finished_0_bis_132_153
+  - first:
+      213: -2231517761207853114
+    second: being_finished_0_bis_132_154
+  - first:
+      213: -719153851996199691
+    second: being_finished_0_bis_132_155
+  - first:
+      213: 2335092586435410790
+    second: being_finished_0_bis_132_156
+  - first:
+      213: 5212059443694118957
+    second: being_finished_0_bis_132_157
+  - first:
+      213: 4472571852623195988
+    second: being_finished_0_bis_132_158
+  - first:
+      213: 5199537628342468137
+    second: being_finished_0_bis_132_159
+  - first:
+      213: 3171325469700707558
+    second: being_finished_0_bis_132_160
+  - first:
+      213: -3508902915674562387
+    second: being_finished_0_bis_132_161
+  - first:
+      213: 2067089563314293286
+    second: being_finished_0_bis_132_162
+  - first:
+      213: 2043733228535148147
+    second: being_finished_0_bis_132_163
+  - first:
+      213: 707251972153720118
+    second: being_finished_0_bis_132_164
+  - first:
+      213: -1693765816643023819
+    second: being_finished_0_bis_132_165
+  - first:
+      213: 8968181641643499933
+    second: being_finished_0_bis_132_166
+  - first:
+      213: -9012404994176197718
+    second: being_finished_0_bis_132_167
+  - first:
+      213: 179300859011293902
+    second: being_finished_0_bis_132_168
+  - first:
+      213: 7687148511921350738
+    second: being_finished_0_bis_132_169
+  - first:
+      213: 2686563751669359549
+    second: being_finished_0_bis_132_170
+  - first:
+      213: -4004945232598940319
+    second: being_finished_0_bis_132_171
+  - first:
+      213: 6232705195882827995
+    second: being_finished_0_bis_132_172
+  - first:
+      213: 6522110833504999043
+    second: being_finished_0_bis_132_173
+  - first:
+      213: -6542062773411918888
+    second: being_finished_0_bis_132_174
+  - first:
+      213: 71967623867930781
+    second: being_finished_0_bis_132_175
+  - first:
+      213: 2159277961797296028
+    second: being_finished_0_bis_132_176
+  - first:
+      213: -8997629698432179512
+    second: being_finished_0_bis_132_177
+  - first:
+      213: 1621797281590445318
+    second: being_finished_0_bis_132_178
+  - first:
+      213: -2079866102240019200
+    second: being_finished_0_bis_132_179
+  - first:
+      213: -6218356820824269719
+    second: being_finished_0_bis_132_180
+  - first:
+      213: -7867355283902988043
+    second: being_finished_0_bis_132_181
+  - first:
+      213: 4958279139747872150
+    second: being_finished_0_bis_132_182
+  - first:
+      213: -1934224403502023082
+    second: being_finished_0_bis_132_183
+  - first:
+      213: -340671849525267566
+    second: being_finished_0_bis_132_184
+  - first:
+      213: -8595936525779225601
+    second: being_finished_0_bis_132_185
+  - first:
+      213: 7331972444583597217
+    second: being_finished_0_bis_132_186
+  - first:
+      213: 6031779055886780099
+    second: being_finished_0_bis_132_187
+  - first:
+      213: -1970143517303248564
+    second: being_finished_0_bis_132_188
+  - first:
+      213: 8250110011525331901
+    second: being_finished_0_bis_132_189
+  - first:
+      213: -1847500876463311760
+    second: being_finished_0_bis_132_190
+  - first:
+      213: 8446261004137918156
+    second: being_finished_0_bis_132_191
+  - first:
+      213: 836919164093783387
+    second: being_finished_0_bis_132_192
+  - first:
+      213: -5181129210112290275
+    second: being_finished_0_bis_132_193
+  - first:
+      213: 1321633527477082852
+    second: being_finished_0_bis_132_194
+  - first:
+      213: 7134904420258534404
+    second: being_finished_0_bis_132_195
+  - first:
+      213: 7220113175975778074
+    second: being_finished_0_bis_132_196
+  - first:
+      213: 1156421686403293765
+    second: being_finished_0_bis_132_197
+  - first:
+      213: -3528120442456230551
+    second: being_finished_0_bis_132_198
+  - first:
+      213: -6993127635526934320
+    second: being_finished_0_bis_132_199
+  - first:
+      213: -2785576500055865411
+    second: being_finished_0_bis_132_200
+  - first:
+      213: -7862258916945416541
+    second: being_finished_0_bis_132_201
+  - first:
+      213: -8819764397060874146
+    second: being_finished_0_bis_132_202
+  - first:
+      213: 1387402188523957203
+    second: being_finished_0_bis_132_203
+  - first:
+      213: 9115557341034565194
+    second: being_finished_0_bis_132_204
+  - first:
+      213: 1305625608636255072
+    second: being_finished_0_bis_132_205
+  - first:
+      213: -6908671793742792648
+    second: being_finished_0_bis_132_206
+  - first:
+      213: 8671521232632716572
+    second: being_finished_0_bis_132_207
+  - first:
+      213: 8207646886937069806
+    second: being_finished_0_bis_132_208
+  - first:
+      213: 4376062309758180211
+    second: being_finished_0_bis_132_209
+  - first:
+      213: 3102795566164531140
+    second: being_finished_0_bis_132_210
+  - first:
+      213: 3811079474959757006
+    second: being_finished_0_bis_132_211
+  - first:
+      213: 2513893340730201592
+    second: being_finished_0_bis_132_212
+  - first:
+      213: 968106206117673618
+    second: being_finished_0_bis_132_213
+  - first:
+      213: 4008319759526106008
+    second: being_finished_0_bis_132_214
+  - first:
+      213: -2565552939488547111
+    second: being_finished_0_bis_132_215
+  - first:
+      213: 39031060834045082
+    second: being_finished_0_bis_132_216
+  - first:
+      213: 6613832417859542604
+    second: being_finished_0_bis_132_217
+  - first:
+      213: 5266488513574915465
+    second: being_finished_0_bis_132_218
+  - first:
+      213: 531016780204681303
+    second: being_finished_0_bis_132_219
+  - first:
+      213: -1942601696631100171
+    second: being_finished_0_bis_132_220
+  - first:
+      213: 7147897565247118240
+    second: being_finished_0_bis_132_221
+  - first:
+      213: -7269849602299651987
+    second: being_finished_0_bis_132_222
+  - first:
+      213: 3228295027990281260
+    second: being_finished_0_bis_132_223
+  - first:
+      213: 870939373174885990
+    second: being_finished_0_bis_132_224
+  - first:
+      213: 2277216789629679427
+    second: being_finished_0_bis_132_225
+  - first:
+      213: -4744496510898270727
+    second: being_finished_0_bis_132_226
+  - first:
+      213: 8738847192314163487
+    second: being_finished_0_bis_132_227
+  - first:
+      213: -2550393411245180133
+    second: being_finished_0_bis_132_228
+  - first:
+      213: 6723210268364850875
+    second: being_finished_0_bis_132_229
+  - first:
+      213: -3658894395268581159
+    second: being_finished_0_bis_132_230
+  - first:
+      213: 4718938414510654792
+    second: being_finished_0_bis_132_231
+  - first:
+      213: 2605625469472443933
+    second: being_finished_0_bis_132_232
+  - first:
+      213: 672929125571152334
+    second: being_finished_0_bis_132_233
+  - first:
+      213: -1336479285675645672
+    second: being_finished_0_bis_132_234
+  - first:
+      213: 5609017713125592551
+    second: being_finished_0_bis_132_235
+  - first:
+      213: 3164070843321086844
+    second: being_finished_0_bis_132_236
+  - first:
+      213: 122798253627764791
+    second: being_finished_0_bis_132_237
+  - first:
+      213: -3079197701497476936
+    second: being_finished_0_bis_132_238
+  - first:
+      213: 2786811988926474770
+    second: being_finished_0_bis_132_239
+  - first:
+      213: -2797072781235779411
+    second: being_finished_0_bis_132_240
+  - first:
+      213: -3636012752663691337
+    second: being_finished_0_bis_132_241
+  - first:
+      213: -19208554899092542
+    second: being_finished_0_bis_132_242
+  - first:
+      213: -6638464398868495115
+    second: being_finished_0_bis_132_243
+  - first:
+      213: -1213265317081109643
+    second: being_finished_0_bis_132_244
+  - first:
+      213: -6536992153026639901
+    second: being_finished_0_bis_132_245
+  - first:
+      213: -3267101902859514979
+    second: being_finished_0_bis_132_246
+  - first:
+      213: 668465346096613475
+    second: being_finished_0_bis_132_247
+  - first:
+      213: -4313283032902527550
+    second: being_finished_0_bis_132_248
+  - first:
+      213: 7232879362622093714
+    second: being_finished_0_bis_132_249
+  - first:
+      213: 258345725352385366
+    second: being_finished_0_bis_132_250
+  - first:
+      213: 5251903616441206863
+    second: being_finished_0_bis_132_251
+  - first:
+      213: 2175419522772412784
+    second: being_finished_0_bis_132_252
+  - first:
+      213: 4177932414632051019
+    second: being_finished_0_bis_132_253
+  - first:
+      213: 7754533854085520352
+    second: being_finished_0_bis_132_254
+  - first:
+      213: 4434343733251110843
+    second: being_finished_0_bis_132_255
+  - first:
+      213: 8194454775847796125
+    second: being_finished_0_bis_132_256
+  - first:
+      213: 2955652332356736988
+    second: being_finished_0_bis_132_257
+  - first:
+      213: 5474693149473592585
+    second: being_finished_0_bis_132_258
+  - first:
+      213: 1652776438374642321
+    second: being_finished_0_bis_132_259
+  - first:
+      213: 5725576270245744685
+    second: being_finished_0_bis_132_260
+  - first:
+      213: -7839718282341009293
+    second: being_finished_0_bis_132_261
+  - first:
+      213: -7178035498685809687
+    second: being_finished_0_bis_132_262
+  - first:
+      213: 3849982154267565812
+    second: being_finished_0_bis_132_263
+  - first:
+      213: 6281453200584566856
+    second: being_finished_0_bis_132_264
+  - first:
+      213: 7061782377152646942
+    second: being_finished_0_bis_132_265
+  - first:
+      213: -3074869735202979966
+    second: being_finished_0_bis_132_266
+  - first:
+      213: 6483940725198771979
+    second: being_finished_0_bis_132_267
+  - first:
+      213: 6247414351850874485
+    second: being_finished_0_bis_132_268
+  - first:
+      213: 8445139885105728792
+    second: being_finished_0_bis_132_269
+  - first:
+      213: -5975215648754086039
+    second: being_finished_0_bis_132_270
+  - first:
+      213: 4175582110902249858
+    second: being_finished_0_bis_132_271
+  - first:
+      213: -8671698127194329869
+    second: being_finished_0_bis_132_272
+  - first:
+      213: -6368971885385795538
+    second: being_finished_0_bis_132_273
+  - first:
+      213: 2957519561597992827
+    second: being_finished_0_bis_132_274
+  - first:
+      213: -4617738692425523475
+    second: being_finished_0_bis_132_275
+  - first:
+      213: -7680368543112981578
+    second: being_finished_0_bis_132_276
+  - first:
+      213: -3876472959936097592
+    second: being_finished_0_bis_132_277
+  - first:
+      213: 7227742637305548826
+    second: being_finished_0_bis_132_278
+  - first:
+      213: 7282246048017211307
+    second: being_finished_0_bis_132_279
+  - first:
+      213: 578507706303239677
+    second: being_finished_0_bis_132_280
+  - first:
+      213: 6135942087587096808
+    second: being_finished_0_bis_132_281
+  - first:
+      213: -2861620675736396325
+    second: being_finished_0_bis_132_282
+  - first:
+      213: -7838252669141987248
+    second: being_finished_0_bis_132_283
+  - first:
+      213: -8819595539003514967
+    second: being_finished_0_bis_132_284
+  - first:
+      213: 6166499914634142548
+    second: being_finished_0_bis_132_285
+  - first:
+      213: -6729113972512429686
+    second: being_finished_0_bis_132_286
+  - first:
+      213: 5883658299826232872
+    second: being_finished_0_bis_132_287
+  - first:
+      213: -2651897586358085495
+    second: being_finished_0_bis_132_288
+  - first:
+      213: -1347875051716280969
+    second: being_finished_0_bis_132_289
+  - first:
+      213: 180108290497208948
+    second: being_finished_0_bis_132_290
+  - first:
+      213: 6102668763336416939
+    second: being_finished_0_bis_132_291
+  - first:
+      213: 5682927829916620170
+    second: being_finished_0_bis_132_292
+  - first:
+      213: 3637236769517734576
+    second: being_finished_0_bis_132_293
+  - first:
+      213: 721774626870655167
+    second: being_finished_0_bis_132_294
+  - first:
+      213: 3289614767854266741
+    second: being_finished_0_bis_132_295
+  - first:
+      213: 7456376146979237357
+    second: being_finished_0_bis_132_296
+  - first:
+      213: -8906957153749790380
+    second: being_finished_0_bis_132_297
+  - first:
+      213: 4416292913745852403
+    second: being_finished_0_bis_132_298
+  - first:
+      213: -7840035156736986115
+    second: being_finished_0_bis_132_299
+  - first:
+      213: -1927424691442000032
+    second: being_finished_0_bis_132_300
+  - first:
+      213: -4259154085597716051
+    second: being_finished_0_bis_132_301
+  - first:
+      213: -5421360310824120607
+    second: being_finished_0_bis_132_302
+  - first:
+      213: -6936977998689684713
+    second: being_finished_0_bis_132_303
+  - first:
+      213: -1185123518278213081
+    second: being_finished_0_bis_132_304
+  - first:
+      213: 4468507000813916935
+    second: being_finished_0_bis_132_305
+  - first:
+      213: 2748805861044505342
+    second: being_finished_0_bis_132_306
+  - first:
+      213: -4736723608832314737
+    second: being_finished_0_bis_132_307
+  - first:
+      213: -9143954490415142451
+    second: being_finished_0_bis_132_308
+  - first:
+      213: 6383858533458277898
+    second: being_finished_0_bis_132_309
+  - first:
+      213: 5990345155206770860
+    second: being_finished_0_bis_132_310
+  - first:
+      213: 7735839159498170463
+    second: being_finished_0_bis_132_311
+  - first:
+      213: 2489378753490505829
+    second: being_finished_0_bis_132_312
+  - first:
+      213: 2062830327765056098
+    second: being_finished_0_bis_132_313
+  - first:
+      213: 630985367170015010
+    second: being_finished_0_bis_132_314
+  - first:
+      213: 583896094454489695
+    second: being_finished_0_bis_132_315
+  - first:
+      213: -2516121876135901695
+    second: being_finished_0_bis_132_316
+  - first:
+      213: 579793053399267747
+    second: being_finished_0_bis_132_317
+  - first:
+      213: -7228764878966286534
+    second: being_finished_0_bis_132_318
+  - first:
+      213: -1152926262660150738
+    second: being_finished_0_bis_132_319
+  - first:
+      213: 1802692614174258720
+    second: being_finished_0_bis_132_320
+  - first:
+      213: -8618446593955516944
+    second: being_finished_0_bis_132_321
+  - first:
+      213: -7070657987679742299
+    second: being_finished_0_bis_132_322
+  - first:
+      213: 4046298014716689750
+    second: being_finished_0_bis_132_323
+  - first:
+      213: -489166988699220027
+    second: being_finished_0_bis_132_324
+  - first:
+      213: 6071190744046529790
+    second: being_finished_0_bis_132_325
+  - first:
+      213: 4565000456650568014
+    second: being_finished_0_bis_132_326
+  - first:
+      213: -460191284370183561
+    second: being_finished_0_bis_132_327
+  - first:
+      213: 5072126373339717494
+    second: being_finished_0_bis_132_328
+  - first:
+      213: 7252177951271981350
+    second: being_finished_0_bis_132_329
+  - first:
+      213: -7892883031082181243
+    second: being_finished_0_bis_132_330
+  - first:
+      213: 7650825039790506996
+    second: being_finished_0_bis_132_331
+  - first:
+      213: 2130644559869201477
+    second: being_finished_0_bis_132_332
+  - first:
+      213: 1160807789448773364
+    second: being_finished_0_bis_132_333
+  - first:
+      213: -5878942467253216369
+    second: being_finished_0_bis_132_334
+  - first:
+      213: -8283957484486444141
+    second: being_finished_0_bis_132_335
+  - first:
+      213: 2853288642426543094
+    second: being_finished_0_bis_132_336
+  - first:
+      213: -3702562104443491974
+    second: being_finished_0_bis_132_337
+  - first:
+      213: -8571326804782619892
+    second: being_finished_0_bis_132_338
+  - first:
+      213: -4902053420759949400
+    second: being_finished_0_bis_132_339
+  - first:
+      213: 3492689901629534046
+    second: being_finished_0_bis_132_340
+  - first:
+      213: -1983928719034717829
+    second: being_finished_0_bis_132_341
+  - first:
+      213: 7519523624645003039
+    second: being_finished_0_bis_132_342
+  - first:
+      213: -8540981682415912361
+    second: being_finished_0_bis_132_343
+  - first:
+      213: 9191544566393390750
+    second: being_finished_0_bis_132_344
+  - first:
+      213: -1662412410324259962
+    second: being_finished_0_bis_132_345
+  - first:
+      213: -2180271303234624528
+    second: being_finished_0_bis_132_346
+  - first:
+      213: 5195320356251806519
+    second: being_finished_0_bis_132_347
+  - first:
+      213: 5357977062481515102
+    second: being_finished_0_bis_132_348
+  - first:
+      213: -5331841090476316148
+    second: being_finished_0_bis_132_349
+  - first:
+      213: 4966846718961359235
+    second: being_finished_0_bis_132_350
+  - first:
+      213: -7776071434215406350
+    second: being_finished_0_bis_132_351
+  - first:
+      213: 8216172893173853902
+    second: being_finished_0_bis_132_352
+  - first:
+      213: 2267177417138895638
+    second: being_finished_0_bis_132_353
+  - first:
+      213: -2545619579577423240
+    second: being_finished_0_bis_132_354
+  - first:
+      213: -3098225397966399183
+    second: being_finished_0_bis_132_355
+  - first:
+      213: -3881133670335812544
+    second: being_finished_0_bis_132_356
+  - first:
+      213: 7800190044829267954
+    second: being_finished_0_bis_132_357
+  - first:
+      213: -8885630220098006032
+    second: being_finished_0_bis_132_358
+  - first:
+      213: -4304667407825915028
+    second: being_finished_0_bis_132_359
+  - first:
+      213: -2083946563272241622
+    second: being_finished_0_bis_132_360
+  - first:
+      213: 337870801826300049
+    second: being_finished_0_bis_132_361
+  - first:
+      213: 98371767583300491
+    second: being_finished_0_bis_132_362
+  - first:
+      213: 8352094935584180791
+    second: being_finished_0_bis_132_363
+  - first:
+      213: 9157018344258706291
+    second: being_finished_0_bis_132_364
+  - first:
+      213: -6957973444733349075
+    second: being_finished_0_bis_132_365
+  - first:
+      213: 8133210430141579547
+    second: being_finished_0_bis_132_366
+  - first:
+      213: 4024533440925472527
+    second: being_finished_0_bis_132_367
+  - first:
+      213: 274122836069473982
+    second: being_finished_0_bis_132_368
+  - first:
+      213: 8590021384874573557
+    second: being_finished_0_bis_132_369
+  - first:
+      213: 8982617009423869151
+    second: being_finished_0_bis_132_370
+  - first:
+      213: -4034052505749409148
+    second: being_finished_0_bis_132_371
+  - first:
+      213: 1404987661756779162
+    second: being_finished_0_bis_132_372
+  - first:
+      213: -3120227206771569870
+    second: being_finished_0_bis_132_373
+  - first:
+      213: -7095035920626586912
+    second: being_finished_0_bis_132_374
+  - first:
+      213: 6850328137318431233
+    second: being_finished_0_bis_132_375
+  - first:
+      213: 849610899324617980
+    second: being_finished_0_bis_132_376
+  - first:
+      213: 7046984101374240560
+    second: being_finished_0_bis_132_377
+  - first:
+      213: -7900140538722144537
+    second: being_finished_0_bis_132_378
+  - first:
+      213: 3639043688481049714
+    second: being_finished_0_bis_132_379
+  - first:
+      213: -5787099571318272567
+    second: being_finished_0_bis_132_380
+  - first:
+      213: -8462046740678960016
+    second: being_finished_0_bis_132_381
+  - first:
+      213: -2718894448631713506
+    second: being_finished_0_bis_132_382
+  - first:
+      213: -8007514574989239986
+    second: being_finished_0_bis_132_383
+  - first:
+      213: 3612242764927295172
+    second: being_finished_0_bis_132_384
+  - first:
+      213: -14789367585425578
+    second: being_finished_0_bis_132_385
+  - first:
+      213: -236939368476297780
+    second: being_finished_0_bis_132_386
+  - first:
+      213: 6236118914053203470
+    second: being_finished_0_bis_132_387
+  - first:
+      213: -1091883996249471386
+    second: being_finished_0_bis_132_388
+  - first:
+      213: -6705262335799659192
+    second: being_finished_0_bis_132_389
+  - first:
+      213: -7225486897577338149
+    second: being_finished_0_bis_132_390
+  - first:
+      213: 6707932096904085802
+    second: being_finished_0_bis_132_391
+  - first:
+      213: -8521389430454941400
+    second: being_finished_0_bis_132_392
+  - first:
+      213: -5952872956782573448
+    second: being_finished_0_bis_132_393
+  - first:
+      213: 5942179100529183378
+    second: being_finished_0_bis_132_394
+  - first:
+      213: -8113660582563163351
+    second: being_finished_0_bis_132_395
+  - first:
+      213: -820457205101515509
+    second: being_finished_0_bis_132_396
+  - first:
+      213: 3776827643755890519
+    second: being_finished_0_bis_132_397
+  - first:
+      213: -7972958480318063524
+    second: being_finished_0_bis_132_398
+  - first:
+      213: -5559996743800630866
+    second: being_finished_0_bis_132_399
+  - first:
+      213: -4973076312704381063
+    second: being_finished_0_bis_132_400
+  - first:
+      213: 4322926138577694203
+    second: being_finished_0_bis_132_401
+  - first:
+      213: 2996549471957793746
+    second: being_finished_0_bis_132_402
+  - first:
+      213: -3681854131790793577
+    second: being_finished_0_bis_132_403
+  - first:
+      213: -5369363891918770446
+    second: being_finished_0_bis_132_404
+  - first:
+      213: -4956087467312480613
+    second: being_finished_0_bis_132_405
+  - first:
+      213: 6867055651600482151
+    second: being_finished_0_bis_132_406
+  - first:
+      213: -4843420989018892296
+    second: being_finished_0_bis_132_407
+  - first:
+      213: 5684729620896283356
+    second: being_finished_0_bis_132_408
+  - first:
+      213: 2110336476312827438
+    second: being_finished_0_bis_132_409
+  - first:
+      213: 5597334941763513601
+    second: being_finished_0_bis_132_410
+  - first:
+      213: -9183728899620947354
+    second: being_finished_0_bis_132_411
+  - first:
+      213: 2432451310611440473
+    second: being_finished_0_bis_132_412
+  - first:
+      213: -9196294243937681723
+    second: being_finished_0_bis_132_413
+  - first:
+      213: 7414346482204416064
+    second: being_finished_0_bis_132_414
+  - first:
+      213: -4931895201350341492
+    second: being_finished_0_bis_132_415
+  - first:
+      213: 3901939456309900964
+    second: being_finished_0_bis_132_416
+  - first:
+      213: -4855791110093844779
+    second: being_finished_0_bis_132_417
+  - first:
+      213: 9132383790464128409
+    second: being_finished_0_bis_132_418
+  - first:
+      213: -8094929331951009451
+    second: being_finished_0_bis_132_419
+  - first:
+      213: -8344314518530717388
+    second: being_finished_0_bis_132_420
+  - first:
+      213: 6299643613162284204
+    second: being_finished_0_bis_132_421
+  - first:
+      213: -8699712798826701783
+    second: being_finished_0_bis_132_422
+  - first:
+      213: -4998335520356112821
+    second: being_finished_0_bis_132_423
+  - first:
+      213: 2165433969422994657
+    second: being_finished_0_bis_132_424
+  - first:
+      213: -573311356686023204
+    second: being_finished_0_bis_132_425
+  - first:
+      213: -6963975094125600475
+    second: being_finished_0_bis_132_426
+  - first:
+      213: 6502342946282175847
+    second: being_finished_0_bis_132_427
+  - first:
+      213: 8362428434755759913
+    second: being_finished_0_bis_132_428
+  - first:
+      213: -4346376933156708813
+    second: being_finished_0_bis_132_429
+  - first:
+      213: -7742367822013655483
+    second: being_finished_0_bis_132_430
+  - first:
+      213: 4146348171832846867
+    second: being_finished_0_bis_132_431
+  - first:
+      213: 7183982269293708647
+    second: being_finished_0_bis_132_432
+  - first:
+      213: -4642803565437810145
+    second: being_finished_0_bis_132_433
+  - first:
+      213: 3153892586777935788
+    second: being_finished_0_bis_132_434
+  - first:
+      213: -1777599298629488580
+    second: being_finished_0_bis_132_435
+  - first:
+      213: 2255580723672276988
+    second: being_finished_0_bis_132_436
+  - first:
+      213: -3952045148437245391
+    second: being_finished_0_bis_132_437
+  - first:
+      213: -7140891005301677385
+    second: being_finished_0_bis_132_438
+  - first:
+      213: 1524982366728302685
+    second: being_finished_0_bis_132_439
+  - first:
+      213: 3219815389264395179
+    second: being_finished_0_bis_132_440
+  - first:
+      213: 842501456182259540
+    second: being_finished_0_bis_132_441
+  - first:
+      213: 8709182547808034160
+    second: being_finished_0_bis_132_442
+  - first:
+      213: -7822583457513605063
+    second: being_finished_0_bis_132_443
+  - first:
+      213: 4336787620651308256
+    second: being_finished_0_bis_132_444
+  - first:
+      213: -1762112421070429015
+    second: being_finished_0_bis_132_445
+  - first:
+      213: -7896517138254591019
+    second: being_finished_0_bis_132_446
+  - first:
+      213: -6464555024372106884
+    second: being_finished_0_bis_132_447
+  - first:
+      213: 882990033630491090
+    second: being_finished_0_bis_132_448
+  - first:
+      213: 7860238205072306968
+    second: being_finished_0_bis_132_449
+  - first:
+      213: 1747716217620879769
+    second: being_finished_0_bis_132_450
+  - first:
+      213: 3572689557286748795
+    second: being_finished_0_bis_132_451
+  - first:
+      213: 5925883663607663621
+    second: being_finished_0_bis_132_452
+  - first:
+      213: 7914488669374161057
+    second: being_finished_0_bis_132_453
+  - first:
+      213: -8410280210782922564
+    second: being_finished_0_bis_132_454
+  - first:
+      213: 2552469352485473816
+    second: being_finished_0_bis_132_455
+  - first:
+      213: 8664081822992170664
+    second: being_finished_0_bis_132_456
+  - first:
+      213: -2196028655136919130
+    second: being_finished_0_bis_132_457
+  - first:
+      213: -8078386252770733681
+    second: being_finished_0_bis_132_458
+  - first:
+      213: -2982119086920234679
+    second: being_finished_0_bis_132_459
+  - first:
+      213: -2976215912496593502
+    second: being_finished_0_bis_132_460
+  - first:
+      213: -7239305171803272474
+    second: being_finished_0_bis_132_461
+  - first:
+      213: 864170398674828110
+    second: being_finished_0_bis_132_462
+  - first:
+      213: 2481574796621940770
+    second: being_finished_0_bis_132_463
+  - first:
+      213: -5167206419189644910
+    second: being_finished_0_bis_132_464
+  - first:
+      213: 9067057063361653031
+    second: being_finished_0_bis_132_465
+  - first:
+      213: -415925766917165284
+    second: being_finished_0_bis_132_466
+  - first:
+      213: 5215137738700760606
+    second: being_finished_0_bis_132_467
+  - first:
+      213: 738570344360510196
+    second: being_finished_0_bis_132_468
+  - first:
+      213: -2519765806516552695
+    second: being_finished_0_bis_132_469
+  - first:
+      213: -3382649543805857996
+    second: being_finished_0_bis_132_470
+  - first:
+      213: 6040885726513549071
+    second: being_finished_0_bis_132_471
+  - first:
+      213: 5158499130819249492
+    second: being_finished_0_bis_132_472
+  - first:
+      213: 5498217559136941787
+    second: being_finished_0_bis_132_473
+  - first:
+      213: -8767607658580218216
+    second: being_finished_0_bis_132_474
+  - first:
+      213: -4014081632350420744
+    second: being_finished_0_bis_132_475
+  - first:
+      213: -1405280692401185195
+    second: being_finished_0_bis_132_476
+  - first:
+      213: 4824506144517566784
+    second: being_finished_0_bis_132_477
+  - first:
+      213: -5396010535965122735
+    second: being_finished_0_bis_132_478
+  - first:
+      213: -2371697582647970280
+    second: being_finished_0_bis_132_479
+  - first:
+      213: 4080410407945082625
+    second: being_finished_0_bis_132_480
+  - first:
+      213: 3312145135940777540
+    second: being_finished_0_bis_132_481
+  - first:
+      213: -6008627371210632813
+    second: being_finished_0_bis_132_482
+  - first:
+      213: -8210421222157541347
+    second: being_finished_0_bis_132_483
+  - first:
+      213: 1465023786867601452
+    second: being_finished_0_bis_132_484
+  - first:
+      213: 4052004613422193402
+    second: being_finished_0_bis_132_485
+  - first:
+      213: 9133972448368025957
+    second: being_finished_0_bis_132_486
+  - first:
+      213: 627058735481192641
+    second: being_finished_0_bis_132_487
+  - first:
+      213: -1951700613650970488
+    second: being_finished_0_bis_132_488
+  - first:
+      213: -6854603190979334107
+    second: being_finished_0_bis_132_489
+  - first:
+      213: -5753781809076660511
+    second: being_finished_0_bis_132_490
+  - first:
+      213: -8603656570677392897
+    second: being_finished_0_bis_132_491
+  - first:
+      213: -3127575446954022387
+    second: being_finished_0_bis_132_492
+  - first:
+      213: -7167650313655201019
+    second: being_finished_0_bis_132_493
+  - first:
+      213: 4322789913919376190
+    second: being_finished_0_bis_132_494
+  - first:
+      213: 5480564052194000840
+    second: being_finished_0_bis_132_495
+  - first:
+      213: -2656969458189111070
+    second: being_finished_0_bis_132_496
+  - first:
+      213: 4063038356849154023
+    second: being_finished_0_bis_132_497
+  - first:
+      213: -4575666419459718247
+    second: being_finished_0_bis_132_498
+  - first:
+      213: -6851011052422745715
+    second: being_finished_0_bis_132_499
+  - first:
+      213: 3492591644432828190
+    second: being_finished_0_bis_132_500
+  - first:
+      213: 5494737265293944049
+    second: being_finished_0_bis_132_501
+  - first:
+      213: 5854057621368759311
+    second: being_finished_0_bis_132_502
+  - first:
+      213: -8114348558317340588
+    second: being_finished_0_bis_132_503
+  - first:
+      213: 915302274178316380
+    second: being_finished_0_bis_132_504
+  - first:
+      213: -7153416632805732416
+    second: being_finished_0_bis_132_505
+  - first:
+      213: -4705767719582355044
+    second: being_finished_0_bis_132_506
+  - first:
+      213: -150062590890348424
+    second: being_finished_0_bis_132_507
+  - first:
+      213: 8349785121126453027
+    second: being_finished_0_bis_132_508
+  - first:
+      213: 2488143245020507585
+    second: being_finished_0_bis_132_509
+  - first:
+      213: -4901029888571095430
+    second: being_finished_0_bis_132_510
+  - first:
+      213: 8138798969406594889
+    second: being_finished_0_bis_132_511
+  - first:
+      213: -2304207892169218608
+    second: being_finished_0_bis_132_512
+  - first:
+      213: -5842753882415728605
+    second: being_finished_0_bis_132_513
+  - first:
+      213: -2381313400025155817
+    second: being_finished_0_bis_132_514
+  - first:
+      213: 6980547281733802122
+    second: being_finished_0_bis_132_515
+  - first:
+      213: 2637739132613370611
+    second: being_finished_0_bis_132_516
+  - first:
+      213: -3631934758068424330
+    second: being_finished_0_bis_132_517
+  - first:
+      213: 1312490846608578539
+    second: being_finished_0_bis_132_518
+  - first:
+      213: 4673667676399645814
+    second: being_finished_0_bis_132_519
+  - first:
+      213: -6129655006085666335
+    second: being_finished_0_bis_132_520
+  - first:
+      213: 6543346083995051236
+    second: being_finished_0_bis_132_521
+  - first:
+      213: -5754730094213878307
+    second: being_finished_0_bis_132_522
+  - first:
+      213: 6048074516173388783
+    second: being_finished_0_bis_132_523
+  - first:
+      213: 1073495840006405191
+    second: being_finished_0_bis_132_524
+  - first:
+      213: -1604307038120512406
+    second: being_finished_0_bis_132_525
+  - first:
+      213: -3892587219474852319
+    second: being_finished_0_bis_132_526
+  - first:
+      213: -3349701970979159328
+    second: being_finished_0_bis_132_527
+  - first:
+      213: 1493703520797547367
+    second: being_finished_0_bis_132_528
+  - first:
+      213: -2192365630100125952
+    second: being_finished_0_bis_132_529
+  - first:
+      213: -8481003013054835709
+    second: being_finished_0_bis_132_530
+  - first:
+      213: 6873176801959860306
+    second: being_finished_0_bis_132_531
+  - first:
+      213: 4777159664671611897
+    second: being_finished_0_bis_132_532
+  - first:
+      213: 4681928055779040322
+    second: being_finished_0_bis_132_533
+  - first:
+      213: 5077016684389406558
+    second: being_finished_0_bis_132_534
+  - first:
+      213: -4562526742938194667
+    second: being_finished_0_bis_132_535
+  - first:
+      213: -8538131276203244197
+    second: being_finished_0_bis_132_536
+  - first:
+      213: -5023827098742613163
+    second: being_finished_0_bis_132_537
+  - first:
+      213: -2723313545244288934
+    second: being_finished_0_bis_132_538
+  - first:
+      213: -9097721138525087939
+    second: being_finished_0_bis_132_539
+  - first:
+      213: -1664583455197989397
+    second: being_finished_0_bis_132_540
+  - first:
+      213: 2511229796254398462
+    second: being_finished_0_bis_132_541
+  - first:
+      213: 4444152358182612247
+    second: being_finished_0_bis_132_542
+  - first:
+      213: -6175863204504067946
+    second: being_finished_0_bis_132_543
+  - first:
+      213: 4979419757074471090
+    second: being_finished_0_bis_132_544
+  - first:
+      213: 8813302857972656665
+    second: being_finished_0_bis_132_545
+  - first:
+      213: 1954626758739042741
+    second: being_finished_0_bis_132_546
+  - first:
+      213: 1606800338783914171
+    second: being_finished_0_bis_132_547
+  - first:
+      213: 634500612672621041
+    second: being_finished_0_bis_132_548
+  - first:
+      213: -2843471898027794556
+    second: being_finished_0_bis_132_549
+  - first:
+      213: 7538760588911964578
+    second: being_finished_0_bis_132_550
+  - first:
+      213: -8100863097109493425
+    second: being_finished_0_bis_132_551
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13650
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca255ae44b980a810800000000000000
+      internalID: 1774569660690551468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_1
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 13650
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3eed25ebc2530ec0800000000000000
+      internalID: -3601944241289433539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_2
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 13650
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d79f48cbafc75540800000000000000
+      internalID: 4996690648297871316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_3
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 13650
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a31813472636ef0800000000000000
+      internalID: -116140914195219824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_4
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 13650
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e0f5ccbcddb4260800000000000000
+      internalID: 7082998706347118229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_5
+      rect:
+        serializedVersion: 2
+        x: 6825
+        y: 13650
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51002370a5c5c860800000000000000
+      internalID: 7549657643273421151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_6
+      rect:
+        serializedVersion: 2
+        x: 8190
+        y: 13650
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f55e720f390bc8e0800000000000000
+      internalID: -1672232670408583694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_7
+      rect:
+        serializedVersion: 2
+        x: 9555
+        y: 13650
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2c321a8bf8bd49d0800000000000000
+      internalID: -2788369203779716051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_8
+      rect:
+        serializedVersion: 2
+        x: 10920
+        y: 13650
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c3eb46d1f38d54c0800000000000000
+      internalID: -4297133394735930432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_9
+      rect:
+        serializedVersion: 2
+        x: 12285
+        y: 13650
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf2988f1e24eff280800000000000000
+      internalID: -9007229842969029892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_10
+      rect:
+        serializedVersion: 2
+        x: 13650
+        y: 13650
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a45ca9647162070800000000000000
+      internalID: 8081172173374704138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_11
+      rect:
+        serializedVersion: 2
+        x: 15015
+        y: 13650
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d0e63926c79f2f90800000000000000
+      internalID: -6976190420422827820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12285
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db472aa65303b68d0800000000000000
+      internalID: -2852132933028645699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_13
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 12285
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af0d28b38f6b9b4d0800000000000000
+      internalID: -3118260089710784262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_14
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 12285
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f2c9ffd6c506b20800000000000000
+      internalID: 3125599768904740753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_15
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 12285
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80d70a35f8d0b6e0800000000000000
+      internalID: -1823719301332873075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_16
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 12285
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9088af717e9812a00800000000000000
+      internalID: 730016240243476489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_17
+      rect:
+        serializedVersion: 2
+        x: 6825
+        y: 12285
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde143fc63903b4c0800000000000000
+      internalID: -4273061490435285281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_18
+      rect:
+        serializedVersion: 2
+        x: 8190
+        y: 12285
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f6398cfd2192b30800000000000000
+      internalID: 4262959274634997634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_19
+      rect:
+        serializedVersion: 2
+        x: 9555
+        y: 12285
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c879a395ce533d70800000000000000
+      internalID: 9021658681232160967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_20
+      rect:
+        serializedVersion: 2
+        x: 10920
+        y: 12285
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a308ae019d876c690800000000000000
+      internalID: -7582240048944611270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_21
+      rect:
+        serializedVersion: 2
+        x: 12285
+        y: 12285
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf236a81611e0030800000000000000
+      internalID: 3462724274125746104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_22
+      rect:
+        serializedVersion: 2
+        x: 13650
+        y: 12285
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 349fa4e6b01d6fb10800000000000000
+      internalID: 2015027730320128323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_23
+      rect:
+        serializedVersion: 2
+        x: 15015
+        y: 12285
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80184f5ed5314640800000000000000
+      internalID: 5062386685338718348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10920
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e29631b07377a700800000000000000
+      internalID: 551536407222850276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_25
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 10920
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d964026734e3bee0800000000000000
+      internalID: -1246401745332704815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_26
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 10920
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 361b03b7ee1859240800000000000000
+      internalID: 4797883839302119779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_27
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 10920
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7955d7a8b20ba50800000000000000
+      internalID: 6534770933122832317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_28
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 10920
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c3ca8414bc094430800000000000000
+      internalID: 3767556530850415559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_29
+      rect:
+        serializedVersion: 2
+        x: 6825
+        y: 10920
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f098ae6a5e25238e0800000000000000
+      internalID: -1715217361773360881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_30
+      rect:
+        serializedVersion: 2
+        x: 8190
+        y: 10920
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 400bf6d0829100910800000000000000
+      internalID: 1801467510763008004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_31
+      rect:
+        serializedVersion: 2
+        x: 9555
+        y: 10920
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a225ca683bb2ca0800000000000000
+      internalID: -6040537084189332877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_32
+      rect:
+        serializedVersion: 2
+        x: 10920
+        y: 10920
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd32b27f39796ca0800000000000000
+      internalID: -6023149713217143373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_33
+      rect:
+        serializedVersion: 2
+        x: 12285
+        y: 10920
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56c00a188ed51aca0800000000000000
+      internalID: -6007417174746985371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_34
+      rect:
+        serializedVersion: 2
+        x: 13650
+        y: 10920
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4d51ce884bbb650800000000000000
+      internalID: 6249787408076100834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_35
+      rect:
+        serializedVersion: 2
+        x: 15015
+        y: 10920
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc9aeef55b562310800000000000000
+      internalID: 1379890760742771906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9555
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e30a87c4ae93a8d70800000000000000
+      internalID: 9046106479995166782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_37
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 9555
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ac84bd36628bb20800000000000000
+      internalID: 3150310149668260447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_38
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 9555
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e80e71f68bbb02a00800000000000000
+      internalID: 729789540446232718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_39
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 9555
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea05cf2594a57920800000000000000
+      internalID: 2987474888488717034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_40
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 9555
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b07f9dc1d8c0100800000000000000
+      internalID: 75590448813902664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_41
+      rect:
+        serializedVersion: 2
+        x: 6825
+        y: 9555
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff7eeb225368b0e0800000000000000
+      internalID: -2253942408923414537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_42
+      rect:
+        serializedVersion: 2
+        x: 8190
+        y: 9555
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a84e9880742b27f40800000000000000
+      internalID: 5724834094496998538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_43
+      rect:
+        serializedVersion: 2
+        x: 9555
+        y: 9555
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f9b2677478f07d0800000000000000
+      internalID: -2949990489909387495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_44
+      rect:
+        serializedVersion: 2
+        x: 10920
+        y: 9555
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bfaf73dda419daa0800000000000000
+      internalID: -6135850280505331787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_45
+      rect:
+        serializedVersion: 2
+        x: 12285
+        y: 9555
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855a3f536cce21790800000000000000
+      internalID: -7560720488348801704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_46
+      rect:
+        serializedVersion: 2
+        x: 13650
+        y: 9555
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3400837c01f601be0800000000000000
+      internalID: -1508583757316620221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_47
+      rect:
+        serializedVersion: 2
+        x: 15015
+        y: 9555
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f17c4ccbb3fc2180800000000000000
+      internalID: -9138661555929583115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8190
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2641b8b94286a920800000000000000
+      internalID: 3001229454831863342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_49
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 8190
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c781a227e704ea0800000000000000
+      internalID: -5890569283802989556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_50
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 8190
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed61b4430b5d56480800000000000000
+      internalID: -8906477735286991138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_51
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 8190
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d15bd1e4c16e9090800000000000000
+      internalID: -8025869987696913959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_52
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 8190
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a6bde4c6dd26fe0800000000000000
+      internalID: -1197151093677921697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_53
+      rect:
+        serializedVersion: 2
+        x: 6825
+        y: 8190
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48896a30e79ffda50800000000000000
+      internalID: 6548226702842435716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_54
+      rect:
+        serializedVersion: 2
+        x: 8190
+        y: 8190
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882c54cac119681d0800000000000000
+      internalID: -3348829720568020344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_55
+      rect:
+        serializedVersion: 2
+        x: 9555
+        y: 8190
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef60245801fc69b0800000000000000
+      internalID: -5085424861134688287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_56
+      rect:
+        serializedVersion: 2
+        x: 10920
+        y: 8190
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1b23fb08dd20dc0800000000000000
+      internalID: -3674130800947580501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_57
+      rect:
+        serializedVersion: 2
+        x: 12285
+        y: 8190
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a95c4227665a2c60800000000000000
+      internalID: 7794137106075113896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_58
+      rect:
+        serializedVersion: 2
+        x: 13650
+        y: 8190
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 338a4d2825989f870800000000000000
+      internalID: 8717149541227604019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_59
+      rect:
+        serializedVersion: 2
+        x: 15015
+        y: 8190
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a11e99c0058946650800000000000000
+      internalID: 6225268054509084954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6825
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec0925cc4bdb86f0800000000000000
+      internalID: -681209795844698902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_61
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 6825
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82b8f0e23b45c140800000000000000
+      internalID: 4739276864772158095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_62
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 6825
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f04f928d966d1e880800000000000000
+      internalID: -8583343664704916465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_63
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 6825
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8dec0eb3fb0dc3f0800000000000000
+      internalID: -879033210773901939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_64
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 6825
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d189b51f3c8d0990800000000000000
+      internalID: -7418118808634031659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_65
+      rect:
+        serializedVersion: 2
+        x: 6825
+        y: 6825
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6bd7ff953c91f2c0800000000000000
+      internalID: -4399563606833243283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_66
+      rect:
+        serializedVersion: 2
+        x: 8190
+        y: 6825
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db707ca4013fdbff0800000000000000
+      internalID: -18591572140030019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_67
+      rect:
+        serializedVersion: 2
+        x: 9555
+        y: 6825
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e303b8927bcc54e0800000000000000
+      internalID: -1991493242156022815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_68
+      rect:
+        serializedVersion: 2
+        x: 10920
+        y: 6825
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c293777d60af53780800000000000000
+      internalID: -8703775797531952852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_69
+      rect:
+        serializedVersion: 2
+        x: 12285
+        y: 6825
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f9e0edf39f6e3130800000000000000
+      internalID: 3548396237824780792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_70
+      rect:
+        serializedVersion: 2
+        x: 13650
+        y: 6825
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5564c078d9536630800000000000000
+      internalID: 3919074886882190687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_71
+      rect:
+        serializedVersion: 2
+        x: 15015
+        y: 6825
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e96e4f7dc34e2780800000000000000
+      internalID: -8705946479777388061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5460
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2451e854aa3c05e0800000000000000
+      internalID: -1942112861763316691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_73
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 5460
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efabe6a18a4ed5990800000000000000
+      internalID: -7395503602423383298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_74
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 5460
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a31e03351640f500800000000000000
+      internalID: 427919021465015207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_75
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 5460
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96cdfe7be69b6de80800000000000000
+      internalID: -8154126190124213143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_76
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 5460
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec1a39f471831140800000000000000
+      internalID: 4689233976420343017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_77
+      rect:
+        serializedVersion: 2
+        x: 6825
+        y: 5460
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b46e89db6eaf2dc50800000000000000
+      internalID: 6688684265528944203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_78
+      rect:
+        serializedVersion: 2
+        x: 8190
+        y: 5460
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 324b5dc940c0e3f80800000000000000
+      internalID: -8125043463779142621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_79
+      rect:
+        serializedVersion: 2
+        x: 9555
+        y: 5460
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f21178c01b239940800000000000000
+      internalID: 5301628537427530485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_80
+      rect:
+        serializedVersion: 2
+        x: 10920
+        y: 5460
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b20be1265c3dd550800000000000000
+      internalID: 6187167803710833328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_81
+      rect:
+        serializedVersion: 2
+        x: 12285
+        y: 5460
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1927c9d557a250990800000000000000
+      internalID: -7420478127452949871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_82
+      rect:
+        serializedVersion: 2
+        x: 13650
+        y: 5460
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f07b9dbf10789460800000000000000
+      internalID: 7248666881880191220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_83
+      rect:
+        serializedVersion: 2
+        x: 15015
+        y: 5460
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d34258bc9aef2c0800000000000000
+      internalID: -4395889494689825519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4095
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f0262e9d145e9cf0800000000000000
+      internalID: -243664843647344398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_85
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 4095
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c4774e5bdcdfbd0800000000000000
+      internalID: -2594691629189739459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_86
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 4095
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3888269da835a70800000000000000
+      internalID: 8814541561959842730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_87
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 4095
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 666fd2bd42b9d5d90800000000000000
+      internalID: -7107354054322424218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_88
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 4095
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d08b12f685dfa8e0800000000000000
+      internalID: -1679889360421682983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_89
+      rect:
+        serializedVersion: 2
+        x: 6825
+        y: 4095
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 632ed1215e9a0ff90800000000000000
+      internalID: -6921845825951899082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_90
+      rect:
+        serializedVersion: 2
+        x: 8190
+        y: 4095
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fea3ff144b0d1d80800000000000000
+      internalID: -8278448152815358221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_91
+      rect:
+        serializedVersion: 2
+        x: 9555
+        y: 4095
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49957ad89ab950da0800000000000000
+      internalID: -5979201777736132204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_92
+      rect:
+        serializedVersion: 2
+        x: 10920
+        y: 4095
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a04ee8b822bc3b40800000000000000
+      internalID: 5421403939418292386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_93
+      rect:
+        serializedVersion: 2
+        x: 12285
+        y: 4095
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b252f6b63302480800000000000000
+      internalID: -8926077924929098924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_94
+      rect:
+        serializedVersion: 2
+        x: 13650
+        y: 4095
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da58152bd3a02dd0800000000000000
+      internalID: -2512828430457218348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_95
+      rect:
+        serializedVersion: 2
+        x: 15015
+        y: 4095
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58b97a9d502b912e0800000000000000
+      internalID: -2154495208523850875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2730
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee1ce15601c4ff60800000000000000
+      internalID: 8067285065415794410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_97
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 2730
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b65707d95a01bf60800000000000000
+      internalID: 8048225390063736503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_98
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 2730
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 556b7b63fbed64e10800000000000000
+      internalID: 2181675982345713237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_99
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 2730
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48fc20f7b8377c6f0800000000000000
+      internalID: -664435377045319804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_100
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 2730
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd0b3a1d803fbb90800000000000000
+      internalID: -7224001894690386466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_101
+      rect:
+        serializedVersion: 2
+        x: 6825
+        y: 2730
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25eed9acfd034650800000000000000
+      internalID: 6215827289534293293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_102
+      rect:
+        serializedVersion: 2
+        x: 8190
+        y: 2730
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8006a7efffca72370800000000000000
+      internalID: 8297791053939499016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_103
+      rect:
+        serializedVersion: 2
+        x: 9555
+        y: 2730
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c96ff1dcc879710800000000000000
+      internalID: 1699982196988091477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_104
+      rect:
+        serializedVersion: 2
+        x: 10920
+        y: 2730
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7879011fa7b4c520800000000000000
+      internalID: 2721502037371615359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_105
+      rect:
+        serializedVersion: 2
+        x: 12285
+        y: 2730
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f76e7edc26dc620800000000000000
+      internalID: 2795999580165406546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_106
+      rect:
+        serializedVersion: 2
+        x: 13650
+        y: 2730
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4616f9fd16d523840800000000000000
+      internalID: 5202323194511319396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_107
+      rect:
+        serializedVersion: 2
+        x: 15015
+        y: 2730
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb6daf3a434f1700800000000000000
+      internalID: 513202868718496694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1365
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a77b059a4b74ad0800000000000000
+      internalID: -2718005210798130575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_109
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 1365
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6195872ec2884b4a0800000000000000
+      internalID: -6578483429321975530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_110
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 1365
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa95d251a8073f50800000000000000
+      internalID: 6860962046294727417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_111
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 1365
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7fe78bf466a7aca0800000000000000
+      internalID: -6005648625428336772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_112
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 1365
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b740f8e0e066d690800000000000000
+      internalID: -7577762803907278919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_113
+      rect:
+        serializedVersion: 2
+        x: 6825
+        y: 1365
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e9aebf0b3683bde0800000000000000
+      internalID: -1318562677664077337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_114
+      rect:
+        serializedVersion: 2
+        x: 8190
+        y: 1365
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f26d9e8504015fce0800000000000000
+      internalID: -1372172642908776913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_115
+      rect:
+        serializedVersion: 2
+        x: 9555
+        y: 1365
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3878c99589391e60800000000000000
+      internalID: 7933435464563324991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_116
+      rect:
+        serializedVersion: 2
+        x: 10920
+        y: 1365
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5fc141f8e86d350800000000000000
+      internalID: 6041172695333008873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_117
+      rect:
+        serializedVersion: 2
+        x: 12285
+        y: 1365
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f74eae30dcd5fb10800000000000000
+      internalID: 2014759195281082354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_118
+      rect:
+        serializedVersion: 2
+        x: 13650
+        y: 1365
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a29d2beeec9ded0800000000000000
+      internalID: -2388650602745222531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_119
+      rect:
+        serializedVersion: 2
+        x: 15015
+        y: 1365
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b512850621dca70800000000000000
+      internalID: 8848749047857634135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57d67d5acf8995ff0800000000000000
+      internalID: -46838110229140107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_121
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 0
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f532aed85d2118390800000000000000
+      internalID: -7817946769720204449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_122
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 0
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e18b258bcf2384c0800000000000000
+      internalID: -4286529869167492640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_123
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 0
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49449a6110294e8f0800000000000000
+      internalID: -512123924240579436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_124
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 0
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c7b75d34c69a970800000000000000
+      internalID: 8766657188253629469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_125
+      rect:
+        serializedVersion: 2
+        x: 6825
+        y: 0
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb386ad74a8340c0800000000000000
+      internalID: -4592675153776198682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_126
+      rect:
+        serializedVersion: 2
+        x: 8190
+        y: 0
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d0981ec84afa6130800000000000000
+      internalID: 3560933645992104152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_127
+      rect:
+        serializedVersion: 2
+        x: 9555
+        y: 0
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f02a9164ed35480800000000000000
+      internalID: -8911534844976951518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_128
+      rect:
+        serializedVersion: 2
+        x: 10920
+        y: 0
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e142a422c0527b30800000000000000
+      internalID: 4283574990351253986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_129
+      rect:
+        serializedVersion: 2
+        x: 12285
+        y: 0
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9d648bb506db6ab0800000000000000
+      internalID: -5013678440037716577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_130
+      rect:
+        serializedVersion: 2
+        x: 13650
+        y: 0
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1af7726cbb8ce60800000000000000
+      internalID: 7982836799254798754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: being_finished_0_bis_132_131
+      rect:
+        serializedVersion: 2
+        x: 15015
+        y: 0
+        width: 1365
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c05b5c6bee38b30800000000000000
+      internalID: 4288533738955279517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2757eeef7e5661048a864031b68e51f2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":12.0,"y":11.0},"gridSpriteSize":{"x":1365.0,"y":1365.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      being_finished_0_bis_132_0: 1774569660690551468
+      being_finished_0_bis_132_1: -3601944241289433539
+      being_finished_0_bis_132_10: 8081172173374704138
+      being_finished_0_bis_132_100: -7224001894690386466
+      being_finished_0_bis_132_101: 6215827289534293293
+      being_finished_0_bis_132_102: 8297791053939499016
+      being_finished_0_bis_132_103: 1699982196988091477
+      being_finished_0_bis_132_104: 2721502037371615359
+      being_finished_0_bis_132_105: 2795999580165406546
+      being_finished_0_bis_132_106: 5202323194511319396
+      being_finished_0_bis_132_107: 513202868718496694
+      being_finished_0_bis_132_108: -2718005210798130575
+      being_finished_0_bis_132_109: -6578483429321975530
+      being_finished_0_bis_132_11: -6976190420422827820
+      being_finished_0_bis_132_110: 6860962046294727417
+      being_finished_0_bis_132_111: -6005648625428336772
+      being_finished_0_bis_132_112: -7577762803907278919
+      being_finished_0_bis_132_113: -1318562677664077337
+      being_finished_0_bis_132_114: -1372172642908776913
+      being_finished_0_bis_132_115: 7933435464563324991
+      being_finished_0_bis_132_116: 6041172695333008873
+      being_finished_0_bis_132_117: 2014759195281082354
+      being_finished_0_bis_132_118: -2388650602745222531
+      being_finished_0_bis_132_119: 8848749047857634135
+      being_finished_0_bis_132_12: -2852132933028645699
+      being_finished_0_bis_132_120: -46838110229140107
+      being_finished_0_bis_132_121: -7817946769720204449
+      being_finished_0_bis_132_122: -4286529869167492640
+      being_finished_0_bis_132_123: -512123924240579436
+      being_finished_0_bis_132_124: 8766657188253629469
+      being_finished_0_bis_132_125: -4592675153776198682
+      being_finished_0_bis_132_126: 3560933645992104152
+      being_finished_0_bis_132_127: -8911534844976951518
+      being_finished_0_bis_132_128: 4283574990351253986
+      being_finished_0_bis_132_129: -5013678440037716577
+      being_finished_0_bis_132_13: -3118260089710784262
+      being_finished_0_bis_132_130: 7982836799254798754
+      being_finished_0_bis_132_131: 4288533738955279517
+      being_finished_0_bis_132_14: 3125599768904740753
+      being_finished_0_bis_132_15: -1823719301332873075
+      being_finished_0_bis_132_16: 730016240243476489
+      being_finished_0_bis_132_17: -4273061490435285281
+      being_finished_0_bis_132_18: 4262959274634997634
+      being_finished_0_bis_132_19: 9021658681232160967
+      being_finished_0_bis_132_2: 4996690648297871316
+      being_finished_0_bis_132_20: -7582240048944611270
+      being_finished_0_bis_132_21: 3462724274125746104
+      being_finished_0_bis_132_22: 2015027730320128323
+      being_finished_0_bis_132_23: 5062386685338718348
+      being_finished_0_bis_132_24: 551536407222850276
+      being_finished_0_bis_132_25: -1246401745332704815
+      being_finished_0_bis_132_26: 4797883839302119779
+      being_finished_0_bis_132_27: 6534770933122832317
+      being_finished_0_bis_132_28: 3767556530850415559
+      being_finished_0_bis_132_29: -1715217361773360881
+      being_finished_0_bis_132_3: -116140914195219824
+      being_finished_0_bis_132_30: 1801467510763008004
+      being_finished_0_bis_132_31: -6040537084189332877
+      being_finished_0_bis_132_32: -6023149713217143373
+      being_finished_0_bis_132_33: -6007417174746985371
+      being_finished_0_bis_132_34: 6249787408076100834
+      being_finished_0_bis_132_35: 1379890760742771906
+      being_finished_0_bis_132_36: 9046106479995166782
+      being_finished_0_bis_132_37: 3150310149668260447
+      being_finished_0_bis_132_38: 729789540446232718
+      being_finished_0_bis_132_39: 2987474888488717034
+      being_finished_0_bis_132_4: 7082998706347118229
+      being_finished_0_bis_132_40: 75590448813902664
+      being_finished_0_bis_132_41: -2253942408923414537
+      being_finished_0_bis_132_42: 5724834094496998538
+      being_finished_0_bis_132_43: -2949990489909387495
+      being_finished_0_bis_132_44: -6135850280505331787
+      being_finished_0_bis_132_45: -7560720488348801704
+      being_finished_0_bis_132_46: -1508583757316620221
+      being_finished_0_bis_132_47: -9138661555929583115
+      being_finished_0_bis_132_48: 3001229454831863342
+      being_finished_0_bis_132_49: -5890569283802989556
+      being_finished_0_bis_132_5: 7549657643273421151
+      being_finished_0_bis_132_50: -8906477735286991138
+      being_finished_0_bis_132_51: -8025869987696913959
+      being_finished_0_bis_132_52: -1197151093677921697
+      being_finished_0_bis_132_53: 6548226702842435716
+      being_finished_0_bis_132_54: -3348829720568020344
+      being_finished_0_bis_132_55: -5085424861134688287
+      being_finished_0_bis_132_56: -3674130800947580501
+      being_finished_0_bis_132_57: 7794137106075113896
+      being_finished_0_bis_132_58: 8717149541227604019
+      being_finished_0_bis_132_59: 6225268054509084954
+      being_finished_0_bis_132_6: -1672232670408583694
+      being_finished_0_bis_132_60: -681209795844698902
+      being_finished_0_bis_132_61: 4739276864772158095
+      being_finished_0_bis_132_62: -8583343664704916465
+      being_finished_0_bis_132_63: -879033210773901939
+      being_finished_0_bis_132_64: -7418118808634031659
+      being_finished_0_bis_132_65: -4399563606833243283
+      being_finished_0_bis_132_66: -18591572140030019
+      being_finished_0_bis_132_67: -1991493242156022815
+      being_finished_0_bis_132_68: -8703775797531952852
+      being_finished_0_bis_132_69: 3548396237824780792
+      being_finished_0_bis_132_7: -2788369203779716051
+      being_finished_0_bis_132_70: 3919074886882190687
+      being_finished_0_bis_132_71: -8705946479777388061
+      being_finished_0_bis_132_72: -1942112861763316691
+      being_finished_0_bis_132_73: -7395503602423383298
+      being_finished_0_bis_132_74: 427919021465015207
+      being_finished_0_bis_132_75: -8154126190124213143
+      being_finished_0_bis_132_76: 4689233976420343017
+      being_finished_0_bis_132_77: 6688684265528944203
+      being_finished_0_bis_132_78: -8125043463779142621
+      being_finished_0_bis_132_79: 5301628537427530485
+      being_finished_0_bis_132_8: -4297133394735930432
+      being_finished_0_bis_132_80: 6187167803710833328
+      being_finished_0_bis_132_81: -7420478127452949871
+      being_finished_0_bis_132_82: 7248666881880191220
+      being_finished_0_bis_132_83: -4395889494689825519
+      being_finished_0_bis_132_84: -243664843647344398
+      being_finished_0_bis_132_85: -2594691629189739459
+      being_finished_0_bis_132_86: 8814541561959842730
+      being_finished_0_bis_132_87: -7107354054322424218
+      being_finished_0_bis_132_88: -1679889360421682983
+      being_finished_0_bis_132_89: -6921845825951899082
+      being_finished_0_bis_132_9: -9007229842969029892
+      being_finished_0_bis_132_90: -8278448152815358221
+      being_finished_0_bis_132_91: -5979201777736132204
+      being_finished_0_bis_132_92: 5421403939418292386
+      being_finished_0_bis_132_93: -8926077924929098924
+      being_finished_0_bis_132_94: -2512828430457218348
+      being_finished_0_bis_132_95: -2154495208523850875
+      being_finished_0_bis_132_96: 8067285065415794410
+      being_finished_0_bis_132_97: 8048225390063736503
+      being_finished_0_bis_132_98: 2181675982345713237
+      being_finished_0_bis_132_99: -664435377045319804
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
