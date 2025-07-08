@@ -63,6 +63,7 @@ public class FighterState : MonoBehaviour
 
     public AnimationHandler hammer_animation_handler;
     public Transform hammer_base_transform;
+    public UltHitbox ult_hitbox;
     public UltData[] ult_data;
     public int ult_index;
 

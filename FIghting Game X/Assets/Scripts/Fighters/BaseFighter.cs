@@ -28,7 +28,7 @@ public class BaseFighter : MonoBehaviour
 
     private PlayerSounds player_sounds;
 
-    public MaterialSelector material_selector;
+    // public MaterialSelector material_selector;
 
     private Action<int>[] frame_callbacks;
 
@@ -140,7 +140,7 @@ public class BaseFighter : MonoBehaviour
 
         gameObject.layer = state.flags_any_set(FighterFlags.Phasing) ? 10 : 6;
 
-        material_selector.set_elastic(false);
+        // material_selector.set_elastic(false);
         select_collider(0);
 
         frame_callbacks[(int)state.get_action()]?.Invoke(state.animation_handler.get_index());
@@ -231,15 +231,19 @@ public class BaseFighter : MonoBehaviour
     {
         player_sounds.PlayJabHit();
         state.start_action(FighterAction.KnockedBackLight);
+        freezeXY(false, false);
         rigidbody.linearVelocity = direction;
     }
 
     public void knockback_heavy(Vector2 direction, int duration)
     {
         player_sounds.PlayJabHit();
-        state.knockback_duration = duration;
         state.start_action(FighterAction.KnockedBackHeavy);
+        freezeXY(false, false);
+        select_collider(1);
+        state.knockback_duration = duration;
         rigidbody.linearVelocity = direction;
+        Debug.Log(rigidbody.linearVelocity);
     }
 
     public void stun(int duration)
@@ -359,6 +363,7 @@ public class BaseFighter : MonoBehaviour
 
     public void stun_tick(int index)
     {
+        freezeXY(true, true);
         state.animation_handler.set_frozen(--state.stun_duration > 0);
     }
 
@@ -369,6 +374,7 @@ public class BaseFighter : MonoBehaviour
 
     public void knockback_heavy_tick(int index)
     {
+        select_collider(1);
         if (index == 3)
         {
             state.animation_handler.set_frozen(--state.knockback_duration > 0);
@@ -379,8 +385,7 @@ public class BaseFighter : MonoBehaviour
         }
         state.force_facing(Math.Sign(-rigidbody.linearVelocityX));
         state.sprite_transform.eulerAngles = Vector3.forward * (float)(Math.Atan2(-rigidbody.linearVelocityY, -rigidbody.linearVelocityX * state.get_facing_float()) * state.get_facing_float() * FighterState.knockback_rotation_factors[index] * 180.0f / Math.PI);
-        material_selector.set_elastic(true);
-        select_collider(1);
+        // material_selector.set_elastic(true);
     }
 
 
@@ -393,6 +398,7 @@ public class BaseFighter : MonoBehaviour
             state.hammer_base_transform.eulerAngles = Vector3.zero;
             state.hammer_animation_handler.play(FighterAction.UltHammer);
             state.ult_index = 0;
+            state.ult_hitbox.init();
         }
 
         if (state.flags_any_set(FighterFlags.CustomMovement))
@@ -438,6 +444,11 @@ public class BaseFighter : MonoBehaviour
         }
         else
         {
+            if(index == 125)
+            {
+                state.ult_hitbox.knockback_fighters();
+            }
+
             state.animation_handler.set_frozen(false);
 
             state.hammer_animation_handler.step();
@@ -451,6 +462,8 @@ public class BaseFighter : MonoBehaviour
                 state.hammer_animation_handler.show();
             }
         }
+
+        state.ult_hitbox.reduce_fighter_cooldowns();
     }
 
 
