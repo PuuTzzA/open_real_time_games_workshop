@@ -65,7 +65,7 @@ public class SelectionManager : MonoBehaviour
         InputActions = _playerInput.actions;
 
         _instances.Add(this);
-        player_id.text = "Player " + _playerInput.playerIndex;
+        player_id.text = "Player " + (_playerInput.playerIndex +1);
         readyIcon.SetActive(false);
         _isReady = false;
 
