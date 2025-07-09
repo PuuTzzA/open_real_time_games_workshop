@@ -61,8 +61,8 @@ public class QTEManager : MonoBehaviour
         int type = UnityEngine.Random.Range(0, 2); // Randomly choose between 0, 1
         if (type == 1)
             ui.GetComponent<MinigameUI>().minigamenumber = 1;
-        ui.GetComponent<MinigameUI>().killer = killer.GetComponentInChildren<SpriteRenderer>().color;
-        ui.GetComponent<MinigameUI>().fallen = fallen.GetComponentInChildren<SpriteRenderer>().color;
+        ui.GetComponent<MinigameUI>().killer = killer;
+        ui.GetComponent<MinigameUI>().fallen = fallen;
 
 
 
