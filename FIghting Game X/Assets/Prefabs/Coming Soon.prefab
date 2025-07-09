@@ -103,7 +103,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5812756713913978664
 Transform:
   m_ObjectHideFlags: 0
@@ -132,7 +132,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d32cc61bbfbb2c419aa18ca06320dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
   Icon: {fileID: 21300000, guid: c5109164f8b85fd1f99e72ad4a3638f6, type: 3}
   IconWithoutBackground: {fileID: 21300000, guid: c5109164f8b85fd1f99e72ad4a3638f6, type: 3}
   maxLives: 3
