@@ -75,7 +75,7 @@ public class CutscenePlayer : MonoBehaviour
         //}
 
         //reenableObjects.Clear();
-        cutsceneRoot.SetActive(true);
+        cutsceneRoot.SetActive(false);
         OnCutsceneFinished?.Invoke(); // <-- Notify listeners
     }
 
