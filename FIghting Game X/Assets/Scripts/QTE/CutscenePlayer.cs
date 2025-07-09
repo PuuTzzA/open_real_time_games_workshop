@@ -1,21 +1,19 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class CutscenePlayer : MonoBehaviour
 {
-
     public event System.Action OnCutsceneFinished;
 
     [Header("Cutscene Setup")]
     public GameObject cutsceneRoot; // Parent object containing the animators
 
-    public SpriteRenderer finisherSprite;
-    public SpriteRenderer finishedSprite;
-    public SpriteRenderer heartSprite;
+    [SerializeField] private RawImage beingFinishedImage;
 
-    public string finisherAnimation = "finishing";
-    public string finishedAnimation = "being_finished";
+    [SerializeField] private RawImage finisherImage;
+
     public float cutsceneDuration = 8.75f; // seconds
 
     private List<GameObject> reenableObjects = new List<GameObject>();
@@ -40,14 +38,9 @@ public class CutscenePlayer : MonoBehaviour
         //}
         //}
 
-
         // Set sprite colors
-        if (finisherSprite != null) finisherSprite.color = finisherColor;
-        if (finishedSprite != null) finishedSprite.color = finishedColor;
-        if (heartSprite != null) heartSprite.color = finishedColor;
-
-
-
+        finisherImage.color = finisherColor;
+        beingFinishedImage.color = finishedColor;
 
         // Ensure cutsceneRoot is active
         cutsceneRoot.SetActive(true);
