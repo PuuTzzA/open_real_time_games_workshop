@@ -122,7 +122,7 @@ public class OldMenuUI : MonoBehaviour
             visualElement.AddToClassList($"{newStyles[i]}");
         }
 
-        root.Q<Label>(className: $"{newStyles[1]}").text = isMainMenu ? "FIGHTING GAME X" : "PAUSE MENU";
+        root.Q<Label>(className: $"{newStyles[1]}").text = isMainMenu ? "BLUEPRINT X" : "PAUSE MENU";
 
         if (!isMainMenu)
         {
