@@ -47,7 +47,7 @@ public class CutscenePlayer : MonoBehaviour
         if (heartSprite != null) heartSprite.color = finishedColor;
 
 
-        
+
 
         // Ensure cutsceneRoot is active
         cutsceneRoot.SetActive(true);
@@ -75,7 +75,6 @@ public class CutscenePlayer : MonoBehaviour
         //}
 
         //reenableObjects.Clear();
-
         cutsceneRoot.SetActive(false);
         OnCutsceneFinished?.Invoke(); // <-- Notify listeners
     }

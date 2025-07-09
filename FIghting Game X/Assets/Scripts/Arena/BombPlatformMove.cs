@@ -94,24 +94,33 @@ public class BombPlatformMove : MonoBehaviour
         propulsion.SetActive(true);
         propulsionParticleSystem.Play();
 
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
         // Move down
-        while (Vector3.Distance(transform.position, dropPosition) > 0.01f)
+        while (transform.position.y > dropPosition.y)
         {
-            transform.position = Vector3.MoveTowards(transform.position, dropPosition, moveSpeed * Time.deltaTime);
+            rb.linearVelocity = Vector2.down * moveSpeed * 0.5f;
+            // transform.position = Vector3.MoveTowards(transform.position, dropPosition, moveSpeed * Time.deltaTime);
             yield return null;
         }
 
         transform.position = dropPosition;
         platformCollider.enabled = false;
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
 
         yield return new WaitForSeconds(waitTimeOffScreen);
 
         platformCollider.enabled = true;
         SpawnBomb();
 
-        while (Vector3.Distance(transform.position, originalPosition) > 0.01f)
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+        while (transform.position.y < originalPosition.y)
         {
-            transform.position = Vector3.MoveTowards(transform.position, originalPosition, moveSpeed * Time.deltaTime);
+            rb.linearVelocity = Vector2.up * moveSpeed;
+            //transform.position = Vector3.MoveTowards(transform.position, originalPosition, moveSpeed * Time.deltaTime);
             yield return null;
         }
 
@@ -120,6 +129,7 @@ public class BombPlatformMove : MonoBehaviour
 
         transform.position = originalPosition;
         isMoving = false;
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
 
         isOnCooldown = true;
         yield return new WaitForSeconds(cooldownTime);

@@ -116,11 +116,10 @@ public class FighterHealth : MonoBehaviour
     {
         currentLives--;
         ingameUI.changeStocks(playerInput.playerIndex, currentLives);
-        
+        fighterState.start_action(FighterAction.Death);
+
         // Hide the fighter temporarily
         toggleFighter(false);
-        
-        fighterState.start_action(FighterAction.Death);
         
 
         if (currentLives <= 0)
