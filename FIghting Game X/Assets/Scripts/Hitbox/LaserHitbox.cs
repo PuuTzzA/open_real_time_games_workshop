@@ -1,6 +1,7 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class LaserHitbox : Hitbox
+public class LaserHitbox : CooldownHitbox
 {
     [SerializeField] int damage;
 
@@ -8,9 +9,20 @@ public class LaserHitbox : Hitbox
 
     public void Activate() => isActive = true;
     public void Deactivate() => isActive = false;
+
+    public LaserHitbox() {
+        cooldown = 15;
+    }
+
     public override void hit(BaseFighter fighter, HitType type)
     {
         if (!isActive) return;
-        fighter.take_arena_damage(damage);
+
+        if(can_be_hit(fighter.id))
+        {
+            fighter.take_arena_damage(damage);
+            fighter.stun(3, true);
+            put_on_cooldown(fighter.id);
+        }
     }
 }
