@@ -176,6 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 629062c0046b1fe44ab0b1e4164dc0e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldown: 0
   source_fighter: {fileID: 3784939749288748778}
 --- !u!70 &4170825077921958283
 CapsuleCollider2D:

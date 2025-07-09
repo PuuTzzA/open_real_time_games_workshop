@@ -47,7 +47,7 @@ public class FighterHealth : MonoBehaviour
         }
 
         currentHealth -= dmg;
-        Debug.Log("dmg: " + dmg + " health: " + currentHealth);
+        // Debug.Log("dmg: " + dmg + " health: " + currentHealth);
         ingameUI.setNewHealth(playerInput.playerIndex, currentHealth * 1.0f / maxHealth);
 
         if (currentHealth <= 0)
