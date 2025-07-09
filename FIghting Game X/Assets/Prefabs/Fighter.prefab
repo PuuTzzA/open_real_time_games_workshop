@@ -5823,6 +5823,7 @@ MonoBehaviour:
   heavy_available: 010101
   dash_available: 1
   stun_duration: 0
+  stun_old_momentum: {x: 0, y: 0}
   knockback_duration: 0
   ult_points: 0
   hammer_animation_handler: {fileID: 1450031776339933549}
