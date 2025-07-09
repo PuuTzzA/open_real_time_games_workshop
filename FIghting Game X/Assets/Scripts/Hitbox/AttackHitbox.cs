@@ -15,10 +15,10 @@ public class AttackHitbox : Hitbox
 
     public override void hit(BaseFighter fighter, HitType type)
     {
-        Debug.Log("hit " + hit_fighters.Contains(fighter));
         if (type != HitType.Start || hit_fighters.Contains(fighter)) { return; }
+        if (fighter.is_blocking(direction * source_fighter.state.get_facing_ivec())) { return; }
 
-        if(jab)
+        if (jab)
         {
             jab_hit(fighter);
         } else
@@ -31,8 +31,6 @@ public class AttackHitbox : Hitbox
 
     private void jab_hit(BaseFighter fighter)
     {
-        if (fighter.is_blocking(direction * source_fighter.state.get_facing_ivec())) { return; }
-
         int forced_facing = -source_fighter.state.get_facing_int();
         fighter.state.force_facing(forced_facing);
 

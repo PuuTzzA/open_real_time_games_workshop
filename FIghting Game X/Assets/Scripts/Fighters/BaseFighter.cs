@@ -251,7 +251,7 @@ public class BaseFighter : MonoBehaviour
         freezeXY(false, false);
         select_collider(1);
         state.knockback_duration = duration;
-        rigidbody.linearVelocity = direction * (0.8f + health.GetMissingHealthPortion() * 0.7f);
+        rigidbody.linearVelocity = direction * (0.8f + health.GetMissingHealthPortion() * 1.2f);
     }
 
     public void stun(int duration)
@@ -383,7 +383,7 @@ public class BaseFighter : MonoBehaviour
         //if (dash_index >= short_dash_curve.Length) return;
 
 
-        float speed = short_dash_curve[dash_index] * state.base_stats.dash_factor * state.base_stats.ground_speed * state.get_facing_float() * 1.2f;
+        float speed = short_dash_curve[dash_index] * state.base_stats.dash_factor * state.base_stats.ground_speed * state.get_facing_float() * 0.9f;
         rigidbody.linearVelocityX = speed;
     }
 

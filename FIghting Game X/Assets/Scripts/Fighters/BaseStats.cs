@@ -14,7 +14,7 @@ public struct BaseStats
     public static readonly BaseStats DEFAULT = new BaseStats
     {
         ground_speed = 7.0f,
-        dash_factor = 2.2f,
+        dash_factor = 2.6f,
         dash_duration = 7,
         air_speed = 7.0f,
         terminal_speed = -10.0f,
