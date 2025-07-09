@@ -277,8 +277,8 @@ MonoBehaviour:
   platformCollider: {fileID: 40822943}
   bombPrefab: {fileID: 4238680019386585109, guid: f2e50d11d5429cc4ea524a5a4bbbc9c0, type: 3}
   bombSpawnPointList:
-  - {fileID: 510986155}
-  - {fileID: 1966063500}
+  - {fileID: 510986154}
+  - {fileID: 1966063499}
   isPressed: 0
   isMoving: 0
   isOnCooldown: 0
@@ -6142,8 +6142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minigamenumber: 0
-  killer: {r: 0, g: 0, b: 0, a: 0}
-  fallen: {r: 0, g: 0, b: 0, a: 0}
+  killer: {fileID: 0}
+  fallen: {fileID: 0}
   iconStartOffset: 0.3
   iconEndOffset: 0.3
   entryDuration: 0.25
