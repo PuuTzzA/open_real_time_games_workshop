@@ -93,31 +93,26 @@ public class PersistentPlayerManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 {
-    Debug.Log($"Scene loaded: {scene.name}");
 
     if (scene.name == fightScene)
     {
-        Debug.Log("Entering fight scene. Disabling joining.");
         _pim.DisableJoining();
         StartCoroutine(SpawnAllPlayers());
     }
     else if (scene.name == "CharacterSelection")
     {
-        Debug.Log("Entering CharacterSelection scene.");
 
         if (spawnPointsObject == null)
         {
             spawnPointsObject = GameObject.Find("SpawnPointsMapping");
             spawnPoints = spawnPointsObject.GetComponentsInChildren<Transform>().ToArray();
             DontDestroyOnLoad(spawnPointsObject);
-            Debug.Log("SpawnPointsMapping reloaded.");
         }
 
         _pim.EnableJoining();
 
         if (players.Count > 0)
         {
-            Debug.Log($"Reinitializing {players.Count} player selection panels...");
             var selectionData = players.Select(p => new
             {
                 PrefabChoice = GameManager.PlayerChoices[p.playerIndex],
@@ -129,7 +124,6 @@ public class PersistentPlayerManager : MonoBehaviour
 
             foreach (var player in players)
             {
-                Debug.Log($"Tearing down player: index={player.playerIndex}");
                 player.user.UnpairDevicesAndRemoveUser();
                 Destroy(player.gameObject);
             }
@@ -137,7 +131,6 @@ public class PersistentPlayerManager : MonoBehaviour
 
             foreach (var data in selectionData)
             {
-                Debug.Log($"Instantiating selection panel: index={data.Index}, prefab={data.PrefabChoice}, color={data.ColorChoice}");
                 var selection = PlayerInput.Instantiate(
                     playerSelectionPrefab,
                     playerIndex: data.Index,
@@ -159,15 +152,12 @@ public class PersistentPlayerManager : MonoBehaviour
     }
     else if (scene.name == "MainMenu")
     {
-        Debug.Log("Entering MainMenu. Resetting player state.");
         GameManager.PlayerChoices      = new List<int> { -1, -1, -1, -1 };
         GameManager.PlayerColorChoices = new List<int> { -1, -1, -1, -1 };
 
-        Debug.Log($"InputUser count before cleanup: {InputUser.all.Count}");
 
         foreach (var player in players)
         {
-            Debug.Log($"Destroying player {player.playerIndex}");
             player.user.UnpairDevicesAndRemoveUser();
             Destroy(player.gameObject);
         }
