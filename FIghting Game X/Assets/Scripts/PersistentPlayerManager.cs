@@ -222,7 +222,8 @@ public class PersistentPlayerManager : MonoBehaviour
                 controlScheme: data.Scheme,
                 pairWithDevices: data.Devices
             );
-            character.GetComponentInChildren<SpriteRenderer>().color = availableColors[data.ColorChoice];
+            character.GetComponent<BaseFighter>().playerColor = availableColors[data.ColorChoice];
+            character.GetComponentInChildren<SpriteRenderer>().material.SetColor("_Color", availableColors[data.ColorChoice]);
 
             players.Add(character);
             DontDestroyOnLoad(character);

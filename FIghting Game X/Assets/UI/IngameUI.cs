@@ -50,7 +50,7 @@ public class IngameUI : MonoBehaviour
             bar.hierarchy.ElementAt(1).style.backgroundImage = new StyleBackground(
                 persistentPlayerManager.getPlayers()[i].GetComponent<FighterHealth>().Icon);
             bar.hierarchy.ElementAt(1).style.unityBackgroundImageTintColor =
-                persistentPlayerManager.getPlayers()[i].GetComponentInChildren<SpriteRenderer>().color;
+                persistentPlayerManager.getPlayers()[i].GetComponentInChildren<BaseFighter>().playerColor;
 
             setHealth(i, 1);
             (bar.hierarchy.ElementAt(2) as ResponsiveLabel).text = "Player" + (i + 1);

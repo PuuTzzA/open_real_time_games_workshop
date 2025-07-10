@@ -31,7 +31,9 @@ public class BaseFighter : MonoBehaviour
     public bool died = false;
     public GameObject holdingBomb;
 
-    private ParticleSystem particle_system;
+    public Color playerColor;
+
+    private Material material; 
 
     private static int next_id = 0;
 
@@ -83,9 +85,19 @@ public class BaseFighter : MonoBehaviour
 
         state.start_action(FighterAction.Idle);
 
-        select_collider(0);
+        material = GetComponentInChildren<SpriteRenderer>().material;
 
-        particle_system = GetComponentInChildren<ParticleSystem>();
+        select_collider(0);
+    }
+
+    private void EnableUltIndicator()
+    {
+        material.SetFloat("_CanUlt", 1f);   
+    }
+
+    private void DisableUltIndicator()
+    {
+        material.SetFloat("_CanUlt", 0f);   
     }
 
     public void FixedUpdate()
@@ -118,12 +130,13 @@ public class BaseFighter : MonoBehaviour
 
         event_buffer.process();
 
-        if (state.can_ult())
+        if (state.can_ult() || true)
         {
-            if (!particle_system.isPlaying) particle_system.Play();
-        } else
+            EnableUltIndicator();
+        }
+        else
         {
-            if (!particle_system.isStopped) particle_system.Stop();
+            DisableUltIndicator();
         }
 
         rigidbody.gravityScale = 1.0f;
