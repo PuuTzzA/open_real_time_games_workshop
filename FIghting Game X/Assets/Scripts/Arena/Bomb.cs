@@ -316,7 +316,7 @@ public class Bomb : MonoBehaviour
 
         if (!thrown) return;
 
-        if (other.GetComponent<Bomb>() || other.GetComponent<LaserHitbox>())
+        if (other.GetComponent<Bomb>() || other.GetComponent<ExplosionHitbox>() || other.GetComponent<LaserHitbox>())
         {
             return;
         }
