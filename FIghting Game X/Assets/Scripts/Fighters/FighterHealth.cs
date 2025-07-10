@@ -296,8 +296,8 @@ public class FighterHealth : MonoBehaviour
         // Play cutscene
         var cutscene = FindAnyObjectByType<CutscenePlayer>(FindObjectsInactive.Include);
         cutscene.PlayCutscene(
-            killer.GetComponentInChildren<SpriteRenderer>().color,
-            GetComponentInChildren<SpriteRenderer>().color
+            killer.GetComponent<BaseFighter>().playerColor,
+            GetComponent<BaseFighter>().playerColor
         );
 
         // Option A: Wait for animation to finish

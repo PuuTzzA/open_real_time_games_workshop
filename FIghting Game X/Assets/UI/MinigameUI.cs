@@ -19,17 +19,6 @@ public class MinigameUI : MonoBehaviour
     public GameObject killer;
     public GameObject fallen;
 
-
-
-
-
-
-
-
-
-
-
-
     /// <summary>
     /// Slide in Labels
     /// </summary>
@@ -69,13 +58,13 @@ public class MinigameUI : MonoBehaviour
         timer = root.Q<ResponsiveLabel>("timer");
 
 
-        player1.style.color = fallen.GetComponentInChildren<SpriteRenderer>().color;
-        player2.style.color = killer.GetComponentInChildren<SpriteRenderer>().color;
+        player1.style.color = fallen.GetComponent<BaseFighter>().playerColor;
+        player2.style.color = killer.GetComponent<BaseFighter>().playerColor;
         player1.text = "PLAYER" + (fallen.GetComponent<PlayerInput>().playerIndex + 1);
         player2.text = "PLAYER" + (killer.GetComponent<PlayerInput>().playerIndex + 1);
 
-        icon1.style.unityBackgroundImageTintColor = fallen.GetComponentInChildren<SpriteRenderer>().color;
-        icon2.style.unityBackgroundImageTintColor = killer.GetComponentInChildren<SpriteRenderer>().color;
+        icon1.style.unityBackgroundImageTintColor = fallen.GetComponent<BaseFighter>().playerColor;
+        icon2.style.unityBackgroundImageTintColor = killer.GetComponent<BaseFighter>().playerColor;
 
 
 
