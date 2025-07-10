@@ -77,9 +77,7 @@ public class FighterHealth : MonoBehaviour
     {
         currentLives--;
         ingameUI.changeStocks(playerInput.playerIndex, currentLives);
-        fighterState.start_action(FighterAction.Death);
-
-
+        
         if (currentLives <= 0)
         {
             if (!qteUsed)
@@ -116,11 +114,6 @@ public class FighterHealth : MonoBehaviour
     {
         currentLives--;
         ingameUI.changeStocks(playerInput.playerIndex, currentLives);
-        fighterState.start_action(FighterAction.Death);
-
-        // Hide the fighter temporarily
-        toggleFighter(false);
-        
 
         if (currentLives <= 0)
         {
@@ -135,6 +128,8 @@ public class FighterHealth : MonoBehaviour
     // Disappear the fighter for about 1 seconds and then respawn
     private void Respawn()
     {
+        fighterState.start_action(FighterAction.Death);
+        toggleFighter(false);
         StartCoroutine(RespawnRoutine());
     }
 
@@ -181,26 +176,31 @@ public class FighterHealth : MonoBehaviour
 
     }
     
+    // Toggle the fighter's controls and components
     private void toggleFighter(bool value)
     {
-        // Disable the fighter's controls and components
-        var fighter = GetComponent<BaseFighter>();
-        if (fighter != null)
+        if (value)
         {
-            fighter.enabled = value; }
-
-        // Disable the collider
-        var collider = GetComponent<Collider2D>();
-        if (collider != null)
+            playerInput.ActivateInput();    
+        }
+        else
         {
-            collider.enabled = value;
+            playerInput.DeactivateInput();
+        }
+        
+        foreach (var c in GetComponentsInChildren<Collider2D>())
+        {
+            c.enabled = value;
         }
 
-        // Disable the rigidbody
-        var rb = GetComponent<Rigidbody2D>();
-        if (rb != null)
+        foreach (var c in GetComponentsInChildren<Rigidbody2D>())
         {
-            rb.simulated = value;
+            c.simulated = value;
+        }
+
+        foreach (var c in GetComponents<Collider2D>())
+        {
+            c.enabled = value;
         }
     }
 
@@ -262,18 +262,23 @@ public class FighterHealth : MonoBehaviour
     public void Die(GameObject killer = null)
     {
         // TODO: Handle the death of the fighter, such as disabling controls, playing death animation, etc.
-
+        fighterState.start_action(FighterAction.Death);
         toggleFighter(false);
-        SetSpriteRenderersVisible(false);
+        StartCoroutine(disableSpriteRenderers(1f));
         List<PlayerInput> playersAlive = persistentPlayerManager.getAlivePlayers();
         Time.timeScale = 1f;
 
         // Check if there are still more than one fighter alive
         if (playersAlive.Count <= 1)
         {
-
+            
+            // Activate all player inputs again
             int winnerIndex = playersAlive.Count == 1 ? playersAlive[0].playerIndex : -1;
-            persistentPlayerManager.getPlayers().ForEach(x => x.SwitchCurrentActionMap("UI"));
+            persistentPlayerManager.getPlayers().ForEach(x =>
+            {
+                x.ActivateInput();
+                x.SwitchCurrentActionMap("UI");
+            });
 
             var winUI = FindAnyObjectByType<WinGameUI>(FindObjectsInactive.Include);
 
@@ -289,6 +294,12 @@ public class FighterHealth : MonoBehaviour
         }
 
 
+    }
+    
+    private IEnumerator disableSpriteRenderers(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        SetSpriteRenderersVisible(false);
     }
 
     public IEnumerator GetFinished(GameObject killer)
