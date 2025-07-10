@@ -14,7 +14,8 @@ public class PersistentPlayerManager : MonoBehaviour
     private PlayerInputManager _pim;
     private List<PlayerInput> players;
 
-    [Header("UI References")] [SerializeField]
+    [Header("UI References")]
+    [SerializeField]
     private GameObject defaultJoinScreen;
 
     [SerializeField] private GameObject playerSelectionPrefab;
@@ -138,7 +139,7 @@ public class PersistentPlayerManager : MonoBehaviour
                     );
                     var selMgr = selection.GetComponent<SelectionManager>();
                     selMgr.selectedCharacter = data.PrefabChoice;
-                    selMgr.selectedColorIndex   = data.ColorChoice;
+                    selMgr.selectedColorIndex = data.ColorChoice;
                     DontDestroyOnLoad(selection.gameObject);
                     players.Add(selection);
                 }
@@ -149,8 +150,8 @@ public class PersistentPlayerManager : MonoBehaviour
         }
         else if (scene.name == "MainMenu")
         {
-            GameManager.PlayerChoices      = new List<int> { -1, -1, -1, -1 };
-            GameManager.PlayerColorChoices = new List<int> {  -1,  -1, -1, -1 };
+            GameManager.PlayerChoices = new List<int> { -1, -1, -1, -1 };
+            GameManager.PlayerColorChoices = new List<int> { -1, -1, -1, -1 };
 
             Debug.Log($"InputUser count before cleanup: {InputUser.all.Count}");
 
@@ -179,11 +180,11 @@ public class PersistentPlayerManager : MonoBehaviour
 
         var playerData = players.Select(p => new
         {
-            Index       = p.playerIndex,
+            Index = p.playerIndex,
             PrefabChoice = GameManager.PlayerChoices[p.playerIndex],
-            ColorChoice  = GameManager.PlayerColorChoices[p.playerIndex],
-            Scheme       = p.currentControlScheme,
-            Devices      = p.devices.ToArray()
+            ColorChoice = GameManager.PlayerColorChoices[p.playerIndex],
+            Scheme = p.currentControlScheme,
+            Devices = p.devices.ToArray()
         }).ToList();
 
         // Clean up old inputs
@@ -214,7 +215,17 @@ public class PersistentPlayerManager : MonoBehaviour
                 pairWithDevices: data.Devices
             );
             character.GetComponent<BaseFighter>().playerColor = availableColors[data.ColorChoice];
-            character.GetComponentInChildren<SpriteRenderer>().material.SetColor("_Color", availableColors[data.ColorChoice]);
+
+            SpriteRenderer[] renderers = character.GetComponentsInChildren<SpriteRenderer>(true);
+            foreach (SpriteRenderer renderer in renderers)
+            {
+                if (renderer.gameObject.GetComponent<UltHitbox>())
+                {
+                    renderer.material.SetFloat("_CanUlt", 1f);
+                }
+                renderer.material.SetColor("_Color", availableColors[data.ColorChoice]);
+            }
+
             players.Add(character);
             DontDestroyOnLoad(character);
             character.transform.position = spawnPoints[i].position;
