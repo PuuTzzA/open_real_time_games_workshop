@@ -130,7 +130,7 @@ public class BaseFighter : MonoBehaviour
 
         event_buffer.process();
 
-        if (state.can_ult() || true)
+        if (state.can_ult())
         {
             EnableUltIndicator();
         }

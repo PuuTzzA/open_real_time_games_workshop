@@ -831,6 +831,7 @@ MonoBehaviour:
   deathBounds: {x: -23.5, y: -11}
   died: 0
   holdingBomb: {fileID: 0}
+  playerColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!60 &8741731321134584292
 PolygonCollider2D:
   m_ObjectHideFlags: 0
