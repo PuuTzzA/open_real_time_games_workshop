@@ -5633,7 +5633,7 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 684eb9e7-6dd6-4aa3-87a0-b25124e77a22
     m_ActionName: 'Player/Pause Game[/Keyboard/escape,/XInputControllerWindows/start]'
-  m_NeverAutoSwitchControlSchemes: 0
+  m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
