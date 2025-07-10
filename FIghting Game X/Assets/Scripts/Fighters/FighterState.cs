@@ -59,6 +59,7 @@ public class FighterState : MonoBehaviour
     public bool dash_available = true;
 
     public int stun_duration;
+    public Vector2 stun_old_momentum;
 
     public int knockback_duration;
     public static readonly float[] knockback_rotation_factors = {0.0f, 0.3f, 0.7f, 1.0f, 0.9f, 0.7f, 0.3f, 0.1f, 0.0f };

@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using System.Collections;
 using System;
+using UnityEngine.InputSystem;
 
 public class MinigameUI : MonoBehaviour
 {
@@ -15,8 +16,8 @@ public class MinigameUI : MonoBehaviour
     private VisualElement skillCheckSection;
     public int minigamenumber = 0;
 
-    public Color killer;
-    public Color fallen;
+    public GameObject killer;
+    public GameObject fallen;
 
 
 
@@ -68,10 +69,13 @@ public class MinigameUI : MonoBehaviour
         timer = root.Q<ResponsiveLabel>("timer");
 
 
-        player1.style.color = fallen;
-        player2.style.color = killer;
-        icon1.style.unityBackgroundImageTintColor = fallen;
-        icon2.style.unityBackgroundImageTintColor = killer;
+        player1.style.color = fallen.GetComponentInChildren<SpriteRenderer>().color;
+        player2.style.color = killer.GetComponentInChildren<SpriteRenderer>().color;
+        player1.text = "PLAYER" + (fallen.GetComponent<PlayerInput>().playerIndex + 1);
+        player2.text = "PLAYER" + (killer.GetComponent<PlayerInput>().playerIndex + 1);
+
+        icon1.style.unityBackgroundImageTintColor = fallen.GetComponentInChildren<SpriteRenderer>().color;
+        icon2.style.unityBackgroundImageTintColor = killer.GetComponentInChildren<SpriteRenderer>().color;
 
 
 
@@ -158,7 +162,7 @@ public class MinigameUI : MonoBehaviour
         yield return new WaitForSecondsRealtime(entryDuration);
         yield return new WaitForSecondsRealtime(pauseDuration);
 
-        float totalAnimTime =  exitDuration;
+        float totalAnimTime = exitDuration;
         float elapsed = 0f;
 
         Vector3 startScale = Vector3.one;

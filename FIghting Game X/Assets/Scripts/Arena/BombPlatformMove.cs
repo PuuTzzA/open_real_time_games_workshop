@@ -17,7 +17,7 @@ public class BombPlatformMove : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [SerializeField] private Collider2D platformCollider;
     [SerializeField] private GameObject bombPrefab;
-    [SerializeField] private Transform[] bombSpawnPointList;
+    [SerializeField] private GameObject[] bombSpawnPointList;
     private Vector3 originalPosition;
     private Vector3 dropPosition;
 
@@ -40,9 +40,12 @@ public class BombPlatformMove : MonoBehaviour
     {
         foreach (var bombSpawnPoint in bombSpawnPointList)
         {
-            Vector3 bombPos = bombSpawnPoint.position;
-            GameObject bomb = Instantiate(bombPrefab, bombPos, Quaternion.identity);
-            bomb.transform.SetParent(this.transform);
+            if (bombSpawnPoint.transform.childCount == 0)
+            {
+                Vector3 bombPos = bombSpawnPoint.transform.position;
+                GameObject bomb = Instantiate(bombPrefab, bombPos, Quaternion.identity);
+                bomb.transform.SetParent(bombSpawnPoint.transform);
+            }
         }
     }
 

@@ -3,33 +3,37 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class UltHitbox : Hitbox
+public class UltHitbox : CooldownHitbox
 {
     public BaseFighter source_fighter;
 
     public Dictionary<BaseFighter, int> hit_fighters;
-    public Dictionary<BaseFighter, int> fighter_cooldowns;
 
     public override void hit(BaseFighter fighter, HitType type)
     {
         if (type != HitType.Start) { return; }
+
+        foreach (var (key, val) in fighter_cooldowns)
+        {
+            Debug.Log(val);
+        }
 
         if(!hit_fighters.ContainsKey(fighter))
         {
             hit_fighters.Add(fighter, 0);
         }
 
-        if (!fighter_cooldowns.ContainsKey(fighter))
-        {
-            fighter_cooldowns.Add(fighter, 0);
-        }
-
-        if (fighter_cooldowns[fighter] <= 0)
+        if (can_be_hit(fighter.id))
         {
             hit_fighters[fighter]++;
-            fighter_cooldowns[fighter] = 18;
+            put_on_cooldown(fighter.id);
             fighter.stun(10);
             fighter.take_damage(10, source_fighter.gameObject);
+        }
+
+        foreach (var (key, val) in fighter_cooldowns)
+        {
+            Debug.Log(val);
         }
 
     }
@@ -38,6 +42,7 @@ public class UltHitbox : Hitbox
     {
         foreach(var (fighter, hits) in hit_fighters)
         {
+            Debug.Log("hits: " +  hits);
             var sign = Math.Sign(fighter.transform.position.x - source_fighter.transform.position.x);
             //var knockback = new Vector2(3.0f * (sign == 0 ? 1 : sign), 5.0f) * (2 + hits * 0.5f);
             var knockback = (fighter.transform.position - source_fighter.transform.position).normalized * 5.0f * (2 + hits * 0.5f);
@@ -48,19 +53,9 @@ public class UltHitbox : Hitbox
         hit_fighters.Clear();
     }
 
-    public void reduce_fighter_cooldowns()
+    public override void init()
     {
-
-        var keys = fighter_cooldowns.Keys.ToArray();
-        foreach(var key in keys)
-        {
-            fighter_cooldowns[key]--;
-        }
-    }
-
-    public void init()
-    {
+        base.init();
         hit_fighters = new Dictionary<BaseFighter, int>();
-        fighter_cooldowns = new Dictionary<BaseFighter, int>();
     }
 }

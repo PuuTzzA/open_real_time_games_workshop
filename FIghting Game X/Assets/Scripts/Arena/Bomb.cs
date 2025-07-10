@@ -278,27 +278,27 @@ public class Bomb : MonoBehaviour
         animator.SetTrigger("ex");
         ReparentKeepWorldScale(null);
 
-        foreach (var fighter in FindObjectsOfType<BaseFighter>())
-        {
-            var fighterCollider = fighter.GetComponent<Collider2D>();
-            if (fighterCollider != null)
-            {
-                Physics2D.IgnoreCollision(col, fighterCollider, false);
-            }
-        }
+        //foreach (var fighter in FindObjectsOfType<BaseFighter>())
+        //{
+        //    var fighterCollider = fighter.GetComponent<Collider2D>();
+        //    if (fighterCollider != null)
+        //    {
+        //        Physics2D.IgnoreCollision(col, fighterCollider, false);
+        //    }
+        //}
 
-        int layerMask = 1 << 7;
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, explosionRadius, layerMask);
-        foreach (var c in hits)
-        {
-            var bf = c.GetComponentInParent<BaseFighter>();
-            if (bf != null)
-            {
-                bf.take_arena_damage(50);
-                Vector2 knockDir = (bf.transform.position - transform.position).normalized;
-                bf.knockback_heavy(knockDir * knockbackForce, 6);
-            }
-        }
+        //int layerMask = 1 << 7;
+        //Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, explosionRadius, layerMask);
+        //foreach (var c in hits)
+        //{
+        //    var bf = c.GetComponentInParent<BaseFighter>();
+        //    if (bf != null)
+        //    {
+        //        bf.take_arena_damage(50);
+        //        Vector2 knockDir = (bf.transform.position - transform.position).normalized;
+        //        bf.knockback_heavy(knockDir * knockbackForce, 6);
+        //    }
+        //}
 
         Destroy(gameObject, 1f);
     }
@@ -316,7 +316,7 @@ public class Bomb : MonoBehaviour
 
         if (!thrown) return;
 
-        if (other.GetComponent<Bomb>() || other.GetComponent<LaserHitbox>())
+        if (other.GetComponent<Bomb>() || other.GetComponent<ExplosionHitbox>() || other.GetComponent<LaserHitbox>())
         {
             return;
         }

@@ -31,7 +31,13 @@ public class BaseFighter : MonoBehaviour
     public bool died = false;
     public GameObject holdingBomb;
 
-    private ParticleSystem particle_system;
+    public Color playerColor;
+
+    private Material material; 
+
+    private static int next_id = 0;
+
+    public readonly int id = next_id++;
 
 
     private readonly float[] dash_curve = new float[] {
@@ -79,9 +85,19 @@ public class BaseFighter : MonoBehaviour
 
         state.start_action(FighterAction.Idle);
 
-        select_collider(0);
+        material = GetComponentInChildren<SpriteRenderer>().material;
 
-        particle_system = GetComponentInChildren<ParticleSystem>();
+        select_collider(0);
+    }
+
+    private void EnableUltIndicator()
+    {
+        material.SetFloat("_CanUlt", 1f);   
+    }
+
+    private void DisableUltIndicator()
+    {
+        material.SetFloat("_CanUlt", 0f);   
     }
 
     public void FixedUpdate()
@@ -116,10 +132,11 @@ public class BaseFighter : MonoBehaviour
 
         if (state.can_ult())
         {
-            if (!particle_system.isPlaying) particle_system.Play();
-        } else
+            EnableUltIndicator();
+        }
+        else
         {
-            if (!particle_system.isStopped) particle_system.Stop();
+            DisableUltIndicator();
         }
 
         rigidbody.gravityScale = 1.0f;
@@ -254,9 +271,10 @@ public class BaseFighter : MonoBehaviour
         rigidbody.linearVelocity = direction * (0.8f + health.GetMissingHealthPortion() * 1.2f);
     }
 
-    public void stun(int duration)
+    public void stun(int duration, bool keep_momentum = false)
     {
         player_sounds.PlayJabHit();
+        state.stun_old_momentum = keep_momentum ? rigidbody.linearVelocity : Vector2.zero;
         state.stun_duration = Math.Max(duration, state.stun_duration);
         state.start_action(FighterAction.Stunned);
     }
@@ -391,7 +409,15 @@ public class BaseFighter : MonoBehaviour
     public void stun_tick(int index)
     {
         freezeXY(true, true);
-        state.animation_handler.set_frozen(--state.stun_duration > 0);
+        state.stun_duration--;
+        state.animation_handler.set_frozen(state.stun_duration > 0);
+
+        if(state.stun_duration <= 0)
+        {
+            Debug.Log("momentum " + state.stun_old_momentum);
+            freezeXY(false, false);
+            rigidbody.linearVelocity = state.stun_old_momentum;
+        }
     }
 
     public void knockback_light_tick(int index)
@@ -494,7 +520,7 @@ public class BaseFighter : MonoBehaviour
         if (index >= 158)
             state.reset_ult_points();
 
-        state.ult_hitbox.reduce_fighter_cooldowns();
+        //state.ult_hitbox.reduce_fighter_cooldowns();
     }
 
 
