@@ -134,7 +134,6 @@ public class MenuUI : MonoBehaviour
 
     private void OnGamePaused(InputAction.CallbackContext context)
     {
-        Debug.Log("pause now");
         if (!gamePaused)
         {
             gamePaused = true;
@@ -150,7 +149,6 @@ public class MenuUI : MonoBehaviour
                 playerInput.SwitchCurrentActionMap(UIActionMap);
 
             // 👇 Disable all other players
-            Debug.Log("disabled");
             DisableOtherPlayers();
         }
         else
@@ -172,7 +170,6 @@ public class MenuUI : MonoBehaviour
                 playerInput.SwitchCurrentActionMap(PlayerActionMap);
 
             // 👇 Re-enable all other players
-            Debug.Log("reenabled");
             ReenableOtherPlayers();
         }
 

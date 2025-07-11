@@ -5,6 +5,7 @@ public class ExplosionHitbox : CooldownHitbox
     public int damage;
     public float force;
 
+
     public ExplosionHitbox()
     {
         cooldown = 10;
@@ -12,15 +13,14 @@ public class ExplosionHitbox : CooldownHitbox
 
     public override void hit(BaseFighter fighter, HitType type)
     {
-        if(type != HitType.Start) return;
+        if (type != HitType.Start) return;
 
-        if(can_be_hit(fighter.id))
+        if (can_be_hit(fighter.id))
         {
-            Debug.Log("bomb hit " +  type);
-            fighter.take_arena_damage(damage);
             Vector2 knockDir = (fighter.transform.position - transform.position).normalized;
             fighter.knockback_heavy(knockDir * force, 20);
             put_on_cooldown(fighter.id);
+            fighter.take_damage(damage, transform.parent.gameObject.GetComponent<Bomb>().holder.gameObject);
         }
     }
 }

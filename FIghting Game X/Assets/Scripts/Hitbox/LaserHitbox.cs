@@ -11,7 +11,7 @@ public class LaserHitbox : CooldownHitbox
     public void Deactivate() => isActive = false;
 
     public LaserHitbox() {
-        cooldown = 15;
+        cooldown = 7;
     }
 
     public override void hit(BaseFighter fighter, HitType type)
@@ -20,9 +20,9 @@ public class LaserHitbox : CooldownHitbox
 
         if(can_be_hit(fighter.id))
         {
-            fighter.take_arena_damage(damage);
             fighter.stun(3, true);
             put_on_cooldown(fighter.id);
+            fighter.take_damage(damage, null);
         }
     }
 }

@@ -29,15 +29,13 @@ public class PersistentPlayerManager : MonoBehaviour
     private void Awake()
     {
 
-        Debug.Log("PersistentPlayerManager Awake");
-        Debug.Log($"{InputUser.all.Count} InputUsers before initialization");
+      
         if (_instance != null)
         {
             Destroy(gameObject);
             return;
         }
         _instance = this;
-        Debug.Log("PersistentPlayerManager Instance created");
 
         if (spawnPointsObject == null)
             spawnPointsObject = GameObject.Find("SpawnPointsMapping");
@@ -78,7 +76,6 @@ public class PersistentPlayerManager : MonoBehaviour
     private void OnPlayerJoined(PlayerInput player)
     {
         if (SceneManager.GetActiveScene().name != "CharacterSelection") return;
-        Debug.Log($"Player joined: {player.playerIndex}, scheme: {player.currentControlScheme}");
 
         // Avoid duplicates
         if (players.Any(p => p.playerIndex == player.playerIndex))
@@ -152,7 +149,6 @@ public class PersistentPlayerManager : MonoBehaviour
             GameManager.PlayerChoices      = new List<int> { -1, -1, -1, -1 };
             GameManager.PlayerColorChoices = new List<int> {  -1,  -1, -1, -1 };
 
-            Debug.Log($"InputUser count before cleanup: {InputUser.all.Count}");
 
             foreach (var player in players)
             {
@@ -165,7 +161,6 @@ public class PersistentPlayerManager : MonoBehaviour
             foreach (var user in InputUser.all.ToArray())
                 user.UnpairDevicesAndRemoveUser();
 
-            Debug.Log($"InputUser count after cleanup: {InputUser.all.Count}");
 
             _instance = null;
             Destroy(spawnPointsObject);

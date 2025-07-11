@@ -56,33 +56,18 @@ public class FighterHealth : MonoBehaviour
         }
     }
 
-    public void TakeArenaDamage(int damage)
-    {
-        if (currentHealth <= 0)
-        {
-            return;
-        }
-
-        currentHealth -= damage;
-        ingameUI.setNewHealth(playerInput.playerIndex, currentHealth * 1.0f / maxHealth);
-
-
-        if (currentHealth <= 0)
-        {
-            HandleArenaDeath();
-        }
-    }
 
     private IEnumerator HandleDeath(GameObject killer)
     {
         currentLives--;
         ingameUI.changeStocks(playerInput.playerIndex, currentLives);
         fighterState.start_action(FighterAction.Death);
+        Debug.Log("death");
 
 
         if (currentLives <= 0)
         {
-            if (!qteUsed)
+            if (!qteUsed && killer != null)
             {
                 yield return DeferQTEStart(killer);
             }
@@ -112,25 +97,6 @@ public class FighterHealth : MonoBehaviour
         }
     }
 
-    private void HandleArenaDeath()
-    {
-        currentLives--;
-        ingameUI.changeStocks(playerInput.playerIndex, currentLives);
-        fighterState.start_action(FighterAction.Death);
-
-        // Hide the fighter temporarily
-        toggleFighter(false);
-        
-
-        if (currentLives <= 0)
-        {
-            Die();
-        }
-        else
-        {
-            Respawn();
-        }
-    }
 
     // Disappear the fighter for about 1 seconds and then respawn
     private void Respawn()
@@ -141,12 +107,11 @@ public class FighterHealth : MonoBehaviour
     private IEnumerator RespawnRoutine()
     {
 
-
         yield return new WaitForSeconds(1.5f); // Delay before respawning
+        Debug.Log("respawn");
 
-        // Reactivate the fighter
-        toggleFighter(true);
-        
+
+
         // Choose a random spawn point
         Transform[] spawnPoints = persistentPlayerManager.spawnPoints;
         int spawnIndex = Random.Range(0, spawnPoints.Length);
@@ -180,29 +145,7 @@ public class FighterHealth : MonoBehaviour
         GetComponent<BaseFighter>().died = false;
 
     }
-    
-    private void toggleFighter(bool value)
-    {
-        // Disable the fighter's controls and components
-        var fighter = GetComponent<BaseFighter>();
-        if (fighter != null)
-        {
-            fighter.enabled = value; }
 
-        // Disable the collider
-        var collider = GetComponent<Collider2D>();
-        if (collider != null)
-        {
-            collider.enabled = value;
-        }
-
-        // Disable the rigidbody
-        var rb = GetComponent<Rigidbody2D>();
-        if (rb != null)
-        {
-            rb.simulated = value;
-        }
-    }
 
     private void SetSpriteRenderersVisible(bool visible)
     {
@@ -256,6 +199,8 @@ public class FighterHealth : MonoBehaviour
         qteUsed = true;
         currentHealth = maxHealth;
         ingameUI.setHealth(playerInput.playerIndex, currentHealth / maxHealth);
+
+        gameObject.GetComponent<BaseFighter>().next_idle_action();
     }
 
 
@@ -263,7 +208,7 @@ public class FighterHealth : MonoBehaviour
     {
         // TODO: Handle the death of the fighter, such as disabling controls, playing death animation, etc.
 
-        toggleFighter(false);
+
         SetSpriteRenderersVisible(false);
         List<PlayerInput> playersAlive = persistentPlayerManager.getAlivePlayers();
         Time.timeScale = 1f;

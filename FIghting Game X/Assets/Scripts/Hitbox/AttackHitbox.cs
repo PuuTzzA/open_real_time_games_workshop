@@ -35,21 +35,21 @@ public class AttackHitbox : Hitbox
         fighter.state.force_facing(forced_facing);
 
         fighter.knockback_light(knockback * source_fighter.state.get_facing_vec());
-        fighter.take_damage(damage, this.source_fighter.gameObject);
         source_fighter.state.add_ult_points(ult_points);
 
         if (direction.Equals(Vector2Int.down))
         {
             source_fighter.rigidbody.linearVelocityY = 7.0f;
         }
+        fighter.take_damage(damage, this.source_fighter.gameObject);
     }
 
     private void heavy_hit(BaseFighter fighter)
     {
         
         fighter.knockback_heavy(knockback * source_fighter.state.get_facing_vec(), duration);
-        fighter.take_damage(damage, this.source_fighter.gameObject);
 
         source_fighter.state.add_ult_points(ult_points);
+        fighter.take_damage(damage, this.source_fighter.gameObject);
     }
 }

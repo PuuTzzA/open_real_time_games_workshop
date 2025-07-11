@@ -24,7 +24,7 @@ public class Bomb : MonoBehaviour
     private Animator animator;
     private Color originalColor;
 
-    private BaseFighter holder;
+    public BaseFighter holder;
     private bool pickedUp = false;
     private bool wasInteractHeld = false;
     private Vector3 originalLocalScale;
@@ -62,10 +62,10 @@ public class Bomb : MonoBehaviour
     private IEnumerator setHoldingBomb()
     {
         yield return new WaitForSeconds(0.5f);
-        if (holder != null)
+        if (holder.holdingBomb != null)
         {
             holder.holdingBomb = null;
-            holder = null;
+            //holder = null;
         }
     }
 

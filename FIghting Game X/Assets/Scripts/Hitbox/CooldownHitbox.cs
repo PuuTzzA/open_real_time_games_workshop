@@ -30,7 +30,6 @@ public class CooldownHitbox : Hitbox
 
     public void put_on_cooldown(int fighter_id)
     {
-        Debug.Log("cooldown: " + cooldown);
         fighter_cooldowns[fighter_id] = cooldown;
     }
 

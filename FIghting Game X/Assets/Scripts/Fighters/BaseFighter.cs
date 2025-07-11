@@ -181,7 +181,7 @@ public class BaseFighter : MonoBehaviour
             transform.position.y > (-3f * deathBounds.y))
         {
             died = true;
-            health.TakeArenaDamage(1000);
+            health.TakeDamage(1000, null);
         }
     }
 
@@ -268,7 +268,7 @@ public class BaseFighter : MonoBehaviour
         freezeXY(false, false);
         select_collider(1);
         state.knockback_duration = duration;
-        rigidbody.linearVelocity = direction * (0.8f + health.GetMissingHealthPortion() * 1.2f);
+        rigidbody.linearVelocity = direction * (0.7f + health.GetMissingHealthPortion() * 1.7f);
     }
 
     public void stun(int duration, bool keep_momentum = false)
@@ -301,11 +301,6 @@ public class BaseFighter : MonoBehaviour
         {
 
         }
-    }
-
-    public void take_arena_damage(int damage)
-    {
-        health.TakeArenaDamage(damage);
     }
 
 
@@ -414,7 +409,6 @@ public class BaseFighter : MonoBehaviour
 
         if(state.stun_duration <= 0)
         {
-            Debug.Log("momentum " + state.stun_old_momentum);
             freezeXY(false, false);
             rigidbody.linearVelocity = state.stun_old_momentum;
         }
