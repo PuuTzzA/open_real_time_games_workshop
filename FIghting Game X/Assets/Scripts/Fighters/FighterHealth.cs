@@ -62,6 +62,7 @@ public class FighterHealth : MonoBehaviour
         currentLives--;
         ingameUI.changeStocks(playerInput.playerIndex, currentLives);
         fighterState.start_action(FighterAction.Death);
+        GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
         Debug.Log("death");
 
 
@@ -270,4 +271,3 @@ public class FighterHealth : MonoBehaviour
         return (maxHealth - currentHealth) / (float)maxHealth;
     }
 }
-    
