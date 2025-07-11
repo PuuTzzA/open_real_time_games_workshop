@@ -101,7 +101,6 @@ public class FighterHealth : MonoBehaviour
     // Disappear the fighter for about 1 seconds and then respawn
     private void Respawn()
     {
-        fighterState.start_action(FighterAction.Death);
         StartCoroutine(RespawnRoutine());
     }
 
@@ -146,6 +145,7 @@ public class FighterHealth : MonoBehaviour
         GetComponent<BaseFighter>().died = false;
 
     }
+
 
     private void SetSpriteRenderersVisible(bool visible)
     {
@@ -216,14 +216,9 @@ public class FighterHealth : MonoBehaviour
         // Check if there are still more than one fighter alive
         if (playersAlive.Count <= 1)
         {
-            
-            // Activate all player inputs again
+
             int winnerIndex = playersAlive.Count == 1 ? playersAlive[0].playerIndex : -1;
-            persistentPlayerManager.getPlayers().ForEach(x =>
-            {
-                x.ActivateInput();
-                x.SwitchCurrentActionMap("UI");
-            });
+            persistentPlayerManager.getPlayers().ForEach(x => x.SwitchCurrentActionMap("UI"));
 
             var winUI = FindAnyObjectByType<WinGameUI>(FindObjectsInactive.Include);
 
@@ -240,20 +235,14 @@ public class FighterHealth : MonoBehaviour
 
 
     }
-    
-    private IEnumerator disableSpriteRenderers(float duration)
-    {
-        yield return new WaitForSeconds(duration);
-        SetSpriteRenderersVisible(false);
-    }
 
     public IEnumerator GetFinished(GameObject killer)
     {
         // Play cutscene
         var cutscene = FindAnyObjectByType<CutscenePlayer>(FindObjectsInactive.Include);
         cutscene.PlayCutscene(
-            killer.GetComponent<BaseFighter>().playerColor,
-            GetComponent<BaseFighter>().playerColor
+            killer.GetComponentInChildren<SpriteRenderer>().color,
+            GetComponentInChildren<SpriteRenderer>().color
         );
 
         // Option A: Wait for animation to finish
@@ -281,3 +270,4 @@ public class FighterHealth : MonoBehaviour
         return (maxHealth - currentHealth) / (float)maxHealth;
     }
 }
+    
