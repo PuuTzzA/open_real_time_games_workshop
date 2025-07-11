@@ -55,8 +55,8 @@ public class ButtonSmashQTE : MonoBehaviour, IQTE
         Image p1FillImage = p1Slider.fillRect.GetComponent<Image>();
         Image p2FillImage = p2Slider.fillRect.GetComponent<Image>();
 
-        Color p1Color = p1.GetComponentInChildren<SpriteRenderer>().color;
-        Color p2Color = p2.GetComponentInChildren<SpriteRenderer>().color;
+        Color p1Color = p1.gameObject.GetComponent<BaseFighter>().playerColor;
+        Color p2Color = p2.gameObject.GetComponent<BaseFighter>().playerColor;
 
         p1FillImage.color = p1Color;
         p2FillImage.color = p2Color;

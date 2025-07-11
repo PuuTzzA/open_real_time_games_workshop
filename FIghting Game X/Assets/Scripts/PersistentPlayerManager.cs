@@ -14,7 +14,8 @@ public class PersistentPlayerManager : MonoBehaviour
     private PlayerInputManager _pim;
     private List<PlayerInput> players;
 
-    [Header("UI References")] [SerializeField]
+    [Header("UI References")]
+    [SerializeField]
     private GameObject defaultJoinScreen;
 
     [SerializeField] private GameObject playerSelectionPrefab;
@@ -89,40 +90,42 @@ public class PersistentPlayerManager : MonoBehaviour
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+{
+
+    if (scene.name == fightScene)
     {
-        if (scene.name == fightScene)
+        _pim.DisableJoining();
+        StartCoroutine(SpawnAllPlayers());
+    }
+    else if (scene.name == "CharacterSelection")
+    {
+
+        if (spawnPointsObject == null)
         {
-            _pim.DisableJoining();
-            StartCoroutine(SpawnAllPlayers());
+            spawnPointsObject = GameObject.Find("SpawnPointsMapping");
+            spawnPoints = spawnPointsObject.GetComponentsInChildren<Transform>().ToArray();
+            DontDestroyOnLoad(spawnPointsObject);
         }
-        else if (scene.name == "CharacterSelection")
+
+        _pim.EnableJoining();
+
+        if (players.Count > 0)
         {
-            if (spawnPointsObject == null)
+            var selectionData = players.Select(p => new
             {
-                spawnPointsObject = GameObject.Find("SpawnPointsMapping");
-                spawnPoints = spawnPointsObject.GetComponentsInChildren<Transform>().ToArray();
-                DontDestroyOnLoad(spawnPointsObject);
+                PrefabChoice = GameManager.PlayerChoices[p.playerIndex],
+                ColorChoice  = GameManager.PlayerColorChoices[p.playerIndex],
+                Index        = p.playerIndex,
+                Scheme       = p.currentControlScheme,
+                Devices      = p.devices.ToArray()
+            }).ToList();
+
+            foreach (var player in players)
+            {
+                player.user.UnpairDevicesAndRemoveUser();
+                Destroy(player.gameObject);
             }
-            _pim.EnableJoining();
-
-            if (players.Count > 0)
-            {
-                var selectionData = players.Select(p => new
-                {
-                    PrefabChoice = GameManager.PlayerChoices[p.playerIndex],
-                    ColorChoice = GameManager.PlayerColorChoices[p.playerIndex],
-                    Index = p.playerIndex,
-                    Scheme = p.currentControlScheme,
-                    Devices = p.devices.ToArray()
-                }).ToList();
-
-                // Tear down old inputs
-                foreach (var player in players)
-                {
-                    player.user.UnpairDevicesAndRemoveUser();
-                    Destroy(player.gameObject);
-                }
-                players.Clear();
+            players.Clear();
 
                 // Re-create selection panels
                 foreach (var data in selectionData)
@@ -135,53 +138,37 @@ public class PersistentPlayerManager : MonoBehaviour
                     );
                     var selMgr = selection.GetComponent<SelectionManager>();
                     selMgr.selectedCharacter = data.PrefabChoice;
-                    selMgr.selectedColorIndex   = data.ColorChoice;
+                    selMgr.selectedColorIndex = data.ColorChoice;
                     DontDestroyOnLoad(selection.gameObject);
                     players.Add(selection);
                 }
-
-                if (defaultJoinScreen != null)
-                    defaultJoinScreen.SetActive(false);
-            }
-        }
-        else if (scene.name == "MainMenu")
-        {
-            GameManager.PlayerChoices      = new List<int> { -1, -1, -1, -1 };
-            GameManager.PlayerColorChoices = new List<int> {  -1,  -1, -1, -1 };
-
-
-            foreach (var player in players)
+            foreach (var data in selectionData)
             {
-                player.user.UnpairDevicesAndRemoveUser();
-                Destroy(player.gameObject);
+                var selection = PlayerInput.Instantiate(
+                    playerSelectionPrefab,
+                    playerIndex: data.Index,
+                    controlScheme: data.Scheme,
+                    pairWithDevices: data.Devices
+                );
+
+                var selMgr = selection.GetComponent<SelectionManager>();
+                selMgr.selectedCharacter  = data.PrefabChoice;
+                selMgr.selectedColorIndex = data.ColorChoice;
+
+                DontDestroyOnLoad(selection.gameObject);
+                players.Add(selection);
             }
-            players.Clear();
 
-            // Also remove any stray users
-            foreach (var user in InputUser.all.ToArray())
-                user.UnpairDevicesAndRemoveUser();
-
-
-            _instance = null;
-            Destroy(spawnPointsObject);
-            Destroy(gameObject);
+            if (defaultJoinScreen != null)
+                defaultJoinScreen.SetActive(false);
         }
     }
-
-    private IEnumerator SpawnAllPlayers()
+    else if (scene.name == "MainMenu")
     {
-        yield return null;
+        GameManager.PlayerChoices      = new List<int> { -1, -1, -1, -1 };
+        GameManager.PlayerColorChoices = new List<int> { -1, -1, -1, -1 };
 
-        var playerData = players.Select(p => new
-        {
-            Index       = p.playerIndex,
-            PrefabChoice = GameManager.PlayerChoices[p.playerIndex],
-            ColorChoice  = GameManager.PlayerColorChoices[p.playerIndex],
-            Scheme       = p.currentControlScheme,
-            Devices      = p.devices.ToArray()
-        }).ToList();
 
-        // Clean up old inputs
         foreach (var player in players)
         {
             player.user.UnpairDevicesAndRemoveUser();
@@ -189,18 +176,60 @@ public class PersistentPlayerManager : MonoBehaviour
         }
         players.Clear();
 
-        var usedDevices = new HashSet<InputDevice>();
-        for (int i = 0; i < playerData.Count; i++)
+        foreach (var user in InputUser.all.ToArray())
         {
-            var data = playerData[i];
-            // Check if this data.Devices are already used
-            if (data.Devices.Any(d => usedDevices.Contains(d)))
-            {
-                continue;
-            }
+            Debug.Log($"Cleaning up orphaned InputUser {user.id}");
+            user.UnpairDevicesAndRemoveUser();
+        }
 
-            if (data.PrefabChoice < 0 || data.PrefabChoice >= characterPrefabs.Length)
-                continue;
+        Debug.Log($"InputUser count after cleanup: {InputUser.all.Count}");
+
+        _instance = null;
+        Destroy(spawnPointsObject);
+        Destroy(gameObject);
+    }
+}
+
+private IEnumerator SpawnAllPlayers()
+{
+    Debug.Log("Starting SpawnAllPlayers...");
+    yield return null;
+
+    var playerData = players.Select(p => new
+    {
+        Index        = p.playerIndex,
+        PrefabChoice = GameManager.PlayerChoices[p.playerIndex],
+        ColorChoice  = GameManager.PlayerColorChoices[p.playerIndex],
+        Scheme       = p.currentControlScheme,
+        Devices      = p.devices.ToArray()
+    }).ToList();
+
+    foreach (var player in players)
+    {
+        Debug.Log($"Clearing old player: {player.playerIndex}");
+        if (player.user.valid) player.user.UnpairDevicesAndRemoveUser();
+        Destroy(player.gameObject);
+    }
+    players.Clear();
+
+    var usedDevices = new HashSet<InputDevice>();
+    for (int i = 0; i < playerData.Count; i++)
+    {
+        var data = playerData[i];
+
+        if (data.Devices.Any(d => usedDevices.Contains(d)))
+        {
+            Debug.LogWarning($"Skipping player {data.Index} – duplicate device detected.");
+            continue;
+        }
+
+        if (data.PrefabChoice < 0 || data.PrefabChoice >= characterPrefabs.Length)
+        {
+            Debug.LogWarning($"Invalid prefab choice for player {data.Index}. Skipping.");
+            continue;
+        }
+
+        Debug.Log($"Spawning fighter {data.Index} using prefab {data.PrefabChoice}");
 
             var character = PlayerInput.Instantiate(
                 characterPrefabs[data.PrefabChoice],
@@ -208,9 +237,18 @@ public class PersistentPlayerManager : MonoBehaviour
                 controlScheme: data.Scheme,
                 pairWithDevices: data.Devices
             );
-            character.GetComponentInChildren<SpriteRenderer>().color = availableColors[data.ColorChoice];
             character.GetComponent<BaseFighter>().playerColor = availableColors[data.ColorChoice];
-            character.GetComponentInChildren<SpriteRenderer>().material.SetColor("_Color", availableColors[data.ColorChoice]);
+
+            SpriteRenderer[] renderers = character.GetComponentsInChildren<SpriteRenderer>(true);
+            foreach (SpriteRenderer renderer in renderers)
+            {
+                if (renderer.gameObject.GetComponent<UltHitbox>())
+                {
+                    renderer.material.SetFloat("_CanUlt", 1f);
+                }
+                renderer.material.SetColor("_Color", availableColors[data.ColorChoice]);
+            }
+
             players.Add(character);
             DontDestroyOnLoad(character);
             character.transform.position = spawnPoints[i].position;
@@ -218,11 +256,17 @@ public class PersistentPlayerManager : MonoBehaviour
                 usedDevices.Add(d);
         }
 
-        IngameUI ui = FindAnyObjectByType<IngameUI>(FindObjectsInactive.Include);
-        while (ui == null)
-            ui = FindAnyObjectByType<IngameUI>(FindObjectsInactive.Include);
-        ui.gameObject.SetActive(true);
+    IngameUI ui = FindAnyObjectByType<IngameUI>(FindObjectsInactive.Include);
+    while (ui == null)
+    {
+        Debug.LogWarning("Waiting for IngameUI...");
+        ui = FindAnyObjectByType<IngameUI>(FindObjectsInactive.Include);
+        yield return null;
     }
+
+    ui.gameObject.SetActive(true);
+    Debug.Log("IngameUI activated.");
+}
 
     public List<PlayerInput> getPlayers()
     {

@@ -58,7 +58,7 @@ public class QTEManager : MonoBehaviour
 
     private IEnumerator StartQTESequence(GameObject fallen, GameObject killer, Action onDone)
     {
-        int type = UnityEngine.Random.Range(0, 2); // Randomly choose between 0, 1
+        int type = UnityEngine.Random.Range(0, 4) < 3 ? 1 : 0; // Randomly choose 
         if (type == 1)
             ui.GetComponent<MinigameUI>().minigamenumber = 1;
         ui.GetComponent<MinigameUI>().killer = killer;
