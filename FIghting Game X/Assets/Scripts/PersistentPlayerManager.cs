@@ -235,9 +235,15 @@ private IEnumerator SpawnAllPlayers()
             pairWithDevices: data.Devices
         );
 
-        var sr = character.GetComponentInChildren<SpriteRenderer>();
-        sr.color = availableColors[data.ColorChoice];
-        sr.material.SetColor("_Color", availableColors[data.ColorChoice]);
+        SpriteRenderer[] renderers = character.GetComponentsInChildren<SpriteRenderer>(true);
+        foreach (SpriteRenderer renderer in renderers)
+        {
+            if (renderer.gameObject.GetComponent<UltHitbox>())
+            {
+                renderer.material.SetFloat("_CanUlt", 1f);
+            }
+            renderer.material.SetColor("_Color", availableColors[data.ColorChoice]);
+        }
 
         var fighter = character.GetComponent<BaseFighter>();
         fighter.playerColor = availableColors[data.ColorChoice];
