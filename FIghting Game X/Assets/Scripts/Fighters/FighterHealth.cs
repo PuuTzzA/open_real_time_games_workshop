@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -63,7 +64,6 @@ public class FighterHealth : MonoBehaviour
         ingameUI.changeStocks(playerInput.playerIndex, currentLives);
         fighterState.start_action(FighterAction.Death);
         GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-        Debug.Log("death");
 
 
         if (currentLives <= 0)
@@ -75,6 +75,7 @@ public class FighterHealth : MonoBehaviour
             }
             else
             {
+                yield return new WaitUntil(() => { return fighterState.animation_handler.is_finished(); }) ;
                 Die();
             }
         }

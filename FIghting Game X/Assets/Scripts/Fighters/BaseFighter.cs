@@ -33,7 +33,7 @@ public class BaseFighter : MonoBehaviour
 
     public Color playerColor;
 
-    private Material material; 
+    private Material material;
 
     private static int next_id = 0;
 
@@ -92,12 +92,12 @@ public class BaseFighter : MonoBehaviour
 
     private void EnableUltIndicator()
     {
-        material.SetFloat("_CanUlt", 1f);   
+        material.SetFloat("_CanUlt", 1f);
     }
 
     private void DisableUltIndicator()
     {
-        material.SetFloat("_CanUlt", 0f);   
+        material.SetFloat("_CanUlt", 0f);
     }
 
     public void FixedUpdate()
@@ -116,10 +116,11 @@ public class BaseFighter : MonoBehaviour
             checkDeath();
         }
 
-        if (state.animation_handler.is_finished() || state.is_idle())
-        {
-            next_idle_action();
-        }
+        if (state.get_action() != FighterAction.Death)
+            if (state.animation_handler.is_finished() || state.is_idle())
+            {
+                next_idle_action();
+            }
 
         state.animation_handler.show();
 
@@ -222,7 +223,7 @@ public class BaseFighter : MonoBehaviour
         if (state.is_grounded())
         {
             rigidbody.linearVelocityX = new_dir_x * state.get_ground_speed();
-            if(new_dir_x != 0 && state.get_action() != FighterAction.Running)
+            if (new_dir_x != 0 && state.get_action() != FighterAction.Running)
             {
                 state.start_action(FighterAction.Running);
             }
@@ -291,13 +292,14 @@ public class BaseFighter : MonoBehaviour
     }
 
 
-    public void take_damage(int damage, GameObject attacker, bool bomb= false)
+    public void take_damage(int damage, GameObject attacker, bool bomb = false)
     {
         try
         {
-            health.TakeDamage(damage, attacker,bomb);
+            health.TakeDamage(damage, attacker, bomb);
 
-        } catch (Exception)
+        }
+        catch (Exception)
         {
 
         }
@@ -407,7 +409,7 @@ public class BaseFighter : MonoBehaviour
         state.stun_duration--;
         state.animation_handler.set_frozen(state.stun_duration > 0);
 
-        if(state.stun_duration <= 0)
+        if (state.stun_duration <= 0)
         {
             freezeXY(false, false);
             rigidbody.linearVelocity = state.stun_old_momentum;
@@ -491,7 +493,7 @@ public class BaseFighter : MonoBehaviour
         }
         else
         {
-            if(index == 125)
+            if (index == 125)
             {
                 Debug.Log("ult finished");
                 state.ult_hitbox.knockback_fighters();
@@ -559,7 +561,7 @@ public class BaseFighter : MonoBehaviour
 
         if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
 
-        if(!state.heavy_available[1 - input.direction.y]) return false;
+        if (!state.heavy_available[1 - input.direction.y]) return false;
 
         state.force_facing(input.direction.x);
         switch (input.direction.y)
@@ -623,7 +625,7 @@ public class BaseFighter : MonoBehaviour
 
         if (!state.flags_any_set(FighterFlags.Interruptable)) return false;
 
-        if(!state.can_ult()) return false;
+        if (!state.can_ult()) return false;
 
         state.force_facing(input.direction.x);
         state.start_action(FighterAction.Ult);
