@@ -35,7 +35,11 @@ public class StageSelectionManager : MonoBehaviour
         submitAction.performed += OnSubmit;
 
         uiMap.Enable();
+
+
     }
+
+
 
     private void OnDestroy()
     {

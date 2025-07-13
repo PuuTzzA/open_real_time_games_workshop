@@ -95,7 +95,7 @@ public class PersistentPlayerManager : MonoBehaviour
 {
     Debug.Log($"Scene loaded: {scene.name}");
 
-    if (scene.name == fightScene)
+    if (scene.name == "TestSceneMartin"|| scene.name == "BasicStage")
     {
         Debug.Log("Entering fight scene. Disabling joining.");
         _pim.DisableJoining();
