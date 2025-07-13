@@ -31,16 +31,18 @@ public class TapTimingQTE : MonoBehaviour, IQTE
     void OnEnable()
     {
         ui = this.gameObject.GetComponent<MinigameUI>();
-        angles[0] = (float)(new Random().NextDouble() * (180f - 8f) + 8f);
+
+        angles[0] = ui.skillchecks[0].GetFirstArrow2Angle();
         for (int i = 1; i < 3; i++)
         {
-            ui.skillchecks[0].Arrow2Angle = angles[i - 1];
+            ui.skillchecks[0].pointerAngle = angles[i - 1];
             angles[i] = ui.skillchecks[0].GetValidNewArrow2Angle();
         }
-
-
-        ui.skillchecks[0].Arrow2Angle = angles[0];
-        ui.skillchecks[1].Arrow2Angle = angles[0];
+        ui.skillchecks[0].spinSpeed = SkillCheck.defaultspinSpeed;
+        ui.skillchecks[1].spinSpeed = SkillCheck.defaultspinSpeed;
+        ui.skillchecks[0].spinSpeed = MathF.Abs(ui.skillchecks[0].spinSpeed);
+        ui.skillchecks[0].pointerAngle = angles[0];
+        ui.skillchecks[1].pointerAngle = angles[0];
     }
 
     public void Init(PlayerInput p1, PlayerInput p2, Action<QTEResult, QTEResult> callback)
@@ -81,14 +83,14 @@ public class TapTimingQTE : MonoBehaviour, IQTE
             case 1:
                 points[player]++;
                 ui.skillchecks[player].spinSpeed *= -1;
-                ui.skillchecks[player].Arrow2Angle = angles[points[player]];
+                ui.skillchecks[player].pointerAngle = angles[points[player]];
                 ui.skillchecks[player].Circle2FillPercent *= -1;
                 break;
             case 2:
                 points[player]++;
                 ui.skillchecks[player].spinSpeed *= spinSpeedmultiplier;
                 ui.skillchecks[player].spinSpeed *= -1;
-                ui.skillchecks[player].Arrow2Angle = angles[points[player]];
+                ui.skillchecks[player].pointerAngle = angles[points[player]];
                 ui.skillchecks[player].Circle2FillPercent *= -1;
                 break;
             default:

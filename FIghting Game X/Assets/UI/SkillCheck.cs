@@ -4,7 +4,10 @@ using UnityEngine.UIElements;
 public class SkillCheck : VisualElement
 {
     public bool rotating = false;
+
+    public static float defaultspinSpeed = 240;
     public float spinSpeed = 240f;
+    public float padding = 7f;
 
 
     public new class UxmlFactory : UxmlFactory<SkillCheck, UxmlTraits> { }
@@ -21,10 +24,10 @@ public class SkillCheck : VisualElement
         UxmlFloatAttributeDescription arrowLengthAttr = new UxmlFloatAttributeDescription { name = "arrow-length", defaultValue = 0.75f };
 
         // Second arrow attrs
-        UxmlFloatAttributeDescription arrow2AngleAttr = new UxmlFloatAttributeDescription { name = "arrow2-angle", defaultValue = 180f };
-        UxmlColorAttributeDescription arrow2ColorAttr = new UxmlColorAttributeDescription { name = "arrow2-color", defaultValue = Color.blue };
-        UxmlFloatAttributeDescription arrow2ThicknessAttr = new UxmlFloatAttributeDescription { name = "arrow2-thickness", defaultValue = 2f };
-        UxmlFloatAttributeDescription arrow2LengthAttr = new UxmlFloatAttributeDescription { name = "arrow2-length", defaultValue = 0.75f };
+        UxmlFloatAttributeDescription pointerAngleAttr = new UxmlFloatAttributeDescription { name = "arrow2-angle", defaultValue = 180f };
+        UxmlColorAttributeDescription pointerColorAttr = new UxmlColorAttributeDescription { name = "arrow2-color", defaultValue = Color.blue };
+        UxmlFloatAttributeDescription pointerThicknessAttr = new UxmlFloatAttributeDescription { name = "arrow2-thickness", defaultValue = 2f };
+        UxmlFloatAttributeDescription pointerLengthAttr = new UxmlFloatAttributeDescription { name = "arrow2-length", defaultValue = 0.75f };
 
         // Second circle attrs
         UxmlFloatAttributeDescription circle2ThicknessAttr = new UxmlFloatAttributeDescription { name = "circle2-thickness", defaultValue = 0.05f };
@@ -45,10 +48,10 @@ public class SkillCheck : VisualElement
             skillCheck.ArrowThickness = arrowThicknessAttr.GetValueFromBag(bag, cc);
             skillCheck.ArrowLength = Mathf.Clamp01(arrowLengthAttr.GetValueFromBag(bag, cc));
 
-            skillCheck.Arrow2Angle = arrow2AngleAttr.GetValueFromBag(bag, cc);
-            skillCheck.Arrow2Color = arrow2ColorAttr.GetValueFromBag(bag, cc);
-            skillCheck.Arrow2Thickness = arrow2ThicknessAttr.GetValueFromBag(bag, cc);
-            skillCheck.Arrow2Length = Mathf.Clamp01(arrow2LengthAttr.GetValueFromBag(bag, cc));
+            skillCheck.pointerAngle = pointerAngleAttr.GetValueFromBag(bag, cc);
+            skillCheck.pointerColor = pointerColorAttr.GetValueFromBag(bag, cc);
+            skillCheck.pointerThickness = pointerThicknessAttr.GetValueFromBag(bag, cc);
+            skillCheck.pointerLength = Mathf.Clamp01(pointerLengthAttr.GetValueFromBag(bag, cc));
 
             skillCheck.Circle2Thickness = Mathf.Clamp01(circle2ThicknessAttr.GetValueFromBag(bag, cc));
             skillCheck.Circle2FillPercent = circle2FillPercentAttr.GetValueFromBag(bag, cc);
@@ -109,28 +112,28 @@ public class SkillCheck : VisualElement
 
     // === Arrow 2 Properties ===
     private float arrow2Angle = 180f;
-    public float Arrow2Angle
+    public float pointerAngle
     {
         get => arrow2Angle;
         set { arrow2Angle = value; MarkDirtyRepaint(); }
     }
 
     private Color arrow2Color = Color.blue;
-    public Color Arrow2Color
+    public Color pointerColor
     {
         get => arrow2Color;
         set { arrow2Color = value; MarkDirtyRepaint(); }
     }
 
     private float arrow2Thickness = 2f;
-    public float Arrow2Thickness
+    public float pointerThickness
     {
         get => arrow2Thickness;
         set { arrow2Thickness = value; MarkDirtyRepaint(); }
     }
 
     private float arrow2Length = 0.75f;
-    public float Arrow2Length
+    public float pointerLength
     {
         get => arrow2Length;
         set { arrow2Length = Mathf.Clamp01(value); MarkDirtyRepaint(); }
@@ -320,7 +323,7 @@ public class SkillCheck : VisualElement
     public int CheckArrowHit()
     {
         float arrow1Angle = NormalizeAngle(ArrowAngle);
-        float arrow2Angle = NormalizeAngle(Arrow2Angle);
+        float arrow2Angle = NormalizeAngle(pointerAngle);
 
         // === 1. Check if arrow1 is inside arrow2 sector ===
         float angularThickness = arrow2Thickness; // degrees of tolerance
@@ -333,7 +336,7 @@ public class SkillCheck : VisualElement
         float absFill = Mathf.Clamp01(Mathf.Abs(Circle2FillPercent));
         if (absFill > 0f && Circle2Thickness > 0f)
         {
-            float startAngle = NormalizeAngle(Arrow2Angle);
+            float startAngle = NormalizeAngle(pointerAngle);
             float fillAngle = 360f * absFill;
             float direction = Mathf.Sign(Circle2FillPercent);
 
@@ -391,10 +394,10 @@ public class SkillCheck : VisualElement
 
     public float GetValidNewArrow2Angle()
     {
-        const float paddingDegrees = 5f;
+        /* const float paddingDegrees = 5f;
         const float arrowThicknessDeg = 10f; // Fixed angular size
 
-        float oldStart = NormalizeAngle(Arrow2Angle);
+        float oldStart = NormalizeAngle(pointerAngle);
         float fillAngle = 360f * Mathf.Clamp01(Mathf.Abs(Circle2FillPercent));
         float oldEnd = NormalizeAngle(oldStart + Mathf.Sign(Circle2FillPercent) * fillAngle);
 
@@ -407,12 +410,22 @@ public class SkillCheck : VisualElement
 
         float allowedLength = 360f - forbiddenLength;
         float randomOffset = UnityEngine.Random.Range(0f, allowedLength);
-        float newAngle = NormalizeAngle(forbiddenEnd + randomOffset);
+        float newAngle = NormalizeAngle(forbiddenEnd + randomOffset); */
 
+        float fillAngle = 360f * Mathf.Clamp01(Mathf.Abs(Circle2FillPercent));
+        float newAngle = UnityEngine.Random.Range(NormalizeAngle(arrow2Angle + (2*fillAngle + padding)*spinSpeed), NormalizeAngle(arrow2Angle -padding * spinSpeed));
+        spinSpeed *= -1;
         return newAngle;
 
     }
 
+    public float GetFirstArrow2Angle()
+    {
+        spinSpeed = Mathf.Abs(spinSpeed);
+        float fillAngle = 360f * Mathf.Clamp01(Mathf.Abs(Circle2FillPercent));
+        spinSpeed *= -1;
+        return UnityEngine.Random.Range(NormalizeAngle(padding), NormalizeAngle(360f - fillAngle - padding));
 
+    }
 
 }
