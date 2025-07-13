@@ -45,7 +45,7 @@ public class SelectionManager : MonoBehaviour
     private float _submitBlockUntil;
 
     // For testing
-    private string fightScene = "TestSceneMartin";
+    private string fightScene = "StageSelect";
 
 
     private enum SelectionState
@@ -94,7 +94,7 @@ public class SelectionManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "TestSceneMartin")
+        if (scene.name == "StageSelect")
         {
             // Hide selection UI
             characterSelectionUI.SetActive(false);

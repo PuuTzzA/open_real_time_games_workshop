@@ -264,6 +264,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 908885554394733212, guid: 425f8db3526731841b8dcbb541923abf, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1409.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 908885554394733212, guid: 425f8db3526731841b8dcbb541923abf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0023499
+      objectReference: {fileID: 0}
+    - target: {fileID: 3132003748348603993, guid: 425f8db3526731841b8dcbb541923abf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3132003748348603993, guid: 425f8db3526731841b8dcbb541923abf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3132003748348603993, guid: 425f8db3526731841b8dcbb541923abf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3132003748348603993, guid: 425f8db3526731841b8dcbb541923abf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3619812094315272634, guid: 425f8db3526731841b8dcbb541923abf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3619812094315272634, guid: 425f8db3526731841b8dcbb541923abf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3619812094315272634, guid: 425f8db3526731841b8dcbb541923abf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3619812094315272634, guid: 425f8db3526731841b8dcbb541923abf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4626352494101566082, guid: 425f8db3526731841b8dcbb541923abf, type: 3}
       propertyPath: m_Name
       value: StageSelection
@@ -372,6 +412,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6377793426404930210, guid: 425f8db3526731841b8dcbb541923abf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5435774795741258840, guid: 59f7d3337904d94478543ac3881b7446, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
