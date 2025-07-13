@@ -214,14 +214,18 @@ public class MenuUI : MonoBehaviour
                 {
                     firstOption = root.Q<Button>("Exit_To_Menu_Option");
                     root.Q<VisualElement>("Exit_To_Menu_Option").style.display = DisplayStyle.Flex;
+                    root.Q<VisualElement>("Exit_To_Menu_Option").SetEnabled(true);
                     root.Q<VisualElement>("Exit_Game_Option").style.display = DisplayStyle.Flex;
+                    root.Q<VisualElement>("Exit_Game_Option").SetEnabled(true);
                     root.Q<Label>("Exit_Message").style.display = DisplayStyle.None;
                 }
                 else
                 {
                     firstOption = root.Q<Button>("Exit_To_Menu_Option");
                     root.Q<VisualElement>("Exit_To_Menu_Option").style.display = DisplayStyle.None;
+                    root.Q<VisualElement>("Exit_To_Menu_Option").SetEnabled(false);
                     root.Q<VisualElement>("Exit_Game_Option").style.display = DisplayStyle.None;
+                    root.Q<VisualElement>("Exit_Game_Option").SetEnabled(false);
                     root.Q<Label>("Exit_Message").style.display = DisplayStyle.Flex;
                     confirmButton.style.display = DisplayStyle.Flex;
                     confirmButton.SetEnabled(true);
@@ -257,6 +261,23 @@ public class MenuUI : MonoBehaviour
                 break;
             case MenuLevel.option_specific:
                 menuLevel = MenuLevel.option_chosen;
+                if (root.Q<Label>("Exit_Message").enabledSelf)
+                {
+                    var exitButton1 = root.Q<VisualElement>("Exit_To_Menu_Option");
+                    var exitButton2 = root.Q<VisualElement>("Exit_Game_Option");
+                    exitButton1.SetEnabled(true);
+                    exitButton1.style.display = DisplayStyle.Flex;
+                    exitButton2.SetEnabled(true);
+                    exitButton2.style.display = DisplayStyle.Flex;
+                    var exitText = root.Q<Label>("Exit_Message");
+                    exitText.SetEnabled(false);
+                    exitText.style.display = DisplayStyle.None;
+                    root.Q<VisualElement>("Exit_Option").Focus();
+                    confirmButton.SetEnabled(false);
+                    confirmButton.style.display = DisplayStyle.None;
+                    exitButton1.Focus();
+                    return;
+                }
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
@@ -287,31 +308,54 @@ public class MenuUI : MonoBehaviour
 
     private void Confirm()
     {
-        if (!gameObject.activeSelf) return;
-
-        if (menuLevel == MenuLevel.menu && focusedElement is Button button)
+        if (!this.gameObject.activeSelf) return;
+        if (menuLevel == MenuLevel.menu)
         {
-            ChooseOption(button);
+            if (focusedElement is Button option)
+            {
+                ChooseOption(option);
+            }
+
         }
         else if (menuLevel == MenuLevel.option_chosen)
         {
-            var option = root.panel.focusController.focusedElement as Button;
-            if (option == null) return;
-
-            if (option.name == "PvP_Option")
-                SceneManager.LoadScene("Scenes/CharacterSelection");
-            else if (option.name == "Exit_Option")
-                Application.Quit();
-            else if (option.name == "Exit_To_Menu_Option")
-                SceneManager.LoadScene("Scenes/MainMenu");
-            else if (option.name == "Exit_Game_Option")
+            if (root.panel.focusController.focusedElement is not Button option) return;
+            if (option.Equals(root.Q<VisualElement>("PvP_Option")))
             {
-                root.Q<VisualElement>("Exit_To_Menu_Option").style.display = DisplayStyle.None;
-                root.Q<VisualElement>("Exit_Game_Option").style.display = DisplayStyle.None;
-                root.Q<Label>("Exit_Message").style.display = DisplayStyle.Flex;
+                SceneManager.LoadScene("Scenes/CharacterSelection");
+            }
+            else if (option.Equals(root.Q<VisualElement>("Exit_Option")))
+            {
+                Application.Quit();
+            }
+            else if (option.Equals(root.Q<VisualElement>("Exit_To_Menu_Option")))
+            {
+                SceneManager.LoadScene("Scenes/MainMenu");
+            }
+            else if (option.Equals(root.Q<VisualElement>("Exit_Game_Option")))
+            {
+                var exitButton1 = root.Q<VisualElement>("Exit_To_Menu_Option");
+                var exitButton2 = root.Q<VisualElement>("Exit_Game_Option");
+                exitButton1.SetEnabled(false);
+                exitButton1.style.display = DisplayStyle.None;
+                exitButton2.SetEnabled(false);
+                exitButton2.style.display = DisplayStyle.None;
+                var exitText = root.Q<Label>("Exit_Message");
+                exitText.SetEnabled(true);
+                exitText.style.display = DisplayStyle.Flex;
                 root.Q<VisualElement>("Exit_Option").Focus();
-                confirmButton.style.display = DisplayStyle.Flex;
                 confirmButton.SetEnabled(true);
+                confirmButton.style.display = DisplayStyle.Flex;
+                menuLevel = MenuLevel.option_specific;
+            }
+
+        }
+        else if (menuLevel == MenuLevel.option_specific)
+        {
+            
+            if (root.Q<Label>("Exit_Message").enabledSelf)
+            {
+                Application.Quit();
             }
         }
     }

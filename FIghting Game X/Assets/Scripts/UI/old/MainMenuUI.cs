@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
@@ -321,7 +322,14 @@ public class OldMenuUI : MonoBehaviour
         }
         else if (menuLevel == MenuLevel.option_chosen)
         {
-            if (root.panel.focusController.focusedElement is not Button option) return;
+            if (root.panel.focusController.focusedElement is not Button option)
+            {
+                if (isMainMenu && focusedElement == root.Q<Button>("Exit_Option"))
+                {
+                    Application.Quit();
+                }
+                return;
+            }
             if (option.Equals(root.Q<VisualElement>("PvP_Option")))
             {
                 SceneManager.LoadScene("Scenes/CharacterSelection");
@@ -348,8 +356,17 @@ public class OldMenuUI : MonoBehaviour
                 root.Q<VisualElement>("Exit_Option").Focus();
                 confirmButton.SetEnabled(true);
                 confirmButton.style.display = DisplayStyle.Flex;
+                menuLevel = MenuLevel.option_specific;
             }
 
+        }
+        else if (menuLevel == MenuLevel.option_specific)
+        {
+            var option = focusedElement as Button;
+            if (option.Equals(root.Q<Button>("Exit_Game_Option")))
+            {
+                Application.Quit();
+            }
         }
     }
     private void OpenOptionScreen()
