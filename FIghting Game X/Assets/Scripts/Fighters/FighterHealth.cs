@@ -68,7 +68,7 @@ public class FighterHealth : MonoBehaviour
 
         if (currentLives <= 0)
         {
-            if (!qteUsed && killer != null)
+            if (!qteUsed && killer != null && killer != gameObject)
             {
                 qteUsed = true;
                 yield return DeferQTEStart(killer,bomb);
