@@ -123,28 +123,26 @@ public class QTEManager : MonoBehaviour
                      (!fallenResult.IsSuccess && !killerResult.IsSuccess &&
                       fallenResult.Score == killerResult.Score);
 
+        var fallenHealth = fallen.GetComponent<FighterHealth>();
         if (isTie)
         {
             // Handle tie situation, e.g., both players get a second chance
+            fallenHealth.GrantExtraLife(1);
             ResumeRound(fallen, killer);
             return;
         }
 
         bool fallenWins = fallenResult.IsSuccess && !killerResult.IsSuccess || fallenResult.Score > killerResult.Score;
 
-        var fallenHealth = fallen.GetComponent<FighterHealth>();
         if (fallenWins)
         {
-            fallenHealth.GrantExtraLife();
+            fallenHealth.GrantExtraLife(fallenHealth.maxHealth);
         }
         else
         {
-            //bool isFinished = false;
             finishHimPanel.SetActive(false);
             StartCoroutine(fallenHealth.GetFinished(killer));
             return;
-            // Time.timeScale = 1f;
-            //if (isFinished) return;
         }
         ResumeRound(fallen, killer);
     }
