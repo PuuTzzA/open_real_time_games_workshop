@@ -70,7 +70,8 @@ public class FighterHealth : MonoBehaviour
         {
             if (!qteUsed && killer != null)
             {
-                yield return DeferQTEStart(killer, bomb);
+                qteUsed = true;
+                yield return DeferQTEStart(killer,bomb);
             }
             else
             {
@@ -192,13 +193,13 @@ public class FighterHealth : MonoBehaviour
 
 
 
-    public void GrantExtraLife()
+    public void GrantExtraLife(int health)
     {
         currentLives = 1;
         ingameUI.changeStocks(playerInput.playerIndex, 4);
 
         qteUsed = true;
-        currentHealth = maxHealth;
+        currentHealth = health;
         ingameUI.setHealth(playerInput.playerIndex, currentHealth / maxHealth);
 
         gameObject.GetComponent<BaseFighter>().next_idle_action();
