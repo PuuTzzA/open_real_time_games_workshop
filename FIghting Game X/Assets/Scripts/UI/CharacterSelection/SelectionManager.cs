@@ -38,7 +38,6 @@ public class SelectionManager : MonoBehaviour
 
     // General attributes
     private PlayerInput _playerInput;
-    private bool _isNavigatingCharacters = true;
     private bool _isReady;
 
     // Block onSubmit to prevent accidentaly getting ready by pressing x to join

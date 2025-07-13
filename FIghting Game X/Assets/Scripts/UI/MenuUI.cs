@@ -406,7 +406,7 @@ public class MenuUI : MonoBehaviour
     private void DisableOtherPlayers()
     {
         otherPlayers.Clear();
-        foreach (var pi in FindObjectsOfType<PlayerInput>())
+        foreach (var pi in FindObjectsByType<PlayerInput>(FindObjectsSortMode.None))
         {
             if (pi != playerInput)
             {

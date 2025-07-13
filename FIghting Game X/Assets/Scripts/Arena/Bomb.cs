@@ -2,7 +2,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
-using UnityEngine.InputSystem;
 
 public class Bomb : MonoBehaviour
 {

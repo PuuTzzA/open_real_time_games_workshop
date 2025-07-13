@@ -45,7 +45,7 @@ public class QTETriggerTester : MonoBehaviour
         float closestDist = float.MaxValue;
         GameObject closest = null;
 
-        foreach (var fighter in FindObjectsOfType<BaseFighter>())
+        foreach (var fighter in FindObjectsByType<BaseFighter>(FindObjectsSortMode.None))
         {
             if (fighter.gameObject == me) continue;
 

@@ -90,7 +90,6 @@ public class WinGameUI : MonoBehaviour
             default:
                 // ReSharper disable once NotResolvedInText
                 throw new ArgumentOutOfRangeException("WTF IS HAPPENED?");
-                break;
         }
     }
     private void OnDestroy()

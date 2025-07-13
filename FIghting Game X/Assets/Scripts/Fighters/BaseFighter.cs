@@ -297,7 +297,7 @@ public class BaseFighter : MonoBehaviour
         {
             health.TakeDamage(damage, attacker,bomb);
 
-        } catch (Exception e)
+        } catch (Exception)
         {
 
         }
