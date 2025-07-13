@@ -330,6 +330,7 @@ public class MenuUI : MonoBehaviour
             }
             else if (option.Equals(root.Q<VisualElement>("Exit_To_Menu_Option")))
             {
+                Time.timeScale = 1; // Unpause time if it was paused
                 SceneManager.LoadScene("Scenes/MainMenu");
             }
             else if (option.Equals(root.Q<VisualElement>("Exit_Game_Option")))
@@ -389,6 +390,7 @@ public class MenuUI : MonoBehaviour
 
     private void CleanUpActions()
     {
+        playerInput.actions.FindActionMap(UIActionMap).Disable();
         confirmAction.performed -= OnConfirmPressed;
         cancelAction.performed -= OnBackPressed;
     }
