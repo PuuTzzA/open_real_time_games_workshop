@@ -38,7 +38,7 @@ public class FighterHealth : MonoBehaviour
         persistentPlayerManager = FindFirstObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>();
     }
 
-    public void TakeDamage(int dmg, GameObject attacker)
+    public void TakeDamage(int dmg, GameObject attacker, bool bomb = false)
     {
 
         if (currentHealth <= 0)
@@ -52,12 +52,12 @@ public class FighterHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            StartCoroutine(HandleDeath(attacker));
+            StartCoroutine(HandleDeath(attacker, bomb));
         }
     }
 
 
-    private IEnumerator HandleDeath(GameObject killer)
+    private IEnumerator HandleDeath(GameObject killer, bool bomb)
     {
         currentLives--;
         ingameUI.changeStocks(playerInput.playerIndex, currentLives);
@@ -70,7 +70,7 @@ public class FighterHealth : MonoBehaviour
         {
             if (!qteUsed && killer != null)
             {
-                yield return DeferQTEStart(killer);
+                yield return DeferQTEStart(killer, bomb);
             }
             else
             {
@@ -83,11 +83,11 @@ public class FighterHealth : MonoBehaviour
         }
     }
 
-    private IEnumerator DeferQTEStart(GameObject killer)
+    private IEnumerator DeferQTEStart(GameObject killer, bool bomb)
     {
         yield return new WaitForEndOfFrame();
         bool qteFinished = false;
-        QTEManager.Instance.StartQTE(this.gameObject, killer, () =>
+        QTEManager.Instance.StartQTE(this.gameObject, killer, bomb, () =>
         {
             qteFinished = true;
         });
@@ -237,20 +237,27 @@ public class FighterHealth : MonoBehaviour
 
     }
 
-    public IEnumerator GetFinished(GameObject killer)
+    public IEnumerator GetFinished(GameObject killer, bool bomb)
     {
-        // Play cutscene
         var cutscene = FindAnyObjectByType<CutscenePlayer>(FindObjectsInactive.Include);
+
+        bool cutsceneDone = false;
+
+        // Subscribe to event
+        cutscene.OnCutsceneFinished += () => cutsceneDone = true;
+
+        // Play the cutscene
         cutscene.PlayCutscene(
             killer.GetComponentInChildren<BaseFighter>().playerColor,
-            GetComponentInChildren<BaseFighter>().playerColor
+            GetComponentInChildren<BaseFighter>().playerColor,
+            bomb ? CutscenePlayer.CutsceneType.Bomb_Finisher : CutscenePlayer.CutsceneType.Hammer_finisher
         );
 
-        // Option A: Wait for animation to finish
-        yield return new WaitForSecondsRealtime(8.8f);
+        // Wait until cutscene is finished
+        yield return new WaitUntil(() => cutsceneDone);
 
-        // OR Option B: Wait fixed time
-        // yield return new WaitForSecondsRealtime(8.75f);
+        // Optionally: Unsubscribe if needed (not necessary in this one-shot use case)
+        // cutscene.OnCutsceneFinished -= ...;
 
         // Continue after cutscene
         Die(killer);

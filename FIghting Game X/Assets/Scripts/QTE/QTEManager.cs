@@ -44,7 +44,7 @@ public class QTEManager : MonoBehaviour
         persistentPlayerManager = FindFirstObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>();
     }
 
-    public void StartQTE(GameObject fallen, GameObject killer, Action onDone)
+    public void StartQTE(GameObject fallen, GameObject killer, bool bomb, Action onDone)
     {
         PauseAllExcept(fallen, killer);
         _ingameUI = FindAnyObjectByType<IngameUI>(FindObjectsInactive.Include);
@@ -53,10 +53,10 @@ public class QTEManager : MonoBehaviour
         p1Input = fallen.GetComponent<PlayerInput>();
         p2Input = killer.GetComponent<PlayerInput>();
         // Pick a random int between 0 and 2
-        StartCoroutine(StartQTESequence(fallen, killer, onDone));
+        StartCoroutine(StartQTESequence(fallen, killer,bomb, onDone));
     }
 
-    private IEnumerator StartQTESequence(GameObject fallen, GameObject killer, Action onDone)
+    private IEnumerator StartQTESequence(GameObject fallen, GameObject killer,bool bomb, Action onDone)
     {
         int type = UnityEngine.Random.Range(0, 4) < 3 ? 1 : 0; // Randomly choose 
         if (type == 1)
@@ -85,10 +85,10 @@ public class QTEManager : MonoBehaviour
         // 2) Hide intro
 
         // 3) Now start the actual minigame
-        StartCoroutine(SpawnMinigame(type, fallen, killer, onDone));
+        StartCoroutine(SpawnMinigame(type, fallen, killer,bomb, onDone));
     }
 
-    private IEnumerator SpawnMinigame(int type, GameObject fallen, GameObject killer, Action onDone)
+    private IEnumerator SpawnMinigame(int type, GameObject fallen, GameObject killer,bool bomb, Action onDone)
     {
         // instantiate the correct UI and init it
         IQTE qte;
@@ -112,12 +112,12 @@ public class QTEManager : MonoBehaviour
 
         qte.Init(p1Input, p2Input, (r1, r2) =>
         {
-            EvaluateDualQTE(fallen, killer, r1, r2);
+            EvaluateDualQTE(fallen, killer,bomb, r1, r2);
             onDone?.Invoke();
         });
     }
 
-    private void EvaluateDualQTE(GameObject fallen, GameObject killer, QTEResult fallenResult, QTEResult killerResult)
+    private void EvaluateDualQTE(GameObject fallen, GameObject killer, bool bomb, QTEResult fallenResult, QTEResult killerResult)
     {
         bool isTie = fallenResult.IsSuccess && killerResult.IsSuccess ||
                      (!fallenResult.IsSuccess && !killerResult.IsSuccess &&
@@ -141,7 +141,7 @@ public class QTEManager : MonoBehaviour
         {
             //bool isFinished = false;
             finishHimPanel.SetActive(false);
-            StartCoroutine(fallenHealth.GetFinished(killer));
+            StartCoroutine(fallenHealth.GetFinished(killer, bomb));
             return;
             // Time.timeScale = 1f;
             //if (isFinished) return;
@@ -155,7 +155,7 @@ public class QTEManager : MonoBehaviour
         // This could involve showing a sequence of inputs that the player must replicate
     }
 
-    private void ButtonSmashMinigame(GameObject fallen, GameObject killer)
+    private void ButtonSmashMinigame(GameObject fallen, GameObject killer, bool bomb)
     {
         var ui = Instantiate(buttonSmashUIPrefab);
         var qteUI = ui.GetComponent<ButtonSmashQTE>();
@@ -163,7 +163,7 @@ public class QTEManager : MonoBehaviour
         // Initialize the QTE UI with player inputs and define the callback to evaluate results after finishing
         qteUI.Init(p1Input, p2Input, (fallenResult, killerResult) =>
         {
-            EvaluateDualQTE(fallen, killer, fallenResult, killerResult);
+            EvaluateDualQTE(fallen, killer,bomb, fallenResult, killerResult);
         });
     }
 

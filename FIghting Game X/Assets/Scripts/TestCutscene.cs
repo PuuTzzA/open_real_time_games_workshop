@@ -14,6 +14,6 @@ public class TestCutscene : MonoBehaviour
     private IEnumerator TestCutScene()
     {
         yield return new WaitForSecondsRealtime(5f);
-        FindAnyObjectByType<CutscenePlayer>(FindObjectsInactive.Include).PlayCutscene(new Color(1f, 0.5f, 0.5f), new Color(0.5f, 1f, 0.5f));
+       // FindAnyObjectByType<CutscenePlayer>(FindObjectsInactive.Include).PlayCutscene(new Color(1f, 0.5f, 0.5f), new Color(0.5f, 1f, 0.5f));
     }
 }

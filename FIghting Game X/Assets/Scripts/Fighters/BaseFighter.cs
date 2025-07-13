@@ -291,11 +291,11 @@ public class BaseFighter : MonoBehaviour
     }
 
 
-    public void take_damage(int damage, GameObject attacker)
+    public void take_damage(int damage, GameObject attacker, bool bomb= false)
     {
         try
         {
-            health.TakeDamage(damage, attacker);
+            health.TakeDamage(damage, attacker,bomb);
 
         } catch (Exception e)
         {

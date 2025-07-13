@@ -20,7 +20,7 @@ public class ExplosionHitbox : CooldownHitbox
             Vector2 knockDir = (fighter.transform.position - transform.position).normalized;
             fighter.knockback_heavy(knockDir * force, 20);
             put_on_cooldown(fighter.id);
-            fighter.take_damage(damage, transform.parent.gameObject.GetComponent<Bomb>().holder.gameObject);
+            fighter.take_damage(damage, transform.parent.gameObject.GetComponent<Bomb>().holder.gameObject, true);
         }
     }
 }
