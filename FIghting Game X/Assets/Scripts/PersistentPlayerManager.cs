@@ -235,6 +235,7 @@ private IEnumerator SpawnAllPlayers()
             pairWithDevices: data.Devices
         );
 
+        character.GetComponent<OffscreenMarker>().Color = availableColors[data.ColorChoice];
         SpriteRenderer[] renderers = character.GetComponentsInChildren<SpriteRenderer>(true);
         foreach (SpriteRenderer renderer in renderers)
         {

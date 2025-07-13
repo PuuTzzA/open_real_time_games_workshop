@@ -465,7 +465,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press a Key to join
+  m_text: Press a key to join!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 34cba3729270fd347b760e956b5386d4, type: 2}
   m_sharedMaterial: {fileID: 3173168304662426381, guid: 34cba3729270fd347b760e956b5386d4, type: 2}
@@ -492,7 +492,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.1
+  m_fontSize: 33.9
   m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 1
