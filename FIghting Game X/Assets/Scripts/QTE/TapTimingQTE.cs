@@ -76,31 +76,34 @@ public class TapTimingQTE : MonoBehaviour, IQTE
 
     private void OnSmash(int player)
     {
-        int hitResult = ui.skillchecks[player].CheckArrowHit();
-
-        switch (hitResult)
+        if (angles.Length > points[player])
         {
-            case 1:
-                points[player]++;
-                ui.skillchecks[player].spinSpeed *= -1;
-                ui.skillchecks[player].pointerAngle = angles[points[player]];
-                ui.skillchecks[player].Circle2FillPercent *= -1;
-                break;
-            case 2:
-                points[player]++;
-                ui.skillchecks[player].spinSpeed *= spinSpeedmultiplier;
-                ui.skillchecks[player].spinSpeed *= -1;
-                ui.skillchecks[player].pointerAngle = angles[points[player]];
-                ui.skillchecks[player].Circle2FillPercent *= -1;
-                break;
-            default:
-                ui.skillchecks[player].rotating = false;
-                StartCoroutine(pauseArrow(player));
-                if (player == 0)
-                    p1Smash.Disable();
-                else
-                    p2Smash.Disable();
-                break;
+            int hitResult = ui.skillchecks[player].CheckArrowHit();
+
+            switch (hitResult)
+            {
+                case 1:
+                    points[player]++;
+                    ui.skillchecks[player].spinSpeed *= -1;
+                    ui.skillchecks[player].pointerAngle = angles[points[player]];
+                    ui.skillchecks[player].Circle2FillPercent *= -1;
+                    break;
+                case 2:
+                    points[player]++;
+                    ui.skillchecks[player].spinSpeed *= spinSpeedmultiplier;
+                    ui.skillchecks[player].spinSpeed *= -1;
+                    ui.skillchecks[player].pointerAngle = angles[points[player]];
+                    ui.skillchecks[player].Circle2FillPercent *= -1;
+                    break;
+                default:
+                    ui.skillchecks[player].rotating = false;
+                    StartCoroutine(pauseArrow(player));
+                    if (player == 0)
+                        p1Smash.Disable();
+                    else
+                        p2Smash.Disable();
+                    break;
+            }
         }
     }
 
