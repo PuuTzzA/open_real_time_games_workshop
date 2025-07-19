@@ -37,6 +37,12 @@ public class WinGameUI : MonoBehaviour
             winnerText = "PLAYER " + (winnerIndex + 1) + " Wins!";
         }
         root.Q<Label>("Winner_Nomination").text = winnerText;
+
+        var persistentPlayerManager
+            = FindFirstObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>();
+        var playersAlive = persistentPlayerManager.getAlivePlayers();
+
+        root.Q<Label>("Winner_Nomination").style.color = playersAlive[0].gameObject.GetComponent<BaseFighter>().playerColor;
         root.Q<Button>("Rematch_Button").Focus();
         inputActions.FindAction("Confirm").performed += OnConfirmPressed;
     }
