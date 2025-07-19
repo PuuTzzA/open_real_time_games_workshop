@@ -63,7 +63,6 @@ public class FighterHealth : MonoBehaviour
         currentLives--;
         ingameUI.changeStocks(playerInput.playerIndex, currentLives);
         fighterState.start_action(FighterAction.Death);
-        gameObject.GetComponent<OffscreenMarker>().DisableIndicator();
         GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
 
         if (currentLives <= 0)
@@ -71,11 +70,11 @@ public class FighterHealth : MonoBehaviour
             if (!qteUsed && killer != null && killer != gameObject)
             {
                 qteUsed = true;
-                yield return DeferQTEStart(killer,bomb);
+                yield return DeferQTEStart(killer, bomb);
             }
             else
             {
-                yield return new WaitUntil(() => { return fighterState.animation_handler.is_finished(); }) ;
+                yield return new WaitUntil(() => { return fighterState.animation_handler.is_finished(); });
                 Die();
             }
         }
@@ -110,7 +109,10 @@ public class FighterHealth : MonoBehaviour
     private IEnumerator RespawnRoutine()
     {
 
-        yield return new WaitForSeconds(1.5f); // Delay before respawning
+        yield return new WaitForSeconds(0.5f);
+        gameObject.GetComponent<OffscreenMarker>().DisableIndicator();
+
+        yield return new WaitForSeconds(1.0f); // Delay before respawning
         Debug.Log("respawn");
         gameObject.GetComponent<OffscreenMarker>().EnableIndicator();
 
