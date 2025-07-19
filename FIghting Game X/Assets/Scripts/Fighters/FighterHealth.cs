@@ -63,8 +63,8 @@ public class FighterHealth : MonoBehaviour
         currentLives--;
         ingameUI.changeStocks(playerInput.playerIndex, currentLives);
         fighterState.start_action(FighterAction.Death);
+        gameObject.GetComponent<OffscreenMarker>().DisableIndicator();
         GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-
 
         if (currentLives <= 0)
         {
@@ -112,7 +112,7 @@ public class FighterHealth : MonoBehaviour
 
         yield return new WaitForSeconds(1.5f); // Delay before respawning
         Debug.Log("respawn");
-
+        gameObject.GetComponent<OffscreenMarker>().EnableIndicator();
 
 
         // Choose a random spawn point

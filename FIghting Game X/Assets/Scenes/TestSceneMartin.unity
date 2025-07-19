@@ -12037,7 +12037,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5679606587419961553, guid: 5d75320298b0cd478bbc9daafbae1543, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 2.64
       objectReference: {fileID: 0}
     - target: {fileID: 5679606587419961553, guid: 5d75320298b0cd478bbc9daafbae1543, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18376,7 +18376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cutscenes:
   - {fileID: 6125820186807089451, guid: 504c11ace699876478c646492e1494c1, type: 3}
-  - {fileID: 8753490193585020743, guid: 60b0dded00b9b8b45a46d0f27a607a31, type: 3}
+  - {fileID: 1965237211293756369, guid: eb07a9c78e64e8349b6f9d2c393523dd, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -18385,7 +18385,6 @@ SceneRoots:
   - {fileID: 1792142645}
   - {fileID: 851320855}
   - {fileID: 154796361}
-  - {fileID: 1264215292}
   - {fileID: 1591878322}
   - {fileID: 465540595}
   - {fileID: 1654227726}
@@ -18400,3 +18399,4 @@ SceneRoots:
   - {fileID: 482183153}
   - {fileID: 40822946}
   - {fileID: 3698309310378624470}
+  - {fileID: 1264215292}
