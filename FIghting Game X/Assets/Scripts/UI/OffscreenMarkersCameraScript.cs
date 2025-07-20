@@ -31,6 +31,12 @@ public class OffscreenMarkersCameraScript : MonoBehaviour
 
     [Tooltip("Ease curve for 0→1 scale (played backwards to exit).")]
     public AnimationCurve ease = AnimationCurve.EaseInOut(0, 0, 1, 1);
+    [Tooltip("Duration of the manual 'damage' scale-up before disappearing.")]
+    public float manualHideDuration = 0.3f;
+
+    [Tooltip("How much larger the icon gets during the 'damage' animation.")]
+    public float manualHideScaleBoost = 1.5f;
+
     /*──────────────────────────────────────────────────────────────────────────*/
 
     /*────────────────── singleton helper ──────────────────*/
@@ -53,7 +59,11 @@ public class OffscreenMarkersCameraScript : MonoBehaviour
     Camera _cam;
     Camera Cam => _cam ??= GetComponent<Camera>();
 
-    private struct State { public float progress; }
+    private struct State
+    {
+        public float progress;       // 0 to 1 for on/off animation
+        public float manualAnimT;    // time progression for manual hide anim
+    }
     readonly Dictionary<OffscreenMarker, State> _states = new();
 
     /*──────────────────  Registration helpers  ──────────────────*/
@@ -90,6 +100,15 @@ public class OffscreenMarkersCameraScript : MonoBehaviour
             _states[m] = new State { progress = 0f }; // add if missing
     }
 
+    public void ResetManualAnim(OffscreenMarker m)
+    {
+        if (_states.TryGetValue(m, out var s))
+        {
+            s.manualAnimT = 0f; // ← reset timer for re-triggering the animation
+            _states[m] = s;
+        }
+    }
+
     /*────────────────────────  State machine  ────────────────────────*/
     void LateUpdate()
     {
@@ -98,10 +117,36 @@ public class OffscreenMarkersCameraScript : MonoBehaviour
         {
             if (!m) { _states.Remove(m); continue; }
 
+            var s = _states[m];
+
+            if (m.IsPlayingManualHideAnim())
+            {
+                s.manualAnimT += Time.deltaTime;
+                float t = s.manualAnimT / manualHideDuration;
+
+                if (t >= 1f)
+                {
+                    m.StopManualHideAnim();
+                    s.progress = 0f;
+                }
+                else
+                {
+                    s.progress = 1f; // keep it visible during anim
+                }
+
+                _states[m] = s;
+
+                if (t >= 1f)
+                {
+                    m.StopManualHideAnim();
+                    s.progress = 0f; // start normal scale-down
+                }
+                continue;
+            }
+
             bool offScreen = !IsOnScreen(m.transform.position);
             bool shouldShow = offScreen && !m.IsManuallyHidden();
 
-            var s = _states[m];
             float target = shouldShow ? 1f : 0f;
             float duration = shouldShow ? enterDuration : exitDuration;
             float speed = duration <= 0.0001f ? float.PositiveInfinity : 1f / duration;
@@ -124,6 +169,14 @@ public class OffscreenMarkersCameraScript : MonoBehaviour
             if (!m || st.progress <= 0.001f) continue;
 
             float s = ease.Evaluate(st.progress) * m.Scale;
+
+            // Play "damage" scale pulse when manually hiding
+            if (m.IsPlayingManualHideAnim())
+            {
+                float t = st.manualAnimT / manualHideDuration;
+                float pulse = Mathf.Sin(t * Mathf.PI); // 0→1→0 curve
+                s *= Mathf.Lerp(1f, manualHideScaleBoost, pulse);
+            }
 
             /*── keep original aspect ratios ─*/
             float iconH = baseIconSize * resScale * s;

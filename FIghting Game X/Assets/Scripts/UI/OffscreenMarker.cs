@@ -12,6 +12,7 @@ public class OffscreenMarker : MonoBehaviour
     public Color Color = Color.white;
 
     private bool manuallyHidden = false;
+    private bool playingManualHideAnimation = false;
 
     [Header("Per‑marker settings")]
     [Tooltip("Extra scale multiplier for this marker (1 = default).")]
@@ -22,15 +23,20 @@ public class OffscreenMarker : MonoBehaviour
     public void DisableIndicator()
     {
         manuallyHidden = true;
-        OffscreenMarkersCameraScript.Instance()?.ForceHide(this);
+        playingManualHideAnimation = true;
+        OffscreenMarkersCameraScript.Instance()?.ResetManualAnim(this);
+        OffscreenMarkersCameraScript.Instance()?.ForceShow(this);
     }
 
     public void EnableIndicator()
     {
         manuallyHidden = false;
+        playingManualHideAnimation = false;
         OffscreenMarkersCameraScript.Instance()?.ForceShow(this);
     }
 
     public bool IsManuallyHidden() => manuallyHidden;
+    public bool IsPlayingManualHideAnim() => playingManualHideAnimation;
+    public void StopManualHideAnim() => playingManualHideAnimation = false;
 }
 #endregion
