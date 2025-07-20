@@ -237,7 +237,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.5, y: 0.6}
+    oldSize: {x: 11, y: 0.67}
     newSize: {x: 6.5, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -245,10 +245,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2.59, y: -0.29999998}
-      - {x: 3.25, y: -0.29999998}
-      - {x: 3.25, y: 0.29999998}
-      - {x: -3.1999998, y: 0.29999998}
+    - - {x: -4.88, y: -0.29999998}
+      - {x: 5.5, y: -0.29999998}
+      - {x: 5.5, y: 0.29999998}
+      - {x: -5.48, y: 0.29999998}
   m_UseDelaunayMesh: 0
 --- !u!212 &67583349
 SpriteRenderer:
@@ -294,7 +294,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1793326521858981028, guid: f51c24a1194f1dd429d922f08c7582d2, type: 3}
+  m_Sprite: {fileID: -2741137224065501288, guid: 29e44d9a7f6330e478b35d1d3a92a8fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -315,7 +315,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.5, y: -3.7, z: 0}
-  m_LocalScale: {x: 1.6924115, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2557,7 +2557,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.5, y: 0.6}
+    oldSize: {x: 11, y: 0.67}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2565,10 +2565,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -3.25, y: -0.29999998}
-      - {x: 2.59, y: -0.29999998}
-      - {x: 3.1899998, y: 0.29999998}
-      - {x: -3.25, y: 0.29999998}
+    - - {x: -5.5, y: -0.29999998}
+      - {x: 4.88, y: -0.29999998}
+      - {x: 5.48, y: 0.29999998}
+      - {x: -5.5, y: 0.29999998}
   m_UseDelaunayMesh: 0
 --- !u!212 &2133588069
 SpriteRenderer:
@@ -2614,9 +2614,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413439640577822154, guid: e01757bf26351494dae82cc4d0837d42, type: 3}
+  m_Sprite: {fileID: -2741137224065501288, guid: 29e44d9a7f6330e478b35d1d3a92a8fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -2635,7 +2635,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.5, y: -3.7, z: 0}
-  m_LocalScale: {x: 1.6924, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
