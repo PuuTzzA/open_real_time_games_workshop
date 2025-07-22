@@ -189,8 +189,10 @@ public class QTEManager : MonoBehaviour
         {
             if (fighter.playerIndex == fallen.GetComponent<PlayerInput>().playerIndex || fighter.playerIndex == killer.GetComponent<PlayerInput>().playerIndex)
                 continue;
+            
+            // Pause all components except the fallen and killer fighters
+            fighter.DeactivateInput();
 
-            fighter.enabled = false;
             pausedComponents.Add(fighter);
         }
 
@@ -202,7 +204,7 @@ public class QTEManager : MonoBehaviour
         _ingameUI.GetComponent<UIDocument>().rootVisualElement.style.display = DisplayStyle.Flex;
         foreach (var comp in pausedComponents)
         {
-            if (comp != null) comp.enabled = true;
+            if (comp != null) comp.GetComponent<PlayerInput>().ActivateInput();
         }
         pausedComponents.Clear();
         finishHimPanel.SetActive(false);
