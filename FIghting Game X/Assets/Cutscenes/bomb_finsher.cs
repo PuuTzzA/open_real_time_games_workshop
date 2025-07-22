@@ -5,7 +5,7 @@ public class bomb_finsher : Cutscene
 {
     [SerializeField] private RawImage beingFinishedImage;
 
-    public override float CutsceneDuration => 6f;
+    public override float CutsceneDuration => 9.5f;
 
     public override void Instantiate(Color finisherColor, Color finishedColor)
     {

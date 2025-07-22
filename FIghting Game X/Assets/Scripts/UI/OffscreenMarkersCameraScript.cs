@@ -27,15 +27,21 @@ public class OffscreenMarkersCameraScript : MonoBehaviour
     public float enterDuration = 0.1f;
 
     [Tooltip("Seconds for the scale‑OUT animation.")]
-    public float exitDuration  = 0.1f;
+    public float exitDuration = 0.1f;
 
     [Tooltip("Ease curve for 0→1 scale (played backwards to exit).")]
     public AnimationCurve ease = AnimationCurve.EaseInOut(0, 0, 1, 1);
+    [Tooltip("Duration of the manual 'damage' scale-up before disappearing.")]
+    public float manualHideDuration = 0.3f;
+
+    [Tooltip("How much larger the icon gets during the 'damage' animation.")]
+    public float manualHideScaleBoost = 1.5f;
+
     /*──────────────────────────────────────────────────────────────────────────*/
 
     /*────────────────── singleton helper ──────────────────*/
     private static OffscreenMarkersCameraScript _instance;
-    public  static OffscreenMarkersCameraScript Instance()
+    public static OffscreenMarkersCameraScript Instance()
     {
         if (_instance) return _instance;
         var cam = Camera.main;
@@ -45,7 +51,7 @@ public class OffscreenMarkersCameraScript : MonoBehaviour
             return null;
         }
         _instance = cam.GetComponent<OffscreenMarkersCameraScript>()
-               ??  cam.gameObject.AddComponent<OffscreenMarkersCameraScript>();
+               ?? cam.gameObject.AddComponent<OffscreenMarkersCameraScript>();
         return _instance;
     }
 
@@ -53,7 +59,11 @@ public class OffscreenMarkersCameraScript : MonoBehaviour
     Camera _cam;
     Camera Cam => _cam ??= GetComponent<Camera>();
 
-    private struct State { public float progress; }
+    private struct State
+    {
+        public float progress;       // 0 to 1 for on/off animation
+        public float manualAnimT;    // time progression for manual hide anim
+    }
     readonly Dictionary<OffscreenMarker, State> _states = new();
 
     /*──────────────────  Registration helpers  ──────────────────*/
@@ -74,8 +84,29 @@ public class OffscreenMarkersCameraScript : MonoBehaviour
     Vector3 FlipBehindCamera(Vector3 p)
     {
         Vector3 camToP = p - Cam.transform.position;
-        float   dot    = Vector3.Dot(camToP, Cam.transform.forward);
+        float dot = Vector3.Dot(camToP, Cam.transform.forward);
         return dot >= 0 ? p : p - 2f * dot * Cam.transform.forward;
+    }
+
+    public void ForceHide(OffscreenMarker m)
+    {
+        if (_states.TryGetValue(m, out var s))
+            _states[m] = new State { progress = s.progress }; // keep current progress (for smooth exit)
+    }
+
+    public void ForceShow(OffscreenMarker m)
+    {
+        if (!_states.ContainsKey(m))
+            _states[m] = new State { progress = 0f }; // add if missing
+    }
+
+    public void ResetManualAnim(OffscreenMarker m)
+    {
+        if (_states.TryGetValue(m, out var s))
+        {
+            s.manualAnimT = 0f; // ← reset timer for re-triggering the animation
+            _states[m] = s;
+        }
     }
 
     /*────────────────────────  State machine  ────────────────────────*/
@@ -86,15 +117,42 @@ public class OffscreenMarkersCameraScript : MonoBehaviour
         {
             if (!m) { _states.Remove(m); continue; }
 
+            var s = _states[m];
+
+            if (m.IsPlayingManualHideAnim())
+            {
+                s.manualAnimT += Time.deltaTime;
+                float t = s.manualAnimT / manualHideDuration;
+
+                if (t >= 1f)
+                {
+                    m.StopManualHideAnim();
+                    s.progress = 0f;
+                }
+                else
+                {
+                    s.progress = 1f; // keep it visible during anim
+                }
+
+                _states[m] = s;
+
+                if (t >= 1f)
+                {
+                    m.StopManualHideAnim();
+                    s.progress = 0f; // start normal scale-down
+                }
+                continue;
+            }
+
             bool offScreen = !IsOnScreen(m.transform.position);
-            var  s         = _states[m];
+            bool shouldShow = offScreen && !m.IsManuallyHidden();
 
-            float target   = offScreen ? 1f : 0f;
-            float duration = offScreen ? enterDuration : exitDuration;
-            float speed    = duration <= 0.0001f ? float.PositiveInfinity : 1f / duration;
+            float target = shouldShow ? 1f : 0f;
+            float duration = shouldShow ? enterDuration : exitDuration;
+            float speed = duration <= 0.0001f ? float.PositiveInfinity : 1f / duration;
 
-            s.progress     = Mathf.MoveTowards(s.progress, target, Time.deltaTime * speed);
-            _states[m]     = s;
+            s.progress = Mathf.MoveTowards(s.progress, target, Time.deltaTime * speed);
+            _states[m] = s;
         }
     }
 
@@ -106,36 +164,44 @@ public class OffscreenMarkersCameraScript : MonoBehaviour
 
         foreach (var kv in _states)
         {
-            var m  = kv.Key;
+            var m = kv.Key;
             var st = kv.Value;
             if (!m || st.progress <= 0.001f) continue;
 
-            float s        = ease.Evaluate(st.progress) * m.Scale;
+            float s = ease.Evaluate(st.progress) * m.Scale;
+
+            // Play "damage" scale pulse when manually hiding
+            if (m.IsPlayingManualHideAnim())
+            {
+                float t = st.manualAnimT / manualHideDuration;
+                float pulse = Mathf.Sin(t * Mathf.PI); // 0→1→0 curve
+                s *= Mathf.Lerp(1f, manualHideScaleBoost, pulse);
+            }
 
             /*── keep original aspect ratios ─*/
-            float iconH       = baseIconSize * resScale * s;
-            float arrowH      = iconH * arrowToIcon;
+            float iconH = baseIconSize * resScale * s;
+            float arrowH = iconH * arrowToIcon;
 
-            float iconAspect  = m.Icon  ? (float)m.Icon.width  / m.Icon.height  : 1f;
+            float iconAspect = m.Icon ? (float)m.Icon.width / m.Icon.height : 1f;
             float arrowAspect = m.Arrow ? (float)m.Arrow.width / m.Arrow.height : 1f;
 
-            float iconW       = iconH   * iconAspect;
-            float arrowW      = arrowH  * arrowAspect;
+            float iconW = iconH * iconAspect;
+            float arrowW = arrowH * arrowAspect;
 
-            Vector2 iExt      = new(iconW  * 0.5f, iconH  * 0.5f);
-            Vector2 aExt      = new(arrowW * 0.5f, arrowH * 0.5f);
+            Vector2 iExt = new(iconW * 0.5f, iconH * 0.5f);
+            Vector2 aExt = new(arrowW * 0.5f, arrowH * 0.5f);
 
             /*── clamp icon centre so arrow stays on‑screen ─*/
-            Vector3 wp   = FlipBehindCamera(m.transform.position);
-            Vector2 scr  = Cam.WorldToScreenPoint(wp);
-            scr.y        = screenRect.height - scr.y;
+            Vector3 wp = FlipBehindCamera(m.transform.position);
+            Vector2 scr = Cam.WorldToScreenPoint(wp);
+            scr.y = screenRect.height - scr.y;
 
             float gapToIcon = arrowOffset * resScale * s;                           // icon→arrow
-            float edgePad   = arrowEdgePadding * resScale;                          // ★ NEW
-            float margin    = arrowH + gapToIcon + edgePad;                         // ★ CHANGED
+            float edgePad = arrowEdgePadding * resScale;                          // ★ NEW
+            float margin = arrowH + gapToIcon + edgePad;                         // ★ CHANGED
 
             Vector2 iPos = new(
-                Mathf.Clamp(scr.x, iExt.x + margin, screenRect.width  - iExt.x - margin),
+                Mathf.Clamp(scr.x, iExt.x + margin, screenRect.width - iExt.x - margin),
                 Mathf.Clamp(scr.y, iExt.y + margin, screenRect.height - iExt.y - margin));
 
             /*── ICON ─*/
@@ -150,11 +216,11 @@ public class OffscreenMarkersCameraScript : MonoBehaviour
                 Vector2 toTarget = scr - iPos;
                 if (toTarget.sqrMagnitude > .0001f)
                 {
-                    Vector2 dir   = toTarget.normalized;
-                    float   angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
+                    Vector2 dir = toTarget.normalized;
+                    float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
 
-                    float   gap   = iExt.x + aExt.y + gapToIcon;
-                    Vector2 aPos  = iPos + dir * gap;
+                    float gap = iExt.x + aExt.y + gapToIcon;
+                    Vector2 aPos = iPos + dir * gap;
 
                     Matrix4x4 old = GUI.matrix;
                     GUIUtility.RotateAroundPivot(angle, aPos);
