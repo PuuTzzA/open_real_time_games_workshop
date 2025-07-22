@@ -160,6 +160,12 @@ public class PersistentPlayerManager : MonoBehaviour
     else if (scene.name == "MainMenu")
     {
         Debug.Log("Entering MainMenu. Resetting player state.");
+        ResetPlayerState();
+    }
+}
+
+    public void ResetPlayerState()
+    {
         GameManager.PlayerChoices      = new List<int> { -1, -1, -1, -1 };
         GameManager.PlayerColorChoices = new List<int> { -1, -1, -1, -1 };
 
@@ -185,9 +191,8 @@ public class PersistentPlayerManager : MonoBehaviour
         Destroy(spawnPointsObject);
         Destroy(gameObject);
     }
-}
 
-private IEnumerator SpawnAllPlayers()
+    private IEnumerator SpawnAllPlayers()
 {
     Debug.Log("Starting SpawnAllPlayers...");
     yield return null;
