@@ -533,8 +533,8 @@ public class BaseFighter : MonoBehaviour
         {
             player_sounds.PlayJump();
             state.start_action(FighterAction.Jump);
-            //jump();
-            delayed_actions.push(new DelayedAction(jump, 5));
+            jump();
+            //delayed_actions.push(new DelayedAction(jump, 5));
             return true;
         }
         return false;
