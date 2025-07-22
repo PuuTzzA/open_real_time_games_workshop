@@ -35,7 +35,7 @@ public class StageSelectionManager : MonoBehaviour
 
         navigateAction.performed += OnNavigate;
         submitAction.performed += OnSubmit;
-        //cancelAction.performed += OnCancel;
+        cancelAction.performed += OnCancel;
 
         uiMap.Enable();
 
@@ -80,13 +80,13 @@ public class StageSelectionManager : MonoBehaviour
         SceneManager.LoadScene(GameManager.SelectedStageScene);
     }
 
-/*     public void OnCancel(InputAction.CallbackContext context)
+     public void OnCancel(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
         FindAnyObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>().ResetPlayerState();
         SelectionManager.ResetInstances();
         SceneManager.LoadScene("CharacterSelection");
-    } */
+    }
 
     private void UpdateStageUI()
     {
