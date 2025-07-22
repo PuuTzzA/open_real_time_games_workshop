@@ -22,6 +22,7 @@ public class StageSelectionManager : MonoBehaviour
 
     private InputAction navigateAction;
     private InputAction submitAction;
+    private InputAction cancelAction;
 
     private int selectedStageIndex = 0;
 
@@ -30,9 +31,11 @@ public class StageSelectionManager : MonoBehaviour
         var uiMap = inputActions.FindActionMap("UI");
         navigateAction = uiMap.FindAction("Navigate");
         submitAction = uiMap.FindAction("Submit");
+        cancelAction = uiMap.FindAction("Cancel");
 
         navigateAction.performed += OnNavigate;
         submitAction.performed += OnSubmit;
+        cancelAction.performed += OnCancel;
 
         uiMap.Enable();
 
@@ -74,6 +77,12 @@ public class StageSelectionManager : MonoBehaviour
 
         // ToDo: Change this to your real character select scene (if needed)
         SceneManager.LoadScene(GameManager.SelectedStageScene);
+    }
+
+    public void OnCancel(InputAction.CallbackContext context)
+    {
+        if (!context.performed) return;
+        SceneManager.LoadScene("CharacterSelection");
     }
 
     private void UpdateStageUI()
