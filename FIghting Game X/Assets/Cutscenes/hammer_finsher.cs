@@ -7,7 +7,7 @@ public class hammer_finsher : Cutscene
     [SerializeField] private RawImage finisherImage;
 
 
-    public override float CutsceneDuration => 8.75f;
+    public override float CutsceneDuration => 9.7f;
 
     public override void Instantiate(Color finisherColor, Color finishedColor)
     {
