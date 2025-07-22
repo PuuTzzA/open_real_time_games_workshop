@@ -106,6 +106,11 @@ public class SelectionManager : MonoBehaviour
         }
     }
 
+    public static void ResetInstances()
+    {
+        _instances.Clear();
+    }
+
     public void OnNavigate(InputAction.CallbackContext context)
     {
         Vector2 navigate = context.ReadValue<Vector2>();
@@ -257,7 +262,8 @@ public class SelectionManager : MonoBehaviour
 
     public void GoBack()
     {
-        //SceneManager.LoadScene("MainMenu");
+        ResetInstances();
+        SceneManager.LoadScene("MainMenu");
     }
 
     private bool IsColorTaken(int colorIndex)

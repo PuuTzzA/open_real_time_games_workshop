@@ -48,6 +48,7 @@ public class StageSelectionManager : MonoBehaviour
     {
         navigateAction.performed -= OnNavigate;
         submitAction.performed -= OnSubmit;
+        cancelAction.performed -= OnCancel;
     }
 
     private void Start()
@@ -82,6 +83,8 @@ public class StageSelectionManager : MonoBehaviour
 /*     public void OnCancel(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
+        FindAnyObjectByType<PersistentPlayerManager>().GetComponent<PersistentPlayerManager>().ResetPlayerState();
+        SelectionManager.ResetInstances();
         SceneManager.LoadScene("CharacterSelection");
     } */
 
